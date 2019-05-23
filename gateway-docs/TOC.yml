@@ -1,2 +1,52 @@
-- name: Index
-  href: index.md
+﻿- name: On-premises data gateways 
+  items:
+  - name: Overview
+    items: 
+    - name: "What is a on-premises data gateway?"
+      href: service-gateway-getting-started.md
+  - name: Concepts
+    items:
+    - name: "On-premises data gateway architecture"
+      href: service-gateway-onprem-indepth.md    
+    - name: "On-premises data gateway FAQ"
+      href: service-gateway-onprem-faq.md
+  - name: How to
+    items:
+    - name: "Install gateways"
+      href: service-gateway-install.md
+    - name: "Configure gateways"
+      items:
+      - name: "Use the on-premises data gateway app"
+        href: service-gateway-app.md
+      - name: "Configure proxy settings"
+        href: service-gateway-proxy.md
+      - name: "Change the gateway service account"
+        href: service-gateway-service-account.md
+      - name: "Set the data center region"
+        href: service-gateway-data-region.md
+      - name: "Adjust communication settings"
+        href: service-gateway-communication.md
+      - name: "Configure the gateway log file"
+        href: service-gateway-log-files.md
+    - name: "Manage gateways"
+      items:
+      - name: "Manage an on-premises data gateway"
+        href: service-gateway-manage.md
+      - name: "Manage high availability clusters and load balancing"
+        href: service-gateway-high-availability-clusters.md
+      - name: "Update an on-premises data gateway"
+        href: service-gateway-update.md
+      - name: "Migrate, restore, or take over a gateway"
+        href: service-gateway-migrate.md
+      - name: "Restart a gateway"
+        href: service-gateway-restart.md
+      - name: "Tenant level administration"
+        href: service-gateway-tenant-level-admin.md
+    - name: "Troubleshoot the on-premises data gateway"
+      href: service-gateway-tshoot.md
+    - name: "Monitor and optimize gateway performance"
+      href: service-gateway-performance.md
+  - name: Reference
+    items:
+    - name: "PowerShell support for gateway clusters"
+      href: "service-gateway-powershell-support.md"
