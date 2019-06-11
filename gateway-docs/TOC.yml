@@ -3,7 +3,7 @@
   - name: Overview
     items: 
     - name: "What is a on-premises data gateway?"
-      href: service-gateway-getting-started.md
+      href: service-gateway-onprem.md
   - name: Concepts
     items:
     - name: "On-premises data gateway architecture"
