@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 # Install an on-premises data gateway
 
-An on-premises data gateway is software that you install in an on-premises network. It facilitates access to data in that network. As we explained in the [overview](service-gateway-getting-started.md), you can install a gateway in standard mode (recommended) or personal mode (Power BI only). In standard mode, you can install a stand-alone gateway or add a gateway to a *cluster*, which we recommend for high availability. In this article, we show you how to install a standard gateway and then add another gateway to create a cluster.
+An on-premises data gateway is software that you install in an on-premises network. It facilitates access to data in that network. As we explained in the [overview](service-gateway-onprem.md), you can install a gateway in standard mode (recommended) or personal mode (Power BI only). In standard mode, you can install a stand-alone gateway or add a gateway to a *cluster*, which we recommend for high availability. In this article, we show you how to install a standard gateway and then add another gateway to create a cluster.
 
 ## Requirements
 

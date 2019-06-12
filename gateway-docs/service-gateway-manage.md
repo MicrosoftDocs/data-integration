@@ -21,6 +21,9 @@ After you install an on-premises data gateway, you manage it based on your requi
 
 ![Manage gateways](media/service-gateway-manage/manage-gateways.png)
 
+> [!NOTE]
+> **Manage gateways** will not show up until you're the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+
 ## Manage gateway admins
 
 When you install a gateway, you are by default an admin of that gateway. You can then add additional users or security groups as admins using the **Administrators** tab for the gateway. You can also remove administrators using this option.

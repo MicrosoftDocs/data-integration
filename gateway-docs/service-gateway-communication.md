@@ -52,7 +52,10 @@ Here's a list of FQDNs used by the gateway:
 
 ## Force HTTPS communication with Azure Service Bus
 
-You can force the gateway to communicate with Azure Service Bus by using HTTPS instead of direct TCP. Using HTTPS might have only a negligible effect on performance.
+You can force the gateway to communicate with Azure Service Bus by using HTTPS instead of direct TCP.
+
+> [!NOTE]
+> Starting with the June 2019 release, new installs (not updates) default to HTTPS instead of TCP, based on recommendations from Azure Service Bus.
 
 You can use the [on-premises data gateway app](service-gateway-app.md) to force the gateway to adopt this behavior. In the on-premises data gateway app, select **Network**, and then switch the **HTTPS mode** to **On**.
 
