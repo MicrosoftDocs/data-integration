@@ -15,7 +15,10 @@ LocalizationGroup: Gateways
 
 # Update an on-premises data gateway
 
-We aim at releasing an update every month for on-premises data gateways. Each of these updates include new features along with the latest mashup update.
+We aim at releasing an update every month for on-premises data gateways. Each of these updates includes new features along with the latest mashup update.
+
+> [!NOTE]
+> If you are running a gateway cluster, we recommend that you update all nodes in the cluster at the same time.
 
 To update an on-premises data gateway:
 
@@ -36,6 +39,3 @@ To update an on-premises data gateway:
 The on-premises data gateway update is now complete.
 
 ![Gateway update complete](media/service-gateway-update/gateway-update-complete.png)
-
-
-

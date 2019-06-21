@@ -32,3 +32,5 @@ To find the current data center region you're in after the gateway is installed:
 
    ![Your data is stored in](media/service-gateway-data-region/gateway-data-center-region.png)
 
+For more information about setting the data region for your resources, [watch this video](https://guyinacube.com/2018/01/power-bi-azure-analysis-services-gateway-data-region/).
+

@@ -48,7 +48,25 @@ Here's a list of FQDNs used by the gateway:
 | *.microsoftonline-p.com |443 |Used for authenticating the on-premises data gateway app (AAD/OAuth2). |
 
 > [!NOTE]
-> Once the gateway is installed and registered, the only required ports/IPs are the ones needed by the Azure service bus (servicebus.windows.net in the table above). You can obtain the list of required ports by performing the [Network ports test](service-gateway-tshoot.md#troubleshoot-configuration) in the on-premises data gateway app. Additionally you could also force the gateway to [communicate using HTTPS](service-gateway-communication.md#force-https-communication-with-azure-service-bus).
+> Once the gateway is installed and registered, the only required ports/IPs are the ones needed by the Azure service bus (servicebus.windows.net in the table above). You can obtain the list of required ports by performing the [Network ports test](#network-ports-test) in the on-premises data gateway app. Additionally you could also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).
+
+## Network ports test
+
+To test if the gateway has access to all the required ports:
+
+1. On the machine where the gateway is running, enter **gateway** in Windows search, and then select the **On-premises data gateway** app.
+
+2. Select the **Diagnostics** tab, and then select **Start new test**  under **Network ports test**.
+
+![Start new network ports test](media/service-gateway-communication/gateway-start-new-test.png)
+
+When running the network ports test, your gateway retrieves a list of ports and servers from Azure Service Bus and then attempts to connect to all the servers and ports. When the Start new test link reappears, the network ports test has finished running. The results of the test are either Completed (Succeeded) or Completed (Failed, see last test results). If the test succeeded, then your gateway successfully connected to all the required ports. If the test failed, then your network environment might be blocking these required ports and servers.
+
+To view the results of the last completed test, select the Open last completed test results link. The test results open in Windows’ default text editor.
+
+The test results list all the servers, ports, and IP addresses that are required by your gateway. If the test results display Closed for any ports as shown below, ensure that your network environment is not blocking the connection. You may need to contact your network administrator to open the required ports.
+
+![Start new network ports test](media/service-gateway-communication/gateway-onprem-porttest-result-file.png)
 
 ## Force HTTPS communication with Azure Service Bus
 

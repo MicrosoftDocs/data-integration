@@ -24,7 +24,7 @@ LocalizationGroup: Gateways
 **Answer:** Take a look at the requirements section of the [installation article](service-gateway-install.md#requirements).
 
 **Question:** Do I need a gateway for cloud data sources like Azure SQL Database?  
-**Answer:** No; The service will be able to connect to that data source without a gateway. In addition to on-premises data sources, data sources behind a firewall, VPN, or Virtual networks may also need a data gateway.
+**Answer:** No. In general, the service will be able to connect to that data source without a gateway. However, for on-premises data sources, or if the data sources reside behind a firewall, or requires a VPN, or are on virtual networks, a data gateway may be needed.
 
 **Question:** Are there any inbound connections to the gateway from the cloud?  
 **Answer:** No. The gateway uses outbound connections to Azure Service Bus.
