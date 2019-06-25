@@ -61,6 +61,9 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 **Question:** Do I need to whitelist the Azure Datacenter IP list? Where do I get the list?  
 **Answer:** If you are blocking outbound IP traffic, you may need to whitelist the Azure Datacenter IP list. Currently, the gateway will communicate with Azure Service Bus using the IP address in addition to the fully qualified domain name. The Azure Datacenter IP list is updated weekly. For more information, see [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
 
+**Question:** Are the on-premises data gateway and the Data Management Gateway (used by Azure Machine Learning Studio and Azure Data Factory) the same thing?
+**Answer:** No, they are two different products. To get more information about the Data Management Gateway (now called Self-hosted Integration Runtime), see [Create and configure a self-hosted integration runtime](https://docs.microsoft.com/azure/data-factory/create-self-hosted-integration-runtime).
+
 ## High Availability/Disaster Recovery
 
 **Question:** Are there any plans for enabling high availability scenarios with the gateway?  
