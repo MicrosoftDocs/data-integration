@@ -16,6 +16,9 @@ LocalizationGroup: Gateways
 
 This article discusses some common issues when using the on-premises data gateway.
 
+>[!NOTE]
+>If you encounter an issue that is not listed below, you can create a support ticket for the particular cloud service that's running the gateway.
+
 ## Update to the latest version
 
 Issues can occur when the gateway version is out of date. It's a good general practice to make sure you're using the latest version. If you haven't updated the gateway for a month, or longer, you might want to consider [installing the latest version of the gateway](service-gateway-update.md). Then see if you can reproduce the issue.
@@ -46,15 +49,9 @@ You might come across the following error if you try to install the same version
 
 ### Firewall or proxy
 
-To test if the gateway has access to all the required ports:
+To test if the gateway has access to all the required ports, run the [network ports test](service-gateway-communication.md#network-ports-test). The results of the test are either Completed (Succeeded) or Completed (Failed, see last test results). If the test succeeded, then your gateway successfully connected to all the required ports. If the test failed, then your network environment might be blocking these required ports and servers.
 
-1. On the machine where the gateway is running, enter **gateway** in Windows search, and then select the **On-premises data gateway** app.
-
-2. Select the **Diagnostics** tab, and then select **Start new test**  under **Network ports test**.
-
-![Start new network ports test](media/service-gateway-tshoot/gateway-start-new-test.png)
-
-For information on providing proxy information for your gateway, see [Configuring proxy settings for the Power BI gateways](service-gateway-proxy.md).
+For information on providing proxy information for your gateway, see [Configure proxy settings for the on-premises data gateway](service-gateway-proxy.md).
 
 A firewall might also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that's the case, you'll want to whitelist (unblock) the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/en-us/download/details.aspx?id=41653). To find the current data center region you're in, see [Set the data center region](service-gateway-data-region.md).
 

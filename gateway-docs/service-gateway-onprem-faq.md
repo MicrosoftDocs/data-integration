@@ -24,7 +24,7 @@ LocalizationGroup: Gateways
 **Answer:** Take a look at the requirements section of the [installation article](service-gateway-install.md#requirements).
 
 **Question:** Do I need a gateway for cloud data sources like Azure SQL Database?  
-**Answer:** No; The service will be able to connect to that data source without a gateway. In addition to on-premises data sources, data sources behind a firewall, VPN, or Virtual networks may also need a data gateway.
+**Answer:** No. In general, the service will be able to connect to that data source without a gateway. However, for on-premises data sources, or if the data sources reside behind a firewall, or requires a VPN, or are on virtual networks, a data gateway may be needed.
 
 **Question:** Are there any inbound connections to the gateway from the cloud?  
 **Answer:** No. The gateway uses outbound connections to Azure Service Bus.
@@ -60,6 +60,9 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 
 **Question:** Do I need to whitelist the Azure Datacenter IP list? Where do I get the list?  
 **Answer:** If you are blocking outbound IP traffic, you may need to whitelist the Azure Datacenter IP list. Currently, the gateway will communicate with Azure Service Bus using the IP address in addition to the fully qualified domain name. The Azure Datacenter IP list is updated weekly. For more information, see [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
+
+**Question:** Are the on-premises data gateway and the Data Management Gateway (used by Azure Machine Learning Studio and Azure Data Factory) the same thing?
+**Answer:** No, they are two different products. To get more information about the Data Management Gateway (now called Self-hosted Integration Runtime), see [Create and configure a self-hosted integration runtime](https://docs.microsoft.com/azure/data-factory/create-self-hosted-integration-runtime).
 
 ## High Availability/Disaster Recovery
 
