@@ -102,5 +102,3 @@ You can also look at tools your data source has for tracing queries. For example
 ## Next steps
 
 * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
-
-
