@@ -30,6 +30,9 @@ When you install a gateway, you are by default an admin of that gateway. You can
 
 ![Gateway administrators tab](media/service-gateway-manage/gateway-admin-tab.png)
 
+>[!NOTE]
+>Groups without an email can't be added.
+
 ## Remove or delete an on-premises data gateway
 
 You can remove (Power BI) or delete (PowerApps, Microsoft Flow) an on-premises data gateway if you're no longer using it.

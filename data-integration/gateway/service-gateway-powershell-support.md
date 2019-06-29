@@ -21,6 +21,8 @@ PowerShell scripts are available in the on-premises data gateway installation fo
 - Modify the enable/disable status for a gateway instance within a cluster, as well as other gateway properties
 - Delete a gateway
 
+## Run the PowerShell commands
+
 To run the on-premises data gateway PowerShell commands, you first need to take the following steps:
 
 1. Open a PowerShell command window as an Administrator.
@@ -47,4 +49,8 @@ Once those steps are complete, you can use the commands in the following table t
 | *Get-OnPremisesDataGatewayStatus* | Lets you retrieve the status for a given gateway instance within a cluster  | *-ClusterObjectID xyz* (where *xyz* is replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command)  *-GatewayObjectID abc*  (where *abc* is replaced with an actual gateway object ID value, which can be retrieved using the *Get-OnPremisesDataClusterGateways* command, given a cluster object ID) |
 | *Remove-OnPremisesDataGateway*  | Lets you remove a gateway instance from a cluster. Note: the primary gateway in the cluster cannot be removed until all other gateways in the cluster are removed.| *-ClusterObjectID xyz* (where *xyz* is replaced with an actual cluster object ID value, which can be retrieved using the *Get-OnPremisesDataGatewayClusters* command)  *-GatewayObjectID abc*  (where *abc* is replaced with an actual gateway object ID value, which can be retrieved using the *Get-OnPremisesDataClusterGateways* command, given a cluster object ID) |
 
+## Next steps
 
+* [On-premises data gateway app](service-gateway-app.md)
+* [Manage high availability clusters and load balancing](service-gateway-high-availability-clusters.md)
+* [Remove or delete an on-premises data gateway](service-gateway-manage.md#remove-or-delete-an-on-premises-data-gateway)

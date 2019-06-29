@@ -48,4 +48,7 @@ Use Search to find gateway clusters and see their details. You can search for ga
 
 ![Search](media/service-gateway-tenant-level-admin/gateway-search.png)
 
+## Next steps
 
+* [Manage an on-premises data gateway](service-gateway-manage.md)
+* [Manage high availability clusters and load balancing](service-gateway-high-availability-clusters.md)

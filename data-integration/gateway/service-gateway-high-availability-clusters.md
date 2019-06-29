@@ -22,7 +22,7 @@ You can create high availability clusters of on-premises data gateway installati
 
 ### Manage a gateway cluster
 
-Once you create a cluster of two or more gateways, all gateway management operations, such as granting administrative permissions to a gateway, apply to all gateways that are part of the cluster.
+Once you create a cluster of two or more gateways, all gateway management operations, such as granting administrative permissions to a gateway or adding data sources/connections, apply to all gateways that are part of the cluster.
 
 For example, in **Manage gateways** in Power BI, administrators see the list of registered clusters or individual gateways, but do not see the individual gateway instances that are members of the cluster.
 

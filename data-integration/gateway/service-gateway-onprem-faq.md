@@ -35,6 +35,9 @@ LocalizationGroup: Gateways
 **Question:** Does the gateway have to be installed on the same machine as the data source?  
 **Answer:** No. The gateway will connect to the data source using the connection information that was provided. Think of the gateway as a client application in this sense. It will just need to be able to connect to the server name that was provided.
 
+**Question:** Are there any permissions prerequisites to install gateways?
+**Answer:** There are no restrictions for installing and registering a gateway, but every cloud service could have restrictions on how gateways are used within their service based on licensing.
+
 **Question:** What is the latency for running queries to a data source from the gateway? What is the best architecture?  
 **Answer:** We recommend that you have the gateway as close to the data source as possible to avoid network latency. If you can install the gateway on the actual data source, it will minimize the latency introduced. Consider the data centers as well. For example, if your service is making use of the West US data center, and you have SQL Server hosted in an Azure VM, you will want to have the Azure VM in West US as well. This will minimize latency and avoid egress charges on the Azure VM.
 
@@ -63,6 +66,9 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 
 **Question:** Are the on-premises data gateway and the Data Management Gateway (used by Azure Machine Learning Studio and Azure Data Factory) the same thing?
 **Answer:** No, they are two different products. To get more information about the Data Management Gateway (now called Self-hosted Integration Runtime), see [Create and configure a self-hosted integration runtime](https://docs.microsoft.com/azure/data-factory/create-self-hosted-integration-runtime).
+
+**Question:** Can the person who sets up that gateway in the Azure Portal be different from the one who installs the gateway?
+**Answer:** Yes. You'll have to use PowerShell to add other owners to the same gateway and these users could create the gateway on the portal. However, the tenant under which they connect to Azure Portal and the gateway should be the same.
 
 ## High Availability/Disaster Recovery
 

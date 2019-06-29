@@ -37,3 +37,7 @@ If you're restoring the gateway on the same computer as the original gateway was
     ![Migrate, restore, or take over](media/service-gateway-migrate/migrate-restore-takeover.png)
 
 Once the configuration finishes, the migrate, restore, or takeover process is complete.
+
+## Next steps
+
+* [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)

@@ -73,7 +73,7 @@ This error could be due to proxy configuration issues. The gateway log provides 
 
 #### Error: Power BI service reported local gateway as unreachable. Restart the gateway and try again
 
-At the end of configuration, the Power BI service is called again to validate the gateway. The Power BI service does not report the gateway as *live*. Restarting the windows service may allow the communication to be successful. You can collect, and review, the logs, as mentioned below, to get more details.
+At the end of configuration, the Power BI service is called again to validate the gateway. The Power BI service doesn't report the gateway as *live*. Restarting the windows service may allow the communication to be successful. You can collect and review the logs, as described in the following section, to get more details.
 
 ## Troubleshooting tools
 
@@ -90,3 +90,7 @@ This file is saved to the ODGLogs folder on your Windows desktop in .zip format.
 The **on-premises data gateway service** event logs are present under **Application and Services Logs**.
 
 ![On-premises data gateway event logs](media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png)
+
+## Next steps
+
+* [On-premises data gateway FAQ](service-gateway-onprem-faq.md)
