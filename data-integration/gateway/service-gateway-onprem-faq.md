@@ -35,7 +35,7 @@ LocalizationGroup: Gateways
 **Question:** Does the gateway have to be installed on the same machine as the data source?  
 **Answer:** No. The gateway will connect to the data source using the connection information that was provided. Think of the gateway as a client application in this sense. It will just need to be able to connect to the server name that was provided.
 
-**Question:** Are there any permissions prerequisites to install gateways?
+**Question:** Are there any permissions prerequisites to install gateways?  
 **Answer:** There are no restrictions for installing and registering a gateway, but every cloud service could have restrictions on how gateways are used within their service based on licensing.
 
 **Question:** What is the latency for running queries to a data source from the gateway? What is the best architecture?  
@@ -64,10 +64,10 @@ You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebs
 **Question:** Do I need to whitelist the Azure Datacenter IP list? Where do I get the list?  
 **Answer:** If you are blocking outbound IP traffic, you may need to whitelist the Azure Datacenter IP list. Currently, the gateway will communicate with Azure Service Bus using the IP address in addition to the fully qualified domain name. The Azure Datacenter IP list is updated weekly. For more information, see [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
 
-**Question:** Are the on-premises data gateway and the Data Management Gateway (used by Azure Machine Learning Studio and Azure Data Factory) the same thing?
+**Question:** Are the on-premises data gateway and the Data Management Gateway (used by Azure Machine Learning Studio and Azure Data Factory) the same thing?  
 **Answer:** No, they are two different products. To get more information about the Data Management Gateway (now called Self-hosted Integration Runtime), see [Create and configure a self-hosted integration runtime](https://docs.microsoft.com/azure/data-factory/create-self-hosted-integration-runtime).
 
-**Question:** Can the person who sets up that gateway in the Azure Portal be different from the one who installs the gateway?
+**Question:** Can the person who sets up that gateway in the Azure Portal be different from the one who installs the gateway?  
 **Answer:** Yes. You'll have to use PowerShell to add other owners to the same gateway and these users could create the gateway on the portal. However, the tenant under which they connect to Azure Portal and the gateway should be the same.
 
 ## High Availability/Disaster Recovery
