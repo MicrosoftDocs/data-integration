@@ -30,7 +30,7 @@ If you're restoring the gateway on the same computer as the original gateway was
 
     ![Register gateway](media/service-gateway-migrate/register-gateway.png)
 
-3. Select from the available clusters and gateways, and enter the recover key for the selected gateway. The recovery key is the one you created and safely stored when you originally installed the gateway (see step 7 in [Install an on-premises data gateway](service-gateway-install.md)).
+3. Select from the available clusters and gateways, and enter the recover key for the selected gateway. The recovery key is the one you created and safely stored when you originally installed the gateway (see step 8 in [Install an on-premises data gateway](service-gateway-install.md)).
 
 4. Select **Configure**.
 

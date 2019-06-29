@@ -24,7 +24,7 @@ If a firewall is blocking outbound connections, you must configure the firewall 
 
 The Microsoft on-premises data gateway communicates on outbound ports: TCP 443, 5671, 5672, 9350 through 9354. The gateway doesn't require inbound ports.
 
-We recommend that you whitelist the IP addresses, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Alternatively you can obtain the list of required ports by performing the [Network ports test](service-gateway-tshoot.md#troubleshoot-configuration) on the [on-premises data gateway app](service-gateway-app.md).
+We recommend that you whitelist the IP addresses, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Alternatively you can obtain the list of required ports by performing the [Network ports test](service-gateway-communication.md#network-ports-test) in the on-premises data gateway app.
 
 The gateway communicates with Service Bus by using the IP address, along with the fully qualified domain name (FQDN). If you're forcing the gateway to communicate by using HTTPS, it will strictly use FQDN only, and no communication happens by using IP addresses.
 
