@@ -5,8 +5,8 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 
-ms.service: gateways
-ms.subservice: gateways
+ms.service: powerbi
+ms.subservice: powerbi-gateway
 ms.topic: conceptual
 ms.date: 03/29/2019
 ms.author: mblythe
@@ -105,4 +105,6 @@ To create high availability gateway clusters, you need the November 2017 or late
 
 * [Configure on-premises data gateways](service-gateway-app.md)
 
-* [Manage high availability clusters and load balancing](service-gateway-high-availability-clusters.md)
+* [Manage an on-premises data gateway](service-gateway-manage.md)
+
+* [Monitor and optimize gateway performance](service-gateway-performance.md)

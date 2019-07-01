@@ -32,3 +32,7 @@ The on-premises data gateway service can be restarted using multiple methods.
     `net stop PBIEgwService`
 
     `net start PBIEgwService`
+
+## Next steps
+
+* [Tenant level administration](service-gateway-tenant-level-admin.md)

@@ -35,5 +35,6 @@ In this example, 20 log files of 50 MB each will be retained:
 
  `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`
 
-For more information on how to export gateway logs for troubleshooting, see [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
- 
+## Next steps
+
+For information on how to export gateway logs for troubleshooting, see [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).

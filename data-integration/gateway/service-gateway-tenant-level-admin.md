@@ -14,10 +14,10 @@ ms.date: 04/26/2019
 
 # Tenant level administration
 
-You can use the Power Platform Admin center to get visibility into all on-premises data gateways in a tenant. To do so, sign in as a tenant admin and select the Data Gateway option.
+You can use the Power Platform Admin center to get visibility into all on-premises data gateways in a tenant. To do so, sign in as a tenant admin and select the Data Gateways option.
 
 > [!NOTE]
-> Only users who are part of the Azure AD tenant Global administrator role (which includes Office 365 Global admins) will see the **Data Gateway** option.
+> Only users who are part of the Azure AD tenant Global administrator role (which includes Office 365 Global admins) will see the **Data Gateways** option.
 
 ![On-premises data gateway page](media/service-gateway-tenant-level-admin/tenant-data-gateway.png)
 
@@ -48,4 +48,7 @@ Use Search to find gateway clusters and see their details. You can search for ga
 
 ![Search](media/service-gateway-tenant-level-admin/gateway-search.png)
 
+## Next steps
 
+* [Manage an on-premises data gateway](service-gateway-manage.md)
+* [Manage high availability clusters and load balancing](service-gateway-high-availability-clusters.md)

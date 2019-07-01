@@ -31,6 +31,8 @@ Some of the on-premises data gateway app features can only be used once you've s
 
 ![Example of actions that can and cannot be taken without signing on](media/service-gateway-app/sign-on-actions.png)
 
+## On-premises data gateway app features
+
 Once you've signed on to your Office 356 account, you have access to the following features in the on-premises data gateway app.
 
 |Tab |Service |Description |
@@ -44,3 +46,7 @@ Once you've signed on to your Office 356 account, you have access to the followi
 |Network |Network status |Indicates whether the gateway can reach outside your network. The network status is displayed as either Connected or Disconnected. |
 |Network |HTTPS mode |Forces the gateway to communicate with Azure Service Bus by using [HTTPS instead of TCP](service-gateway-communication.md#force-https-communication-with-azure-service-bus) when turned on. |
 |Connectors |Custom data connectors |Enables you to connect to and access data from Power BI using custom data connectors that you develop. |
+
+## Next steps
+
+* [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)

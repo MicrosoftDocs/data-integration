@@ -20,11 +20,11 @@ The Microsoft on-premises data gateway relies on Azure Service Bus for cloud con
 
 If a firewall is blocking outbound connections, you must configure the firewall to allow outbound connections from the on-premises data gateway to its associated Azure region.
 
-### Ports
+## Ports
 
 The Microsoft on-premises data gateway communicates on outbound ports: TCP 443, 5671, 5672, 9350 through 9354. The gateway doesn't require inbound ports.
 
-We recommend that you whitelist the IP addresses, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Alternatively you can obtain the list of required ports by performing the [Network ports test](service-gateway-tshoot.md#troubleshoot-configuration) on the [on-premises data gateway app](service-gateway-app.md).
+We recommend that you whitelist the IP addresses, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Alternatively you can obtain the list of required ports by performing the [Network ports test](service-gateway-communication.md#network-ports-test) in the on-premises data gateway app.
 
 The gateway communicates with Service Bus by using the IP address, along with the fully qualified domain name (FQDN). If you're forcing the gateway to communicate by using HTTPS, it will strictly use FQDN only, and no communication happens by using IP addresses.
 
@@ -38,7 +38,7 @@ Here's a list of FQDNs used by the gateway:
 | *.download.microsoft.com |80 |Used to download the installer. This is also used by the on-premises data gateway app to check for version and gateway region. |
 | *.powerbi.com |443 |Used for identifying the relevant Power BI cluster. |
 | *.analysis.windows.net |443 |Used for identifying the relevant Power BI cluster. |
-| *.login.windows.net |443 |Used for authenticating the on-premises data gateway app (AAD/OAuth2). |
+| *.login.windows.net, login.live.com, aadcdn.msauth.net |443 |Used for authenticating the on-premises data gateway app (AAD/OAuth2). |
 | *.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP). |
 | *.servicebus.windows.net |443, 9350-9354 |Listens on Service Bus Relay over TCP (requires 443 for Access Control token acquisition). |
 | *.frontend.clouddatahub.net |443 |Deprecated - Not required. Will be removed from the public documentation as well. |
@@ -46,6 +46,7 @@ Here's a list of FQDNs used by the gateway:
 | login.microsoftonline.com |443 |Used for authenticating the on-premises data gateway app (AAD/OAuth2). |
 | *.msftncsi.com |443 |Used to test internet connectivity if the gateway is unreachable by the Power BI service. |
 | *.microsoftonline-p.com |443 |Used for authenticating the on-premises data gateway app (AAD/OAuth2). |
+| dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 
 > [!NOTE]
 > Once the gateway is installed and registered, the only required ports/IPs are the ones needed by the Azure service bus (servicebus.windows.net in the table above). You can obtain the list of required ports by performing the [Network ports test](#network-ports-test) in the on-premises data gateway app. Additionally you could also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).

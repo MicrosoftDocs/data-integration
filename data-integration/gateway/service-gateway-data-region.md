@@ -18,12 +18,16 @@ During gateway installation, you can set the data center region used by the gate
 
 ![On-premises data gateway data center region](media/service-gateway-data-region/data-center-region.png)
 
+## Change the data center region
+
 If you want to change the data center region after your gateway is installed, you can:
 
 - Restore the on-premises data gateway on the current gateway machine.
 - Migrate or take over the on-premises data gateway on a different machine.
 
 ![Setting the gateway data center region after installation](media/service-gateway-data-region/restore-change-region.png)
+
+## Current data center region
 
 To find the current data center region you're in after the gateway is installed:
 
@@ -34,3 +38,6 @@ To find the current data center region you're in after the gateway is installed:
 
 For more information about setting the data region for your resources, [watch this video](https://guyinacube.com/2018/01/power-bi-azure-analysis-services-gateway-data-region/).
 
+## Next steps
+
+* [Adjust communications settings](service-gateway-communication.md)
