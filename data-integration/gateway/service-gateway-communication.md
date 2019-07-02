@@ -99,7 +99,7 @@ By default, the Microsoft on-premises data gateway uses Transport Layer Security
 ```
 
 > [!NOTE]
-> Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
+> Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings).
 
 ## Next steps
 
