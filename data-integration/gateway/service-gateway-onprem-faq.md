@@ -44,7 +44,7 @@ LocalizationGroup: Gateways
 **Question:** Are there any requirements for network bandwidth?  
 **Answer:** We recommend that you have good throughput for your network connection. Every environment is different and this is also dependent on the amount of data being sent. Using ExpressRoute could help to guarantee a level of throughput between on-premises and the Azure data centers.
 
-You can use the 3rd party [Azure Speed Test app](http://azurespeedtest.azurewebsites.net/) to help gauge what your throughput is.
+You can use the 3rd party [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/) to help gauge what your throughput is.
 
 **Question:** Can the gateway Windows service run with an Azure Active Directory account?  
 **Answer:** No. The Windows service needs to have a valid Windows account. By default it will run with the Service SID *NT SERVICE\PBIEgwService*.

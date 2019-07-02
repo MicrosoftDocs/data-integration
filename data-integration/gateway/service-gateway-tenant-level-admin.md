@@ -1,5 +1,5 @@
 ---
-title: Tenant level administration
+title: Tenant level administration for the on-premises data gateway
 description: Describes how an admin can manage all on-premises data gateways within their tenant.
 author: mgblythe
 ms.author: mblythe
@@ -12,7 +12,7 @@ LocalizationGroup: Gateways
 ms.date: 04/26/2019
 ---
 
-# Tenant level administration
+# Tenant level administration for the on-premises data gateway
 
 You can use the Power Platform Admin center to get visibility into all on-premises data gateways in a tenant. To do so, sign in as a tenant admin and select the Data Gateways option.
 

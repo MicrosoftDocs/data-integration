@@ -1,5 +1,5 @@
 ---
-title: Monitor and optimize gateway performance
+title: Monitor and optimize on-premises data gateway performance
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
 author: mgblythe
 ms.author: mblythe
@@ -12,7 +12,7 @@ ms.date: 04/19/2019
 LocalizationGroup: Gateways 
 ---
 
-# Monitor and optimize gateway performance
+# Monitor and optimize on-premises data gateway performance
 
 ## Monitor Performance
 
@@ -79,7 +79,7 @@ Enabling this setting likely will increase the log size significantly, based on 
 
 ## Gateway performance monitoring (public preview)
 
-To monitor performance, gateway admins have traditionally depended on manually monitoring performance counters through the Windows Performance Monitor tool. We now offer additional query logging and a [Gateway Performance PBI template file](http://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayPerformanceMonitoring.pbit) to visualize the results. This feature provides new insights into gateway usage and allows you to troubleshoot slow performing queries.
+To monitor performance, gateway admins have traditionally depended on manually monitoring performance counters through the Windows Performance Monitor tool. We now offer additional query logging and a [Gateway Performance PBI template file](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayPerformanceMonitoring.pbit) to visualize the results. This feature provides new insights into gateway usage and allows you to troubleshoot slow performing queries.
 
 > [!NOTE]
 > This feature is currently available only for the on-premises data gateway in the standard mode and not for the personal mode.
@@ -178,7 +178,7 @@ The System Counter Aggregation Report contains system counter values aggregated 
 
 Now, you can visualize the data that's in the log files.
 
-1. Download the [Gateway Performance PBI template](http://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayPerformanceMonitoring.pbit) and open it using Power BI desktop.
+1. Download the [Gateway Performance PBI template](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayPerformanceMonitoring.pbit) and open it using Power BI desktop.
 
 1. In the dialog box that opens, check that the folder path matches the value in **ReportFilePath**.
 
