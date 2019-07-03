@@ -1,5 +1,5 @@
 ---
-title: "Restart a gateway"
+title: "Restart an on-premises gateway"
 description: Learn how to restart the gateway Windows service.
 author: mgblythe
 manager: kfile
@@ -15,7 +15,7 @@ ms.custom: seodec18
 LocalizationGroup: Gateways
 ---
 
-# Restart a gateway
+# Restart an on-premises gateway
 
 The on-premises data gateway service can be restarted using multiple methods.
 

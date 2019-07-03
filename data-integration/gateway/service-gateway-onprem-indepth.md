@@ -53,9 +53,7 @@ Microsoft cloud services use [Azure Active Directory](/azure/active-directory/fu
 
 ### How do I tell what my UPN is?
 
-You may not know what your UPN is, and you may not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
-
-    `whoami /upn`
+You may not know what your UPN is, and you may not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account: `whoami /upn`.
 
 The result will look similar to an email address, but this is the UPN that is on your local domain account.
 

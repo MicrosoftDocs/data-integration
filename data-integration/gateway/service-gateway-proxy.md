@@ -37,7 +37,7 @@ If you're going to make changes to the proxy configuration, these files must be 
 
 The following sample shows the default proxy configuration found in both of the two main configuration files.
 
-``` xml
+```xml
 <system.net>
     <defaultProxy useDefaultCredentials="true" />
 </system.net>
@@ -49,7 +49,7 @@ We don't recommend basic proxy authentication. Using basic proxy authentication 
 
 In addition to using default credentials, you can add a `<proxy>` element to define proxy server settings in more detail. For example, you can specify that your on-premises data gateway should always use the proxy, even for local resources, by setting the *bypassonlocal* parameter to false. This can help in troubleshooting situations, if you want to track all HTTPS requests originating from a gateway in the proxy log files. The following sample configuration specifies that all requests must go through a specific proxy with the IP address 192.168.1.10.
 
-``` xml
+```xml
 <system.net>
     <defaultProxy useDefaultCredentials="true">
         <proxy  
@@ -68,7 +68,7 @@ Additionally, for the gateway to connect to cloud data sources through a proxy, 
 
 In the file, expand the `<configurations>` section to include the contents below, and update the `proxyaddress` attribute with your proxy information. The following example routes all cloud requests through a specific proxy with the IP address 192.168.1.10.
 
-``` xml
+```xml
 <configuration>
     <system.net>
         <defaultProxy useDefaultCredentials="true" enabled="true">
