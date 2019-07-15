@@ -1,1 +1,3 @@
-# Welcome to gateway-docs!
+---
+redirect_url: /data-integration/gateway/service-gateway-onprem
+---
