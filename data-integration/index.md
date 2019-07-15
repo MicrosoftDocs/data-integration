@@ -1,1 +1,3 @@
-# Welcome to data-integration!
+---
+redirect_url: /data-integration/gateway/service-gateway-onprem
+---
