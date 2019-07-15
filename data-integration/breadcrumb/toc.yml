@@ -1,3 +1,7 @@
 - name: Docs
-  tocHref: /
+  href: /
   topicHref: /
+  items:
+  - name: On-premises data gateway
+    tocHref: /gateway/
+    topicHref: /gateway/

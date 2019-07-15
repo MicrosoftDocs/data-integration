@@ -8,9 +8,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 05/17/2019
+ms.date: 07/15/19
 ms.author: mblythe
-ms.custom: seodec18
+
 
 LocalizationGroup: Gateways
 ---

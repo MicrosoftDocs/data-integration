@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
-ms.date: 04/26/2019
+ms.date: 07/15/19
 ---
 
 # Tenant level administration for the on-premises data gateway
