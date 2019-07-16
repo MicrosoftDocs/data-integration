@@ -1,6 +1,6 @@
 ---
 title: What is an on-premises data gateway?
-description: Learn the basics about data gateways.
+description: Learn the basics about on-premises data gateways, which enable quick and secure data transfer between on-premises data and several Microsoft cloud services.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: overview
-ms.date: 04/25/2019
+ms.date: 07/15/2019
 ms.author: mblythe
 
 LocalizationGroup: Gateways
@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 # What is an on-premises data gateway?
 
-The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services. This lets organizations keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in cloud services.
+The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and several Microsoft cloud services, including Power BI, PowerApps, Microsoft Flow, Azure Analysis Services, and Logic Apps. By using a gateway, organizations can keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in cloud services.
 
 ## How the gateway works
 
@@ -28,9 +28,9 @@ For detailed information on how the gateway works, see [On-premises data gateway
 
 There are two different types of gateways, each for a different scenario:
 
-* **On-premises data gateway** – allows multiple users to connect to multiple on-premises data sources. An on-premises data gateway can be used by Power BI, PowerApps, Flow, Azure Analysis Services, and Azure Logic apps, all with a single gateway installation. This gateway is well-suited to complex scenarios with multiple people accessing multiple data sources.
+* **On-premises data gateway** – allows multiple users to connect to multiple on-premises data sources. You can use an on-premises data gateway with all supported services, with a single gateway installation. This gateway is well-suited to complex scenarios with multiple people accessing multiple data sources.
 
-* **On-premises data gateway (personal mode)** – allows one user to connect to sources, and can’t be shared with others. An on-premises data gateway (personal mode) can only be used with Power BI. This gateway is well-suited to scenarios where you’re the only person who creates reports, and you don't need to share the data sources with others.
+* **On-premises data gateway (personal mode)** – allows one user to connect to sources, and can’t be shared with others. An on-premises data gateway (personal mode) can be used only with Power BI. This gateway is well-suited to scenarios where you’re the only person who creates reports, and you don't need to share any data sources with others.
 
 ## Using a gateway
 
@@ -44,5 +44,3 @@ There are four main steps for using a gateway:
 ## Next steps
 
 * [Install the on-premises data gateway](service-gateway-install.md)
-
-

@@ -1,5 +1,5 @@
 ---
-title: "PowerShell support for gateway clusters"
+title: "PowerShell support for on-premises data gateway clusters"
 description: You can retrieve gateway and cluster information, modify the status within a gateway, or delete a gateway using PowerShell commands.
 author: mgblythe
 ms.author: mblythe
@@ -8,11 +8,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 04/11/2019
+ms.date: 07/15/2019
 LocalizationGroup: Gateways 
 ---
 
-# PowerShell support for gateway clusters
+# PowerShell support for on-premises data gateway clusters
 
 PowerShell scripts are available in the on-premises data gateway installation folder. By default, that folder is *C:\Program Files\On-premises data gateway*. You must be using PowerShell version 5 or newer for these scripts to work correctly. The PowerShell scripts let users perform the following operations:
 

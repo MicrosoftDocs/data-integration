@@ -1,5 +1,5 @@
 ---
-title: "Restart a gateway"
+title: "Restart an on-premises gateway"
 description: Learn how to restart the gateway Windows service.
 author: mgblythe
 manager: kfile
@@ -8,14 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 04/05/2019
+ms.date: 07/15/2019
 ms.author: mblythe
-ms.custom: seodec18
 
 LocalizationGroup: Gateways
 ---
 
-# Restart a gateway
+# Restart an on-premises gateway
 
 The on-premises data gateway service can be restarted using multiple methods.
 

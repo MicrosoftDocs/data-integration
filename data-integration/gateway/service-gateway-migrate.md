@@ -1,5 +1,5 @@
 ---
-title: "Migrate, restore, or take over a gateway"
+title: "Migrate, restore, or take over an on-premises data gateway"
 description: Learn how to move a gateway to a new computer, recover a damaged gateway, or take over ownership of a gateway.
 author: mgblythe
 manager: kfile
@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 07/15/2019
 ms.author: mblythe
-ms.custom: seodec18
+
 
 LocalizationGroup: Gateways
 ---
 
-# Migrate, restore, or take over a gateway
+# Migrate, restore, or take over an on-premises data gateway
 
 Run the gateway installer on a computer where you want to migrate, restore, or take over the gateway.
 

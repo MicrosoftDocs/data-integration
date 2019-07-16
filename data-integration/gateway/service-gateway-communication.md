@@ -1,5 +1,5 @@
 ---
-title: Adjust communication settings
+title: Adjust communication settings for the on-premises data gateway
 description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Service Bus, how to force the gateway to communicate with Azure Service Bus by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
 author: mgblythe
 ms.author: mblythe
@@ -9,10 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
-ms.date: 05/23/2019
+ms.date: 07/15/2019
 ---
 
-# Adjust communication settings
+# Adjust communication settings for the on-premises data gateway
+
+This article describes several communication settings associated with the on-premises data gateway, and how to adjust them.
 
 ## Enable outbound Azure connections
 
@@ -29,7 +31,7 @@ We recommend that you whitelist the IP addresses, for your data region, in your 
 The gateway communicates with Service Bus by using the IP address, along with the fully qualified domain name (FQDN). If you're forcing the gateway to communicate by using HTTPS, it will strictly use FQDN only, and no communication happens by using IP addresses.
 
 > [!NOTE]
-> The IP addresses listed in the Azure Datacenter IP list are in CIDR notation. For example, 10.0.0.0/24 doesn't mean 10.0.0.0 through 10.0.0.24. Learn more about [CIDR notation](http://whatismyipaddress.com/cidr).
+> The IP addresses listed in the Azure Datacenter IP list are in CIDR notation. For example, 10.0.0.0/24 doesn't mean 10.0.0.0 through 10.0.0.24. Learn more about [CIDR notation](https://whatismyipaddress.com/cidr).
 
 Here's a list of FQDNs used by the gateway:
 
@@ -97,7 +99,7 @@ By default, the Microsoft on-premises data gateway uses Transport Layer Security
 ```
 
 > [!NOTE]
-> Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
+> Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings).
 
 ## Next steps
 
