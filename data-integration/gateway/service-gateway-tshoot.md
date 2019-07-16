@@ -53,7 +53,7 @@ To test if the gateway has access to all the required ports, run the [network po
 
 For information on providing proxy information for your gateway, see [Configure proxy settings for the on-premises data gateway](service-gateway-proxy.md).
 
-A firewall might also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that's the case, you'll want to whitelist (unblock) the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/en-us/download/details.aspx?id=41653). To find the current data center region you're in, see [Set the data center region](service-gateway-data-region.md).
+A firewall might also be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that's the case, you'll want to whitelist (unblock) the IP addresses for your region for those data centers. You can get a list of Azure IP addresses [here](https://www.microsoft.com/en-us/download/details.aspx?id=56519). To find the current data center region you're in, see [Set the data center region](service-gateway-data-region.md).
 
 ### Authentication to proxy server
 
