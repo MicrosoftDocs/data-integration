@@ -23,13 +23,9 @@ Although most gateway configuration settings can be changed using the on-premise
 
 There are two main configuration files that are involved with the gateway in which proxy settings can be edited.
 
-The first is for the configuration screens that actually configure the gateway. If you're having issues configuring the gateway, look at the following file:
+The first is for the configuration screens that actually configure the gateway. If you're having issues configuring the gateway, look at the following file: _C:\Program Files\On-premises data gateway\enterprisegatewayconfigurator.exe.config_.
 
-    C:\Program Files\On-premises data gateway\enterprisegatewayconfigurator.exe.config
-
-The second is for the actual Windows service that interacts with the cloud service using the gateway. This file handles the requests:
-
-    C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
+The second is for the actual Windows service that interacts with the cloud service using the gateway. This file handles the requests: _C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config_.
 
 If you're going to make changes to the proxy configuration, these files must be edited so that proxy configurations are exactly the same in both files.
 
@@ -62,9 +58,7 @@ In addition to using default credentials, you can add a `<proxy>` element to def
 </system.net>
 ```
 
-Additionally, for the gateway to connect to cloud data sources through a proxy, update the following file:
-
-    C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe.config
+Additionally, for the gateway to connect to cloud data sources through a proxy, update the following file: _C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe.config_.
 
 In the file, expand the `<configurations>` section to include the contents below, and update the `proxyaddress` attribute with your proxy information. The following example routes all cloud requests through a specific proxy with the IP address 192.168.1.10.
 
@@ -91,7 +85,3 @@ As explained earlier, when you configure the proxy settings to use default crede
 ## Next steps
 
 * [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)  
-
-
-
-
