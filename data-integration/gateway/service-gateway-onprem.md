@@ -16,6 +16,8 @@ LocalizationGroup: Gateways
 
 # What is an on-premises data gateway?
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and several Microsoft cloud services, including Power BI, PowerApps, Microsoft Flow, Azure Analysis Services, and Logic Apps. By using a gateway, organizations can keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in cloud services.
 
 ## How the gateway works

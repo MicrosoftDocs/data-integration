@@ -14,6 +14,8 @@ ms.date: 07/15/2019
 
 # Adjust communication settings for the on-premises data gateway
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 This article describes several communication settings associated with the on-premises data gateway, and how to adjust them.
 
 ## Enable outbound Azure connections

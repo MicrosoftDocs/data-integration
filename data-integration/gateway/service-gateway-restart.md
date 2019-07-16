@@ -16,6 +16,8 @@ LocalizationGroup: Gateways
 
 # Restart an on-premises gateway
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 The on-premises data gateway service can be restarted using multiple methods.
 
 1. In the [on-premises data gateway app](service-gateway-app.md), select the **Service Settings** tab, then select **Restart now**.
