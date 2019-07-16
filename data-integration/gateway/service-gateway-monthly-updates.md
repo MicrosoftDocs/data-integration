@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 # Previous monthly updates to the on-premises data gateway
 
-This article describes the four previous updates for the **on-premises data gateway** and an option to download any of these versions.  For the most current **July 2019** release of the gateway, check out our [recent blog](https://powerbi.microsoft.com/blog/on-premises-data-gateway-july-2019-update-is-now-available/), or download the [latest version](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
+This article describes the four previous updates for the **on-premises data gateway** and an option to download any of these versions.  For the most current **July 2019** release of the gateway, check out our [recent blog](https://powerbi.microsoft.com/blog/on-premises-data-gateway-july-2019-update-is-now-available/), or download the [latest version](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409). 
 
 ## June 2019 Update (3000.6.204)
 
