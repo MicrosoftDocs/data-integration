@@ -14,6 +14,8 @@ LocalizationGroup: Gateways
 
 # Troubleshoot the on-premises data gateway
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 This article discusses some common issues when using the on-premises data gateway.
 
 >[!NOTE]

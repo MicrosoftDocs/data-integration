@@ -14,6 +14,8 @@ ms.date: 07/15/2019
 
 # Tenant level administration for the on-premises data gateway
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 You can use the Power Platform Admin center to get visibility into all on-premises data gateways in a tenant. To do so, sign in as a tenant admin and select the Data Gateways option.
 
 > [!NOTE]

@@ -15,6 +15,8 @@ LocalizationGroup: Gateways
 
 # Update an on-premises data gateway
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 We aim at releasing an update every month for on-premises data gateways. Each of these updates includes new features along with the latest mashup update.
 
 > [!NOTE]

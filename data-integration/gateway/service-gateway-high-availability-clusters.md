@@ -14,6 +14,8 @@ LocalizationGroup: Gateways
 
 # Manage on-premises data gateway high availability clusters and load balancing
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 You can use a gateway cluster to avoid single points of failure, and to load balance traffic across gateways in a cluster.
 
 ## High availability clusters for on-premises data gateway

@@ -14,6 +14,8 @@ LocalizationGroup: Gateways
 
 # Monitor and optimize on-premises data gateway performance
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 ## Monitor Performance
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_DJ30VNk4?showinfo=0" frameborder="0" allowfullscreen></iframe>

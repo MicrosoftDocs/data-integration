@@ -13,7 +13,10 @@ ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
+
 # On-premises data gateway FAQ
+
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 ## General
 

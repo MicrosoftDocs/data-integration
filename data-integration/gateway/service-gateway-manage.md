@@ -17,6 +17,8 @@ LocalizationGroup: Gateways
 
 # Manage an on-premises data gateway
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 After you install an on-premises data gateway, you manage it based on your requirements. Every service might integrate gateways differently, so the management options differ depending on the service. While you can manage gateways from any of these services, the articles in this section refer to the "Manage gateways" page in Power BI.
 
 ![Manage gateways](media/service-gateway-manage/manage-gateways.png)
