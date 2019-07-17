@@ -14,6 +14,8 @@ LocalizationGroup: Gateways
 
 # PowerShell support for on-premises data gateway clusters
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 PowerShell scripts are available in the on-premises data gateway installation folder. By default, that folder is *C:\Program Files\On-premises data gateway*. You must be using PowerShell version 5 or newer for these scripts to work correctly. The PowerShell scripts let users perform the following operations:
 
 - Retrieve the list of gateway clusters available for a user

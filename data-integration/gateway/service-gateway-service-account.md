@@ -12,7 +12,10 @@ ms.author: mblythe
 LocalizationGroup: Gateways
 
 ---
+
 # Change the on-premises data gateway service account
+
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for the Windows service sign in credential. By default, it has the right of Log on as a service, in the context of the machine that you're installing the gateway on. The account isn't the same account used to connect to on-premises data sources. The account is also not the work or school account that you sign in to cloud services with.
 

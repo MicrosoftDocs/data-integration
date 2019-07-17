@@ -14,6 +14,8 @@ LocalizationGroup: Gateways
 
 # Configure log files for the on-premises data gateway
 
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+
 There are three categories of gateway service logs: information, error, and network. This categorization provides a better troubleshooting experience that allows you to focus on a specific area, depending on the error or issue. You can see the three categories, `GatewayInfo.log`, `GatewayErrors.log`, and `GatewayNetwork.log`, in the following snippet from the gateway configuration file *Microsoft.PowerBI.EnterpriseGateway.exe.config*.
 
 ```xml
