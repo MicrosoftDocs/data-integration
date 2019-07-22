@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-During gateway installation, you can set the data center region used by the gateway. By default, the data center region is the region of your Power BI tenant or your Office 356 tenant if you have registered for either of these services. If not, it may be the closest Azure region to you.
+During gateway installation, you can set the data center region used by the gateway. By default, the data center region is the region of your Power BI tenant or your Office 365 tenant if you have registered for either of these services. If not, it may be the closest Azure region to you.
 
 ![On-premises data gateway data center region](media/service-gateway-data-region/data-center-region.png)
 
