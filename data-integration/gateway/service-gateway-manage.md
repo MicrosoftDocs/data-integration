@@ -37,7 +37,7 @@ When you install a gateway, you are by default an admin of that gateway. You the
 
 ## Remove or delete an on-premises data gateway
 
-You can use Power BI to remove a gateway if you're no longer using it. You can also use PowerApps or Microsoft Flow to delete a gateway.
+Depending on the service you're using you can either remove or delete a gateway. In Power BI you remove a gateway, but in PowerApps and Microsoft Flow, you delete a gateway.
 
 But, be aware that removing a gateway in Power BI deletes all the data sources under it. In turn, deleting the Power BI data sources causes errors in Power BI dashboards and reports that rely on those data sources.
 
@@ -46,7 +46,7 @@ But, be aware that removing a gateway in Power BI deletes all the data sources u
 
 For example, to remove a gateway in the Power BI service:
 
-1. In the upper-right corner of the Power BI service, select the gear icon ![Settings gear icon](media/service-gateway-manage/icon-gear.png) and then select **Manage gateways**.
+1. In the upper-right corner of the Power BI service, select the gear icon ![Settings gear icon](media/service-gateway-manage/icon-gear.png) > **Manage gateways**.
 
 1. Select the gateway and then select **Remove**.
 

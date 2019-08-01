@@ -1,6 +1,6 @@
 ---
 title: Adjust communication settings for the on-premises data gateway
-description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Service Bus, how to force the gateway to communicate with Service Bus by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
+description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Service Bus, how to force the gateway to communicate with Azure Service Bus by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -48,7 +48,7 @@ The following list describes FQDNs used by the gateway.
 | *.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP). |
 | *.servicebus.windows.net |443 and 9350-9354 |Listens on Service Bus Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
 | *.frontend.clouddatahub.net |443 |Deprecated and not required. This domain will be removed from the public documentation as well. |
-| *.core.windows.net |443 |Used by Power BI dataflows to write data to Azure Data Lake. |
+| *.core.windows.net |443 |Used by dataflows to write data to Azure Data Lake. |
 | login.microsoftonline.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
 | *.msftncsi.com |443 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | *.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
