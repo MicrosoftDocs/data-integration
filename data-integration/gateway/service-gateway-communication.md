@@ -30,14 +30,14 @@ If a firewall blocks outbound connections, configure the firewall to allow outbo
 
 The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports.
 
-We recommend that you whitelist in your firewall the IP addresses for your data region. You can download the [Azure datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Alternatively, you can get the list of required ports by performing the [network ports test](#network-ports-test) in the gateway app.
+We recommend that you whitelist in your firewall the IP addresses for your data region. You can download the [Azure datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) in the gateway app.
 
 The gateway communicates with Service Bus by using an IP address along with a fully qualified domain name (FQDN). If you force the gateway to communicate via HTTPS, it will strictly use FQDNs only and won't communicate by using IP addresses.
 
 > [!NOTE]
 > The Azure datacenter IP list shows IP addresses in Classless Inter-Domain Routing (CIDR) notation. An example of this notation is 10.0.0.0/24, which doesn't mean from 10.0.0.0 through 10.0.0.24. Learn more about [CIDR notation](https://whatismyipaddress.com/cidr).
 
-Here's a list of FQDNs used by the gateway.
+The following list describes FQDNs used by the gateway.
 
 | Domain names | Outbound ports | Description |
 | --- | --- | --- |
@@ -69,7 +69,7 @@ To test if the gateway has access to all required ports:
 
 When your gateway runs the network ports test, it retrieves a list of ports and servers from Service Bus and then attempts to connect to all of them. When the **Start new test** link reappears, the network ports test has finished.
 
-The results of the test are either "Completed (Succeeded)" or "Completed (Failed, see last test results)". If the test succeeded, your gateway connected to all the required ports. If the test failed, your network environment might have blocked the required ports and servers.
+The summary result of the test is either "Completed (Succeeded)" or "Completed (Failed, see last test results)". If the test succeeded, your gateway connected to all the required ports. If the test failed, your network environment might have blocked the required ports and servers.
 
 To view the results of the last completed test, select the **Open last completed test results** link. The test results open in your default text editor.
 
@@ -84,9 +84,9 @@ You can force the gateway to communicate with Service Bus by using HTTPS instead
 > [!NOTE]
 > Starting with the June 2019 release and based on recommendations from Service Bus, new installations default to HTTPS instead of TCP. This default behavior doesn't apply to updated installations.
 
-You can use the [gateway app](service-gateway-app.md) to force the gateway to adopt this behavior. In the gateway app, select **Network**, and then set **HTTPS mode** to **On**.
+You can use the [gateway app](service-gateway-app.md) to force the gateway to adopt this behavior. In the gateway app, select **Network**, and then turn on **HTTPS mode**.
 
-![Setting the HTTPS mode to On](./media/service-gateway-communication/forcing-https.png)
+![Setting the HTTPS mode](./media/service-gateway-communication/forcing-https.png)
 
 After you make this change and then select **Apply**, the gateway Windows service restarts automatically so that the change can take effect. The **Apply** button appears only when you make a change.
 
@@ -100,7 +100,8 @@ To restart the gateway Windows service from the gateway app, see [Restart a gate
 By default, the gateway uses Transport Layer Security (TLS) 1.2 to communicate with the Power BI service. To ensure all gateway traffic uses TLS 1.2, you might need to add or modify the following registry keys on the machine that runs the gateway service.
 
 ```
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
 ```
 

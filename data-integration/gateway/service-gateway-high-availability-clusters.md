@@ -1,5 +1,5 @@
 ---
-title: Manage on-premises data gateway high availability clusters and load balancing
+title: Manage on-premises data gateway high-availability clusters and load balancing
 description: You can create clusters of on-premises data gateways to provide high availability for your enterprise. In addition, you can configure your clusters to provide load balancing over multiple computers.
 author: mgblythe
 ms.author: mblythe
@@ -22,7 +22,7 @@ You can use an on-premises data gateway cluster to avoid single points of failur
 
 You can create high-availability clusters of gateway installations. The clusters help ensure that your organization can access on-premises data resources. These resources can use any cloud service, including Power BI and PowerApps. Gateway admins use such clusters to avoid single points of failure when accessing on-premises data resources.
 
-The gateway cloud service always uses the primary gateway in the cluster unless that gateway is not available. In that case, the service switches to the next available gateway in the cluster.
+The gateway cloud service always uses the primary gateway in a cluster unless that gateway is not available. In that case, the service switches to the next available gateway in the cluster.
 
 ### Manage a gateway cluster
 

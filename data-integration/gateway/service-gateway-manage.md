@@ -33,7 +33,7 @@ When you install a gateway, you are by default an admin of that gateway. You the
 ![Gateway administrators tab](media/service-gateway-manage/gateway-admin-tab.png)
 
 >[!NOTE]
->Groups without email addresses can't be added.
+>Security groups without email addresses can't be added.
 
 ## Remove or delete an on-premises data gateway
 

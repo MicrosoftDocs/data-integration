@@ -12,7 +12,7 @@ LocalizationGroup: Gateways
 ms.date: 07/15/2019
 ---
 
-# Tenant level administration for the on-premises data gateway
+# Tenant-level administration for the on-premises data gateway
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
