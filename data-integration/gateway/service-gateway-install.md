@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 # Install an on-premises data gateway
 
-[???!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 An on-premises data gateway is software that you install in an on-premises network. The gateway facilitates access to data in that network.
 
