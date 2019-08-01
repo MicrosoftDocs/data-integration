@@ -56,6 +56,9 @@ The gateway runs on the computer that you install it on, so be sure to install i
 
     ![Enter the gateway type](media/service-gateway-install/gateway-type.png)
 
+    > [!NOTE]
+    > The **On-premises data gateway (personal mode)** option can be used only with Power BI. For more information on installation, management, and use of personal gateways, see [Use personal gateways in Power BI](/power-bi/service-gateway-personal-mode).
+
 4. Select **Next**.
 
     ![Reminder before you install](media/service-gateway-install/laptop-reminder.png)
