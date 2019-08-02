@@ -1,5 +1,5 @@
 ---
-title: "Restart an on-premises gateway"
+title: "Restart an on-premises data gateway"
 description: Learn how to restart the gateway Windows service.
 author: mgblythe
 manager: kfile
@@ -14,21 +14,21 @@ ms.author: mblythe
 LocalizationGroup: Gateways
 ---
 
-# Restart an on-premises gateway
+# Restart an on-premises data gateway
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-The on-premises data gateway service can be restarted using multiple methods.
+Restart the on-premises data gateway service with any of the following methods.
 
-1. In the [on-premises data gateway app](service-gateway-app.md), select the **Service Settings** tab, then select **Restart now**.
+* In the [gateway app](service-gateway-app.md), select **Service Settings**, then select **Restart now**.
 
-    ![Select Restart now](media/service-gateway-restart/restart-gateway.png)
+    ![Restarting from the gateway app](media/service-gateway-restart/restart-gateway.png)
 
-2. You can also restart the service from the services application. Find the on-premises data gateway service and restart.
+* In the services app, select the gateway service and then restart.
 
-    ![Select Restart now](media/service-gateway-restart/service-restart.png)
+    ![Restarting from the services app](media/service-gateway-restart/service-restart.png)
 
-3. To restart the gateway from an admin command prompt, use the following commands:
+* In an admin Command Prompt window, use the following commands.
 
     `net stop PBIEgwService`
 
