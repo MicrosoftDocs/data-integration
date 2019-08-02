@@ -82,7 +82,7 @@ The test results list all the servers, ports, and IP addresses that your gateway
 You can force the gateway to communicate with Service Bus by using HTTPS instead of direct TCP.
 
 > [!NOTE]
-> Starting with the June 2019 release and based on recommendations from Service Bus, new installations default to HTTPS instead of TCP. This default behavior doesn't apply to updated installations.
+> Starting with the June 2019 gateway release and based on recommendations from Service Bus, new installations default to HTTPS instead of TCP. This default behavior doesn't apply to updated installations.
 
 You can use the [gateway app](service-gateway-app.md) to force the gateway to adopt this behavior. In the gateway app, select **Network**, and then turn on **HTTPS mode**.
 
