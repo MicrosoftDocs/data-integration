@@ -29,13 +29,13 @@ In this article, we show you how to install a standard gateway and then add anot
 Minimum requirements:
 
 * .NET Framework 4.6
-* The 64-bit version of Windows 7 or the 64-bit version of Windows Server 2008 R2
+* A 64-bit version of Windows 7 or a 64-bit version of Windows Server 2008 R2
 
 Recommended:
 
 * An 8-core CPU
 * 8 GB of memory
-* the 64-bit version of Windows Server 2012 R2 or later
+* a 64-bit version of Windows Server 2012 R2 or later
 
 Related considerations:
 
