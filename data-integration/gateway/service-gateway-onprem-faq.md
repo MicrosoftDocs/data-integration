@@ -1,6 +1,6 @@
 ---
 title: On-premises data gateway FAQ
-description: This is the on-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway.
+description: This article is the on-premises data gateway FAQ. It collects frequently asked questions into one spot for the gateway.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -16,18 +16,18 @@ LocalizationGroup: Gateways
 
 # On-premises data gateway FAQ
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+[???!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 ## General
 
 **Question:** What is the actual Windows service called?  
-**Answer:** The gateway is called On-premises data gateway service in Services.
+**Answer:** In **Services**, the gateway is called On-premises data gateway service.
 
 **Question:** What are the requirements for the gateway?  
 **Answer:** Take a look at the requirements section of the [installation article](service-gateway-install.md#requirements).
 
 **Question:** Do I need a gateway for cloud data sources like Azure SQL Database?  
-**Answer:** No. In general, the service will be able to connect to that data source without a gateway. However, for on-premises data sources, or if the data sources reside behind a firewall, or requires a VPN, or are on virtual networks, a data gateway may be needed.
+**Answer:** No. In general, a service will be able to connect to a data source without a gateway. However, a data gateway might be needed for on-premises data sources. It also might be needed if the data sources reside behind a firewall, require a VPN, or are on virtual networks.
 
 **Question:** Are there any inbound connections to the gateway from the cloud?  
 **Answer:** No. The gateway uses outbound connections to Azure Service Bus.
@@ -36,50 +36,54 @@ LocalizationGroup: Gateways
 **Answer:** See [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
 
 **Question:** Does the gateway have to be installed on the same machine as the data source?  
-**Answer:** No. The gateway will connect to the data source using the connection information that was provided. Think of the gateway as a client application in this sense. It will just need to be able to connect to the server name that was provided.
+**Answer:** No. The gateway will connect to the data source using the connection information that was provided. In this sense, think of the gateway as a client application. It will just need to connect to the server that has the provided name.
 
 **Question:** Are there any permissions prerequisites to install gateways?  
-**Answer:** There are no restrictions for installing and registering a gateway, but every cloud service could have restrictions on how gateways are used within their service based on licensing.
+**Answer:** There are no restrictions for installing and registering a gateway. But, any cloud service can have licensing restrictions on how gateways are used within its service.
 
 **Question:** What is the latency for running queries to a data source from the gateway? What is the best architecture?  
-**Answer:** We recommend that you have the gateway as close to the data source as possible to avoid network latency. If you can install the gateway on the actual data source, it will minimize the latency introduced. Consider the data centers as well. For example, if your service is making use of the West US data center, and you have SQL Server hosted in an Azure VM, you will want to have the Azure VM in West US as well. This will minimize latency and avoid egress charges on the Azure VM.
+**Answer:** We recommend that you have the gateway as close to the data source as possible to avoid network latency. If you can install the gateway on the actual data source, the introduced latency will be minimized.
+
+Consider the data centers as well. For example, if your service is making use of the West US data center and you have SQL Server hosted in an Azure VM, you will want the Azure virtual machine (VM) to be in the same data center. This configuration will minimize latency and avoid egress charges on the Azure VM.
 
 **Question:** Are there any requirements for network bandwidth?  
-**Answer:** We recommend that you have good throughput for your network connection. Every environment is different and this is also dependent on the amount of data being sent. Using ExpressRoute could help to guarantee a level of throughput between on-premises and the Azure data centers.
+**Answer:** We recommend that your network connection has good throughput. Because each environment is different, throughput depends on the amount of data being sent. Using Azure ExpressRoute could help to guarantee a minimum level of throughput between on-premises and the Azure data centers.
 
-You can use the 3rd party [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/) to help gauge what your throughput is.
+You can use a partner's [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/) to help gauge your throughput.
 
-**Question:** Can the gateway Windows service run with an Azure Active Directory account?  
-**Answer:** No. The Windows service needs to have a valid Windows account. By default it will run with the Service SID *NT SERVICE\PBIEgwService*.
+**Question:** Can the gateway Windows service run with an Azure Active Directory (Azuer AD) account?  
+**Answer:** No. The Windows service needs a valid Windows account. By default, the service will run with the service SID *NT SERVICE\PBIEgwService*.
 
 **Question:** How are results sent back to the cloud?  
-**Answer:** This is done by way of the Azure Service Bus. For more information, see [on-premises data gateway architecture](service-gateway-onprem-indepth.md).
+**Answer:** This is done by way of Azure Service Bus. For more information, see [on-premises data gateway architecture](service-gateway-onprem-indepth.md).
 
 **Question:** Where are my credentials stored?  
-**Answer:** The credentials you enter for a data source are stored encrypted in the gateway cloud service. The credentials are decrypted at the gateway on-premises.
+**Answer:** The credentials you enter for a data source are encrypted and stored in the gateway cloud service. The credentials are decrypted at the on-premises gateway.
 
 **Question:** Can I place the gateway in a perimeter network (also known as DMZ, demilitarized zone, and screened subnet)?  
-**Answer:** The gateway requires connectivity to the data source. If the data source is not accessible in your perimeter network, the gateway may not be able to connect to it. For example, your SQL Server may not be in your perimeter network. And, you cannot connect to your SQL Server from the perimeter network. If you placed the gateway in your perimeter network, it would not be able to reach the SQL Server.
+**Answer:** The gateway requires connectivity to the data source. If the data source isn't accessible in your perimeter network, the gateway might not be able to connect to it.
+
+For example, assume your computer running SQL Server isn't in your perimeter network, and you can't connect to the computer from the perimeter network. If you placed the gateway in your perimeter network, it wouldn't be able to reach the computer running SQL Server.
 
 **Question:** Is it possible to force the gateway to use HTTPS traffic with Azure Service Bus instead of TCP?  
-**Answer:** Yes. For more information, see [Force HTTPS communication with Azure Service Bus](service-gateway-communication.md#force-https-communication-with-azure-service-bus). Turning on this feature has very little impact on performance.
+**Answer:** Yes. For more information, see [Force HTTPS communication with Azure Service Bus](service-gateway-communication.md#force-https-communication-with-azure-service-bus). Turning on this feature has little impact on performance.
 
-**Question:** Do I need to whitelist the Azure Datacenter IP list? Where do I get the list?  
-**Answer:** If you are blocking outbound IP traffic, you may need to whitelist the Azure Datacenter IP list. Currently, the gateway will communicate with Azure Service Bus using the IP address in addition to the fully qualified domain name. The Azure Datacenter IP list is updated weekly. For more information, see [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
+**Question:** Do I need to whitelist the Azure datacenter IP list? Where do I get the list?  
+**Answer:** If you block outbound IP traffic, you might need to whitelist the Azure datacenter IP list. The gateway communicates with Azure Service Bus by using an IP address and a fully qualified domain name. The Azure datacenter IP list is updated weekly. For more information, see [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
 
-**Question:** Are the on-premises data gateway and the Data Management Gateway (used by Azure Machine Learning Studio and Azure Data Factory) the same thing?  
-**Answer:** No, they are two different products. To get more information about the Data Management Gateway (now called Self-hosted Integration Runtime), see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).
+**Question:** Are on-premises data gateway and Data Management Gateway, as used by Azure Machine Learning Studio and Azure Data Factory, the same thing?  
+**Answer:** No, they are two different products. To get more information about Data Management Gateway, which is now called Self-hosted Integration Runtime, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).
 
-**Question:** Can the person who sets up that gateway in the Azure Portal be different from the one who installs the gateway?  
-**Answer:** Yes. You'll have to use PowerShell to add other owners to the same gateway and these users could create the gateway on the portal. However, the tenant under which they connect to Azure Portal and the gateway should be the same.
+**Question:** Can the person who sets up the gateway in the Azure Portal be different from the one who installs the gateway?  
+**Answer:** Yes. You must use PowerShell to add other owners to the same gateway. These users can create the gateway on the portal. But, they should connect to Azure Portal and the gateway under the same the tenant.
 
-## High Availability/Disaster Recovery
+## High availability and disaster recovery
 
-**Question:** Are there any plans for enabling high availability scenarios with the gateway?  
-**Answer:** [High availability clusters of on-premises data gateways](service-gateway-high-availability-clusters.md) help with avoiding a single point of failure. Cloud services like PowerApps or Power BI use the primary node by default, but falls back to the secondary in case the primary is unavailable.
+**Question:** Are there any plans for enabling high-availability scenarios with the gateway?  
+**Answer:** [High-availability clusters of on-premises data gateways](service-gateway-high-availability-clusters.md) help avoid a single point of failure. Cloud services like PowerApps and Power BI use the primary node by default.  But, they fall back to the secondary node if the primary node is unavailable.
 
 **Question:** What options are available for disaster recovery?  
-**Answer:** You can use the recovery key to [restore](service-gateway-migrate.md) or move a gateway. When you install the gateway, supply the recovery key.
+**Answer:** When you install the gateway, you must supply a recovery key. You can use the key to [restore](service-gateway-migrate.md) or move a gateway. 
 
 **Question:** What is the benefit of the recovery key?  
 **Answer:** It provides a way to migrate, recover, take over, or add a new gateway to the cluster.
@@ -89,10 +93,10 @@ You can use the 3rd party [Azure Speed Test app](https://azurespeedtest.azureweb
 **Question:** Where are the gateway logs located?  
 **Answer:** See [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
 
-**Question:** How can I see what queries are being sent to the on-premises data source?  
-**Answer:** You can enable query tracing by turning on [Additional logging](service-gateway-performance.md#slow-performing-queries).  This will include the queries being sent. Remember to turn query tracing back off when done troubleshooting. Having query tracing enabled will cause the logs to be larger.
+**Question:** How can I see what queries are sent to the on-premises data source?  
+**Answer:** You can enable query tracing by turning on [additional logging](service-gateway-performance.md#slow-performing-queries).  The logs will then include the queries being sent. Remember to turn query tracing off when you're done troubleshooting. Having query tracing on will cause the logs to be larger.
 
-You can also look at tools your data source has for tracing queries. For example, for SQL Server and Analysis Services you can use Extended Events or SQL Profiler.
+You can also look at your data source's tools for tracing queries. For example, if you use SQL Server and SQL Server Analysis Services as data sources, you can use SQL Server Extended Events or SQL Server Profiler to trace queries.
 
 ## Administration
 
@@ -100,7 +104,7 @@ You can also look at tools your data source has for tracing queries. For example
 **Answer:** Yes. When you manage a gateway, you can go to the administrator’s tab to add additional admins. You can also have security groups as admins.
 
 **Question:** Does the gateway admin need to be an admin on the machine where the gateway is installed?  
-**Answer:** No. The gateway admin is used to manage the gateway from within the service.
+**Answer:** No. The gateway admin manages the gateway from within the service.
 
 ## Next steps
 
