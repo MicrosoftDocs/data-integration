@@ -20,7 +20,7 @@ LocalizationGroup: Gateways
 
 An on-premises data gateway is software that you install in an on-premises network. The gateway facilitates access to data in that network.
 
-As we explain in the [overview](service-gateway-onprem.md), you can install a gateway either in personal mode, which applies to Power BI only, or in standard mode. We recommend standard mode. In that mode, you can install a standalone gateway or add a gateway to a cluster for high availability.
+As we explain in the [overview](service-gateway-onprem.md), you can install a gateway either in personal mode, which applies to Power BI only, or in standard mode. We recommend standard mode. In that mode, you can install a standalone gateway or add a gateway to a cluster, which we recommend for high availability.
 
 In this article, we show you how to install a standard gateway and then add another gateway to create a cluster.
 
@@ -35,7 +35,8 @@ Recommended:
 
 * An 8-core CPU
 * 8 GB of memory
-* a 64-bit version of Windows Server 2012 R2 or later
+* A 64-bit version of Windows Server 2012 R2 or later
+* Solid state drive (SSD) storage for spooling.
 
 Related considerations:
 
@@ -60,6 +61,9 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
     ![Choosing the gateway type](media/service-gateway-install/gateway-type.png)
 
+    > [!NOTE]
+    > The **On-premises data gateway (personal mode)** option can be used only with Power BI. For more information on installation, management, and use of personal gateways, see [Use personal gateways in Power BI](/power-bi/service-gateway-personal-mode).
+
 1. Select **Next**.
 
     ![Reminder before you install](media/service-gateway-install/laptop-reminder.png)
@@ -73,7 +77,7 @@ Because the gateway runs on the computer that you install it on, be sure to inst
     ![Entering your email address](media/service-gateway-install/email-address.png)
 
     > [!NOTE]
-    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com.Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account’s User Principal Name (UPN) will match the email address.  
+    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account’s User Principal Name (UPN) will match the email address.  
 
     The gateway is associated with your Office 365 organization account. You manage gateways from within the associated service.
 
@@ -91,7 +95,7 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
     Also note that you can change the region that connects the gateway to cloud services. You should change the region to the region of your Power BI tenant or Office 365 tenant or to the Azure region closest to you. For more information, see [Set the data center region](service-gateway-data-region.md).
 
-1. Review the information in the final window. Because  this example uses the same account for Power BI, PowerApps, and Microsoft Flow, the gateway is available for all three services. Select **Close**.
+1. Review the information in the final window. Because this example uses the same account for Power BI, PowerApps, and Microsoft Flow, the gateway is available for all three services. Select **Close**.
 
     ![Gateway summary](media/service-gateway-install/summary-screen.png)
 
@@ -99,7 +103,7 @@ Now that you've installed a gateway, you can add another gateway to create a clu
 
 ## Add another gateway to create a cluster
 
-A cluster lets gateway admins avoid having a single point of failure for on-premises data access. If the primary gateway is unavailable, data requests are routed to the next available gateway.
+A cluster lets gateway admins avoid having a single point of failure for on-premises data access. If the primary gateway is unavailable, data requests are routed to the second gateway that you add, and so on.
 
 Because you can install only one standard gateway on a computer, you must install each additional gateway in the cluster on a different computer. This requirement makes sense because you want redundancy in the cluster.
 
