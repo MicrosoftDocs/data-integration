@@ -19,7 +19,7 @@ Your work environment might require that you go through a proxy to access the in
 The following post on superuser.com discusses how you can try to determine if you have a proxy on your network:
 [How do I know what proxy server I'm using? (SuperUser.com)](https://superuser.com/questions/346372/how-do-i-know-what-proxy-server-im-using).
 
-Although most gateway configuration settings can be changed using the on-premises data gateway app, proxy information is configured within a .NET configuration file. The location and file names are different, depending on the gateway you're using.
+Although most gateway configuration settings can be changed by using the on-premises data gateway app, proxy information is configured within a .NET configuration file. The location and file names are different, depending on the gateway you're using.
 
 Two main configuration files are involved with the gateway in which proxy settings can be edited:
 
