@@ -1,6 +1,6 @@
 ---
-title: Set the data center region for the on-premises data gateway
-description: This article describes how to check the data center region and how its value can be set.
+title: Set the datacenter region for the on-premises data gateway
+description: This article describes how to determine the datacenter region and how its value can be set.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -12,33 +12,36 @@ ms.date: 07/15/2019
 LocalizationGroup: Gateways 
 ---
 
-# Set the data center region for the on-premises data gateway
+# Set the datacenter region for the on-premises data gateway
 
-[???!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-During gateway installation, you can set the data center region that the on-premises data gateway uses. If you have registered for either Power BI or Office 365, by default the data center region is the region of the registered service's tenant. Otherwise, the data center region might be the Azure region closest to you.
+During installation of the on-premises data gateway, you can set the datacenter region used by the gateway.
 
-![Registering the data gateway](media/service-gateway-data-region/data-center-region.png)
+If you have registered for either Power BI or Office 365, the datacenter region is the region of the registered service's tenant. Otherwise, the datacenter region might be the Azure region closest to you.
 
-## Change the data center region
+![Gateway datacenter region](media/service-gateway-data-region/data-center-region.png)
 
-If you want to change the data center region after your gateway is installed, you can:
+## Change the datacenter region
 
-- Restore the on-premises data gateway on the current gateway machine.
-- Migrate or take over the gateway on a different machine.
+If you want to change the datacenter region after your gateway is installed, you can:
 
-![Setting the gateway data center region after installation](media/service-gateway-data-region/restore-change-region.png)
+- Restore the gateway on the current gateway machine.
+- Migrate the gateway to a different machine.
+- Take over the gateway on a different machine.
 
-## Current data center region
+![Setting the gateway datacenter region after installation](media/service-gateway-data-region/restore-change-region.png)
 
-To find the current data center region after the gateway is installed:
+## Current datacenter region
+
+To find the current datacenter region after the gateway is installed:
 
 1. Open the [on-premises data gateway app](service-gateway-app.md) and sign in to your account.
-1. In the **Status** tab, your data region is listed under **Logic Apps, Azure Analysis Services**.
+1. In the **Status** tab, your datacenter region is shown under **Logic Apps, Azure Analysis Services**.
 
-   ![Your data is stored in](media/service-gateway-data-region/gateway-data-center-region.png)
+   ![the Status tab highlighting the current datacenter region](media/service-gateway-data-region/gateway-data-center-region.png)
 
-For more information about setting the data region for your resources, [watch this video](https://guyinacube.com/2018/01/power-bi-azure-analysis-services-gateway-data-region/).
+For more information about setting the datacenter region for your resources, [watch this video](https://guyinacube.com/2018/01/power-bi-azure-analysis-services-gateway-data-region/).
 
 ## Next steps
 
