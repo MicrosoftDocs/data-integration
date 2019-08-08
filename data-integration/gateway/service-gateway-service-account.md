@@ -15,7 +15,7 @@ LocalizationGroup: Gateways
 
 # Change the on-premises data gateway service account
 
-[???!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 The on-premises data gateway is configured to use *NT SERVICE\PBIEgwService* for the Windows service sign-in credential. In the context of the machine on which you install the gateway, the account has the right of Log on as a service
 
@@ -31,11 +31,11 @@ To change the Windows service account for the on-premises data gateway:
 
     The default account for this service is *NT SERVICE\PBIEgwService*. Change this account to a domain user account within your Windows Server Active Directory domain, or use a managed service account to avoid having to change the password.
 
-1. You need the recovery key to change the service account. Select the **Change Account** button.
+1. You need the recovery key to change the service account. Select **Change Account**.
 
    ![Change account](media/service-gateway-service-account/change-account.png)
 
-1. Provide the service account and password, and then select the **Configure** button.
+1. Provide the service account and password, and then select **Configure**.
 
    ![Configure account](media/service-gateway-service-account/configure-account.png)
 
