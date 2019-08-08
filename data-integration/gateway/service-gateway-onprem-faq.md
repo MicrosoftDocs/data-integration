@@ -44,10 +44,10 @@ LocalizationGroup: Gateways
 **Question:** What is the latency for running queries from the gateway to a data source? What is the best architecture?  
 **Answer:** We recommend that you have the gateway as close to the data source as possible to avoid network latency. If you install the gateway on the actual data source, the introduced latency is minimized.
 
-Consider the Azure data centers as well. For example, if your service uses the West US data center and you have SQL Server hosted in an Azure virtual machine, you want the Azure VM to also be in West US. This configuration minimizes latency and avoids egress charges on the Azure VM.
+Consider the datacenters as well. For example, if your service uses the West US datacenter and you have SQL Server hosted in an Azure virtual machine, you want the Azure VM to also be in West US. This configuration minimizes latency and avoids egress charges on the Azure VM.
 
 **Question:** Are there any requirements for network bandwidth?  
-**Answer:** We recommend that your network connection has good throughput. But because each environment is different, throughput also depends on the amount of data being sent. Using Azure ExpressRoute can help guarantee a minimum level of throughput between on-premises and the Azure data centers.
+**Answer:** We recommend that your network connection has good throughput. But because each environment is different, throughput also depends on the amount of data being sent. Using Azure ExpressRoute can help guarantee a minimum level of throughput between on-premises and the Azure datacenters.
 
 You can use a partner's [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/) to help gauge your throughput.
 
