@@ -1,6 +1,6 @@
 ---
 title: On-premises data gateway architecture
-description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Azure Active Directory and your local Active Directory.
+description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Azure Active Directory and your on-premises Active Directory.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -64,15 +64,15 @@ Although the result looks like an email address, it's the UPN on your local doma
 
 ### Synchronize an on-premises Active Directory with Azure Active Directory
 
-You want each of your local Active Directory accounts to match an Azure AD account, because the UPN for both accounts must be the same.
+You want each of your on-premises Active Directory accounts to match an Azure AD account, because the UPN for both accounts must be the same.
 
-The cloud services know only about accounts within Azure AD. It doesn’t matter if you add an account in your local Active Directory. If the account doesn’t exist in Azure AD, it can't be used.
+The cloud services know only about accounts within Azure AD. It doesn’t matter if you add an account in your on-premises Active Directory. If the account doesn’t exist in Azure AD, it can't be used.
 
-There are different ways to match your local Active Directory accounts with Azure AD.
+There are different ways to match your on-premises Active Directory accounts with Azure AD.
 
 * Add accounts manually to Azure AD.
 
-    Create an account on the Azure portal or within the Microsoft 365 admin center. Make sure the account name matches the UPN of the local Active Directory account.
+    Create an account on the Azure portal or within the Microsoft 365 admin center. Make sure the account name matches the UPN of the on-premises Active Directory account.
 
 * Use the [Azure Active Directory Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) tool to synchronize local accounts to your Azure AD tenant.
 
