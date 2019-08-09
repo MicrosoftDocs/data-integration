@@ -31,7 +31,7 @@ To change the Windows service account for the on-premises data gateway:
 
     The default account for this service is *NT SERVICE\PBIEgwService*. Change this account to a domain user account within your Windows Server Active Directory domain, or use a managed service account to avoid having to change the password.
 
-1. You need the recovery key to change the service account. Select **Change account**.
+1. Select **Change account**. You need the recovery key to change the service account.
 
    ![Change account](media/service-gateway-service-account/change-account.png)
 
@@ -43,7 +43,7 @@ To change the Windows service account for the on-premises data gateway:
 
    ![Account sign-in](media/service-gateway-service-account/account-sign-in.png)
 
-1. On the next windows select **Migrate, restore or takeover an existing gateway**, and follow the process for [restoring](service-gateway-migrate.md) your gateway.
+1. On the next windows, select **Migrate, restore or takeover an existing gateway**, and follow the process for [restoring](service-gateway-migrate.md) your gateway.
 
 1. Once the restoration is complete, the new gateway uses the domain account.
 

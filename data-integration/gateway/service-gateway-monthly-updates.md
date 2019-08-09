@@ -18,7 +18,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-This article describes the four previous updates for the on-premises data gateways and provides links for downloading any of these versions. For the most current July 2019 release of the gateways, check out our [recent blog post](https://powerbi.microsoft.com/blog/on-premises-data-gateway-july-2019-update-is-now-available/) or download the [latest version](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
+This article describes the four previous updates for the on-premises data gateways and provides links for downloading any of these versions. For the July 2019 most current release of the gateways, check out our [recent blog post](https://powerbi.microsoft.com/blog/on-premises-data-gateway-july-2019-update-is-now-available/) or download the [latest version](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
 
 ## June 2019 update (3000.6.204)
 
