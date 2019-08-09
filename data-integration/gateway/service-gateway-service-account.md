@@ -45,7 +45,7 @@ To change the Windows service account for the on-premises data gateway:
 
 1. On the next windows, select **Migrate, restore or takeover an existing gateway**, and follow the process for [restoring](service-gateway-migrate.md) your gateway.
 
-1. Once the restoration is complete, the new gateway uses the domain account.
+1. After the restoration is complete, the new gateway uses the domain account.
 
    ![Domain account](media/service-gateway-service-account/domain-account.png)
 
