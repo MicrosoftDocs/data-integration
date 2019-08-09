@@ -67,14 +67,14 @@ The gateway runs on the computer that you install it on, so be sure to install i
 
     ![Default installation path](media/service-gateway-install/install-path.png)
 
-6. Enter the email address for your Office 356 organization account, and then select **Sign in**.
+6. Enter the email address for your Office 365 organization account, and then select **Sign in**.
 
     ![Enter your email address](media/service-gateway-install/email-address.png)
 
     > [!NOTE]
     > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, the address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure Active Directory (Azure AD). In most cases, your Azure AD account’s User Principal Name (UPN) will match the email address.  
 
-    The gateway is associated with your Office 356 organization account, and you manage gateways from within the associated service. You're now signed in to your account.
+    The gateway is associated with your Office 365 organization account, and you manage gateways from within the associated service. You're now signed in to your account.
 
 7. Select **Register a new gateway on this computer** > **Next**.
 
@@ -86,7 +86,7 @@ The gateway runs on the computer that you install it on, so be sure to install i
 
     Notice the **Add to an existing gateway cluster** option. We'll use this option in the next section of this article.
 
-    Also note that you can change the region that connects the gateway to cloud services. The region should be changed to the region of your Power BI tenant or your Office 356 tenant, or the closest Azure region to you. For more information, see [Set the data center region](service-gateway-data-region.md).
+    Also note that you can change the region that connects the gateway to cloud services. The region should be changed to the region of your Power BI tenant or your Office 365 tenant, or the closest Azure region to you. For more information, see [Set the data center region](service-gateway-data-region.md).
 
 9. Review the information in the final window. Notice that the gateway is available for Power BI, PowerApps, and Microsoft Flow, because in this example we use the same account for all three. Select **Close**.
 
@@ -102,7 +102,7 @@ To create high availability gateway clusters, you need the November 2017 or late
 
 1. Download the gateway to a different computer and install it.
 
-2. After you sign in to your Office 356 organization account, register the gateway. Select **Add to an existing cluster**. Under **Available gateway clusters**, select the first gateway you installed (the *primary gateway*), and enter the recover key for that gateway. Select **Configure**.
+2. After you sign in to your Office 365 organization account, register the gateway. Select **Add to an existing cluster**. Under **Available gateway clusters**, select the first gateway you installed (the *primary gateway*), and enter the recover key for that gateway. Select **Configure**.
 
     ![Add a gateway to a cluster](media/service-gateway-install/add-cluster.png)
 
