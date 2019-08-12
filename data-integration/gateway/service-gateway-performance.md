@@ -88,7 +88,7 @@ To monitor performance, gateway admins have traditionally depended on manually m
 
 ### Enable performance logging
 
-To enable this feature, make the following changes to the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file in the "\Program Files\On-premises data gateway" folder.
+To enable this feature, make the following changes to the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file in the *\Program Files\On-premises data gateway* folder.
 
 1. Update **QueryExecutionReportOn** to _True_ to enable additional logging for queries executed using the gateway. Enabling this option creates both the Query Execution Report and the Query Execution Aggregation Report files.
 
@@ -108,7 +108,7 @@ To enable this feature, make the following changes to the *Microsoft.PowerBI.Dat
 
 1. There are other values in the config file that you can update as needed:
 
-    - **ReportFilePath**: Determines the path where the three log files are stored. By default, this path is either "\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report" or "Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report." The path depends on the OS version. If you use a service account for the gateway other than _PBIEgwService_, replace this part of the path with the service account name.
+    - **ReportFilePath**: Determines the path where the three log files are stored. By default, this path is either *\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report* or *Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report*. The path depends on the OS version. If you use a service account for the gateway other than _PBIEgwService_, replace this part of the path with the service account name.
     - **ReportFileCount**: Determines the number of log files of each kind to retain. The default value is 10.
     - **ReportFileSizeInBytes**: Determines the size of the file to maintain. The default value is 104,857,600.
     - **QuerExecutionAggregationTimeInMinutes**: Determines the number of minutes for which the query execution information is aggregated. The default value is 5.
