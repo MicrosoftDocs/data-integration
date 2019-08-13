@@ -8,12 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 07/15/2019
 ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
+
 # On-premises data gateway FAQ
+
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 ## General
 

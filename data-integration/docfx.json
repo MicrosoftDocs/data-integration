@@ -38,8 +38,9 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/data-integration/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/data-integration",
+      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi?category_id=161724" 
     },
     "fileMetadata": {},
     "template": [],
