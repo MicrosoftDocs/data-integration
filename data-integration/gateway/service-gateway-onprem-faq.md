@@ -27,7 +27,7 @@ LocalizationGroup: Gateways
 **Answer:** Take a look at the requirements section of the [installation article](service-gateway-install.md#requirements).
 
 **Question:** Do I need a gateway for cloud data sources like Azure SQL Database?  
-**Answer:** No. In general, services can connect to cloud data sources without a gateway. But a data gateway might be needed for on-premises data sources or if the data sources are behind a firewall, require a VPN, or are on virtual networks.
+**Answer:** No. In general, services can connect to cloud data sources without a gateway. But a data gateway is needed for on-premises data sources. Also, a gateway might be needed if the data sources are behind a firewall, require a VPN, or are on virtual networks.
 
 **Question:** Are there any inbound connections to the gateway from the cloud?  
 **Answer:** No. The gateway uses outbound connections to Azure Service Bus.
@@ -49,7 +49,7 @@ Consider the datacenters as well. For example, if your service uses the West US 
 **Question:** Are there any requirements for network bandwidth?  
 **Answer:** We recommend that your network connection has good throughput. But because each environment is different, throughput also depends on the amount of data being sent. Using Azure ExpressRoute can help guarantee a minimum level of throughput between on-premises and the Azure datacenters.
 
-You can use a partner's [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/) to help gauge your throughput.
+You can use the [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/) to help gauge your throughput.
 
 **Question:** Can the gateway Windows service run with an Azure Active Directory (Azure AD) account?  
 **Answer:** No. The Windows service needs a valid Windows account. By default, the service runs with the Service security identifier (SID) *NT SERVICE\PBIEgwService*.
