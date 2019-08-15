@@ -1,5 +1,5 @@
 ---
-title: "Create and use dataflows in the Power Platform"
+title: "Create and use dataflows in the Power Platform (Preview)"
 description: Learn how to use dataflows in the Power Platform.
 author: davidiseminger
 manager: kfile
@@ -15,7 +15,7 @@ ms.custom:
 LocalizationGroup: Dataflows
 ---
 
-# Create and use dataflows in the Power Platform
+# Create and use dataflows in the Power Platform (Preview)
 
 Using dataflows with the Power Platform makes data preparation easier, and lets you reuse your data preparation work in subsequent reports, apps, and models. 
 
