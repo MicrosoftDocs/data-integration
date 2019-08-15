@@ -66,6 +66,7 @@ An astersk (*) indicates the functionality exists.
 
 For more information about specific products, see the following articles:
 
+
 Dataflows in PowerApps:
 
 * [Self-service data prep in PowerApps](https://go.microsoft.com/fwlink/?linkid=2099972)
@@ -73,8 +74,6 @@ Dataflows in PowerApps:
 * [Connect Azure Data Lake Storage Gen2 for dataflow storage](https://go.microsoft.com/fwlink/?linkid=2099973)
 * [Add data to an entity in Common Data Service](https://go.microsoft.com/fwlink/?linkid=2100075)
 * Visit the PowerApps dataflow community forum and share what you’re doing, ask questions or [submit new ideas](https://go.microsoft.com/fwlink/?linkid=2100074)
-
-
 
 Dataflows in Power BI:
 
@@ -86,6 +85,13 @@ Dataflows in Power BI:
 
 
 ## Next steps
+
+The following articles go into more detail about common usage scenarios for dataflows. 
+
+* [Using incremental refresh with dataflows](dataflows-incremental-refresh.md)
+* [Creating computed entities in dataflows](dataflows-computed-entities.md)
+* [Connect to data sources for dataflows](dataflows-data-sources.md)
+* [Link entities between dataflows](dataflows-linked-entities.md)
 
 For more information about the Common Data Model and the CDM Folder standard, read the following articles:
 
