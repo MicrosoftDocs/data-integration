@@ -1,3 +1,3 @@
 ---
-redirect_url: /data-integration/dataflows/test-create-use
+redirect_url: /data-integration/dataflows/dataflows-integration-overview
 ---

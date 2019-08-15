@@ -4,7 +4,7 @@
   items:
   - name: Power Platform dataflows
     tocHref: /data-integration/dataflows/
-    topicHref: /data-integration/dataflows/test-create-use
+    topicHref: /data-integration/dataflows/dataflows-integration-overview
   - name: On-premises data gateway
     tocHref: /data-integration/gateway/
     topicHref: /data-integration/gateway/service-gateway-onprem
