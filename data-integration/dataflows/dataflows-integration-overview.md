@@ -49,7 +49,7 @@ Most dataflow capabilities are available in both PowerApps and Power BI portals.
 
 |Dataflow capability  |PowerApps  |Power BI  |
 |---------|---------|---------|
-|Scheduled refresh     |Up to 50 per day         |Up to 48 per day         |
+|Scheduled refresh     |Up to 48 per day         |Up to 48 per day         |
 |Dataflow authoring with Power Query Online     |*         |*         |
 |Dataflow management     |in PowerApps portal         |in Power BI Portal         |
 |New connectors     |*         |*         |
