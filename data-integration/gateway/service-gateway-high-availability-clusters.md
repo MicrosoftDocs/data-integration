@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-You can use an on-premises data gateway cluster to avoid single points of failure and to load balance traffic across gateways in a cluster. To add new gateway members to a gateway cluster, see [Add another gateway to create a cluster](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster).
+You can use an on-premises data gateway cluster to avoid single points of failure and to load balance traffic across gateways in a cluster. To add new gateway members to a gateway cluster, see [Add another gateway to create a cluster](service-gateway-install.md#add-another-gateway-to-create-a-cluster).
 
 ## High-availability clusters for an on-premises data gateway
 
@@ -37,7 +37,7 @@ All requests are routed to the primary instance of a gateway cluster. If the pri
 You can choose to let traffic be distributed evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
 
     > [!NOTE]
-    >Ofline gateway members within a cluster will negatively impact performance. These members should either be removed or disabled. 
+    > Offline gateway members within a cluster will negatively impact performance. These members should either be removed or disabled. 
     
 For example, to provide load balancing from the Power BI service, select the gear icon ![A gear icon](media/service-gateway-manage/icon-gear.png) in the upper-right corner, then select **Manage gateways**. Next, select **Distribute requests across all active gateways in this cluster**.
 
