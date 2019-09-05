@@ -107,6 +107,9 @@ A cluster lets gateway admins avoid having a single point of failure for on-prem
 
 Because you can install only one standard gateway on a computer, you must install each additional gateway in the cluster on a different computer. This requirement makes sense because you want redundancy in the cluster.
 
+    > [!NOTE]
+    >Ofline gateway members within a cluster will negatively impact performance. These members should either be removed or disabled.
+
 To create high-availability gateway clusters, you need the November 2017 update or a later update to the gateway software.
 
 1. Download the gateway to a different computer and install it.
