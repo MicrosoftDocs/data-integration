@@ -42,7 +42,7 @@ Related considerations:
 
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
-* If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Azure Active Directory (Azure AD) environment as the data sources.
+* If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
 * You shouldn't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
 * If a gateway uses a wireless network, its performance might suffer.
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. You can't have more than one gateway running in the same mode on the same computer.
