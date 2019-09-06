@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateway
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 07/20/2019
 ms.author: mblythe
 
 LocalizationGroup: Gateways
@@ -42,7 +42,7 @@ Related considerations:
 
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
-* If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Azure Active Directory (Azure AD) environment as the data sources.
+* If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
 * You shouldn't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
 * If a gateway uses a wireless network, its performance might suffer.
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. You can't have more than one gateway running in the same mode on the same computer.
@@ -106,6 +106,9 @@ Now that you've installed a gateway, you can add another gateway to create a clu
 A cluster lets gateway admins avoid having a single point of failure for on-premises data access. If the primary gateway is unavailable, data requests are routed to the second gateway that you add, and so on.
 
 Because you can install only one standard gateway on a computer, you must install each additional gateway in the cluster on a different computer. This requirement makes sense because you want redundancy in the cluster.
+
+    > [!NOTE]
+    > Offline gateway members within a cluster will negatively impact performance. These members should either be removed or disabled.
 
 To create high-availability gateway clusters, you need the November 2017 update or a later update to the gateway software.
 
