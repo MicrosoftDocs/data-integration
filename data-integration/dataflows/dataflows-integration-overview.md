@@ -66,15 +66,6 @@ An astersk (*) indicates the functionality exists.
 
 For more information about specific products, see the following articles:
 
-
-Dataflows in PowerApps:
-
-* [Self-service data prep in PowerApps](https://go.microsoft.com/fwlink/?linkid=2099972)
-* [Creating and using dataflows in PowerApps](https://go.microsoft.com/fwlink/?linkid=2100076)
-* [Connect Azure Data Lake Storage Gen2 for dataflow storage](https://go.microsoft.com/fwlink/?linkid=2099973)
-* [Add data to an entity in Common Data Service](https://go.microsoft.com/fwlink/?linkid=2100075)
-* Visit the PowerApps dataflow community forum and share what you’re doing, ask questions or [submit new ideas](https://go.microsoft.com/fwlink/?linkid=2100074)
-
 Dataflows in Power BI:
 
 * [Self-service data prep in Power BI](https://docs.microsoft.com/power-bi/service-dataflows-overview)
