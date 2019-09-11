@@ -93,7 +93,7 @@ To find the event logs for the *on-premises data gateway service*, follow these 
 
 1. On the computer with the gateway installation, open the **Event Viewer**.
 
-1. Expand **Event Viewer (Local)** > **Applications and Services Logs**.
+1. Expand **Event Viewer** > **Applications and Services Logs**.
 
 1. Select **On-premises data gateway service**.
 
