@@ -89,7 +89,13 @@ This file is saved to the ODGLogs folder on your Windows desktop in .zip format.
 
 ### Event logs
 
-The **on-premises data gateway service** event logs are found under **Application and Services Logs**.
+To find the event logs for the *on-premises data gateway service*, follow these steps: 
+
+1. On the computer with the gateway installation, open the **Event Viewer**.
+
+1. Expand **Event Viewer (Local)** > **Applications and Services Logs**.
+
+1. Select **On-premises data gateway service**.
 
 ![On-premises data gateway event logs](media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png)
 
