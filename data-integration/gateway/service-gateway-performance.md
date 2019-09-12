@@ -16,68 +16,6 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-## Monitor performance
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_DJ30VNk4?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-### Performance counters
-
-There are a number of performance counters that you can use to gauge the activities for the gateway. It can be helpful to understand these counters, especially if you have a large load of activity and need to make a new gateway. These counters don't reflect how long something takes.
-
-You can access these counters through the Windows Performance Monitor tool.
-
-![Access counters through the Windows Performance Monitor tool](media/service-gateway-performance/gateway-perfmon.png)
-
-There are general groupings of these counters.
-
-| Counter type | Description |
-| --- | --- |
-| ADO.NET |This counter type is used for any DirectQuery connection. |
-| ADOMD |This counter type is used for SQL Server 2014 Analysis Services and earlier. |
-| OLEDB |Certain data sources use this counter type. Examples include SAP HANA and SQL Server 2016 Analysis Services or later. |
-| Mashup |This counter type includes any imported data source. If you're scheduling refresh or doing an on-demand refresh, it goes through the Mashup Engine. |
-
-Here's a list of the available performance counters.
-
-| Counter | Description |
-| --- | --- |
-| # of ADO.NET open connection executed / sec |Number of ADO.NET open connection actions executed per second (succeeded or failed). |
-| # of ADO.NET open connection failed / sec |Number of ADO.NET open connections actions failed per second. |
-| # of ADO.NET queries executed / sec |Number of ADO.NET queries executed per second (succeeded or failed). |
-| # of ADO.NET queries failed / sec |Number of ADO.NET failed queries executed per second. |
-| # of ADOMD open connection executed / sec |Number of ADOMD open connection actions executed per second (succeeded or failed). |
-| # of ADOMD open connection failed / sec |Number of ADOMD open connection actions failed per second. |
-| # of ADOMD queries executed / sec |Number of ADOMD queries executed per second (succeeded or failed). |
-| # of ADOMD queries failed / sec |Number of ADOMD failed queries executed per second. |
-| # of all open connection executed / sec |Number of open connection actions executed per second (succeeded or failed). |
-| # of all open connection failed / sec |Number of failed open connection actions executed per second. |
-| # of all queries executed / sec |Number of queries executed per second (succeeded or failed). |
-| # of items in the ADO.NET connection pool |Number of items in the ADO.NET connection pool. |
-| # of items in the OLEDB connection pool |Number of items in the OLEDB connection pool. |
-| # of items in the Service Bus pool |Number of items in the Azure Service Bus pool. |
-| # of Mashup open connections executed / sec |Number of Mashup open connection actions executed per second (succeeded or failed). |
-| # of Mashup open connections failed / sec |Number of Mashup open connection actions failed per second. |
-| # of Mashup queries executed / sec |Number of Mashup queries executed per second (succeeded or failed). |
-| # of Mashup queries failed / sec |Number of Mashup failed queries executed per second. |
-| # of OLEDB multiple result set queries failed / sec |Number of multiple result sets of OLEDB failed queries executed per second. |
-| # of OLEDB multiple result sets of queries executed / sec |Number of OLEDB multiple result sets of queries executed per second (succeeded or failed). |
-| # of OLEDB open connection executed / sec |Number of OLEDB open connection actions executed per second (succeeded or failed). |
-| # of OLEDB open connection failed / sec |Number of OLEDB open connection actions failed per second. |
-| # of OLEDB queries executed / sec |Number of OLEDB multiple result sets of queries executed per second (succeeded or failed). |
-| # of OLEDB queries failed / sec |Number of OLEDB multiple result sets of failed queries executed per second. |
-| # of OLEDB single result set queries executed / sec |Number of OLEDB single result set queries executed per second (succeeded or failed). |
-| # of queries failed / sec |Number of failed queries executed per second. |
-| # of single result set OLEDB queries failed / sec |Number of single result set OLEDB failed queries executed per second. |
-
-## Slow-performing queries
-
-Long-running queries might require additional modification on your data source or further optimization of the query itself. This could be either for direct database queries, like Power BI DirectQuery, PowerApps, or Azure Logic Apps, or for Power BI refreshes.
-
-By default, the gateway performs basic logging. If you're investigating slow-performing queries and need more information about query connection details, you can temporarily enable **Additional logging** to gather additional log information. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
-
-![Turn on additional logging](media/service-gateway-performance/additional-logging.png)
-
-Enabling this setting likely will increase the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable additional logging. We don't recommend leaving this setting enabled during normal gateway usage.
 
 ## Gateway performance monitoring (public preview)
 
@@ -191,6 +129,17 @@ Now, you can visualize the data that's in the log files.
 1. Optionally, save this file as a PBIX, and publish it to your service for automatic refreshes.
 
 You also can customize this template file to suit your needs. For more information on Power BI templates, see this [Microsoft Power BI blog post](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+
+## Slow-performing queries
+
+Long-running queries might require additional modification on your data source or further optimization of the query itself. This could be either for direct database queries, like Power BI DirectQuery, PowerApps, or Azure Logic Apps, or for Power BI refreshes.
+
+By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the above feature,  you can temporarily enable **Additional logging** to gather additional log information. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
+
+![Turn on additional logging](media/service-gateway-performance/additional-logging.png)
+
+Enabling this setting likely will increase the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable additional logging. We don't recommend leaving this setting enabled during normal gateway usage.
+
 
 ## Next steps
 
