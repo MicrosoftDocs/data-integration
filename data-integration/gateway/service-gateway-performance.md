@@ -132,9 +132,9 @@ You also can customize this template file to suit your needs. For more informati
 
 ## Slow-performing queries
 
-Long-running queries might require additional modification on your data source or further optimization of the query itself. This could be either for direct database queries, like Power BI DirectQuery, PowerApps, or Azure Logic Apps, or for Power BI refreshes.
+Long-running queries might require additional modification on your data source or further optimization of the query itself. This could be either for Power BI refreshes or for direct database queries, like Power BI DirectQuery, PowerApps, or Azure Logic Apps.
 
-By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the above feature,  you can temporarily enable **Additional logging** to gather additional log information. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
+By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the performance monitoring feature,  you can temporarily enable **Additional logging** to gather additional log information. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
 
 ![Turn on additional logging](media/service-gateway-performance/additional-logging.png)
 
