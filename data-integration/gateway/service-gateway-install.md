@@ -40,6 +40,7 @@ Recommended:
 
 Related considerations:
 
+* Gateways aren't supported on Server Core isntallations.
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
 * If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
