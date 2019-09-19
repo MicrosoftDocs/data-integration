@@ -40,6 +40,8 @@
         href: gateway/service-gateway-communication.md
       - name: "Configure the gateway log file"
         href: gateway/service-gateway-log-files.md
+      - name: Adjust performance based on CPU
+        href: gateway/service-gateway-performance-cpu.md
     - name: "Manage gateways"
       items:
       - name: "Manage an on-premises data gateway"
