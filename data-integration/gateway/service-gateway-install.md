@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateway
 ms.topic: conceptual
-ms.date: 07/20/2019
+ms.date: 09/19/2019
 ms.author: mblythe
 
 LocalizationGroup: Gateways
@@ -40,7 +40,7 @@ Recommended:
 
 Related considerations:
 
-* Gateways aren't supported on Server Core isntallations.
+* Gateways aren't supported on Server Core installations.
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
 * If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
