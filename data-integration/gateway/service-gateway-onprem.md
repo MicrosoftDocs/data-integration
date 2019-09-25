@@ -45,6 +45,11 @@ There are four main steps for using a gateway.
 1. [Add gateway admins](service-gateway-manage.md) who can also manage and administer other network requirements.
 1. [Troubleshoot](service-gateway-tshoot.md) the gateway in case of errors.
 
+## Considerations
+
+- Logic Apps, PowerApps, and Microsoft Flow support write operations through the gateway, including inserts and updates. These write operations are limited to a 2 MB payload.
+- For information about installation considerations, see [Related considerations](service-gateway-install.md#related-considerations).
+
 ## Next steps
 
 * [Install the on-premises data gateway](service-gateway-install.md)

@@ -26,19 +26,19 @@ In this article, we show you how to install a standard gateway and then add anot
 
 ## Requirements
 
-Minimum requirements:
+### Minimum requirements
 
 * .NET Framework 4.6
 * A 64-bit version of Windows 7 or a 64-bit version of Windows Server 2008 R2
 
-Recommended:
+### Recommended
 
 * An 8-core CPU
 * 8 GB of memory
 * A 64-bit version of Windows Server 2012 R2 or later
 * Solid state drive (SSD) storage for spooling.
 
-Related considerations:
+### Related considerations
 
 * Gateways aren't supported on Server Core installations.
 * The user installing the gateway must be the admin of the gateway.
