@@ -1,4 +1,5 @@
 ---
+
 title: "Install an on-premises data gateway"
 description: Learn how to install a gateway so you can connect to on-premises data.
 author: mgblythe
@@ -28,7 +29,8 @@ In this article, we show you how to install a standard gateway and then add anot
 
 ### Minimum requirements
 
-* .NET Framework 4.6
+* .NET Framework 4.6 (Gateway release August 2019 and earlier)
+* .NET Framework 4.7.2 (Gateway release September 2019 and later)
 * A 64-bit version of Windows 7 or a 64-bit version of Windows Server 2008 R2
 
 ### Recommended
