@@ -62,6 +62,7 @@ To enable this feature, make the following changes to the *Microsoft.PowerBI.Dat
 When you turn this feature on, three new log files are created:
 
 - The Query Execution Report
+- The Query Start Report
 - The Query Execution Aggregation Report
 - The System Counter Aggregation Report
 
@@ -80,6 +81,19 @@ The Query Execution Report contains detailed query execution information. The fo
 |**DataProcessingDuration** (ms) |Duration for data processing activities like spooling, data retrieval, compression, and data processing. |
 |**Success** |Indicates if the query succeeded or failed. |
 |**ErrorMessage** |If the query failed, indicates the error message. |
+| | |
+
+The Query Start Report contains the query and the query start time. The following attributes are captured.
+
+|Attribute |Description |
+| ---- | ---- |
+|**GatewayObjectId** |Unique identifier for the gateway. |
+|**RequestId** |Unique identifier for a gateway request. It could be the same for multiple queries. |
+|**DataSource** |Contains both the data source type and data source. |
+|**QueryTrackingId** |Unique identifier for a query. | 
+|**QueryExecutionStartTimeUTC** |Time when the query execution started. |
+|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Microsoft Flow. |
+|**QueryText** |the complete query. |
 | | |
 
 The Query Execution Aggregation Report contains query information aggregated to a time interval by **GatewayObjectId**, **DataSource**, **Success**, and **QueryType**. The default value is 5 minutes, but you can adjust it. The following attributes are captured.
