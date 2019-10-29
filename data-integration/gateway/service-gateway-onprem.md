@@ -47,9 +47,10 @@ There are four main steps for using a gateway.
 
 ## Considerations
 
-- Logic Apps, PowerApps, and Microsoft Flow support write operations through the gateway, including inserts and updates. These write operations are limited to a 2 MB payload.
-- Logic Apps, PowerApps, and Microsoft Flow support read operations through the On-premises data gateway. These read operations have a 2 MB request limit and an 8 MB compressed data response limit.
-- While using the On-premises data gateway with Power BI in Direct Query Mode, there is a 16 MB uncompressed data response limit.
+- Logic Apps, PowerApps, and Microsoft Flow support both read and write operations through the gateway:
+  - Write operations have a 2-MB payload limit.
+  - Read operations have a 2-MB request limit and an 8-MB compressed data response limit.
+- While using the gateway with Power BI in Direct Query Mode, there is a 16-MB uncompressed data response limit.
 - For information about installation considerations, see [Related considerations](service-gateway-install.md#related-considerations).
 
 ## Next steps
