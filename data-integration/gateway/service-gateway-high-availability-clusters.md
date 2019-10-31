@@ -43,6 +43,20 @@ For example, to provide load balancing from the Power BI service, select the gea
 
 ![Gateway cluster settings](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
 
+## Load balance based on CPU and Memory throttling
+
+As mentioned earlier, the selection of a gateway during load balancing is random. Gateway admins can however, now, throttle resources of each gateway member to make sure either a gateway member or the entire gateway cluster isn't overloaded causing system failures. 
+
+If a gateway cluster with load balancing enabled receives a request from one of the cloud services(like Power BI), it randomly selects a gateway member. If this member is already at or over the throttling limit set for CPU or memory, another member within the cluster is selected. If all members within the cluster are in the same state, the request would fail.    
+
+To enable this feature, gateway admins would update the following settings in  the Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config file available in the Program Files\On-premises data gateway\ folder.
+
+1. CPUUtilizationPercentageThreshold - This configuration allows gateway admins set a throttling limit for CPU. The permissible range for this configuration is between 0 to 100. A value of 0, which is the default, would indicate that this configuration is disabled. 
+
+2. MemoryUtilizationPercentageThreshold - This configuration allows gateway admins set a throttling limit for memory. The permissible range for this configuration is between 0 to 100. A value of 0, which is the default, would indicate that this configuration is disabled. 
+
+3. ResourceUtilizationAggregateionPeriodInMinutes - This configuration is the time in minutes for which CPU and memory system counters of the gateway machine would be aggregated to be compared against the respective threshold limits set using configurations mentioned above. The default value for this configuration in 5.
+
 ## Next steps
 
 * [PowerShell support for gateway clusters](service-gateway-powershell-support.md)
