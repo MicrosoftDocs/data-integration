@@ -25,24 +25,22 @@ PowerShell scripts are available in the the [PowerShell gallery](https://www.pow
 
 ## Run the PowerShell commands
 
-To install these cmdlets, run the following cmd in an elevated PowerShell session:
+To install these cmdlets, run the following command in an elevated PowerShell session:
 
-    ```powershell
-    Install-Module -Name OnPremisesDataGatewayHAMgmt
-     ```
-    
-The entre list of cmdlets can be found using the following cmd
+```powershell
+Install-Module -Name OnPremisesDataGatewayHAMgmt
+```
+The entire list of cmdlets can be found using the following command:
 
-    ```powershell
-    Get-Command -Module OnPremisesDataGateway*
-    ```
-    
-Examples and descriptions are included in the cmdlets and you can access them using:
+```powershell
+Get-Command -Module OnPremisesDataGateway*
+```
 
-    ```powershell
-    get-help <cmdlet-name>
-    ```
+Examples and descriptions are included in the cmdlets and you can access them using the following command:
 
+```powershell
+get-help <cmdlet-name>
+```
 Now you can use the commands in the following table to manage your gateway clusters.
 
 | **Command** | **Description** | **Parameters** |
