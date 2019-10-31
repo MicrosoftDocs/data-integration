@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 10/31/2019
 LocalizationGroup: Gateways 
 ---
 
@@ -42,6 +42,20 @@ You can choose to let traffic be distributed evenly across gateways in a cluster
 For example, to provide load balancing from the Power BI service, select the gear icon ![A gear icon](media/service-gateway-manage/icon-gear.png) in the upper-right corner, then select **Manage gateways**. Next, select **Distribute requests across all active gateways in this cluster**.
 
 ![Gateway cluster settings](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
+
+## Load balance based on CPU and Memory throttling
+
+As mentioned earlier, the selection of a gateway during load balancing is random. Gateway admins can, however, now throttle the resources of each gateway member. With throttling, you can make sure either a gateway member or the entire gateway cluster isn't overloaded, causing system failures. 
+
+If a gateway cluster with load balancing enabled receives a request from one of the cloud services (like Power BI), it randomly selects a gateway member. If this member is already at or over the throttling limit set for CPU or memory, another member within the cluster is selected. If all members within the cluster are in the same state, the request fails.    
+
+To enable this feature, a gateway admin should update the following settings in  the _Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_ file available in the _Program Files\On-premises data gateway\_ folder.
+
+- **CPUUtilizationPercentageThreshold** - This configuration allows gateway admins to set a throttling limit for CPU. The permissible range for this configuration is 0 to 100. A value of 0, which is the default, indicates that this configuration is disabled. 
+
+- **MemoryUtilizationPercentageThreshold** - This configuration allows gateway admins to set a throttling limit for memory. The permissible range for this configuration is 0 to 100. A value of 0, which is the default, indicates that this configuration is disabled. 
+
+- **ResourceUtilizationAggregateionPeriodInMinutes** - This configuration sets the time in minutes for which CPU and memory system counters of the gateway machine are aggregated. The aggregated values are then compared against the respective threshold limits set for **CPUUtilizationPercentageThreshold** and **MemoryUtilizationPercentageThreshold**. The default value for this configuration is 5.
 
 ## Next steps
 
