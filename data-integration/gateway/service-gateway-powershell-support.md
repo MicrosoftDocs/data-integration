@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-PowerShell scripts are available in the on-premises data gateway installation folder. By default, that folder is *C:\Program Files\On-premises data gateway*. You must be using PowerShell version 5 or newer for these scripts to work correctly. You can use the PowerShell scripts to perform the following operations:
+PowerShell scripts are available in the the [PowerShell gallery](https://www.powershellgallery.com/packages/OnPremisesDataGatewayHAMgmt/3000.15.18/). You must be using PowerShell version 5 or newer for these scripts to work correctly. You can use the PowerShell scripts to perform the following operations:
 
 - Retrieve the list of gateway clusters available for a user.
 - Retrieve the list of gateway instances registered in a cluster and their online or offline status.
@@ -25,22 +25,23 @@ PowerShell scripts are available in the on-premises data gateway installation fo
 
 ## Run the PowerShell commands
 
-To run the on-premises data gateway PowerShell commands, follow these steps.
+To install these cmdlets, run the following command in an elevated PowerShell session:
 
-1. Open a PowerShell command window as an administrator.
-2. Run the following one-time PowerShell command. The presumption is that you've never run PowerShell commands on the current machine.
+```powershell
+Install-Module -Name OnPremisesDataGatewayHAMgmt
+```
+The entire list of cmdlets can be found using the following command:
 
-    ```powershell
-    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
-    ```
+```powershell
+Get-Command -Module OnPremisesDataGateway*
+```
 
-3. Navigate to the on-premises data gateway installation folder in the PowerShell window, and import the necessary module by using the following command:
+Examples and descriptions are included in the cmdlets and you can access them using the following command:
 
-    ```powershell
-    Import-Module .\OnPremisesDataGatewayHAMgmt.psm1
-    ```
-
-After these steps are finished, use the commands in the following table to manage your gateway clusters.
+```powershell
+get-help <cmdlet-name>
+```
+Now you can use the commands in the following table to manage your gateway clusters.
 
 | **Command** | **Description** | **Parameters** |
 | --- | --- | --- |
