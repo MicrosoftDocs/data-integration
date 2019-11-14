@@ -17,11 +17,11 @@ LocalizationGroup: Dataflows
 
 # Create and use dataflows in the Power Platform (Preview)
 
-Using dataflows with the Power Platform makes data preparation easier, and lets you reuse your data preparation work in subsequent reports, apps, and models. 
+Using dataflows with Power Platform makes data preparation easier, and lets you reuse your data preparation work in subsequent reports, apps, and models. 
 
 In the world of ever-expanding data, data preparation can be difficult and expensive, consuming as much as 60%-80% of the time and cost for a typical analytics project. Such projects can require wrangling fragmented and incomplete data, complex system integration, data with structural inconsistency, and a high skillset barrier. 
 
-To make data preparation easier, and to help you get more value out of your data, Power Query and Power Platform dataflows were created.
+To make data preparation easier and to help you get more value out of your data, Power Query and Power Platform dataflows were created.
 
 ![Linked entities in Power BI](media/dataflows-linked-entities/linked-entities-03.png)
 
