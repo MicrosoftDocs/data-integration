@@ -76,7 +76,7 @@ The Query Execution Report contains detailed query execution information. The fo
 |**QueryTrackingId** |Unique identifier for a query. | 
 |**QueryExecutionEndTimeUTC** |Time when the query execution completed. |
 |**QueryExecutionDuration** (ms) |Duration for a query execution. |
-|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Microsoft Flow. |
+|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Power Automate. |
 |**DataProcessingEndTimeUTC** |Time when data processing activities like spooling, data retrieval, compression, and data processing completed. |
 |**DataProcessingDuration** (ms) |Duration for data processing activities like spooling, data retrieval, compression, and data processing. |
 |**Success** |Indicates if the query succeeded or failed. |
@@ -92,7 +92,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**DataSource** |Contains both the data source type and data source. |
 |**QueryTrackingId** |Unique identifier for a query. | 
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
-|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Microsoft Flow. |
+|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
 | | |
 
@@ -108,7 +108,7 @@ The Query Execution Aggregation Report contains query information aggregated to 
 |**AverageQueryExecutionDuration** (ms) |Average query execution time for the aggregation time window. |
 |**MaxQueryExecutionDuration** (ms) |Maximum query execution time for the aggregation time window. |
 |**MinQueryExecutionDuration** (ms) |Minimum query execution time for the aggregation time window. |
-|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Microsoft Flow. |
+|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Power Automate. |
 |**AverageDataProcessingDuration** (ms) |Average time for data processing activities like spooling, data retrieval, compression, and data processing for the aggregation time window. |
 |**MaxDataProcessingDuration** (ms) |Maximum time for data processing activities like spooling, data retrieval, compression, and data processing for the aggregation time window. |
 |**MinDataProcessingDuration** (ms) |Minimum time for data processing activities like spooling, data retrieval, compression, and data processing for the aggregation time window. |
