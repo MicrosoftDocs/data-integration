@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 11/15/2019
 ms.author: mblythe
 
 LocalizationGroup: Gateways
@@ -18,7 +18,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-This article describes the four previous updates for the on-premises data gateways and provides links for downloading any of these versions. For the most current release of the gateways (October 2019), check out our [recent blog post](https://powerbi.microsoft.com/blog/on-premises-data-gateway-November-2019-update-is-now-available/) or download the latest versions:
+This article describes the four previous updates for the on-premises data gateways and provides links for downloading any of these versions. For the most current release of the gateways (November 2019), check out our [recent blog post](https://powerbi.microsoft.com/blog/on-premises-data-gateway-November-2019-update-is-now-available/) or download the latest versions:
 
 - Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall.exe)
 - Download the [latest on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode).exe)
