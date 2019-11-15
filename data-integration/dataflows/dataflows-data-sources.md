@@ -19,7 +19,7 @@ With Power Platform dataflows, you can connect to many different data sources to
 
 This article lists the many available data sources for creating or adding to dataflows, and describes how to create those dataflows using these data sources.
 
-For an overview of how to create and use dataflows, see [creating and using dataflows in Power BI](https://docs.microsoft.com/power-bi/service-dataflows-create-use).
+For an overview of how to create and use dataflows, see [Creating and using dataflows in Power BI](https://docs.microsoft.com/power-bi/service-dataflows-create-use).
 
 ## Create a dataflow entity from a data source
 
@@ -99,9 +99,9 @@ The **Other** category includes the following available data connections for dat
 * Blank Query
 
 
-## Connecting to a data source
+## Connect to a data source
 
-To connect to a data source, select the data source. We'll use one example to show how the process works, but each data connection for dataflows is similar in process. Different connectors may require specific credentials or other information, but the flow is similar. In our example, you see in the following image that **Common Data Service for Apps** is selected from the **Online services** data connection category.
+To connect to a data source, select the data source. This section uses one example to show how the process works, but each data connection for dataflows is similar in process. Different connectors might require specific credentials or other information, but the flow is similar. In our example, you see in the following image that **Common Data Service for Apps** is selected from the **Online services** data connection category.
 
 ![Select Common Data Service for Apps](media/dataflows-data-sources/dataflows-data-sources-05.png)
 
@@ -111,7 +111,7 @@ A connection window for the selected data connection is displayed. If credential
 
 Once the Server URL or resource connection information is provided, select **Sign in** to enter the credentials to use for the data access, then select **Next**.
 
-**Power Query Online** initiates and establishes the connection to the data source, and then presents the available tables from that data source in the **Navigator** window, shown in the following image.
+**Power Query Online** initiates and establishes the connection to the data source, and then presents the available tables from that data source in the **Navigator** window, as shown in the following image.
 
 ![Navigator window shows tables in the data source](media/dataflows-data-sources/dataflows-data-sources-07.png)
 
