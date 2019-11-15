@@ -1,6 +1,6 @@
 ---
-title: Link entities between dataflows in Power BI
-description: Learn how to link entities in dataflows in Power BI
+title: Link entities between dataflows
+description: Learn how to link entities in dataflows
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -17,7 +17,7 @@ LocalizationGroup: Data from files
 
 With dataflows in the Power Platform, you can have a single organizational data storage source where business analysts can prep and manage their data once, and then reuse it between different analytics apps in the organization. 
 
-When you link entities between dataflows, you can reuse entities that have already been ingested, cleansed and transformed by other dataflows owned by others without the need to maintain that data. The linked entities simply point to the entities in other dataflows, and do *not* copy or duplicate the data.
+When you link entities between dataflows, you can reuse entities that have already been ingested, cleansed, and transformed by other dataflows owned by others without the need to maintain that data. The linked entities simply point to the entities in other dataflows, and do *not* copy or duplicate the data.
 
 Linked entities are **read only**. If you want to create transformations for a linked entity, you must create a new computed entity with a reference to the linked entity.
 
@@ -29,7 +29,7 @@ Linked entity availability depends on whether you're using dataflows in Power BI
 
 Linked entities require a [Power BI Premium](https://docs.microsoft.com/power-bi/service-premium-what-is) subscription to refresh. Linked entities are available in any dataflow on a workspace that is hosted on Power BI Premium capacity. There are no limitations on the source dataflow.
 
-Linked entities only work properly in new Power BI workspaces. You can learn more about [new Power BI workspaces](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). All linked dataflows must be located in new workspaces to work properly.
+Linked entities only work properly in new Power BI workspaces. To learn more about new Power BI workspaces, see [Create the new workspaces in Power BI](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). All linked dataflows must be located in new workspaces to work properly.
 
 > [!NOTE]
 > Entities differ based on whether they’re standard entities or computed entities. Standard entities (often simply referred to as entities) query an external data source, such as a SQL database. Computed entities require Premium capacity on Power BI and run their transformations on data that’s already in Power BI storage. 
@@ -78,7 +78,7 @@ Refresh for links from entities in different workspaces behave like an external 
 
 #### Links in the same workspace
 
-When refresh of the data for a source dataflow occurs, that event automatically triggers a refresh process for dependent entities in all destination dataflows in the same workspace, including any calculated entities based on them. All other entities in the destination dataflow are refreshed according to dataflow schedule. Entities that depend on more than one source update their data whenever any of their sources updates successfully.
+When refresh of the data for a source dataflow occurs, that event automatically triggers a refresh process for dependent entities in all destination dataflows in the same workspace, including any calculated entities based on them. All other entities in the destination dataflow are refreshed according to the dataflow schedule. Entities that depend on more than one source update their data whenever any of their sources updates successfully.
 
 It's useful to note that the entire refresh process commits at once. Because of this, if the destination dataflow refresh fails to refresh, the source dataflow will fail its refresh as well.
 
@@ -94,10 +94,10 @@ When creating a Power BI report that includes data based on a dataflow, users ca
 
 There are a few limitations to keep in mind when working with linked entities:
 
-* There is a maximum of five referencing hops
-* Cyclic dependencies of linked entities are not allowed
-* The dataflow must reside in a [new Power BI workspace](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces), or a PowerApps environment
-* A linked entity can't be joined with a regular entity that gets its data from an on-premises data source
+* There's a maximum of five referencing hops.
+* Cyclic dependencies of linked entities are not allowed.
+* The dataflow must reside in a [new Power BI workspace](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces), or a PowerApps environment.
+* A linked entity can't be joined with a regular entity that gets its data from an on-premises data source.
 
 
 ## Next Steps
