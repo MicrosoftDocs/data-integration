@@ -18,7 +18,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-The on-premises data gateway acts as a bridge. It provides quick and secure data transfer between on-premises data, which is data that isn't in the cloud, and several Microsoft cloud services. These services include Power BI, PowerApps, Microsoft Flow, Azure Analysis Services, and Azure Logic Apps.
+The on-premises data gateway acts as a bridge. It provides quick and secure data transfer between on-premises data, which is data that isn't in the cloud, and several Microsoft cloud services. These services include Power BI, PowerApps, Power Automate, Azure Analysis Services, and Azure Logic Apps.
 
 By using a gateway, organizations can keep databases and other data sources on their on-premises networks while securely using that on-premises data in cloud services.
 
@@ -47,7 +47,7 @@ There are four main steps for using a gateway.
 
 ## Considerations
 
-- Logic Apps, PowerApps, and Microsoft Flow support both read and write operations through the gateway:
+- Logic Apps, PowerApps, and Power Automate support both read and write operations through the gateway:
   - Write operations have a 2-MB payload limit.
   - Read operations have a 2-MB request limit and an 8-MB compressed data response limit.
 - While using the gateway with Power BI in Direct Query Mode, there is a 16-MB uncompressed data response limit.
