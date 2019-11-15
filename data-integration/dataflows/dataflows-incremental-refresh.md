@@ -159,7 +159,7 @@ Incremental refresh in Power Platform dataflows is only supported in dataflows w
 
 This article described incremental refresh for dataflows. Here are some more articles that might be useful.
 
-* [Self-service data prep in Power BI](https://docs.microsoft.com/power-bi/service-dataflows-overview)
+* [Self-service data prep in Power BI](dataflows-integration-overview)
 * [Creating computed entities in dataflows](dataflows-computed-entities.md)
 * [Connect to data sources for dataflows](dataflows-data-sources.md)
 * [Link entities between dataflows](dataflows-linked-entities.md)
