@@ -147,8 +147,9 @@ The next refresh operation, with *Run Date 1/16/2017*, takes the opportunity to 
 
 Dataflow incremental refresh and dataset incremental refresh are designed to work in tandem. It's acceptable and supported to have an incrementally refreshing entity in a dataflow, fully loaded into a dataset, or a fully loaded entity in dataflow incrementally loaded to a dataset. 
 
-Both approaches according to your specified definitions in the refresh settings.
-You can read more about incremental refresh in [incremental refresh in Power BI Premium](https://docs.microsoft.com/power-bi/service-premium-incremental-refresh).
+Both approaches work according to your specified definitions in the refresh settings.
+
+You can read more about incremental refresh in [Incremental refresh in Power BI Premium](https://docs.microsoft.com/power-bi/service-premium-incremental-refresh).
 
 ## Considerations and limitations
 
