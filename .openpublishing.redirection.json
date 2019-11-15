@@ -1,0 +1,19 @@
+{
+  "redirections": [
+    {
+      "source_path": "data-integration/dataflows/index.md",
+      "redirect_url": "/data-integration/dataflows/dataflows-integration-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "data-integration/gateway/index.md",
+      "redirect_url": "/data-integration/gateway/service-gateway-onprem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "data-integration/index.md",
+      "redirect_url": "/data-integration/dataflows/dataflows-integration-overview",
+      "redirect_document_id": false
+    }
+  ]
+}
