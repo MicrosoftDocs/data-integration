@@ -6,8 +6,7 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 
-ms.service: powerbi
-ms.subservice: powerbi-gateway
+ms.technology: on-premises-data-gateway
 ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: mblythe

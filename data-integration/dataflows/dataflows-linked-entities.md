@@ -5,8 +5,7 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
-ms.service: powerbi
-ms.subservice: powerbi-service
+ms.service: dataflows
 ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: davidi

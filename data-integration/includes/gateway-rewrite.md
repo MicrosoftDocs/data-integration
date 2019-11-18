@@ -4,8 +4,7 @@ description: include file
 services: powerbi
 author: mgblythe
  
-ms.service: powerbi
-ms.subservice: powerbi-gateways
+ms.technology: on-premises-data-gateway
 ms.topic: include
 ms.date: 07/15/2019
 ms.author: mblythe
