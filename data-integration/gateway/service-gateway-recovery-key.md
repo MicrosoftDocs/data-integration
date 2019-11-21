@@ -46,9 +46,9 @@ Use the following steps to change the recovery key.
 
     After you've created the new key, the app shows that there is now a secondary or _legacy_ recovery key. The gateway maintains both keys on the machine where it's installed, so connections that use the legacy recovery key do not fail. If you want to delete the legacy key, see [Delete the legacy recovery key](#delete-the-legacy-recovery-key).
 
-    ![Legacy recovery key](media/ service-gateway-recovery-key/legacy-recovery-key.png)
+    ![Legacy recovery key](media/service-gateway-recovery-key/legacy-recovery-key.png)
 
-1. If you have a gateway cluster with more than one member, perform an [uninstall and recovery](https://docs.microsoft.com/data-integration/gateway/service-gateway-migrate) for each gateway member.  The recovery process will ask for both the old and the new key.
+1. If you have a gateway cluster with more than one member, perform an [uninstall and recovery](service-gateway-migrate.md) for each gateway member.  The recovery process will ask for both the old and the new key.
 
 1. If you use the gateway with services other than Power BI, edit each connection to trigger encryption with the new key.
 
@@ -56,7 +56,7 @@ Use the following steps to change the recovery key.
 
 After you've created a new recovery key, you can delete the legacy recovery key. Before deleting the legacy key, make sure all connections using the gateway have had their credentials encrypted with the new key.
 
-1. Open the [on-premises data gateway app](https://docs.microsoft.com/data-integration/gateway/service-gateway-app) and sign in. If you have multiple gateway member in a cluster, you must sign into the primary member.
+1. Open the [on-premises data gateway app](service-gateway-app.md) and sign in. If you have multiple gateway member in a cluster, you must sign into the primary member.
 
 1. On the **Recovery Keys** tab, select **Delete legacy recovery key**.
 
