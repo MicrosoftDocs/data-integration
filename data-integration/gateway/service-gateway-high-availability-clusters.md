@@ -5,8 +5,7 @@ author: mgblythe
 ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
-ms.service: powerbi
-ms.subservice: powerbi-gateways
+ms.technology: on-premises-data-gateway
 ms.topic: conceptual
 ms.date: 10/31/2019
 LocalizationGroup: Gateways 
