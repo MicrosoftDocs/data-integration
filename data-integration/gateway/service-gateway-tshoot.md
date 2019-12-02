@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot the on-premises data gateway
 description: This article provides ways for you to troubleshoot issues you might have with the on-premises data gateway. It provides potential workarounds to known issues and tools to assist you.
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 manager: kfile
 ms.reviewer: ''
 ms.technology: on-premises-data-gateway
