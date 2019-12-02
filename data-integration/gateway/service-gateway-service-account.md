@@ -1,13 +1,13 @@
 ---
 title: Change the on-premises data gateway service account
 description: Provides information on how to change the Windows account for the on-premises data gateway service.
-author: mgblythe
+author: arthiriyer
 manager: kfile
 ms.reviewer: ''
 ms.technology: on-premises-data-gateway
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: mblythe
+ms.author: arthii
 LocalizationGroup: Gateways
 
 ---

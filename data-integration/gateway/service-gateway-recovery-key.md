@@ -1,14 +1,14 @@
 ---
 title: "Change the recovery key for an on-premises data gateway"
 description: You can change the recovery key, which the gateway uses to create additional keys that encrypt data source and connection credentials.
-author: mgblythe
+author: arthiriyer
 manager: kfile
 ms.reviewer: ''
 
 ms.technology: on-premises-data-gateway
 ms.topic: conceptual
 ms.date: 11/21/2019
-ms.author: mblythe
+ms.author: arthii
 
 
 LocalizationGroup: Gateways
@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 # Change the recovery key for an on-premises data gateway
 
-Starting with the November 2019 version of the on-premises data gateway, you can change the recovery key that you specified during gateway installation.
+Starting with the November 2019 version of the on-premises data gateway (version 3000.14.39), you can change the recovery key that you specified during gateway installation.
 
 The gateway uses the recovery key to create additional keys that encrypt data source and connection credentials. For more information about encryption, see _When working with the on-premises data gateway, how are recovery keys used and where are they stored?_ in the [Power BI security whitepaper](/power-bi/whitepaper-powerbi-security#power-bi-security-questions-and-answers).
 

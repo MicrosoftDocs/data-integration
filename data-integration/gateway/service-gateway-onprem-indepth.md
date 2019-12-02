@@ -1,14 +1,14 @@
 ---
 title: On-premises data gateway architecture
 description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Azure Active Directory and your on-premises Active Directory.
-author: mgblythe
+author: arthiriyer
 manager: kfile
 ms.reviewer: ''
 
 ms.technology: on-premises-data-gateway
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Gateways
 ---
