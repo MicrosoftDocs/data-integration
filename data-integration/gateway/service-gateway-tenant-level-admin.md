@@ -1,8 +1,8 @@
 ---
 title: Tenant level administration for the on-premises data gateway
 description: Describes how an admin can manage all on-premises data gateways within their tenant.
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 manager: kfile
 ms.reviewer: ''
 ms.technology: on-premises-data-gateway

@@ -1,14 +1,14 @@
 ---
 title: "Previous monthly updates to the on-premises data gateways"
 description: Learn about and download previous versions of the on-premises data gateways.
-author: mgblythe
+author: arthiriyer
 manager: kfile
 ms.reviewer: ''
 
 ms.technology: on-premises-data-gateway
 ms.topic: conceptual
 ms.date: 11/15/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Gateways
 ---
