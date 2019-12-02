@@ -1,14 +1,14 @@
 ---
 title: Creating computed entities in dataflows
 description: Learn how to create computed entities in dataflows
-author: davidiseminger
+author: bensack
 manager: kfile
 ms.reviewer: ''
 
 ms.service: dataflows
 ms.topic: conceptual
 ms.date: 08/15/2019
-ms.author: davidi
+ms.author: bensack
 
 LocalizationGroup: Data from files
 ---
