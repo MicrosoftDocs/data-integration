@@ -1,14 +1,14 @@
 ---
 title: Using incremental refresh with dataflows
 description: Learn how to configure incremental refresh for dataflows
-author: davidiseminger
+author: bensack
 manager: kfile
 ms.reviewer: ''
 
 ms.service: dataflows
 ms.topic: conceptual
 ms.date: 08/15/2019
-ms.author: davidi
+ms.author: bensack
 
 LocalizationGroup: Data from files
 ---
