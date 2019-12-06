@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "data-integration/gateway/service-gateway-tenant-level-admin.md",
+      "redirect_url": "/power-platform/admin/onpremises-data-gateway-management",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "data-integration/dataflows/index.md",
       "redirect_url": "/data-integration/dataflows/dataflows-integration-overview",
       "redirect_document_id": false
