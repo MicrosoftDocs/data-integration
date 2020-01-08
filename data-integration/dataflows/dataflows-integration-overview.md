@@ -69,7 +69,7 @@ Dataflows in PowerApps:
 * [Creating and using dataflows in PowerApps](https://go.microsoft.com/fwlink/?linkid=2100076)
 * [Connect Azure Data Lake Storage Gen2 for dataflow storage](https://go.microsoft.com/fwlink/?linkid=2099973)
 * [Add data to an entity in Common Data Service](https://go.microsoft.com/fwlink/?linkid=2100075)
-* Visit the PowerApps dataflow community forum and share what you’re doing, ask questions, or [submit new ideas](https://go.microsoft.com/fwlink/?linkid=2100074)
+* Visit the PowerApps [dataflow community](https://go.microsoft.com/fwlink/?linkid=2099971) and share what you’re doing, ask questions, or [submit new ideas](https://go.microsoft.com/fwlink/?linkid=2100074)
 
 Dataflows in Power BI:
 
