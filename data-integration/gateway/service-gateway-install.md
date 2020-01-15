@@ -30,7 +30,7 @@ In this article, we show you how to install a standard gateway and then add anot
 
 * .NET Framework 4.6 (Gateway release August 2019 and earlier)
 * .NET Framework 4.7.2 (Gateway release September 2019 and later)
-* A 64-bit version of Windows 7 or a 64-bit version of Windows Server 2008 R2
+* A 64-bit version of Windows 8 or a 64-bit version of Windows Server 2012 R2
 
 ### Recommended
 
