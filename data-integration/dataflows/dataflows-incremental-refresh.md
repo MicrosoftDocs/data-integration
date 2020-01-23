@@ -152,7 +152,7 @@ You can read more about incremental refresh in [Incremental refresh in Power BI 
 
 ## Considerations and limitations
 
-Incremental refresh in Power Platform dataflows is only supported in dataflows with an Azure Data Lake Gen2 storage account, not in dataflows with CDS as the destination. 
+Incremental refresh in Power Platform dataflows is only supported in dataflows with an Azure Data Lake Gen2 storage account, not in dataflows with Common Data Service as the destination. 
 
 ## Next Steps
 
@@ -171,5 +171,5 @@ For more information about Power Query and scheduled refresh, you can read these
 * [Configuring scheduled refresh](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model - overview ](https://docs.microsoft.com/common-data-model/)
 
