@@ -75,7 +75,7 @@ The Query Execution Report contains detailed query execution information. The fo
 |**QueryTrackingId** |Unique identifier for a query. | 
 |**QueryExecutionEndTimeUTC** |Time when the query execution completed. |
 |**QueryExecutionDuration** (ms) |Duration for a query execution. |
-|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Power Automate. |
+|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**DataProcessingEndTimeUTC** |Time when data processing activities like spooling, data retrieval, compression, and data processing completed. |
 |**DataProcessingDuration** (ms) |Duration for data processing activities like spooling, data retrieval, compression, and data processing. |
 |**Success** |Indicates if the query succeeded or failed. |
@@ -91,7 +91,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**DataSource** |Contains both the data source type and data source. |
 |**QueryTrackingId** |Unique identifier for a query. | 
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
-|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Power Automate. |
+|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
 | | |
 
@@ -107,7 +107,7 @@ The Query Execution Aggregation Report contains query information aggregated to 
 |**AverageQueryExecutionDuration** (ms) |Average query execution time for the aggregation time window. |
 |**MaxQueryExecutionDuration** (ms) |Maximum query execution time for the aggregation time window. |
 |**MinQueryExecutionDuration** (ms) |Minimum query execution time for the aggregation time window. |
-|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from PowerApps and Power Automate. |
+|**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**AverageDataProcessingDuration** (ms) |Average time for data processing activities like spooling, data retrieval, compression, and data processing for the aggregation time window. |
 |**MaxDataProcessingDuration** (ms) |Maximum time for data processing activities like spooling, data retrieval, compression, and data processing for the aggregation time window. |
 |**MinDataProcessingDuration** (ms) |Minimum time for data processing activities like spooling, data retrieval, compression, and data processing for the aggregation time window. |
@@ -145,7 +145,7 @@ You also can customize this template file to suit your needs. For more informati
 
 ## Slow-performing queries
 
-Long-running queries might require additional modification on your data source or further optimization of the query itself. This could be either for Power BI refreshes or for direct database queries, like Power BI DirectQuery, PowerApps, or Azure Logic Apps.
+Long-running queries might require additional modification on your data source or further optimization of the query itself. This could be either for Power BI refreshes or for direct database queries, like Power BI DirectQuery, Power Apps, or Azure Logic Apps.
 
 By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the performance monitoring feature,  you can temporarily enable **Additional logging** to gather additional log information. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
 

@@ -70,7 +70,7 @@ It's important to note that if you remove the workspace from Power BI Premium ca
 
 When working with dataflows specifically created in an organization's Azure Data Lake Storage Gen2 account, linked entities and computed entities only work properly when the entities reside in the same storage account. For more information, see [Connect Azure Data Lake Storage Gen2 for dataflow storage)](https://docs.microsoft.com/power-bi/service-dataflows-connect-azure-data-lake-storage-gen2).
 
-Linked entities are only available for dataflows created in Power BI and PowerApps portals. As a best practice, when doing computations on data joined by on-premises and cloud data, create a new entity to perform such computations. This provides a better experience than using an existing entity for computations, such as an entity that is also querying data from both sources and doing in-lake transformations.
+Linked entities are only available for dataflows created in Power BI and Power Apps portals. As a best practice, when doing computations on data joined by on-premises and cloud data, create a new entity to perform such computations. This provides a better experience than using an existing entity for computations, such as an entity that is also querying data from both sources and doing in-lake transformations.
 
 ## Next Steps
 
