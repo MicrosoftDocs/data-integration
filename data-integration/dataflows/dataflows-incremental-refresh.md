@@ -20,13 +20,13 @@ With dataflows, you can bring large amounts of data into Power BI or your organi
 * **Refresh is more reliable**&mdash;for example, it's not necessary to maintain long-running connections to volatile source systems.
 * **Resource consumption is reduced**&mdash;less data to refresh reduces overall consumption of memory and other resources.
 
-Incremental refresh is available in dataflows created in Power BI, and dataflows created in the PowerApps portals. This article shows screens from Power BI, but these instructions apply to dataflows created in Power BI or in the PowerApps maker portal. 
+Incremental refresh is available in dataflows created in Power BI, and dataflows created in the Power Apps portals. This article shows screens from Power BI, but these instructions apply to dataflows created in Power BI or in the Power Apps maker portal. 
 
 ![Incremental refresh for dataflows](media/dataflows-incremental-refresh/dataflows-incremental-refresh-03.png)
 
-Using incremental refresh in dataflows created in Power BI requires that the workspace where the dataflow resides be in [Premium capacity](https://docs.microsoft.com/power-bi/service-premium-what-is) to run. Incremental refresh in the PowerApps portal requires PowerApps Plan 2.
+Using incremental refresh in dataflows created in Power BI requires that the workspace where the dataflow resides be in [Premium capacity](https://docs.microsoft.com/power-bi/service-premium-what-is) to run. Incremental refresh in the Power Apps portal requires Power Apps Plan 2.
 
-In either Power BI or PowerApps, using incremental refresh requires the source data ingested into the dataflow to have a *datetime* field on which incremental refresh can filter. 
+In either Power BI or Power Apps, using incremental refresh requires the source data ingested into the dataflow to have a *datetime* field on which incremental refresh can filter. 
 
 ## Configuring incremental refresh for dataflows
 
@@ -152,7 +152,7 @@ You can read more about incremental refresh in [Incremental refresh in Power BI 
 
 ## Considerations and limitations
 
-Incremental refresh in Power Platform dataflows is only supported in dataflows with an Azure Data Lake Gen2 storage account, not in dataflows with CDS as the destination. 
+Incremental refresh in Power Platform dataflows is only supported in dataflows with an Azure Data Lake Gen2 storage account, not in dataflows with Common Data Service as the destination. 
 
 ## Next Steps
 
@@ -171,5 +171,5 @@ For more information about Power Query and scheduled refresh, you can read these
 * [Configuring scheduled refresh](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model - overview ](https://docs.microsoft.com/common-data-model/)
 

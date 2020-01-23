@@ -77,7 +77,7 @@ For example, assume your SQL Server computer isn't in your perimeter network. Al
 ## High availability and disaster recovery
 
 **Question:** Are there any plans for enabling high-availability scenarios with the gateway?  
-**Answer:** To help avoid a single point of failure, you can [set up on-premises data gateways as clusters](service-gateway-high-availability-clusters.md) for high availability. By default, cloud services such as PowerApps and Power BI use the primary gateway and fall back to the secondary gateway if the primary is unavailable.
+**Answer:** To help avoid a single point of failure, you can [set up on-premises data gateways as clusters](service-gateway-high-availability-clusters.md) for high availability. By default, cloud services such as Power Apps and Power BI use the primary gateway and fall back to the secondary gateway if the primary is unavailable.
 
 **Question:** What options are available for disaster recovery?  
 **Answer:** When you install the gateway, you supply a recovery key. You can use the key to [restore or migrate](service-gateway-migrate.md) a gateway.
