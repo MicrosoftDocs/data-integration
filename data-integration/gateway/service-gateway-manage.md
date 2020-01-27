@@ -36,7 +36,7 @@ When you install a gateway, you are by default an admin of that gateway. You the
 
 ## Remove or delete an on-premises data gateway
 
-Depending on the service you're using you can either remove or delete a gateway. In Power BI you remove a gateway, but in PowerApps and Power Automate, you delete a gateway.
+Depending on the service you're using you can either remove or delete a gateway. In Power BI you remove a gateway, but in Power Apps and Power Automate, you delete a gateway.
 
 But, be aware that removing a gateway in Power BI deletes all the data sources under it. In turn, deleting the Power BI data sources causes errors in Power BI dashboards and reports that rely on those data sources.
 

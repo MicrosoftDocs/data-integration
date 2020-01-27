@@ -19,7 +19,7 @@ You can use an on-premises data gateway cluster to avoid single points of failur
 
 ## High-availability clusters for an on-premises data gateway
 
-You can create high-availability clusters of gateway installations. The clusters help ensure that your organization can access on-premises data resources from cloud services like Power BI and PowerApps. Gateway admins use such clusters to avoid single points of failure when accessing on-premises data resources.
+You can create high-availability clusters of gateway installations. The clusters help ensure that your organization can access on-premises data resources from cloud services like Power BI and Power Apps. Gateway admins use such clusters to avoid single points of failure when accessing on-premises data resources.
 
 The gateway cloud service always uses the primary gateway in a cluster unless that gateway is not available. In that case, the service switches to the next available gateway in the cluster.
 
