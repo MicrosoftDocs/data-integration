@@ -22,8 +22,8 @@ The on-premises data gateway has settings that control resource usage on the mac
 | `MashupDQPoolContainerMaxWorkingSetInMB` | Maximum working set size for Power BI Direct Query. |
 | `MashupTestConnectionPoolContainerMaxInstanceCount` | Maximum container count for test connections. |
 | `MashupTestConnectionPoolContainerMaxWorkingSetInMB` | Maximum working set size for test connections. |
-| `MashupAzureConnectorsCachingPoolContainerMaxCount` | Maximum container count for LogicApps, PowerApps, and Power Automate. |
-| `MashupAzureConnectorsCachingPoolContainerMaxWorkingSetInMB` | Maximum working set size for LogicApps, PowerApps, and Power Automate. |
+| `MashupAzureConnectorsCachingPoolContainerMaxCount` | Maximum container count for LogicApps, Power Apps, and Power Automate. |
+| `MashupAzureConnectorsCachingPoolContainerMaxWorkingSetInMB` | Maximum working set size for LogicApps, Power Apps, and Power Automate. |
 | | |
 
 Most queries use _mashup containers_ to execute. So the number of mashup containers determines the number of queries that can be executed in parallel. A _working set_ defines the memory allocated to each container. These settings are available in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_.

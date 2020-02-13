@@ -22,7 +22,7 @@ Linked entities are **read only**. If you want to create transformations for a l
 
 ## Linked entity availability
 
-Linked entity availability depends on whether you're using dataflows in Power BI or PowerApps. The following sections describe the details for each.
+Linked entity availability depends on whether you're using dataflows in Power BI or Power Apps. The following sections describe the details for each.
 
 ### Linked entities in Power BI
 
@@ -35,9 +35,9 @@ Linked entities only work properly in new Power BI workspaces. To learn more abo
 >
 >If your dataflow isn’t in a Premium capacity workspace, you can still reference a single query or combine two or more queries as long as the transformations aren’t defined as in-storage transformations. Such references are considered standard entities. To do so, turn off the **Enable load** option for the referenced queries to prevent the data from being materialized and from being ingested into storage. From there, you can reference those **Enable load = false** queries, and set **Enable load** to **On** only for the resulted queries that you want to materialize.
 
-### Linked entities in PowerApps
+### Linked entities in Power Apps
 
-Linked entities are available in both PowerApps Plan 1 and Plan 2.
+Linked entities are available in both Power Apps Plan 1 and Plan 2.
 
 ## How to link entities between dataflows
 
@@ -65,7 +65,7 @@ You can also view the source dataflow from the dataflow settings of your linked 
 
 ## Refresh logic of linked entities
 
-The refresh logic of linked entities differs slightly based on whether you're using Power BI or PowerApps, as described in the following sections.
+The refresh logic of linked entities differs slightly based on whether you're using Power BI or Power Apps, as described in the following sections.
 
 ### Refresh logic in Power BI
 
@@ -81,9 +81,9 @@ When refresh of the data for a source dataflow occurs, that event automatically 
 
 It's useful to note that the entire refresh process commits at once. Because of this, if the destination dataflow refresh fails to refresh, the source dataflow will fail its refresh as well.
 
-### Refresh logic in PowerApps
+### Refresh logic in Power Apps
 
-The refresh logic of linked entities in PowerApps behave like an external data source. When the dataflow refreshes, it takes the latest data for the entity from the source dataflow. If the source dataflow refreshes, it doesn’t automatically impact the data in the destination dataflow.
+The refresh logic of linked entities in Power Apps behave like an external data source. When the dataflow refreshes, it takes the latest data for the entity from the source dataflow. If the source dataflow refreshes, it doesn’t automatically impact the data in the destination dataflow.
 
 ## Permissions when viewing reports from dataflows
 
@@ -95,7 +95,7 @@ There are a few limitations to keep in mind when working with linked entities:
 
 * There's a maximum of five referencing hops.
 * Cyclic dependencies of linked entities are not allowed.
-* The dataflow must reside in a [new Power BI workspace](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces), or a PowerApps environment.
+* The dataflow must reside in a [new Power BI workspace](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces), or a Power Apps environment.
 * A linked entity can't be joined with a regular entity that gets its data from an on-premises data source.
 
 

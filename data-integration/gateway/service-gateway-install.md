@@ -30,7 +30,7 @@ In this article, we show you how to install a standard gateway and then add anot
 
 * .NET Framework 4.6 (Gateway release August 2019 and earlier)
 * .NET Framework 4.7.2 (Gateway release September 2019 and later)
-* A 64-bit version of Windows 7 or a 64-bit version of Windows Server 2008 R2
+* A 64-bit version of Windows 8 or a 64-bit version of Windows Server 2012 R2
 
 ### Recommended
 
@@ -97,7 +97,7 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
     Also note that you can change the region that connects the gateway to cloud services. You should change the region to the region of your Power BI tenant or Office 365 tenant or to the Azure region closest to you. For more information, see [Set the data center region](service-gateway-data-region.md).
 
-1. Review the information in the final window. Because this example uses the same account for Power BI, PowerApps, and Power Automate, the gateway is available for all three services. Select **Close**.
+1. Review the information in the final window. Because this example uses the same account for Power BI, Power Apps, and Power Automate, the gateway is available for all three services. Select **Close**.
 
     ![Gateway summary](media/service-gateway-install/summary-screen.png)
 
