@@ -16,8 +16,6 @@ LocalizationGroup: Gateways
 
 # Use the on-premises data gateway app
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
 To open the on-premises data gateway app:
 
 1. On the machine where the gateway is running, enter **gateway** in Windows search.
