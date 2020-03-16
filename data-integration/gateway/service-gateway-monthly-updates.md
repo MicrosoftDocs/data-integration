@@ -14,8 +14,6 @@ LocalizationGroup: Gateways
 
 # Previous monthly updates to the on-premises data gateways
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
 This article describes the four previous updates for the on-premises data gateways and provides links for downloading any of these versions. For the most current release of the gateways (February 2020), check out our [recent blog post](https://powerbi.microsoft.com/blog/on-premises-data-gateway-February-2020-update-is-now-available/) or download the latest versions:
 
 - Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall.exe)
