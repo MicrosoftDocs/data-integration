@@ -57,15 +57,15 @@ There are four main steps for using a gateway.
 
 This document contains general information about the on-premises data gateway that applies to all services that the gateway supports. You can obtain more on-premises data gateway information for specific products by visiting the following product-specific sites.
 
-* [On-premises data gateway in-depth - Power BI](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem-indepth/)
+* [On-premises data gateway in-depth - Power BI](https://docs.microsoft.com/power-bi/service-gateway-onprem-indepth/)
 
-* [Using an on-premises data gateway in Power Platform Dataflows](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/using-dataflows-with-on-premises-data)
+* [Using an on-premises data gateway in Power Platform Dataflows](https://docs.microsoft.com/powerapps/maker/common-data-service/using-dataflows-with-on-premises-data)
 
-* [Manage connections in Power Automate](https://docs.microsoft.com/en-us/power-automate/add-manage-connections)
+* [Manage connections in Power Automate](https://docs.microsoft.com/power-automate/add-manage-connections)
 
-* [Connect to on-premises data sources from Azure Logic Apps](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-connection)
+* [Connect to on-premises data sources from Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-gateway-connection)
 
-* [Connecting to on-premises data sources with On-premises data gateway - Azure Analysis Services](https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-gateway)
+* [Connecting to on-premises data sources with On-premises data gateway - Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)
 
 ## Next steps
 
