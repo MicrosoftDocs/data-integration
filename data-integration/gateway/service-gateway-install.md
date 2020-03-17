@@ -16,13 +16,11 @@ LocalizationGroup: Gateways
 
 # Install an on-premises data gateway
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
 An on-premises data gateway is software that you install in an on-premises network. The gateway facilitates access to data in that network.
 
-As we explain in the [overview](service-gateway-onprem.md), you can install a gateway either in personal mode, which applies to Power BI only, or in standard mode. We recommend standard mode. In that mode, you can install a standalone gateway or add a gateway to a cluster, which we recommend for high availability.
+As we explain in the [overview](service-gateway-onprem.md#types-of-gateways), you can install a gateway either in personal mode, which applies to Power BI only, or in standard mode. We recommend standard mode. In that mode, you can install a standalone gateway or add a gateway to a cluster, which we recommend for high availability.
 
-In this article, we show you how to install a standard gateway and then add another gateway to create a cluster.
+In this article, we show you how to install a standard gateway, how to add another gateway to create a cluster, and how to install a personal mode gateway.
 
 ## Requirements
 
@@ -49,28 +47,13 @@ In this article, we show you how to install a standard gateway and then add anot
 * If a gateway uses a wireless network, its performance might suffer.
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. You can't have more than one gateway running in the same mode on the same computer.
 
-## Download and install a gateway
+## Download and install a standard gateway
 
 Because the gateway runs on the computer that you install it on, be sure to install it on a computer that's always turned on. For better performance and reliability, we recommend that the computer is on a wired network rather than a wireless one.
 
-1. [Download the gateway](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
+1. [Download the standard gateway](https://go.microsoft.com/fwlink/?LinkId=2116849&clcid=0x409).
 
-1. In the gateway installer, select **Next**.
-
-    ![Starting gateway installation](media/service-gateway-install/gateway-installer.png)
-
-1. Select **On-premises data gateway (recommended)** > **Next**.
-
-    ![Choosing the gateway type](media/service-gateway-install/gateway-type.png)
-
-    > [!NOTE]
-    > The **On-premises data gateway (personal mode)** option can be used only with Power BI. For more information on installation, management, and use of personal gateways, see [Use personal gateways in Power BI](/power-bi/service-gateway-personal-mode).
-
-1. Select **Next**.
-
-    ![Reminder before you install](media/service-gateway-install/laptop-reminder.png)
-
-1. Keep the default installation path, accept the terms of use, and then select **Install**.
+1. In the gateway installer, keep the default installation path, accept the terms of use, and then select **Install**.
 
     ![Installing to the default installation path](media/service-gateway-install/install-path.png)
 
@@ -97,8 +80,8 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
     Also note that you can change the region that connects the gateway to cloud services. For more information, see [Set the data center region](service-gateway-data-region.md).
 
-> [!NOTE]
-> For soverign clouds, we currently only support installing gateways in the default PowerBI region of your tenant. The region picker on the installer is only supported for Public cloud.
+    > [!NOTE]
+    > For soverign clouds, we currently only support installing gateways in the default PowerBI region of your tenant. The region picker on the installer is only supported for Public cloud.
 
 1. Review the information in the final window. Because this example uses the same account for Power BI, Power Apps, and Power Automate, the gateway is available for all three services. Select **Close**.
 
@@ -122,6 +105,27 @@ To create high-availability gateway clusters, you need the November 2017 update 
 1. After you sign in to your Office 365 organization account, register the gateway. Select **Add to an existing cluster**. In the **Available gateway clusters** list, select the *primary gateway*, which is the first gateway you installed. Enter the recovery key for that gateway. Select **Configure**.
 
     ![Adding a gateway to a cluster](media/service-gateway-install/add-cluster.png)
+
+## Download and install a personal mode gateway
+
+1. [Download the personal mode gateway](https://go.microsoft.com/fwlink/?LinkId=2116848&clcid=0x409).
+
+1. In the gateway installer, enter the default installation path, accept the terms of use, and then select **Install**.
+
+    ![Installing personal mode to the installation path](media/service-gateway-install/install-path-personal.png)
+
+1. Enter the email address for your Office 365 organization account, and then select **Sign in**.
+
+    ![Entering your personal mode email address](media/service-gateway-install/email-address-personal.png)
+
+    > [!NOTE]
+    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account’s User Principal Name (UPN) will match the email address.  
+
+    The gateway is associated with your Office 365 organization account. You manage gateways from within the associated service.
+
+1.  You're now signed in to your account. Select **Close**.
+
+    ![Gateway summary](media/service-gateway-install/summary-screen-personal.png)
 
 ## Next steps
 

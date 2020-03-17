@@ -13,9 +13,6 @@ LocalizationGroup: Gateways
 
 # Monitor and optimize on-premises data gateway performance
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
-
 ## Gateway performance monitoring (public preview)
 
 To monitor performance, gateway admins have traditionally depended on manually monitoring performance counters through the Windows Performance Monitor tool. We now offer additional query logging and a [Gateway Performance PBI template file](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayPerformanceMonitoring.pbit) to visualize the results. This feature provides new insights into gateway usage. You can use it to troubleshoot slow-performing queries.
