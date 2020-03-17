@@ -14,8 +14,6 @@ LocalizationGroup: Gateways
 
 # Update an on-premises data gateway
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
 We aim to release an update every month for on-premises data gateways. Each of these updates includes new features along with the latest Mashup Engine.
 
 > [!NOTE]
@@ -25,7 +23,7 @@ We aim to release an update every month for on-premises data gateways. Each of t
 
 To update a gateway:
 
-1. Download the [latest gateway](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409) and run the installation program. If the version you're trying to install isn't newer than the version already installed, you'll receive one of the following error messages.
+1. Download the latest [standard mode gateway](https://go.microsoft.com/fwlink/?LinkId=2116849&clcid=0x409) or [personal mode gateway](https://go.microsoft.com/fwlink/?LinkId=2116848&clcid=0x409) and run the installation program. If the version you're trying to install isn't newer than the version already installed, you'll receive one of the following error messages.
 
    ![The update version is the same as the installed version](media/service-gateway-update/gateway-same-version.png)
 

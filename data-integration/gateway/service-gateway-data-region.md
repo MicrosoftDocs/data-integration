@@ -13,8 +13,6 @@ LocalizationGroup: Gateways
 
 # Set the datacenter region for the on-premises data gateway
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
 During installation of the on-premises data gateway, you can set the datacenter region used by the gateway.
 
 If you have registered for either Power BI or Office 365, the datacenter region by default is the region of the registered service's tenant. Otherwise, the datacenter region might be the Azure region closest to you.
