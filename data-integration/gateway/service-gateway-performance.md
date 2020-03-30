@@ -45,13 +45,13 @@ To enable this feature, make the following changes to the *Microsoft.PowerBI.Dat
     - **ReportFilePath**: Determines the path where the three log files are stored. By default, this path is either *\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report* or *\Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report*. The path depends on the OS version. If you use a service account for the gateway other than _PBIEgwService_, replace this part of the path with the service account name.
     - **ReportFileCount**: Determines the number of log files of each kind to retain. The default value is 10.
     - **ReportFileSizeInBytes**: Determines the size of the file to maintain. The default value is 104,857,600.
-    - **QuerExecutionAggregationTimeInMinutes**: Determines the number of minutes for which the query execution information is aggregated. The default value is 5.
+    - **QueryExecutionAggregationTimeInMinutes**: Determines the number of minutes for which the query execution information is aggregated. The default value is 5.
     - **SystemCounterAggregationTimeInMinutes**: Determines the number of minutes for which the system counter is aggregated. The default value is 5.
 
 1. After you make the changes to the config file, restart the gateway for these config values to take effect. You now see the report files being generated in the location that you specified for **ReportFilePath**.
 
     > [!NOTE]
-    > It can take up to 10 minutes plus the amount of time set for **QuerExecutionAggregationTimeInMinutes** in the config file until files start to show up in the folder.
+    > It can take up to 10 minutes plus the amount of time set for **QueryExecutionAggregationTimeInMinutes** in the config file until files start to show up in the folder.
 
 ### Understand performance logs
 
