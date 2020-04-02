@@ -22,7 +22,7 @@ This article discusses some common issues when you use the on-premises data gate
 
 ## Update to the latest version
 
-Issues can occur when the gateway version is out of date. It's a good general practice to make sure you're using the latest version. If you haven't updated the gateway for a month or longer, you might want to [install the latest version of the gateway](service-gateway-update.md). Then see if you can reproduce the issue.
+Issues can occur when the gateway version is out of date. It's a good general practice to make sure you're using the latest version. If you haven't updated the gateway for three months or longer, you might want to [install the latest version of the gateway](service-gateway-update.md). Then see if you can reproduce the issue.
 
 ### Inconsistent versions between gateway members in a cluster
 
