@@ -69,7 +69,7 @@ The Query Execution Report contains detailed query execution information. The fo
 |**GatewayObjectId** |Unique identifier for the gateway. |
 |**RequestId** |Unique identifier for a gateway request. It could be the same for multiple queries. |
 |**DataSource** |Contains both the data source type and data source. |
-|**QueryTrackingId** |Unique identifier for a query. | 
+|**QueryTrackingId** |Unique identifier for a query. It may however repeat if a query fails and is retried. | 
 |**QueryExecutionEndTimeUTC** |Time when the query execution completed. |
 |**QueryExecutionDuration** (ms) |Duration for a query execution. |
 |**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
@@ -77,6 +77,12 @@ The Query Execution Report contains detailed query execution information. The fo
 |**DataProcessingDuration** (ms) |Duration for data processing activities like spooling, data retrieval, compression, and data processing. |
 |**Success** |Indicates if the query succeeded or failed. |
 |**ErrorMessage** |If the query failed, indicates the error message. |
+|**SpoolingDiskWritingDuration** (ms) |Indicates the amount of time by the gateway to write all data to disk |
+|**SpoolingDiskReadingDuration** (ms) |Indicates the amount of time by the gateway to read all data to disk |
+|**SpoolingTotalDataSize** (bytes) |Size(Compressed) of the data which is written to/read from disk |
+|**DataReadingAndSerializationDuration** (ms) |Indicates the amount of time the gateway takes to read data from the datasource and serialize them into packets.|
+|**DiskRead** (byte/sec) |Indicates bytes read by the gateway per second. DiskRead(byte/sec) =  SpoolingTotalDataSize / SpoolingDiskReadingDuration|
+|**DiskWrite** (byte/sec) |Indicates bytes written by the gateway per second. DiskWrite(byte/sec) =  SpoolingTotalDataSize / SpoolingDiskWritingDuration|
 | | |
 
 The Query Start Report contains the query and the query start time. The following attributes are captured.
@@ -86,7 +92,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**GatewayObjectId** |Unique identifier for the gateway. |
 |**RequestId** |Unique identifier for a gateway request. It could be the same for multiple queries. |
 |**DataSource** |Contains both the data source type and data source. |
-|**QueryTrackingId** |Unique identifier for a query. | 
+|**QueryTrackingId** |Unique identifier for a query. It may however repeat if a query fails and is retried. | 
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
 |**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
