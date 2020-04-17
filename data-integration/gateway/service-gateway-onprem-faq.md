@@ -15,8 +15,6 @@ LocalizationGroup: Gateways
 
 # On-premises data gateway FAQ
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
 ## General
 
 **Question:** Do I need a gateway for cloud data sources, such as Azure SQL Database?  

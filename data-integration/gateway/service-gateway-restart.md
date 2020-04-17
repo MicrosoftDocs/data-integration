@@ -15,8 +15,6 @@ LocalizationGroup: Gateways
 
 # Restart an on-premises data gateway
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
 Restart the on-premises data gateway service with any of the following methods.
 
 * In the [gateway app](service-gateway-app.md), select **Service Settings**, then select **Restart now**.

@@ -13,8 +13,6 @@ LocalizationGroup: Gateways
 
 # PowerShell support for on-premises data gateway clusters
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
 PowerShell scripts are available in the the [PowerShell gallery](https://www.powershellgallery.com/packages/OnPremisesDataGatewayHAMgmt/3000.15.18/). You must be using PowerShell version 5 or newer for these scripts to work correctly. You can use the PowerShell scripts to perform the following operations:
 
 - Retrieve the list of gateway clusters available for a user.

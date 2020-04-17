@@ -16,8 +16,6 @@ LocalizationGroup: Gateways
 
 # Migrate, restore, or take over an on-premises data gateway
 
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
-
 Run the gateway installer on a computer where you want to migrate, restore, or take over an on-premises data gateway.
 
 If you're restoring the gateway on the computer that has the original gateway installation, you must first uninstall the gateway on that computer.
