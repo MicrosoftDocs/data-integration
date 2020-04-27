@@ -26,7 +26,7 @@ LocalizationGroup: Gateways
 **Question:** Does the gateway have to be installed on the same machine as the data source?  
 **Answer:** No, the gateway connects to the data source by using the provided connection information. In this sense, consider the gateway as a client application. The gateway just needs to connect to the specified server.
 
-**Question:** How many releases of the on-premises data gateway does Microsoft actively support?
+**Question:** How many releases of the on-premises data gateway does Microsoft actively support?  
 **Answer:** Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. We release a new update for data gateways every month.
 
 **Question:** Are there any permissions prerequisites required to install gateways?  
