@@ -14,7 +14,10 @@ LocalizationGroup: Gateways
 
 # Update an on-premises data gateway
 
-We aim to release an update every month for on-premises data gateways. Each of these updates includes new features along with the latest Mashup Engine.
+We release an update every month for on-premises data gateways. Each of these updates includes new features along with the latest Mashup Engine.
+
+> [!NOTE]
+>Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. We release a new update for data gateways every month.
 
 > [!NOTE]
 > If you're running a gateway cluster, we recommend that you update all nodes in the cluster at the same time.
