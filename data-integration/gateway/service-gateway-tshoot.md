@@ -20,7 +20,7 @@ This article discusses some common issues when you use the on-premises data gate
 
 ## Update to the latest version
 
-Issues can occur when the gateway version is out of date. It's a good general practice to make sure you're using the latest version. We release a new update for data gateways every month. Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. 
+It's a good general practice to make sure you're using a supported version. We release a new update of the on-premises data gateway every month. Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. If you're experiencing issues with the version you're using, try upgrading to the latest one as your issue may have been resolved in the latest version.
 
 ### Inconsistent versions between gateway members in a cluster
 
