@@ -21,7 +21,6 @@ The on-premises data gateway has settings that control resource usage on the mac
 | `MashupDQPoolContainerMaxCount` | Maximum container count for Power BI Direct Query. |
 | `MashupDQPoolContainerMaxWorkingSetInMB` | Maximum working set size for Power BI Direct Query. |
 | `MashupTestConnectionPoolContainerMaxInstanceCount` | Maximum container count for test connections. |
-| `MashupTestConnectionPoolContainerMaxWorkingSetInMB` | Maximum working set size for test connections. |
 | `MashupAzureConnectorsCachingPoolContainerMaxCount` | Maximum container count for LogicApps, Power Apps, and Power Automate. |
 | `MashupAzureConnectorsCachingPoolContainerMaxWorkingSetInMB` | Maximum working set size for LogicApps, Power Apps, and Power Automate. |
 | | |
