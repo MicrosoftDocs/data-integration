@@ -19,6 +19,8 @@ To monitor performance, gateway admins have traditionally depended on manually m
 
 > [!NOTE]
 > This feature is currently available only for the on-premises data gateway in the standard mode. It's not available for the personal mode.
+>
+>The PBI template was updated to accommodate new attributes and will be able to visualize logs generated only by the February 2020 gateway and after. 
 
 ### Enable performance logging
 
