@@ -56,7 +56,9 @@ In addition to using default credentials, you can add a `<proxy>` element to def
 </system.net>
 ```
 
-Additionally, for the gateway to connect to cloud data sources through a proxy, update the following file: _C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe.config_.
+Additionally, for the gateway to connect to cloud data sources through a proxy, update one of the following files:
+* On-premises data gateway up to and including March 2020 release&mdash;_C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe.config_.
+* On-premises data gateway April 2020 and newer&mdash;_C:\Program Files\On-premises data gateway\m\Microsoft.Mashup.Container.NetFX45.exe.config_.
 
 In the file, expand the `<configurations>` section to include the following contents, and update the `proxyaddress` attribute with your proxy information. The following example routes all cloud requests through a specific proxy with the IP address 192.168.1.10.
 
