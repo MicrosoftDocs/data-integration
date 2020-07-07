@@ -144,7 +144,7 @@ Now, you can visualize the data that's in the log files.
 
 1. Select **Load**, and the template file starts loading the data from your log files. All visuals are populated by using the data in the reports.
 
-1. Optionally, save this file as a PBIX, and publish it to your service for automatic refreshes.
+1. Optionally, save this file as a PBIX, and publish it to your service for automatic refreshes. To learn more, see [Publish datasets and reports from Power BI Desktop](https://docs.microsoft.com/power-bi/create-reports/desktop-upload-desktop-files).
 
 You also can customize this template file to suit your needs. For more information on Power BI templates, see this [Microsoft Power BI blog post](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
