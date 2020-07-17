@@ -35,7 +35,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * An 8-core CPU
 * 8 GB of memory
 * A 64-bit version of Windows Server 2012 R2 or later
-* Solid state drive (SSD) storage for spooling.
+* Solid-state drive (SSD) storage for spooling.
 
 ### Related considerations
 
@@ -43,9 +43,9 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
 * If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
-* You shouldn't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
+* Don't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
 * If a gateway uses a wireless network, its performance might suffer.
-* You could install other applications on the gateway machine, but this may degrade gateway performance. If you do install other applications on the geteway machine, be sure to monitor the gateway closely to check if there is any resource contention. 
+* You could install other applications on the gateway machine, but this may degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention. 
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. You can't have more than one gateway running in the same mode on the same computer.
 
 ## Download and install a standard gateway
@@ -98,6 +98,8 @@ Because you can install only one standard gateway on a computer, you must instal
 
    > [!NOTE]
    > Offline gateway members within a cluster will negatively impact performance. These members should either be removed or disabled.
+   >
+   > Make sure the gateway members in a cluster are running the same gateway version, as different versions could cause unexpected failures based on supported functionality.
 
 To create high-availability gateway clusters, you need the November 2017 update or a later update to the gateway software.
 
