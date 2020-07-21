@@ -34,7 +34,7 @@ During installation of the on-premises data gateway, the Azure Relays are automa
   
     2. **Send key value and the Listen Key Value**&mdash;Create two shared access policies, one called SendAccessKey and the other ListenAccessKey. Provide either the primary or the secondary keys in the on-premises data gateway app. To learn more, see [Azure Relay authentication and authorization](https://docs.microsoft.com/azure/azure-relay/relay-authentication-and-authorization).
 
-       ![](media/service-gateway-azure-relay/send-access-key-policy.png)
+       ![Send and listen access keys](media/service-gateway-azure-relay/send-access-key-policy.png)
 
 ## Next steps
 
