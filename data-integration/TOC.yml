@@ -36,6 +36,8 @@
         href: gateway/service-gateway-service-account.md
       - name: "Set the data center region"
         href: gateway/service-gateway-data-region.md
+      - name: "Set the Azure Relay"
+        href: gateway/service-gateway-azure-relay.md
       - name: "Adjust communication settings"
         href: gateway/service-gateway-communication.md
       - name: "Configure the gateway log file"
