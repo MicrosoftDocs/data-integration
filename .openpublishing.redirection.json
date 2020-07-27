@@ -7,17 +7,37 @@
     },
     {
       "source_path": "data-integration/dataflows/index.md",
-      "redirect_url": "/data-integration/dataflows/dataflows-integration-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "data-integration/gateway/index.md",
-      "redirect_url": "/data-integration/gateway/service-gateway-onprem",
+      "redirect_url": "/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365",
       "redirect_document_id": false
     },
     {
       "source_path": "data-integration/index.md",
-      "redirect_url": "/data-integration/dataflows/dataflows-integration-overview",
+      "redirect_url": "/data-integration/gateway/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "data-integration/dataflows/dataflows-integration-overview.md",
+      "redirect_url": "/power-query/dataflows/create-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "data-integration/dataflows/dataflows-computed-entities.md",
+      "redirect_url": "/power-query/dataflows/computed-entities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "data-integration/dataflows/dataflows-data-sources.md",
+      "redirect_url": "/power-query/dataflows/data-sources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "data-integration/dataflows/dataflows-incremental-refresh.md",
+      "redirect_url": "/power-query/dataflows/incremental-refresh",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "data-integration/dataflows/dataflows-linked-entities.md",
+      "redirect_url": "/power-query/dataflows/linked-entities",
       "redirect_document_id": false
     }
   ]
