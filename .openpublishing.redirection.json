@@ -11,37 +11,32 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "data-integration/gateway/index.md",
-      "redirect_url": "/data-integration/gateway/service-gateway-onprem",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "data-integration/index.md",
-      "redirect_url": "/data-integration/gateway/service-gateway-onprem",
+      "redirect_url": "/data-integration/gateway/index",
       "redirect_document_id": false
     },
     {
-      "source_path": "/data-integration/dataflows/dataflows-integration-overview",
+      "source_path": "data-integration/dataflows/dataflows-integration-overview.md",
       "redirect_url": "/power-query/dataflows/create-use",
       "redirect_document_id": false
     },
     {
-      "source_path": "/data-integration/dataflows/dataflows-computed-entities",
+      "source_path": "data-integration/dataflows/dataflows-computed-entities.md",
       "redirect_url": "/power-query/dataflows/computed-entities",
       "redirect_document_id": false
     },
     {
-      "source_path": "/data-integration/dataflows/dataflows-data-sources",
+      "source_path": "data-integration/dataflows/dataflows-data-sources.md",
       "redirect_url": "/power-query/dataflows/data-sources",
       "redirect_document_id": false
     },
     {
-      "source_path": "/data-integration/dataflows/dataflows-incremental-refresh",
+      "source_path": "data-integration/dataflows/dataflows-incremental-refresh.md",
       "redirect_url": "/power-query/dataflows/incremental-refresh",
       "redirect_document_id": false
     },
     {
-      "source_path": "/data-integration/dataflows/dataflows-linked-entities",
+      "source_path": "data-integration/dataflows/dataflows-linked-entities.md",
       "redirect_url": "/power-query/dataflows/linked-entities",
       "redirect_document_id": false
     }

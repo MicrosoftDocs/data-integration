@@ -1,0 +1,57 @@
+### YamlMime:Landing 
+
+
+title: On-premises data gateways documentation
+summary: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services, such as Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps.
+
+metadata: 
+  title: On-premises data gateways documentation
+  description: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services.  
+  ms.technology: on-premises-data-gateway
+  ms.topic: landing-page
+  ms.collection: 
+  author: dougklopfenstein
+  ms.author: v-douklo
+  ms.date: 07/27/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: About on-premises data gateways
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is an on-premises data gateway?
+            url: /data-integration/gateway/service-gateway-onprem
+          - text: On-premises data gateway architecture
+            url: /data-integration/gateway/service-gateway-onprem-indepth
+          - text: On-premises data gateway FAQ
+            url: /data-integration/gateway/service-gateway-onprem-faq
+
+  # Card
+  - title: Set up and manage
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Install gateways
+            url: /data-integration/gateway/service-gateway-install
+          - text: Configure gateways
+            url: /data-integration/gateway/service-gateway-app
+          - text: Manage gateways
+            url: /data-integration/gateway/service-gateway-manage
+
+  # Card
+  - title: Reference and resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: PowerShell support for gateways clusters
+            url: /data-integration/gateway/service-gateway-powershell-support
+      - linkListType: whats-new
+        links:
+          - text: Previous monthly updates
+            url: /data-integration/gateway/service-gateway-monthly-updates
+

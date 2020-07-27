@@ -1,4 +1,5 @@
-- name: On-premises data gateways 
+- name: On-premises data gateways docs
+  href: gateway/index.yml 
   items:
   - name: Overview
     items: 
