@@ -1,15 +1,3 @@
-- name: Power Platform dataflows
-  items:
-  - name: "Create and use dataflows"
-    href: dataflows/dataflows-integration-overview.md
-  - name: "Use incremental refresh"
-    href: dataflows/dataflows-incremental-refresh.md
-  - name: "Create computed entities"
-    href: dataflows/dataflows-computed-entities.md
-  - name: "Connect to data sources"
-    href: dataflows/dataflows-data-sources.md
-  - name: "Link entities between dataflows"
-    href: dataflows/dataflows-linked-entities.md
 - name: On-premises data gateways 
   items:
   - name: Overview
