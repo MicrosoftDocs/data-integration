@@ -1,10 +1,8 @@
 - name: On-premises data gateways docs
   href: gateway/index.yml 
   items:
-  - name: Overview
-    items: 
-    - name: "What is an on-premises data gateway?"
-      href: gateway/service-gateway-onprem.md
+  - name: "What is an on-premises data gateway?"
+    href: gateway/service-gateway-onprem.md
   - name: Concepts
     items:
     - name: "On-premises data gateway architecture"
