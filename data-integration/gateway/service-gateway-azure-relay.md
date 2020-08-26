@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 # Set the Azure Relay for on-premises data gateway
 
-During installation of the on-premises data gateway, the Azure Relays are automatically provisioned. However, you have the option to provide your own relay details.
+During installation of the on-premises data gateway, the Azure Relays are automatically provisioned. However, you have the option to provide your own relay details. This helps you associate the relay with your Azure subscription and also manage the sender and listener keys for this relay. 
 
 **To provide your own relay details**
 
