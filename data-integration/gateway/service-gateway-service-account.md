@@ -24,6 +24,9 @@ To change the Windows service account for the on-premises data gateway:
 
 1. Open the [on-premises data gateway app](service-gateway-app.md), select **Service settings**, and then select **Change account**.
 
+   >[!Note]
+   > We recommend using the on-premises data gateway app to change the service account instead of the Windows Service app. This will ensure that the new account has all the required privileges. Not using the on-premises data gateway app for this purpose could lead to inconsistent logging and other issues.
+
    ![Service settings](media/service-gateway-service-account/service-settings.png)
 
     The default account for this service is *NT SERVICE\PBIEgwService*. Change this account to a domain user account within your Windows Server Active Directory domain, or use a managed service account to avoid having to change the password.
