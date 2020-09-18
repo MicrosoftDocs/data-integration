@@ -7,7 +7,7 @@ ms.reviewer: ''
 
 ms.technology: on-premises-data-gateway
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 09/18/2020
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -74,6 +74,9 @@ For example, assume your SQL Server computer isn't in your perimeter network. Al
 
 **Question:** Can the person who sets up the gateway in the Azure portal be different from the one who installs that gateway?  
 **Answer:** Yes, you must use PowerShell to add other owners to the same gateway. These users can create the gateway in the Azure portal. However, they should connect to the portal and the gateway by using the same tenant.
+
+**Question:** Does Azure ExpressRoute eliminate the need for a gateway?  
+**Answer:** No. A gateway is still required when connecting to on-premises data sources.
 
 ## High availability and disaster recovery
 
