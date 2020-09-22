@@ -50,6 +50,7 @@ There are four main steps for using a gateway.
 - Logic Apps, Power Apps, and Power Automate support both read and write operations through the gateway:
   - Write operations have a 2-MB payload limit.
   - Read operations have a 2-MB request limit and an 8-MB compressed data response limit.
+  - URL for the GET request has a 2048 character limit.
 - While using the gateway with Power BI in Direct Query Mode, there is a 16-MB uncompressed data response limit.
 - For information about installation considerations, see [Related considerations](service-gateway-install.md#related-considerations).
 
