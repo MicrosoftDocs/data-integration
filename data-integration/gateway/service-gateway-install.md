@@ -131,7 +131,7 @@ To create high-availability gateway clusters, you need the November 2017 update 
 
 1.  You're now signed in to your account. Select **Close**.
 
-    ![Gateway summary](media/service-gateway-install/summary-screen-personal.png)
+    ![Personal mode gateway summary](media/service-gateway-install/summary-screen-personal.png)
 
 ## Next steps
 
