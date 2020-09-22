@@ -1,11 +1,12 @@
 ---
 title: Adjust gateway performance based on server CPU
-description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
+description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities based on CPU capacity.
 author: arthiriyer
 ms.author: arthii
 manager: kfile
 ms.reviewer: ''
-ms.technology: on-premises-data-gateway
+ms.prod: on-premises-data-gateway
+ms.technology:
 ms.topic: conceptual
 ms.date: 09/19/2019
 LocalizationGroup: Gateways 
