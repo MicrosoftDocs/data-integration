@@ -4,7 +4,8 @@ description: Learn about and download previous versions of the on-premises data 
 author: arthiriyer
 manager: kvivek
 ms.reviewer: ''
-ms.technology: on-premises-data-gateway
+ms.prod: on-premises-data-gateway
+ms.technology:
 ms.topic: conceptual
 ms.date: 05/20/2020
 ms.author: arthii
