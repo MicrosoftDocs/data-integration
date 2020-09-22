@@ -5,8 +5,8 @@ author: arthiriyer
 manager: kfile
 ms.reviewer: ''
 
+ms.prod: on-premises-data-gateway
 ms.technology: on-premises-data-gateway
-ms.prod:
 ms.topic: overview
 ms.date: 07/15/2019
 ms.author: arthii
