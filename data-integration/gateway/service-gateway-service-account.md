@@ -4,7 +4,8 @@ description: Provides information on how to change the Windows account for the o
 author: arthiriyer
 manager: kfile
 ms.reviewer: ''
-ms.technology: on-premises-data-gateway
+ms.prod: on-premises-data-gateway
+ms.technology:
 ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: arthii
@@ -23,6 +24,9 @@ This service account isn't the account used to connect to on-premises data sourc
 To change the Windows service account for the on-premises data gateway:
 
 1. Open the [on-premises data gateway app](service-gateway-app.md), select **Service settings**, and then select **Change account**.
+
+   >[!Note]
+   > We recommend using the on-premises data gateway app to change the service account instead of the Windows Service app. This will ensure that the new account has all the required privileges. Not using the on-premises data gateway app for this purpose could lead to inconsistent logging and other issues.
 
    ![Service settings](media/service-gateway-service-account/service-settings.png)
 

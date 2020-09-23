@@ -5,7 +5,8 @@ author: arthiriyer
 ms.author: arthii
 manager: kfile
 ms.reviewer: ''
-ms.technology: on-premises-data-gateway
+ms.prod: on-premises-data-gateway
+ms.technology:
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019

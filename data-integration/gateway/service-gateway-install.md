@@ -6,7 +6,8 @@ author: arthiriyer
 manager: kfile
 ms.reviewer: ''
 
-ms.technology: on-premises-data-gateway
+ms.prod: on-premises-data-gateway
+ms.technology:
 ms.topic: conceptual
 ms.date: 07/21/2020
 ms.author: arthii
@@ -130,7 +131,7 @@ To create high-availability gateway clusters, you need the November 2017 update 
 
 1.  You're now signed in to your account. Select **Close**.
 
-    ![Gateway summary](media/service-gateway-install/summary-screen-personal.png)
+    ![Personal mode gateway summary](media/service-gateway-install/summary-screen-personal.png)
 
 ## Next steps
 
