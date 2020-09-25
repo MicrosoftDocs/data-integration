@@ -34,7 +34,7 @@ Let’s first look at what happens when you interact with an element that is con
 > Depending on the cloud service, you might need to configure a data source for the gateway.
 
 1. The cloud service creates a query and the encrypted credentials for the on-premises data source. The query and credentials are sent to the gateway queue for processing.
-1. The gateway cloud service analyzes the query and pushes the request to [Azure Service Bus](/azure/service-bus-relay/relay-what-is-it/).
+1. The gateway cloud service analyzes the query and pushes the request to [Azure Service Bus Messaging](/azure/service-bus-messaging/service-bus-messaging-overview/). 
 1. Azure Service Bus sends the pending requests to the gateway.
 1. The gateway gets the query, decrypts the credentials, and connects to one or more data sources with those credentials.
 1. The gateway sends the query to the data source to be run.
