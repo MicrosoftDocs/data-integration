@@ -19,6 +19,9 @@ LocalizationGroup: Gateways
 
 During installation of the on-premises data gateway, the Azure Relays are automatically provisioned. However, you have the option to provide your own relay details. This helps you associate the relay with your Azure subscription and also manage the sender and listener keys for this relay. 
 
+>[!NOTE]
+>Only WCF relays with NetTcp type are supported for this feature.
+
 **To provide your own relay details**
 
 1.	Select **Provide Relay details**. 
