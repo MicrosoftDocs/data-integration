@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 10/14/2020
 LocalizationGroup: Gateways 
 ---
 
@@ -27,19 +27,19 @@ To monitor performance, gateway admins have traditionally depended on manually m
 
 To enable this feature, make the following changes to the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file in the *\Program Files\On-premises data gateway* folder.
 
-1. Update **QueryExecutionReportOn** to _True_ to enable additional logging for queries executed using the gateway. Enabling this option creates both the Query Execution Report and the Query Execution Aggregation Report files.
+1. The `DisableQueryExecutionReport` property is by default set to _False_ to enable additional logging for queries executed using the gateway. This creates both the Query Execution Report and the Query Execution Aggregation Report files. To turn this feature off, switch the flag to _True_.
 
    ``` xml
-   <setting name="QueryExecutionReportOn" serializeAs="String">
-     <value>True</value>
+   <setting name="DisableQueryExecutionReport" serializeAs="String">
+     <value>False</value>
    </setting>
    ```
 
-1. Update **SystemCounterReportOn** to _True_ to enable additional logging for memory and CPU system counters. Enabling this option creates the System Counter Aggregation Report file.
+1. The `DisableSystemCounterReport` is by default set to _False_ to enable additional logging for memory and CPU system counters. This creates the System Counter Aggregation Report file. To turn this feature off, switch the flag to _True_.
 
    ```xml
-   <setting name="SystemCounterReportOn" serializeAs="String">
-     <value>True</value>
+   <setting name=" DisableSystemCounterReport" serializeAs="String">
+     <value>False</value>
    </setting>
    ```
 
