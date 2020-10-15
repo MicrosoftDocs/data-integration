@@ -4,7 +4,7 @@ description: This article provides ways for you to monitor and optimize the perf
 author: arthiriyer
 ms.author: arthii
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: v-douklo
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual

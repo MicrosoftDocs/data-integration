@@ -4,7 +4,7 @@ title: "Install an on-premises data gateway"
 description: Learn how to install a gateway so you can connect to on-premises data.
 author: arthiriyer
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: v-douklo
 
 ms.prod: on-premises-data-gateway
 ms.technology:

@@ -4,7 +4,7 @@ description: You can retrieve gateway and cluster information, modify the status
 author: arthiriyer
 ms.author: arthii
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: v-douklo
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual

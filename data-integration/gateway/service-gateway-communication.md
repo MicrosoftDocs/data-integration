@@ -4,7 +4,7 @@ description: Discusses how to fix blocked outbound connections, how to configure
 author: arthiriyer
 ms.author: arthii
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: v-douklo
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
