@@ -3,8 +3,8 @@ title: Configure log files for the on-premises data gateway
 description: Describes ways to configure how gateway logging data is stored.
 author: arthiriyer
 ms.author: arthii
-manager: kfile
-ms.reviewer: ''
+manager: kvivek
+ms.reviewer: v-douklo
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
