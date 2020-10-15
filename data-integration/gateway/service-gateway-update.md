@@ -2,7 +2,7 @@
 title: Update an on-premises data gateway
 description: Describes how to update to the latest version of the on-premises data gateway.
 author: arthiriyer
-manager: kfile
+manager: kvivek
 ms.reviewer: v-douklo
 ms.prod: on-premises-data-gateway
 ms.technology:

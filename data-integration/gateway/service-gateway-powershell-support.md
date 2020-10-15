@@ -3,7 +3,7 @@ title: "PowerShell support for on-premises data gateway clusters"
 description: You can retrieve gateway and cluster information, modify the status within a gateway, or delete a gateway by using PowerShell commands.
 author: arthiriyer
 ms.author: arthii
-manager: kfile
+manager: kvivek
 ms.reviewer: v-douklo
 ms.prod: on-premises-data-gateway
 ms.technology:
