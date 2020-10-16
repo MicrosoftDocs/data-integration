@@ -9,7 +9,7 @@ ms.reviewer: v-douklo
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 07/21/2020
+ms.date: 10/14/2020
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -30,6 +30,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * .NET Framework 4.6 (Gateway release August 2019 and earlier)
 * .NET Framework 4.7.2 (Gateway release September 2019 and later)
 * A 64-bit version of Windows 8 or a 64-bit version of Windows Server 2012 R2
+* 4 GB disk space for [performance monitoring](service-gateway-performance.md#gateway-performance-monitoring-public-preview) logs (in default configuration)
 
 ### Recommended
 
