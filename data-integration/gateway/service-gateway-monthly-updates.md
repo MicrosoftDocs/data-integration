@@ -7,7 +7,7 @@ ms.reviewer: v-douklo
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 09/24/2020
+ms.date: 10/14/2020
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -19,6 +19,12 @@ This article describes the four previous updates for the on-premises data gatewa
 
 - Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall.exe)
 - Download the [latest on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode).exe)
+
+## September 2020 update (3000.58.6)
+
+- [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-september-2020-update-is-now-available/)
+- Download the [September 2020 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-20-09.exe)
+- Download the [September 2020 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-20-09.exe)
 
 ## August 2020 update (3000.54.8)
 
@@ -38,11 +44,6 @@ This article describes the four previous updates for the on-premises data gatewa
 - [Download the June 2020 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-20-06.exe)
 - [Download the June 2020 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-20-06.exe)
 
-## May 2020 update (3000.40.15)
-
-- [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-May-2020-update-is-now-available/)
-- Download the [May 2020 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-20-05.exe)
-- Download the [May 2020 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-20-05.exe)
 
 
 ## Next steps
