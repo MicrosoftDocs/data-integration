@@ -3,7 +3,7 @@ title: "Restart an on-premises data gateway"
 description: Learn how to restart the gateway Windows service.
 author: arthiriyer
 manager: kvivek
-ms.reviewer: v-douklo
+ms.reviewer: kvivek
 
 ms.prod: on-premises-data-gateway
 ms.technology:

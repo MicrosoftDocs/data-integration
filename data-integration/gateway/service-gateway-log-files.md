@@ -4,7 +4,7 @@ description: Describes ways to configure how gateway logging data is stored.
 author: arthiriyer
 ms.author: arthii
 manager: kvivek
-ms.reviewer: v-douklo
+ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual

@@ -4,7 +4,7 @@ description: This article describes how to determine the datacenter region and h
 author: arthiriyer
 ms.author: arthii
 manager: kvivek
-ms.reviewer: v-douklo
+ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
