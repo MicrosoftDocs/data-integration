@@ -3,7 +3,7 @@ title: "Manage an on-premises data gateway"
 description: Learn how to manage a gateway so that you can connect to on-premises data.
 author: arthiriyer
 manager: kvivek
-ms.reviewer: v-douklo
+ms.reviewer: kvivek
 
 ms.prod: on-premises-data-gateway
 ms.topic: conceptual
