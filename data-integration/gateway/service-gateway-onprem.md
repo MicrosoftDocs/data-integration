@@ -3,7 +3,7 @@ title: What is an on-premises data gateway?
 description: Learn the basics about on-premises data gateways, which enable quick and secure data transfer between on-premises data and several Microsoft cloud services.
 author: arthiriyer
 manager: kvivek
-ms.reviewer: v-douklo
+ms.reviewer: kvivek
 
 ms.prod: on-premises-data-gateway
 ms.technology:

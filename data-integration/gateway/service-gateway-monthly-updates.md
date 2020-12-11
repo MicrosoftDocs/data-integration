@@ -3,7 +3,7 @@ title: "Previous monthly updates to the on-premises data gateways"
 description: Learn about and download previous versions of the on-premises data gateways.
 author: arthiriyer
 manager: kvivek
-ms.reviewer: v-douklo
+ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
