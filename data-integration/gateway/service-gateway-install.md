@@ -5,11 +5,10 @@ description: Learn how to install a gateway so you can connect to on-premises da
 author: arthiriyer
 manager: kvivek
 ms.reviewer: kvivek
-
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 02/11/2021
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -31,6 +30,9 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * .NET Framework 4.7.2 (Gateway release September 2019 and later)
 * A 64-bit version of Windows 8 or a 64-bit version of Windows Server 2012 R2 with [current TLS 1.2 and cipher suites](https://docs.microsoft.com/power-platform/admin/onpremises-server-cipher-tls-requirements)
 * 4 GB disk space for [performance monitoring](service-gateway-performance.md#gateway-performance-monitoring-public-preview) logs (in default configuration)
+
+> [!NOTE]
+> The minimum screen resolution supported for the on-premises data gateway is 1280 x 800.
 
 ### Recommended
 
