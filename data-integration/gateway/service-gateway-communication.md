@@ -30,6 +30,15 @@ The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, a
 
 We recommend that you allow the IP addresses for your data region in your firewall. You can download the [Azure datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) periodically in the gateway app.
 
+> [!NOTE]
+> This file will be deprecated by June 30, 2020. Please start using the JSON files listed below:
+>* [Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
+>* [US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
+>* [Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
+>* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
+
+These JSON files are updated weekly
+
 The gateway communicates with Service Bus by using an IP address along with a fully qualified domain name (FQDN). If you force the gateway to communicate via HTTPS, it will strictly use FQDNs only and won't communicate by using IP addresses.
 
 > [!NOTE]
@@ -37,7 +46,7 @@ The gateway communicates with Service Bus by using an IP address along with a fu
 
 The following list describes FQDNs used by the gateway.
 
-| Domain names | Outbound ports | Description |
+| Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
 | *.download.microsoft.com |80 |Used to download the installer. The gateway app also uses this domain to check the version and gateway region. |
 | *.powerbi.com |443 |Used to identify the relevant Power BI cluster. |
@@ -50,10 +59,28 @@ The following list describes FQDNs used by the gateway.
 | login.microsoftonline.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
 | *.msftncsi.com |443 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | *.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
-| dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
+| *.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
+
+For GCCC, GCC high and DoD, the following FQDNs are used by the gateway.
+
+| Ports | GCC | GCC High | DoD |
+| --- | --- | --- | --- |
+| 80 | *.download.microsoft.com |*.download.microsoft.com |*.download.microsoft.com |
+| 443 | *.powerbigov.us, *.powerbi.com  |*.high.powerbigov.us |*.mil.powerbigov.us|
+| 443 | *.analysis.usgovcloudapi.net |*.high.analysis.usgovcloudapi.net |*.mil.analysis.usgovcloudapi.net |
+| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online)|[See documentation](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online) |
+|5671-5672| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net|*.servicebus.usgovcloudapi.net |
+|443 and 9350-9354| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |
+|443| *.core.usgovcloudapi.net|*.core.usgovcloudapi.net|*.core.usgovcloudapi.net |
+|443| *.login.microsoftonline.com |*.login.microsoftonline.com |*.login.microsoftonline.com |
+|443| *.msftncsi.com |*.msftncsi.com |*.msftncsi.com |
+|443| *.microsoftonline-p.com |*.microsoftonline-p.com |*.microsoftonline-p.com |
+|443| *.dc.applicationinsights.us |*.dc.applicationinsights.us |*.dc.applicationinsights.us |
 
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Service Bus, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).
+
+
 
 ## Network ports test
 
