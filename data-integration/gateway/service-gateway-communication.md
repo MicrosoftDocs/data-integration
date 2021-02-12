@@ -33,9 +33,9 @@ We recommend that you allow the IP addresses for your data region in your firewa
 > [!NOTE]
 > This file will be deprecated by June 30, 2020. Please start using the JSON files listed below:
 >* [Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
->* [US Gov](http://www.microsoft.com/en-us/download/details.aspx?id=57063)
->* [Germany](http://www.microsoft.com/en-us/download/details.aspx?id=57064)
->* [China](http://www.microsoft.com/en-us/download/details.aspx?id=57062)
+>* [US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
+>* [Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
+>* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
 
 These JSON files are updated weekly
 
@@ -68,7 +68,7 @@ For GCCC, GCC high and DoD, the following FQDNs are used by the gateway.
 | 80 | *.download.microsoft.com |*.download.microsoft.com |*.download.microsoft.com |
 | 443 | *.powerbigov.us, *.powerbi.com  |*.high.powerbigov.us |*.mil.powerbigov.us|
 | 443 | *.analysis.usgovcloudapi.net |*.high.analysis.usgovcloudapi.net |*.mil.analysis.usgovcloudapi.net |
-| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide#microsoft-365-common-and-office-online)|[See documentation](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide#microsoft-365-common-and-office-online) |
+| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online)|[See documentation](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online) |
 |5671-5672| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net|*.servicebus.usgovcloudapi.net |
 |443 and 9350-9354| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |
 |443| *.core.usgovcloudapi.net|*.core.usgovcloudapi.net|*.core.usgovcloudapi.net |
