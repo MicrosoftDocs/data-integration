@@ -49,6 +49,11 @@ To change the Windows service account for the on-premises data gateway:
 1. After the restoration is complete, the new gateway uses the domain account.
 
    ![Domain account](media/service-gateway-service-account/domain-account.png)
+   
+   
+> [!NOTE]
+> To reset the gateway to the default service account, you need to uninstall and reinstall the gateway. You need the recovery key for this operation.
+>
 
 ## Next steps
 
