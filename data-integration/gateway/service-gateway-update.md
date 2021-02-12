@@ -20,8 +20,14 @@ We release an update every month for on-premises data gateways. Each of these up
 > [!NOTE]
 >Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. We release a new update for data gateways every month.
 
-> [!NOTE]
-> If you're running a gateway cluster, we recommend that you update all nodes in the cluster at the same time.
+We recommend that you update gateway members one after the other without a long lag. This will reduce sporadic failures as a query may succeed on one gateway member, but not on the other, based on its version. 
+Please follow the following steps while updating a gateway cluster with two or more members:
+1. Disable one gateway member.
+2. Update the gateway member.
+3. Enable the updated gateway member.
+4. Repeat step 1-3 until all gateway members are updated
+
+Disabling a gateway makes sure the load balancer does not try to excecute queries on the member you are updating, hence reducing delays and failures.
 
 ## Update a gateway
 
