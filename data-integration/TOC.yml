@@ -59,3 +59,13 @@
     items:
     - name: "Previous monthly updates"
       href: gateway/service-gateway-monthly-updates.md
+- name: VNet docs
+  items:
+  - name: Overview
+    href: vnet/overview.md
+  - name: Sample topic
+    href: vnet/overview.md
+  - name: Sample topic
+    href: vnet/overview.md
+  - name: Sample topic
+    href: vnet/overview.md  
