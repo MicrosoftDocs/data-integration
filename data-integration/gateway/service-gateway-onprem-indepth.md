@@ -86,3 +86,6 @@ There are different ways to match your on-premises Active Directory accounts wit
 * [On-premises data gateway FAQ](service-gateway-onprem-faq.md)  
 * [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/)  
 * [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

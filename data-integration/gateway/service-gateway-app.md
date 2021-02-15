@@ -52,3 +52,5 @@ After you sign in to your Office 365 account, you have access to the following f
 ## Next steps
 
 * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

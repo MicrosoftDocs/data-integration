@@ -41,3 +41,6 @@ After the configuration finishes, the process of migrating, restoring, or taking
 ## Next steps
 
 * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

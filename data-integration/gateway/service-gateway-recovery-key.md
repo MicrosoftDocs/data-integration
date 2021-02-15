@@ -62,3 +62,5 @@ After you've created a new recovery key, you can delete the legacy recovery key.
 1. On the **Recovery Keys** tab, select **Delete legacy recovery key**.
 
     ![Delete legacy recovery key](media/service-gateway-recovery-key/delete-legacy-recovery-key.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ This article describes the four previous updates for the on-premises data gatewa
 ## Next steps
 
 [Install an on-premises data gateway](service-gateway-install.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
