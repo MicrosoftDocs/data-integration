@@ -55,3 +55,6 @@ For example, to remove a gateway in the Power BI service:
 * [Manage high availability clusters and load balancing](service-gateway-high-availability-clusters.md)
 
 * [Tenant level administration](service-gateway-tenant-level-admin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

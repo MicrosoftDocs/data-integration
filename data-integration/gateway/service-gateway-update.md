@@ -54,3 +54,6 @@ The gateway update is now complete.
 ## Next steps
 
 * [Monitor and optimize gateway performance](service-gateway-performance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ To enable this feature, a gateway admin should update the following settings in 
 ## Next steps
 
 * [PowerShell support for gateway clusters](service-gateway-powershell-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

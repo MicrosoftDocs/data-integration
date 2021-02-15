@@ -48,3 +48,6 @@ During installation of the on-premises data gateway, the Azure Relays are automa
 - [What is Azure Relay?](https://docs.microsoft.com/azure/azure-relay/relay-what-is-it)
   
 . 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
