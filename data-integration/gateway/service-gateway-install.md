@@ -143,3 +143,6 @@ To create high-availability gateway clusters, you need the November 2017 update 
 * [Manage an on-premises data gateway](service-gateway-manage.md)
 
 * [Monitor and optimize gateway performance](service-gateway-performance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

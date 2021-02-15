@@ -113,3 +113,6 @@ You can also look at your data source's tools for tracing queries. For example, 
 ## Next steps
 
 * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

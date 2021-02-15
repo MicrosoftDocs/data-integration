@@ -59,3 +59,6 @@ To change the Windows service account for the on-premises data gateway:
 
 * [Set the datacenter region](service-gateway-data-region.md)  
  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

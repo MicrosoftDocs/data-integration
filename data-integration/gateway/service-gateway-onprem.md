@@ -72,3 +72,6 @@ This document contains general information about the on-premises data gateway th
 ## Next steps
 
 * [Install the on-premises data gateway](service-gateway-install.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

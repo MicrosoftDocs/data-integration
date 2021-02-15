@@ -43,3 +43,6 @@ For more information about setting the datacenter region for your resources, [wa
 ## Next steps
 
 * [Adjust communications settings](service-gateway-communication.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

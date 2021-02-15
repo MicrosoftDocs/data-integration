@@ -166,3 +166,6 @@ Enabling this setting likely will increase the log size significantly, based on 
 ## Next steps
 
 * [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

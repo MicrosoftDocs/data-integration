@@ -100,3 +100,6 @@ To find the event logs for the *on-premises data gateway service*, follow these 
 ## Next steps
 
 * [On-premises data gateway FAQ](service-gateway-onprem-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

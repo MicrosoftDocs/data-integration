@@ -55,3 +55,6 @@ Now you can use the commands in the following table to manage your gateway clust
 * [On-premises data gateway app](service-gateway-app.md)
 * [Manage high-availability clusters and load balancing](service-gateway-high-availability-clusters.md)
 * [Remove or delete an on-premises data gateway](service-gateway-manage.md#remove-or-delete-an-on-premises-data-gateway)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
