@@ -86,3 +86,5 @@ As explained earlier, when you configure the proxy settings to use default crede
 ## Next steps
 
 * [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)  
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

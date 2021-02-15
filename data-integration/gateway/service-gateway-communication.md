@@ -136,3 +136,6 @@ By default, the gateway uses Transport Layer Security (TLS) 1.2 to communicate w
 ## Next steps
 
 * [Configure the gateway log file](service-gateway-log-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

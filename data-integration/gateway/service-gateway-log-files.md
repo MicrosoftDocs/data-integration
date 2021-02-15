@@ -38,3 +38,6 @@ The following example specifies that 20 log files, each 50 MB in size, will be r
 ## Next steps
 
 For information on how to export gateway logs for troubleshooting, see [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

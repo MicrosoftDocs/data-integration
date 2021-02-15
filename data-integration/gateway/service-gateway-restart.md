@@ -35,3 +35,6 @@ Restart the on-premises data gateway service with any of the following methods.
 ## Next steps
 
 * [Tenant level administration](service-gateway-tenant-level-admin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
