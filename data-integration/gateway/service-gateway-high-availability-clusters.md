@@ -35,7 +35,7 @@ All requests are routed to the primary instance of a gateway cluster. If the pri
 
 ## Load balance across gateways in a cluster
 
-You can choose to let traffic be distributed evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
+You can choose to let traffic be distributed evenly across gateways in a cluster. By default, the selection of a gateway during load balancing, i.e. when "Distribute requests across all active gateways in this cluster" is enabled, is random.
 
 > [!NOTE]
 > Offline gateway members within a cluster will negatively impact performance. These members should either be removed or disabled.
