@@ -78,4 +78,6 @@
     - name: Manage VNet data gateways
       href: manage-data-gateways.md
     - name: Use VNet data gateway and data sources in Power BI
-      href: use-data-gateways-sources-power-bi.md    
+      href: use-data-gateways-sources-power-bi.md
+  - name: VNet data gateway FAQs
+    href: data-gateway-faqs.md    
