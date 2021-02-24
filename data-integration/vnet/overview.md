@@ -1,15 +1,12 @@
 ---
-title: Overview on VNet
-description: Learn the basics about on-premises data gateways, which enable quick and secure data transfer between on-premises data and several Microsoft cloud services.
+title: What is a virtual network (VNet) data gateway (Preview)
+description: virtual network (VNet) data gateway helps you to connect from Microsoft Cloud services to your Azure data services within a VNet without the need of an on-premises data gateway.
 author: arthiriyer
 ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
-ms.technology:
 ms.topic: overview
-ms.date: 07/15/2019
+ms.date: 03/01/2021
 ms.author: arthii
-
-
 ---
 
 # What is a virtual network (VNet) data gateway (Preview)? 
