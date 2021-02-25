@@ -44,7 +44,7 @@ To enable Azure AD SSO, on the **Manage Gateways** page in Power BI, go to the *
 
 ## Use virtual network (VNet) data gateways in Power BI datasets
 
-A Power BI report maker or creator can now publish a report and associate the dataset to the VNet data gateway data source if the person has been added as a data source user.
+A Power BI report maker or creator can now publish a report and associate the dataset to the VNet data gateway data source.
 
 ![Use in Power BI datasets](media/use-in-pbi-datasets.png)
 
