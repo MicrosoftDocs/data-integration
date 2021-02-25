@@ -24,7 +24,7 @@ You can also create data sources and share these data sources to users like you 
 
 ## Supported Azure Data services 
 
-In teh current release, VNet data gateways will support connectivity to the following Azure data services: 
+In the current release, VNet data gateways will support connectivity to the following Azure data services: 
 - Azure SQL
 - Azure Synapse Analytics
 - Azure Data Explorer (Kusto)
