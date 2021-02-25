@@ -60,24 +60,24 @@
     items:
     - name: "Previous monthly updates"
       href: gateway/service-gateway-monthly-updates.md
-- name: VNet data gateways docs
+- name: Virtual network data gateways docs
   expanded: true
   items:
-  - name: "What is VNet data gateway?"
+  - name: "What is a virtual network data gateway?"
     href: vnet/overview.md
   - name: Concepts
     items:
     - name: "What is a VNet?"
       href: vnet/what-is.md
-    - name: VNet data gateway architecture
+    - name: Virtual network data gateway architecture
       href: vnet/data-gateway-architecture.md
   - name: How to
     items:
-    - name: Create VNet data gateways
+    - name: Create virtual network data gateways
       href: vnet/create-data-gateways.md
-    - name: Manage VNet data gateways
+    - name: Manage virtual network data gateways
       href: vnet/manage-data-gateways.md
-    - name: Use VNet data gateway and data sources in Power BI
+    - name: Use virtual network data gateway in Power BI
       href: vnet/use-data-gateways-sources-power-bi.md
-  - name: VNet data gateway FAQs
+  - name: Virtual network data gateway FAQs
     href: vnet/data-gateway-faqs.md    
