@@ -36,7 +36,7 @@ In teh current release, VNet data gateways will support connectivity to the foll
 
 ## Azure Active Directory Single Sign-On for Direct Query
 
-When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying on-premises data source. When you configure Single Sign-On (SSO) for the data source, queries execute under the Azure Active Directory (Azure AD) identity of the user that interacts with Power BI.
+When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure VNet data source. When you configure Single Sign-On (SSO) for an applicable data source, queries execute under the Azure Active Directory (Azure AD) identity of the user that interacts with Power BI.
 
 To enable Azure AD SSO, on the **Manage Gateways** page in Power BI, go to the **Data source setting** page, and select the **Use SSO via Azure AD for Direct Queries** check box.
 
