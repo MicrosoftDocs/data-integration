@@ -22,7 +22,7 @@ You can also create data sources and share these data sources to users like you 
 
 ![Manage data source](media/manage-data-source.png)
 
-## Supported Azure Data services 
+## Supported Azure data services 
 
 In the current release, VNet data gateways will support connectivity to the following Azure data services: 
 - Azure SQL
