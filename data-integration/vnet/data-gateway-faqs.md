@@ -19,7 +19,7 @@ Use Private links to secure this connectivity. More information: [Power BI Priva
 
 ### What data sources are supported on the VNet data gateway?
 
-Complete list of data sources can be found here <TODO: Add link>
+Complete list of supported data services is available here: [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
 
 ### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them from Power BI using VNet data gateways?
 
