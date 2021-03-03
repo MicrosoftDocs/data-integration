@@ -35,10 +35,10 @@ All requests are routed to the primary instance of a gateway cluster. If the pri
 
 ## Load balance across gateways in a cluster
 
-You can choose to let traffic be distributed evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
+You can choose to let traffic be distributed evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random. You can use the load balancing and high avaiablity settings together.
 
 > [!NOTE]
-> Offline gateway members within a cluster will negatively impact performance. These members should either be removed or disabled.
+> It is recommended to disable or remove an offline gateway member in the cluster. If a gateway member is offline instead of disabled or removed, we may try to excecute a query on that offline member, before moving to the next one. This can negatively impact the performance.
     
 For example, to provide load balancing from the Power BI service, select the gear icon ![A gear icon](media/service-gateway-manage/icon-gear.png) in the upper-right corner, then select **Manage gateways**. Next, select **Distribute requests across all active gateways in this cluster**.
 
