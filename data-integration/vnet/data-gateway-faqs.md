@@ -73,6 +73,10 @@ Check if there are other gateways using the same VNet and subnet. To be able to 
 
 Beyond the reserved IPs, our recommendation is to have approximately 5-7 IPs so you can add more VNet gateways to the same VNet and Subnet.  
 
+### I am a subscription owner but i get an error when i try to create a subscription
+
+Please make sure you are explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway. 
+
 ### Any other known issues?
 
 You cannot delegate a subnet called **gatewaysubnet** to the Power Platform admin center. This is because it is a reserved word for Azure Gateway Subnet feature.
