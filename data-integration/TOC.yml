@@ -1,5 +1,6 @@
 - name: On-premises data gateways docs
   href: gateway/index.yml 
+  expanded: true
   items:
   - name: "What is an on-premises data gateway?"
     href: gateway/service-gateway-onprem.md
@@ -59,3 +60,24 @@
     items:
     - name: "Previous monthly updates"
       href: gateway/service-gateway-monthly-updates.md
+- name: Virtual network data gateways docs
+  expanded: true
+  items:
+  - name: "What is a virtual network data gateway?"
+    href: vnet/overview.md
+  - name: Concepts
+    items:
+    - name: "What is a VNet?"
+      href: vnet/what-is.md
+    - name: Virtual network data gateway architecture
+      href: vnet/data-gateway-architecture.md
+  - name: How to
+    items:
+    - name: Create virtual network data gateways
+      href: vnet/create-data-gateways.md
+    - name: Manage virtual network data gateways
+      href: vnet/manage-data-gateways.md
+    - name: Use virtual network data gateway in Power BI
+      href: vnet/use-data-gateways-sources-power-bi.md
+  - name: Virtual network data gateway FAQs
+    href: vnet/data-gateway-faqs.md    
