@@ -14,6 +14,9 @@ ms.author: arthii
 
 After you have [created](create-data-gateways.md) a virtual network (VNet) data gateway, it will be available in the **Data (preview)** > **Virtual network data gateways** tab in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) for you to manage.
 
+> [!NOTE]
+> The **Virtual network data gateways**s tab won't be visible when the **Tenant Administration** toggle is turned on. 
+
 ![Manage VNet data gateways](media/manage-vnet-data-gateways.png)
 
 ## Manage admins
