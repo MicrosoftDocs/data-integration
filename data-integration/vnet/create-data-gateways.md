@@ -45,7 +45,10 @@ This subnet should have connectivity to the data service.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. [Add a new subnet](/azure/virtual-network/virtual-network-manage-subnet#add-a-subnet) in the VNet.
+1. [Add a new subnet](/azure/virtual-network/virtual-network-manage-subnet#add-a-subnet) in the VNet. This new subnet cannot be shared with other services but will be used entirely by the Power Platform VNet service. 
+
+> [!NOTE]
+> Please don’t use the subnet name: “gatewaysubnet”, As this is a reserved word for the Azure Gateway Subnet feature, you will not be able to use it to create a VNet data gateway in Step 3. 
 
 1. Select **Resource Providers**.
 
