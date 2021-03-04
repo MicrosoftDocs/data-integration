@@ -71,7 +71,7 @@ Check if there are other gateways using the same VNet and subnet. To be able to 
 
 ### How big does the delegated subnet need to be?
 
-Beyond the reserved IPs, our recommendation is to have ~5-7 IPs so you can add more VNet gateways to the same VNet and Subnet.  
+Beyond the reserved IPs, our recommendation is to have approximately 5-7 IPs so you can add more VNet gateways to the same VNet and Subnet.  
 
 ### Any other known issues?
 
