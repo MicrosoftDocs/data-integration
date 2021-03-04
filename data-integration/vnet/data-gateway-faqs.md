@@ -54,7 +54,8 @@ For SQL serverless with auto-pause, the first request might fail if SQL is in a 
 When used for the first time the VNet gateway takes about a minute to get set up. Similarly, if the VNet data gateway is not used for a period of 2 hours, you could experience a delay of about a minute the next time you use it.
 
 ### Is this feature supported in sovereign clouds?
-	No, only commercial clouds will be supported for the public preview release. 
+
+No, only commercial clouds will be supported for the public preview release. 
 
 ### What is the hardware configuration for a VNet data gateway?
 
@@ -65,8 +66,13 @@ Every VNet data gateway has 1 CPU core 6 GB.
 Yes
 
 ### I am not able to delete the subnet or the VNet that delegated to Power Platform?
+
 Check if there are other gateways using the same VNet and subnet. To be able to delete, it would take up to 48-72 hours after the last gateway using this VNet and subnet was removed. 
+
+### How big does the delegated subnet need to be?
+
+Beyond the reserved IPs, our recommendation is to have approximately 5-7 IPs so you can add more VNet gateways to the same VNet and Subnet.  
 
 ### Any other known issues?
 
-You cannot delegate a subnet called **Gateway subnet** to the Power Platform admin center. This is because it is a reserved word for Azure Gateway Subnet feature.
+You cannot delegate a subnet called **gatewaysubnet** to the Power Platform admin center. This is because it is a reserved word for Azure Gateway Subnet feature.
