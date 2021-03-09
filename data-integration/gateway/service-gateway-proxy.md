@@ -73,14 +73,14 @@ In the file, expand the `<configurations>` section to include the following cont
 </configuration>
 ```
 
-To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network settings)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
+To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
 ## Change the gateway service account to a domain user
 
 As explained earlier, when you configure the proxy settings to use default credentials, you might encounter authentication issues with your proxy. This situation is because the default service account is the Service SID, and not an authenticated domain user. You can change the service account of the gateway to allow proper authentication with your proxy. For more information about how to change the gateway service account, see [Change the on-premises data gateway service account](service-gateway-service-account.md).
 
 > [!NOTE]
-> We recommend that you use a managed service account to avoid having to reset passwords. Learn how to create a [managed service account](https://technet.microsoft.com/library/dd548356.aspx) within Active Directory.
+> We recommend that you use a managed service account to avoid having to reset passwords. Learn how to create a [managed service account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd548356(v=ws.10)) within Active Directory.
 >
 
 ## Next steps

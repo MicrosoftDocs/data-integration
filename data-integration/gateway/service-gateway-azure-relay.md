@@ -36,7 +36,7 @@ During installation of the on-premises data gateway, the Azure Relays are automa
 
        ![Provide the WCF relay URI](media/service-gateway-azure-relay/wfc-relay-uri.png)
   
-    2. **Send key value and the Listen Key Value**&mdash;Create two shared access policies, one called SendAccessKey and the other ListenAccessKey. Provide either the primary or the secondary keys in the on-premises data gateway app. To learn more, see [Azure Relay authentication and authorization](https://docs.microsoft.com/azure/azure-relay/relay-authentication-and-authorization).
+    2. **Send key value and the Listen Key Value**&mdash;Create two shared access policies, one called SendAccessKey and the other ListenAccessKey. Provide either the primary or the secondary keys in the on-premises data gateway app. To learn more, see [Azure Relay authentication and authorization](/azure/azure-relay/relay-authentication-and-authorization).
 
        ![Send and listen access keys](media/service-gateway-azure-relay/send-access-key-policy.png)
 
@@ -45,7 +45,7 @@ During installation of the on-premises data gateway, the Azure Relays are automa
 
 ## Next steps
 
-- [What is Azure Relay?](https://docs.microsoft.com/azure/azure-relay/relay-what-is-it)
+- [What is Azure Relay?](/azure/azure-relay/relay-what-is-it)
   
 . 
 

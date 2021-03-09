@@ -33,7 +33,7 @@ Let’s first look at what happens when you interact with an element that is con
 > [!NOTE]
 > Depending on the cloud service, you might need to configure a data source for the gateway.
 
-1. The cloud service creates a query and the encrypted credentials for the on-premises data source. The query and credentials are sent to the gateway queue for processing. For more information about credential encryption in Power BI, see [Power BI security whitepaper](https://docs.microsoft.com/power-bi/guidance/whitepaper-powerbi-security).
+1. The cloud service creates a query and the encrypted credentials for the on-premises data source. The query and credentials are sent to the gateway queue for processing. For more information about credential encryption in Power BI, see [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
 1. The gateway cloud service analyzes the query and pushes the request to [Azure Service Bus Messaging](/azure/service-bus-messaging/service-bus-messaging-overview/). 
 1. Azure Service Bus sends the pending requests to the gateway.
 1. The gateway gets the query, decrypts the credentials, and connects to one or more data sources with those credentials.
@@ -44,7 +44,7 @@ In step 6, queries like Power BI refreshes and Azure Analysis Services refreshes
 
 ## Authentication to on-premises data sources
 
-A stored credential is used to connect from the gateway to on-premises data sources. Regardless of the user, the gateway uses the stored credential to connect. But there might be authentication exceptions like DirectQuery and LiveConnect for Analysis Services in Power BI. For more information about credential encryption in Power BI, see [Power BI security whitepaper](https://docs.microsoft.com/power-bi/guidance/whitepaper-powerbi-security).
+A stored credential is used to connect from the gateway to on-premises data sources. Regardless of the user, the gateway uses the stored credential to connect. But there might be authentication exceptions like DirectQuery and LiveConnect for Analysis Services in Power BI. For more information about credential encryption in Power BI, see [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
 
 ## Sign-in account
 
@@ -52,7 +52,7 @@ You sign in with either a work account or a school account. This account is your
 
 ## Azure Active Directory
 
-Microsoft cloud services use [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users. Azure AD is the tenant that contains usernames and security groups. Typically, the email address that you use for sign-in is the same as the UPN of your account. For more information about authentication in Power BI, see [Power BI security whitepaper](https://docs.microsoft.com/power-bi/guidance/whitepaper-powerbi-security).
+Microsoft cloud services use [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users. Azure AD is the tenant that contains usernames and security groups. Typically, the email address that you use for sign-in is the same as the UPN of your account. For more information about authentication in Power BI, see [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
 
 ### How do I tell what my UPN is?
 

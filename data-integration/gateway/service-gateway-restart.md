@@ -34,7 +34,7 @@ Restart the on-premises data gateway service with any of the following methods.
 
 ## Next steps
 
-* [Tenant level administration](service-gateway-tenant-level-admin.md)
+* [Tenant level administration](/power-platform/admin/onpremises-data-gateway-management)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -28,7 +28,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 
 * .NET Framework 4.6 (Gateway release August 2019 and earlier)
 * .NET Framework 4.7.2 (Gateway release September 2019 and later)
-* A 64-bit version of Windows 8 or a 64-bit version of Windows Server 2012 R2 with [current TLS 1.2 and cipher suites](https://docs.microsoft.com/power-platform/admin/onpremises-server-cipher-tls-requirements)
+* A 64-bit version of Windows 8 or a 64-bit version of Windows Server 2012 R2 with [current TLS 1.2 and cipher suites](/power-platform/admin/onpremises-server-cipher-tls-requirements)
 * 4 GB disk space for [performance monitoring](service-gateway-performance.md#gateway-performance-monitoring-public-preview) logs (in default configuration)
 
 > [!NOTE]
