@@ -34,10 +34,10 @@ LocalizationGroup: Gateways
 **Answer:** There are no restrictions for installing and registering a gateway. But any cloud service might have licensing restrictions on how gateways are used within that service.
 
 **Question:** Are there any requirements for network bandwidth?  
-**Answer:** Check that your network connection has good throughput. Each environment is different, and throughput depends on the amount of data that is sent. To ensure a minimum level of throughput between your on-premises data source and Azure datacenters, use [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction). To help measure your throughput, you can use the [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/).
+**Answer:** Check that your network connection has good throughput. Each environment is different, and throughput depends on the amount of data that is sent. To ensure a minimum level of throughput between your on-premises data source and Azure datacenters, use [Azure ExpressRoute](/azure/expressroute/expressroute-introduction). To help measure your throughput, you can use the [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/).
 
 **Question:** Where are my credentials stored?  
-**Answer:** The credentials that you enter for a data source are encrypted and stored in the gateway cloud service. The credentials are decrypted at the gateway on premises. For more information about credential encryption in Power BI, see [Power BI security whitepaper](https://docs.microsoft.com/power-bi/guidance/whitepaper-powerbi-security).
+**Answer:** The credentials that you enter for a data source are encrypted and stored in the gateway cloud service. The credentials are decrypted at the gateway on premises. For more information about credential encryption in Power BI, see [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
 
 **Question:** What is the actual Windows service called?  
 **Answer:** On your local computer, in the Services app, the service is called "On-premises data gateway service". In Task Manager, on the Services tab, the service name is "PBIEgwService". By default, the Windows service uses "NT SERVICE\PBIEgwService" as the Service SID (SSID).

@@ -68,7 +68,7 @@ For GCCC, GCC high and DoD, the following FQDNs are used by the gateway.
 | 80 | *.download.microsoft.com |*.download.microsoft.com |*.download.microsoft.com |
 | 443 | *.powerbigov.us, *.powerbi.com  |*.high.powerbigov.us |*.mil.powerbigov.us|
 | 443 | *.analysis.usgovcloudapi.net |*.high.analysis.usgovcloudapi.net |*.mil.analysis.usgovcloudapi.net |
-| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online)|[See documentation](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online) |
+| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online)|[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online) |
 |5671-5672| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net|*.servicebus.usgovcloudapi.net |
 |443 and 9350-9354| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |
 |443| *.core.usgovcloudapi.net|*.core.usgovcloudapi.net|*.core.usgovcloudapi.net |
