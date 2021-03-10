@@ -58,12 +58,12 @@ To enable this feature, a gateway admin should update the following settings in 
 
 - **ResourceUtilizationAggregateionPeriodInMinutes** - This configuration sets the time in minutes for which CPU and memory system counters of the gateway machine are aggregated. The aggregated values are then compared against the respective threshold limits set for **CPUUtilizationPercentageThreshold** and **MemoryUtilizationPercentageThreshold**. The default value for this configuration is 5.
 
->[!NOTE]
-> You can also change the load balancing setting through [PowerShell](https://docs.microsoft.com/powershell/module/datagateway/set-datagatewaycluster)
+> [!NOTE]
+> You can also change the load balancing setting through [PowerShell](/powershell/module/datagateway/set-datagatewaycluster)
 
 ## Next steps
 
-* [PowerShell support for gateway clusters](service-gateway-powershell-support.md)
+[PowerShell support for gateway clusters](service-gateway-powershell-support.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
