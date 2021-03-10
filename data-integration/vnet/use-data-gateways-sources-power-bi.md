@@ -6,11 +6,18 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 03/01/2021
+ms.date: 03/10/2021
 ms.author: arthii
 ---
 
 # Use virtual network data gateway and data sources in Power BI
+
+Virtual network data gateways allows import or direct query datasets to connect to data services within an Azure VNet without the need of an on-premises data gateway. 
+   
+> [!NOTE]
+> Virtual network data gateways is a premium-only feature, and will be available only in Power BI Premium workspaces.
+
+## Manage Virtual network data gateways
 
 You can manage admins for a virtual network (VNet) data gateway like you do for standard data gateways either in the Power Platform admin center or on the **Manage gateways** page in Power BI.
 

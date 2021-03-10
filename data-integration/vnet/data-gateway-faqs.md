@@ -5,7 +5,7 @@ author: arthiriyer
 ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.topic: conceptual
-ms.date: 03/01/2021
+ms.date: 03/10/2021
 ms.author: arthii
 ---
 
@@ -65,13 +65,17 @@ Every VNet data gateway has 1 CPU core 6 GB.
 
 Yes
 
-### I am not able to delete the subnet or the VNet that delegated to Power Platform?
+### I am not able to delete the subnet or the VNet that delegated to Power Platform.
 
 Check if there are other gateways using the same VNet and subnet. To be able to delete, it would take up to 48-72 hours after the last gateway using this VNet and subnet was removed. 
 
 ### How big does the delegated subnet need to be?
 
 Beyond the reserved IPs, our recommendation is to have approximately 5-7 IPs so you can add more VNet gateways to the same VNet and Subnet.  
+
+### I am a subscription owner but get an error when I try to create a subscription.
+
+Make sure you are explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway. 
 
 ### Any other known issues?
 
