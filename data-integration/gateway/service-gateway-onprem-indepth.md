@@ -35,7 +35,7 @@ Let’s first look at what happens when you interact with an element that is con
 
 1. The cloud service creates a query and the encrypted credentials for the on-premises data source. The query and credentials are sent to the gateway queue for processing. For more information about credential encryption in Power BI, see [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
 1. The gateway cloud service analyzes the query and pushes the request to [Azure Service Bus Messaging](/azure/service-bus-messaging/service-bus-messaging-overview/). 
-1. Azure Service Bus sends the pending requests to the gateway.
+1. Azure Service Bus sends the pending requests to the gateway. Both the gateway and Power BI service are implemented to only accept TLS1.2 traffic.
 1. The gateway gets the query, decrypts the credentials, and connects to one or more data sources with those credentials.
 1. The gateway sends the query to the data source to be run.
 1. The results are sent from the data source back to the gateway and then to the cloud service. The service then uses the results.
