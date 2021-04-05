@@ -28,16 +28,13 @@ If a firewall blocks outbound connections, configure the firewall to allow outbo
 
 The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports.
 
-We recommend that you allow the IP addresses for your data region in your firewall. You can download the [Azure datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) periodically in the gateway app.
-
-> [!NOTE]
-> This file will be deprecated by June 30, 2020. Please start using the JSON files listed below:
+We recommend that you allow the IP addresses for your data region in your firewall. Please use the JSON files listed below which are updated weekly.
 >* [Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
 >* [US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
 >* [Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
->* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
+>* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)(https://www.microsoft.com/download/details.aspx?id=41653)
 
-These JSON files are updated weekly
+Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) periodically in the gateway app.
 
 The gateway communicates with Service Bus by using an IP address along with a fully qualified domain name (FQDN). If you force the gateway to communicate via HTTPS, it will strictly use FQDNs only and won't communicate by using IP addresses.
 
