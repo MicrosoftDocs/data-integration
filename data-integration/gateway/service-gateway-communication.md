@@ -69,7 +69,7 @@ For GCCC, GCC high and DoD, the following FQDNs are used by the gateway.
 |5671-5672| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net|*.servicebus.usgovcloudapi.net |
 |443 and 9350-9354| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |
 |443| *.core.usgovcloudapi.net|*.core.usgovcloudapi.net|*.core.usgovcloudapi.net |
-|443| *.login.microsoftonline.com |*.login.microsoftonline.com |*.login.microsoftonline.com |
+|443| *.login.microsoftonline.com |*.login.microsoftonline.us |*.login.microsoftonline.us |
 |443| *.msftncsi.com |*.msftncsi.com |*.msftncsi.com |
 |443| *.microsoftonline-p.com |*.microsoftonline-p.com |*.microsoftonline-p.com |
 |443| *.dc.applicationinsights.us |*.dc.applicationinsights.us |*.dc.applicationinsights.us |
