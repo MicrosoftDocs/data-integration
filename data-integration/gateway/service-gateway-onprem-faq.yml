@@ -135,11 +135,8 @@ sections:
         answer: |
           The key provides a way to add a new gateway to a cluster or to migrate, recover, or take over a gateway.
 
-  - name: Troubleshooting
-    questions:
-      - question: |
-          Troubleshooting
-        answer: |
+          ## Troubleshooting
+
           For more information, see [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md).
           
       - question: |
