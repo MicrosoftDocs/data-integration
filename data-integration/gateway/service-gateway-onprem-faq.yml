@@ -1,0 +1,172 @@
+### YamlMime:FAQ
+metadata:
+  title: On-premises data gateway FAQ
+  description: This article is the on-premises data gateway FAQ. It collects frequently asked questions about the gateway into one spot.
+  author: arthiriyer
+  manager: kvivek
+  ms.reviewer: kvivek
+  
+  ms.prod: on-premises-data-gateway
+  ms.technology:
+  ms.topic: conceptual
+  ms.date: 09/18/2020
+  ms.author: arthii
+  LocalizationGroup: Gateways
+    
+title: On-premises data gateway FAQ
+summary: |
+
+sections:
+  - name: General
+    questions:
+      - question: |
+          Do I need a gateway for cloud data sources, such as Azure SQL Database?  
+        answer: |
+          No, services can generally connect to cloud data sources without a gateway. However, you might need a data gateway if your data sources are behind a firewall, require a VPN, or are on virtual networks.
+
+      - question: |
+          What are the requirements for the gateway?  
+        answer: |
+          Review the requirements section in the [installation article](service-gateway-install.md#requirements).
+          
+      - question: |
+          Does the gateway have to be installed on the same machine as the data source?  
+        answer: |
+          No, the gateway connects to the data source by using the provided connection information. In this sense, consider the gateway as a client application. The gateway just needs to connect to the specified server.
+
+      - question: |
+          How many releases of the on-premises data gateway does Microsoft actively support?  
+        answer: |
+          Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. We release a new update for data gateways every month.
+
+      - question: |
+          Are there any permissions prerequisites required to install gateways?  
+        answer: |
+          There are no restrictions for installing and registering a gateway. But any cloud service might have licensing restrictions on how gateways are used within that service.
+
+      - question: |
+          Are there any requirements for network bandwidth?  
+        answer: |
+          Check that your network connection has good throughput. Each environment is different, and throughput depends on the amount of data that is sent. To ensure a minimum level of throughput between your on-premises data source and Azure datacenters, use [Azure ExpressRoute](/azure/expressroute/expressroute-introduction). To help measure your throughput, you can use the [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/).
+          
+      - question: |
+          Where are my credentials stored?  
+        answer: |
+          The credentials that you enter for a data source are encrypted and stored in the gateway cloud service. The credentials are decrypted at the gateway on premises. For more information about credential encryption in Power BI, see [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
+          
+      - question: |
+          What is the actual Windows service called?  
+        answer: |
+          On your local computer, in the Services app, the service is called "On-premises data gateway service". In Task Manager, on the Services tab, the service name is "PBIEgwService". By default, the Windows service uses "NT SERVICE\PBIEgwService" as the Service SID (SSID).
+
+      - question: |
+          Can the gateway Windows service run with an Azure Active Directory (Azure AD) account?  
+        answer: |
+          No, the Windows service needs a valid Windows account.
+
+      - question: |
+          Are there any inbound connections to the gateway from the cloud?  
+        answer: |
+          No, the gateway uses outbound connections to Azure Service Bus.
+
+      - question: |
+          What if I block outbound connections? What do I need to open?  
+        answer: |
+          See [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
+          
+      - question: |
+          Do I need to unblock the Azure Datacenter IP list? Where do I get the list?  
+        answer: |
+          If you block outbound IP traffic, you might need to unblock the Azure Datacenter IP list. The gateway communicates with Azure Service Bus by using an IP address and a fully qualified domain name. The Azure Datacenter IP list is updated weekly. For more information, see [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
+          
+      - question: |
+          What is the latency for running queries from the gateway to a data source? What is the best architecture?  
+        answer: |
+          To avoid network latency, install the gateway as close as possible to the data source. If you can install the gateway on the actual data source, this closer location minimizes latency.
+          
+          Also, consider the proximity to the Azure datacenters. For example, if your service uses the West US datacenter, and you have SQL Server hosted in an Azure virtual machine, you might also want your Azure VM in the West US region. This configuration minimizes latency and avoids egress charges on the Azure VM.
+          
+      - question: |
+          How are results sent back to the cloud?  
+        answer: |
+          The results are sent through Azure Service Bus. For more information, see [On-premises data gateway architecture](service-gateway-onprem-indepth.md).
+          
+      - question: |
+          Can I place the gateway in a perimeter network (also known as DMZ, demilitarized zone, and screened subnet)?  
+        answer: |
+          The gateway requires connectivity to the data source. So, if the data source isn't reachable in your perimeter network, the gateway might not have access.
+          
+          For example, assume your SQL Server computer isn't in your perimeter network. Also, assume you can't connect to that computer from the perimeter network. If you place the gateway in your perimeter network, the gateway can't reach the SQL Server computer.
+          
+      - question: |
+          Can I force the gateway to use HTTPS traffic with Azure Service Bus instead of TCP?  
+        answer: |
+          Yes, for more information, see [Force HTTPS communication with Azure Service Bus](service-gateway-communication.md#force-https-communication-with-azure-service-bus). Turning on this feature has little effect on performance.
+          
+      - question: |
+          Are the on-premises data gateway and Data Management Gateway, which is used by Azure Machine Learning Studio and Azure Data Factory, the same thing?  
+        answer: |
+          No, they are different products. To get more information about Data Management Gateway, which is now called Self-hosted Integration Runtime, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).
+          
+      - question: |
+          Can the person who sets up the gateway in the Azure portal be different from the one who installs that gateway?  
+        answer: |
+          Yes, you must use PowerShell to add other owners to the same gateway. These users can create the gateway in the Azure portal. However, they should connect to the portal and the gateway by using the same tenant.
+
+      - question: |
+          Does Azure ExpressRoute eliminate the need for a gateway?  
+        answer: |
+          No. A gateway is still required when connecting to on-premises data sources.
+
+  - name: High availability and disaster recovery
+    questions:
+      - question: |
+          Are there any plans for enabling high-availability scenarios with the gateway?  
+        answer: |
+          To help avoid a single point of failure, you can [set up on-premises data gateways as clusters](service-gateway-high-availability-clusters.md) for high availability. By default, cloud services such as Power Apps and Power BI use the primary gateway and fall back to the secondary gateway if the primary is unavailable.
+          
+      - question: |
+          What options are available for disaster recovery?  
+        answer: |
+          When you install the gateway, you supply a recovery key. You can use the key to [restore or migrate](service-gateway-migrate.md) a gateway.
+          
+      - question: |
+          What is the benefit of the recovery key?  
+        answer: |
+          The key provides a way to add a new gateway to a cluster or to migrate, recover, or take over a gateway.
+
+          ## Troubleshooting
+
+          For more information, see [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md).
+          
+      - question: |
+          Where are the gateway logs located?  
+        answer: |
+          See [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
+          
+      - question: |
+          How can I see what queries are sent to the on-premises data source?  
+        answer: |
+          You can enable query tracing by turning on [additional logging](service-gateway-performance.md#slow-performing-queries). The logs include the queries that are sent. Remember to turn off query tracing when you're done troubleshooting. Having query tracing enabled causes the logs to be larger.
+          
+          You can also look at your data source's tools for tracing queries. For example, if SQL Server and SQL Server Analysis Services are data sources, you can use SQL Server Extended Events or SQL Server Profiler to trace queries.
+          
+  - name: Administration
+    questions:
+      - question: |
+          Can I have more than one admin for a gateway?  
+        answer: |
+          Yes, when you manage a gateway, you can go to the administrator's tab to add additional admins. You can also have security groups as admins.
+
+      - question: |
+          Does the gateway admin need to be an admin on the machine where the gateway is installed?  
+        answer: |
+          No, the gateway admin manages the gateway from within the service.
+
+additionalContent: |
+
+  ## Next steps
+    * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
+          
+          
+    [!INCLUDE[footer-include](../includes/footer-banner.md)]

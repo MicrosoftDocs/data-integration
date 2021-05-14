@@ -9,7 +9,7 @@
     - name: "On-premises data gateway architecture"
       href: gateway/service-gateway-onprem-indepth.md    
     - name: "On-premises data gateway FAQ"
-      href: gateway/service-gateway-onprem-faq.md
+      href: gateway/service-gateway-onprem-faq.yml
   - name: How to
     items:
     - name: "Install gateways"

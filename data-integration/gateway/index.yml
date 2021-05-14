@@ -29,7 +29,7 @@ landingContent:
           - text: On-premises data gateway architecture
             url: ./service-gateway-onprem-indepth.md
           - text: On-premises data gateway FAQ
-            url: ./service-gateway-onprem-faq.md
+            url: ./service-gateway-onprem-faq.yml
 
   # Card
   - title: Set up and manage
