@@ -55,3 +55,5 @@ A Power BI report maker or creator can now publish a report and associate the da
 
 ![Use in Power BI datasets](media/use-in-pbi-datasets.png)
 
+> [!NOTE]
+> Virtual network data gateways currently have a 2 GB limit on the size of the returned resultset.
