@@ -18,3 +18,4 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
 ## Limitations
 - Currently, this feature is available only for Power BI datasets
 - List of supported data services is available here: [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
+- Virtual network data gateways currently have a 2 GB limit on the size of the returned results.
