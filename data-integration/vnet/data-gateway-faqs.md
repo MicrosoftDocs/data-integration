@@ -43,7 +43,7 @@ Few areas to check:
 - Make sure that the data source can be accessed from within the VNet specifically from the subnet used while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
 
 ### How is the connectivity between the VNet service and your VNet secured?
-The connectivity between the new VNet service and your VNet is via HTTPS.
+The connectivity between the new VNet service and your VNet is via HTTPS and TLS 1.2.
 
 ### Are there any known connectivity issues for SQL serverless with auto-pause?
 
