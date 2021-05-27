@@ -27,6 +27,14 @@ It's a good general practice to make sure you're using a supported version. We r
 
 Keep the versions of the gateway members in a cluster in sync. Having all the same version in a cluster helps to avoid unexpected refresh failures. These refresh failures might occur because the gateway member that a specific query is routed to might not be capable of executing it due to a lower version.
 
+## Troubleshoot Gateway management
+
+Here are a few common management issues and the resolutions that helped other customers.
+
+### Error while removing the primary node of a gateway cluster
+
+The primary node of a gateway can't be removed if there are other members in the cluster. Removing the primary node also means removing the gateway cluster. 
+
 ## Troubleshoot common installation issues
 
 Here are a few common installation issues and the resolutions that helped other customers.
