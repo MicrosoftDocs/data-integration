@@ -33,7 +33,7 @@ Here are a few common management issues and the resolutions that helped other cu
 
 ### Error while removing the primary node of a gateway cluster
 
-The primary node of a gateway cannot be removed if there are other members in the cluster. Removing the primary node also means removing the gateway cluster. 
+The primary node of a gateway can't be removed if there are other members in the cluster. Removing the primary node also means removing the gateway cluster. 
 
 ## Troubleshoot common installation issues
 
