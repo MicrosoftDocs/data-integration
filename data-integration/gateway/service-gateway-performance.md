@@ -26,7 +26,9 @@ To monitor performance, gateway admins have traditionally depended on manually m
 This feature is now turned on by default. To disable this feature, make the following changes to the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file in the *\Program Files\On-premises data gateway* folder.
 
 >[!NOTE]
-> Currently, queries from premium capacity to the gateway are sometimes missed in this logging. We are actively working on fixing this issue.
+>
+> * Currently, queries from premium capacity to the gateway are sometimes missed in this logging. We are actively working on fixing this issue.
+> * Currently, Power BI paginated report queries aren’t logged using this tool.
 
 1. The `DisableQueryExecutionReport` property is by default set to _False_ to enable additional logging for queries executed using the gateway. This creates both the Query Execution Report and the Query Execution Aggregation Report files. To turn this feature off, switch the flag to _True_.
 
