@@ -5,7 +5,7 @@ author: arthiriyer
 ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 06/22/2021
 ms.author: arthii
 ---
 
@@ -19,13 +19,17 @@ Use Private links to secure this connectivity. More information: [Power BI Priva
 
 ### What data sources are supported on the VNet data gateway?
 
-Complete list of supported data services is available here: [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
+A complete list of supported data services:
 
-### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them from Power BI using VNet data gateways?
+* for Power BI is available in [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
+* for Power Platform dataflows is available in [Supported data sources](data-gateway-power-platform-dataflows.md#supported-data-sources)
+
+### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them using VNet data gateways?
 
 Yes
 
 ### Why am I not able to create a service endpoint for my data source in my VNet?
+
 Review [Azure VNet documentation](/azure/virtual-network/virtual-networks-overview) for restrictions (for example, region related) on VNets, endpoints, and associated azure resources.
 
 ### How do I create a private endpoint for my data sources and associate it to a VNet?
@@ -35,6 +39,14 @@ Review the corresponding Azure data service product documentation to check if pr
 ### Will I be able to use this feature if my data source is in East US and my Power BI home region is in East US2?
 
 Yes, there is no dependency on the Power BI home region for this feature. If this feature is enabled in the region where the VNet exists, you will be able to create a new VNet data gateway.
+
+### Can I choose the region where VNet data gateways are created?
+
+No, VNet gateways are by default created in your tenant’s home region and there's currently no option to change it.
+
+### Will I be able to use this feature if my tenant is in East US (United States) and Power platform environment is in Europe?
+
+No, VNet gateways are currently available only in your tenant’s home region.
 
 ### Why can’t I connect to the data source?
 
