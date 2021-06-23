@@ -38,7 +38,7 @@ Review the corresponding Azure data service product documentation to check if pr
 
 ### Will I be able to use this feature if my data source is in East US and my Power BI home region is in East US2?
 
-Yes, there is no dependency on the Power BI home region for this feature. If this feature is enabled in the region where the VNet exists, you will be able to create a new VNet data gateway.
+Yes, there's no dependency on the Power BI home region for this feature. If this feature is enabled in the region where the VNet exists, you'll be able to create a new VNet data gateway.
 
 ### Can I choose the region where VNet data gateways are created?
 
@@ -51,44 +51,46 @@ No, VNet gateways are currently available only in your tenant’s home region.
 ### Why can’t I connect to the data source?
 
 Few areas to check:
-- Make sure your data source is up and running.
-- Make sure that the data source can be accessed from within the VNet specifically from the subnet used while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
+
+* Make sure your data source is up and running.
+* Make sure the data source can be accessed from within the VNet&mdash;specifically from the subnet used while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
 
 ### How is the connectivity between the VNet service and your VNet secured?
+
 The connectivity between the new VNet service and your VNet is via HTTPS and TLS 1.2.
 
 ### Are there any known connectivity issues for SQL serverless with auto-pause?
 
-For SQL serverless with auto-pause, the first request might fail if SQL is in a paused state, but the subsequent ones will succeed. 
+For SQL serverless with auto-pause, the first request might fail if SQL is in a paused state, but the next ones will succeed.
 
 ### Is there a delay when the VNet gateway is used for the first time or after a period of inactivity?
 
-When used for the first time the VNet gateway takes about a minute to get set up. Similarly, if the VNet data gateway is not used for a period of 2 hours, you could experience a delay of about a minute the next time you use it.
+When used for the first time, the VNet gateway takes about a minute to get set up. Similarly, if the VNet data gateway isn't used for 2 hours, you could experience a delay of about a minute the next time you use it.
 
 ### Is this feature supported in sovereign clouds?
 
-No, only commercial clouds will be supported for the public preview release. 
+No, only commercial clouds will be supported for the public preview release.
 
 ### What is the hardware configuration for a VNet data gateway?
 
-Every VNet data gateway has 1 CPU core 6 GB. 
+Every VNet data gateway has 1 CPU core 6 GB.
 
 ### Can I create multiple VNet data gateways for the same Azure data service?  
 
 Yes
 
-### I am not able to delete the subnet or the VNet that delegated to Power Platform.
+### I'm not able to delete the subnet or the VNet that delegated to Power Platform.
 
-Check if there are other gateways using the same VNet and subnet. To be able to delete, it would take up to 48-72 hours after the last gateway using this VNet and subnet was removed. 
+Check if there are other gateways using the same VNet and subnet. To be able to delete, it would take up to 48-72 hours after the last gateway using this VNet and subnet was removed.
 
 ### How big does the delegated subnet need to be?
 
 Beyond the reserved IPs, our recommendation is to have approximately 5-7 IPs so you can add more VNet gateways to the same VNet and Subnet.  
 
-### I am a subscription owner but get an error when I try to create a subscription.
+### I'm a subscription owner but get an error when I try to create a subscription.
 
-Make sure you are explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway. 
+Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway. 
 
 ### Any other known issues?
 
-You cannot delegate a subnet called **gatewaysubnet** to the Power Platform admin center. This is because it is a reserved word for Azure Gateway Subnet feature.
+You can't delegate a subnet called **gatewaysubnet** to the Power Platform admin center. This is because it's a reserved word for Azure Gateway Subnet feature.

@@ -31,13 +31,13 @@ To connect to data using a VNet data gateway:
 
    ![Screenshot showing the Power Query connect to data source dialog box with VNet data gateway names included in the on-premises data gateway selection box](media/vnet-gateway-selections.png)
 
-3. Select a VNet data gateway, choose an authentication kind, and then select **Next** to connect and proceed with transforming data.
+3. Select a VNet data gateway, choose an authentication kind, and then select **Next** to connect and continue with transforming data.
 
    ![Screenshot showing the Power Query connect to data source dialog box with the VNet data gateway name selected, the user signed in, and ready to select the Next button](media/finishing-vnet-connection.png)
 
-You could also update VNet data gateway details just like you do for an on-premises data gateway. In the Power Query editor, select **Home > Options > Project options** while editing your dataflow.
+You can also update VNet data gateway details just like you do for an on-premises data gateway. In the Power Query editor, select **Home > Options > Project options** while editing your dataflow.
 
-   ![screenshot](media/project-options-gateway.png)
+   ![Screenshot showing the Power Query Project options dialog box that contains the VNet data gateway options you can change while editing your dataflow](media/project-options-gateway.png)
 
 ## Supported data sources
 
@@ -47,4 +47,4 @@ VNet data gateways aren’t supported for:
 * the [Web](/power-query/connectors/web/web) connector
 * the [ODBC](/power-query/connectors/odbc) connector
 
-On-premises data sources can be connected using ExpressRoute, but this configuration hasn’t been tested and won't be supported by Microsoft during public preview.
+On-premises data sources can be connected using ExpressRoute. But this configuration hasn’t been tested and won't be supported by Microsoft during public preview.
