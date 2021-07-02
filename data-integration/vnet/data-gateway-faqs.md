@@ -17,6 +17,10 @@ This article contains a list of frequent asked questions (FAQs) about the virtua
 
 Use Private links to secure this connectivity. More information: [Power BI Private Links documentation](/power-bi/admin/service-security-private-links)  
 
+### Where is my VNet data gateway?
+
+The VNet data gateway is physically in the same region as your Azure VNet. However, the metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your tenant’s default region. You can manage all VNet data gateways when you select your tenant’s home region in [Power platform admin center](manage-data-gateways.md).
+
 ### What data sources are supported on the VNet data gateway?
 
 Complete list of supported data services is available here: [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
