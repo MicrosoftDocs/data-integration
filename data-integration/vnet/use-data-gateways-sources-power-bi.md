@@ -54,6 +54,3 @@ To enable Azure AD SSO, on the **Manage Gateways** page in Power BI, go to the *
 A Power BI report maker or creator can now publish a report and associate the dataset to the VNet data gateway data source.
 
 ![Use in Power BI datasets](media/use-in-pbi-datasets.png)
-
-> [!NOTE]
-> Virtual network data gateways currently have a 2 GB limit on the size of the returned results.
