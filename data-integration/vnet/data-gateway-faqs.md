@@ -5,7 +5,7 @@ author: arthiriyer
 ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 06/29/2021
 ms.author: arthii
 ---
 
@@ -40,7 +40,10 @@ Yes, there is no dependency on the Power BI home region for this feature. If thi
 
 Few areas to check:
 - Make sure your data source is up and running.
-- Make sure that the data source can be accessed from within the VNet specifically from the subnet used while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
+- Make sure that the data source can be accessed from within the VNet specifically from the subnet delegated while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
+- The following Azure Network Security Groups (NSGs) may be required depending on your scenario:
+  - Allow outbound traffic to the AAD endpoint while using OAuth authentication to connect to a data source.
+  - Allow outbound traffic to CA (Certificate Authority) while using HTTPS to connect to a data source.
 
 ### How is the connectivity between the VNet service and your VNet secured?
 The connectivity between the new VNet service and your VNet is via HTTPS and TLS 1.2.
