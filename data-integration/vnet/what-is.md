@@ -8,6 +8,7 @@ ms.technology:
 ms.topic: conceptual
 ms.date: 03/01/2021
 ms.author: arthii
+ms.custom: intro-internal
 ---
 
 # What is a virtual network (VNet)? 
