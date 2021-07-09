@@ -40,9 +40,9 @@ sections:
           Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. We release a new update for data gateways every month.
 
       - question: |
-          Are there any permissions prerequisites required to install gateways?  
+          Are there any licensing prerequisites required to install gateways?  
         answer: |
-          There are no restrictions for installing and registering a gateway. But any cloud service might have licensing restrictions on how gateways are used within that service.
+          There are no licensing restrictions for installing and registering a gateway. But any cloud service might have licensing restrictions on how gateways are used within that service.
 
       - question: |
           Are there any requirements for network bandwidth?  
