@@ -163,7 +163,7 @@ By default, the gateway performs basic logging. If you're investigating slow-per
 
 Enabling this setting likely will increase the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable additional logging. We don't recommend leaving this setting enabled during normal gateway usage.
 
-When you turn on this setting, you can see additional information (application context in the following sample) logged in the gateway logs that indicates which dataset or report this query belongs to. Note that not all services are able to send this information at this time and we are working on known gaps.
+When you turn on this setting, you can see additional information (application context in the following sample) in the gateway logs that indicates which dataset or report this query belongs to. Note that not all services are able to send this information at this time and we are working on known gaps.
 
 ```
 QueryAdditionalInformation is: {
