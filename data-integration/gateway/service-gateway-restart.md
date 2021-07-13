@@ -20,11 +20,11 @@ Restart the on-premises data gateway service with any of the following methods.
 
 * In the [gateway app](service-gateway-app.md), select **Service Settings**, then select **Restart now**.
 
-    ![Restarting from the gateway app](media/service-gateway-restart/restart-gateway.png)
+    ![Restarting from the gateway app.](media/service-gateway-restart/restart-gateway.png)
 
 * In the services app, select the gateway service and then restart.
 
-    ![Restarting from the services app](media/service-gateway-restart/service-restart.png)
+    ![Restarting from the services app.](media/service-gateway-restart/service-restart.png)
 
 * In an admin Command Prompt window, use the following commands.
 

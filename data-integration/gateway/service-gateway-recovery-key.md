@@ -35,19 +35,19 @@ Use the following steps to change the recovery key.
 
 1. On the **Recovery Keys** tab, select **Set new recovery key**. In a cluster with more than one member, this action disables all other gateway members. You re-enable these members later in this process.
 
-    ![Set new recovery key](media/service-gateway-recovery-key/set-new-recovery-key.png)
+    ![Set new recovery key.](media/service-gateway-recovery-key/set-new-recovery-key.png)
 
 1. Enter the current recovery key and the new one.
 
-    ![Add new recovery key](media/service-gateway-recovery-key/add-new-recovery-key.png)
+    ![Add new recovery key.](media/service-gateway-recovery-key/add-new-recovery-key.png)
 
 1. Select **Configure** to change the recovery key. This step performs a recovery of the gateway and encrypts all Power BI data source credentials using the new recovery key.
 
-    ![Configure new recovery key](media/service-gateway-recovery-key/configure-new-recovery-key.png)
+    ![Configure new recovery key.](media/service-gateway-recovery-key/configure-new-recovery-key.png)
 
     After you've created the new key, the app shows that there is now a secondary or _legacy_ recovery key. The gateway maintains both keys on the machine where it's installed, so connections that use the legacy recovery key do not fail. If you want to delete the legacy key, see [Delete the legacy recovery key](#delete-the-legacy-recovery-key).
 
-    ![Legacy recovery key](media/service-gateway-recovery-key/legacy-recovery-key.png)
+    ![Legacy recovery key.](media/service-gateway-recovery-key/legacy-recovery-key.png)
 
 1. If you have a gateway cluster with more than one member, perform an [uninstall and recovery](service-gateway-migrate.md) for each gateway member.  The recovery process will ask for both the old and the new key.
 
@@ -61,6 +61,6 @@ After you've created a new recovery key, you can delete the legacy recovery key.
 
 1. On the **Recovery Keys** tab, select **Delete legacy recovery key**.
 
-    ![Delete legacy recovery key](media/service-gateway-recovery-key/delete-legacy-recovery-key.png)
+    ![Delete legacy recovery key.](media/service-gateway-recovery-key/delete-legacy-recovery-key.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

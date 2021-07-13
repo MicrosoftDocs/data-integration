@@ -26,7 +26,7 @@ By using a gateway, organizations can keep databases and other data sources on t
 
 ## How the gateway works
 
-![Gateway overview](media/service-gateway-getting-started/on-premises-data-gateway.png)
+![Gateway overview.](media/service-gateway-getting-started/on-premises-data-gateway.png)
 
 For detailed information on how the gateway works, see [On-premises data gateway architecture](service-gateway-onprem-indepth.md).
 

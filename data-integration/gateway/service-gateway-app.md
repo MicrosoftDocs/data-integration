@@ -23,13 +23,13 @@ To open the on-premises data gateway app:
 
 2. Select the **On-premises data gateway** app.
 
-    ![Search for On-premises data gateway app](media/service-gateway-app/gateway-app-search.png)
+    ![Search for On-premises data gateway app.](media/service-gateway-app/gateway-app-search.png)
 
-    ![On-premises data gateway opening dialog box](media/service-gateway-app/opening-dialog.png)
+    ![On-premises data gateway opening dialog box.](media/service-gateway-app/opening-dialog.png)
 
 Some of the on-premises data gateway app features can be used only after you sign in to your Office 365 account. For example, under the **Service Settings** tab, you can restart the gateway without signing in, but you can't change the service account of your gateway without signing in.
 
-![Example of actions that can and can't be taken without signing in](media/service-gateway-app/sign-on-actions.png)
+![Example of actions that can and can't be taken without signing in.](media/service-gateway-app/sign-on-actions.png)
 
 ## On-premises data gateway app features
 
