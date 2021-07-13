@@ -60,11 +60,11 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
 1. In the gateway installer, keep the default installation path, accept the terms of use, and then select **Install**.
 
-    ![Installing to the default installation path](media/service-gateway-install/install-path.png)
+    ![Installing to the default installation path.](media/service-gateway-install/install-path.png)
 
 1. Enter the email address for your Office 365 organization account, and then select **Sign in**.
 
-    ![Entering your email address](media/service-gateway-install/email-address.png)
+    ![Entering your email address.](media/service-gateway-install/email-address.png)
 
     > [!NOTE]
     > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account’s User Principal Name (UPN) will match the email address.  
@@ -75,24 +75,24 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
 1. Select **Register a new gateway on this computer** > **Next**.
 
-    ![Registering the gateway](media/service-gateway-install/register-gateway.png)
+    ![Registering the gateway.](media/service-gateway-install/register-gateway.png)
 
 1. Enter a name for the gateway. The name must be unique across the tenant. Also enter a recovery key. You'll need this key if you ever want to recover or move your gateway. Select **Configure**.
 
-    ![Configuring the gateway](media/service-gateway-install/configure-gateway.png)
+    ![Configuring the gateway.](media/service-gateway-install/configure-gateway.png)
 
     Note the **Add to an existing gateway cluster** checkbox. We'll use this checkbox in the next section of this article.
 
     Also note that you can change the region that connects the gateway to cloud services. For more information, see [Set the data center region](service-gateway-data-region.md).
 
     > [!NOTE]
-    > For soverign clouds, we currently only support installing gateways in the default PowerBI region of your tenant. The region picker on the installer is only supported for Public cloud.
+    > For sovereign clouds, we currently only support installing gateways in the default PowerBI region of your tenant. The region picker on the installer is only supported for Public cloud.
 
     Finally, you can also provide your own Azure Relay details. For more information about how to change the Azure Relay details, see [Set the Azure Relay for on-premises data gateway](service-gateway-azure-relay.md).
 
 1. Review the information in the final window. Because this example uses the same account for Power BI, Power Apps, and Power Automate, the gateway is available for all three services. Select **Close**.
 
-    ![Gateway summary](media/service-gateway-install/summary-screen.png)
+    ![Gateway summary.](media/service-gateway-install/summary-screen.png)
 
 Now that you've installed a gateway, you can add another gateway to create a cluster.
 
@@ -113,7 +113,7 @@ To create high-availability gateway clusters, you need the November 2017 update 
 
 1. After you sign in to your Office 365 organization account, register the gateway. Select **Add to an existing cluster**. In the **Available gateway clusters** list, select the *primary gateway*, which is the first gateway you installed. Enter the recovery key for that gateway. Select **Configure**.
 
-    ![Adding a gateway to a cluster](media/service-gateway-install/add-cluster.png)
+    ![Adding a gateway to a cluster.](media/service-gateway-install/add-cluster.png)
 
 ## Download and install a personal mode gateway
 
@@ -121,11 +121,11 @@ To create high-availability gateway clusters, you need the November 2017 update 
 
 1. In the gateway installer, enter the default installation path, accept the terms of use, and then select **Install**.
 
-    ![Installing personal mode to the installation path](media/service-gateway-install/install-path-personal.png)
+    ![Installing personal mode to the installation path.](media/service-gateway-install/install-path-personal.png)
 
 1. Enter the email address for your Office 365 organization account, and then select **Sign in**.
 
-    ![Entering your personal mode email address](media/service-gateway-install/email-address-personal.png)
+    ![Entering your personal mode email address.](media/service-gateway-install/email-address-personal.png)
 
     > [!NOTE]
     > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account’s User Principal Name (UPN) will match the email address.  
@@ -134,7 +134,7 @@ To create high-availability gateway clusters, you need the November 2017 update 
 
 1.  You're now signed in to your account. Select **Close**.
 
-    ![Personal mode gateway summary](media/service-gateway-install/summary-screen-personal.png)
+    ![Personal mode gateway summary.](media/service-gateway-install/summary-screen-personal.png)
 
 ## Next steps
 

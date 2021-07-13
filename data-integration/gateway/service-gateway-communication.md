@@ -87,7 +87,7 @@ To test if the gateway has access to all required ports:
 
 1. Select **Diagnostics**. Under **Network ports test**, select **Start new test**.
 
-   ![How to start a new network ports test](media/service-gateway-communication/gateway-start-new-test.png)
+   ![How to start a new network ports test.](media/service-gateway-communication/gateway-start-new-test.png)
 
 When your gateway runs the network ports test, it retrieves a list of ports and servers from Service Bus and then attempts to connect to all of them. When the **Start new test** link reappears, the network ports test has finished.
 
@@ -97,7 +97,7 @@ To view the results of the last completed test, select the **Open last completed
 
 The test results list all the servers, ports, and IP addresses that your gateway requires. If the test results display "Closed" for any ports as shown in the following screenshot, ensure that your network environment didn't block those connections. You might need to contact your network admin to open the required ports.
 
-![Test results shown in Notepad](media/service-gateway-communication/gateway-onprem-porttest-result-file.png)
+![Test results shown in Notepad.](media/service-gateway-communication/gateway-onprem-porttest-result-file.png)
 
 ## Force HTTPS communication with Azure Service Bus
 
@@ -108,7 +108,7 @@ You can force the gateway to communicate with Service Bus by using HTTPS instead
 
 You can use the [gateway app](service-gateway-app.md) to force the gateway to adopt this behavior. In the gateway app, select **Network**, and then turn on **HTTPS mode**.
 
-![Setting the HTTPS mode](./media/service-gateway-communication/forcing-https.png)
+![Setting the HTTPS mode.](./media/service-gateway-communication/forcing-https.png)
 
 After you make this change and then select **Apply**, the gateway Windows service restarts automatically so that the change can take effect. The **Apply** button appears only when you make a change.
 

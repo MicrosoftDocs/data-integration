@@ -17,19 +17,19 @@ After you have [created](create-data-gateways.md) a virtual network (VNet) data 
 > [!NOTE]
 > The **Virtual network data gateways**s tab won't be visible when the **Tenant Administration** toggle is turned on. 
 
-![Manage VNet data gateways](media/manage-vnet-data-gateways.png)
+![Manage VNet data gateways.](media/manage-vnet-data-gateways.png)
 
 ## Manage admins
 
 You can manage admins for this VNet data gateway like you do for standard data gateways in the Power Platform admin center. To add or remove admins, select a gateway and then select **Manage Users**.
 
-![Manage admins](media/manage-admins.png)
+![Manage admins.](media/manage-admins.png)
 
 ## Manage settings
 
 You can view properties for a selected VNet data gateway in the Power Platform admin center by selecting **Settings**.
 
-![Manage settings](media/manage-settings.png)
+![Manage settings.](media/manage-settings.png)
 
 ## Remove VNet data gateways
 
@@ -38,4 +38,4 @@ You can remove or delete VNet data gateways by selecting the gateway and selecti
 > [!NOTE]
 > When you remove the last gateway associated to a gateway/subnet, it might take up to 48-72 hours before you can delete the subnet or VNet.
 
-![Remove VNet data gateway](media/remove-gateway.png)
+![Remove VNet data gateway.](media/remove-gateway.png)
