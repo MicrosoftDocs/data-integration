@@ -86,7 +86,7 @@ Because the gateway runs on the computer that you install it on, be sure to inst
     Also note that you can change the region that connects the gateway to cloud services. For more information, see [Set the data center region](service-gateway-data-region.md).
 
     > [!NOTE]
-    > For soverign clouds, we currently only support installing gateways in the default PowerBI region of your tenant. The region picker on the installer is only supported for Public cloud.
+    > For sovereign clouds, we currently only support installing gateways in the default PowerBI region of your tenant. The region picker on the installer is only supported for Public cloud.
 
     Finally, you can also provide your own Azure Relay details. For more information about how to change the Azure Relay details, see [Set the Azure Relay for on-premises data gateway](service-gateway-azure-relay.md).
 

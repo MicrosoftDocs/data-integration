@@ -105,6 +105,10 @@ To find the event logs for the *on-premises data gateway service*, follow these 
 
 ![On-premises data gateway event logs.](media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png)
 
+## Limitations and considerations
+
+The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [gateway clusters](service-gateway-high-availability-clusters.md).
+
 ## Next steps
 
 * [On-premises data gateway FAQ](service-gateway-onprem-faq.yml)
