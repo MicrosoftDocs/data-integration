@@ -72,7 +72,7 @@ For GCCC, GCC high, DoD, and China Cloud (Mooncake), the following FQDNs are use
 |443| *.core.usgovcloudapi.net|*.core.usgovcloudapi.net|*.core.usgovcloudapi.net |*.chinacloudapi.cn |
 |443| *.login.microsoftonline.com |*.login.microsoftonline.us |*.login.microsoftonline.us |login.partner.microsoftonline.cn |
 |443| *.msftncsi.com |*.msftncsi.com |*.msftncsi.com |No Mooncake equivalent&mdash;not required to run the gateway&mdash;only used to check network during failure conditions |
-|443| *.microsoftonline-p.com |*.microsoftonline-p.com |*.microsoftonline-p.com |No Mooncake equivalent&mdash;used during AAD sign in. For more infomation about AAD endpoints, go to [API endpoints of Office 365 operated by 21Vianet](https://docs.microsoft.com/previous-versions/office/office-365-api/api/o365-china-endpoints)
+|443| *.microsoftonline-p.com |*.microsoftonline-p.com |*.microsoftonline-p.com |No Mooncake equivalent&mdash;used during AAD sign in. For more infomation about AAD endpoints, go to [API endpoints of Office 365 operated by 21Vianet](/previous-versions/office/office-365-api/api/o365-china-endpoints)
 |443| *.dc.applicationinsights.us |*.dc.applicationinsights.us |*.dc.applicationinsights.us |applicationinsights.azure.cn |
 | | | | | |
 
