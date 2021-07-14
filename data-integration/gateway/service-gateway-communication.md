@@ -9,7 +9,7 @@ ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
 LocalizationGroup: Gateways
-ms.date: 07/15/2019
+ms.date: 07/14/2021
 ---
 
 # Adjust communication settings for the on-premises data gateway
