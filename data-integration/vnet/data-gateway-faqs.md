@@ -23,13 +23,16 @@ The VNet data gateway is physically in the same region as your Azure VNet. Howev
 
 ### What data sources are supported on the VNet data gateway?
 
-Complete list of supported data services is available here: [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
+A complete list of supported data services:
+
+* for Power BI is available in [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
+* for Power Platform dataflows is available in [Supported data sources](data-gateway-power-platform-dataflows.md#supported-data-sources)
 
 ### What are the licensing requirements in Power BI to use VNet data gateways?
 
 Virtual network data gateways is a premium-only feature, and will be available only in Power BI Premium workspaces and Premium Per User (PPU) for public preview. Licensing requirements might change when VNet data gateways become generally available.
 
-### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them from Power BI using VNet data gateways?
+### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them using VNet data gateways?
 
 Yes
 
@@ -45,11 +48,20 @@ Review the corresponding Azure data service product documentation to check if pr
 
 Yes, there's no dependency on the Power BI home region for this feature. If this feature is enabled in the region where the VNet exists, you'll be able to create a new VNet data gateway.
 
+### Can I choose the region where VNet data gateways are created?
+
+No, VNet gateways are by default created in your tenant’s home region and there's currently no option to change it.
+
+### Will I be able to use this feature if my tenant is in East US (United States) and Power platform environment is in Europe?
+
+No, VNet gateways are currently available only in your tenant’s home region.
+
 ### Why can’t I connect to the data source?
 
 Few areas to check:
+
 - Make sure your data source is up and running.
-- Make sure that the data source can be accessed from within the VNet specifically from the subnet delegated while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
+- Make sure that the data source can be accessed from within the VNet&mdash;specifically from the subnet delegated while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
 - The following Azure Network Security Groups (NSGs) may be required depending on your scenario:
   - Allow outbound traffic to the AAD endpoint while using OAuth authentication to connect to a data source.
   - Allow outbound traffic to CA (Certificate Authority) while using HTTPS to connect to a data source.
@@ -64,7 +76,7 @@ For SQL serverless with auto-pause, the first request might fail if SQL is in a 
 
 ### Is there a delay when the VNet gateway is used for the first time or after a period of inactivity?
 
-When used for the first time the VNet gateway takes about a minute to get set up. Similarly, if the VNet data gateway isn't used for 2 hours, you could experience a delay of about a minute the next time you use it.
+When used for the first time, the VNet gateway takes about a minute to get set up. Similarly, if the VNet data gateway isn't used for 2 hours, you could experience a delay of about a minute the next time you use it.
 
 ### Is this feature supported in sovereign clouds?
 
@@ -80,7 +92,7 @@ Yes
 
 ### I'm not able to delete the subnet or the VNet that delegated to Power Platform
 
-Check if there are other gateways using the same VNet and subnet. To be able to delete, it would take up to 48-72 hours after the last gateway using this VNet and subnet was removed. 
+Check if there are other gateways using the same VNet and subnet. To be able to delete, it would take up to 48-72 hours after the last gateway using this VNet and subnet was removed.
 
 ### How large does the delegated subnet need to be?
 

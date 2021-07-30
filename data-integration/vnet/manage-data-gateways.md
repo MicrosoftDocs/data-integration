@@ -15,7 +15,7 @@ ms.author: arthii
 After you have [created](create-data-gateways.md) a virtual network (VNet) data gateway, it will be available in the **Data (preview)** > **Virtual network data gateways** tab in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) for you to manage. Also make sure you select your tenant’s default home region in the region dropdown to see and manage all your VNet data gateways. You select your tenant's default region because the metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your tenant’s default region.
 
 > [!NOTE]
-> The **Virtual network data gateways**s tab won't be visible when the **Tenant Administration** toggle is turned on. 
+> The **Virtual network data gateways** tab won't be visible when the **Tenant Administration** toggle is turned on. 
 
 ![Manage VNet data gateways.](media/manage-vnet-data-gateways.png)
 
