@@ -9,7 +9,7 @@ ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
 LocalizationGroup: Gateways
-ms.date: 07/14/2021
+ms.date: 07/30/2021
 ---
 
 # Adjust communication settings for the on-premises data gateway
@@ -59,22 +59,39 @@ The following list describes FQDNs used by the gateway.
 | *.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 | | | |
 
-For GCCC, GCC high, DoD, and China Cloud (Mooncake), the following FQDNs are used by the gateway.
+For GCCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 
-| Ports | GCC | GCC High | DoD | China Cloud (Mooncake) |
-| --- | --- | --- | --- | --- |
-| 80 | *.download.microsoft.com |*.download.microsoft.com |*.download.microsoft.com |*.download.microsoft.com |
-| 443 | *.powerbigov.us, *.powerbi.com  |*.high.powerbigov.us |*.mil.powerbigov.us|*.powerbi.cn |
-| 443 | *.analysis.usgovcloudapi.net |*.high.analysis.usgovcloudapi.net |*.mil.analysis.usgovcloudapi.net | *.asazure.chinacloudapi.cn |
-| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online)|[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online) | *.login.chinacloudapi.cn |
-|5671-5672| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net|*.servicebus.usgovcloudapi.net |*.servicebus.chinacloudapi.cn |
-|443 and 9350-9354| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |*.servicebus.chinacloudapi.cn |
-|443| *.core.usgovcloudapi.net|*.core.usgovcloudapi.net|*.core.usgovcloudapi.net |*.chinacloudapi.cn |
-|443| *.login.microsoftonline.com |*.login.microsoftonline.us |*.login.microsoftonline.us |login.partner.microsoftonline.cn |
-|443| *.msftncsi.com |*.msftncsi.com |*.msftncsi.com |No Mooncake equivalent&mdash;not required to run the gateway&mdash;only used to check network during failure conditions |
-|443| *.microsoftonline-p.com |*.microsoftonline-p.com |*.microsoftonline-p.com |No Mooncake equivalent&mdash;used during AAD sign in. For more infomation about AAD endpoints, go to [API endpoints of Office 365 operated by 21Vianet](/previous-versions/office/office-365-api/api/o365-china-endpoints)
-|443| *.dc.applicationinsights.us |*.dc.applicationinsights.us |*.dc.applicationinsights.us |applicationinsights.azure.cn |
-| | | | | |
+| Ports | GCC | GCC High | DoD |
+| --- | --- | --- | --- | 
+| 80 | *.download.microsoft.com |*.download.microsoft.com |*.download.microsoft.com |
+| 443 | *.powerbigov.us, *.powerbi.com  |*.high.powerbigov.us |*.mil.powerbigov.us|
+| 443 | *.analysis.usgovcloudapi.net |*.high.analysis.usgovcloudapi.net |*.mil.analysis.usgovcloudapi.net |
+| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online)|[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online) |
+|5671-5672| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net|*.servicebus.usgovcloudapi.net |
+|443 and 9350-9354| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |
+|443| *.core.usgovcloudapi.net|*.core.usgovcloudapi.net|*.core.usgovcloudapi.net |
+|443| *.login.microsoftonline.com |*.login.microsoftonline.us |*.login.microsoftonline.us |
+|443| *.msftncsi.com |*.msftncsi.com |*.msftncsi.com |
+|443| *.microsoftonline-p.com |*.microsoftonline-p.com |*.microsoftonline-p.com |
+|443| *.dc.applicationinsights.us |*.dc.applicationinsights.us |*.dc.applicationinsights.us |
+| | | | |
+
+For China Cloud (Mooncake), the following FQDNs are used by the gateway.
+
+| Ports | China Cloud (Mooncake) |
+| --- | --- |
+| 80 | *.download.microsoft.com |
+| 443 | *.powerbi.cn |
+| 443 | *.asazure.chinacloudapi.cn |
+| 443 | *.login.chinacloudapi.cn |
+|5671-5672| *.servicebus.chinacloudapi.cn |
+|443 and 9350-9354| *.servicebus.chinacloudapi.cn |
+|443| *.chinacloudapi.cn |
+|443| login.partner.microsoftonline.cn |
+|443| No Mooncake equivalent&mdash;not required to run the gateway&mdash;only used to check network during failure conditions |
+|443| No Mooncake equivalent&mdash;used during AAD sign in. For more infomation about AAD endpoints, go to [Check the endpoints in Azure](https://docs.azure.cn/articles/guidance/developerdifferences)
+|443| applicationinsights.azure.cn |
+| | |
 
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Service Bus, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).
