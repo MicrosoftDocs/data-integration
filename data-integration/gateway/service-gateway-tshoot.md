@@ -51,7 +51,7 @@ You might encounter installation failures if the antivirus software on the insta
 
 You might come across the following error if you try to install the same version or a previous version of the gateway compared to the one that you already have.
 
-![Gateway installation error](media/service-gateway-tshoot/gateway-install-error.png)
+![Gateway installation error.](media/service-gateway-tshoot/gateway-install-error.png)
 
 ## Troubleshoot configuration
 
@@ -89,7 +89,7 @@ At the end of configuration, the Power BI service is called again to validate th
 
 There are several logs you can collect for the gateway, and you should always start with the logs. The simplest way to collect logs after you install the gateway is through the [on-premises data gateway app](service-gateway-app.md). In the on-premises data gateway app, select **Diagnostics** and then select the **Export logs** link, as shown in the following image.
 
-![On-premises data gateway app logs](media/service-gateway-tshoot/gateway-onprem-UI-logs.png)
+![On-premises data gateway app logs.](media/service-gateway-tshoot/gateway-onprem-UI-logs.png)
 
 This file is saved to the ODGLogs folder on your Windows desktop in .zip format.
 
@@ -103,7 +103,11 @@ To find the event logs for the *on-premises data gateway service*, follow these 
 
 1. Select **On-premises data gateway service**.
 
-![On-premises data gateway event logs](media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png)
+![On-premises data gateway event logs.](media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png)
+
+## Limitations and considerations
+
+The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [gateway clusters](service-gateway-high-availability-clusters.md).
 
 ## Next steps
 

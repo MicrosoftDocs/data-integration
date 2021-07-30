@@ -35,21 +35,21 @@ To update a gateway:
 
 1. Download the latest [standard mode gateway](https://go.microsoft.com/fwlink/?LinkId=2116849&clcid=0x409) or [personal mode gateway](https://go.microsoft.com/fwlink/?LinkId=2116848&clcid=0x409) and run the installation program. If the version you're trying to install isn't newer than the version already installed, you'll receive one of the following error messages.
 
-   ![The update version is the same as the installed version](media/service-gateway-update/gateway-same-version.png)
+   ![The update version is the same as the installed version.](media/service-gateway-update/gateway-same-version.png)
 
-   ![The update version is older than the installed version](media/service-gateway-update/gateway-old-version.png)
+   ![The update version is older than the installed version.](media/service-gateway-update/gateway-old-version.png)
 
 1. If you install a newer version, you'll be prompted to update. Select **Update** to begin updating.
 
-   ![Getting ready to update](media/service-gateway-update/update-getting-ready.png)
+   ![Getting ready to update.](media/service-gateway-update/update-getting-ready.png)
 
 1. After the installation finishes, select **Sign in**.
 
-   ![Gateway update sign-in](media/service-gateway-update/gateway-update-signin.png)
+   ![Gateway update sign-in.](media/service-gateway-update/gateway-update-signin.png)
 
 The gateway update is now complete.
 
-![The gateway update is complete](media/service-gateway-update/gateway-update-complete.png)
+![The gateway update is complete.](media/service-gateway-update/gateway-update-complete.png)
 
 ## Next steps
 

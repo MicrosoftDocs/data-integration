@@ -12,6 +12,9 @@ ms.author: arthii
 
 # Create virtual network data gateways
 
+> [!NOTE]
+>The metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your tenant’s default region. However, the VNet data gateway runs in the same region as your Azure VNet.
+
 Creating a virtual network (VNet) data gateway is a 3-step process:
 
 > [Step 1: Register Microsoft.PowerPlatform as a resource Provider](#step-1-register-microsoftpowerplatform-as-a-resource-provider)
@@ -35,7 +38,7 @@ On the Azure portal, sign in as a subscription owner and register `Microsoft.Pow
 
 1. Search for **Microsoft.PowerPlatform**, and select **Register**.
 
-    ![Register resource provider](media/register-resource-provider.png)
+    ![Register resource provider.](media/register-resource-provider.png)
 
 ## Step 2: Associate the subnet to Microsoft Power Platform
 
@@ -56,7 +59,7 @@ This subnet should have connectivity to the data service.
 
 1. Select **Save**.
 
-    ![Associate subnet](media/associate-subnet.png)
+    ![Associate subnet.](media/associate-subnet.png)
 
 ## Step 3: Create a VNet data gateway
 
@@ -74,7 +77,7 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
 
 1. Select **Save**. You will now see this VNet data gateway in your **Virtual network data gateways** tab.Note that a VNet data gateway is a managed gateway which could be used for controlling access to this resource for Power platform users.  
 
-    ![VNet data gateway](media/vnet-data-gateway.png)
+    ![VNet data gateway.](media/vnet-data-gateway.png)
 
 ## Regions supported for VNet data gateways
 

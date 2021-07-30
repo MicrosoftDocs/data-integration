@@ -5,7 +5,7 @@ author: arthiriyer
 ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.topic: conceptual
-ms.date: 06/22/2021
+ms.date: 07/29/2021
 ms.author: arthii
 ---
 
@@ -17,6 +17,10 @@ This article contains a list of frequent asked questions (FAQs) about the virtua
 
 Use Private links to secure this connectivity. More information: [Power BI Private Links documentation](/power-bi/admin/service-security-private-links)  
 
+### Where is my VNet data gateway?
+
+The VNet data gateway is physically in the same region as your Azure VNet. However, the metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your tenant’s default region. You can manage all VNet data gateways when you select your tenant’s home region in [Power platform admin center](manage-data-gateways.md).
+
 ### What data sources are supported on the VNet data gateway?
 
 A complete list of supported data services:
@@ -25,18 +29,23 @@ A complete list of supported data services:
 * for Power Platform dataflows is available in [Supported data sources](data-gateway-power-platform-dataflows.md#supported-data-sources)
 
 ### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them using VNet data gateways?
+### What are the licensing requirements in Power BI to use VNet data gateways?
+
+Virtual network data gateways is a premium-only feature, and will be available only in Power BI Premium workspaces and Premium Per User (PPU) for public preview. Licensing requirements might change when VNet data gateways become generally available.
+
+### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them from Power BI using VNet data gateways?
 
 Yes
 
 ### Why am I not able to create a service endpoint for my data source in my VNet?
 
-Review [Azure VNet documentation](/azure/virtual-network/virtual-networks-overview) for restrictions (for example, region related) on VNets, endpoints, and associated azure resources.
+Review [Azure VNet documentation](/azure/virtual-network/virtual-networks-overview) for restrictions (for example, region related) on VNets, endpoints, and associated Azure resources.
 
 ### How do I create a private endpoint for my data sources and associate it to a VNet?
 
 Review the corresponding Azure data service product documentation to check if private endpoints are supported and on how to enable them.  
 
-### Will I be able to use this feature if my data source is in East US and my Power BI home region is in East US2?
+### Can I use this feature if my data source is in East US and my Power BI home region is in East US2?
 
 Yes, there's no dependency on the Power BI home region for this feature. If this feature is enabled in the region where the VNet exists, you'll be able to create a new VNet data gateway.
 
@@ -52,8 +61,11 @@ No, VNet gateways are currently available only in your tenant’s home region.
 
 Few areas to check:
 
-* Make sure your data source is up and running.
-* Make sure the data source can be accessed from within the VNet&mdash;specifically from the subnet used while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
+- Make sure your data source is up and running.
+- Make sure that the data source can be accessed from within the VNet&mdash;specifically from the subnet delegated while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
+- The following Azure Network Security Groups (NSGs) may be required depending on your scenario:
+  - Allow outbound traffic to the AAD endpoint while using OAuth authentication to connect to a data source.
+  - Allow outbound traffic to CA (Certificate Authority) while using HTTPS to connect to a data source.
 
 ### How is the connectivity between the VNet service and your VNet secured?
 
@@ -73,23 +85,23 @@ No, only commercial clouds will be supported for the public preview release.
 
 ### What is the hardware configuration for a VNet data gateway?
 
-Every VNet data gateway has 1 CPU core 6 GB.
+Every VNet data gateway has one CPU core 6 GB.
 
 ### Can I create multiple VNet data gateways for the same Azure data service?  
 
 Yes
 
-### I'm not able to delete the subnet or the VNet that delegated to Power Platform.
+### I'm not able to delete the subnet or the VNet that delegated to Power Platform
 
 Check if there are other gateways using the same VNet and subnet. To be able to delete, it would take up to 48-72 hours after the last gateway using this VNet and subnet was removed.
 
-### How big does the delegated subnet need to be?
+### How large does the delegated subnet need to be?
 
 Beyond the reserved IPs, our recommendation is to have approximately 5-7 IPs so you can add more VNet gateways to the same VNet and Subnet.  
 
-### I'm a subscription owner but get an error when I try to create a subscription.
+### I'm a subscription owner but get an error when I try to create a subscription
 
-Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway. 
+Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway.
 
 ### Any other known issues?
 
