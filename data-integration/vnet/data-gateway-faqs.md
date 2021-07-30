@@ -5,7 +5,7 @@ author: arthiriyer
 ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.topic: conceptual
-ms.date: 06/29/2021
+ms.date: 07/29/2021
 ms.author: arthii
 ---
 
@@ -24,6 +24,10 @@ The VNet data gateway is physically in the same region as your Azure VNet. Howev
 ### What data sources are supported on the VNet data gateway?
 
 Complete list of supported data services is available here: [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
+
+### What are the licensing requirements in Power BI to use VNet data gateways?
+
+Virtual network data gateways is a premium-only feature, and will be available only in Power BI Premium workspaces and Premium Per User (PPU) for public preview. Licensing requirements might change when VNet data gateways become generally available.
 
 ### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them from Power BI using VNet data gateways?
 
