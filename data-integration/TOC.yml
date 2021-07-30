@@ -79,5 +79,7 @@
       href: vnet/manage-data-gateways.md
     - name: Use virtual network data gateway in Power BI
       href: vnet/use-data-gateways-sources-power-bi.md
+    - name: Use virtual network data gateway in Power Platform dataflows
+      href: vnet/data-gateway-power-platform-dataflows.md
   - name: Virtual network data gateway FAQs
     href: vnet/data-gateway-faqs.md    
