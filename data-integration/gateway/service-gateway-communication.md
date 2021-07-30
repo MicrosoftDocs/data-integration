@@ -59,7 +59,7 @@ The following list describes FQDNs used by the gateway.
 | *.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 | | | |
 
-For GCCC, GCC high, and DoD, the following FQDNs are used by the gateway.
+For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 
 | Ports | GCC | GCC High | DoD |
 | --- | --- | --- | --- | 
@@ -91,12 +91,13 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 |443| No Mooncake equivalent&mdash;not required to run the gateway&mdash;only used to check network during failure conditions |
 |443| No Mooncake equivalent&mdash;used during AAD sign in. For more infomation about AAD endpoints, go to [Check the endpoints in Azure](https://docs.azure.cn/articles/guidance/developerdifferences)
 |443| applicationinsights.azure.cn |
+|433| clientconfig.passport.net |
+|433| aadcdn.msftauth.cn |
+|433| aadcdn.msauth.cn |
 | | |
 
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Service Bus, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).
-
-
 
 ## Network ports test
 
