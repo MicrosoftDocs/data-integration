@@ -9,7 +9,7 @@ ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
 LocalizationGroup: Gateways
-ms.date: 07/15/2019
+ms.date: 07/30/2021
 ---
 
 # Adjust communication settings for the on-premises data gateway
@@ -32,7 +32,7 @@ We recommend that you allow the IP addresses for your data region in your firewa
 >* [Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
 >* [US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
 >* [Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
->* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)(https://www.microsoft.com/download/details.aspx?id=41653)
+>* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
 
 Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) periodically in the gateway app.
 
@@ -57,11 +57,12 @@ The following list describes FQDNs used by the gateway.
 | *.msftncsi.com |443 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | *.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
 | *.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
+| | | |
 
-For GCCC, GCC high and DoD, the following FQDNs are used by the gateway.
+For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 
 | Ports | GCC | GCC High | DoD |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | 
 | 80 | *.download.microsoft.com |*.download.microsoft.com |*.download.microsoft.com |
 | 443 | *.powerbigov.us, *.powerbi.com  |*.high.powerbigov.us |*.mil.powerbigov.us|
 | 443 | *.analysis.usgovcloudapi.net |*.high.analysis.usgovcloudapi.net |*.mil.analysis.usgovcloudapi.net |
@@ -73,11 +74,30 @@ For GCCC, GCC high and DoD, the following FQDNs are used by the gateway.
 |443| *.msftncsi.com |*.msftncsi.com |*.msftncsi.com |
 |443| *.microsoftonline-p.com |*.microsoftonline-p.com |*.microsoftonline-p.com |
 |443| *.dc.applicationinsights.us |*.dc.applicationinsights.us |*.dc.applicationinsights.us |
+| | | | |
+
+For China Cloud (Mooncake), the following FQDNs are used by the gateway.
+
+| Ports | China Cloud (Mooncake) |
+| --- | --- |
+| 80 | *.download.microsoft.com |
+| 443 | *.powerbi.cn |
+| 443 | *.asazure.chinacloudapi.cn |
+| 443 | *.login.chinacloudapi.cn |
+|5671-5672| *.servicebus.chinacloudapi.cn |
+|443 and 9350-9354| *.servicebus.chinacloudapi.cn |
+|443| *.chinacloudapi.cn |
+|443| login.partner.microsoftonline.cn |
+|443| No Mooncake equivalent&mdash;not required to run the gateway&mdash;only used to check network during failure conditions |
+|443| No Mooncake equivalent&mdash;used during AAD sign in. For more infomation about AAD endpoints, go to [Check the endpoints in Azure](https://docs.azure.cn/articles/guidance/developerdifferences)
+|443| applicationinsights.azure.cn |
+|433| clientconfig.passport.net |
+|433| aadcdn.msftauth.cn |
+|433| aadcdn.msauth.cn |
+| | |
 
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Service Bus, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).
-
-
 
 ## Network ports test
 
