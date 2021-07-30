@@ -28,12 +28,11 @@ A complete list of supported data services:
 * for Power BI is available in [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
 * for Power Platform dataflows is available in [Supported data sources](data-gateway-power-platform-dataflows.md#supported-data-sources)
 
-### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them using VNet data gateways?
 ### What are the licensing requirements in Power BI to use VNet data gateways?
 
 Virtual network data gateways is a premium-only feature, and will be available only in Power BI Premium workspaces and Premium Per User (PPU) for public preview. Licensing requirements might change when VNet data gateways become generally available.
 
-### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them from Power BI using VNet data gateways?
+### Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them using VNet data gateways?
 
 Yes
 
