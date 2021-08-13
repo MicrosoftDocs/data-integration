@@ -20,6 +20,14 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
 
 - Currently, this feature is available only for Power BI datasets and Power Platform dataflows.
 - This feature is currently not supported in sovereign clouds.
+- Due to an AAD limitation you might see failures when the following settings are enabled together:
+  - Service Endpoint for AAD is enabled on the delegated VNet
+  - Conditional Access Policies are enabled for the tenant
+
+  To overcome this AAD limitation, you can try either of the following workarounds:
+  - Disable Service Endpoint for AAD and open the firewall to allow traffic to AAD (already done)
+  - Disable Conditional Access Policy for their tenant
+
 - Power BI datasets:
 
   - A list of supported data services for Power BI datasets is available in [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services).
