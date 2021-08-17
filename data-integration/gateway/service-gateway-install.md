@@ -44,7 +44,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 ### Related considerations
 
 * Gateways aren't supported on Server Core installations.
-* Gateways aren’t supported on Windows Containers.
+* Gateways aren’t supported on Windows containers.
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
 * If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
