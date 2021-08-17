@@ -6,7 +6,7 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 03/01/2021
+ms.date: 8/17/2021
 ms.author: arthii
 ---
 
@@ -51,7 +51,8 @@ This subnet should have connectivity to the data service.
 1. [Add a new subnet](/azure/virtual-network/virtual-network-manage-subnet#add-a-subnet) in the VNet. This new subnet cannot be shared with other services but will be used entirely by the Power Platform VNet service. 
 
     > [!NOTE]
-    > Don’t use the subnet name, “gatewaysubnet”, as this is a reserved word for the Azure Gateway Subnet feature. You will not be able to use it to create a VNet data gateway in Step 3. 
+    > * Don’t use the subnet name, “gatewaysubnet”, as this is a reserved word for the Azure Gateway Subnet feature. You won't be able to use it to create a VNet data gateway in Step 3.
+    > * Make sure this subnet doesn't have an IPV6 address space added.
 
 1. Select **Resource Providers**.
 
