@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 02/11/2021
+ms.date: 8/17/2021
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -44,6 +44,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 ### Related considerations
 
 * Gateways aren't supported on Server Core installations.
+* Gateways aren’t supported on Windows containers.
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
 * If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
