@@ -5,7 +5,7 @@ author: arthiriyer
 ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.topic: overview
-ms.date: 8/17/2021
+ms.date: 9/14/2021
 ms.author: arthii
 ms.custom: intro-internal
 ---
@@ -26,6 +26,8 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
 
   To overcome this AAD limitation, you can try the following workaround:
   - If you have VNet traffic blocked by a Conditional Access policy, check your Azure AD sign-in log. Once you’ve identified the traffic, you can get the IPv6 address being used and exclude it from your policy. More information: [Location condition in Azure Active Directory conditional access](/azure/active-directory/conditional-access/location-condition#when-will-my-tenant-have-ipv6-traffic)
+
+- You should not change the subscription or resource group for the VNet on which the VNet data gateway was created. This scenario isn't currently supported.
 
 - Power BI datasets:
 

@@ -5,7 +5,7 @@ author: arthiriyer
 ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.topic: conceptual
-ms.date: 07/29/2021
+ms.date: 9/14/2021
 ms.author: arthii
 ---
 
@@ -104,4 +104,5 @@ Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks
 
 ### Any other known issues?
 
-You can't delegate a subnet called **gatewaysubnet** to the Power Platform admin center. This is because it's a reserved word for Azure Gateway Subnet feature.
+* You can't delegate a subnet called **gatewaysubnet** to the Power Platform admin center. This is because it's a reserved word for Azure Gateway Subnet feature.
+* You should not change the subscription or resource group for the VNet on which the VNet data gateway was created. This scenario is not currently supported.
