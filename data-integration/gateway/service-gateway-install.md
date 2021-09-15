@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 8/17/2021
+ms.date: 9/15/2021
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -52,12 +52,16 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * If a gateway uses a wireless network, its performance might suffer.
 * You could install other applications on the gateway machine, but this may degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention. 
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. You can't have more than one gateway running in the same mode on the same computer.
+* The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
 
 ## Download and install a standard gateway
 
 Because the gateway runs on the computer that you install it on, be sure to install it on a computer that's always turned on. For better performance and reliability, we recommend that the computer is on a wired network rather than a wireless one.
 
 1. [Download the standard gateway](https://go.microsoft.com/fwlink/?LinkId=2116849&clcid=0x409).
+
+   >[!Note]
+   >The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
 
 1. In the gateway installer, keep the default installation path, accept the terms of use, and then select **Install**.
 
