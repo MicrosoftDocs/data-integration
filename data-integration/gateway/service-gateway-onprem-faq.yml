@@ -99,6 +99,16 @@ sections:
           For example, assume your SQL Server computer isn't in your perimeter network. Also, assume you can't connect to that computer from the perimeter network. If you place the gateway in your perimeter network, the gateway can't reach the SQL Server computer.
           
       - question: |
+          If the server on which the gateway is installed is only using an IPv6 address and connects with a data source (for example, Azure SQL/File Server/Database on Azure VM) using an IPv6 address only, is it possible to communicate from Power BI service to those data sources through the gateway? 
+        answer: |
+          Yes.
+
+      - question: |
+          If the server on which the gateway is installed is using dual stack to be assigned both IPv4 and IPv6 addresses, would IPv4 or IPv6 be the priority for gateway communication?
+        answer: |
+          This depends on Windows or the relevant data source drivers. This behavior is configurable in both Windows and various drivers, but isn't under the gateway’s control.
+
+      - question: |
           Can I force the gateway to use HTTPS traffic with Azure Service Bus instead of TCP?  
         answer: |
           Yes, for more information, see [Force HTTPS communication with Azure Service Bus](service-gateway-communication.md#force-https-communication-with-azure-service-bus). Turning on this feature has little effect on performance.
