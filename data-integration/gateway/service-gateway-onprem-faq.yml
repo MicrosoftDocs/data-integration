@@ -9,7 +9,7 @@ metadata:
   ms.prod: on-premises-data-gateway
   ms.technology:
   ms.topic: conceptual
-  ms.date: 09/18/2020
+  ms.date: 09/19/2021
   ms.author: arthii
   LocalizationGroup: Gateways
     
@@ -106,7 +106,7 @@ sections:
       - question: |
           Does the gateway support cross-tenant Azure AD access?
         answer: |
-          No. Cross-tenant Azure AD access isn't supported. A Power BI dataset in a tenant can't connect to data sources from a different tenant using an Azure AD account. This limitation applies whether the data source uses an on-premises data gateway or not. To overcome this limitation, use an authentication type other than OAuth.
+          No, cross-tenant Azure AD access isn't supported. A Power BI dataset in a tenant can't connect to data sources from a different tenant using an Azure AD account. This limitation applies whether the data source uses an on-premises data gateway or not. To overcome this limitation, use an authentication type other than OAuth.
 
       - question: |
           If the server on which the gateway is installed is using dual stack to be assigned both IPv4 and IPv6 addresses, would IPv4 or IPv6 be the priority for gateway communication?
