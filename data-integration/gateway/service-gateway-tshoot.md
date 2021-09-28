@@ -47,6 +47,9 @@ You might receive this error if you're trying to install the gateway on a domain
 
 You might encounter installation failures if the antivirus software on the installation machine is out of date. You can either update the antivirus installation or disable the antivirus software only for the duration of the gateway installation. After the installation is finished, reenable the antivirus software.
 
+### MacAfee Defender enabled
+You might encounter installation failures when MaMacAfee Endpoint Defender enabled. Configure MacAfee to ignore the gateway process. 
+
 ### Same or older gateway version
 
 You might come across the following error if you try to install the same version or a previous version of the gateway compared to the one that you already have.
