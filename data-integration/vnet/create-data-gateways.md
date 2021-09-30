@@ -72,7 +72,7 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
 
 1. Select **Virtual network (VNet) data gateway** > **New**. 
 
-1. Select the subscription, resource group, VNet and the Subnet. You will only see subnets that are delegated to Microsoft Power Platform in the drop-down list.
+1. Select the subscription, resource group, VNet and the Subnet. You will only see subnets that are delegated to Microsoft Power Platform in the drop-down list. The dropdown for which the gateway is to be created is limited to 50. For this reason ( and if you have more than 50 subscriptions in Azure portal), some of those subscriptions won’t be listed.
 
 1. By default, we provide a unique name for this data gateway, but you could optionally update it.
 
