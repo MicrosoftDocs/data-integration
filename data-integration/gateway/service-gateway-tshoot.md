@@ -56,6 +56,9 @@ You might come across the following error if you try to install the same version
 
 ![Gateway installation error.](media/service-gateway-tshoot/gateway-install-error.png)
 
+### Error: The user profile is a temporary profile
+There is an issue with the machine. Contact your internal IT team to remove the temporary profile.
+
 ## Troubleshoot configuration
 
 ### Firewall or proxy
