@@ -20,6 +20,12 @@ This article describes the last six updates for the on-premises data gateways an
 - Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall.exe)
 - Download the [latest on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode).exe)
 
+## September 2021 update (3000.96.1)
+
+- [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-September-2021-update-is-now-available/)
+- [Download the September 2021 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-21-09.exe)
+- [Download the September 2021 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-21-09.exe)
+
 ## August 2021 update (3000.93.3)
 
 - [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-august-2021-update-is-now-available/)
@@ -43,12 +49,6 @@ This article describes the last six updates for the on-premises data gateways an
 - [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-May-2021-update-is-now-available/)
 - [Download the May 2021 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-21-05.exe)
 - [Download the May 2021 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-21-05.exe)
-
-## April 2021 update (3000.79.6)
-
-- [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-April-2021-update-is-now-available/)
-- [Download the April 2021 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-21-04.exe)
-- [Download the April 2021 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-21-04.exe)
 
 ## Next steps
 
