@@ -150,6 +150,12 @@ By default, the gateway uses Transport Layer Security (TLS) 1.2 to communicate w
 > [!NOTE]
 > Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings).
 
+## Service tags
+A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules. The data gateway has dependecies on the following service tags:
+* PowerBI
+* ServiceBus
+* AzureActiveDirectory
+
 ## Next steps
 
 * [Configure the gateway log file](service-gateway-log-files.md)
