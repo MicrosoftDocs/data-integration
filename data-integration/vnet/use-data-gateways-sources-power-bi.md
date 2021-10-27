@@ -40,6 +40,7 @@ In the current release, VNet data gateways will support connectivity to the foll
 - Azure HDInsight (Spark) 
 - Azure Data Lake (Gen2)
 - Cosmos DB
+- Azure SQL Managed Instance (MI)
 
 ## Azure Active Directory Single Sign-On for Direct Query
 
