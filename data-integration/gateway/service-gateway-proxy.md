@@ -7,7 +7,7 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 10/29/2021
 ms.author: arthii
 LocalizationGroup: Gateways
 
@@ -21,12 +21,18 @@ The following post on superuser.com discusses how you can try to determine if yo
 
 Although most gateway configuration settings can be changed by using the on-premises data gateway app, proxy information is configured within a .NET configuration file. The location and file names are different, depending on the gateway you're using.
 
-Two main configuration files are involved with the gateway in which proxy settings can be edited:
+There are three configuration files associated with using a proxy with the on-premises data gateway. The following two main configuration files are involved with the gateway in which proxy settings can be edited.
 
 * The first file is for the configuration screens that actually configure the gateway. If you're having issues configuring the gateway, look at the following file: _C:\Program Files\On-premises data gateway\enterprisegatewayconfigurator.exe.config_.
 * The second file is for the actual Windows service that interacts with the cloud service using the gateway. This file handles the requests: _C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config_.
 
 If you're going to make changes to the proxy configuration, these files must be edited so that proxy configurations are exactly the same in both files.
+
+Also, a third file will need to be edited for the gateway to connect to cloud data sources through a proxy.
+
+* _C:\Program Files\On-premises data gateway\m\Microsoft.Mashup.Container.NetFX45.exe.config_
+
+The following section describes how to edit these files.
 
 ## Configure proxy settings
 
@@ -57,9 +63,7 @@ In addition to using default credentials, you can add a `<proxy>` element to def
 </system.net>
 ```
 
-Additionally, for the gateway to connect to cloud data sources through a proxy, update one of the following files:
-* On-premises data gateway up to and including March 2020 release&mdash;_C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe.config_.
-* On-premises data gateway April 2020 and newer&mdash;_C:\Program Files\On-premises data gateway\m\Microsoft.Mashup.Container.NetFX45.exe.config_.
+You'll also need to edit the _Microsoft.Mashup.Container.NetFX45.exe.config_ file if you want the gateway to connect to cloud data sources through a gateway.
 
 In the file, expand the `<configurations>` section to include the following contents, and update the `proxyaddress` attribute with your proxy information. The following example routes all cloud requests through a specific proxy with the IP address 192.168.1.10.
 
@@ -72,6 +76,8 @@ In the file, expand the `<configurations>` section to include the following cont
     </system.net>
 </configuration>
 ```
+
+Note that configuring this third file might be necessary if your proxy is a requirement for all internet communication, especially for corporate usage where networks are secure and locked-down. If a proxy is required for gateway communication, it's likely also needed for any internet traffic from containers. In this case, the gateway might appear to be operating successfully until any container makes any external (internet) query. This is especially applicable to dataflows, which attempts to push the resulting query of on-premises data to Azure Data Lake Storage. But it also applies when a gateway query merges an on-premises dataset with an internet-bound dataset.
 
 To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
