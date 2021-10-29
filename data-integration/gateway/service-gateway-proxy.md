@@ -48,7 +48,7 @@ The default configuration works with Windows authentication. If your proxy uses 
 
 We don't recommend basic proxy authentication. Using basic proxy authentication might cause proxy authentication errors that result in the gateway not being properly configured. Use a stronger proxy authentication mechanism to resolve.
 
-In addition to using default credentials, you can add a `<proxy>` element to define proxy server settings in more detail. For example, you can specify that your on-premises data gateway should always use the proxy, even for local resources, by setting the *bypassonlocal* parameter to false. This can help in troubleshooting situations, if you want to track all HTTPS requests that originate from a gateway in the proxy log files. The following sample configuration specifies that all requests must go through a specific proxy with the IP address 192.168.1.10.
+In addition to using default credentials, you can add a `<proxy>` element to define proxy server settings in more detail. For example, you can specify that your on-premises data gateway should always use the proxy, even for local resources, by setting the *bypassonlocal* parameter to false. This setting can help in troubleshooting situations, if you want to track all HTTPS requests that originate from a gateway in the proxy log files. The following sample configuration specifies that all requests must go through a specific proxy with the IP address 192.168.1.10.
 
 ```xml
 <system.net>
@@ -77,13 +77,13 @@ In the file, expand the `<configurations>` section to include the following cont
 </configuration>
 ```
 
-Note that configuring this third file might be necessary if your proxy is a requirement for all internet communication, especially for corporate usage where networks are secure and locked-down. If a proxy is required for gateway communication, it's likely also needed for any internet traffic from containers. In this case, the gateway might appear to be operating successfully until any container makes any external (internet) query. This is especially applicable to dataflows, which attempts to push the resulting query of on-premises data to Azure Data Lake Storage. But it also applies when a gateway query merges an on-premises dataset with an internet-bound dataset.
+Configuring this third file might be necessary if your proxy is a requirement for all internet communication, especially for corporate usage where networks are secure and locked-down. If a proxy is required for gateway communication, it's likely also needed for any internet traffic from containers. In this case, the gateway might appear to be operating successfully until any container makes any external (internet) query. This issue is especially applicable to dataflows, which attempts to push the resulting query of on-premises data to Azure Data Lake Storage. But it also applies when a gateway query merges an on-premises dataset with an internet-bound dataset.
 
 To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
 ## Change the gateway service account to a domain user
 
-As explained earlier, when you configure the proxy settings to use default credentials, you might encounter authentication issues with your proxy. This situation is because the default service account is the Service SID, and not an authenticated domain user. You can change the service account of the gateway to allow proper authentication with your proxy. For more information about how to change the gateway service account, see [Change the on-premises data gateway service account](service-gateway-service-account.md).
+As explained earlier, when you configure the proxy settings to use default credentials, you might come across authentication issues with your proxy. This situation is because the default service account is the Service SID, and not an authenticated domain user. You can change the service account of the gateway to allow proper authentication with your proxy. For more information about how to change the gateway service account, see [Change the on-premises data gateway service account](service-gateway-service-account.md).
 
 > [!NOTE]
 > We recommend that you use a managed service account to avoid having to reset passwords. Learn how to create a [managed service account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd548356(v=ws.10)) within Active Directory.
