@@ -29,4 +29,14 @@ Let’s first look at what happens when you interact with a Power BI report that
 
 6.	After execution, the results are sent to the VNet data gateway and the Microsoft Power Platform VNet service securely pushes the data from the container to the cloud service.
  
+Here's a network diagram illustrating the data pathway between PowerBI cluster and a SQL database data source:
+
+![Vnet data gateway architectur](media/vnet-architecture.png)
+
+When the workload starts up, the VNet data gateway leases an IP from the delegated subnet, which means it is obeying the NSG and NAT rules on the target Vnet. Traffic going through this IP address obeys all NSG rules that is applied to the subnet.
+
+The VNET gateway does not require any Service Endpoint or open ports back to PowerBI. Data from the VNET is returned to PowerBI by the SWIFT tunnel, which is an APIPA existing on the infrastructure VM. 
+
+> [!NOTE]
+> All traffic uses the Azure backbone, including the Swift tunnel.
 
