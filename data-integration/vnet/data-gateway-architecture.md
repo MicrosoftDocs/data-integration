@@ -19,9 +19,10 @@ Users in your organization can access data secured by a VNet to which they alrea
 Let’s first look at what happens when you interact with a Power BI report that is connected to a data source within a VNet.
 1.	Power BI cloud service (or one of the other supported cloud services) kicks off a query and sends the query, data source details and credentials to the Microsoft Power Platform VNet service.
 
-2.	The Microsoft Power Platform VNet service then securely injects a container running the VNet data gateway into the subnet. This VNet data Gateway can now connect to data services accessible from within this subnet.
+2.	The Microsoft Power Platform VNet 
+then securely injects a container running the VNet data gateway into the subnet. This VNet data Gateway can now connect to data services accessible from within this subnet.
 
-3.	The Microsoft Power Platform VNet service service then sends the query, data source details and credentials to the VNet data gateway. 
+3.	The Microsoft Power Platform VNet service then sends the query, data source details and credentials to the VNet data gateway. 
 
 4.	The VNet data gateway gets the query and connects to the data sources with those credentials.
 
@@ -29,13 +30,13 @@ Let’s first look at what happens when you interact with a Power BI report that
 
 6.	After execution, the results are sent to the VNet data gateway and the Microsoft Power Platform VNet service securely pushes the data from the container to the cloud service.
  
-Here's a network diagram illustrating the data pathway between PowerBI cluster and a SQL database data source:
+Here's a network diagram illustrating the data pathway between Power BI cluster and a SQL database data source:
 
 ![Vnet data gateway architectur](media/vnet-architecture.png)
 
-When the workload starts up, the VNet data gateway leases an IP from the delegated subnet, which means it is obeying the NSG and NAT rules on the target Vnet. Traffic going through this IP address obeys all NSG rules that is applied to the subnet.
+When the workload starts up, the VNet data gateway leases an IP from the delegated subnet, which means it is obeying the NSG and NAT rules on the target Vnet. Traffic going through this IP address obeys all NSG rules that are applied to the subnet.
 
-The VNET gateway does not require any Service Endpoint or open ports back to PowerBI. Data from the VNET is returned to PowerBI by the SWIFT tunnel, which is an APIPA existing on the infrastructure VM. 
+The VNET gateway does not require any Service Endpoint or open ports back to Power BI. Data from the VNET is returned to Power BI by the SWIFT tunnel, which is an APIPA existing on the infrastructure VM. 
 
 > [!NOTE]
 > All traffic uses the Azure backbone, including the Swift tunnel.
