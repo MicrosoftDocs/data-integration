@@ -14,7 +14,7 @@ ms.author: arthii
 
 The virtual network (VNet) data gateway facilitates secure connectivity to data sources associated to your VNet.
 
-Users in your organization can access data secured by a VNet to which they already have access. But before these users can connect to these data sources from Microsoft Cloud services, a VNet gateway needs to be [registered and configured]().
+Users in your organization can access data secured by a VNet to which they already have access. But before these users can connect to these data sources from Microsoft Cloud services, a VNet gateway needs to be [registered and configured](create-data-gateways.md).
 
 Let’s first look at what happens when you interact with a Power BI report that's connected to a data source within a VNet.
 
