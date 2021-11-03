@@ -22,7 +22,7 @@ To monitor performance, gateway admins have traditionally depended on manually m
 > This feature is currently available only for the on-premises data gateway in the standard mode. It's not available for the personal mode.
 
 > [!NOTE]
-> Gateway diagnostics does not capture diagnostics directly related to the (virtual) machine and its network, like bandwidth or latency. These diagnostics might however impact your gateway performance. You can use recource monitoring tools to monitor your machine.
+> Gateway diagnostics does'nt capture diagnostics directly related to the (virtual) machine and its network, like bandwidth or latency. Hoewever, these diagnostics might impact your gateway performance. You can use recource monitoring tools to monitor your machine.
 
 ### Performance logging
 
