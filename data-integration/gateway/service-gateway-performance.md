@@ -21,6 +21,9 @@ To monitor performance, gateway admins have traditionally depended on manually m
 > [!NOTE]
 > This feature is currently available only for the on-premises data gateway in the standard mode. It's not available for the personal mode.
 
+> [!NOTE]
+> Gateway diagnostics does not capture diagnostics directly related to the (virtual) machine and its network, like bandwidth or latency. These diagnostics might however impact your gateway performance. You can use recource monitoring tools to monitor your machine.
+
 ### Performance logging
 
 This feature is now turned on by default. To disable this feature, make the following changes to the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file in the *\Program Files\On-premises data gateway* folder.
