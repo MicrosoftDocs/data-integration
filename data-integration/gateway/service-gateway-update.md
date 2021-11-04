@@ -27,7 +27,7 @@ Please follow the following steps while updating a gateway cluster with two or m
 3. Enable the updated gateway member.
 4. Repeat step 1-3 until all gateway members are updated
 
-Disabling a gateway makes sure the load balancer does not try to excecute queries on the member you are updating, hence reducing delays and failures.
+Disabling a gateway makes sure the load balancer does not try to execute queries on the member you are updating, hence reducing delays and failures.
 
 ## Update a gateway
 
