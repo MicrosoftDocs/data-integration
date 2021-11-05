@@ -6,7 +6,7 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 07/29/2021
+ms.date: 11/5/2021
 ms.author: arthii
 ---
 
@@ -29,18 +29,21 @@ You can also create data sources and share these data sources to users like you 
 
 ![Manage data source.](media/manage-data-source.png)
 
-## Supported Azure data services 
+## Supported data sources
 
-In the current release, VNet data gateways will support connectivity to the following Azure data services: 
+In the current release, VNet data gateways will support connectivity to the following data sources:
+
 - Azure SQL
 - Azure Synapse Analytics
+- Azure Data Bricks
 - Azure Data Explorer (Kusto)
 - Azure Table Storage
 - Azure Blob Storage
-- Azure HDInsight (Spark) 
+- Azure HDInsight (Spark)
 - Azure Data Lake (Gen2)
 - Cosmos DB
 - Azure SQL Managed Instance (MI)
+- Snowflake
 
 ## Azure Active Directory Single Sign-On for Direct Query
 
