@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 12/10/2021
 LocalizationGroup: Gateways 
 ---
 
