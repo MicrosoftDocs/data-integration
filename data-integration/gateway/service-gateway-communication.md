@@ -114,7 +114,7 @@ When your gateway runs the network ports test, it retrieves a list of ports and 
 The summary result of the test is either "Completed (Succeeded)" or "Completed (Failed, see last test results)". If the test succeeded, your gateway connected to all the required ports. If the test failed, your network environment might have blocked the required ports and servers.
 
 > [!NOTE]
-> Firewalls often intermittently allow traffic on blocked sites. Even if a test succeeds, you may still need to allowlist that server on your firewall.
+> Firewalls often intermittently allow traffic on blocked sites. Even if a test succeeds, you might still need to allowlist that server on your firewall.
 
 To view the results of the last completed test, select the **Open last completed test results** link. The test results open in your default text editor.
 
