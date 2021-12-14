@@ -53,6 +53,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * You could install other applications on the gateway machine, but this may degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention. 
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. You can't have more than one gateway running in the same mode on the same computer.
 * The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
+* When private link is enabled, disable private link before installing the gateway. After installation, you can re-enable it.
 
 ## Download and install a standard gateway
 
