@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 12/10/2021
 LocalizationGroup: Gateways 
 ---
 
@@ -175,6 +175,20 @@ QueryAdditionalInformation is: {
   "ApplicationContext": "{\"DatasetId\":\"6de5b524-8a04-4578-961d-ej67gdf3dcd4\",\"Sources\":[{\"ReportId\":\"e0cec7bc-f53d-4174-b551-678656fba\"}]}"
 }.
 ```
+
+## Optimize performance by streaming data
+
+By default, the on-premises data gateway spools data before returning it to the dataset, potentially causing slower performance during data load and refresh operations. The default behavior can be overridden.
+
+1. In the C:\Program Files\On-Premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config file, set the **StreamBeforeRequestCompletes** setting to **True**, and then save.
+
+   ```JSON
+   <setting name="StreamBeforeRequestCompletes" serializeAs="String">
+      <value>True</value>
+   </setting>
+   ```
+
+2. In **On-premises data gateway** > **Service Settings**, restart the gateway.
 
 ## Next steps
 
