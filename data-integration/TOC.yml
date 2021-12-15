@@ -48,8 +48,8 @@
         href: gateway/service-gateway-restart.md
       - name: "Change a recovery key"
         href: gateway/service-gateway-recovery-key.md
-      - name: "Plan, scale, and maintain business-critical gateway clusters"
-        href: gateway/plan-scale-maintain.md
+    - name: "Plan, scale, and maintain business-critical gateway clusters"
+      href: gateway/plan-scale-maintain.md
     - name: "Troubleshoot the on-premises data gateway"
       href: gateway/service-gateway-tshoot.md
     - name: "Monitor and optimize gateway performance"
