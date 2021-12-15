@@ -38,13 +38,13 @@ For business-critical gateways, the gateways need to be deployed and managed pro
 
 To ensure optimal scalability, performance, and throughput, follow the recommendations in the following sections.
 
-### Know ALL your gateway recovery keys
+### Know all your gateway recovery keys
 
 Ensure that all gateway recovery keys are **known and kept in a safe place**. Without a recovery key, gateways can't be recovered or downgraded. This is by design. If you lose your recovery keys, the only option is to create new gateways and recreate the data sources.
 
 Store your recovery keys in a secure place just as you would store administrative credentials, such as a password safe, which can be accessed only by authorized administrators.
 
-If you currently don'o't know all your gateway recovery keys, this is a **significant business risk**. Immediately create new gateway clusters and start migrating workloads to the gateway clusters.
+If you currently don't know all your gateway recovery keys, this is a **significant business risk**. Immediately create new gateway clusters and start migrating workloads to the gateway clusters.
 
 ### Development workloads and business-critical workloads
 
@@ -54,13 +54,13 @@ Separate development workloads from business-critical ones by setting up one or 
 
 Use a development gateway cluster to test out new datasets, reports, queries, and so on. Once a new workload has been verified, migrate it to a business-critical gateway cluster. This process prevents new, untested, or experimental workloads from having performance impacts on productions workloads.
 
-Also use your development gateway cluster(s) to test new gateway updates prior to applying updates to your business-critical gateway clusters. New gateway updates should be deployed for a minimum of 24 hours in the development gateway cluster(s) before being used on business-critical gateway cluster(s).
+Also use your development gateway cluster(s) to test new gateway updates before applying updates to your business-critical gateway clusters. New gateway updates should be deployed for a minimum of 24 hours in the development gateway cluster(s) before being used on business-critical gateway cluster(s).
 
 ### Use multiple gateway clusters
 
 If you're creating a gateway cluster for a large number of users in your organization, you need to create multiple gateway clusters based on business units or smaller to limit any potential performance impact to a small subset of users.
 
-We don't recommended that a single business-critical gateway cluster be used for an entire company (unless the company is small). In a single gateway cluster scenario, one user could conceivably send a query that causes a significant performance impact to all traffic across the gateway. If the gateway is used across the entire company, the performance impact could affect the entire company. Additionally, when a gateway cluster is used across an entire company, it might be more difficult for you to identify which query might be causing a performance problem when using the [gateway performance monitoring](service-gateway-performance.md) feature.
+We don't recommend that a single business-critical gateway cluster be used for an entire company (unless the company is small). In a single gateway cluster scenario, one user could conceivably send a query that causes a significant performance impact to all traffic across the gateway. If the gateway is used across the entire company, the performance impact could affect the entire company. Also, when a gateway cluster is used across an entire company, it might be more difficult for you to identify which query might be causing a performance problem when using the [gateway performance monitoring](service-gateway-performance.md) feature.
 
 ### Use the gateway high availability and load balancing features
 
@@ -69,7 +69,7 @@ Always use the [gateway high availability and load balancing](service-gateway-hi
 * High availability: Eliminates having a single point of failure.
 * Load balancing: Automatically distributes the workload across all gateway servers in the cluster.
 
-Set up a minimum of two gateways per gateway cluster in case a gateway goes offline for any reason. This ensures that a single gateway failure doesn't cause the entire gateway cluster to fail. Additionally, CPU and memory throttling should be enabled on the gateways to better distribute the load across the gateway cluster.
+Set up a minimum of two gateways per gateway cluster in case a gateway goes offline for any reason. This setup ensures that a single gateway failure doesn't cause the entire gateway cluster to fail. Additionally, CPU and memory throttling should be enabled on the gateways to better distribute the load across the gateway cluster.
 
 ### Plan and maintain gateway cluster scalability
 
@@ -77,11 +77,11 @@ Setting up a gateway cluster using our recommended hardware and software guideli
 
 #### Determine gateway server hardware specifications
 
-Gateway server specifications (CPU, memory, disk, and so on) are an important factor, as in most cases, the Power Query transformations are applied to the data on the gateway server. Therefore, a gateway server needs to have enough resources, memory, and processing power to handle all the data transformations.
+Gateway server specifications (CPU, memory, disk, and so on) are an important factor, as in most cases, the Power Query transformations are applied to the data on the gateway server. As such, a gateway server needs to have enough resources, memory, and processing power to handle all the data transformations.
 
-When you need to choose a server size, there are two metrics that are most important: Memory and CPU. You need both ample memory and CPU power to process the Power Query data transformation steps on the gateway. It's important that your gateway server is powerful enough to process the highest workload that you have. If the gateway server is not able to handle the workload, your direct query or data refresh will fail. It's also important to understand how many queries are executed at the same time.
+When you need to choose a server size, there are two metrics that are most important: Memory and CPU. You need both ample memory and CPU power to process the Power Query data transformation steps on the gateway. It's important that your gateway server is powerful enough to process the highest workload that you have. If the gateway server isn't able to handle the workload, your direct query or data refresh will fail. It's also important to understand how many queries are executed at the same time.
 
-These different query options have a different impact on your gateway server.
+These different query options have a different affect on your gateway server.
 
 | Query Type | Limit Factor |
 | --- | --- |
@@ -95,7 +95,7 @@ Depending on your workload, consider optimizing your gateway server for memory o
 
 #### When to scale a gateway cluster
 
-Scaling is an important aspect of a business-critical gateway cluster. As your usage with the gateway cluster grows, the gateway cluster needs to be scaled up and/or scaled out to ensure good performance. We recommend that you start scaling out a gateway cluster if you have previously scaled up the gateways in the cluster.
+Scaling is an important aspect of a business-critical gateway cluster. As your usage with the gateway cluster grows, the gateway cluster needs to be scaled up and/or scaled out to ensure good performance. We recommend that you start scaling out a gateway cluster if you've previously scaled up the gateways in the cluster.
 
 ##### Scaling up a gateway cluster
 
@@ -103,7 +103,7 @@ Scaling is an important aspect of a business-critical gateway cluster. As your u
 
 Scaling up is when you increase the specifications (CPU, memory, disk, and so on) of your gateway servers.
 
-Scaling up might be required when the maximum CPU or memory is reached when the gateway executes one or more queries. A query can only be executed on one gateway server. Therefore, the gateway server must have enough resources available to process the entire query along with the resulting data.
+Scaling up might be required if the maximum CPU or memory is reached when the gateway executes one or more queries. A query can only be executed on one gateway server. That's why the gateway server must have enough resources available to process the entire query along with the resulting data.
 
 ##### Scaling out a gateway cluster
 
