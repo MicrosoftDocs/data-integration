@@ -119,7 +119,7 @@ An exceptionally large number of users relying on a single gateway cluster is an
 
 #### Monitoring and troubleshooting gateway performance
 
-It's important to monitor the overall performance of business-critical gateways using the [gateway performance monitoring](service-gateway-performance) feature. You can also use this feature to troubleshoot performance problems, identify bottlenecks, and identify queries that are impacting overall gateway performance. This feature is also an important tool in helping you determine when to scale a gateway cluster.
+It's important to monitor the overall performance of business-critical gateways using the [gateway performance monitoring](service-gateway-performance.md) feature. You can also use this feature to troubleshoot performance problems, identify bottlenecks, and identify queries that are impacting overall gateway performance. This feature is also an important tool in helping you determine when to scale a gateway cluster.
 
 If you identify a query as having a heavy impact on the gateway resulting in poor overall performance, you might be able to rewrite the query to be more efficient and minimize the performance impact.
 
