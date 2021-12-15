@@ -1,7 +1,7 @@
 ---
 
 title: Plan, scale, and maintain a business-critical gateway solution  
-description: Learn how to install a gateway so you can connect to on-premises data.
+description: Learn how to plan, scale, and maintain gateways and gateway clusters that are deployed in business-critical scenarios.
 author: miquelladeboer
 ms.reviewer: dougklo
 ms.prod: on-premises-data-gateway
