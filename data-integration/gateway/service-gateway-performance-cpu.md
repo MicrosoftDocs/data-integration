@@ -30,5 +30,4 @@ Most queries use _mashup containers_ to execute. So the number of mashup contain
 
 If you've changed any of these settings manually, automatic scaling is not enabled by default. To enable automatic scaling, in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_ set `MashupDisableContainerAutoConfig` to _False_.
 
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
