@@ -62,6 +62,8 @@ If you're creating a gateway cluster for a large number of users in your organiz
 
 We don't recommend that a single business-critical gateway cluster be used for an entire company (unless the company is small). In a single gateway cluster scenario, one user could conceivably send a query that causes a significant performance impact to all traffic across the gateway. If the gateway is used across the entire company, the performance impact could affect the entire company. Also, when a gateway cluster is used across an entire company, it might be more difficult for you to identify which query might be causing a performance problem when using the [gateway performance monitoring](service-gateway-performance.md) feature.
 
+![Image of an example organization with separate gateway clusters for enterprise BI and apps, the finance department, the marketing department, and personal BI and apps.](media/plan-scale-maintain/multiple-gateway-clusters.png)
+
 ### Use the gateway high availability and load balancing features
 
 Always use the [gateway high availability and load balancing](service-gateway-high-availability-clusters.md#high-availability-clusters-for-an-on-premises-data-gateway) features for any business-critical gateway cluster.
