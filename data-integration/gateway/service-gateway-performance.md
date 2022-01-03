@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 12/10/2021
+ms.date: 12/15/2021
 LocalizationGroup: Gateways 
 ---
 
@@ -48,6 +48,7 @@ This feature is now turned on by default. To disable this feature, make the foll
      <value>False</value>
    </setting>
    ```
+
 ### Configure Performance logging
 
 There are other values in the config file that you can update as needed:
@@ -155,6 +156,10 @@ Now, you can visualize the data that's in the log files.
 1. Optionally, save this file as a PBIX, and publish it to your service for automatic refreshes. To learn more, see [Publish datasets and reports from Power BI Desktop](/power-bi/create-reports/desktop-upload-desktop-files).
 
 You also can customize this template file to suit your needs. For more information on Power BI templates, see this [Microsoft Power BI blog post](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+
+## Monitoring spool storage
+
+By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure the location isn't running full.
 
 ## Slow-performing queries
 
