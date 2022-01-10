@@ -10,7 +10,6 @@ ms.technology:
 ms.topic: overview
 ms.date: 07/30/2021
 ms.author: arthii
-ms.custom: intro-internal
 
 LocalizationGroup: Gateways
 ---

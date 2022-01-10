@@ -7,7 +7,7 @@ ms.prod: on-premises-data-gateway
 ms.topic: overview
 ms.date: 9/14/2021
 ms.author: arthii
-ms.custom: intro-internal
+
 ---
 
 # What is a virtual network (VNet) data gateway (Preview)?
