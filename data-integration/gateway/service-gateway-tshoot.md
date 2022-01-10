@@ -47,8 +47,8 @@ You might receive this error if you're trying to install the gateway on a domain
 
 You might encounter installation failures if the antivirus software on the installation machine is out of date. You can either update the antivirus installation or disable the antivirus software only for the duration of the gateway installation. After the installation is finished, reenable the antivirus software.
 
-### Antivirus software enabled
-You might encounter installation failure when anitivirus software is enabled. Configure your antivirus software to ignore the gateway process.
+### McAfee Endpoint Defender software enabled
+You might encounter installation failure when anitivirus software, like McAfee Endpoint Defender is enabled. Configure your antivirus software to ignore the gateway process.
 
 ### Same or older gateway version
 
