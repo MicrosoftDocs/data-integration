@@ -7,7 +7,7 @@ ms.prod: on-premises-data-gateway
 ms.topic: overview
 ms.date: 9/14/2021
 ms.author: arthii
-ms.custom: intro-internal
+
 ---
 
 # What is a virtual network (VNet) data gateway (Preview)?
@@ -39,3 +39,7 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
   - A list of supported data sources for Power Platform dataflows is available in [Supported data sources](data-gateway-power-platform-dataflows.md#supported-data-sources).
   - VNet data gateways are created in your tenant’s home region by default and there's currently no option to change the VNet data gateway region. Based on this limitation, VNet data gateways can only be used in Power platform environments in the home region of your tenant.
   - VNet data gateways currently support only admin roles and not "Can Use and Can Use+Share" for Power Platform dataflows.
+
+- Power BI paginated reports:
+  - Although VNet gateways support paginated reports, Azure Active Directory (Azure AD) SSO connections aren't supported.
+  - A list of supported data sources for Power Platform dataflows is available in [Supported data sources for Power BI paginated reports](/power-bi/paginated-reports/paginated-reports-data-sources).
