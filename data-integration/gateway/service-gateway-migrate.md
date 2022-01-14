@@ -38,6 +38,24 @@ If you're restoring the gateway on the computer that has the original gateway in
 
 After the configuration finishes, the process of migrating, restoring, or taking over is complete.
 
+## Minimize migration downtime
+
+During migration of an on-premises data gateway, some downtime generally occurs. During this downtime, some in-progress refreshes might not succeed.
+
+If a gateway only contains one member, you should expect the following to occur when you migrate the gateway:
+
+* Expect all ongoing refreshes using the previous machine to be unsuccessful.
+
+* Expect new refreshes starting a few minutes after migration to succeed.
+
+The only way to ensure that there is 100% uptime during a migration:
+
+1. Create a gateway with many gateway members (a cluster of gateways).
+2. Disable the gateway that is going to be migrated (in the Power Platform admin center).
+3. Wait for a while for ongoing queries to drain.
+4. Migrate the disabled gateway member.
+5. Re-enable the gateway member.
+
 ## Next steps
 
 * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
