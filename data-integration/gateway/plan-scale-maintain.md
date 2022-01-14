@@ -36,11 +36,11 @@ The following image demonstrates the relationship between the concepts defined a
 
 For business-critical gateways, the gateways need to be deployed and managed properly to ensure high availability, good performance, and maintainable scalability. Deploying gateways incorrectly might result in poor performance, failed queries, and difficulty in diagnosing potential issues. It might also impede your ability to scale the gateways up and out as usage grows.
 
-To ensure optimal scalability, performance, and throughput, follow the recommendations in the following sections.
+To ensure optimal scalability, performance, and throughput, follow the recommendations in the next sections.
 
 ### Know all your gateway recovery keys
 
-Ensure that all gateway recovery keys are **known and kept in a safe place**. Without a recovery key, gateways can't be recovered or downgraded. This is by design. If you lose your recovery keys, the only option is to create new gateways and recreate the data sources.
+Ensure that all gateway recovery keys are **known and kept in a safe place**. Without a recovery key, gateways can't be recovered or downgraded. This is by design. If you lose your recovery keys, the only option is to create new gateways and recreate the data sources. Also, you can't add new gateways to the cluster without the recovery key, which would limit future scalability.
 
 Store your recovery keys in a secure place just as you would store administrative credentials, such as a password safe, which can be accessed only by authorized administrators.
 
@@ -90,6 +90,7 @@ These different query options have a different affect on your gateway server.
 | Import | Memory |  
 | DirectQuery | CPU |
 | LiveConnect | CPU |
+| | |
 
 During an import, the entire set of data needs to be queried and processed, which is a memory heavy task. This often takes a longer time as well. DirectQueries and LiveConnections are commonly CPU heavy. In most cases, direct queries are executed many times to process only a small portion of the data. Since only a small portion of the data is processed, this is normally not a memory heavy task. However, because the queries get executed many times on demand, this can be CPU intensive.
 
