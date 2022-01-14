@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.technology:
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 1/14/2022
 ms.author: arthii
 
 
@@ -59,6 +59,5 @@ The only way to ensure that there is 100% uptime during a migration:
 ## Next steps
 
 * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
