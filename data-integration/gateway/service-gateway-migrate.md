@@ -50,8 +50,8 @@ If a gateway only contains one member, you should expect the following to occur 
 
 The only way to ensure that there is 100% uptime during a migration:
 
-1. Create a gateway with many gateway members (a cluster of gateways).
-2. Disable the gateway that is going to be migrated (in the Power Platform admin center).
+1. Create a gateway with more than one gateway member ([a cluster of gateways](service-gateway-high-vailability-clusters.md)).
+2. Disable the gateway that's going to be migrated ([in the Power Platform admin center](/power-platform/admin/onpremises-data-gateway-management#details)).
 3. Wait for a while for ongoing queries to drain.
 4. Migrate the disabled gateway member.
 5. Re-enable the gateway member.
