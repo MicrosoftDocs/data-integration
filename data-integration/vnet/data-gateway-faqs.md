@@ -5,7 +5,7 @@ author: arthiriyer
 ms.reviewer: kvivek
 ms.prod: on-premises-data-gateway
 ms.topic: conceptual
-ms.date: 9/14/2021
+ms.date: 1/24/2022
 ms.author: arthii
 ---
 
@@ -76,7 +76,7 @@ For SQL serverless with auto-pause, the first request might fail if SQL is in a 
 
 ### Is there a delay when the VNet gateway is used for the first time or after a period of inactivity?
 
-When used for the first time, the VNet gateway takes about a minute to get set up. Similarly, if the VNet data gateway isn't used for 2 hours, you could experience a delay of about a minute the next time you use it.
+When used for the first time, the VNet gateway takes about 2 minutes to get set up. Similarly, if the VNet data gateway isn't used for 30 minutes, you could experience a delay of about a minute the next time you use it.
 
 ### Is this feature supported in sovereign clouds?
 
