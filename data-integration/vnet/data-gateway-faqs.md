@@ -50,7 +50,7 @@ Yes, there's no dependency on the Power BI home region for this feature. If this
 
 ### Can I choose the region where VNet data gateways are created?
 
-No, VNet gateways are by default created in your tenant’s home region and there's currently no option to change it.
+No. The VNet data gateway is physically in the same region as your Azure VNet. Currently, you also can't choose where the metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored. It's stored in your tenant’s default region.
 
 ### Will I be able to use this feature if my tenant is in East US (United States) and Power platform environment is in Europe?
 
