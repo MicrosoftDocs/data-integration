@@ -177,7 +177,22 @@ sections:
           Does the gateway admin need to be an admin on the machine where the gateway is installed?  
         answer: |
           No, the gateway admin manages the gateway from within the service.
-
+  
+  - name: Migration
+    questions: 
+      - question: |
+        During the migration failure, for the old gateway server, do we need to do any further operation like resigning or whether the old gateway application would just keep running without any question?
+        answer: |
+        In case if migration process fails on the new server, Gateway application still exists in the old server and it can very much run the application unless server is offline or Gateway software uninstalled. However, it may ask for recovery key to restore back the Gateway in the old server.
+      - question: | 
+        How long it will need usually when we want to complete the gateway migration?
+        answer: | 
+        It includes only two tasks, installing Gateway and restoration/configuration on new server which can be completed in 10-15 mins max.
+      - question: | 
+        We assume that the whole process would cost 5 mins, for all the refreshes happens in this 5 mins, how the traffic would go? It will go through the old gateway server before the migration completed?
+        answer: |
+        There are high chances of failures and migration like these should be done on a downtime window. More details available at https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime  
+        
 additionalContent: |
 
   ## Next steps
