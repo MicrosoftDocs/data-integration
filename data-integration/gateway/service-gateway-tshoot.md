@@ -89,6 +89,10 @@ This error could be due to proxy configuration issues. The gateway log provides 
 
 At the end of configuration, the Power BI service is called again to validate the gateway. The Power BI service doesn't report the gateway as *live*. Restarting the Windows service might allow the communication to be successful. To get more details, collect and review the logs, as described in the following section.
 
+#### Error: Information Is Needed in Order to Combine Data
+
+You may experience refresh Failure in Power BI Service with an error “Information is needed in order to combine data” although refresh on Power BI Desktop works. The cause of this problem is that if the refresh in Power BI Desktop works with option "Always ignore privacy level settings" and throws a firewall error when other options are selected, then this refresh will not work in service since "Always ignore privacy level settings" is not available in Power BI Service. To resolve this try changing the Privacy Level in Power BI Desktop: Global setting + Current File setting, such that it was not ignoring the privacy of data. Re-publish the file to Power BI Service and update the credentials to ‘Organizational’ in Power BI Service.
+
 ## Troubleshooting tools
 
 ### Collect logs from the on-premises data gateway app
