@@ -106,3 +106,4 @@ Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks
 
 * You can't delegate a subnet called **gatewaysubnet** to the Power Platform admin center. This is because it's a reserved word for Azure Gateway Subnet feature.
 * You can't change the region, subscription, or resource group for the VNet on which the VNet data gateway was created. This scenario isn't currently supported.
+* VNet data gateways does not support conditional access policies when enabled. It will show as an error "DM_GWPipeline_Client_OAuthTokenLoginFailedError" when you try to update credentials using the authentication type as OAuth.  
