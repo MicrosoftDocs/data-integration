@@ -4,7 +4,7 @@ description: Provides information about configuration of proxy settings for the 
 author: arthiriyer
 manager: kvivek
 ms.reviewer: kvivek
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: conceptual
 ms.date: 11/1/2021

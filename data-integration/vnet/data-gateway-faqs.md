@@ -3,7 +3,7 @@ title: Virtual network (VNet) data gateway FAQs
 description: Frequently asked questions about virtual network (VNet) data gateway.
 author: arthiriyer
 ms.reviewer: kvivek
-ms.prod: on-premises-data-gateway
+
 ms.topic: conceptual
 ms.date: 1/24/2022
 ms.author: arthii

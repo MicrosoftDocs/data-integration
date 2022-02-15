@@ -3,7 +3,7 @@ title: Use virtual network (VNet) data gateway in Power Platform dataflows
 description: Learn about how to connect to data using the virtual network (VNet) data gateway, along with details of supported data sources.
 author: arthiriyer
 ms.reviewer: dougklo
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: conceptual
 ms.date: 06/22/2021
