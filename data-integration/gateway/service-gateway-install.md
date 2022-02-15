@@ -5,7 +5,7 @@ description: Learn how to install a gateway so you can connect to on-premises da
 author: arthiriyer
 manager: kvivek
 ms.reviewer: kvivek
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: conceptual
 ms.date: 9/15/2021

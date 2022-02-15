@@ -43,7 +43,11 @@
       "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi?category_id=161724",
       "recommendations": true 
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.prod":{
+        "**.*": "on-premises-data-gateway"
+      }
+    },
     "template": [],
     "dest": "data-integration",
     "markdownEngineName": "markdig"

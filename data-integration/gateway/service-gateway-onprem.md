@@ -5,7 +5,7 @@ author: arthiriyer
 manager: kvivek
 ms.reviewer: kvivek
 
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: overview
 ms.date: 07/30/2021
