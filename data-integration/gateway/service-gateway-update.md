@@ -4,7 +4,7 @@ description: Describes how to update to the latest version of the on-premises da
 author: arthiriyer
 manager: kvivek
 ms.reviewer: kvivek
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: conceptual
 ms.date: 07/15/2019
