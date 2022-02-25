@@ -162,11 +162,9 @@ A service tag represents a group of IP address prefixes from a given Azure servi
 * AzureActiveDirectory
 * AzureCloud
 
-There are no service tags for the Azure Relay service. ServiceBus service tags specifically pertain to the Service queues and topics feature, but not for Azure Relay.
+The on-premises data gateway uses Azure Relay for some communication. However, there are no service tags for the Azure Relay service. ServiceBus service tags specifically pertain to the Service queues and topics feature, but not for Azure Relay.
 
 The AzureCloud service tag represents all global Azure Data Center IP addresses. Since Azure Relay service is built on top of Azure Compute, Azure Relay public IPs are a subset of the AzureCloud IPs. More information: [Azure service tags overview](/azure/virtual-network/service-tags-overview)
-
-Azure Relay will always use addresses that are part of Azure Data Center IP addresses (or private endpoints). Private endpoints provide more isolation than service endpoints, so only private endpoint support was added to Azure Relay. If you require more isolation than the Azure public IP ranges or the Azure public IP ranges for the given region, then private endpoints are the answer with Azure Relay. More information: [Create a private endpoint by using the Azure portal](/azure/private-link/create-private-endpoint-portal)
 
 ## Next steps
 
