@@ -28,7 +28,7 @@ If a firewall blocks outbound connections, configure the firewall to allow outbo
 
 The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports.
 
-We recommend that you allow the IP addresses for your data region in your firewall. Please use the JSON files listed below which are updated weekly.
+We recommend that you allow the IP addresses for your data region in your firewall. Use the JSON files listed below, which are updated weekly.
 >* [Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
 >* [US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
 >* [Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
@@ -89,7 +89,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 |443| *.chinacloudapi.cn |
 |443| login.partner.microsoftonline.cn |
 |443| No Mooncake equivalent&mdash;not required to run the gateway&mdash;only used to check network during failure conditions |
-|443| No Mooncake equivalent&mdash;used during AAD sign in. For more infomation about AAD endpoints, go to [Check the endpoints in Azure](https://docs.azure.cn/articles/guidance/developerdifferences)
+|443| No Mooncake equivalent&mdash;used during Azure AD sign in. For more information about Azure AD endpoints, go to [Check the endpoints in Azure](https://docs.azure.cn/articles/guidance/developerdifferences)
 |443| applicationinsights.azure.cn |
 |433| clientconfig.passport.net |
 |433| aadcdn.msftauth.cn |
@@ -154,14 +154,22 @@ By default, the gateway uses Transport Layer Security (TLS) 1.2 to communicate w
 > Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings).
 
 ## Service tags
-A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules. The data gateway has dependecies on the following service tags:
+
+A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules. The data gateway has dependencies on the following service tags:
+
 * PowerBI
 * ServiceBus
 * AzureActiveDirectory
+* AzureCloud
+
+There are no service tags for the Azure Relay service. ServiceBus service tags specifically pertain to the Service queues and topics feature, but not for Azure Relay.
+
+The AzureCloud service tag represents all global Azure Data Center IP addresses. Since Azure Relay service is built on top of Azure Compute, Azure Relay public IPs are a subset of the AzureCloud IPs. More information: [Azure service tags overview](/azure/virtual-network/service-tags-overview)
+
+Azure Relay will always use addresses that are part of Azure Data Center IP addresses (or private endpoints). Private endpoints provide more isolation than service endpoints, so only private endpoint support was added to Azure Relay. If you require more isolation than the Azure public IP ranges or the Azure public IP ranges for the given region, then private endpoints are the answer with Azure Relay. More information: [Create a private endpoint by using the Azure portal](/azure/private-link/create-private-endpoint-portal)
 
 ## Next steps
 
 * [Configure the gateway log file](service-gateway-log-files.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
