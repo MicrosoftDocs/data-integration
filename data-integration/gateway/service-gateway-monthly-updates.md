@@ -7,7 +7,7 @@ ms.reviewer: kvivek
 
 ms.technology:
 ms.topic: conceptual
-ms.date: 2/17/2022
+ms.date: 2/24/2022
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -15,10 +15,16 @@ LocalizationGroup: Gateways
 
 # Previous monthly updates to the on-premises data gateways
 
-This article describes the last six updates for the on-premises data gateways and provides links for downloading any of these versions. For the most current release of the gateways, check out our [recent blog post](https://powerbi.microsoft.com/blog/on-premises-data-gateway-december-2021-update-is-now-available/) or download the latest versions:
+This article describes the last six updates for the on-premises data gateways and provides links for downloading any of these versions. For the most current release of the gateways, check out our [recent blog post](https://powerbi.microsoft.com/blog/on-premises-data-gateway-february-2022-update-is-now-available/) or download the latest versions:
 
 - Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall.exe)
 - Download the [latest on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode).exe)
+
+## December 2021 update (3000.110.5)
+
+- [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-December-2021-update-is-now-available/)
+- [Download the December 2021 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-21-12.exe)
+- [Download the December 2021 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-21-12.exe)
 
 ## November 2021 update (3000.106.11)
 
@@ -43,12 +49,6 @@ This article describes the last six updates for the on-premises data gateways an
 - [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-august-2021-update-is-now-available/)
 - [Download the August 2021 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-21-08.exe)
 - [Download the August 2021 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-21-08.exe)
-
-## July 2021 update (3000.89.6)
-
-- [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-July-2021-update-is-now-available/)
-- [Download the July 2021 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-21-07.exe)
-- [Download the July 2021 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-21-07.exe)
 
 ## Next steps
 
