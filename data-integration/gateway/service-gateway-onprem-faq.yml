@@ -176,7 +176,24 @@ sections:
           Does the gateway admin need to be an admin on the machine where the gateway is installed?  
         answer: |
           No, the gateway admin manages the gateway from within the service.
+  
+  - name: Migration
+    questions: 
+      - question: |
+          If gateway migration fails, can gateway activity be continued from the old gateway server? Does this require any manual operation?
+        answer: |
+          If the migration process fails on the new server, the on-premises data gateway still exists in the old server and you can still run that gateway unless the server is offline or the gateway software has been uninstalled. However, to restore the gateway on the old server, you might be asked to use your gateway recovery key.
+  
+      - question: | 
+          How long does a complete on-premises data gateway migration take?
+        answer: | 
+          Since migration includes only two tasks, installing the gateway and restoration and configuration on new server, migration can usually be completed in 10 to 15 minutes.
 
+      - question: | 
+          If we assume that the whole migration process will take 5 minutes, for all the refreshes that occur in these 5 minutes, where will the traffic go? Will it go through the old gateway server before the migration completes?
+        answer: |
+          Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. More information: https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime
+        
 additionalContent: |
 
   ## Next steps
