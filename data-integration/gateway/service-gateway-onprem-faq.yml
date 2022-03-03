@@ -181,17 +181,17 @@ sections:
   - name: Migration
     questions: 
       - question: |
-        During the migration failure, for the old gateway server, do we need to do any further operation like resigning or whether the old gateway application would just keep running without any question?
+        If gateway migration fails, can gateway activity be continued from the old gateway server? Does this require any manual operation?
         answer: |
-        In case if migration process fails on the new server, Gateway application still exists in the old server and it can very much run the application unless server is offline or Gateway software uninstalled. However, it may ask for recovery key to restore back the Gateway in the old server.
+        If the migration process fails on the new server, the on-premises data gateway still exists in the old server and you can still run that gateway unless the server is offline or the gateway software has been uninstalled. However, to restore the gateway on the old server, you might be asked to use your gateway recovery key.
       - question: | 
-        How long it will need usually when we want to complete the gateway migration?
+        How long does a complete on-premises data gateway migration take?
         answer: | 
-        It includes only two tasks, installing Gateway and restoration/configuration on new server which can be completed in 10-15 mins max.
+        Since migration includes only two tasks, installing the gateway and restoration and configuration on new server, migration can usually be completed in 10 to 15 minutes.
       - question: | 
-        We assume that the whole process would cost 5 mins, for all the refreshes happens in this 5 mins, how the traffic would go? It will go through the old gateway server before the migration completed?
+        If we assume that the whole migration process will take 5 minutes, for all the refreshes that occur in these 5 minutes, where will the traffic go? Will it go through the old gateway server before the migration completes?
         answer: |
-        There are high chances of failures and migration like these should be done on a downtime window. More details available at https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime  
+        Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. More information: https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime
         
 additionalContent: |
 
