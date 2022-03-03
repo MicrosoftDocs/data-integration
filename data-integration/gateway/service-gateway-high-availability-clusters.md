@@ -5,10 +5,10 @@ author: arthiriyer
 ms.author: arthii
 manager: kvivek
 ms.reviewer: kvivek
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 10/12/2021
 LocalizationGroup: Gateways 
 ---
 
@@ -35,32 +35,34 @@ All requests are routed to the primary instance of a gateway cluster. If the pri
 
 ## Load balance across gateways in a cluster
 
-You can choose to let traffic be distributed evenly across gateways in a cluster. By default, the selection of a gateway during load balancing&mdash;that is, when "Distribute requests across all active gateways in this cluster" is enabled&mdash;is random.
+You can choose to let traffic be distributed evenly across gateways in a cluster. By default, the selection of a gateway during load balancing&mdash;that is, when "Distribute requests across all active gateways in this cluster" is enabled&mdash;is random. You can change this setting to distribute the load.
 
 > [!NOTE]
-> Offline gateway members within a cluster will negatively impact performance. These members should either be removed or disabled.
-    
-For example, to provide load balancing from the Power BI service, select the gear icon ![A gear icon](media/service-gateway-manage/icon-gear.png) in the upper-right corner, then select **Manage gateways**. Next, select **Distribute requests across all active gateways in this cluster**.
+> It is recommended to disable or remove an offline gateway member in the cluster. If a gateway member is offline instead of disabled or removed, we may try to excecute a query on that offline member, before moving to the next one. This can negatively impact the performance.
 
-![Gateway cluster settings](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
+For example, to provide load balancing from the Power BI service, select the gear icon ![A gear icon.](media/service-gateway-manage/icon-gear.png) in the upper-right corner, then select **Manage gateways**. Next, select **Distribute requests across all active gateways in this cluster**.
+
+![Gateway cluster settings.](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
 
 ## Load balance based on CPU and Memory throttling
 
 As mentioned earlier, the selection of a gateway during load balancing is random. Gateway admins can, however, now throttle the resources of each gateway member. With throttling, you can make sure either a gateway member or the entire gateway cluster isn't overloaded, causing system failures. 
 
-If a gateway cluster with load balancing enabled receives a request from one of the cloud services (like Power BI), it randomly selects a gateway member. If this member is already at or over the throttling limit set for CPU or memory, another member within the cluster is selected. If all members within the cluster are in the same state, the request fails.    
+If a gateway cluster with load balancing enabled receives a request from one of the cloud services (like Power BI), it randomly selects a gateway member. If this member is already at or over the throttling limit set for CPU or memory, another member within the cluster is selected. If all members within the cluster are in the same state, the request fails.
 
 To enable this feature, a gateway admin should update the following settings in  the _Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_ file available in the _Program Files\On-premises data gateway\_ folder.
 
-- **CPUUtilizationPercentageThreshold** - This configuration allows gateway admins to set a throttling limit for CPU. The permissible range for this configuration is 0 to 100. A value of 0, which is the default, indicates that this configuration is disabled. 
+- **CPUUtilizationPercentageThreshold** - This configuration allows gateway admins to set a throttling limit for CPU. The permissible range for this configuration is 0 to 100. A value of 0, which is the default, indicates that this configuration is disabled.
 
-- **MemoryUtilizationPercentageThreshold** - This configuration allows gateway admins to set a throttling limit for memory. The permissible range for this configuration is 0 to 100. A value of 0, which is the default, indicates that this configuration is disabled. 
+- **MemoryUtilizationPercentageThreshold** - This configuration allows gateway admins to set a throttling limit for memory. The permissible range for this configuration is 0 to 100. A value of 0, which is the default, indicates that this configuration is disabled.
 
-- **ResourceUtilizationAggregateionPeriodInMinutes** - This configuration sets the time in minutes for which CPU and memory system counters of the gateway machine are aggregated. The aggregated values are then compared against the respective threshold limits set for **CPUUtilizationPercentageThreshold** and **MemoryUtilizationPercentageThreshold**. The default value for this configuration is 5.
+- **ResourceUtilizationAggregationTimeInMinutes** - This configuration sets the time in minutes for which CPU and memory system counters of the gateway machine are aggregated. The aggregated values are then compared against the respective threshold limits set for **CPUUtilizationPercentageThreshold** and **MemoryUtilizationPercentageThreshold**. The default value for this configuration is 5.
+
+> [!NOTE]
+> You can also change the load balancing setting through [PowerShell](/powershell/module/datagateway/set-datagatewaycluster).
 
 ## Next steps
 
-* [PowerShell support for gateway clusters](service-gateway-powershell-support.md)
-
+[PowerShell support for gateway clusters](service-gateway-powershell-support.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

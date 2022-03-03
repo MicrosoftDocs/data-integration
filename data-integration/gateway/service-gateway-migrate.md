@@ -5,10 +5,10 @@ author: arthiriyer
 manager: kvivek
 ms.reviewer: kvivek
 
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 1/14/2022
 ms.author: arthii
 
 
@@ -28,19 +28,35 @@ If you're restoring the gateway on the computer that has the original gateway in
 
 1. After you've signed in to your Office 365 account, register the gateway. Select **Migrate, restore, or takeover an existing gateway** > **Next**.
 
-    ![Choosing to migrate, restore, or take over a gateway](media/service-gateway-migrate/register-gateway.png)
+    ![Choosing to migrate, restore, or take over a gateway.](media/service-gateway-migrate/register-gateway.png)
 
 1. Select from the available clusters and gateways, and enter the recovery key for the selected gateway. You created and safely stored the recovery key when you originally installed the gateway. For more information, see step 8 in [Install an on-premises data gateway](service-gateway-install.md).
 
 1. Select **Configure**.
 
-    ![Configuring the migration, restoration, or takeover of a gateway](media/service-gateway-migrate/migrate-restore-takeover.png)
+    ![Configuring the migration, restoration, or takeover of a gateway.](media/service-gateway-migrate/migrate-restore-takeover.png)
 
 After the configuration finishes, the process of migrating, restoring, or taking over is complete.
+
+## Minimize migration downtime
+
+During migration of an on-premises data gateway, some downtime generally occurs. During this downtime, some in-progress refreshes might not succeed.
+
+If a gateway only contains one member, you should expect the following to occur when you migrate the gateway:
+
+* Expect all ongoing refreshes using the previous machine to be unsuccessful.
+
+* Expect new refreshes starting a few minutes after migration to succeed.
+
+The only way to ensure that there is 100% uptime during a migration:
+
+1. Create a gateway with more than one gateway member ([a cluster of gateways](service-gateway-high-availability-clusters.md)).
+2. Disable the gateway that's going to be migrated ([in the Power Platform admin center](/power-platform/admin/onpremises-data-gateway-management#details)).
+3. Migrate the disabled gateway member.
+4. Re-enable the gateway member.
 
 ## Next steps
 
 * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

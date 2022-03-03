@@ -5,7 +5,7 @@ author: arthiriyer
 ms.author: arthii
 manager: kvivek
 ms.reviewer: kvivek
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: conceptual
 ms.date: 07/15/2019
@@ -31,7 +31,7 @@ There are three categories of service logs for an on-premises data gateway: info
 
 By default, the gateway configuration file is located in the directory *\Program Files\On-premises data gateway*. To set the number of log files to retain, change the first number in the file's **initializeData** value. To configure the size of each log file, change the second number.
 
-The following example specifies that 20 log files, each 50 MB in size, will be retained:
+The following example specifies that 20 log files, the sum total of all files in each category being no more than 50 MB in size, will be retained:
 
  `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`
 

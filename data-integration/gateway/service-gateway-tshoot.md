@@ -5,7 +5,7 @@ author: arthiriyer
 ms.author: arthii
 manager: kvivek
 ms.reviewer: kvivek
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: conceptual
 ms.date: 07/15/2019
@@ -27,6 +27,14 @@ It's a good general practice to make sure you're using a supported version. We r
 
 Keep the versions of the gateway members in a cluster in sync. Having all the same version in a cluster helps to avoid unexpected refresh failures. These refresh failures might occur because the gateway member that a specific query is routed to might not be capable of executing it due to a lower version.
 
+## Troubleshoot Gateway management
+
+Here are a few common management issues and the resolutions that helped other customers.
+
+### Error while removing the primary node of a gateway cluster
+
+The primary node of a gateway can't be removed if there are other members in the cluster. Removing the primary node also means removing the gateway cluster. 
+
 ## Troubleshoot common installation issues
 
 Here are a few common installation issues and the resolutions that helped other customers.
@@ -39,11 +47,17 @@ You might receive this error if you're trying to install the gateway on a domain
 
 You might encounter installation failures if the antivirus software on the installation machine is out of date. You can either update the antivirus installation or disable the antivirus software only for the duration of the gateway installation. After the installation is finished, reenable the antivirus software.
 
+### McAfee Endpoint Defender software enabled
+You might encounter installation failure when anitivirus software, like McAfee Endpoint Defender is enabled. Configure your antivirus software to ignore the gateway process.
+
 ### Same or older gateway version
 
 You might come across the following error if you try to install the same version or a previous version of the gateway compared to the one that you already have.
 
-![Gateway installation error](media/service-gateway-tshoot/gateway-install-error.png)
+![Gateway installation error.](media/service-gateway-tshoot/gateway-install-error.png)
+
+### Error: The user profile is a temporary profile
+There is an issue with the machine. Contact your internal IT team to remove the temporary profile.
 
 ## Troubleshoot configuration
 
@@ -75,13 +89,17 @@ This error could be due to proxy configuration issues. The gateway log provides 
 
 At the end of configuration, the Power BI service is called again to validate the gateway. The Power BI service doesn't report the gateway as *live*. Restarting the Windows service might allow the communication to be successful. To get more details, collect and review the logs, as described in the following section.
 
+#### Error: Information is needed in order to combine data
+
+You may experience a refresh failure in Power BI service with an error “Information is needed in order to combine data”, even though refresh on Power BI Desktop works. This problem occurs when the refresh in Power BI Desktop works with the **File** > **Options and settings** > **Options** > **Privacy** > **Always ignore privacy level settings** option set, but throws a firewall error when other options are selected. If you attempt to preform this refresh in Power BI service, the refresh won't work because **Always ignore privacy level settings** isn't available in Power BI service. To resolve this error, try changing the privacy level in the Power BI desktop **Options** > **Global** > **Privacy** and **Options** > **Current File** > **Privacy** settings so that it doesn't ignore the privacy of data. Republish the file to Power BI service and update the credentials to "Organizational" in Power BI service.
+
 ## Troubleshooting tools
 
 ### Collect logs from the on-premises data gateway app
 
 There are several logs you can collect for the gateway, and you should always start with the logs. The simplest way to collect logs after you install the gateway is through the [on-premises data gateway app](service-gateway-app.md). In the on-premises data gateway app, select **Diagnostics** and then select the **Export logs** link, as shown in the following image.
 
-![On-premises data gateway app logs](media/service-gateway-tshoot/gateway-onprem-UI-logs.png)
+![On-premises data gateway app logs.](media/service-gateway-tshoot/gateway-onprem-UI-logs.png)
 
 This file is saved to the ODGLogs folder on your Windows desktop in .zip format.
 
@@ -95,11 +113,15 @@ To find the event logs for the *on-premises data gateway service*, follow these 
 
 1. Select **On-premises data gateway service**.
 
-![On-premises data gateway event logs](media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png)
+![On-premises data gateway event logs.](media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png)
+
+## Limitations and considerations
+
+The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [gateway clusters](service-gateway-high-availability-clusters.md).
 
 ## Next steps
 
-* [On-premises data gateway FAQ](service-gateway-onprem-faq.md)
+* [On-premises data gateway FAQ](service-gateway-onprem-faq.yml)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

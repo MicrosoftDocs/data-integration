@@ -5,11 +5,11 @@ author: arthiriyer
 ms.author: arthii
 manager: kvivek
 ms.reviewer: kvivek
-ms.prod: on-premises-data-gateway
+
 ms.technology:
 ms.topic: conceptual
 LocalizationGroup: Gateways
-ms.date: 07/15/2019
+ms.date: 07/30/2021
 ---
 
 # Adjust communication settings for the on-premises data gateway
@@ -28,16 +28,13 @@ If a firewall blocks outbound connections, configure the firewall to allow outbo
 
 The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports.
 
-We recommend that you allow the IP addresses for your data region in your firewall. You can download the [Azure datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) periodically in the gateway app.
-
-> [!NOTE]
-> This file will be deprecated by June 30, 2020. Please start using the JSON files listed below:
+We recommend that you allow the IP addresses for your data region in your firewall. Use the JSON files listed below, which are updated weekly.
 >* [Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
 >* [US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
 >* [Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
 >* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
 
-These JSON files are updated weekly
+Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) periodically in the gateway app.
 
 The gateway communicates with Service Bus by using an IP address along with a fully qualified domain name (FQDN). If you force the gateway to communicate via HTTPS, it will strictly use FQDNs only and won't communicate by using IP addresses.
 
@@ -60,27 +57,47 @@ The following list describes FQDNs used by the gateway.
 | *.msftncsi.com |443 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | *.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
 | *.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
+| | | |
 
-For GCCC, GCC high and DoD, the following FQDNs are used by the gateway.
+For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 
 | Ports | GCC | GCC High | DoD |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | 
 | 80 | *.download.microsoft.com |*.download.microsoft.com |*.download.microsoft.com |
 | 443 | *.powerbigov.us, *.powerbi.com  |*.high.powerbigov.us |*.mil.powerbigov.us|
 | 443 | *.analysis.usgovcloudapi.net |*.high.analysis.usgovcloudapi.net |*.mil.analysis.usgovcloudapi.net |
-| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online)|[See documentation](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online) |
+| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online)|[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online) |
 |5671-5672| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net|*.servicebus.usgovcloudapi.net |
 |443 and 9350-9354| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |
 |443| *.core.usgovcloudapi.net|*.core.usgovcloudapi.net|*.core.usgovcloudapi.net |
-|443| *.login.microsoftonline.com |*.login.microsoftonline.com |*.login.microsoftonline.com |
+|443| *.login.microsoftonline.com |*.login.microsoftonline.us |*.login.microsoftonline.us |
 |443| *.msftncsi.com |*.msftncsi.com |*.msftncsi.com |
 |443| *.microsoftonline-p.com |*.microsoftonline-p.com |*.microsoftonline-p.com |
 |443| *.dc.applicationinsights.us |*.dc.applicationinsights.us |*.dc.applicationinsights.us |
+| | | | |
+
+For China Cloud (Mooncake), the following FQDNs are used by the gateway.
+
+| Ports | China Cloud (Mooncake) |
+| --- | --- |
+| 80 | *.download.microsoft.com |
+| 443 | *.powerbi.cn |
+| 443 | *.asazure.chinacloudapi.cn |
+| 443 | *.login.chinacloudapi.cn |
+|5671-5672| *.servicebus.chinacloudapi.cn |
+|443 and 9350-9354| *.servicebus.chinacloudapi.cn |
+|443| *.chinacloudapi.cn |
+|443| login.partner.microsoftonline.cn |
+|443| No Mooncake equivalent&mdash;not required to run the gateway&mdash;only used to check network during failure conditions |
+|443| No Mooncake equivalent&mdash;used during Azure AD sign in. For more information about Azure AD endpoints, go to [Check the endpoints in Azure](https://docs.azure.cn/articles/guidance/developerdifferences)
+|443| applicationinsights.azure.cn |
+|433| clientconfig.passport.net |
+|433| aadcdn.msftauth.cn |
+|433| aadcdn.msauth.cn |
+| | |
 
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Service Bus, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).
-
-
 
 ## Network ports test
 
@@ -90,17 +107,20 @@ To test if the gateway has access to all required ports:
 
 1. Select **Diagnostics**. Under **Network ports test**, select **Start new test**.
 
-   ![How to start a new network ports test](media/service-gateway-communication/gateway-start-new-test.png)
+   ![How to start a new network ports test.](media/service-gateway-communication/gateway-start-new-test.png)
 
 When your gateway runs the network ports test, it retrieves a list of ports and servers from Service Bus and then attempts to connect to all of them. When the **Start new test** link reappears, the network ports test has finished.
 
 The summary result of the test is either "Completed (Succeeded)" or "Completed (Failed, see last test results)". If the test succeeded, your gateway connected to all the required ports. If the test failed, your network environment might have blocked the required ports and servers.
 
+> [!NOTE]
+> Firewalls often intermittently allow traffic on blocked sites. Even if a test succeeds, you might still need to allowlist that server on your firewall.
+
 To view the results of the last completed test, select the **Open last completed test results** link. The test results open in your default text editor.
 
 The test results list all the servers, ports, and IP addresses that your gateway requires. If the test results display "Closed" for any ports as shown in the following screenshot, ensure that your network environment didn't block those connections. You might need to contact your network admin to open the required ports.
 
-![Test results shown in Notepad](media/service-gateway-communication/gateway-onprem-porttest-result-file.png)
+![Test results shown in Notepad.](media/service-gateway-communication/gateway-onprem-porttest-result-file.png)
 
 ## Force HTTPS communication with Azure Service Bus
 
@@ -111,7 +131,7 @@ You can force the gateway to communicate with Service Bus by using HTTPS instead
 
 You can use the [gateway app](service-gateway-app.md) to force the gateway to adopt this behavior. In the gateway app, select **Network**, and then turn on **HTTPS mode**.
 
-![Setting the HTTPS mode](./media/service-gateway-communication/forcing-https.png)
+![Setting the HTTPS mode.](./media/service-gateway-communication/forcing-https.png)
 
 After you make this change and then select **Apply**, the gateway Windows service restarts automatically so that the change can take effect. The **Apply** button appears only when you make a change.
 
@@ -133,9 +153,21 @@ By default, the gateway uses Transport Layer Security (TLS) 1.2 to communicate w
 > [!NOTE]
 > Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings).
 
+## Service tags
+
+A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules. The data gateway has dependencies on the following service tags:
+
+* PowerBI
+* ServiceBus
+* AzureActiveDirectory
+* AzureCloud
+
+The on-premises data gateway uses Azure Relay for some communication. However, there are no service tags for the Azure Relay service. ServiceBus service tags specifically pertain to the Service queues and topics feature, but not for Azure Relay.
+
+The AzureCloud service tag represents all global Azure Data Center IP addresses. Since Azure Relay service is built on top of Azure Compute, Azure Relay public IPs are a subset of the AzureCloud IPs. More information: [Azure service tags overview](/azure/virtual-network/service-tags-overview)
+
 ## Next steps
 
 * [Configure the gateway log file](service-gateway-log-files.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

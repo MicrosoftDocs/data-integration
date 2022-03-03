@@ -13,6 +13,8 @@ metadata:
   author: dougklopfenstein
   ms.author: kvivek
   ms.date: 07/27/2020
+  
+  ms.custom: intro-internal
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
 
@@ -25,11 +27,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is an on-premises data gateway?
-            url: /data-integration/gateway/service-gateway-onprem
+            url: ./service-gateway-onprem.md
           - text: On-premises data gateway architecture
-            url: /data-integration/gateway/service-gateway-onprem-indepth
+            url: ./service-gateway-onprem-indepth.md
           - text: On-premises data gateway FAQ
-            url: /data-integration/gateway/service-gateway-onprem-faq
+            url: ./service-gateway-onprem-faq.yml
 
   # Card
   - title: Set up and manage
@@ -37,11 +39,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Install gateways
-            url: /data-integration/gateway/service-gateway-install
+            url: ./service-gateway-install.md
           - text: Configure gateways
-            url: /data-integration/gateway/service-gateway-app
+            url: ./service-gateway-app.md
           - text: Manage gateways
-            url: /data-integration/gateway/service-gateway-manage
+            url: ./service-gateway-manage.md
 
   # Card
   - title: Reference and resources
@@ -49,9 +51,8 @@ landingContent:
       - linkListType: reference
         links:
           - text: PowerShell support for gateways clusters
-            url: /data-integration/gateway/service-gateway-powershell-support
+            url: ./service-gateway-powershell-support.md
       - linkListType: whats-new
         links:
           - text: Previous monthly updates
-            url: /data-integration/gateway/service-gateway-monthly-updates
-
+            url: ./service-gateway-monthly-updates.md
