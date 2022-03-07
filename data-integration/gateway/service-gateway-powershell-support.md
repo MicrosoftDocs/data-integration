@@ -8,13 +8,13 @@ ms.reviewer: kvivek
 
 ms.technology:
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 3/7/2022
 LocalizationGroup: Gateways 
 ---
 
 # PowerShell support for on-premises data gateway clusters
 
-PowerShell scripts are available in the the [PowerShell gallery](https://www.powershellgallery.com/packages/OnPremisesDataGatewayHAMgmt/3000.15.18/). You must be using PowerShell version 5 or newer for these scripts to work correctly. You can use the PowerShell scripts to perform the following operations:
+PowerShell scripts are available in the the [PowerShell gallery](https://www.powershellgallery.com/packages/OnPremisesDataGatewayHAMgmt/3000.15.18/). The scripts described in this article are for PowerShell version 5. When you use PowerShell version 7, refer to [PowerShell Cmdlets for on-premises data gateway management](/powershell/gateway/overview?view=datagateway-ps). You can use the PowerShell scripts to perform the following operations:
 
 - Retrieve the list of gateway clusters available for a user.
 - Retrieve the list of gateway instances registered in a cluster and their online or offline status.
