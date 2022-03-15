@@ -37,7 +37,7 @@ There are two different types of on-premises data gateways, each for a different
 
 * **On-premises data gateway (personal mode)**: Allows one user to connect to data sources and can’t be shared with others. An on-premises data gateway (personal mode) can be used only with Power BI. This gateway is well suited to scenarios where you’re the only one who creates reports and you don't need to share any data sources with others.
 
-In addition, there's a virtual network (VNet) data gateway that lets multiple users connect to multiple data sources that are secured by virtual networks. No installation is required because it's a Microsoft managed service. This gateway is well suited to complex scenarios in which multiple people access multiple data sources. Virtual network data gateways are discussed in depth in [What is a virtual network (VNet) data gateway](/data-integration/vnet/overview).
+In addition, there's a virtual network (VNet) data gateway that lets multiple users connect to multiple data sources that are secured by virtual networks. No installation is required because it's a Microsoft managed service. This gateway is well suited to complex scenarios in which multiple people access multiple data sources. Virtual network data gateways are discussed in depth in [What is a virtual network (VNet) data gateway](../vnet/overview.md).
 
 ## Using a gateway
 
