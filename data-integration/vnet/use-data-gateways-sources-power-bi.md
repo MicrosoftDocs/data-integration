@@ -6,7 +6,7 @@ ms.reviewer: kvivek
 
 ms.technology:
 ms.topic: conceptual
-ms.date: 11/5/2021
+ms.date: 3/18/2022
 ms.author: arthii
 ---
 
@@ -35,7 +35,7 @@ In the current release, VNet data gateways will support connectivity to the foll
 
 - Azure SQL
 - Azure Synapse Analytics
-- Azure Data Bricks
+- Azure Databricks
 - Azure Data Explorer (Kusto)
 - Azure Table Storage
 - Azure Blob Storage
