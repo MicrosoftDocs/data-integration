@@ -5,7 +5,7 @@ author: arthiriyer
 ms.reviewer: kvivek
 
 ms.topic: overview
-ms.date: 9/14/2021
+ms.date: 3/24/2022
 ms.author: arthii
 
 ---
@@ -41,5 +41,5 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
   - VNet data gateways currently support only admin roles and not "Can Use and Can Use+Share" for Power Platform dataflows.
 
 - Power BI paginated reports:
-  - Although VNet gateways support paginated reports, Azure Active Directory (Azure AD) SSO connections aren't supported.
+  - VNet gateways support paginated reports.
   - A list of supported data sources for Power Platform dataflows is available in [Supported data sources for Power BI paginated reports](/power-bi/paginated-reports/paginated-reports-data-sources).
