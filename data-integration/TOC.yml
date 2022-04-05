@@ -38,6 +38,8 @@
         href: gateway/service-gateway-manage.md
       - name: "Manage in the Power Platform admin center"
         href: /power-platform/admin/onpremises-data-gateway-management
+      - name: "Manage security roles"
+        href: gateway/manage-security-roles.md  
       - name: "Manage high availability clusters and load balancing"
         href: gateway/service-gateway-high-availability-clusters.md
       - name: "Update an on-premises data gateway"
