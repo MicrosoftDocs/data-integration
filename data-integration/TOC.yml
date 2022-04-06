@@ -85,5 +85,9 @@
       href: vnet/use-data-gateways-sources-power-bi.md
     - name: Use virtual network data gateway in Power Platform dataflows
       href: vnet/data-gateway-power-platform-dataflows.md
+    - name: Manage virtual network data gateway high availability and load balancing
+      href: vnet/high-availability-load-balancing.md
+    - name: Troubleshoot a VNet network
+      href: vnet/troubleshoot-data-gateway.md
   - name: Virtual network data gateway FAQs
     href: vnet/data-gateway-faqs.md    
