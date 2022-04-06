@@ -34,18 +34,18 @@ The troubleshooting information includes the following data:
 
    _The gateway needs to be active. If the gateway is auto paused, it will be started, and it can take up to 2 minutes for the gateway to become active._
 
-   ![Image of the Troubleshoot network window while the network connection is being tested.](media/troubleshoot-data-gateway/testing-network-connection.png)
+   ![Image of the Troubleshoot network panel while the network connection is being tested.](media/troubleshoot-data-gateway/testing-network-connection.png)
 
    >[!Note]
    >The troubleshooting panel automatically triggers a status check. If the status fails, then the troubleshooting button is disabled because the gateway isn't connected. Refreshing the status will clear the troubleshooting result state.
 
 4. If the status check succeeded, you can see your ethernet adapter information, including the DNS servers, IPv4 address, subnet mask, and the default gateway.
 
-   ![Image of the Troubleshoot network window after the status check succeeded, with IP values displayed for DN servers, IPv4 address, Subnet mask, and Default gateway.](media/troubleshoot-data-gateway/status-check-succeeded.png)
+   ![Image of the Troubleshoot network panel after the status check succeeded, with IP values displayed for DN servers, IPv4 address, Subnet mask, and Default gateway.](media/troubleshoot-data-gateway/status-check-succeeded.png)
 
-5. To test the IP configuration, fill in the IP or Fully Qualified Domain Name (FQDN) and the port number, and then select the troubleshoot button. The input of the port should be a whole number&mdash;decimals and strings aren't allowed.
+5. To test the IP configuration, fill in the IP or Fully Qualified Domain Name (FQDN) and the port number, and then select the troubleshoot button. The input of the port must be a whole number&mdash;decimals and strings aren't allowed.
 
-   ![Image of Name resolution window with values for DNS servers, Addresses, Aliases, Name of computer contacted, Network alias interface, Remote address, and Ping source address.](media/troubleshoot-data-gateway/test-ip-configuration.png)
+   ![Image of Name resolution panel with values for DNS servers, Addresses, Aliases, Name of computer contacted, Network alias interface, Remote address, and Ping source address.](media/troubleshoot-data-gateway/test-ip-configuration.png)
   
 >[!Note]
 >If you get an `Unable to retrieve <IPConfig/TestNetConnectinon/Host Network> information.` message, retry troubleshooting and ensure you've set the right IP/FQDN and port number.
