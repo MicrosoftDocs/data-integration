@@ -16,9 +16,9 @@ You can troubleshoot your virtual network data gateway network if you're experie
 
 ## What is virtual network data gateway network troubleshooting?
 
-The troubleshooting information includes the following:
+The troubleshooting information includes the following data:
 
-* **Ethernet adaptor information**: Provides information about the network settings of the gateway. You can use this  information to check if the Internet Protocol (IP) is expected in the correct subnet and if the Domain Name System (DNS) setting is correct.
+* **Ethernet adaptor information**: Provides information about the network settings of the gateway. You can use this  information to check if the Internet Protocol (IP) is expected in the correct subnet. You can also check if the Domain Name System (DNS) setting is correct.
 
 * **Name resolution and test network connection**: Provides the capability to troubleshoot connectivity between the container and the endpoint using either the IP or domain name and port. If this test fails, it's likely that the container doesn't respond well. This issue can occur when the DNS doesn't respond with an address or when the network is unavailable. If the network test fails, there's likely an issue with the assignment of the IP configuration of the data source.
 

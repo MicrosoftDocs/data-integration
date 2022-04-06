@@ -26,7 +26,7 @@ If you're creating a new virtual network data gateway, you first need to fill ou
 
 ![Image of the VNet data gateway form, with the Subscription, Resource group, Virtual network, Subnet, and Name entries filled in.](media/high-availability-load-balancing/create-virtual-network.png)
 
-By default, the number of gateways is set to 1. This means that only 1 gateway will be created. You can increase the number of gateways by using the slider. The maximum number of gateways per cluster is 3.
+By default, the number of gateways is set to 1. This means that only one gateway will be created. You can increase the number of gateways by using the slider. The maximum number of gateways per cluster is 3.
 
 ## How to ensure your gateway is available for query execution
 
