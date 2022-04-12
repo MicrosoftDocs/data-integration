@@ -33,7 +33,7 @@ The three security roles for the on-premises data gateway are:
 
 * **Admin**: An admin can manage and update the on-premises data gateway. An admin is allowed to create connections (data sources) on the gateway. An admin is allowed to manage (add/delete) users with admin, connection creator, and connection creator with sharing roles on the gateway. An admin can also manage access to all connections created on the gateway.
 
-* **Connection creator**: A connection creator is allowed to create connections/data sources on the gateway. A connection creator can also test if the gateway is online or offline. A connection creator can't manage or update the gateway and can't add or remove others on the gateway.
+* **Connection creator**: A connection creator is allowed to create connections/data sources on the gateway. A connection creator can also test the status of the gateway cluster and its members. A connection creator can't manage or update the gateway and can't add or remove others on the gateway.
 
 * **Connection creator with sharing**: A connection creator with sharing is allowed to create connections/data sources on the gateway and test the gateway status. This user is allowed to share the gateway with other users as a connection creator but isn't allowed to remove a user from the gateway.
 
@@ -46,7 +46,7 @@ When you create a connection (data source) in the on-premises data gateway, you 
 
 The three connection roles are:
 
-* **Owner**: The owner of the connection (data source) is allowed to see and update credentials. An owner can also delete the connection. An owner can assign others to the connection with Owner, User, or User with sharing permissions.  
+* **Owner**: The owner of the connection (data source) is allowed to update credentials. An owner can also delete the connection. An owner can assign others to the connection with Owner, User, or User with sharing permissions.  
 
 * **User**: A user is allowed to use the connection (data source) in Power BI reports and Power BI dataflows, or in Power Apps. A user isn't allowed to see or update credentials.
 
