@@ -87,5 +87,9 @@
       href: vnet/data-gateway-power-platform-dataflows.md
     - name: Use virtual network data gateway in Power Automate SQL Server and custom connectors
       href: vnet/sql-server-and-custom-connectors.md
+    - name: Manage virtual network data gateway high availability and load balancing
+      href: vnet/high-availability-load-balancing.md
+    - name: Troubleshoot a virtual network data gateway network
+      href: vnet/troubleshoot-data-gateway.md
   - name: Virtual network data gateway FAQs
     href: vnet/data-gateway-faqs.md    
