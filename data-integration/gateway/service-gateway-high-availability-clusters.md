@@ -44,7 +44,7 @@ For example, to provide load balancing from the Power BI service, select the gea
 
 ![Gateway cluster settings.](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
 
-## Load balance based on CPU and Memory throttling
+## Load balance based on CPU, Memory, concurrency limits
 
 As mentioned earlier, the selection of a gateway during load balancing is random. Gateway admins can, however, now throttle the resources of each gateway member. With throttling, you can make sure either a gateway member or the entire gateway cluster isn't overloaded, causing system failures. 
 
@@ -58,8 +58,18 @@ To enable this feature, a gateway admin should update the following settings in 
 
 - **ResourceUtilizationAggregationTimeInMinutes** - This configuration sets the time in minutes for which CPU and memory system counters of the gateway machine are aggregated. The aggregated values are then compared against the respective threshold limits set for **CPUUtilizationPercentageThreshold** and **MemoryUtilizationPercentageThreshold**. The default value for this configuration is 5.
 
+- **ConcurrentOperationLimitPreview** - This configuration sets concurrent operation limit for the Gateway. **BypassConcurrentOperationLimit** may be set to remove all concurrent operation limits. The default value for this configuration is 40.
+
 > [!NOTE]
 > You can also change the load balancing setting through [PowerShell](/powershell/module/datagateway/set-datagatewaycluster).
+
+### Example errors when limit encountered
+
+```The gateway you selected can't establish data source connections because it's exceeded the CPU limit set by your gateway admin. Try again later, or ask your gateway admin to increase the limit.```
+
+```The gateway you selected can't establish data source connections because it's exceeded the memory limit set by your gateway admin. Try again later, or ask your gateway admin to increase the limit.```
+
+```The gateway you selected can't establish data source connections because it's exceeded the concurrency limit set by your gateway admin. Try again later, or ask your gateway admin to increase the limit.```
 
 ## Next steps
 
