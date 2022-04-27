@@ -58,7 +58,7 @@ To enable this feature, a gateway admin should update the following settings in 
 
 - **ResourceUtilizationAggregationTimeInMinutes** - This configuration sets the time in minutes for which CPU and memory system counters of the gateway machine are aggregated. The aggregated values are then compared against the respective threshold limits set for **CPUUtilizationPercentageThreshold** and **MemoryUtilizationPercentageThreshold**. The default value for this configuration is 5.
 
-- **ConcurrentOperationLimitPreview** - This configuration sets concurrent operation limit for the Gateway. **BypassConcurrentOperationLimit** may be set to remove all concurrent operation limits. The default value for this configuration is 40.
+- **ConcurrentOperationLimitPreview** - This configuration sets concurrent operation limit for the Gateway. **BypassConcurrentOperationLimit** can be set to remove all concurrent operation limits. The default value for this configuration is 40.
 
 > [!NOTE]
 > You can also change the load balancing setting through [PowerShell](/powershell/module/datagateway/set-datagatewaycluster).
