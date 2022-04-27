@@ -71,7 +71,7 @@ Always use the [gateway high availability and load balancing](service-gateway-hi
 * High availability: Eliminates having a single point of failure.
 * Load balancing: Automatically distributes the workload across all gateway servers in the cluster.
 
-Set up a minimum of two gateways per gateway cluster in case a gateway goes offline for any reason. This setup ensures that a single gateway failure doesn't cause the entire gateway cluster to fail. Additionally, CPU and memory throttling should be enabled on the gateways to better distribute the load across the gateway cluster.
+Set up a minimum of two gateways per gateway cluster in case a gateway goes offline for any reason. This setup ensures that a single gateway failure doesn't cause the entire gateway cluster to fail. Additionally, CPU, memory, concurrency limits can be enabled on the gateways to better distribute the load across the gateway cluster.
 
 ### Plan and maintain gateway cluster scalability
 
