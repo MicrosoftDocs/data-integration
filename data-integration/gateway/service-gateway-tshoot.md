@@ -83,7 +83,7 @@ You can force the gateway to [communicate with Azure Service Bus by using HTTPS]
 
 ### Gateway proxy unable to connect to Managed Data Lake
 
-If you're using a proxy to access on-premises data using an on-premises data gateway, you might not be able to connect to a managed data lake (MDL) using the default proxy settings. To connect to MDL, be sure to allowlist addresses `*.dfs.core.windows.net` and `*.blob.core.windows.net` on your proxy server.
+If you're using a proxy to access on-premises data using an on-premises data gateway, you might not be able to connect to a managed data lake (MDL) using the default proxy settings. To connect to MDL, be sure to add addresses `*.dfs.core.windows.net` and `*.blob.core.windows.net` to the allowlist on your proxy server.
 
 ### Common errors
 
