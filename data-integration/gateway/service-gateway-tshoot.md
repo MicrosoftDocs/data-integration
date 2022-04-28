@@ -67,13 +67,13 @@ There is an issue with the machine. Contact your internal IT team to remove the 
 
 To test if the gateway has access to all the required ports, run the [network ports test](service-gateway-communication.md#network-ports-test). The results of the test are either Completed (Succeeded) or Completed (Failed, see last test results). If the test succeeded, your gateway successfully connected to all the required ports. If the test failed, your network environment might be blocking these required ports and servers.
 
-For information on how to provide proxy information for your gateway, see [Configure proxy settings for the on-premises data gateway](service-gateway-proxy.md).
+For information on how to provide proxy information for your gateway, go to [Configure proxy settings for the on-premises data gateway](service-gateway-proxy.md).
 
-A firewall also might be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that's the case, unblock the IP addresses for your region for those data centers. You can get a list of Azure IP addresses from [this website](https://www.microsoft.com/en-us/download/details.aspx?id=56519). To find the current data center region you're in, see [Set the data center region](service-gateway-data-region.md).
+A firewall also might be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that's the case, unblock the IP addresses for your region for those data centers. You can get a list of Azure IP addresses from [this website](https://www.microsoft.com/en-us/download/details.aspx?id=56519). To find the current data center region you're in, go to [Set the data center region](service-gateway-data-region.md).
 
 ### Authentication to proxy server
 
-Your proxy might require authentication from a domain user account. By default, the gateway uses a Service SID for the Windows service sign-in user. Changing the sign-in user to a domain user can help with this situation. For more information, see [Change the gateway service account to a domain user](service-gateway-proxy.md#change-the-gateway-service-account-to-a-domain-user).
+Your proxy might require authentication from a domain user account. By default, the gateway uses a Service SID for the Windows service sign-in user. Changing the sign-in user to a domain user can help with this situation. For more information, go to [Change the gateway service account to a domain user](service-gateway-proxy.md#change-the-gateway-service-account-to-a-domain-user).
 
 ### Your proxy only allows ports 80 and 443 traffic
 
@@ -83,13 +83,13 @@ You can force the gateway to [communicate with Azure Service Bus by using HTTPS]
 
 ### Gateway proxy unable to connect to Managed Data Lake
 
-If you're using a proxy to access on-premises data using an on-premises data gateway, you might not be able to connect to a managed data lake (MDL) using the default proxy settings. To connect to MDL, be sure to whitelist addresses `*.dfs.core.windows.net` and `*.blob.core.windows.net` on your proxy server.
+If you're using a proxy to access on-premises data using an on-premises data gateway, you might not be able to connect to a managed data lake (MDL) using the default proxy settings. To connect to MDL, be sure to allowlist addresses `*.dfs.core.windows.net` and `*.blob.core.windows.net` on your proxy server.
 
 ### Common errors
 
 #### Error: Failed to create a gateway. Try again.
 
-This error could be due to proxy configuration issues. The gateway log provides additional details for troubleshooting. For more information, see [Configure proxy settings for the on-premises data gateway](service-gateway-proxy.md).
+This error could be due to proxy configuration issues. The gateway log provides additional details for troubleshooting. For more information, go to [Configure proxy settings for the on-premises data gateway](service-gateway-proxy.md).
 
 #### Error: Power BI service reported local gateway as unreachable. Restart the gateway and try again.
 
