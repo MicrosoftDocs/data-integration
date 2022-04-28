@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 
 ms.technology:
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 4/27/2022
 LocalizationGroup: Gateways 
 ---
 
@@ -48,6 +48,7 @@ You might receive this error if you're trying to install the gateway on a domain
 You might encounter installation failures if the antivirus software on the installation machine is out of date. You can either update the antivirus installation or disable the antivirus software only for the duration of the gateway installation. After the installation is finished, reenable the antivirus software.
 
 ### McAfee Endpoint Defender software enabled
+
 You might encounter installation failure when anitivirus software, like McAfee Endpoint Defender is enabled. Configure your antivirus software to ignore the gateway process.
 
 ### Same or older gateway version
@@ -57,6 +58,7 @@ You might come across the following error if you try to install the same version
 ![Gateway installation error.](media/service-gateway-tshoot/gateway-install-error.png)
 
 ### Error: The user profile is a temporary profile
+
 There is an issue with the machine. Contact your internal IT team to remove the temporary profile.
 
 ## Troubleshoot configuration
@@ -78,6 +80,10 @@ Your proxy might require authentication from a domain user account. By default, 
 Some proxies restrict traffic to only ports 80 and 443. By default, communication to Azure Service Bus occurs on ports other than 443.
 
 You can force the gateway to [communicate with Azure Service Bus by using HTTPS](service-gateway-communication.md#force-https-communication-with-azure-service-bus) instead of direct TCP.
+
+### Gateway proxy unable to connect to Managed Data Lake
+
+If you're using a proxy to access on-premises data using an on-premises data gateway, you might not be able to connect to a managed data lake (MDL) using the default proxy settings. To connect to MDL, be sure to whitelist addresses `*.dfs.core.windows.net` and `*.blob.core.windows.net` on your proxy server.
 
 ### Common errors
 
