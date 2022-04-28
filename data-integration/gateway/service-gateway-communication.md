@@ -54,7 +54,7 @@ The following list describes FQDNs used by the gateway.
 | *.frontend.clouddatahub.net |443 |Deprecated and not required. This domain will be removed from the public documentation as well. |
 | *.core.windows.net |443 |Used by dataflows to write data to Azure Data Lake. |
 | login.microsoftonline.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
-| *.msftncsi.com |443 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
+| *.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | *.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
 | *.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 | | | |
