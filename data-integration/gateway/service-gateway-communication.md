@@ -28,15 +28,18 @@ If a firewall blocks outbound connections, configure the firewall to allow outbo
 
 The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports.
 
-We recommend that you allow the IP addresses for your data region in your firewall. Use the JSON files listed below, which are updated weekly.
->* [Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
->* [US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
->* [Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
->* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
+We recommend that you allow the "\*.servicebus.windows.net" Domain Name System (DNS). For guidance on how to set up your on-premises firewall and/or proxy using fully qualified domain names (FQDNs) instead of using IP addresses that are subject to change, follow the steps in [Azure WCF Relay DNS Support](https://techcommunity.microsoft.com/t5/messaging-on-azure/azure-wcf-relay-dns-support/ba-p/370775).
+
+Alternatively, you allow the IP addresses for your data region in your firewall. Use the JSON files listed below, which are updated weekly.
+
+* [Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
+* [US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
+* [Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
+* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
 
 Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) periodically in the gateway app.
 
-The gateway communicates with Service Bus by using an IP address along with a fully qualified domain name (FQDN). If you force the gateway to communicate via HTTPS, it will strictly use FQDNs only and won't communicate by using IP addresses.
+The gateway communicates with Service Bus by using FQDNs. If you force the gateway to communicate via HTTPS, it will strictly use FQDNs only and won't communicate by using IP addresses.
 
 > [!NOTE]
 > The Azure datacenter IP list shows IP addresses in Classless Inter-Domain Routing (CIDR) notation. An example of this notation is 10.0.0.0/24, which doesn't mean from 10.0.0.0 through 10.0.0.24. Learn more about [CIDR notation](https://whatismyipaddress.com/cidr).
