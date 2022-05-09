@@ -26,28 +26,12 @@ To monitor performance, gateway admins have traditionally depended on manually m
 
 ### Performance logging
 
-This feature is now turned on by default. To disable this feature, make the following changes to the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file in the *\Program Files\On-premises data gateway* folder.
+This feature is now turned on by default.
 
 >[!NOTE]
 >
 > * Currently, queries from premium capacity to the gateway are sometimes missed in this logging. We are actively working on fixing this issue.
 > * Currently, Power BI paginated report queries aren’t logged using this tool.
-
-1. The `DisableQueryExecutionReport` property is by default set to _False_ to enable additional logging for queries executed using the gateway. This creates both the Query Execution Report and the Query Execution Aggregation Report files. To turn this feature off, switch the flag to _True_.
-
-   ``` xml
-   <setting name="DisableQueryExecutionReport" serializeAs="String">
-     <value>False</value>
-   </setting>
-   ```
-
-1. The `DisableSystemCounterReport` is by default set to _False_ to enable additional logging for memory and CPU system counters. This creates the System Counter Aggregation Report file. To turn this feature off, switch the flag to _True_.
-
-   ```xml
-   <setting name=" DisableSystemCounterReport" serializeAs="String">
-     <value>False</value>
-   </setting>
-   ```
 
 ### Configure Performance logging
 
