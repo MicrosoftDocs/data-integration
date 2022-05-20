@@ -2,13 +2,13 @@
 title: "PowerShell support for on-premises data gateway clusters"
 description: You can retrieve gateway and cluster information, modify the status within a gateway, or delete a gateway by using PowerShell commands.
 author: arthiriyer
-ms.author: arthii
+ms.author: mideboer
 manager: kvivek
-ms.reviewer: kvivek
+ms.reviewer: dougklo
 
 ms.technology:
 ms.topic: conceptual
-ms.date: 3/7/2022
+ms.date: 5/20/2022
 LocalizationGroup: Gateways 
 ---
 
@@ -54,7 +54,7 @@ Now you can use the commands in the following table to manage your gateway clust
 
 * [On-premises data gateway app](service-gateway-app.md)
 * [Manage high-availability clusters and load balancing](service-gateway-high-availability-clusters.md)
-* [Remove or delete an on-premises data gateway](service-gateway-manage.md#remove-or-delete-an-on-premises-data-gateway)
+* [Remove or delete an on-premises data gateway](service-gateway-manage.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
