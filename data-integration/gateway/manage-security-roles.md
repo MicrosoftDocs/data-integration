@@ -17,9 +17,6 @@ LocalizationGroup: Gateways
 
 You can use the on-premises data gateway to transfer data quickly and securely between Power BI or Power Apps and a data source or connection that isn't in the cloud, such as an on-premises SQL Server database or an on-premises SharePoint site. You can also view all on-premises data gateways for which you have permissions, and manage permissions and data sources for those gateways.
 
->[!Note]
->Assigning new roles is only available through the Power Platform admin center and not through the manage gateway page in Power BI. But roles apply to all applications using the on-premises data gateway.
-
 ## On-premises data gateway and data source permissions
 
 ### Gateway roles

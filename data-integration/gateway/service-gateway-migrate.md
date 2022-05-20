@@ -3,13 +3,13 @@ title: "Migrate, restore, or take over an on-premises data gateway"
 description: Learn how to move a gateway to a new computer, recover a damaged gateway, or take over ownership of a gateway.
 author: arthiriyer
 manager: kvivek
-ms.reviewer: kvivek
+ms.reviewer: dougklo
 
 
 ms.technology:
 ms.topic: conceptual
-ms.date: 1/14/2022
-ms.author: arthii
+ms.date: 5/20/2022
+ms.author: mideboer
 
 
 LocalizationGroup: Gateways
@@ -22,7 +22,7 @@ Run the gateway installer on a computer where you want to migrate, restore, or t
 If you're restoring the gateway on the computer that has the original gateway installation, you must first uninstall the gateway on that computer.
 
 > [!NOTE]
-> If you [remove or delete a gateway cluster](service-gateway-manage.md#remove-or-delete-an-on-premises-data-gateway) in any of the cloud services, you will not be able to restore it.
+> If you [remove or delete a gateway cluster](service-gateway-manage.md) in any of the cloud services, you won't be able to restore it.
 
 1. Download the gateway and install it. For more information, see [Install an on-premises data gateway](service-gateway-install.md).
 
