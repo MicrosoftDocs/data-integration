@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 ## Gateway performance monitoring (public preview)
 
-To monitor performance, gateway admins have traditionally depended on manually monitoring performance counters through the Windows Performance Monitor tool. We now offer additional query logging and a [Gateway Performance PBI template file](download.microsoft.com/download/b/1/b/b1b229f4-a142-4d8a-8968-19e4ae95bc37/OnPremiseDataGatewayLogs.pbit) to visualize the results. This feature provides new insights into gateway usage. You can use it to troubleshoot slow-performing queries.
+To monitor performance, gateway admins have traditionally depended on manually monitoring performance counters through the Windows Performance Monitor tool. We now offer additional query logging and a [Gateway Performance PBI template file](http://download.microsoft.com/download/b/1/b/b1b229f4-a142-4d8a-8968-19e4ae95bc37/OnPremiseDataGatewayLogs.pbit) to visualize the results. This feature provides new insights into gateway usage. You can use it to troubleshoot slow-performing queries.
 
 > [!NOTE]
 > This feature is currently available only for the on-premises data gateway in the standard mode. It's not available for the personal mode.
