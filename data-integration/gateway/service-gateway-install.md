@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 
 ms.technology:
 ms.topic: conceptual
-ms.date: 9/15/2021
+ms.date: 5/25/2022
 ms.author: arthii
 
 LocalizationGroup: Gateways
@@ -86,6 +86,9 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 1. Enter a name for the gateway. The name must be unique across the tenant. Also enter a recovery key. You'll need this key if you ever want to recover or move your gateway. Select **Configure**.
 
     ![Configuring the gateway.](media/service-gateway-install/configure-gateway.png)
+
+    >[!Important]
+    > You are responsible for keeping the gateway recovery key in a safe place where it can be retrieved later. Microsoft doesn't have access to this key and it can't be retrieved by us.
 
     Note the **Add to an existing gateway cluster** checkbox. We'll use this checkbox in the next section of this article.
 
