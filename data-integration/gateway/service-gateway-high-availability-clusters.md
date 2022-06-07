@@ -46,11 +46,11 @@ For example, to provide load balancing from the Power BI service, select the gea
 
 ## Load balance based on CPU, Memory, concurrency limits
 
-As mentioned earlier, the selection of a gateway during load balancing is random. Gateway admins can, however, now throttle the resources of each gateway member. With throttling, you can make sure either a gateway member or the entire gateway cluster isn't overloaded, causing system failures. 
+As mentioned earlier, the selection of a gateway during load balancing is random. Gateway admins can, however, throttle the resource usage of each gateway member. With throttling, you can make sure either a gateway member or the entire gateway cluster isn't overloaded. Overloaded system resources may cause request failures. 
 
-If a gateway cluster with load balancing enabled receives a request from one of the cloud services (like Power BI), it randomly selects a gateway member. If this member is already at or over the throttling limit set for CPU or memory, another member within the cluster is selected. If all members within the cluster are in the same state, the request fails.
+If a gateway cluster with load balancing enabled receives a request from one of the cloud services (like Power BI), it randomly selects a gateway member. If this member gateway is already at or over one of the throttling limits specified below, another member within the cluster is selected. If all members within the cluster are in the same state, the request fails.
 
-To enable this feature, a gateway admin should update the following settings in  the _Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_ file available in the _Program Files\On-premises data gateway\_ folder.
+A gateway admin should update the following settings in  the _Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_ file available in the _Program Files\On-premises data gateway_ folder in order to adjust throttling limits. Concurrency throttling is enabled by default.
 
 - **CPUUtilizationPercentageThreshold** - This configuration allows gateway admins to set a throttling limit for CPU. The permissible range for this configuration is 0 to 100. A value of 0, which is the default, indicates that this configuration is disabled.
 
