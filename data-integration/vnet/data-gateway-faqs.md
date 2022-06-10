@@ -52,6 +52,10 @@ Yes, there's no dependency on the Power BI home region for this feature. If this
 
 No. The VNet data gateway is physically in the same region as your Azure VNet. Currently, you also can't choose where the metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored. It's stored in your tenant’s default region.
 
+### Does VNet data gateway support cross-tenant scenarios?
+
+No. The VNet data gateway must be created in the same tenant as the Power BI tenant.
+
 ### Will I be able to use this feature if my tenant is in East US (United States) and Power platform environment is in Europe?
 
 No, VNet gateways are currently available only in your tenant’s home region.
