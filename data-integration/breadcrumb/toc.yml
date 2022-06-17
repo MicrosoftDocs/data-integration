@@ -8,3 +8,6 @@
   - name: On-premises data gateway
     tocHref: /data-integration/gateway/
     topicHref: /data-integration/gateway/service-gateway-onprem
+  - name: Virtual network data gateway
+    tocHref: /data-integration/vnet/
+    topicHref: /data-integration/vnet/overview
