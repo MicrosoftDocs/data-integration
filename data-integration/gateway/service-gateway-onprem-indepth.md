@@ -51,6 +51,9 @@ A stored credential is used to connect from the gateway to on-premises data sour
 
 You sign in with either a work account or a school account. This account is your organization account. If you signed up for an Office 365 offering and didn’t supply your actual work email address, your account name might look like nancy@contoso.onmicrosoft.com. A cloud service stores your account within a tenant in Azure Active Directory (Azure AD). In most cases, the User Principal Name (UPN) of your Azure AD account matches your email address.
 
+## Network traffic security
+Traffic goes from the gateway to Azure Service Bus to the Power BI backend cluster. This traffid does not traverse the public internet. All Azure internal traffic goes over the Azure backbone.
+
 ## Azure Active Directory
 
 Microsoft cloud services use [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users. Azure AD is the tenant that contains usernames and security groups. Typically, the email address that you use for sign-in is the same as the UPN of your account. For more information about authentication in Power BI, see [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
