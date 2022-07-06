@@ -106,6 +106,18 @@ Beyond the reserved IPs, our recommendation is to have approximately 5-7 IPs so 
 
 Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway.
 
+### Does all of the data when using the Vnet data gateway remain on Microsoft's backbone network when accessing Azure Data Sources? How does security compare to the On-Premise Data gateway? 
+
+Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use Swift between the virtual network and Power BI service so no public internet is ever used. On the other hand, the on-premise data gateway opens a connection to use Service Bus to connect to the Power BI service.
+
+### Which Azure components need to be in the same region, i.e. subscription, Microsoft.PowerPlatform resource provider, virtual network, subnet and Power BI Service's home tenant? 
+
+The virtual network and subnet should be in the same region as the data to which you are connecting. The data gateway configuration lives in the Power BI home tenant region. 
+
+### Is there any way to connect from the subnet of one vnet to the data source of another another vnet? 
+
+A vnet gateway can generally reach sources that are reachable within that same vnet. If there's another vnet that is completely isolated from the first, then another vnet gateway is necessary. 
+
 ### Any other known issues?
 
 * You can't delegate a subnet called **gatewaysubnet** to the Power Platform admin center. This is because it's a reserved word for Azure Gateway Subnet feature.
