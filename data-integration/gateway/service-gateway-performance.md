@@ -143,7 +143,7 @@ You also can customize this template file to suit your needs. For more informati
 
 ## Monitoring spool storage
 
-By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure the location isn't running full.
+By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure the location isn't running full. More information: [Gateway spooling data](service-gateway-configure-disk-space#gateway-spooling-data)
 
 ## Slow-performing queries
 

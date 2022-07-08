@@ -30,8 +30,10 @@
         href: gateway/service-gateway-communication.md
       - name: "Configure the gateway log file"
         href: gateway/service-gateway-log-files.md
-      - name: Adjust performance based on CPU
+      - name: "Adjust performance based on CPU"
         href: gateway/service-gateway-performance-cpu.md
+      - name: "Configure gateway disk space"
+        href: gateway/service-gateway-configure-disk-space.md
     - name: "Manage gateways"
       items:
       - name: "Manage in a service"
