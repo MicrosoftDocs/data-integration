@@ -8,7 +8,7 @@ ms.reviewer: mideboer
 
 ms.technology:
 ms.topic: conceptual
-ms.date: 7/7/2022
+ms.date: 7/13/2022
 LocalizationGroup: Gateways 
 ---
 
@@ -21,7 +21,7 @@ This article focuses on the configuration settings governing disk space for gate
 Power BI and the on-premises data gateway create temporary cache files when communicating between the on-premises environment and the cloud in a process called *spooling*. Depending on how much disk space you have available for spooling, it's possible for an "out of disk space" error to occur when disk space is full because of the spooler.
 
 >[!NOTE]
-> We recommend you use a solid-state drive (SSD) as the spooling storage.
+> We recommend you use a solid-state drive (SSD) as the spooling storage drive for optimal performance.
 
 When spooling causes an "out of disk space" error, use the following steps to change the location of the spooler to a disk with more capacity.
 
@@ -38,7 +38,7 @@ When spooling causes an "out of disk space" error, use the following steps to ch
 
    The \<value> tag specifies the location of the SpoolerDirectory.
 
-5. Modify this path to a location that contains enough disk space for your business.  
+5. Modify this path to a location that contains enough disk space for your business needs.  
 6. Once modified, save the file and restart the on-premises data gateway.
 
 >[!NOTE]
