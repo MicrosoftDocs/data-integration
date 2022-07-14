@@ -13,7 +13,7 @@ ms.author: arthii
 # Create virtual network data gateways
 
 > [!NOTE]
->The metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your tenant’s default region. However, the VNet data gateway runs in the same region as your Azure VNet.
+>The metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your Power BI’s default region. However, the VNet data gateway runs in the same region as your Azure VNet.  Sometimes, there is different from default environment of Power Platform and default region of Power BI.
 
 Creating a virtual network (VNet) data gateway is a 3-step process:
 
