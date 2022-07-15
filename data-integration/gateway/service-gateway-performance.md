@@ -8,7 +8,7 @@ ms.reviewer: kvivek
 
 ms.technology:
 ms.topic: conceptual
-ms.date: 12/15/2021
+ms.date: 7/13/2022
 LocalizationGroup: Gateways 
 ---
 
@@ -143,7 +143,7 @@ You also can customize this template file to suit your needs. For more informati
 
 ## Monitoring spool storage
 
-By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure the location isn't running full.
+By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure there is adequate free disk space. More information: [Gateway spooling data](service-gateway-configure-disk-space.md#gateway-spooling-data)
 
 ## Slow-performing queries
 
