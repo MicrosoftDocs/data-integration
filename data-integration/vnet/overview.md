@@ -18,7 +18,7 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
 
 ## Limitations
 
-- Currently, this feature is available only for Power BI datasets, Power Platform dataflows and Power BI paginated reports.
+- Currently, this feature is available only for Power BI datasets, Power Platform dataflows, and Power BI paginated reports.
 - This feature is currently not supported in sovereign clouds.
 - Due to an AAD limitation you might see failures when the following settings are enabled together:
   - Service Endpoint for AAD is enabled on the delegated VNet
