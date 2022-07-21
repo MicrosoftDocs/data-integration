@@ -92,4 +92,4 @@
     - name: Troubleshoot a virtual network data gateway network
       href: vnet/troubleshoot-data-gateway.md
   - name: Virtual network data gateway FAQs
-    href: vnet/data-gateway-faqs.md    
+    href: vnet/data-gateway-faqs.yml    
