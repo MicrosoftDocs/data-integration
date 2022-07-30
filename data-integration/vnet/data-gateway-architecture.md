@@ -2,12 +2,9 @@
 title: Virtual network (VNet) data gateway architecture
 description: Overview of virtual network (VNet) data gateway Architecture.
 author: arthiriyer
-ms.reviewer: kvivek
-
-ms.technology:
+ms.author: arthii
 ms.topic: conceptual
 ms.date: 11/3/2021
-ms.author: arthii
 ---
 
 # Virtual network data gateway architecture
@@ -16,7 +13,7 @@ The virtual network (VNet) data gateway facilitates secure connectivity to data 
 
 Users in your organization can access data secured by a VNet to which they already have access. But before these users can connect to these data sources from Microsoft Cloud services, a VNet gateway needs to be [registered and configured](create-data-gateways.md).
 
-Let’s first look at what happens when you interact with a Power BI report that's connected to a data source within a VNet.
+Let's first look at what happens when you interact with a Power BI report that's connected to a data source within a VNet.
 
 1. Power BI cloud service (or one of the other supported cloud services) kicks off a query and sends the query, data source details, and credentials to the Microsoft Power Platform VNet service.
 

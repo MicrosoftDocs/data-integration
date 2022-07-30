@@ -3,13 +3,10 @@
 title: Plan, scale, and maintain a business-critical gateway solution  
 description: Learn how to plan, scale, and maintain gateways and gateway clusters that are deployed in business-critical scenarios.
 author: miquelladeboer
+ms.author: mideboer
 ms.reviewer: dougklo
-
-ms.technology:
 ms.topic: conceptual
 ms.date: 12/15/2021
-ms.author: mideboer
-
 LocalizationGroup: Gateways
 ---
 

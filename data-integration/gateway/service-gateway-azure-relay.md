@@ -1,17 +1,10 @@
 ---
-title: "Set the Azure Relay for on-premises data gateway"
+title: Set the Azure Relay for on-premises data gateway
 description: Learn how to change the details of the Azure Relay for an on-premises data gateway.
 author: arthiriyer
-manager: kvivek
-ms.reviewer: kvivek
-
-
-ms.technology:
+ms.author: arthii
 ms.topic: conceptual
 ms.date: 08/19/2020
-ms.author: arthii
-
-
 LocalizationGroup: Gateways
 ---
 
@@ -24,11 +17,11 @@ During installation of the on-premises data gateway, the Azure Relays are automa
 
 **To provide your own relay details**
 
-1.	Select **Provide Relay details**. 
+1.    Select **Provide Relay details**. 
 
     ![Select Provide Relay details.](media/service-gateway-azure-relay/configure-gateway-2.png)
 
-2.	You can now provide additional details about your relay.
+2.    You can now provide additional details about your relay.
 
     ![Provide additional relay details.](media/service-gateway-azure-relay/provide-relay-details.png)
  
@@ -41,7 +34,7 @@ During installation of the on-premises data gateway, the Azure Relays are automa
        ![Send and listen access keys.](media/service-gateway-azure-relay/send-access-key-policy.png)
 
 >[!Note]
->If you recover an existing gateway with customized relay details to a new machine, you'll have to explicitly uninstall the gateway from the old machine or rotate the sender and listener keys. If this operation isn’t done, then queries through this gateway may fail.
+>If you recover an existing gateway with customized relay details to a new machine, you'll have to explicitly uninstall the gateway from the old machine or rotate the sender and listener keys. If this operation isn't done, then queries through this gateway may fail.
 
 ## Next steps
 
