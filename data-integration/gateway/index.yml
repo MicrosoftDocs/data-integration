@@ -1,19 +1,14 @@
 ### YamlMime:Landing 
-
-
 title: On-premises data gateways documentation
 summary: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services, such as Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps.
-
 metadata: 
   title: On-premises data gateways documentation
   description: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services.  
-  ms.technology: on-premises-data-gateway
+  ms.prod: on-premises-data-gateway
   ms.topic: landing-page
-  ms.collection: 
   author: dougklopfenstein
-  ms.author: kvivek
+  ms.author: dougklo
   ms.date: 07/27/2020
-  
   ms.custom: intro-internal
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
