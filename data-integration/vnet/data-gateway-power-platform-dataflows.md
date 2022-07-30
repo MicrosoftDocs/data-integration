@@ -2,12 +2,10 @@
 title: Use virtual network (VNet) data gateway in Power Platform dataflows
 description: Learn about how to connect to data using the virtual network (VNet) data gateway, along with details of supported data sources.
 author: arthiriyer
+ms.author: arthii
 ms.reviewer: dougklo
-
-ms.technology:
 ms.topic: conceptual
 ms.date: 06/22/2021
-ms.author: arthii
 ---
 
 # Use virtual network (VNet) data gateway in Power Platform dataflows
@@ -50,7 +48,7 @@ The following Azure data sources already available on Power Query Online are sup
 * Azure Synapse Analytics
 * Azure Tables
 
-VNet data gateways aren’t supported for:
+VNet data gateways aren't supported for:
 
 * data sources requiring 3rd party drivers like SAP, Oracle, and so on
 * the [Web](/power-query/connectors/web/web) connector
@@ -58,5 +56,5 @@ VNet data gateways aren’t supported for:
 
 >[!Note]  
 >
->* On-premises data sources can be connected using ExpressRoute, but this configuration hasn’t been tested and won't be supported by Microsoft during public preview.
->* Other Cloud data sources can be connected using VNet data gateways, but haven’t been tested for public preview.
+>* On-premises data sources can be connected using ExpressRoute, but this configuration hasn't been tested and won't be supported by Microsoft during public preview.
+>* Other Cloud data sources can be connected using VNet data gateways, but haven't been tested for public preview.
