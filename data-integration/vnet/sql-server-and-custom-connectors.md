@@ -2,9 +2,6 @@
 title: VNet Data Gateway support for SQL Server and custom connectors (Preview)
 description: Describes how to use the virtual network (VNet) data gateway with the SQL Server connector and custom connectors in Power Automate.
 author: dougklopfenstein
-ms.reviewer: kvivek
-
-ms.technology:
 ms.topic: conceptual
 ms.date: 4/15/2022
 ms.author: dougklo
@@ -12,7 +9,7 @@ ms.author: dougklo
 
 # VNet data gateway support for Power Automate SQL Server and custom connectors (Preview)
 
-The virtual network (VNet) data gateway helps you to connect Microsoft Cloud services to your Azure data services within a VNet without the need of an on-premises data gateway. VNet data gateway is an alternative data gateway and can be used for most of the connectors that support gateway functionality today. The VNet data gateway securely communicates with the connectors and transmits results back to the service. VNet data gateways are created in your tenant’s home region by default and there's currently no option to change the VNet data gateway region. Based on this limitation, VNet data gateways can only be used in Power Automate environments in the home region of your tenant.
+The virtual network (VNet) data gateway helps you to connect Microsoft Cloud services to your Azure data services within a VNet without the need of an on-premises data gateway. VNet data gateway is an alternative data gateway and can be used for most of the connectors that support gateway functionality today. The VNet data gateway securely communicates with the connectors and transmits results back to the service. VNet data gateways are created in your tenant's home region by default and there's currently no option to change the VNet data gateway region. Based on this limitation, VNet data gateways can only be used in Power Automate environments in the home region of your tenant.
 
 We will be working on direct VNet functionality soon, which can be used to connect to cloud resources and will support AAD authentication.
 
