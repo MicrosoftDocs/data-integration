@@ -37,10 +37,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/data-integration",
       "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi?category_id=161724",
-      "recommendations": true 
+      "recommendations": true
     },
     "fileMetadata": {
       "ms.prod":{
