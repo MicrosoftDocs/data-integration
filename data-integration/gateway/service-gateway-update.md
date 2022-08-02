@@ -1,8 +1,6 @@
 ---
 title: Update an on-premises data gateway
 description: Describes how to update to the latest version of the on-premises data gateway.
-author: arthiriyer
-ms.author: arthii
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways

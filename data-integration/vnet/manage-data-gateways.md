@@ -1,8 +1,6 @@
 ---
 title: Manage virtual network (VNet) data gateways
 description: Provides information about how to manage virtual network (VNet) data gateways and remove them if required.
-author: arthiriyer
-ms.author: arthii
 ms.topic: conceptual
 ms.date: 03/01/2021
 ---

@@ -1,8 +1,6 @@
 ---
 title: Use virtual network (VNet) data gateway and data sources in Power BI
 description: Provides information about how to use virtual network (VNet) data gateway and data sources in Power BI.
-author: arthiriyer
-ms.author: arthii
 ms.topic: conceptual
 ms.date: 3/18/2022
 ---

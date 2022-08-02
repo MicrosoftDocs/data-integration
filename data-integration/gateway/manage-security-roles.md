@@ -2,8 +2,6 @@
 
 title: Manage security roles 
 description: Learn how to manage permissions and data sources for the on-premises data gateway.
-author: miquelladeboer
-ms.author: mideboer
 ms.reviewer: dougklo
 ms.topic: conceptual
 ms.date: 4/4/2022

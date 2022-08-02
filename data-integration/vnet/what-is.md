@@ -1,8 +1,6 @@
 ---
 title: Overview of virtual network (VNet), private links, and Power BI
 description: Learn about the virtual network (VNet), private links, and Power BI.
-author: arthiriyer
-ms.author: arthii
 ms.topic: conceptual
 ms.date: 03/01/2021
 ms.custom: intro-internal

@@ -1,8 +1,6 @@
 ---
 title: Previous monthly updates to the on-premises data gateways
 description: Learn about and download previous versions of the on-premises data gateways.
-author: arthiriyer
-ms.author: arthii
 ms.topic: conceptual
 ms.date: 6/7/2022
 LocalizationGroup: Gateways
