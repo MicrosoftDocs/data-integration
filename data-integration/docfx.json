@@ -44,6 +44,14 @@
       "recommendations": true 
     },
     "fileMetadata": {
+      "ms.author":{
+        "vnet/**.*": "nikkiwaghani",
+        "gateway/**.*": "mideboer"
+      },
+      "author":{
+        "vnet/**.*": "nikkiwaghani",
+        "gateway/**.*": "miquelladeboer"
+      },
       "ms.prod":{
         "gateway/**.*": "on-premises-data-gateway"
       },
