@@ -1,10 +1,8 @@
 ---
 title: VNet Data Gateway support for SQL Server and custom connectors (Preview)
 description: Describes how to use the virtual network (VNet) data gateway with the SQL Server connector and custom connectors in Power Automate.
-author: dougklopfenstein
 ms.topic: conceptual
 ms.date: 4/15/2022
-ms.author: dougklo
 ---
 
 # VNet data gateway support for Power Automate SQL Server and custom connectors (Preview)

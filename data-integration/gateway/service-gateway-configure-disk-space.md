@@ -1,8 +1,6 @@
 ---
 title: Configure gateway disk space
 description: Describes how to troubleshoot out of disk space errors caused by gateway spooling and persistent cache filling up all disk space.
-author: DougKlopfenstein
-ms.author: dougklo
 ms.reviewer: mideboer
 ms.topic: conceptual
 ms.date: 7/13/2022
