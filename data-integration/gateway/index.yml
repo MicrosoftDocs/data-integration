@@ -6,7 +6,7 @@ metadata:
   description: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services.  
   ms.prod: on-premises-data-gateway
   ms.topic: landing-page
-      ms.date: 07/27/2020
+  ms.date: 07/27/2020
   ms.custom: intro-internal
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
