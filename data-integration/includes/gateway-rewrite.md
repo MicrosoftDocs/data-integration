@@ -1,8 +1,6 @@
 ---
 title: include file
 description: include file
-author: DougKlopfenstein
-ms.author: dougklo
 ms.topic: include
 ms.date: 07/15/2019
 ---
