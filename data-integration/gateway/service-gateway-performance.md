@@ -29,7 +29,7 @@ This feature is now turned on by default.
 
 ### Configure Performance logging
 
-There are other values in the config file that you can update as needed:
+There are other values in the config file `C:\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config` that you can update as needed:
 
 - **ReportFilePath**: Determines the path where the three log files are stored. By default, this path is either *\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report* or *\Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report*. The path depends on the OS version. If you use a service account for the gateway other than _PBIEgwService_, replace this part of the path with the service account name.
 - **ReportFileCount**: Determines the number of log files of each kind to retain. The default value is 10.
