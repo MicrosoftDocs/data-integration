@@ -1,14 +1,8 @@
 ---
 title: include file
 description: include file
-services: powerbi
-author: mgblythe
- 
-
-ms.technology:
 ms.topic: include
 ms.date: 07/15/2019
-ms.author: mblythe
 ---
 
 > [!NOTE]

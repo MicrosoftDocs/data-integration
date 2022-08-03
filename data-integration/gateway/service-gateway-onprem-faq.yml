@@ -2,15 +2,8 @@
 metadata:
   title: On-premises data gateway FAQ
   description: This article is the on-premises data gateway FAQ. It collects frequently asked questions about the gateway into one spot.
-  author: arthiriyer
-  manager: kvivek
-  ms.reviewer: kvivek
-  
-  
-  ms.technology:
   ms.topic: faq
   ms.date: 09/20/2021
-  ms.author: arthii
   LocalizationGroup: Gateways
 title: On-premises data gateway FAQ
 summary: |
