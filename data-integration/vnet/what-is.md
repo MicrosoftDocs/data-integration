@@ -1,13 +1,8 @@
 ---
 title: Overview of virtual network (VNet), private links, and Power BI
 description: Learn about the virtual network (VNet), private links, and Power BI.
-author: arthiriyer
-ms.reviewer: kvivek
-
-ms.technology:
 ms.topic: conceptual
 ms.date: 03/01/2021
-ms.author: arthii
 ms.custom: intro-internal
 ---
 
@@ -18,8 +13,8 @@ ms.custom: intro-internal
 ## Virtual networks, Private Links, and Power BI
 
 We could categorize your communication with Power BI with respect to Azure VNets into the following:
--	Secure Inbound connections to Power BI from your network using Private links 
--	Secure Outbound connectivity from Power BI to data sources within a VNet
+-    Secure Inbound connections to Power BI from your network using Private links 
+-    Secure Outbound connectivity from Power BI to data sources within a VNet
 
 The scope of this document is restricted to only *Secure Outbound connectivity from Power BI to data sources within a VNet*. For the *Secure Inbound connections to Power BI from your network using Private links*, see the [Power BI Private Links documentation](/power-bi/admin/service-security-private-links). 
 

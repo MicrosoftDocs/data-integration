@@ -1,14 +1,8 @@
 ---
 title: Configure proxy settings for the on-premises data gateway
 description: Provides information about configuration of proxy settings for the on-premises data gateway.
-author: arthiriyer
-manager: kvivek
-ms.reviewer: kvivek
-
-ms.technology:
 ms.topic: conceptual
 ms.date: 11/1/2021
-ms.author: arthii
 LocalizationGroup: Gateways
 
 ---

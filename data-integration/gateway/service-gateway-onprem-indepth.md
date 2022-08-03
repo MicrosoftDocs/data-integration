@@ -1,17 +1,9 @@
 ---
 title: On-premises data gateway architecture
 description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Azure Active Directory and your on-premises Active Directory.
-author: arthiriyer
-manager: kvivek
-ms.reviewer: kvivek
-
-
-ms.technology:
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: arthii
 ms.custom: intro-internal
-
 LocalizationGroup: Gateways
 ---
 
@@ -23,13 +15,13 @@ The gateway facilitates quick and secure behind-the-scenes communication. This c
 
 An admin is usually the one who installs and configures a gateway. These actions might require special knowledge of your on-premises servers or Server Administrator permissions.
 
-This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that guidance, be sure to see [Install an on-premises data gateway](service-gateway-install.md). This article does provide in-depth understanding of how the gateway works.
+This article doesn't provide step-by-step guidance on how to install and configure the gateway. For that guidance, be sure to see [Install an on-premises data gateway](service-gateway-install.md). This article does provide in-depth understanding of how the gateway works.
 
 ## How the gateway works
 
 ![Relationship among cloud services, gateway, and data sources.](./media/service-gateway-onprem-indepth/on-prem-data-gateway-how-it-works.png)
 
-Let’s first look at what happens when you interact with an element that is connected to an on-premises data source.
+Let's first look at what happens when you interact with an element that is connected to an on-premises data source.
 
 > [!NOTE]
 > Depending on the cloud service, you might need to configure a data source for the gateway.
@@ -49,7 +41,7 @@ A stored credential is used to connect from the gateway to on-premises data sour
 
 ## Sign-in account
 
-You sign in with either a work account or a school account. This account is your organization account. If you signed up for an Office 365 offering and didn’t supply your actual work email address, your account name might look like nancy@contoso.onmicrosoft.com. A cloud service stores your account within a tenant in Azure Active Directory (Azure AD). In most cases, the User Principal Name (UPN) of your Azure AD account matches your email address.
+You sign in with either a work account or a school account. This account is your organization account. If you signed up for an Office 365 offering and didn't supply your actual work email address, your account name might look like nancy@contoso.onmicrosoft.com. A cloud service stores your account within a tenant in Azure Active Directory (Azure AD). In most cases, the User Principal Name (UPN) of your Azure AD account matches your email address.
 
 ## Azure Active Directory
 
@@ -65,7 +57,7 @@ Although the result looks like an email address, it's the UPN on your local doma
 
 You want each of your on-premises Active Directory accounts to match an Azure AD account, because the UPN for both accounts must be the same.
 
-The cloud services know only about accounts within Azure AD. It doesn’t matter if you add an account in your on-premises Active Directory. If the account doesn’t exist in Azure AD, it can't be used.
+The cloud services know only about accounts within Azure AD. It doesn't matter if you add an account in your on-premises Active Directory. If the account doesn't exist in Azure AD, it can't be used.
 
 There are different ways to match your on-premises Active Directory accounts with Azure AD.
 

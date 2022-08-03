@@ -1,14 +1,8 @@
 ---
 title: Monitor and optimize on-premises data gateway performance
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
-author: arthiriyer
-ms.author: arthii
-manager: kvivek
-ms.reviewer: kvivek
-
-ms.technology:
 ms.topic: conceptual
-ms.date: 12/15/2021
+ms.date: 7/13/2022
 LocalizationGroup: Gateways 
 ---
 
@@ -31,7 +25,7 @@ This feature is now turned on by default.
 >[!NOTE]
 >
 > * Currently, queries from premium capacity to the gateway are sometimes missed in this logging. We are actively working on fixing this issue.
-> * Currently, Power BI paginated report queries aren’t logged using this tool.
+> * Currently, Power BI paginated report queries aren't logged using this tool.
 
 ### Configure Performance logging
 
@@ -143,7 +137,7 @@ You also can customize this template file to suit your needs. For more informati
 
 ## Monitoring spool storage
 
-By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure the location isn't running full.
+By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure there is adequate free disk space. More information: [Gateway spooling data](service-gateway-configure-disk-space.md#gateway-spooling-data)
 
 ## Slow-performing queries
 
