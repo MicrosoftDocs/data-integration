@@ -15,6 +15,7 @@ sections:
           Do I need a gateway for cloud data sources, such as Azure SQL Database?  
         answer: |
           No, services can generally connect to cloud data sources without a gateway. However, you might need a data gateway if your data sources are behind a firewall, require a VPN, or are on virtual networks.
+          When accessing cloud data sources using OAuth2 credentials, gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). This limitation exists for VNET gateways as well as On-Premises gateways.
 
       - question: |
           What are the requirements for the gateway?  
