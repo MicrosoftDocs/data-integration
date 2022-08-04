@@ -27,11 +27,11 @@ By default, the gateway configuration file is located in the directory *\Program
 
 The following example specifies that 20 log files, the sum total of all files in each category being no more than 50 MB in size, will be retained:
 
- `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`
+- `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`
  
- The maximum allowed in the gateway log is 2000MB in total with 400 files, each file is 50MB in size. 
+The maximum allowed in the gateway log is 2000MB in total with 400 files, each file is 50MB in size. 
  
- GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,400,2000"
+- `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,400,2000`
 
 
 ## Next steps
