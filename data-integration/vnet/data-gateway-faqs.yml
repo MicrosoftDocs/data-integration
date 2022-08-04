@@ -3,7 +3,7 @@ metadata:
   title: Virtual network (VNet) data gateway FAQs
   description: Frequently asked questions about virtual network (VNet) data gateway.
   ms.topic: faq
-  ms.date: 1/24/2022
+  ms.date: 08/03/2022
 
 title: Virtual network (VNet) data gateway FAQs
 summary: |
@@ -126,6 +126,23 @@ sections:
         answer: |
           Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway.
 
+      - question: |
+          Does all of the data when using the VNet data gateway remain on Microsoft's backbone network when accessing Azure Data Sources?
+        answer: |
+          How does security compare to the On-Premise Data gateway?
+          Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use Swift between the virtual network and Power BI service so no public internet is ever used. On the other hand, the on-premise data gateway opens a connection to use Service Bus to connect to the Power BI service.
+
+      - question: |
+          Which Azure components need to be in the same region?
+        answer: | 
+          Considering the various resources: subscription, Microsoft.PowerPlatform resource provider, virtual network, subnet, and Power BI Service's home tenant. 
+          The virtual network and subnet should be in the same region as the data to which you are connecting. The data gateway configuration lives in the Power BI home tenant region. 
+
+      - question: |
+          Is there any way to connect from the subnet of one VNet to the data source of another another VNet?
+        answer: |
+          A VNet gateway can generally reach sources that are reachable within that same VNet. If there's another VNet that is completely isolated from the first, then another VNet gateway is necessary.
+           
       - question: |
           Any other known issues?
         answer: |
