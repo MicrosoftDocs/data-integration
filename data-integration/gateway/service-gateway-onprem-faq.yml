@@ -187,6 +187,9 @@ sections:
         answer: |
           Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. More information: https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime
         
+    - name: Known Issues
+      answer: |
+        * If an OAuth refresh that takes longer that one hour is cancelled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired.
 additionalContent: |
 
   ## Next steps
