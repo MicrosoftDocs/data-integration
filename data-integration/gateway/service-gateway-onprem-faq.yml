@@ -19,7 +19,7 @@ sections:
       - question: |
           Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials are updated recently.
         answer: |
-          When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). This limitation for long running refreshes exists for VNET gateways as well as On-Premises gateways.
+          When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). This limitation for long running refreshes exists for VNET gateways as well as on-premises data gateways.
 
       - question: |
           What are the requirements for the gateway?  
