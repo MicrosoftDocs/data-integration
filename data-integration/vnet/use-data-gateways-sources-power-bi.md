@@ -39,6 +39,7 @@ In the current release, VNet data gateways will support connectivity to the foll
 - Cosmos DB
 - Azure SQL Managed Instance (MI)
 - Snowflake
+- PostgreSQL
 
 ## Azure Active Directory Single Sign-On for Direct Query
 
