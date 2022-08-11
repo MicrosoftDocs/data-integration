@@ -189,7 +189,9 @@ sections:
         
     - name: Known Issues
       questions:
-        answer: |
+        - question: |
+            Are there any known issues?
+          answer: |
           * If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired.
 
 additionalContent: |
