@@ -1,13 +1,8 @@
 ---
 title: Use virtual network (VNet) data gateway and data sources in Power BI
 description: Provides information about how to use virtual network (VNet) data gateway and data sources in Power BI.
-author: arthiriyer
-ms.reviewer: kvivek
-
-ms.technology:
 ms.topic: conceptual
 ms.date: 3/18/2022
-ms.author: arthii
 ---
 
 # Use virtual network data gateway and data sources in Power BI
@@ -44,6 +39,7 @@ In the current release, VNet data gateways will support connectivity to the foll
 - Cosmos DB
 - Azure SQL Managed Instance (MI)
 - Snowflake
+- PostgreSQL
 
 ## Azure Active Directory Single Sign-On for Direct Query
 

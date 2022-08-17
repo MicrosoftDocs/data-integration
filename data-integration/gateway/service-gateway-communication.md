@@ -1,12 +1,6 @@
 ---
 title: Adjust communication settings for the on-premises data gateway
 description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Service Bus, how to force the gateway to communicate with Azure Service Bus by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
-author: arthiriyer
-ms.author: arthii
-manager: kvivek
-ms.reviewer: kvivek
-
-ms.technology:
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/30/2021

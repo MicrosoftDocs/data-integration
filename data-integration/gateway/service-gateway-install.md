@@ -1,16 +1,8 @@
 ---
-
-title: "Install an on-premises data gateway"
+title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
-author: arthiriyer
-manager: kvivek
-ms.reviewer: kvivek
-
-ms.technology:
 ms.topic: conceptual
 ms.date: 5/25/2022
-ms.author: arthii
-
 LocalizationGroup: Gateways
 ---
 
@@ -44,12 +36,13 @@ In this article, we show you how to install a standard gateway, how to add anoth
 ### Related considerations
 
 * Gateways aren't supported on Server Core installations.
-* Gateways aren’t supported on Windows containers.
+* Gateways aren't supported on Windows containers.
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
 * If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
 * Don't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
 * If a gateway uses a wireless network, its performance might suffer.
+* If you use a virtualization layer for your virtual machine, performance might suffer or perform inconsistently. We recommend that you set the gateway on a wired device for best network performance.
 * You could install other applications on the gateway machine, but this may degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention. 
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. You can't have more than one gateway running in the same mode on the same computer.
 * The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
@@ -73,7 +66,7 @@ Because the gateway runs on the computer that you install it on, be sure to inst
     ![Entering your email address.](media/service-gateway-install/email-address.png)
 
     > [!NOTE]
-    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account’s User Principal Name (UPN) will match the email address.  
+    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account's User Principal Name (UPN) will match the email address.  
 
     The gateway is associated with your Office 365 organization account. You manage gateways from within the associated service.
 
@@ -137,7 +130,7 @@ To create high-availability gateway clusters, you need the November 2017 update 
     ![Entering your personal mode email address.](media/service-gateway-install/email-address-personal.png)
 
     > [!NOTE]
-    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account’s User Principal Name (UPN) will match the email address.  
+    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account's User Principal Name (UPN) will match the email address.  
 
     The gateway is associated with your Office 365 organization account. You manage gateways from within the associated service.
 

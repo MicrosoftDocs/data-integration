@@ -1,12 +1,6 @@
 ---
 title: Troubleshoot the on-premises data gateway
 description: This article provides ways for you to troubleshoot issues you might have with the on-premises data gateway. It provides potential workarounds to known issues and tools to assist you.
-author: arthiriyer
-ms.author: arthii
-manager: kvivek
-ms.reviewer: kvivek
-
-ms.technology:
 ms.topic: conceptual
 ms.date: 4/27/2022
 LocalizationGroup: Gateways 
@@ -97,7 +91,7 @@ At the end of configuration, the Power BI service is called again to validate th
 
 #### Error: Information is needed in order to combine data
 
-You may experience a refresh failure in Power BI service with an error “Information is needed in order to combine data”, even though refresh on Power BI Desktop works. This problem occurs when the refresh in Power BI Desktop works with the **File** > **Options and settings** > **Options** > **Privacy** > **Always ignore privacy level settings** option set, but throws a firewall error when other options are selected. If you attempt to preform this refresh in Power BI service, the refresh won't work because **Always ignore privacy level settings** isn't available in Power BI service. To resolve this error, try changing the privacy level in the Power BI desktop **Options** > **Global** > **Privacy** and **Options** > **Current File** > **Privacy** settings so that it doesn't ignore the privacy of data. Republish the file to Power BI service and update the credentials to "Organizational" in Power BI service.
+You may experience a refresh failure in Power BI service with an error "Information is needed in order to combine data", even though refresh on Power BI Desktop works. This problem occurs when the refresh in Power BI Desktop works with the **File** > **Options and settings** > **Options** > **Privacy** > **Always ignore privacy level settings** option set, but throws a firewall error when other options are selected. If you attempt to preform this refresh in Power BI service, the refresh won't work because **Always ignore privacy level settings** isn't available in Power BI service. To resolve this error, try changing the privacy level in the Power BI desktop **Options** > **Global** > **Privacy** and **Options** > **Current File** > **Privacy** settings so that it doesn't ignore the privacy of data. Republish the file to Power BI service and update the credentials to "Organizational" in Power BI service.
 
 ## Troubleshooting tools
 
@@ -127,7 +121,7 @@ The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [ga
 
 ## Next steps
 
-* [On-premises data gateway FAQ](service-gateway-onprem-faq.yml)
+* [On-premises data gateway ](service-gateway-onprem-faq.yml)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

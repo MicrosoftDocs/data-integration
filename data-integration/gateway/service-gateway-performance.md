@@ -1,14 +1,8 @@
 ---
 title: Monitor and optimize on-premises data gateway performance
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
-author: arthiriyer
-ms.author: arthii
-manager: kvivek
-ms.reviewer: kvivek
-
-ms.technology:
 ms.topic: conceptual
-ms.date: 12/15/2021
+ms.date: 7/13/2022
 LocalizationGroup: Gateways 
 ---
 
@@ -31,11 +25,11 @@ This feature is now turned on by default.
 >[!NOTE]
 >
 > * Currently, queries from premium capacity to the gateway are sometimes missed in this logging. We are actively working on fixing this issue.
-> * Currently, Power BI paginated report queries aren’t logged using this tool.
+> * Currently, Power BI paginated report queries aren't logged using this tool.
 
 ### Configure Performance logging
 
-There are other values in the config file that you can update as needed:
+There are other values in the config file `C:\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config` that you can update as needed:
 
 - **ReportFilePath**: Determines the path where the three log files are stored. By default, this path is either *\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report* or *\Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report*. The path depends on the OS version. If you use a service account for the gateway other than _PBIEgwService_, replace this part of the path with the service account name.
 - **ReportFileCount**: Determines the number of log files of each kind to retain. The default value is 10.
@@ -50,7 +44,7 @@ After you make the changes to the config file, restart the gateway for these con
 
 ### Understand performance logs
 
-When you turn this feature on, three new log files are created:
+When you turn on this feature, three new log files are created:
 
 - The Query Execution Report
 - The Query Start Report
@@ -74,7 +68,7 @@ The Query Execution Report contains detailed query execution information. The fo
 |**ErrorMessage** |If the query failed, indicates the error message. |
 |**SpoolingDiskWritingDuration** (ms) |Indicates the amount of time by the gateway to write all data to disk |
 |**SpoolingDiskReadingDuration** (ms) |Indicates the amount of time by the gateway to read all data to disk |
-|**SpoolingTotalDataSize** (bytes) |Size(Compressed) of the data which is written to/read from disk |
+|**SpoolingTotalDataSize** (bytes) |Size(Compressed) of the data that is written to/read from disk |
 |**DataReadingAndSerializationDuration** (ms) |Indicates the amount of time the gateway takes to read data from the datasource and serialize them into packets.|
 |**DiskRead** (byte/sec) |Indicates bytes read by the gateway per second. DiskRead(byte/sec) =  SpoolingTotalDataSize / SpoolingDiskReadingDuration|
 |**DiskWrite** (byte/sec) |Indicates bytes written by the gateway per second. DiskWrite(byte/sec) =  SpoolingTotalDataSize / SpoolingDiskWritingDuration|
@@ -119,7 +113,7 @@ The System Counter Aggregation Report contains system counter values aggregated 
 |**GatewayObjectId** |Unique identifier for the gateway. |
 |**AggregationStartTimeUTC** |Start of the time window for the system counters that were aggregated. |
 |**AggregationEndTimeUTC** |End of the time window for the system counters that were aggregated. |
-|**CounterName** |System counters, which includes memory and CPU usage by the gateway, Mashup Engine, and overall by the machine hosting the gateway. |
+|**CounterName** |System counters, which include memory and CPU usage by the gateway, Mashup Engine, and overall by the machine hosting the gateway. |
 |**Max** |Maximum value for the system counter for the aggregation time window. |
 |**Min** |Minimum value for the system counter for the aggregation time window. |
 |**Average** |Average value for the system counter for the aggregation time window. |
@@ -143,7 +137,7 @@ You also can customize this template file to suit your needs. For more informati
 
 ## Monitoring spool storage
 
-By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure the location isn't running full.
+By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure there is adequate free disk space. More information: [Gateway spooling data](service-gateway-configure-disk-space.md#gateway-spooling-data)
 
 ## Slow-performing queries
 
@@ -155,7 +149,7 @@ By default, the gateway performs basic logging. If you're investigating slow-per
 
 Enabling this setting likely will increase the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable additional logging. We don't recommend leaving this setting enabled during normal gateway usage.
 
-When you turn on this setting, you can see additional information (application context in the following sample) in the gateway logs that indicates which dataset or report this query belongs to. Note that not all services are able to send this information at this time and we are working on known gaps.
+When you turn on this setting, you can see additional information (application context in the following sample) in the gateway logs that indicates which dataset or report this query belongs to. Not all services are able to send this information at this time and we are working on known gaps.
 
 ```
 QueryAdditionalInformation is: {

@@ -2,15 +2,8 @@
 metadata:
   title: On-premises data gateway FAQ
   description: This article is the on-premises data gateway FAQ. It collects frequently asked questions about the gateway into one spot.
-  author: arthiriyer
-  manager: kvivek
-  ms.reviewer: kvivek
-  
-  
-  ms.technology:
   ms.topic: faq
   ms.date: 09/20/2021
-  ms.author: arthii
   LocalizationGroup: Gateways
 title: On-premises data gateway FAQ
 summary: |
@@ -22,6 +15,11 @@ sections:
           Do I need a gateway for cloud data sources, such as Azure SQL Database?  
         answer: |
           No, services can generally connect to cloud data sources without a gateway. However, you might need a data gateway if your data sources are behind a firewall, require a VPN, or are on virtual networks.
+          
+      - question: |
+          Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials are updated recently.
+        answer: |
+          When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). This limitation for long running refreshes exists for VNET gateways as well as on-premises data gateways.
 
       - question: |
           What are the requirements for the gateway?  
@@ -192,8 +190,15 @@ sections:
       - question: | 
           If we assume that the whole migration process will take 5 minutes, for all the refreshes that occur in these 5 minutes, where will the traffic go? Will it go through the old gateway server before the migration completes?
         answer: |
-          Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. For more information, see [Minimize migration downtime](/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime).
-        
+          Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. More information: [Minimize migration downtime](/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime)
+
+  - name: Known Issues
+    questions:
+      - question: |
+          Are there any known issues?
+        answer: |
+          * If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired.
+
 additionalContent: |
 
   ## Next steps
