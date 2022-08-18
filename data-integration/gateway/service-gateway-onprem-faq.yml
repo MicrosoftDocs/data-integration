@@ -190,7 +190,7 @@ sections:
       - question: | 
           If we assume that the whole migration process will take 5 minutes, for all the refreshes that occur in these 5 minutes, where will the traffic go? Will it go through the old gateway server before the migration completes?
         answer: |
-          Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. More information: https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime
+          Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. More information: [Minimize migration downtime](/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime)
 
   - name: Known Issues
     questions:
