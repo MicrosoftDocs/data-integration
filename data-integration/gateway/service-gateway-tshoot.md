@@ -95,7 +95,7 @@ You may experience a refresh failure in Power BI service with an error "Informat
 
 #### Error: There are too many refreshes occurring concurrently.
 
-The gateway has a concurrency limit of 48. If you are getting this error, it means you reached the concurrency limit. You can monitor the concurrency count with [gateway diagnostics template](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-performance). To avoid running into this issue, upgrade the number of gateways in a cluster or start a new cluster to load balance the request.
+The gateway has a concurrency limit of 48. If you're getting this error, it means you reached the concurrency limit. You can monitor the concurrency count with the [gateway diagnostics template](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-performance). To avoid running into this issue, upgrade the number of gateways in a cluster or start a new cluster to load balance the request.
 
 ## Troubleshooting tools
 
