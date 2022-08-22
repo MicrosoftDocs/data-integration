@@ -93,6 +93,10 @@ At the end of configuration, the Power BI service is called again to validate th
 
 You may experience a refresh failure in Power BI service with an error "Information is needed in order to combine data", even though refresh on Power BI Desktop works. This problem occurs when the refresh in Power BI Desktop works with the **File** > **Options and settings** > **Options** > **Privacy** > **Always ignore privacy level settings** option set, but throws a firewall error when other options are selected. If you attempt to preform this refresh in Power BI service, the refresh won't work because **Always ignore privacy level settings** isn't available in Power BI service. To resolve this error, try changing the privacy level in the Power BI desktop **Options** > **Global** > **Privacy** and **Options** > **Current File** > **Privacy** settings so that it doesn't ignore the privacy of data. Republish the file to Power BI service and update the credentials to "Organizational" in Power BI service.
 
+#### Error: There are too many refreshes occurring concurrently.
+
+The gateway has a concurrency limit of 48. If you are getting this error, it means you reached the concurrency limit. You can monitor the concurrency count with [gateway diagnostics template](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-performance). To avoid running into this issue, upgrade the number of gateways in a cluster or start a new cluster to load balance the request.
+
 ## Troubleshooting tools
 
 ### Collect logs from the on-premises data gateway app
