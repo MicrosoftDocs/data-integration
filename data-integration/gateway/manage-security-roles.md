@@ -5,7 +5,6 @@ description: Learn how to manage permissions and data sources for the on-premise
 ms.reviewer: dougklo
 ms.topic: conceptual
 ms.date: 4/4/2022
-LocalizationGroup: Gateways
 ---
 
 # Manage security roles of an on-premises data gateway

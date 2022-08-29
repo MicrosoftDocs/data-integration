@@ -3,7 +3,6 @@ title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
 ms.topic: conceptual
 ms.date: 5/25/2022
-LocalizationGroup: Gateways
 ---
 
 # Install an on-premises data gateway

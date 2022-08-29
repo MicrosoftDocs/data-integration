@@ -4,7 +4,6 @@ description: You can retrieve gateway and cluster information, modify the status
 ms.reviewer: dougklo
 ms.topic: conceptual
 ms.date: 5/20/2022
-LocalizationGroup: Gateways 
 ---
 
 # PowerShell support for on-premises data gateway clusters
