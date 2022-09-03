@@ -3,7 +3,6 @@ title: Manage on-premises data gateway high-availability clusters and load balan
 description: You can create clusters of on-premises data gateways to provide high availability for your enterprise. In addition, you can configure your clusters to provide load balancing over multiple computers.
 ms.topic: conceptual
 ms.date: 10/12/2021
-LocalizationGroup: Gateways 
 ---
 
 # Manage on-premises data gateway high-availability clusters and load balancing

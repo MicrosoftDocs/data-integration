@@ -5,7 +5,6 @@ author: miquelladeboer
 ms.author: mideboer
 ms.topic: conceptual
 ms.date: 8/23/2022
-LocalizationGroup: Gateways
 ---
 
 # Previous monthly updates to the on-premises data gateways

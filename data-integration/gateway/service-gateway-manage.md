@@ -4,7 +4,6 @@ description: Learn how to manage a gateway so that you can connect to on-premise
 ms.reviewer: dougklo
 ms.topic: conceptual
 ms.date: 5/20/2022
-LocalizationGroup: Gateways
 ---
 
 # Manage an on-premises data gateway

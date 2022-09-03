@@ -4,7 +4,6 @@ description: Learn how to move a gateway to a new computer, recover a damaged ga
 ms.reviewer: dougklo
 ms.topic: conceptual
 ms.date: 5/25/2022
-LocalizationGroup: Gateways
 ---
 
 # Migrate, restore, or take over an on-premises data gateway

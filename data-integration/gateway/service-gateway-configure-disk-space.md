@@ -4,7 +4,6 @@ description: Describes how to troubleshoot out of disk space errors caused by ga
 ms.reviewer: mideboer
 ms.topic: conceptual
 ms.date: 7/13/2022
-LocalizationGroup: Gateways 
 ---
 
 # Configure gateway disk space
