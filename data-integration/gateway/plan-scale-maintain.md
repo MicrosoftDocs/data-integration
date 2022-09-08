@@ -94,6 +94,18 @@ Depending on your workload, consider optimizing your gateway server for memory o
 
 Scaling is an important aspect of a business-critical gateway cluster. As your usage with the gateway cluster grows, the gateway cluster needs to be scaled up and/or scaled out to ensure good performance. We recommend that you start scaling out a gateway cluster if you've previously scaled up the gateways in the cluster.
 
+Scaling and distributing traffic load across individual nodes within a cluster is a complex process that varies depending on each individual scenario. While there's no definitive model to ensure that all gateway traffic will be predictably serviced, the limits listed below indicate a scaling need. In general, we recommend scaling out (adding nodes to the cluster) preferentially to scaling up (increasing CPU, RAM, or disk space on individual nodes) as this tends to be more effective overall in the ability of the system as a whole to handle additional traffic. Scaling out also has a positive impact on total bandwidth the cluster can process, whereas scaling up generally doesn't. When one or more gateway nodes show indications of reaching the thresholds described below, scaling out the cluster should be strongly considered.
+
+* CPU: CPU is above 80% for extended periods of time, however occasional short (under 5 minutes) spikes that max out CPU aren't abnormal.
+
+* RAM: Available memory dips below 20% regularly.
+
+* Disk: Free disk space dips below 5GB frequently. This could also indicate a need to configure caching or spooling directories more strategically.
+
+* Concurrency: Running more than 40 queries simultaneously on a single node. 
+
+Since refreshes and queries distributed across gateway nodes can have vastly different profiles, we also recommend additional scrutiny be placed on long-running or memory-intensive jobs. Query optimization in such cases can have a huge impact on performance and scalability, not only for the individual reports and refreshes, but on the system as a whole. We recommend isolating refreshes in question to a single dedicated gateway cluster to evaluate performance characteristics and perform optimization using query plan diagnostics, folding indicators, and all other published performance recommendations to minimize the amount of data retrieved and the amount of post-processing required. This can also be used as a long-term strategy to sequester long-running ETL jobs to a dedicated gateway cluster in order to reduce contention with other typical refreshes across the organization. 
+
 ##### Scaling up a gateway cluster
 
 ![Image of a query failure using a gateway cluster with two gateways that have 5 GB of memory and a query success using a custer with two gateway, with one gateway that has 7 GB of memory](media/plan-scale-maintain/scaled-up-cluster.png)
@@ -106,7 +118,7 @@ Scaling up might be required if the maximum CPU or memory is reached when the ga
 
 ![Image of a query failure using a cluster with two gateways with 5 GB of memory each and a query success using a cluster with three gateways with 5 GB of memory each](media/plan-scale-maintain/scaled-out-cluster.png)
 
-Scaling out is required if the gateway server already has high specifications (in other words, the gateway server has been scaling up already), or you've reached the limits of what a single gateway server can manage because of the number of concurrent queries being executed. Indicators of these limits include high CPU usage on a 16+ core CPU, high memory usage (16+ GB), high disk usage, and high network usage. For more information about scaling out, go to [Use the gateway high availability and load balancing features](#use-the-gateway-high-availability-and-load-balancing-features).
+Scaling out is required if the gateway server already has high specifications (in other words, the gateway server has been scaling up already), or you've reached the limits of what a single gateway server can manage because of the number of concurrent queries being executed. Broad-based load increase across the entire gateway member set is a good indication that scaling a cluster by adding nodes is the correct course of action. [When to scale a gateway cluster](#when-to-scale-a-gateway-cluster) provides specific thresholds that indicate when it's time to scale. For more information about scaling out, go to [Use the gateway high availability and load balancing features](#use-the-gateway-high-availability-and-load-balancing-features).
 
 ##### Scaling by creating new gateway clusters
 
