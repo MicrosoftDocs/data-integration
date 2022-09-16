@@ -4,7 +4,7 @@ title: Manage security roles
 description: Learn how to manage permissions and data sources for the on-premises data gateway.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 4/4/2022
+ms.date: 9/16/2022
 ---
 
 # Manage security roles of an on-premises data gateway
@@ -75,9 +75,9 @@ To manage data sources:
 
 You can restrict access to who can install an on-premises data gateway. This restriction occurs though at the tenant level, not the environment level (default environment or otherwise). In other words, you can't restrict access at the environment level.
 
-The admin will update the data gateway settings by environment through the Power Platform Admin Console.
+Your admin can update the data gateway settings by environment through the Power Platform admin center.
 
-1. Go to the [Power Platform admin center](aka.ms/ppac).
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
    [![Screenshot of opening page of the Power Platform admin center.](media/manage-security-roles/admin-center-home.png)](media/manage-security-roles/admin-center-home.png#lightbox)
 
