@@ -75,9 +75,9 @@ To manage data sources:
 
 You can restrict access to who can install an on-premises data gateway. This restriction occurs though at the tenant level, not the environment level (default environment or otherwise). In other words, you can't restrict access at the environment level.
 
-Your admin can update the data gateway settings by environment through the Power Platform admin center.
+Your admin can update the data gateway settings through the Power Platform admin center.
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Go to the [Power Platform admin center](https://aka.ms/ppac).
 
    [![Screenshot of opening page of the Power Platform admin center.](media/manage-security-roles/admin-center-home.png)](media/manage-security-roles/admin-center-home.png#lightbox)
 
