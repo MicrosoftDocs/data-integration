@@ -2,7 +2,7 @@
 title: Monitor and optimize on-premises data gateway performance
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
 ms.topic: conceptual
-ms.date: 7/13/2022
+ms.date: 9/19/2022
 ---
 
 # Monitor and optimize on-premises data gateway performance
@@ -15,7 +15,7 @@ To monitor performance, gateway admins have traditionally depended on manually m
 > This feature is currently available only for the on-premises data gateway in the standard mode. It's not available for the personal mode.
 
 > [!NOTE]
-> Gateway diagnostics doesn't capture diagnostics directly related to the (virtual) machine and its network, like bandwidth or latency. Hoewever, these diagnostics might impact your gateway performance. You can use resource monitoring tools to monitor your machine.
+> Gateway diagnostics doesn't capture diagnostics directly related to the (virtual) machine and its network, like bandwidth or latency. However, these diagnostics might impact your gateway performance. You can use resource monitoring tools to monitor your machine.
 
 ### Performance logging
 
