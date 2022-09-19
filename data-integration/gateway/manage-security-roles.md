@@ -4,7 +4,7 @@ title: Manage security roles
 description: Learn how to manage permissions and data sources for the on-premises data gateway.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 4/4/2022
+ms.date: 9/16/2022
 ---
 
 # Manage security roles of an on-premises data gateway
@@ -70,3 +70,25 @@ To manage data sources:
 4. Depending on your role, you can now assign users to the connection.
 
    ![Image of the Manage users dialog box, with a new user emphasized, and the User role selected.](media/manage-security-roles/manage-data-sources.png)
+
+## Restricting access for on-premises data gateways
+
+You can restrict access to who can install an on-premises data gateway. This restriction occurs though at the tenant level, not the environment level (default environment or otherwise). In other words, you can't restrict access at the environment level.
+
+Your admin can update the data gateway settings through the Power Platform admin center.
+
+1. Go to the [Power Platform admin center](https://aka.ms/ppac).
+
+   [![Screenshot of opening page of the Power Platform admin center.](media/manage-security-roles/admin-center-home.png)](media/manage-security-roles/admin-center-home.png#lightbox)
+
+2. Select **Data (preview)**.
+
+   [![Screenshot of the Power Platform admin center with the Data (Preview) tab selected on the left side of the page.](media/manage-security-roles/admin-data-preview.png)](media/manage-security-roles/admin-data-preview.png#lightbox)
+
+3. Select **On-premises data gateway** and turn on **Tenant administration for gateways**.
+
+   [![Screenshot of the Power Platform admin center with the On-premises data gateway tab selected, and the Tenant administration for gateways switch turned on.](media/manage-security-roles/tenant-admin-gateway.png)](media/manage-security-roles/tenant-admin-gateway.png#lightbox)
+
+4. Turn on **Restrict users in your organization from installing gateways**. You can also allow specific users to override the restriction.
+
+   [![Screenshot of the Manage gateway installers page with Restrict users in your organization from installing gateways switch turned on.](media/manage-security-roles/restrict-users.png)](media/manage-security-roles/restrict-users.png#lightbox)
