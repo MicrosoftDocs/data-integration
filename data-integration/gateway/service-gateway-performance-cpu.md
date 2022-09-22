@@ -19,8 +19,10 @@ The on-premises data gateway has settings that control resource usage on the mac
 | `MashupAzureConnectorsCachingPoolContainerMaxWorkingSetInMB` | Maximum working set size for LogicApps, Power Apps, and Power Automate. |
 | | |
 
+Use the 'MashupDefaultPoolContainerMaxWorkingSetInMB' setting to change the default pool. Changing the memory set is only possible for the default pool. For the other pools it is not possible due to performance and stability reasons. The ‘MashupDQPoolContainerMaxWorkingSetInMB’ settings cannot be changed in the config.
+
 Most queries use _mashup containers_ to execute. So the number of mashup containers determines the number of queries that can be executed in parallel. A _working set_ defines the memory allocated to each container. These settings are available in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_.
 
-If you've changed any of these settings manually, automatic scaling is not enabled by default. To enable automatic scaling, in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_ set `MashupDisableContainerAutoConfig` to _False_.
+If you've changed any of these settings manually, automatic scaling is not enabled by default. To enable automatic scaling, in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_ set `MashupDisableContainerAutoConfig` to _True_.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
