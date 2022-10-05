@@ -18,7 +18,7 @@ By using a gateway, organizations can keep databases and other data sources on t
 
 ![Gateway overview.](media/service-gateway-getting-started/on-premises-data-gateway.png)
 
-For detailed information on how the gateway works, see [On-premises data gateway architecture](service-gateway-onprem-indepth.md).
+For detailed information on how the gateway works, go to [On-premises data gateway architecture](service-gateway-onprem-indepth.md).
 
 ## Types of gateways
 
@@ -46,7 +46,7 @@ There are four main steps for using a gateway.
   * The gateway has a 2-MB request limit and an 8-MB compressed data response limit for read operations.
   * URL for the GET request has a 2048 character limit.
 * While using the gateway with Power BI in Direct Query Mode, there's a 16-MB uncompressed data response limit.
-* For information about installation considerations, see [Related considerations](service-gateway-install.md#related-considerations).
+* For information about installation considerations, go to [Related considerations](service-gateway-install.md#related-considerations).
 
 ## Gateway documentation
 
