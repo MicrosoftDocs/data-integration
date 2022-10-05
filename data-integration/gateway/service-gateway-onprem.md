@@ -2,7 +2,7 @@
 title: What is an on-premises data gateway?
 description: Learn the basics about on-premises data gateways, which enable quick and secure data transfer between on-premises data and several Microsoft cloud services.
 ms.topic: overview
-ms.date: 07/30/2021
+ms.date: 10/5/2022
 ---
 
 # What is an on-premises data gateway?
@@ -41,12 +41,12 @@ There are four main steps for using a gateway.
 
 ## Considerations
 
-- Logic Apps, Power Apps, and Power Automate support both read and write operations through the gateway:
-  - Write operations have a 20-MB payload limit.
-  - Read operations have a 20-MB request limit and an 8-MB compressed data response limit.
-  - URL for the GET request has a 2048 character limit.
-- While using the gateway with Power BI in Direct Query Mode, there's a 16-MB uncompressed data response limit.
-- For information about installation considerations, see [Related considerations](service-gateway-install.md#related-considerations).
+* Logic Apps, Power Apps, and Power Automate support both read and write operations through the gateway:
+  * The gateway has a 2-MB payload limit for write operations.
+  * The gateway has a 2-MB request limit and an 8-MB compressed data response limit for read operations.
+  * URL for the GET request has a 2048 character limit.
+* While using the gateway with Power BI in Direct Query Mode, there's a 16-MB uncompressed data response limit.
+* For information about installation considerations, see [Related considerations](service-gateway-install.md#related-considerations).
 
 ## Gateway documentation
 
@@ -65,6 +65,5 @@ This document contains general information about the on-premises data gateway th
 ## Next steps
 
 * [Install the on-premises data gateway](service-gateway-install.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
