@@ -20,7 +20,7 @@ There are three security user roles available for the VNet data gateway. When yo
 
 The three security roles for the VNet data gateway are:
 
-* **Admin**: An admin can manage and change the settings of the VNet data gateway. An admin is allowed to create connections (to data sources) on the gateway, manage (add/delete) any users, manage access to all connections created on the gateway, and use all features applicable to gateways, including checking gateway status and using the network troubleshooting pane.
+* **Admin**: When a user becomes an admin, they will see all the connections created on the gateway and can manage/delete all users and connections. Admins can also use all features applicable to gateways, including checking gateway status, using the network troubleshooting pane, and changing settings.
 * **Connection creator**: A connection creator is allowed to create connections/data sources on the gateway. A connection creator can also test the status of the gateway cluster and its members. A connection creator gets read-only access to gateway settings, can't add or remove others on the gateway, and can’t remove gateways.
 * **Connection creator with resharing**: A connection creator with resharing is allowed to create connections/data sources on the gateway and share gateways with others. Those they share gateways with will have the connection creator permission. They aren't allowed to remove a user from the gateway. Connection creators with resharing can also test the gateway status and use the network troubleshooting pane.
 
