@@ -17,13 +17,11 @@ The on-premises data gateway has settings that control resource usage on the mac
 | `MashupTestConnectionPoolContainerMaxInstanceCount` | Maximum container count for test connections. |
 | `MashupAzureConnectorsCachingPoolContainerMaxCount` | Maximum container count for LogicApps, Power Apps, and Power Automate. |
 | `PowerQueryOnlineCachingPoolContainerMaxCount` | Maximum container count for Power Query Online. |
-<!--| `MashupDQPoolContainerMaxWorkingSetInMB` | Maximum working set size for Power BI Direct Query. | -->
-<!--| `MashupAzureConnectorsCachingPoolContainerMaxWorkingSetInMB` | Maximum working set size for LogicApps, Power Apps, and Power Automate. |-->
 
-Use the `MashupDefaultPoolContainerMaxWorkingSetInMB` setting to change the default pool. Changing the memory set is only possible for the default pool. For the other pools it isn't possible due to performance and stability reasons. The `MashupDQPoolContainerMaxWorkingSetInMB` settings cannot be changed in the config.
+Use the `MashupDefaultPoolContainerMaxWorkingSetInMB` setting to change the default pool. Changing the memory set is only possible for the default pool. For the other pools, it isn't possible due to performance and stability reasons. The `MashupDQPoolContainerMaxWorkingSetInMB` settings can't be changed in the config.
 
 Most queries use _mashup containers_ to execute. So the number of mashup containers determines the number of queries that can be executed in parallel. A _working set_ defines the memory allocated to each container. These settings are available in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_.
 
-If you’ve changed any of these settings manually, for these settings to take effect you must also disable automatic scaling by setting `MashupDisableContainerAutoConfig` to _True_ in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_. If `MashupDisableContainerAutoConfig` is set to _False_, automatic scaling is always enabled.
+If you've changed any of these settings manually, for these settings to take effect you must also disable automatic scaling by setting `MashupDisableContainerAutoConfig` to _True_ in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_. If `MashupDisableContainerAutoConfig` is set to _False_, automatic scaling is always enabled.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
