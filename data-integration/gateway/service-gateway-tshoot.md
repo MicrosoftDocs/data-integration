@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot the on-premises data gateway
 description: This article provides ways for you to troubleshoot issues you might have with the on-premises data gateway. It provides potential workarounds to known issues and tools to assist you.
-ms.topic: conceptual
-ms.date: 4/27/2022
+ms.topic: troubleshooting
+ms.date: 10/7/2022
 ---
 
 # Troubleshoot the on-premises data gateway
@@ -77,6 +77,12 @@ You can force the gateway to [communicate with Azure Service Bus by using HTTPS]
 ### Gateway proxy unable to connect to Managed Data Lake
 
 If you're using a proxy to access on-premises data using an on-premises data gateway, you might not be able to connect to a managed data lake (MDL) using the default proxy settings. To connect to MDL, be sure to add addresses `*.dfs.core.windows.net` and `*.blob.core.windows.net` to the allowlist on your proxy server.
+
+### System performance counter data is unavailable 
+
+If the current service account which is being used by the on-premises data gateway application is not a member of the local security group **Performance Log Users**,  you may observe in the [System Counter Aggregation Report](service-gateway-performance.md), that only system memory usage value is available.
+
+To address this behavior, add the on-premises data gateway service account to the local security group [Performance Log Users](/windows-server/identity/ad-ds/manage/understand-security-groups#performance-log-users), and restart the on-premises data gateway service.
 
 ### Common errors
 
