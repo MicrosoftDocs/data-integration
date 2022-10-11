@@ -26,7 +26,7 @@ Here are a few common management issues and the resolutions that helped other cu
 
 ### Error while removing the primary node of a gateway cluster
 
-The primary node of a gateway can't be removed if there are other members in the cluster. Removing the primary node also means removing the gateway cluster. 
+The primary node of a gateway can't be removed if there are other members in the cluster. Removing the primary node also means removing the gateway cluster.
 
 ## Troubleshoot common installation issues
 
@@ -42,7 +42,7 @@ You might encounter installation failures if the antivirus software on the insta
 
 ### McAfee Endpoint Defender software enabled
 
-You might encounter installation failure when anitivirus software, like McAfee Endpoint Defender is enabled. Configure your antivirus software to ignore the gateway process.
+You might encounter installation failure when anitivirus software, like McAfee Endpoint Defender, is enabled. Configure your antivirus software to ignore the gateway process.
 
 ### Same or older gateway version
 
@@ -78,7 +78,7 @@ You can force the gateway to [communicate with Azure Service Bus by using HTTPS]
 
 If you're using a proxy to access on-premises data using an on-premises data gateway, you might not be able to connect to a managed data lake (MDL) using the default proxy settings. To connect to MDL, be sure to add addresses `*.dfs.core.windows.net` and `*.blob.core.windows.net` to the allowlist on your proxy server.
 
-### System performance counter data is unavailable 
+### System performance counter data is unavailable
 
 If the current service account which is being used by the on-premises data gateway application is not a member of the local security group **Performance Log Users**,  you may observe in the [System Counter Aggregation Report](service-gateway-performance.md), that only system memory usage value is available.
 
@@ -114,7 +114,7 @@ This file is saved to the ODGLogs folder on your Windows desktop in .zip format.
 
 ### Event logs
 
-To find the event logs for the *on-premises data gateway service*, follow these steps: 
+To find the event logs for the *on-premises data gateway service*, follow these steps:
 
 1. On the computer with the gateway installation, open the **Event Viewer**.
 
@@ -130,7 +130,6 @@ The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [ga
 
 ## Next steps
 
-* [On-premises data gateway ](service-gateway-onprem-faq.yml)
-
+* [On-premises data gateway](service-gateway-onprem-faq.yml)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
