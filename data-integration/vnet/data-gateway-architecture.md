@@ -2,12 +2,12 @@
 title: Virtual network (VNet) data gateway architecture
 description: Overview of virtual network (VNet) data gateway Architecture.
 ms.topic: conceptual
-ms.date: 11/3/2021
+ms.date: 10/17/2022
 ---
 
 # Virtual network data gateway architecture
 
-The virtual network (VNet) data gateway facilitates secure connectivity to data sources associated to your VNet.
+The virtual network (VNet) data gateway facilitates secure connectivity to data sources associated with your VNet.
 
 Users in your organization can access data secured by a VNet to which they already have access. But before these users can connect to these data sources from Microsoft Cloud services, a VNet gateway needs to be [registered and configured](create-data-gateways.md).
 
