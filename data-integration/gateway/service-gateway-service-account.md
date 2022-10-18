@@ -2,7 +2,7 @@
 title: Change the on-premises data gateway service account
 description: Provides information on how to change the Windows account for the on-premises data gateway service.
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 10/11/2022
 ---
 
 # Change the on-premises data gateway service account
@@ -32,7 +32,7 @@ To change the Windows service account for the on-premises data gateway:
 
    ![Configure account.](media/service-gateway-service-account/configure-account.png)
 
-1. Provide your sign in account, and select **Sign in**.
+1. Provide your sign-in account, and select **Sign in**.
 
    ![Account sign-in.](media/service-gateway-service-account/account-sign-in.png)
 
@@ -41,8 +41,7 @@ To change the Windows service account for the on-premises data gateway:
 1. After the restoration is complete, the new gateway uses the domain account.
 
    ![Domain account.](media/service-gateway-service-account/domain-account.png)
-   
-   
+
 > [!NOTE]
 > To reset the gateway to the default service account, you need to uninstall and reinstall the gateway. You need the recovery key for this operation.
 >
@@ -50,7 +49,5 @@ To change the Windows service account for the on-premises data gateway:
 ## Next steps
 
 * [Set the datacenter region](service-gateway-data-region.md)  
- 
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

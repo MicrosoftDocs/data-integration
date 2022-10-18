@@ -2,7 +2,7 @@
 title: Restart an on-premises data gateway
 description: Learn how to restart the gateway Windows service.
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 10/10/2022
 ---
 
 # Restart an on-premises data gateway
@@ -26,6 +26,5 @@ Restart the on-premises data gateway service with any of the following methods.
 ## Next steps
 
 * [Tenant level administration](/power-platform/admin/onpremises-data-gateway-management)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
