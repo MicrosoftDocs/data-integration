@@ -1,15 +1,15 @@
 ---
 title: Change the recovery key for an on-premises data gateway
-description: You can change the recovery key, which the gateway uses to create additional keys that encrypt data source and connection credentials.
+description: You can change the recovery key, which the gateway uses to create extra keys that encrypt data source and connection credentials.
 ms.topic: conceptual
-ms.date: 11/21/2019
+ms.date: 10/10/2022
 ---
 
 # Change the recovery key for an on-premises data gateway
 
 Starting with the November 2019 version of the on-premises data gateway (version 3000.14.39), you can change the recovery key that you specified during gateway installation.
 
-The gateway uses the recovery key to create additional keys that encrypt data source and connection credentials. For more information about encryption, see _When working with the on-premises data gateway, how are recovery keys used and where are they stored?_ in the [Power BI security whitepaper](/power-bi/whitepaper-powerbi-security#power-bi-security-questions-and-answers).
+The gateway uses the recovery key to create extra keys that encrypt data source and connection credentials. For more information about encryption, go to _When working with the on-premises data gateway, how are recovery keys used and where are they stored?_ in the [Power BI security whitepaper](/power-bi/whitepaper-powerbi-security#power-bi-security-questions-and-answers).
 
 When you change the key, the process depends on whether you're using the gateway with Power BI or with another service:
 
@@ -21,7 +21,7 @@ When you change the key, the process depends on whether you're using the gateway
 
 Use the following steps to change the recovery key.
 
-1. Open the [on-premises data gateway app](service-gateway-app.md) and sign in. If you have multiple gateway member in a cluster, you must sign into the primary member.
+1. Open the [on-premises data gateway app](service-gateway-app.md) and sign in. If you have multiple gateway members in a cluster, you must sign in to the primary member.
 
 1. On the **Recovery Keys** tab, select **Set new recovery key**. In a cluster with more than one member, this action disables all other gateway members. You re-enable these members later in this process.
 
@@ -35,7 +35,7 @@ Use the following steps to change the recovery key.
 
     ![Configure new recovery key.](media/service-gateway-recovery-key/configure-new-recovery-key.png)
 
-    After you've created the new key, the app shows that there is now a secondary or _legacy_ recovery key. The gateway maintains both keys on the machine where it's installed, so connections that use the legacy recovery key do not fail. If you want to delete the legacy key, see [Delete the legacy recovery key](#delete-the-legacy-recovery-key).
+    After you've created the new key, the app shows that there's now a secondary or _legacy_ recovery key. The gateway maintains both keys on the machine where it's installed, so connections that use the legacy recovery key don't fail. If you want to delete the legacy key, see [Delete the legacy recovery key](#delete-the-legacy-recovery-key).
 
     ![Legacy recovery key.](media/service-gateway-recovery-key/legacy-recovery-key.png)
 
@@ -47,7 +47,7 @@ Use the following steps to change the recovery key.
 
 After you've created a new recovery key, you can delete the legacy recovery key. Before deleting the legacy key, make sure all connections using the gateway have had their credentials encrypted with the new key.
 
-1. Open the [on-premises data gateway app](service-gateway-app.md) and sign in. If you have multiple gateway member in a cluster, you must sign into the primary member.
+1. Open the [on-premises data gateway app](service-gateway-app.md) and sign in. If you have multiple gateway members in a cluster, you must sign into the primary member.
 
 1. On the **Recovery Keys** tab, select **Delete legacy recovery key**.
 
