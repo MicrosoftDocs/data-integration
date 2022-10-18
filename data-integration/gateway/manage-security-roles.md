@@ -92,3 +92,4 @@ Your admin can update the data gateway settings through the Power Platform admin
 4. Turn on **Restrict users in your organization from installing gateways**. You can also allow specific users to override the restriction.
 
    [![Screenshot of the Manage gateway installers page with Restrict users in your organization from installing gateways switch turned on.](media/manage-security-roles/restrict-users.png)](media/manage-security-roles/restrict-users.png#lightbox)
+
