@@ -4,14 +4,14 @@ title: Plan, scale, and maintain a business-critical gateway solution
 description: Learn how to plan, scale, and maintain gateways and gateway clusters that are deployed in business-critical scenarios.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 12/15/2021
+ms.date: 10/10/2022
 ---
 
 # Plan, scale, and maintain a business-critical gateway solution  
 
 This article is intended for anyone planning to deploy an on-premises data gateway in a business-critical scenario. An on-premises data gateway is business-critical if it's vital to the normal operation of your business and handles business-critical data.
 
-If business-critical gateways aren't managed properly, you might experience failed queries or slow performance. By properly planning, scaling, and maintaining your business-critical gateway solution, the likelihood of a business-impacting issue can be minimized.
+If business-critical gateways aren't managed properly, you might experience failed queries or slow performance. When you properly plan, scale, and maintain your business-critical gateway solution, the likelihood of a business-impacting issue can be minimized.
 
 ## Terminology
 
@@ -77,16 +77,15 @@ Gateway server specifications (CPU, memory, disk, and so on) are an important fa
 
 When you need to choose a server size, there are two metrics that are most important: Memory and CPU. You need both ample memory and CPU power to process the Power Query data transformation steps on the gateway. It's important that your gateway server is powerful enough to process the highest workload that you have. If the gateway server isn't able to handle the workload, your direct query or data refresh will fail. It's also important to understand how many queries are executed at the same time.
 
-These different query options have a different affect on your gateway server.
+These different query options have a different effect on your gateway server.
 
 | Query Type | Limit Factor |
 | --- | --- |
 | Import | Memory |  
 | DirectQuery | CPU |
 | LiveConnect | CPU |
-| | |
 
-During an import, the entire set of data needs to be queried and processed, which is a memory heavy task. This often takes a longer time as well. DirectQueries and LiveConnections are commonly CPU heavy. In most cases, direct queries are executed many times to process only a small portion of the data. Since only a small portion of the data is processed, this is normally not a memory heavy task. However, because the queries get executed many times on demand, this can be CPU intensive.
+During an import, the entire set of data needs to be queried and processed, which is a memory heavy task. This importation often takes a longer time as well. DirectQueries and LiveConnections are commonly CPU heavy. In most cases, direct queries are executed many times to process only a small portion of the data. Since only a small portion of the data is processed, these direct queries aren't normally a memory heavy task. However, because the queries get executed many times on demand, this can be CPU intensive.
 
 Depending on your workload, consider optimizing your gateway server for memory or CPU.
 
@@ -94,17 +93,17 @@ Depending on your workload, consider optimizing your gateway server for memory o
 
 Scaling is an important aspect of a business-critical gateway cluster. As your usage with the gateway cluster grows, the gateway cluster needs to be scaled up and/or scaled out to ensure good performance. We recommend that you start scaling out a gateway cluster if you've previously scaled up the gateways in the cluster.
 
-Scaling and distributing traffic load across individual nodes within a cluster is a complex process that varies depending on each individual scenario. While there's no definitive model to ensure that all gateway traffic will be predictably serviced, the limits listed below indicate a scaling need. In general, we recommend scaling out (adding nodes to the cluster) preferentially to scaling up (increasing CPU, RAM, or disk space on individual nodes) as this tends to be more effective overall in the ability of the system as a whole to handle additional traffic. Scaling out also has a positive impact on total bandwidth the cluster can process, whereas scaling up generally doesn't. When one or more gateway nodes show indications of reaching the thresholds described below, scaling out the cluster should be strongly considered.
+Scaling and distributing traffic load across individual nodes within a cluster is a complex process that varies depending on each individual scenario. While there's no definitive model to ensure that all gateway traffic will be predictably serviced, the limits listed below indicate a scaling need. In general, we recommend scaling out (adding nodes to the cluster) preferentially to scaling up (increasing CPU, RAM, or disk space on individual nodes) as scaling out tends to be more effective overall in the ability of the system as a whole to handle extra traffic. Scaling out also has a positive impact on total bandwidth the cluster can process, whereas scaling up generally doesn't. When one or more gateway nodes show indications of reaching the thresholds described below, scaling out the cluster should be strongly considered.
 
 * CPU: CPU is above 80% for extended periods of time, however occasional short (under 5 minutes) spikes that max out CPU aren't abnormal.
 
 * RAM: Available memory dips below 20% regularly.
 
-* Disk: Free disk space dips below 5GB frequently. This could also indicate a need to configure caching or spooling directories more strategically.
+* Disk: Free disk space dips below 5 GB frequently. This could also indicate a need to configure caching or spooling directories more strategically.
 
-* Concurrency: Running more than 40 queries simultaneously on a single node. 
+* Concurrency: Running more than 40 queries simultaneously on a single node.
 
-Since refreshes and queries distributed across gateway nodes can have vastly different profiles, we also recommend additional scrutiny be placed on long-running or memory-intensive jobs. Query optimization in such cases can have a huge impact on performance and scalability, not only for the individual reports and refreshes, but on the system as a whole. We recommend isolating refreshes in question to a single dedicated gateway cluster to evaluate performance characteristics and perform optimization using query plan diagnostics, folding indicators, and all other published performance recommendations to minimize the amount of data retrieved and the amount of post-processing required. This can also be used as a long-term strategy to sequester long-running ETL jobs to a dedicated gateway cluster in order to reduce contention with other typical refreshes across the organization. 
+Since refreshes and queries distributed across gateway nodes can have vastly different profiles, we also recommend extra scrutiny be placed on long-running or memory-intensive jobs. Query optimization in such cases can have a huge impact on performance and scalability, not only for the individual reports and refreshes, but on the system as a whole. We recommend isolating refreshes in question to a single dedicated gateway cluster to evaluate performance characteristics and perform optimization using query plan diagnostics, folding indicators, and all other published performance recommendations to minimize the amount of data retrieved and the amount of post-processing required. This can also be used as a long-term strategy to sequester long-running ETL jobs to a dedicated gateway cluster in order to reduce contention with other typical refreshes across the organization. 
 
 ##### Scaling up a gateway cluster
 
