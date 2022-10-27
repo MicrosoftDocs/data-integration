@@ -17,7 +17,7 @@ The following example routes all requests through a specific proxy with the IP a
     <defaultProxy useDefaultCredentials="true">
         <proxy  
             autoDetect="false"  
-            proxyaddress="http://192.168.0.1:8888"  
+            proxyaddress="http://192.168.0.1:8888"
             bypassonlocal="false"
             usesystemdefault="false"
         />
@@ -36,7 +36,7 @@ The following example routes all requests through a specific proxy with the IP a
         <defaultProxy useDefaultCredentials="true">
             <proxy  
                 autoDetect="false"  
-                proxyaddress="http://192.168.2.40:8888"  
+                proxyaddress="http://192.168.0.1:8888"
                 bypassonlocal="false"
                 usesystemdefault="false"
             />
@@ -49,12 +49,13 @@ The following example routes all requests through a specific proxy with the IP a
 ### How to verify if my proxy configuration is consistent for my on-premises data gateway
 
 1. Ensure you’re running September 2022 version or higher
-2. Open the On-Premises Data Gateway application, navigate to “Diagnostics” tab
-3. Under “Network ports test” click into “Start new test”
-4. Once the network ports test is complete, click into “Open last completed test results”
-5. If your proxy configuration is consistent across the 3 required configuration files, you should see:
+2. Open the On-Premises Data Gateway application
+3. Navigate to “Diagnostics” tab
+4. Under “Network ports test” click into “Start new test”
+5. Once the network ports test is complete, click into “Open last completed test results”
+6. If your proxy configuration is consistent across the 3 required configuration files, you should see:
     1. “Proxy configuration : Proxy settings match for all Gateway process configurations.”
-6. Otherwise, if proxy configuration is not consistent you should find the information:
+7. Otherwise, if proxy configuration is not consistent you should find the information:
     1. “Proxy configuration : Proxy settings are not consistent. Please ensure that the proxy configuration matches across the files listed below:
     C:\Program Files\On-premises data gateway\EnterpriseGatewayConfigurator.exe.config
     C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
@@ -67,11 +68,7 @@ The following example routes all requests through a specific proxy with the IP a
 If the proxy definition is either missing or inconsistent, you may experience different behaviors with your on-premises data gateway, few examples are:
 
 1. A dataset or dataflow refresh failure, error message example: “Error: Unable to connect to the remote server”
-2. While launching on premises data gateway, you fail to sign in, the sign in prompt appears but it’s content cannot be displayed, or you do see an error message page.
+2. While launching on premises data gateway, you fail to sign in, the sign in prompt appears but it’s content cannot be displayed or you do see an error message page.
 3. The Network Port test results report failures connecting to the servers
-
-## Next steps
-
-You can see a short video below about the steps for configuring and verifying the proxy setup.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
