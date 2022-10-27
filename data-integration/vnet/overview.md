@@ -32,8 +32,8 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
 
   - For Power Platform dataflows, this feature currently doesn't support the ability to write to a privatized data lake or Dataverse.
   - A list of supported data sources for Power Platform dataflows is available in [Supported data sources](data-gateway-power-platform-dataflows.md#supported-data-sources).
-  - The physical VNet data gateways is injected into your virtual network and subnet, so it operates in the same region as the virtual network. 
-  - The vnet data gateway can be accessed through the application only from the home region of your tenant. There's currently no option to change the VNet data gateway region.
+  - The physical VNet data gateway is injected into your virtual network and subnet, so it operates in the same region as the virtual network. 
+  - The VNet data gateway can be accessed through the application only from the home region of your tenant. There's currently no option to change the VNet data gateway region.
   - VNet data gateways currently support only admin roles and not "Can Use and Can Use+Share" for Power Platform dataflows.
 
 - Power BI paginated reports:
