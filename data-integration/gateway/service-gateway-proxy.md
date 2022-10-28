@@ -2,11 +2,11 @@
 title: Configure proxy settings for the on-premises data gateway
 description: Provides information about configuration of proxy settings for the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 11/1/2021
+ms.date: 10/10/2021
 ---
 # Configure proxy settings for the on-premises data gateway
 
-Your work environment might require that you go through a proxy to access the internet. This could prevent the Microsoft on-premises data gateway from connecting to the service.
+Your work environment might require that you go through a proxy to access the internet. This requirement could prevent the Microsoft on-premises data gateway from connecting to the service.
 
 The following post on superuser.com discusses how you can try to determine if you have a proxy on your network:
 [How do I know what proxy server I'm using? (SuperUser.com)](https://superuser.com/questions/346372/how-do-i-know-what-proxy-server-im-using).

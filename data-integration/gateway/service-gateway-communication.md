@@ -25,10 +25,10 @@ We recommend that you allow the "\*.servicebus.windows.net" Domain Name System (
 
 Alternatively, you allow the IP addresses for your data region in your firewall. Use the JSON files listed below, which are updated weekly.
 
-* [Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
-* [US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
-* [Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
-* [China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
+* [Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
+* [US Gov](https://www.microsoft.com/download/details.aspx?id=57063)
+* [Germany](https://www.microsoft.com/download/details.aspx?id=57064)
+* [China](https://www.microsoft.com/download/details.aspx?id=57062)
 
 Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) periodically in the gateway app.
 
@@ -41,48 +41,46 @@ The following list describes FQDNs used by the gateway.
 
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
-| *.download.microsoft.com |80 |Used to download the installer. The gateway app also uses this domain to check the version and gateway region. |
-| *.powerbi.com |443 |Used to identify the relevant Power BI cluster. |
-| *.analysis.windows.net |443 |Used to identify the relevant Power BI cluster. |
-| *.login.windows.net, login.live.com, and aadcdn.msauth.net |443 |Used to authenticate the gateway app for Azure Active Directory (Azure AD) and OAuth2. |
-| *.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP). |
-| *.servicebus.windows.net |443 and 9350-9354 |Listens on Service Bus Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
-| *.frontend.clouddatahub.net |443 |Deprecated and not required. This domain will be removed from the public documentation as well. |
-| *.core.windows.net |443 |Used by dataflows to write data to Azure Data Lake. |
+| \*.download.microsoft.com |80 |Used to download the installer. The gateway app also uses this domain to check the version and gateway region. |
+| \*.powerbi.com |443 |Used to identify the relevant Power BI cluster. |
+| \*.analysis.windows.net |443 |Used to identify the relevant Power BI cluster. |
+| \*.login.windows.net, login.live.com, and aadcdn.msauth.net |443 |Used to authenticate the gateway app for Azure Active Directory (Azure AD) and OAuth2. |
+| \*.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP). |
+| \*.servicebus.windows.net |443 and 9350-9354 |Listens on Service Bus Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
+| \*.frontend.clouddatahub.net |443 |Deprecated and not required. This domain will be removed from the public documentation as well. |
+| \*.core.windows.net |443 |Used by dataflows to write data to Azure Data Lake. |
 | login.microsoftonline.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
-| *.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
-| *.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
-| *.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
-| | | |
+| \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
+| \*.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
+| \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 
 For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 
 | Ports | GCC | GCC High | DoD |
-| --- | --- | --- | --- | 
-| 80 | *.download.microsoft.com |*.download.microsoft.com |*.download.microsoft.com |
-| 443 | *.powerbigov.us, *.powerbi.com  |*.high.powerbigov.us |*.mil.powerbigov.us|
-| 443 | *.analysis.usgovcloudapi.net |*.high.analysis.usgovcloudapi.net |*.mil.analysis.usgovcloudapi.net |
-| 443 | *.login.windows.net, *.login.live.com, *.aadcdn.msauth.net |[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online)|[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online) |
-|5671-5672| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net|*.servicebus.usgovcloudapi.net |
-|443 and 9350-9354| *.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |*.servicebus.usgovcloudapi.net |
-|443| *.core.usgovcloudapi.net|*.core.usgovcloudapi.net|*.core.usgovcloudapi.net |
-|443| *.login.microsoftonline.com |*.login.microsoftonline.us |*.login.microsoftonline.us |
-|443| *.msftncsi.com |*.msftncsi.com |*.msftncsi.com |
-|443| *.microsoftonline-p.com |*.microsoftonline-p.com |*.microsoftonline-p.com |
-|443| *.dc.applicationinsights.us |*.dc.applicationinsights.us |*.dc.applicationinsights.us |
-| | | | |
+| --- | --- | --- | --- |
+| 80 | \*.download.microsoft.com |\*.download.microsoft.com |\*.download.microsoft.com |
+| 443 | \*.powerbigov.us, \*.powerbi.com  |\*.high.powerbigov.us |\*.mil.powerbigov.us|
+| 443 | \*.analysis.usgovcloudapi.net |\*.high.analysis.usgovcloudapi.net |\*.mil.analysis.usgovcloudapi.net |
+| 443 | \*.login.windows.net, \*.login.live.com, \*.aadcdn.msauth.net |[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online)|[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online) |
+|5671-5672| \*.servicebus.usgovcloudapi.net |\*.servicebus.usgovcloudapi.net|\*.servicebus.usgovcloudapi.net |
+|443 and 9350-9354| \*.servicebus.usgovcloudapi.net |\*.servicebus.usgovcloudapi.net |\*.servicebus.usgovcloudapi.net |
+|443| \*.core.usgovcloudapi.net|\*.core.usgovcloudapi.net|\*.core.usgovcloudapi.net |
+|443| \*.login.microsoftonline.com |\*.login.microsoftonline.us |\*.login.microsoftonline.us |
+|443| \*.msftncsi.com |\*.msftncsi.com |\*.msftncsi.com |
+|443| \*.microsoftonline-p.com |\*.microsoftonline-p.com |\*.microsoftonline-p.com |
+|443| \*.dc.applicationinsights.us |\*.dc.applicationinsights.us |\*.dc.applicationinsights.us |
 
 For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 
 | Ports | China Cloud (Mooncake) |
 | --- | --- |
-| 80 | *.download.microsoft.com |
-| 443 | *.powerbi.cn |
-| 443 | *.asazure.chinacloudapi.cn |
-| 443 | *.login.chinacloudapi.cn |
-|5671-5672| *.servicebus.chinacloudapi.cn |
-|443 and 9350-9354| *.servicebus.chinacloudapi.cn |
-|443| *.chinacloudapi.cn |
+| 80 | \*.download.microsoft.com |
+| 443 | \*.powerbi.cn |
+| 443 | \*.asazure.chinacloudapi.cn |
+| 443 | \*.login.chinacloudapi.cn |
+|5671-5672| \*.servicebus.chinacloudapi.cn |
+|443 and 9350-9354| \*.servicebus.chinacloudapi.cn |
+|443| \*.chinacloudapi.cn |
 |443| login.partner.microsoftonline.cn |
 |443| No Mooncake equivalent&mdash;not required to run the gateway&mdash;only used to check network during failure conditions |
 |443| No Mooncake equivalent&mdash;used during Azure AD sign in. For more information about Azure AD endpoints, go to [Check the endpoints in Azure](https://docs.azure.cn/articles/guidance/developerdifferences)
@@ -90,7 +88,6 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 |433| clientconfig.passport.net |
 |433| aadcdn.msftauth.cn |
 |433| aadcdn.msauth.cn |
-| | |
 
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Service Bus, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).

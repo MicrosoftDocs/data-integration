@@ -89,6 +89,8 @@
       href: vnet/sql-server-and-custom-connectors.md
     - name: Manage virtual network data gateway high availability and load balancing
       href: vnet/high-availability-load-balancing.md
+    - name: Manage virtual network security roles
+      href: vnet/manage-vnet-security-roles.md
     - name: Troubleshoot a virtual network data gateway network
       href: vnet/troubleshoot-data-gateway.md
   - name: Virtual network data gateway FAQs

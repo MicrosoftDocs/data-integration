@@ -2,12 +2,12 @@
 title: Configure log files for the on-premises data gateway
 description: Describes ways to configure how gateway logging data is stored.
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 10/10/2019
 ---
 
 # Configure log files for the on-premises data gateway
 
-There are three categories of service logs for an on-premises data gateway: information, error, and network. This categorization provides a troubleshooting experience that lets you focus on the specific area for an error or issue. You can see the three categories `GatewayInfo.log`, `GatewayErrors.log`, and `GatewayNetwork.log` in the following excerpt from the gateway configuration file *Microsoft.PowerBI.EnterpriseGateway.exe.config*.
+There are three categories of service logs for an on-premises data gateway: information, error, and network. This categorization provides a troubleshooting experience that lets you focus on the specific area for an error or issue. The following excerpt from the gateway configuration file *Microsoft.PowerBI.EnterpriseGateway.exe.config* contains the three categories: `GatewayInfo.log`, `GatewayErrors.log`, and `GatewayNetwork.log`.
 
 ```xml
   <system.diagnostics>
@@ -30,7 +30,6 @@ The following example specifies that 20 log files, the sum total of all files in
 
 ## Next steps
 
-For information on how to export gateway logs for troubleshooting, see [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
-
+For information on how to export gateway logs for troubleshooting, go to [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

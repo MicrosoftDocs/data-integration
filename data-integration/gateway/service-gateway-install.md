@@ -2,7 +2,7 @@
 title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
 ms.topic: conceptual
-ms.date: 5/25/2022
+ms.date: 10/10/2022
 ---
 
 # Install an on-premises data gateway
@@ -20,7 +20,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * .NET Framework 4.7.2 (Gateway release December 2020 and earlier)
 * .NET Framework 4.8 (Gateway release February 2021 and later)
 * A 64-bit version of Windows 8 or a 64-bit version of Windows Server 2012 R2 with [current TLS 1.2 and cipher suites](/power-platform/admin/onpremises-server-cipher-tls-requirements)
-* 4 GB disk space for [performance monitoring](service-gateway-performance.md#gateway-performance-monitoring-public-preview) logs (in default configuration)
+* 4-GB disk space for [performance monitoring](service-gateway-performance.md#gateway-performance-monitoring-public-preview) logs (in default configuration)
 
 > [!NOTE]
 > The minimum screen resolution supported for the on-premises data gateway is 1280 x 800.
@@ -42,7 +42,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * Don't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
 * If a gateway uses a wireless network, its performance might suffer.
 * If you use a virtualization layer for your virtual machine, performance might suffer or perform inconsistently. We recommend that you set the gateway on a wired device for best network performance.
-* You could install other applications on the gateway machine, but this may degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention. 
+* You could install other applications on the gateway machine, but this might degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention.
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. You can't have more than one gateway running in the same mode on the same computer.
 * The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
 * When private link is enabled, disable private link before installing the gateway. After installation, you can re-enable it.
@@ -133,7 +133,7 @@ To create high-availability gateway clusters, you need the November 2017 update 
 
     The gateway is associated with your Office 365 organization account. You manage gateways from within the associated service.
 
-1.  You're now signed in to your account. Select **Close**.
+1. You're now signed in to your account. Select **Close**.
 
     ![Personal mode gateway summary.](media/service-gateway-install/summary-screen-personal.png)
 
@@ -144,6 +144,5 @@ To create high-availability gateway clusters, you need the November 2017 update 
 * [Manage an on-premises data gateway](service-gateway-manage.md)
 
 * [Monitor and optimize gateway performance](service-gateway-performance.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

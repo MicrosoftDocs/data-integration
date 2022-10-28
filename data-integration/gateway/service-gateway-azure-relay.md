@@ -2,12 +2,12 @@
 title: Set the Azure Relay for on-premises data gateway
 description: Learn how to change the details of the Azure Relay for an on-premises data gateway.
 ms.topic: conceptual
-ms.date: 08/19/2020
+ms.date: 10/10/2022
 ---
 
 # Set the Azure Relay for on-premises data gateway
 
-During installation of the on-premises data gateway, the Azure Relays are automatically provisioned. However, you have the option to provide your own relay details. This helps you associate the relay with your Azure subscription and also manage the sender and listener keys for this relay.
+During installation of the on-premises data gateway, the Azure Relays are automatically provisioned. However, you can also provide your own relay details. These details help you associate the relay with your Azure subscription and also manage the sender and listener keys for this relay.
 
 >[!NOTE]
 > Only WCF relays with NetTcp type are supported for this feature.
@@ -18,7 +18,7 @@ During installation of the on-premises data gateway, the Azure Relays are automa
 
    ![Select Provide Relay details.](media/service-gateway-azure-relay/configure-gateway-2.png)
 
-2. You can now provide additional details about your relay.
+2. You can now provide more details about your relay.
 
    ![Provide additional relay details.](media/service-gateway-azure-relay/provide-relay-details.png)
 
