@@ -35,3 +35,11 @@ The VNet gateway doesn't require any Service Endpoint or open ports back to Powe
 
 > [!NOTE]
 > All traffic uses the Azure backbone, including the Swift tunnel.
+
+# Hardware
+
+Each instance of the vnet data gateway has a maximum capacity of:
+  * 2 cores
+  * 8GB of RAM each
+
+At this time, this is the only available hardware configuration and it cannot be scaled or changed.
