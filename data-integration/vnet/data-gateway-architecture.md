@@ -35,3 +35,7 @@ The VNet gateway doesn't require any Service Endpoint or open ports back to Powe
 
 > [!NOTE]
 > All traffic uses the Azure backbone, including the Swift tunnel.
+
+## VNET region and data transfer
+The VNET data gateway must be created in the home region of the tenant to work with Power BI. However, when creating it, you can choose an Azure VNET and subnet from any region. Your data will go to this subnet and only metadata is ever moved to the home region. 
+
