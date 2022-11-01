@@ -38,8 +38,8 @@ The VNet gateway doesn't require any Service Endpoint or open ports back to Powe
 
 # Hardware
 
-Each instance of the vnet data gateway has a maximum capacity of:
+Each instance of the VNet data gateway has a maximum capacity of:
   * 2 cores
   * 8GB of RAM each
 
-At this time, this is the only available hardware configuration and it cannot be scaled or changed.
+At this time, this is the only available hardware configuration and it can't be scaled or changed.
