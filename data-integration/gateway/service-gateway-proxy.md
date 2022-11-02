@@ -2,7 +2,7 @@
 title: Configure proxy settings for the on-premises data gateway
 description: Provides information about configuration of proxy settings for the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 10/10/2021
+ms.date: 10/27/2022
 ---
 # Configure proxy settings for the on-premises data gateway
 
@@ -75,7 +75,9 @@ To learn more about the configuration of the proxy elements for .NET configurati
 
 ## Change the gateway service account to a domain user
 
-As explained earlier, when you configure the proxy settings to use default credentials, you might come across authentication issues with your proxy. This situation occurs when the default service account is the Service SID, and not an authenticated domain user. You can change the service account of the gateway to allow proper authentication with your proxy. For more information about how to change the gateway service account, go to [Change the on-premises data gateway service account](service-gateway-service-account.md).
+As explained earlier, when you configure the proxy settings to use default credentials, you might come across authentication issues with your proxy. This situation occurs when the default service account is the Service SID, and not an authenticated domain user.
+If the proxy on your organization requires a domain account in order to authenticate the request, you can change the service account of the gateway to a domain service account to allow the proper authentication with your proxy.
+For more information about how to change the gateway service account, go to [Change the on-premises data gateway service account](service-gateway-service-account.md).
 
 > [!NOTE]
 > We recommend that you use a managed service account to avoid having to reset passwords. Learn how to create a [managed service account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd548356(v=ws.10)) within Active Directory.
