@@ -14,6 +14,10 @@ After you've [created](create-data-gateways.md) a virtual network (VNet) data ga
 
 ![Manage VNet data gateways.](media/manage-vnet-data-gateways.png)
 
+## Manage access to creating VNet data gateways (gateway installer setting)
+
+Access to creating a VNet data gateway can be limited to selected people only. To do this, you must be an Azure AD Global administrator (which includes Global admins) or a Power BI service administrator. Use the **Manage gateway installers** option to manage who can create a VNet data gateway in your enterprise. This operation isn’t available for gateway admins. Go to the [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) documentation to learn more.
+
 ## Manage admins
 
 You can manage admins for this VNet data gateway like you do for standard data gateways in the Power Platform admin center. To add or remove admins, select a gateway, and then select **Manage Users**.
