@@ -2,7 +2,7 @@
 title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 11/14/2022
 ---
 
 # Install an on-premises data gateway
@@ -43,7 +43,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * If a gateway uses a wireless network, its performance might suffer.
 * If you use a virtualization layer for your virtual machine, performance might suffer or perform inconsistently. We recommend that you set the gateway on a wired device for best network performance.
 * You could install other applications on the gateway machine, but this might degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention.
-* You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. You can't have more than one gateway running in the same mode on the same computer.
+* You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. An on-premises data gateway (personal mode) can be used only with Power BI. You can't have more than one gateway running in the same mode on the same computer.
 * The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
 * When private link is enabled, disable private link before installing the gateway. After installation, you can re-enable it.
 
