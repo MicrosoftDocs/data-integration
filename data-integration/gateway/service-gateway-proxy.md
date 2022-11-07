@@ -83,7 +83,7 @@ As explained earlier, when you configure the proxy settings to use default crede
 
 ## Next steps
 
-* [Step by step guide on how to configure your proxy settings for the on-premises Data Gateway](service-gateway-proxy-setup-guide.md)
+* [Step guide to configure your proxy settings for the on-premises data gateway](service-gateway-proxy-setup-guide.md)
 * [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

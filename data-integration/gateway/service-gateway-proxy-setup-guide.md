@@ -1,10 +1,10 @@
 ---
-title: Step by step guide on how to configure your proxy settings for the on-premises data gateway
+title: Step guide to configure your proxy settings for the on-premises data gateway
 description: Provides step by step instructions on how to configure the proxy settings for the on-premises data gateway.
 ms.topic: conceptual
 ms.date: 10/25/2022
 ---
-# Step by step guide on how to configure your proxy settings for the on-premises data gateway
+# Step guide to configure your proxy settings for the on-premises data gateway
 
 If your work environment requires Microsoft on-premises data gateway to go through a Proxy Server for connecting to the service, follow the steps below in order to configure the proxy settings.
 
@@ -46,7 +46,7 @@ The following example routes all requests through a specific proxy with the IP a
 
 7. Open the on-premises data gateway application, navigate to “Service Settings” tab and press “Restart now” to restart the Gateway service and apply the new proxy settings.
 
-### How to verify if my proxy configuration is consistent for my on-premises data gateway
+## Verify consistent proxy configuration
 
 1. Ensure you’re running September 2022 version or higher
 2. Open the on-premises data gateway application
@@ -63,12 +63,16 @@ The following example routes all requests through a specific proxy with the IP a
     Review <https://docs.microsoft.com/data-integration/gateway/service-gateway-proxy>  for additional information about configuring proxies for the Gateway.
     ”
 
-### Examples of possible behaviors that may be related to inconsistent or missing proxy configuration
+## Inconsistent or missing proxy configuration behaviors
 
 If the proxy definition is either missing or inconsistent, you may experience different behaviors with your on-premises data gateway, few examples are:
 
 1. A dataset or dataflow refresh failure, error message example: “Error: Unable to connect to the remote server”
 2. While launching on premises data gateway, you fail to sign-in, the sign-in prompt appears but its content can't be displayed or you do see an error message page.
 3. The Network Port test results report failures connecting to the servers
+
+## Next steps
+
+* [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
