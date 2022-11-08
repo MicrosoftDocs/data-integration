@@ -132,7 +132,7 @@ sections:
       - question: |
           How can I keep my data within the same region while using an on-premises data gateway?
         answer: |
-          More information: [Keep data in the region where it's stored](service-gateway-azure-relay.md#keep-data-in-the-region-where-it's-stored)
+          More information: [Keep data in the region where it's stored](service-gateway-azure-relay.md#keep-data-in-the-region-where-its-stored)
 
   - name: High availability and disaster recovery
     questions:
