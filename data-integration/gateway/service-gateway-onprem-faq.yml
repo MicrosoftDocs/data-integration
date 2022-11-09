@@ -3,7 +3,7 @@ metadata:
   title: On-premises data gateway FAQ
   description: This article is the on-premises data gateway FAQ. It collects frequently asked questions about the gateway into one spot.
   ms.topic: faq
-  ms.date: 09/20/2021
+  ms.date: 11/8/2022
 title: On-premises data gateway FAQ
 summary: |
 
@@ -128,6 +128,11 @@ sections:
           Does Azure ExpressRoute eliminate the need for a gateway?  
         answer: |
           No. A gateway is still required when connecting to on-premises data sources.
+
+      - question: |
+          How can I keep my data within the same region while using an on-premises data gateway?
+        answer: |
+          More information: [Keep data in the region where it's stored](service-gateway-azure-relay.md#keep-data-in-the-region-where-its-stored)
 
   - name: High availability and disaster recovery
     questions:

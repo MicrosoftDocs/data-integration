@@ -20,6 +20,8 @@
         href: gateway/service-gateway-app.md
       - name: "Configure proxy settings"
         href: gateway/service-gateway-proxy.md
+      - name: "Step by step guide on configuring your proxy settings"
+        href: gateway/service-gateway-proxy-setup-guide.md
       - name: "Change the gateway service account"
         href: gateway/service-gateway-service-account.md
       - name: "Set the data center region"
