@@ -76,6 +76,8 @@ If the proxy definition is either missing or inconsistent, you can experience di
 
 ## Next steps
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5cv1m]
+
 * [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
