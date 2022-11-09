@@ -85,6 +85,7 @@ For more information about how to change the gateway service account, go to [Cha
 
 ## Next steps
 
+* [Step by step guide on configuring your proxy settings](service-gateway-proxy-setup-guide.md)
 * [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
