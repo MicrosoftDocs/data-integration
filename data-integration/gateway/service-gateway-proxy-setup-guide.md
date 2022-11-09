@@ -1,10 +1,10 @@
 ---
-title: Step guide to configure your proxy settings for the on-premises data gateway
+title: Step by step guide on configuring your proxy settings
 description: Provides step by step instructions on how to configure the proxy settings for the on-premises data gateway.
 ms.topic: conceptual
 ms.date: 10/25/2022
 ---
-# Step guide to configure your proxy settings for the on-premises data gateway
+# Step by step guide on configuring your proxy settings
 
 If your work environment requires Microsoft on-premises data gateway to go through a Proxy Server for connecting to the service, follow the steps below in order to configure the proxy settings.
 
