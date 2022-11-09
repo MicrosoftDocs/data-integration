@@ -35,3 +35,16 @@ The VNet gateway doesn't require any Service Endpoint or open ports back to Powe
 
 > [!NOTE]
 > All traffic uses the Azure backbone, including the Swift tunnel.
+
+## Hardware
+
+Each instance of the VNet data gateway has a maximum capacity of:
+
+* 2 cores
+* 8GB of RAM each
+
+At this time, this is the only available hardware configuration and it can't be scaled or changed.
+
+## VNet region and data transfer
+
+The VNet data gateway must be created in the home region of the tenant to work with Power BI. However, when creating it, you can choose an Azure VNet and subnet from any region. Your data will go to this subnet and only metadata is ever moved to the home region. 
