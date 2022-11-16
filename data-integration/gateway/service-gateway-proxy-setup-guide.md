@@ -56,7 +56,7 @@ If your work environment requires Microsoft on-premises data gateway to go throu
 4. Under **Network ports test**, select **Start new test**.
 5. Once the network ports test is complete, select **Open last completed test results**.
 6. If your proxy configuration is consistent across the three required configuration files, a `Proxy configuration : Proxy settings match for all Gateway process configurations.` message is displayed.
-7. Otherwise, if proxy configuration isn't consistent, the follwoing information is displayed:
+7. Otherwise, if the proxy configuration isn't consistent, the following information is displayed:
 
    ```
    Proxy configuration : Proxy settings are not consistent. Please ensure that the proxy configuration matches across the files listed below:
