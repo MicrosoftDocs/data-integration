@@ -2,7 +2,7 @@
 title: Configure proxy settings for the on-premises data gateway
 description: Provides information about configuration of proxy settings for the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 10/27/2022
+ms.date: 11/17/2022
 ---
 # Configure proxy settings for the on-premises data gateway
 
@@ -87,5 +87,3 @@ For more information about how to change the gateway service account, go to [Cha
 
 * [Step by step guide on configuring your proxy settings](service-gateway-proxy-setup-guide.md)
 * [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)  
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

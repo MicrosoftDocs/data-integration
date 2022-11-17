@@ -4,7 +4,7 @@ description: Learn about and download previous versions of the on-premises data 
 author: miquelladeboer
 ms.author: mideboer
 ms.topic: conceptual
-ms.date: 10/27/2022
+ms.date: 11/17/2022
 ---
 
 # Previous monthly updates to the on-premises data gateways
@@ -46,5 +46,3 @@ This article describes the last six updates for the on-premises data gateways an
 ## Next steps
 
 [Install an on-premises data gateway](service-gateway-install.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

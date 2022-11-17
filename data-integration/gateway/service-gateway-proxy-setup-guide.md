@@ -2,7 +2,7 @@
 title: Step by step guide on configuring your proxy settings
 description: Provides step by step instructions on how to configure the proxy settings for the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 10/25/2022
+ms.date: 11/17/2022
 ---
 # Step by step guide on configuring your proxy settings
 
@@ -31,7 +31,7 @@ If your work environment requires Microsoft on-premises data gateway to go throu
 5. Open the second file that's used for the actual Windows service that interacts with the cloud service using the gateway and handles the requests, that is, *Microsoft.PowerBI.EnterpriseGateway.exe.config* and repeat step 4.
 6. For the third configuration file that's used for the gateway to connect to the data sources&mdash;typically cloud data sources&mdash;open the subfolder *m* in the installation folder and then the file *Microsoft.Mashup.Container.NetFX45.exe.config*. Repeat step 4 to insert the proxy configuration into this file.
 
-   If the file is in the default state, you'll need to add the `system.net` tag, together with the proxy definition, as in the follwoing example:
+   If the file is in the default state, you'll need to add the `system.net` tag, together with the proxy definition, as in the following example:
 
     ```xml
     <system.net>
@@ -79,5 +79,3 @@ If the proxy definition is either missing or inconsistent, you can experience di
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5cv1m]
 
 * [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

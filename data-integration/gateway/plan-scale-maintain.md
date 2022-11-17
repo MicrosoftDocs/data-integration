@@ -4,7 +4,7 @@ title: Plan, scale, and maintain a business-critical gateway solution
 description: Learn how to plan, scale, and maintain gateways and gateway clusters that are deployed in business-critical scenarios.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 11/17/2022
 ---
 
 # Plan, scale, and maintain a business-critical gateway solution  
@@ -34,7 +34,7 @@ To ensure optimal scalability, performance, and throughput, follow the recommend
 
 ### Know all your gateway recovery keys
 
-Ensure that all gateway recovery keys are **known and kept in a safe place**. Without a recovery key, gateways can't be recovered or downgraded. This is by design. If you lose your recovery keys, the only option is to create new gateways and recreate the data sources. Also, you can't add new gateways to the cluster without the recovery key, which would limit future scalability.
+Ensure that all gateway recovery keys are **known and kept in a safe place**. Without a recovery key, gateways can't be recovered or downgraded. This limitation is by design. If you lose your recovery keys, the only option is to create new gateways and recreate the data sources. Also, you can't add new gateways to the cluster without the recovery key, which would limit future scalability.
 
 Store your recovery keys in a secure place just as you would store administrative credentials, such as a password safe, which can be accessed only by authorized administrators.
 
@@ -93,17 +93,17 @@ Depending on your workload, consider optimizing your gateway server for memory o
 
 Scaling is an important aspect of a business-critical gateway cluster. As your usage with the gateway cluster grows, the gateway cluster needs to be scaled up and/or scaled out to ensure good performance. We recommend that you start scaling out a gateway cluster if you've previously scaled up the gateways in the cluster.
 
-Scaling and distributing traffic load across individual nodes within a cluster is a complex process that varies depending on each individual scenario. While there's no definitive model to ensure that all gateway traffic will be predictably serviced, the limits listed below indicate a scaling need. In general, we recommend scaling out (adding nodes to the cluster) preferentially to scaling up (increasing CPU, RAM, or disk space on individual nodes) as scaling out tends to be more effective overall in the ability of the system as a whole to handle extra traffic. Scaling out also has a positive impact on total bandwidth the cluster can process, whereas scaling up generally doesn't. When one or more gateway nodes show indications of reaching the thresholds described below, scaling out the cluster should be strongly considered.
+Scaling and distributing traffic load across individual nodes within a cluster is a complex process that varies depending on each individual scenario. While there's no definitive model to ensure that all gateway traffic will be predictably serviced, the limits listed below indicate a scaling need. In general, we recommend scaling out (adding nodes to the cluster) preferentially to scaling up (increasing CPU, RAM, or disk space on individual nodes). Scaling out tends to be more effective overall in the ability of the system as a whole to handle extra traffic. Scaling out also has a positive impact on total bandwidth the cluster can process, whereas scaling up generally doesn't. When one or more gateway nodes show indications of reaching the thresholds described below, scaling out the cluster should be strongly considered.
 
-* CPU: CPU is above 80% for extended periods of time, however occasional short (under 5 minutes) spikes that max out CPU aren't abnormal.
+* CPU: CPU is above 80% for extended periods of time, however occasional short (under 5 minutes) spikes that max out CPUs aren't abnormal.
 
 * RAM: Available memory dips below 20% regularly.
 
-* Disk: Free disk space dips below 5 GB frequently. This could also indicate a need to configure caching or spooling directories more strategically.
+* Disk: Free disk space dips below 5 GB frequently. This dip could also indicate a need to configure caching or spooling directories more strategically.
 
 * Concurrency: Running more than 40 queries simultaneously on a single node.
 
-Since refreshes and queries distributed across gateway nodes can have vastly different profiles, we also recommend extra scrutiny be placed on long-running or memory-intensive jobs. Query optimization in such cases can have a huge impact on performance and scalability, not only for the individual reports and refreshes, but on the system as a whole. We recommend isolating refreshes in question to a single dedicated gateway cluster to evaluate performance characteristics and perform optimization using query plan diagnostics, folding indicators, and all other published performance recommendations to minimize the amount of data retrieved and the amount of post-processing required. This can also be used as a long-term strategy to sequester long-running ETL jobs to a dedicated gateway cluster in order to reduce contention with other typical refreshes across the organization. 
+Since refreshes and queries distributed across gateway nodes can have vastly different profiles, we also recommend extra scrutiny be placed on long-running or memory-intensive jobs. Query optimization in such cases can have a huge impact on performance and scalability, not only for the individual reports and refreshes, but on the system as a whole. We recommend isolating refreshes in question to a single dedicated gateway cluster to evaluate performance characteristics and perform optimization using query plan diagnostics, folding indicators, and all other published performance recommendations. This isolation minimizes the amount of data retrieved and the amount of post-processing required. This isolation can also be used as a long-term strategy to sequester long-running ETL jobs to a dedicated gateway cluster in order to reduce contention with other typical refreshes across the organization.
 
 ##### Scaling up a gateway cluster
 
@@ -111,7 +111,7 @@ Since refreshes and queries distributed across gateway nodes can have vastly dif
 
 Scaling up is when you increase the specifications (CPU, memory, disk, and so on) of your gateway servers.
 
-Scaling up might be required if the maximum CPU or memory is reached when the gateway executes one or more queries. A query can only be executed on one gateway server. That's why the gateway server must have enough resources available to process the entire query along with the resulting data.
+Scaling up might be required if the maximum CPU or memory is reached when the gateway executes one or more queries. A query can only be executed on one gateway server, which is why the gateway server must have enough resources available to process the entire query along with the resulting data.
 
 ##### Scaling out a gateway cluster
 

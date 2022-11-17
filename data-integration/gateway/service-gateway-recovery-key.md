@@ -2,7 +2,7 @@
 title: Change the recovery key for an on-premises data gateway
 description: You can change the recovery key, which the gateway uses to create extra keys that encrypt data source and connection credentials.
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 11/17/2022
 ---
 
 # Change the recovery key for an on-premises data gateway
@@ -35,7 +35,7 @@ Use the following steps to change the recovery key.
 
     ![Configure new recovery key.](media/service-gateway-recovery-key/configure-new-recovery-key.png)
 
-    After you've created the new key, the app shows that there's now a secondary or _legacy_ recovery key. The gateway maintains both keys on the machine where it's installed, so connections that use the legacy recovery key don't fail. If you want to delete the legacy key, see [Delete the legacy recovery key](#delete-the-legacy-recovery-key).
+    After you've created the new key, the app shows that there's now a secondary or _legacy_ recovery key. The gateway maintains both keys on the machine where it's installed, so connections that use the legacy recovery key don't fail. If you want to delete the legacy key, go to [Delete the legacy recovery key](#delete-the-legacy-recovery-key).
 
     ![Legacy recovery key.](media/service-gateway-recovery-key/legacy-recovery-key.png)
 
@@ -52,5 +52,3 @@ After you've created a new recovery key, you can delete the legacy recovery key.
 1. On the **Recovery Keys** tab, select **Delete legacy recovery key**.
 
     ![Delete legacy recovery key.](media/service-gateway-recovery-key/delete-legacy-recovery-key.png)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

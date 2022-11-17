@@ -3,7 +3,7 @@ metadata:
   title: On-premises data gateway FAQ
   description: This article is the on-premises data gateway FAQ. It collects frequently asked questions about the gateway into one spot.
   ms.topic: faq
-  ms.date: 11/8/2022
+  ms.date: 11/17/2022
 title: On-premises data gateway FAQ
 summary: |
 
@@ -18,7 +18,7 @@ sections:
       - question: |
           Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials are updated recently.
         answer: |
-          When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). This limitation for long running refreshes exists for VNET gateways as well as on-premises data gateways.
+          When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). This limitation for long running refreshes exists for VNET gateways and on-premises data gateways.
 
       - question: |
           What are the requirements for the gateway?  
@@ -48,7 +48,7 @@ sections:
       - question: |
           Where are my credentials stored?  
         answer: |
-          The credentials that you enter for a data source are encrypted and stored in the gateway cloud service. The credentials are decrypted at the gateway on premises. For more information about credential encryption in Power BI, see [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
+          The credentials that you enter for a data source are encrypted and stored in the gateway cloud service. The credentials are decrypted at the gateway on premises. For more information about credential encryption in Power BI, go to [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
           
       - question: |
           What is the actual Windows service called?  
@@ -68,12 +68,12 @@ sections:
       - question: |
           What if I block outbound connections? What do I need to open?  
         answer: |
-          See [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
+          Go to [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
           
       - question: |
           Do I need to unblock the Azure Datacenter IP list? Where do I get the list?  
         answer: |
-          If you block outbound IP traffic, you might need to unblock the Azure Datacenter IP list. The gateway communicates with Azure Service Bus by using an IP address and a fully qualified domain name. The Azure Datacenter IP list is updated weekly. For more information, see [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
+          If you block outbound IP traffic, you might need to unblock the Azure Datacenter IP list. The gateway communicates with Azure Service Bus by using an IP address and a fully qualified domain name. The Azure Datacenter IP list is updated weekly. For more information, go to [Enable outbound Azure connections](service-gateway-communication.md#enable-outbound-azure-connections).
           
       - question: |
           What is the latency for running queries from the gateway to a data source? What is the best architecture?  
@@ -85,7 +85,7 @@ sections:
       - question: |
           How are results sent back to the cloud?  
         answer: |
-          The results are sent through Azure Service Bus. For more information, see [On-premises data gateway architecture](service-gateway-onprem-indepth.md).
+          The results are sent through Azure Service Bus. For more information, go to [On-premises data gateway architecture](service-gateway-onprem-indepth.md).
           
       - question: |
           Can I place the gateway in a perimeter network (also known as DMZ, demilitarized zone, and screened subnet)?  
@@ -102,7 +102,7 @@ sections:
       - question: |
           If the server on which the gateway is installed is using dual stack to be assigned both IPv4 and IPv6 addresses, would IPv4 or IPv6 be the priority for gateway communication?
         answer: |
-          This depends on Windows or the relevant data source drivers. This behavior is configurable in both Windows and various drivers, but isn't under the gateway’s control.
+          This priority depends on Windows or the relevant data source drivers. This behavior is configurable in both Windows and various drivers, but isn't under the gateway's control.
 
       - question: |
           Does the gateway support cross-tenant Azure AD access?
@@ -112,12 +112,12 @@ sections:
       - question: |
           Can I force the gateway to use HTTPS traffic with Azure Service Bus instead of TCP?  
         answer: |
-          Yes, for more information, see [Force HTTPS communication with Azure Service Bus](service-gateway-communication.md#force-https-communication-with-azure-service-bus). Turning on this feature has little effect on performance.
+          Yes, for more information, go to [Force HTTPS communication with Azure Service Bus](service-gateway-communication.md#force-https-communication-with-azure-service-bus). Turning on this feature has little effect on performance.
           
       - question: |
           Are the on-premises data gateway and Data Management Gateway, which is used by Azure Machine Learning Studio and Azure Data Factory, the same thing?  
         answer: |
-          No, they are different products. To get more information about Data Management Gateway, which is now called Self-hosted Integration Runtime, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).
+          No, they're different products. To get more information about Data Management Gateway, which is now called Self-hosted Integration Runtime, go to [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).
           
       - question: |
           Can the person who sets up the gateway in the Azure portal be different from the one who installs that gateway?  
@@ -153,15 +153,15 @@ sections:
 
           ## Troubleshooting
 
-          For more information, see [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md).
+          For more information, go to [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md).
           
       - question: |
           Where are the gateway logs located?  
         answer: |
-          See [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
+          Go to [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
           
       - question: |
-          How can I see what queries are sent to the on-premises data source?  
+          How can I tell what queries are sent to the on-premises data source?  
         answer: |
           You can enable query tracing by turning on [additional logging](service-gateway-performance.md#slow-performing-queries). The logs include the queries that are sent. Remember to turn off query tracing when you're done troubleshooting. Having query tracing enabled causes the logs to be larger.
           
@@ -172,7 +172,7 @@ sections:
       - question: |
           Can I have more than one admin for a gateway?  
         answer: |
-          Yes, when you manage a gateway, you can go to the administrator's tab to add additional admins. You can also have security groups as admins.
+          Yes, when you manage a gateway, you can go to the administrator's tab to add more admins. You can also have security groups as admins.
 
       - question: |
           Does the gateway admin need to be an admin on the machine where the gateway is installed?  
@@ -207,6 +207,4 @@ additionalContent: |
 
   ## Next steps
     * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
-          
-          
-    [!INCLUDE[footer-include](../includes/footer-banner.md)]
+ 

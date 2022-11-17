@@ -3,7 +3,7 @@ title: Troubleshoot a virtual network (VNet) network
 description: Describes how to use the Power Platform admin center to troubleshoot network connectivity issues between a virtual network data gateway and the data source.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 4/6/2022
+ms.date: 11/17/2022
 ---
 
 # Troubleshoot a virtual network data gateway network
@@ -35,7 +35,7 @@ The troubleshooting information includes the following data:
    >[!Note]
    >The troubleshooting panel automatically triggers a status check. If the status fails, then the troubleshooting button is disabled because the gateway isn't connected. Refreshing the status will clear the troubleshooting result state.
 
-4. If the status check succeeded, you can see your ethernet adapter information, including the DNS servers, IPv4 address, subnet mask, and the default gateway.
+4. If the status check succeeded, you can view your ethernet adapter information, including the DNS servers, IPv4 address, subnet mask, and the default gateway.
 
    ![Image of the Troubleshoot network panel after the status check succeeded, with IP values displayed for DN servers, IPv4 address, Subnet mask, and Default gateway.](media/troubleshoot-data-gateway/status-check-succeeded.png)
 
