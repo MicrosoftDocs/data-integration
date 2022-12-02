@@ -2,7 +2,7 @@
 title: What is an on-premises data gateway?
 description: Learn the basics about on-premises data gateways, which enable quick and secure data transfer between on-premises data and several Microsoft cloud services.
 ms.topic: overview
-ms.date: 10/5/2022
+ms.date: 11/17/2022
 ---
 
 # What is an on-premises data gateway?
@@ -37,7 +37,7 @@ There are four main steps for using a gateway.
 1. [Download and install the gateway](service-gateway-install.md) on a local computer.
 1. [Configure](service-gateway-app.md) the gateway based on your firewall and other network requirements.
 1. [Add gateway admins](service-gateway-manage.md) who can also manage and administer other network requirements.
-1. [Troubleshoot](service-gateway-tshoot.md) the gateway in case of errors.
+1. [Troubleshoot](service-gateway-tshoot.md) the gateway if there are errors.
 
 ## Considerations
 
@@ -65,5 +65,3 @@ This document contains general information about the on-premises data gateway th
 ## Next steps
 
 * [Install the on-premises data gateway](service-gateway-install.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

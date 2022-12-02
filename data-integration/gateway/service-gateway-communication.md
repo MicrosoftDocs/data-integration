@@ -2,7 +2,7 @@
 title: Adjust communication settings for the on-premises data gateway
 description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Service Bus, how to force the gateway to communicate with Azure Service Bus by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
 ms.topic: conceptual
-ms.date: 07/30/2021
+ms.date: 11/17/2022
 ---
 
 # Adjust communication settings for the on-premises data gateway
@@ -61,7 +61,7 @@ For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 | 80 | \*.download.microsoft.com |\*.download.microsoft.com |\*.download.microsoft.com |
 | 443 | \*.powerbigov.us, \*.powerbi.com  |\*.high.powerbigov.us |\*.mil.powerbigov.us|
 | 443 | \*.analysis.usgovcloudapi.net |\*.high.analysis.usgovcloudapi.net |\*.mil.analysis.usgovcloudapi.net |
-| 443 | \*.login.windows.net, \*.login.live.com, \*.aadcdn.msauth.net |[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online)|[See documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online) |
+| 443 | \*.login.windows.net, \*.login.live.com, \*.aadcdn.msauth.net |[Go go documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online)|[Go to documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online) |
 |5671-5672| \*.servicebus.usgovcloudapi.net |\*.servicebus.usgovcloudapi.net|\*.servicebus.usgovcloudapi.net |
 |443 and 9350-9354| \*.servicebus.usgovcloudapi.net |\*.servicebus.usgovcloudapi.net |\*.servicebus.usgovcloudapi.net |
 |443| \*.core.usgovcloudapi.net|\*.core.usgovcloudapi.net|\*.core.usgovcloudapi.net |
@@ -128,7 +128,7 @@ You can use the [gateway app](service-gateway-app.md) to force the gateway to ad
 
 After you make this change and then select **Apply**, the gateway Windows service restarts automatically so that the change can take effect. The **Apply** button appears only when you make a change.
 
-To restart the gateway Windows service from the gateway app, see [Restart a gateway](service-gateway-restart.md).
+To restart the gateway Windows service from the gateway app, go to [Restart a gateway](service-gateway-restart.md).
 
 > [!NOTE]
 >If the gateway can't communicate by using TCP, it automatically uses HTTPS. The selection in the gateway app always reflects the current protocol value.
@@ -144,7 +144,7 @@ By default, the gateway uses Transport Layer Security (TLS) 1.2 to communicate w
 ```
 
 > [!NOTE]
-> Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, see [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings).
+> Adding or modifying these registry keys applies the change to all .NET applications. For information about registry changes that affect TLS for other applications, go to [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings).
 
 ## Service tags
 
@@ -162,5 +162,3 @@ The AzureCloud service tag represents all global Azure Data Center IP addresses.
 ## Next steps
 
 * [Configure the gateway log file](service-gateway-log-files.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

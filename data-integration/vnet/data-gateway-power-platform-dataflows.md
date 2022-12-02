@@ -3,7 +3,7 @@ title: Use virtual network (VNet) data gateway in Power Platform dataflows
 description: Learn about how to connect to data using the virtual network (VNet) data gateway, along with details of supported data sources.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 10/17/2022
+ms.date: 11/17/2022
 ---
 
 # Use virtual network (VNet) data gateway in Power Platform dataflows
@@ -23,7 +23,7 @@ To connect to data using a VNet data gateway:
 
    ![Screenshot showing the New Dataflow dialog box in Power Apps, with the name of the new dataflow entered in the Name text box.](media/create-a-new-dataflow.png)
 
-2. Once you provide the connection details and then connect to data, you'll now see VNet data gateways included in the **On-premises data gateway** selections.
+2. Once you provide the connection details and then connect to data, the VNet data gateways are now included in the **On-premises data gateway** selections.
 
    ![Screenshot showing the Power Query connect to data source dialog box with VNet data gateway names included in the on-premises data gateway selection box.](media/vnet-gateway-selections.png)
 
@@ -48,9 +48,9 @@ The following Azure data sources already available on Power Query Online are sup
 
 VNet data gateways aren't supported for:
 
-* data sources requiring 3rd party drivers like SAP, Oracle, and so on
-* the [Web](/power-query/connectors/web/web) connector
-* the [ODBC](/power-query/connectors/odbc) connector
+* Data sources requiring third-party drivers like SAP, Oracle, and so on
+* The [Web](/power-query/connectors/web/web) connector
+* The [ODBC](/power-query/connectors/odbc) connector
 
 >[!Note]  
 >
