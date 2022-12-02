@@ -2,12 +2,12 @@
 title: Manage on-premises data gateway high-availability clusters and load balancing
 description: You can create clusters of on-premises data gateways to provide high availability for your enterprise. In addition, you can configure your clusters to provide load balancing over multiple computers.
 ms.topic: conceptual
-ms.date: 10/12/2021
+ms.date: 11/17/2022
 ---
 
 # Manage on-premises data gateway high-availability clusters and load balancing
 
-You can use an on-premises data gateway cluster to avoid single points of failure and to load balance traffic across gateways in a cluster. To add new gateway members to a gateway cluster, see [Add another gateway to create a cluster](service-gateway-install.md#add-another-gateway-to-create-a-cluster).
+You can use an on-premises data gateway cluster to avoid single points of failure and to load balance traffic across gateways in a cluster. To add new gateway members to a gateway cluster, go to [Add another gateway to create a cluster](service-gateway-install.md#add-another-gateway-to-create-a-cluster).
 
 ## High-availability clusters for an on-premises data gateway
 
@@ -22,7 +22,7 @@ The gateway cloud service always uses the primary gateway in a cluster unless th
 
 After you create a cluster of two or more gateways, all gateway management operations apply to every gateway in the cluster. These operations include granting administrative permissions to a gateway and adding data sources or connections.
 
-For example, when admins select **Manage gateways** in Power BI, they see the list of registered clusters or individual gateways. But, they don't see the individual gateway instances that are members of the cluster.
+For example, when admins select **Manage gateways** in Power BI, the list of registered clusters or individual gateways is displayed. But the individual gateway instances that are members of the cluster aren't displayed.
 
 All requests are routed to the primary instance of a gateway cluster. If the primary gateway instance isn't online, the request is routed to another gateway instance in the cluster.
 
@@ -39,7 +39,7 @@ For example, to provide load balancing from the Power BI service, select the gea
 
 ## Load balance based on CPU, Memory, concurrency limits
 
-As mentioned earlier, the selection of a gateway during load balancing is random. Gateway admins can, however, throttle the resource usage of each gateway member. With throttling, you can make sure either a gateway member or the entire gateway cluster isn't overloaded. Overloaded system resources may cause request failures. 
+As mentioned earlier, the selection of a gateway during load balancing is random. Gateway admins can, however, throttle the resource usage of each gateway member. With throttling, you can make sure either a gateway member or the entire gateway cluster isn't overloaded. Overloaded system resources may cause request failures.
 
 If a gateway cluster with load balancing enabled receives a request from one of the cloud services (like Power BI), it randomly selects a gateway member. If this member gateway is already at or over one of the throttling limits specified below, another member within the cluster is selected. If all members within the cluster are in the same state, the request fails.
 
@@ -67,5 +67,3 @@ A gateway admin should update the following settings in  the _Microsoft.PowerBI.
 ## Next steps
 
 [PowerShell support for gateway clusters](service-gateway-powershell-support.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

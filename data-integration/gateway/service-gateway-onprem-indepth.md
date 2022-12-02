@@ -2,7 +2,7 @@
 title: On-premises data gateway architecture
 description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Azure Active Directory and your on-premises Active Directory.
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 11/17/2022
 ms.custom: intro-internal
 ---
 
@@ -25,7 +25,7 @@ Let's first look at what happens when you interact with an element that is conne
 > [!NOTE]
 > Depending on the cloud service, you might need to configure a data source for the gateway.
 
-1. The cloud service creates a query and the encrypted credentials for the on-premises data source. The query and credentials are sent to the gateway queue for processing. For more information about credential encryption in Power BI, see [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
+1. The cloud service creates a query and the encrypted credentials for the on-premises data source. The query and credentials are sent to the gateway queue for processing. For more information about credential encryption in Power BI, go to [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
 1. The gateway cloud service analyzes the query and pushes the request to [Azure Service Bus Messaging](/azure/service-bus-messaging/service-bus-messaging-overview/).
 1. Azure Service Bus sends the pending requests to the gateway. Both the gateway and Power BI service are implemented to only accept TLS 1.2 traffic.
 1. The gateway gets the query, decrypts the credentials, and connects to one or more data sources with those credentials.
@@ -82,6 +82,3 @@ There are different ways to match your on-premises Active Directory accounts wit
 * [On-premises data gateway FAQ](service-gateway-onprem-faq.yml)  
 * [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/)  
 * [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Troubleshoot the on-premises data gateway
 description: This article provides ways for you to troubleshoot issues you might have with the on-premises data gateway. It provides potential workarounds to known issues and tools to assist you.
 ms.topic: troubleshooting
-ms.date: 10/7/2022
+ms.date: 11/17/2022
 ---
 
 # Troubleshoot the on-premises data gateway
@@ -38,11 +38,11 @@ You might receive this error if you're trying to install the gateway on a domain
 
 ### Out-of-date antivirus software
 
-You might encounter installation failures if the antivirus software on the installation machine is out of date. You can either update the antivirus installation or disable the antivirus software only for the duration of the gateway installation. After the installation is finished, reenable the antivirus software.
+You might encounter installation failures if the antivirus software on the installation machine is out of date. You can either update the antivirus installation or disable the antivirus software only during the gateway installation. After the installation is finished, reenable the antivirus software.
 
 ### McAfee Endpoint Defender software enabled
 
-You might encounter installation failure when anitivirus software, like McAfee Endpoint Defender, is enabled. Configure your antivirus software to ignore the gateway process.
+You might encounter installation failure when antivirus software, like McAfee Endpoint Defender, is enabled. Configure your antivirus software to ignore the gateway process.
 
 ### Same or older gateway version
 
@@ -52,7 +52,7 @@ You might come across the following error if you try to install the same version
 
 ### Error: The user profile is a temporary profile
 
-There is an issue with the machine. Contact your internal IT team to remove the temporary profile.
+There's an issue with the machine. Contact your internal IT team to remove the temporary profile.
 
 ## Troubleshoot configuration
 
@@ -80,7 +80,7 @@ If you're using a proxy to access on-premises data using an on-premises data gat
 
 ### System performance counter data is unavailable
 
-If the current service account which is being used by the on-premises data gateway application is not a member of the local security group **Performance Log Users**,  you may observe in the [System Counter Aggregation Report](service-gateway-performance.md), that only system memory usage value is available.
+If the current service account that is being used by the on-premises data gateway application isn't a member of the local security group **Performance Log Users**,  you may observe in the [System Counter Aggregation Report](service-gateway-performance.md), that only system memory usage value is available.
 
 To address this behavior, add the on-premises data gateway service account to the local security group [Performance Log Users](/windows-server/identity/ad-ds/manage/understand-security-groups#performance-log-users), and restart the on-premises data gateway service.
 
@@ -88,7 +88,7 @@ To address this behavior, add the on-premises data gateway service account to th
 
 #### Error: Failed to create a gateway. Try again.
 
-This error could be due to proxy configuration issues. The gateway log provides additional details for troubleshooting. For more information, go to [Configure proxy settings for the on-premises data gateway](service-gateway-proxy.md).
+This error could be due to proxy configuration issues. The gateway log provides more details for troubleshooting. For more information, go to [Configure proxy settings for the on-premises data gateway](service-gateway-proxy.md).
 
 #### Error: Power BI service reported local gateway as unreachable. Restart the gateway and try again.
 
@@ -131,5 +131,3 @@ The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [ga
 ## Next steps
 
 * [On-premises data gateway](service-gateway-onprem-faq.yml)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

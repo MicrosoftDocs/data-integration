@@ -2,7 +2,7 @@
 title: Change the on-premises data gateway service account
 description: Provides information on how to change the Windows account for the on-premises data gateway service.
 ms.topic: conceptual
-ms.date: 10/11/2022
+ms.date: 11/17/2022
 ---
 
 # Change the on-premises data gateway service account
@@ -49,5 +49,3 @@ To change the Windows service account for the on-premises data gateway:
 ## Next steps
 
 * [Set the datacenter region](service-gateway-data-region.md)  
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
 ms.topic: conceptual
-ms.date: 11/14/2022
+ms.date: 11/17/2022
 ---
 
 # Install an on-premises data gateway
@@ -30,7 +30,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * An 8-core CPU
 * 8 GB of memory
 * A 64-bit version of Windows Server 2012 R2 or later
-* Solid-state drive (SSD) storage for spooling.
+* Solid-state drive (SSD) storage for spooling
 
 ### Related considerations
 
@@ -42,7 +42,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * Don't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
 * If a gateway uses a wireless network, its performance might suffer.
 * If you use a virtualization layer for your virtual machine, performance might suffer or perform inconsistently. We recommend that you set the gateway on a wired device for best network performance.
-* You could install other applications on the gateway machine, but this might degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention.
+* You could install other applications on the gateway machine, but these applications might degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention.
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. An on-premises data gateway (personal mode) can be used only with Power BI. You can't have more than one gateway running in the same mode on the same computer.
 * The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
 * When private link is enabled, disable private link before installing the gateway. After installation, you can re-enable it.
@@ -84,12 +84,12 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
     Note the **Add to an existing gateway cluster** checkbox. We'll use this checkbox in the next section of this article.
 
-    Also note that you can change the region that connects the gateway to cloud services. For more information, see [Set the data center region](service-gateway-data-region.md).
+    Also note that you can change the region that connects the gateway to cloud services. For more information, go to [Set the data center region](service-gateway-data-region.md).
 
     > [!NOTE]
     > For sovereign clouds, we currently only support installing gateways in the default PowerBI region of your tenant. The region picker on the installer is only supported for Public cloud.
 
-    Finally, you can also provide your own Azure Relay details. For more information about how to change the Azure Relay details, see [Set the Azure Relay for on-premises data gateway](service-gateway-azure-relay.md).
+    Finally, you can also provide your own Azure Relay details. For more information about how to change the Azure Relay details, go to [Set the Azure Relay for on-premises data gateway](service-gateway-azure-relay.md).
 
 1. Review the information in the final window. Because this example uses the same account for Power BI, Power Apps, and Power Automate, the gateway is available for all three services. Select **Close**.
 
@@ -144,5 +144,3 @@ To create high-availability gateway clusters, you need the November 2017 update 
 * [Manage an on-premises data gateway](service-gateway-manage.md)
 
 * [Monitor and optimize gateway performance](service-gateway-performance.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

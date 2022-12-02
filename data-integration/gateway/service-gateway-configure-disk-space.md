@@ -3,7 +3,7 @@ title: Configure gateway disk space
 description: Describes how to troubleshoot out of disk space errors caused by gateway spooling and persistent cache filling up all disk space.
 ms.reviewer: mideboer
 ms.topic: conceptual
-ms.date: 7/13/2022
+ms.date: 11/17/2022
 ---
 
 # Configure gateway disk space
@@ -57,5 +57,3 @@ So, change TMP for the gateway user to move the persistent cache onto another dr
 
 >[!NOTE]
 >To change the environment variables in Windows, from the **Start** menu, select **Search**, enter **Environment Variables**, select **Edit the system environment variables**, and from **System Properties** select **Environment Variables**.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
