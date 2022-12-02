@@ -2,7 +2,7 @@
 title: Adjust gateway performance based on server CPU
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities based on CPU capacity.
 ms.topic: conceptual
-ms.date: 10/6/2022
+ms.date: 11/17/2022
 ---
 
 # Adjust gateway performance based on server CPU
@@ -23,5 +23,3 @@ Use the `MashupDefaultPoolContainerMaxWorkingSetInMB` setting to change the defa
 Most queries use _mashup containers_ to execute. So the number of mashup containers determines the number of queries that can be executed in parallel. A _working set_ defines the memory allocated to each container. These settings are available in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_.
 
 If you've changed any of these settings manually, for these settings to take effect you must also disable automatic scaling by setting `MashupDisableContainerAutoConfig` to _True_ in _\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config_. If `MashupDisableContainerAutoConfig` is set to _False_, automatic scaling is always enabled.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

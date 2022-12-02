@@ -2,7 +2,7 @@
 title: Configure log files for the on-premises data gateway
 description: Describes ways to configure how gateway logging data is stored.
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 11/17/2022
 ---
 
 # Configure log files for the on-premises data gateway
@@ -31,5 +31,3 @@ The following example specifies that 20 log files, the sum total of all files in
 ## Next steps
 
 For information on how to export gateway logs for troubleshooting, go to [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

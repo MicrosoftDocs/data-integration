@@ -3,7 +3,7 @@ title: Manage an on-premises data gateway
 description: Learn how to manage a gateway so that you can connect to on-premises data.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 5/20/2022
+ms.date: 11/17/2022
 ---
 
 # Manage an on-premises data gateway
@@ -20,5 +20,3 @@ For information on how to manage an on-premises data gateway data source in the 
 ## Manage a gateway in the Power Platform admin center
 
 For information on how to manage an on-premises data gateway data source in the Power Platform admin center, go to [On-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

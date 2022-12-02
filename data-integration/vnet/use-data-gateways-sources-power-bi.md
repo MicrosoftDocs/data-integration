@@ -2,12 +2,12 @@
 title: Use virtual network (VNet) data gateway and data sources in Power BI
 description: Provides information about how to use virtual network (VNet) data gateway and data sources in Power BI.
 ms.topic: conceptual
-ms.date: 3/18/2022
+ms.date: 11/17/2022
 ---
 
 # Use virtual network data gateway and data sources in Power BI
 
-Virtual network data gateways allows import or direct query datasets to connect to data services within an Azure VNet without the need of an on-premises data gateway.
+Virtual network data gateways allow import or direct query datasets to connect to data services within an Azure VNet without the need of an on-premises data gateway.
 
 > [!NOTE]
 > Virtual network data gateways is a premium-only feature, and will be available only in Power BI Premium workspaces and Premium Per User (PPU) for public preview. However, licensing requirements might change when VNet data gateways become generally available.
@@ -41,9 +41,9 @@ In the current release, VNet data gateways will support connectivity to the foll
 - Snowflake
 - PostgreSQL
 
-## Azure Active Directory Single Sign-On for Direct Query
+## Azure Active Directory single sign-on for Direct Query
 
-When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure VNet data source. When you configure Single Sign-On (SSO) for an applicable data source, queries execute under the Azure Active Directory (Azure AD) identity of the user that interacts with Power BI.
+When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure VNet data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Azure Active Directory (Azure AD) identity of the user that interacts with Power BI.
 
 To enable Azure AD SSO, on the **Manage Gateways** page in Power BI, go to the **Data source setting** page, and select the **Use SSO via Azure AD for Direct Queries** check box.
 
