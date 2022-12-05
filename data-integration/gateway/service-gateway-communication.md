@@ -2,7 +2,7 @@
 title: Adjust communication settings for the on-premises data gateway
 description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Relay, how to force the gateway to communicate with Azure Relay by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 12/5/2022
 ---
 
 # Adjust communication settings for the on-premises data gateway
@@ -90,7 +90,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 |433| aadcdn.msauth.cn |
 
 > [!NOTE]
-> After the gateway is installed and registered, the only required ports and IP addresses are those needed by Azure Relay, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).
+> After the gateway is installed and registered, the only required ports and IP addresses are those needed by Azure Relay, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-relay).
 
 ## Network ports test
 
