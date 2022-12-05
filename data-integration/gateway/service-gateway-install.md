@@ -45,7 +45,9 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * You could install other applications on the gateway machine, but these applications might degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention.
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. An on-premises data gateway (personal mode) can be used only with Power BI. You can't have more than one gateway running in the same mode on the same computer.
 * The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
-* When private link is enabled, disable private link before installing the gateway. After installation, you can re-enable it.
+* When private link is enabled, disable private link before installing the gateway. After installation, you can re-enable it. If private link is enabled, you will get this error when trying to register a new gateway or migrate/restore/takeover an existing gateway- System.NullReferenceException: Object reference not set to an instance of an object.  at Microsoft.PowerBI.DataMovement.GatewayCommon.DmtsGatewayCreation.UpdateGatewayConfiguration. To disable private link, go to the powerbi.com  page and select Settings -> Admin Portal, Look for the section “Advanced networking” at the bottom of the page, Diable the property “Azure Private Link”. After the gateway is configured, you can enable property “Azure Private Link”  
+
+
 
 ## Download and install a standard gateway
 
