@@ -1,6 +1,6 @@
 ---
 title: Adjust communication settings for the on-premises data gateway
-description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Service Bus, how to force the gateway to communicate with Azure Service Bus by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
+description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Relay, how to force the gateway to communicate with Azure Relay by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
 ms.topic: conceptual
 ms.date: 11/17/2022
 ---
@@ -11,7 +11,7 @@ This article describes several communication settings associated with the on-pre
 
 ## Enable outbound Azure connections
 
-The gateway relies on Azure Service Bus for cloud connectivity. The gateway correspondingly establishes outbound connections to its associated Azure region.
+The gateway relies on Azure Relay for cloud connectivity. The gateway correspondingly establishes outbound connections to its associated Azure region.
 
 If you registered for either a Power BI tenant or an Office 365 tenant, your Azure region defaults to the region of that service. Otherwise, your Azure region might be the one closest to you.
 
@@ -32,7 +32,7 @@ Alternatively, you allow the IP addresses for your data region in your firewall.
 
 Or, you can get the list of required ports by performing the [network ports test](#network-ports-test) periodically in the gateway app.
 
-The gateway communicates with Service Bus by using FQDNs. If you force the gateway to communicate via HTTPS, it will strictly use FQDNs only and won't communicate by using IP addresses.
+The gateway communicates with Azure Relay by using FQDNs. If you force the gateway to communicate via HTTPS, it will strictly use FQDNs only and won't communicate by using IP addresses.
 
 > [!NOTE]
 > The Azure datacenter IP list shows IP addresses in Classless Inter-Domain Routing (CIDR) notation. An example of this notation is 10.0.0.0/24, which doesn't mean from 10.0.0.0 through 10.0.0.24. Learn more about [CIDR notation](https://whatismyipaddress.com/cidr).
@@ -46,7 +46,7 @@ The following list describes FQDNs used by the gateway.
 | \*.analysis.windows.net |443 |Used to identify the relevant Power BI cluster. |
 | \*.login.windows.net, login.live.com, and aadcdn.msauth.net |443 |Used to authenticate the gateway app for Azure Active Directory (Azure AD) and OAuth2. |
 | \*.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP). |
-| \*.servicebus.windows.net |443 and 9350-9354 |Listens on Service Bus Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
+| \*.servicebus.windows.net |443 and 9350-9354 |Listens on Azure Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
 | \*.frontend.clouddatahub.net |443 |Deprecated and not required. This domain will be removed from the public documentation as well. |
 | \*.core.windows.net |443 |Used by dataflows to write data to Azure Data Lake. |
 | login.microsoftonline.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
@@ -90,7 +90,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 |433| aadcdn.msauth.cn |
 
 > [!NOTE]
-> After the gateway is installed and registered, the only required ports and IP addresses are those needed by Service Bus, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).
+> After the gateway is installed and registered, the only required ports and IP addresses are those needed by Azure Relay, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-service-bus).
 
 ## Network ports test
 
@@ -102,7 +102,7 @@ To test if the gateway has access to all required ports:
 
    ![How to start a new network ports test.](media/service-gateway-communication/gateway-start-new-test.png)
 
-When your gateway runs the network ports test, it retrieves a list of ports and servers from Service Bus and then attempts to connect to all of them. When the **Start new test** link reappears, the network ports test has finished.
+When your gateway runs the network ports test, it retrieves a list of ports and servers from Azure Relay and then attempts to connect to all of them. When the **Start new test** link reappears, the network ports test has finished.
 
 The summary result of the test is either "Completed (Succeeded)" or "Completed (Failed, see last test results)". If the test succeeded, your gateway connected to all the required ports. If the test failed, your network environment might have blocked the required ports and servers.
 
@@ -115,12 +115,12 @@ The test results list all the servers, ports, and IP addresses that your gateway
 
 ![Test results shown in Notepad.](media/service-gateway-communication/gateway-onprem-porttest-result-file.png)
 
-## Force HTTPS communication with Azure Service Bus
+## Force HTTPS communication with Azure Relay
 
-You can force the gateway to communicate with Service Bus by using HTTPS instead of direct TCP.
+You can force the gateway to communicate with Azure Relay by using HTTPS instead of direct TCP.
 
 > [!NOTE]
-> Starting with the June 2019 gateway release and based on recommendations from Service Bus, new installations default to HTTPS instead of TCP. This default behavior doesn't apply to updated installations.
+> Starting with the June 2019 gateway release and based on recommendations from Relay, new installations default to HTTPS instead of TCP. This default behavior doesn't apply to updated installations.
 
 You can use the [gateway app](service-gateway-app.md) to force the gateway to adopt this behavior. In the gateway app, select **Network**, and then turn on **HTTPS mode**.
 

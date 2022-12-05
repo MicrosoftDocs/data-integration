@@ -62,7 +62,7 @@ To test if the gateway has access to all the required ports, run the [network po
 
 For information on how to provide proxy information for your gateway, go to [Configure proxy settings for the on-premises data gateway](service-gateway-proxy.md).
 
-A firewall also might be blocking the connections that the Azure Service Bus makes to the Azure data centers. If that's the case, unblock the IP addresses for your region for those data centers. You can get a list of Azure IP addresses from [this website](https://www.microsoft.com/en-us/download/details.aspx?id=56519). To find the current data center region you're in, go to [Set the data center region](service-gateway-data-region.md).
+A firewall also might be blocking the connections that the Azure Relay makes to the Azure data centers. If that's the case, unblock the IP addresses for your region for those data centers. You can get a list of Azure IP addresses from [this website](https://www.microsoft.com/en-us/download/details.aspx?id=56519). To find the current data center region you're in, go to [Set the data center region](service-gateway-data-region.md).
 
 ### Authentication to proxy server
 
@@ -70,9 +70,9 @@ Your proxy might require authentication from a domain user account. By default, 
 
 ### Your proxy only allows ports 80 and 443 traffic
 
-Some proxies restrict traffic to only ports 80 and 443. By default, communication to Azure Service Bus occurs on ports other than 443.
+Some proxies restrict traffic to only ports 80 and 443. By default, communication to Azure Relay occurs on ports other than 443.
 
-You can force the gateway to [communicate with Azure Service Bus by using HTTPS](service-gateway-communication.md#force-https-communication-with-azure-service-bus) instead of direct TCP.
+You can force the gateway to [communicate with Azure Relay by using HTTPS](service-gateway-communication.md#force-https-communication-with-azure-relay) instead of direct TCP.
 
 ### Gateway proxy unable to connect to Managed Data Lake
 

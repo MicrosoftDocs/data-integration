@@ -130,7 +130,7 @@ sections:
           Does all of the data when using the VNet data gateway remain on Microsoft's backbone network when accessing Azure Data Sources?
         answer: |
           How does security compare to the on-premise data gateway?
-          Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use Swift between the virtual network and Power BI service so no public internet is ever used. On the other hand, the on-premise data gateway opens a connection to use Service Bus to connect to the Power BI service.
+          Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use Swift between the virtual network and Power BI service so no public internet is ever used. On the other hand, the on-premise data gateway opens a connection to use Azure Relay to connect to the Power BI service.
 
       - question: |
           Which Azure components need to be in the same region?
