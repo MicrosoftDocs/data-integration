@@ -10,7 +10,7 @@ ms.date: 11/17/2022
 Virtual network data gateways allow import or direct query datasets to connect to data services within an Azure VNet without the need of an on-premises data gateway.
 
 > [!NOTE]
-> Virtual network data gateways is a premium-only feature, and will be available only in Power BI Premium workspaces and Premium Per User (PPU) for public preview. However, licensing requirements might change when VNet data gateways become generally available.
+> Virtual network data gateways is a Premium and Embedded feature, and will be available only in Power BI Premium workspaces, Premium Per User (PPU) and Power BI Embedded for public preview. However, licensing requirements might change when VNet data gateways become generally available.
 
 ## Manage Virtual network data gateways
 
