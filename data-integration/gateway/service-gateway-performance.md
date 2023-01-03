@@ -109,7 +109,7 @@ The System Counter Aggregation Report contains system counter values aggregated 
 |**GatewayObjectId** |Unique identifier for the gateway. |
 |**AggregationStartTimeUTC** |Start of the time window for the system counters that were aggregated. |
 |**AggregationEndTimeUTC** |End of the time window for the system counters that were aggregated. |
-|**CounterName** |System counters, which include memory and CPU usage by the gateway, Mashup Engine, and overall by the machine hosting the gateway. |
+|**CounterName** |System counters each apply to one server that is hosting a gateway node and include:<br/>&#8226;  **SystemCPUPercent**: CPU used on the server as a percentage of total available CPU.<br/>&#8226; **SystemMEMUsedPercent**: Memory used on the server as a percentage of total available memory.<br/>&#8226; **GatewayCPUPercent**: The sum of the percent of CPU used by the gateway process on each core. To get the percent of the CPU used on the server, divide **GatewayCPUPercent** by the number of cores.<br/>&#8226; **GatewayMEMKb**: Sum of the total memory in kilobytes used by the gateway process. |
 |**Max** |Maximum value for the system counter for the aggregation time window. |
 |**Min** |Minimum value for the system counter for the aggregation time window. |
 |**Average** |Average value for the system counter for the aggregation time window. |
