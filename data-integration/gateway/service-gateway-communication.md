@@ -2,7 +2,7 @@
 title: Adjust communication settings for the on-premises data gateway
 description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Relay, how to force the gateway to communicate with Azure Relay by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
 ms.topic: conceptual
-ms.date: 12/5/2022
+ms.date: 1/4/2023
 ---
 
 # Adjust communication settings for the on-premises data gateway
@@ -44,7 +44,7 @@ The following list describes FQDNs used by the gateway.
 | \*.download.microsoft.com |80 |Used to download the installer. The gateway app also uses this domain to check the version and gateway region. |
 | \*.powerbi.com |443 |Used to identify the relevant Power BI cluster. |
 | \*.analysis.windows.net |443 |Used to identify the relevant Power BI cluster. |
-| \*.login.windows.net, login.live.com, and aadcdn.msauth.net |443 |Used to authenticate the gateway app for Azure Active Directory (Azure AD) and OAuth2. |
+| \*.login.windows.net, login.live.com, and aadcdn.msauth.net |443 |Used to authenticate the gateway app for Azure Active Directory (Azure AD) and OAuth2. Note that additional URLs could be required as part of the Azure Active Directory sign in process that can be unique to a tenant. |
 | \*.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP). |
 | \*.servicebus.windows.net |443 and 9350-9354 |Listens on Azure Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
 | \*.frontend.clouddatahub.net |443 |Deprecated and not required. This domain will be removed from the public documentation as well. |
