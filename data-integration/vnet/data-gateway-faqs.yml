@@ -104,7 +104,12 @@ sections:
       - question: |
           What is the hardware configuration for a VNet data gateway?
         answer: |
-          Every VNet data gateway has one CPU core 6 GB.
+          Every VNet data gateway has a maximum capacity of:
+          
+          * 2 cores
+          * 8 GB of RAM each
+          
+          At this time, this is the only available hardware configuration and it can't be scaled or changed.
 
       - question: |
           Can I create multiple VNet data gateways for the same Azure data service?  
