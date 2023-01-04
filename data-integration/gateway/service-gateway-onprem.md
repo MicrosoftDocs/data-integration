@@ -11,7 +11,7 @@ ms.date: 1/4/2023
 >Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. We release a new update for data gateways every month.
 
 >[!NOTE]
->Beginning on February 15, 2023, any on-premises data gateway version older than April 2021 will no longer be supported. To ensure your refreshes continue to work correctly, be sure to update your gateway to the latest version.
+>Beginning on February 15, 2023, any Power BI dataflow using an on-premises data gateway version older than April 2021 might fail. To ensure your refreshes continue to work correctly, be sure to update your gateway to the latest version.
 
 The on-premises data gateway acts as a bridge. It provides quick and secure data transfer between on-premises data, which is data that isn't in the cloud, and several Microsoft cloud services. These services include Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps.
 
