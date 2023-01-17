@@ -21,6 +21,6 @@ The scope of this document is restricted to only *Secure Outbound connectivity f
 
 The Azure resources associated with a VNet could include Azure data services like Azure SQL, Synapse Analytics, Azure Data Explorer, and others. A list of supported data services is available at [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services).
 
-Currently, to be able to connect from Power BI to Azure data services within your VNet, you must install the on-premises data gateway. The on-premises data gateway enables secure connectivity to these data sources associated with the VNet and manages query execution from one or more of such data sources.
+Before the advent of the Vnet gateway, to be able to connect from Power BI to Azure data services within your VNet, you had to install the on-premises data gateway on a vm inside the Vnet. This is still an option.  The on-premises data gateway enables secure connectivity to these data sources associated with the VNet and manages query execution from one or more of such data sources.
 
 However, an on-premises data gateway brings its own overhead, like monthly updates and monitoring. The VNet gateway will eliminate this overhead and enable secure connectivity to data sources associated with your VNet.
