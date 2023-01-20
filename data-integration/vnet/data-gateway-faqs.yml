@@ -3,7 +3,7 @@ metadata:
   title: Virtual network (VNet) data gateway FAQs
   description: Frequently asked questions about virtual network (VNet) data gateway.
   ms.topic: faq
-  ms.date: 11/17/2022
+  ms.date: 12/5/2022
 
 title: Virtual network (VNet) data gateway FAQs
 summary: |
@@ -104,7 +104,12 @@ sections:
       - question: |
           What is the hardware configuration for a VNet data gateway?
         answer: |
-          Every VNet data gateway has one CPU core 6 GB.
+          Every VNet data gateway has a maximum capacity of:
+          
+          * 2 cores
+          * 8 GB of RAM each
+          
+          At this time, this is the only available hardware configuration and it can't be scaled or changed.
 
       - question: |
           Can I create multiple VNet data gateways for the same Azure data service?  
@@ -130,7 +135,7 @@ sections:
           Does all of the data when using the VNet data gateway remain on Microsoft's backbone network when accessing Azure Data Sources?
         answer: |
           How does security compare to the on-premise data gateway?
-          Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use Swift between the virtual network and Power BI service so no public internet is ever used. On the other hand, the on-premise data gateway opens a connection to use Service Bus to connect to the Power BI service.
+          Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use Swift between the virtual network and Power BI service so no public internet is ever used. On the other hand, the on-premise data gateway opens a connection to use Azure Relay to connect to the Power BI service.
 
       - question: |
           Which Azure components need to be in the same region?

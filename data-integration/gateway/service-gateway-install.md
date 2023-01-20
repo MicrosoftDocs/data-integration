@@ -2,7 +2,7 @@
 title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 12/6/2022
 ---
 
 # Install an on-premises data gateway
@@ -19,7 +19,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 
 * .NET Framework 4.7.2 (Gateway release December 2020 and earlier)
 * .NET Framework 4.8 (Gateway release February 2021 and later)
-* A 64-bit version of Windows 8 or a 64-bit version of Windows Server 2012 R2 with [current TLS 1.2 and cipher suites](/power-platform/admin/onpremises-server-cipher-tls-requirements)
+* A 64-bit version of Windows 10 or a 64-bit version of Windows Server 2012 R2 with [current TLS 1.2 and cipher suites](/power-platform/admin/onpremises-server-cipher-tls-requirements)
 * 4-GB disk space for [performance monitoring](service-gateway-performance.md#gateway-performance-monitoring-public-preview) logs (in default configuration)
 
 > [!NOTE]

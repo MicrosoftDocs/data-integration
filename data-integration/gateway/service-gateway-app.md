@@ -2,7 +2,7 @@
 title: Use the on-premises data gateway app
 description: Learn how to use the on-premises data gateway app to configure various services of your on-premises data gateway.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 12/5/2022
 ---
 
 # Use the on-premises data gateway app
@@ -34,7 +34,7 @@ After you sign in to your Office 365 account, you have access to the following f
 |Diagnostics |Gateway logs |Provides a [copy of all of the gateway logs](service-gateway-tshoot.md#troubleshooting-tools) in a single file in .zip format. |
 |Diagnostics |Network ports test |Checks if the gateway has [access to all required ports](service-gateway-communication.md#network-ports-test). |
 |Network |Network status |Indicates whether the gateway can reach outside your network. The network status is displayed as either Connected or Disconnected. |
-|Network |HTTPS mode |Forces the gateway to communicate with Azure Service Bus by using [HTTPS instead of TCP](service-gateway-communication.md#force-https-communication-with-azure-service-bus) when turned on. |
+|Network |HTTPS mode |Forces the gateway to communicate with Azure Relay by using [HTTPS instead of TCP](service-gateway-communication.md#force-https-communication-with-azure-relay) when turned on. |
 |Connectors |Custom data connectors | You can connect to and access data from Power BI by using custom data connectors that you develop. |
 |Recovery Keys |Recovery Keys |Changes the [recovery key](service-gateway-recovery-key.md) you specified when installing the on-premises data gateway. This feature doesn't appear until you've signed in. Not available in the on-premises data gateway (personal mode).|
 
