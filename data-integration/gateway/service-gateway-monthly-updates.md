@@ -16,6 +16,7 @@ This article describes the last six updates for the on-premises data gateways an
 
 ## November 2022 update (3000.150.11)
 
+- [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-november-release/)
 - [Download the November 2022 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-22-11.exe)
 - [Download the November 2022 version of on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-22-11.exe)
 
