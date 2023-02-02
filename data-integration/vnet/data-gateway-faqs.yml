@@ -80,6 +80,7 @@ sections:
           - The following Azure Network Security Groups (NSGs) may be required depending on your scenario:
             - Allow outbound traffic to the Azure Active Directory (Azure AD) endpoint while using OAuth authentication to connect to a data source.
             - Allow outbound traffic to CA (Certificate Authority) while using HTTPS to connect to a data source.
+            - Allow outbound traffic to the subnet while using a gateway cluster.
 
       - question: |
           How is the connectivity between the VNet service and your VNet secured?
