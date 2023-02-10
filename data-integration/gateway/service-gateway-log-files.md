@@ -55,7 +55,7 @@ This was the default log retention logic within a gateway for versions December 
  * Number of files to be retained per log type (GatewayInfo*.log, GatewayError*.log, GatewayNetwork*.log).
  * Maximum disk space to be consumed per log type (GatewayInfo*.log, GatewayError*.log, GatewayNetwork*.log).
 
-The files are partitioned accordingly with the previously listed criteria, and therefore, whenever we reach the maximum number of files we will typically also be at or close to maximum disk space.
+The files are partitioned accordingly with the previously listed criteria, and therefore, whenever you reach the maximum number of files it will typically also be at or close to maximum disk space.
 
 The following excerpt from the gateway configuration file Microsoft.PowerBI.EnterpriseGateway.exe.config contains the three categories: `GatewayInfo.log`, `GatewayErrors.log`, and `GatewayNetwork.log`.
 
