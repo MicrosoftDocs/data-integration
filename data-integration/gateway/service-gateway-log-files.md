@@ -14,7 +14,7 @@ In order to check your logging configurations, take the following steps:
 1. Before proceeding further, make a copy of this file just in case you need to restore it later.
 1. Locate the listener `ApplicationFileTraceListener` which is under `system.diagnostics`.
 
-See the details below per retention type depending on your gateway version.
+The following sections provide the configuration details per retention type, which depends on your gateway version.
 
 ## Age based retention
 
