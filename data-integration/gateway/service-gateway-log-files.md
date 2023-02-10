@@ -18,14 +18,14 @@ The following sections provide the configuration details per retention type, whi
 
 ## Age based retention
 
-With the introduction of the new age based retention concept within a gateway, starting in February 2023, this is the new default retention type for **new** gateway installations.
+Starting in February of 2023, the new age based retention concept within a gateway was introduced. This concept is the default retention type for **new** gateway installations.
 
 For this retention type, there are two main aspects to consider (in order of precedence):
 
  * Maximum disk space to be consumed by gateway logs (GatewayInfo*.log, GatewayError*.log, GatewayNetwork*.log), with a default value of 5 GB.
  * Retention period in days, with a default value of 30 days.
  
-In this new logic, we ensure that for every new day a new log file is provisioned to ensure the information of a given day is present in log files where the filename matches the log entry dates.
+In this new logic, we ensure that for every new day a new log file is provisioned. This provisioning ensures the information for a given day is present in log files where the filename matches the log entry dates.
 Also the file partition within the day is performed if the maximum individual file size (default of 100 MB) is reached.
 
 ```xml
