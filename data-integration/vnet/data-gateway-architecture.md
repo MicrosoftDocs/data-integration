@@ -2,7 +2,7 @@
 title: Virtual network (VNet) data gateway architecture
 description: Overview of virtual network (VNet) data gateway Architecture.
 ms.topic: conceptual
-ms.date: 10/17/2022
+ms.date: 2/23/2023
 ---
 
 # Virtual network data gateway architecture
@@ -27,14 +27,14 @@ Let's first look at what happens when you interact with a Power BI report that's
 
 Here's a network diagram illustrating the data pathway between Power BI cluster and a SQL database data source:
 
-![VNet data gateway architecture.](media/vnet-architecture.png)
+![VNet data gateway architecture.](media/vnet-gateway-architecture-no-swift.png)
 
 When the workload starts up, the VNet data gateway leases an IP from the delegated subnet, which means it's obeying the network security group (NSG) and network address translation (NAT) rules on the target VNet. Traffic going through this IP address obeys all NSG rules that are applied to the subnet.
 
-The VNet gateway doesn't require any Service Endpoint or open ports back to Power BI. Data from the VNet is returned to Power BI by the SWIFT tunnel, which is an Automatic Private IP Addressing (APIPA) feature existing on the infrastructure virtual machine.
+The VNet gateway doesn't require any Service Endpoint or open ports back to Power BI. Data from the VNet is returned to Power BI by an internal Microsoft tunnel that doesn't reach the pubic internet, which uses Automatic Private IP Addressing (APIPA) and exists on the infrastructure virtual machine.
 
 > [!NOTE]
-> All traffic uses the Azure backbone, including the Swift tunnel.
+> All traffic uses the Azure backbone, including the internal Microsoft tunnel.
 
 ## Hardware
 
