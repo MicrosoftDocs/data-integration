@@ -31,10 +31,10 @@ Here's a network diagram illustrating the data pathway between Power BI cluster 
 
 When the workload starts up, the VNet data gateway leases an IP from the delegated subnet, which means it's obeying the network security group (NSG) and network address translation (NAT) rules on the target VNet. Traffic going through this IP address obeys all NSG rules that are applied to the subnet.
 
-The VNet gateway doesn't require any Service Endpoint or open ports back to Power BI. Data from the VNet is returned to Power BI by the SWIFT tunnel, which is an Automatic Private IP Addressing (APIPA) feature existing on the infrastructure virtual machine.
+The VNet gateway doesn't require any Service Endpoint or open ports back to Power BI. Data from the VNet is returned to Power BI by an internal Microsoft tunnel that does not reach the pubic internet, which uses Automatic Private IP Addressing (APIPA) and exists on the infrastructure virtual machine.
 
 > [!NOTE]
-> All traffic uses the Azure backbone, including the Swift tunnel.
+> All traffic uses the Azure backbone, including the internal Microsoft tunnel.
 
 ## Hardware
 
