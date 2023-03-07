@@ -31,7 +31,7 @@ When you create a connection (data source) with the VNet data gateway, you becom
 The three connection roles are:
 
 * **Owner**: The owner of the connection (data source) is allowed to update credentials. An owner can also delete the connection. An owner can assign others to the connection with Owner, User, or User with sharing permissions.
-* **User**: A user is allowed to use the connection (data source) in Power BI reports and Power BI dataflows, or in Power Apps. A user isn't allowed to view or update credentials.
+* **User**: A user is allowed to use the connection (data source) in Power BI reports, or in Power Apps. A user isn't allowed to view or update credentials.
 * **User with sharing**: A user with sharing is allowed to use the connection (data source) in Power BI reports and Power BI dataflows, or in Power Apps. A user with sharing is allowed to share the data source with others with User permission.
 
 These roles are identical to the on-premises data gateway.
