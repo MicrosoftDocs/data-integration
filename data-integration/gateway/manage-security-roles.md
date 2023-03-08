@@ -4,7 +4,7 @@ title: Manage security roles
 description: Learn how to manage permissions and data sources for the on-premises data gateway.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 9/16/2022
+ms.date: 3/8/2023
 ---
 
 # Manage security roles of an on-premises data gateway
@@ -39,9 +39,9 @@ The three connection roles are:
 
 * **Owner**: The owner of the connection (data source) is allowed to update credentials. An owner can also delete the connection. An owner can assign others to the connection with Owner, User, or User with sharing permissions.  
 
-* **User**: A user is allowed to use the connection (data source) in Power BI reports and Power BI dataflows, or in Power Apps. A user isn't allowed to see or update credentials.
+* **User**: A user is allowed to use the connection (data source) in Power BI reports and Power BI dataflows. A user isn't allowed to see or update credentials.
 
-* **User with sharing**: A user with sharing is allowed to use the connection (data source) in Power BI reports and Power BI dataflows, or in Power Apps. A user with sharing is allowed to share the data source with others with User permission.
+* **User with sharing**: A user with sharing is allowed to use the connection (data source) in Power BI reports and Power BI dataflows. A user with sharing is allowed to share the data source with others with User permission.
 
 ## How to manage the gateway and connection (data source) roles
 
