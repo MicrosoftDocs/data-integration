@@ -7,8 +7,10 @@ ms.date: 11/17/2022
 
 # Create virtual network data gateways
 
-> [!NOTE]
-> The metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your Power BI’s default region. However, the VNet data gateway runs in the same region as your Azure VNet.  Sometimes, there's a difference between the default environment of Power Platform and the default region of Power BI.
+Details to consider when creating a VNet data gateway:
+- Before creating a VNet data gateway, check that the feature is [supported in your region](#regions-supported-for-vnet-data-gateways).
+- The creation of VNET data gateways across tenant boundaries isn't supported.
+- The metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your Power BI home’s default region. However, the VNet data gateway runs in the same region as your Azure VNet. Sometimes, there's a difference between the default environment of Power Platform and the default region of Power BI. This might impact the regions you pick.
 
 Creating a virtual network (VNet) data gateway is a three-step process:
 
@@ -18,8 +20,6 @@ Creating a virtual network (VNet) data gateway is a three-step process:
 
 > [Step 3: Create a VNet data gateway](#step-3-create-a-vnet-data-gateway)
 
-> [!NOTE]
-> Before creating a VNet data gateway, check that the feature is [supported in your region](#regions-supported-for-vnet-data-gateways).
 
 ## Step 1: Register Microsoft.PowerPlatform as a resource provider
 
