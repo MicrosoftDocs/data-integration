@@ -14,7 +14,7 @@ This article describes the last six updates for the on-premises data gateways an
 - Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall.exe)
 - Download the [latest on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode).exe)
 
-## February 2023 update (3000.162.9)
+## February 2023 update (3000.162.10)
 
 - [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-february-release/)
 - [Download the February 2023 version of on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-23-02.exe)
