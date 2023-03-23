@@ -170,29 +170,29 @@ sections:
       - question: |
          How do I determine all the connections exceeding the maximum limit of data sources and fix any related errors?
         answer: |
-         Users are limited to 1000 data sources per Power BI service. For example, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data sources connections. In this scenario, to ensure that only a single data source is selected, we recommend that you select the folder containing those Excel files instead. 
+         Users are limited to 1000 data sources per Power BI service. For example, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data sources connections. In this scenario, to ensure that only a single data source is selected, we recommend that you select the folder containing those Excel files instead.
 
-         If you've reached the maximum number of data sources limit, verify that the number of data sources in both your cloud and on-premises connection hasn't surpassed the limit. To resolve any related issues, you can manually remove the data sources from the admin center or, alternatively, use the following Gateway PowerShell script to find and bulk-delete any data sources that exceed the limit.   
+         If you've reached the maximum number of data sources limit, verify that the number of data sources in both your cloud and on-premises connection hasn't surpassed the limit. To resolve any related issues, you can manually [remove the data sources](/power-bi/connect-data/service-gateway-data-sources#remove-a-data-source) from the admin center or, alternatively, use the following Gateway PowerShell script to find and bulk-delete any data sources that exceed the limit.
 
          ```powershell
-         ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps 
-         ## PowerShell version of '7.0.0' to run 
-         ## required module "DataGateway" Install-Module -Name DataGateway and sign in the same user who exceeded the 1000 limit 
-         Connect-DataGatewayServiceAccount 
-          
-         ## get the gateway information per the sign in person 
+         ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps
+         ## PowerShell version of '7.0.0' to run
+         ## required module "DataGateway" Install-Module -Name DataGateway and sign in the same user who exceeded the 1000 limit
+         Connect-DataGatewayServiceAccount
+         
+         ## get the gateway information per the sign in person
          $gatewayClusters = Get-DataGatewayCluster | where-Object {$_.Type -EQ 'Personal'}; 
-         foreach ($gw in $gatewayClusters) 
+         foreach ($gw in $gatewayClusters)
          {
-           $datasources = Get-DataGatewayClusterDatasource -GatewayClusterId $gw.Id; 
-           foreach ($datasource in $datasources) 
-           { 
-             $datasource 
+           $datasources = Get-DataGatewayClusterDatasource -GatewayClusterId $gw.Id;
+           foreach ($datasource in $datasources)
+           {
+             $datasource
              "gateway cluster id={0}, Personal Gateway={1}, datasource id={2}, datasourceType={3}, datasource connection details={4}" -f $gw.Id, $datasource.OnPremGatewayRequired, $datasource.Id, $datasource.DatasourceType, $datasource.ConnectionDetails 
              
-             ## conditional logic to determine if name matches set 
-             ## Remove-DataGatewayClusterDatasource -GatewayClusterId $gw.Id -GatewayClusterDatasourceId $datasource.Id 
-           } 
+             ## conditional logic to determine if name matches set
+             ## Remove-DataGatewayClusterDatasource -GatewayClusterId $gw.Id -GatewayClusterDatasourceId $datasource.Id
+           }
          }
          ``` 
           
