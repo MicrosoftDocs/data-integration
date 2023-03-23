@@ -166,6 +166,35 @@ sections:
           You can enable query tracing by turning on [additional logging](service-gateway-performance.md#slow-performing-queries). The logs include the queries that are sent. Remember to turn off query tracing when you're done troubleshooting. Having query tracing enabled causes the logs to be larger.
           
           You can also look at your data source's tools for tracing queries. For example, if SQL Server and SQL Server Analysis Services are data sources, you can use SQL Server Extended Events or SQL Server Profiler to trace queries.
+
+      - question: |
+         How do I determine all the connections exceeding the maximum limit of data sources and fix any related errors?
+        answer: |
+         Users are limited to 1000 data sources per Power BI service. For example, some users may use the “upload file box” in Power BI Desktop to select multiple Excel files, which creates multiple data sources connections. In this scenario, to ensure that only a single data source is selected, it is suggested to select the folder containing those Excel files instead. 
+
+         If you have reached the maximum number of data sources limit, verify that the number of data sources in both your cloud and on-premises connection hasn't surpassed the limit. To resolve any related issues, you can manually remove the data sources from the admin center or, alternatively, use the below Gateway PowerShell script to find and bulk-delete any data sources that exceed the limit.   
+
+         ```powershell
+         ## https://learn.microsoft.com/en-us/powershell/module/datagateway/?view=datagateway-ps 
+         ## PowerShell version of '7.0.0' to run 
+         ## required module "DataGateway" Install-Module -Name DataGateway and login the same user who exceeded the 1000 limit 
+         Connect-DataGatewayServiceAccount 
+          
+         ## get the gateway information per the login person 
+         $gatewayClusters = Get-DataGatewayCluster | where-Object {$_.Type -EQ 'Personal'}; 
+         foreach ($gw in $gatewayClusters) 
+         {
+           $datasources = Get-DataGatewayClusterDatasource -GatewayClusterId $gw.Id; 
+           foreach ($datasource in $datasources) 
+           { 
+             $datasource 
+             "gateway cluster id={0}, Personal Gateway={1}, datasource id={2}, datasourceType={3}, datasource connection details={4}" -f $gw.Id, $datasource.OnPremGatewayRequired, $datasource.Id, $datasource.DatasourceType, $datasource.ConnectionDetails 
+             
+             ## conditional logic to determine if name matches set 
+             ## Remove-DataGatewayClusterDatasource -GatewayClusterId $gw.Id -GatewayClusterDatasourceId $datasource.Id 
+           } 
+         }
+         ``` 
           
   - name: Administration
     questions:
