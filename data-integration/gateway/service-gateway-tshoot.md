@@ -128,7 +128,7 @@ To find the event logs for the *on-premises data gateway service*, follow these 
 
 Refreshes utilizing the gateway require that the source be accessible from the computer with the gateway installation.
 As such, when troubleshooting a data source, especially one that requires additional components to be installed on the computer (such as a third party database driver) or additional configuration (such as access to a network drive file or folder), it can be helpful to troubleshoot with Power BI Desktop from the gateway computer.
-Using Power BI Desktop on the gateway computer allows for more rapid iterations of testing the connection and configuring any requirements on the gateway computer directly.
+This technique allows you to test iteratively, testing the connection on the gateway computer after each configuration change.
 
 Although it is not a guarantee of a successful refresh through the gateway, a successful Power BI Desktop refresh from the gateway computer is a strong indicator that everything is configured correctly on the gateway computer.
 In other words, if you cannot refresh in Power BI Desktop from the gateway computer, it is highly unlikely that a refresh through the gateway will succeed.
