@@ -124,7 +124,7 @@ To find the event logs for the *on-premises data gateway service*, follow these 
 
 ![On-premises data gateway event logs.](media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png)
 
-## Troubleshooting refresh failures for a specific source
+## Troubleshoot refresh failures for a specific source
 
 Refreshes utilizing the gateway require that the source be accessible from the computer with the gateway installation.
 As such, when troubleshooting a data source, especially one that requires additional components to be installed on the computer (such as a third party database driver) or additional configuration (such as access to a network drive file or folder), it can be helpful to troubleshoot with Power BI Desktop from the gateway computer.
