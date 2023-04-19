@@ -45,6 +45,8 @@ This subnet should have connectivity to the data service.
 
 1. [Add a new subnet](/azure/virtual-network/virtual-network-manage-subnet#add-a-subnet) in the VNet. This new subnet can't be shared with other services, but will be used entirely by the Power Platform VNet service. Five IPs on this subnet will be reserved for basic functionality. In addition to those five, reserve one IP for every other gateway member you plan to create. For example, if you plan to have 2 clusters of 3 gateway members each, you would want a total of 2 x 3 + 5 or 11 IPs in the subnet CIDR range. It's a good idea to add more IPs for future gateways.
 
+    The gateways within each cluster need to be able to communicate. For this reason, if you are restricting the allowed IPs the delegated subnet can communicate with, don't block the subnet IP range itself. 
+
     > [!NOTE]
     >
     > * Don't use the subnet name "gatewaysubnet" as this is a reserved word for the Azure Gateway Subnet feature. You won't be able to use it to create a VNet data gateway in Step 3.
