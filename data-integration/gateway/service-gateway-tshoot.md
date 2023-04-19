@@ -84,6 +84,34 @@ If the current service account that is being used by the on-premises data gatewa
 
 To address this behavior, add the on-premises data gateway service account to the local security group [Performance Log Users](/windows-server/identity/ad-ds/manage/understand-security-groups#performance-log-users), and restart the on-premises data gateway service.
 
+### Connectivity errors
+
+When a Gateway is facing connectivity issues, you may observe different symptoms. Here are a few common symptoms.
+
+#### Error: Gateway showing offline status in Manage Gateways page
+
+You might come across of the following indication within the manage gateways page if there is a connectivity issue.
+![Gateway offline in manage gateways page.](media/service-gateway-tshoot/managegateway_offline.png)
+
+#### Error: Your data gateway is offline or couldn't be reached.
+
+You might come across of the following data refresh error if there is a connectivity issue.
+![Gateway offline or couldn't be reached error.](media/service-gateway-tshoot/gatewayoffline.png)
+
+#### Error: Network request returned unexpected error.
+
+You might come across of the following error when trying to sign in the in the gateway configurator if there is a connectivity issue.
+![Gateway configurator network unpexted error.](media/service-gateway-tshoot/network_unexpectederror.png)
+
+Connectivity issues can have several different causes, therefore, if you run into any of the symptoms mentioned above, please perform the verifications below:
+1. Are the FQDNs and ports mentioned into our [documentation](https://docs.microsoft.com/data-integration/gateway/service-gateway-communication#ports) opened/allowed in your firewall and/or proxy?
+1. If you are using a proxy server in your environment:
+   1. Please make sure the proxy server is properly [configured within the Gateway config files](https://learn.microsoft.com/data-integration/gateway/service-gateway-proxy).
+   1. Verify if the [proxy configuration is consistent](https://learn.microsoft.com/data-integration/gateway/service-gateway-proxy-setup-guide#verify-consistent-proxy-configuration).
+   1. Check your proxy logs to check if there any requests being blocked at the proxy level.
+1. Is your Firewall just allowing the communication on ports 80 and 443 ?
+   1. If yes, please ensure the [HTTPS mode in Gateway](https://learn.microsoft.com/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-relay) is enabled.
+
 ### Common errors
 
 #### Error: Failed to create a gateway. Try again.
