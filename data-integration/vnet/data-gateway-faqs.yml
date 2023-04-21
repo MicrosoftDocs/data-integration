@@ -141,7 +141,7 @@ sections:
           Which Azure components need to be in the same region?
         answer: | 
           Considering the various resources: subscription, Microsoft.PowerPlatform resource provider, virtual network, subnet, and Power BI Service's home tenant. 
-          The virtual network and subnet should be in the same region as the data to which you're connecting. The data gateway configuration lives in the Power BI home tenant region. 
+          If you're using a service endpoint, the virtual network and subnet should be in the same region as the data to which you're connecting. If you're using a private endpoint, they can be in different regions. The data gateway configuration lives in the Power BI home tenant region. 
 
       - question: |
           Is there any way to connect from the subnet of one VNet to the data source of another VNet?
