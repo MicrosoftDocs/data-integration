@@ -88,19 +88,19 @@ To address this behavior, add the on-premises data gateway service account to th
 
 When a Gateway is facing connectivity issues, you may observe different symptoms. Here are a few common symptoms.
 
-#### Error: Gateway showing offline status in Manage Gateways page
+#### Error: Gateway shows offline status in Manage Gateways page
 
-You might come across of the following indication within the manage gateways page if there is a connectivity issue.
+You might come across one of the following indications within the manage gateways page if there is a connectivity issue.
 ![Gateway offline in manage gateways page.](media/service-gateway-tshoot/managegateway_offline.png)
 
 #### Error: Your data gateway is offline or couldn't be reached.
 
-You might come across of the following data refresh error if there is a connectivity issue.
+You might come across one of the following data refresh errors if there is a connectivity issue.
 ![Gateway offline or couldn't be reached error.](media/service-gateway-tshoot/gatewayoffline.png)
 
 #### Error: Network request returned unexpected error.
 
-You might come across of the following error when trying to sign in the in the gateway configurator if there is a connectivity issue.
+You might come across one of the following errors when trying to sign in to the  gateway configurator if there is a connectivity issue.
 ![Gateway configurator network unpexted error.](media/service-gateway-tshoot/network_unexpectederror.png)
 
 Connectivity issues can have several different causes, therefore, if you run into any of the symptoms mentioned above, please perform the verifications below:
