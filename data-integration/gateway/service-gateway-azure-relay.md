@@ -2,7 +2,7 @@
 title: Set the Azure Relay for on-premises data gateway
 description: Learn how to change the details of the Azure Relay for an on-premises data gateway.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 5/1/2023
 ---
 
 # Set the Azure Relay for on-premises data gateway
@@ -25,6 +25,9 @@ During installation of the on-premises data gateway, the Azure Relays are automa
    1. **WCF Relay endpoint URI**&mdash;Provide the URI (highlighted below) for your WCF relay from the Azure portal.
 
       ![Provide the WCF relay URI.](media/service-gateway-azure-relay/wfc-relay-uri.png)
+
+      >[!NOTE]
+      >The WCF Relay endpoint URI must be unique for every gateway and can't be re-used for other gateways.
   
    2. **Send key value and the Listen Key Value**&mdash;Create two shared access policies, one called SendAccessKey and the other ListenAccessKey. Provide either the primary or the secondary keys in the on-premises data gateway app. To learn more, go to [Azure Relay authentication and authorization](/azure/azure-relay/relay-authentication-and-authorization).
 
