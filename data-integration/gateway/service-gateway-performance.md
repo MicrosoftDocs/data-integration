@@ -170,8 +170,8 @@ By default, the on-premises data gateway spools data before returning it to the 
 
 ## Optimize performance by excluding specific folders from antivirus scanning
 
-In order to avoid potential performance impacts, certain folders may have to be excluded from antivirus scanning when you use a file-level antivirus software in the server where on-premises data gateway is installed.
-If this folders are not excluded, you may observe performance impacts and potentially other unexpected behaviors since this folders receive a large amount of write operations and are at the core data pipelines of the on-premises data gateway.
+In order to avoid potential performance impacts, certain folders can be excluded from antivirus scanning when you use a file-level antivirus software in the server where on-premises data gateway is installed.
+If these folders are not excluded, you may observe performance impacts and potentially other unexpected behaviors since these folders receive a large amount of write operations and are at the core data pipelines of the on-premises data gateway.
 
 ### Folders that may have to be excluded from antivirus scanning in the on-premises data gateway server
 
