@@ -168,6 +168,20 @@ By default, the on-premises data gateway spools data before returning it to the 
 
 2. In **On-premises data gateway** > **Service Settings**, restart the gateway.
 
+## Optimize performance by excluding specific folders from antivirus scanning
+
+In order to avoid potential performance impacts, certain folders can be excluded from antivirus scanning when you use a file-level antivirus software in the server where an on-premises data gateway is installed.
+If these folders aren't excluded, you might observe performance impacts and potentially other unexpected behaviors since these folders receive a large amount of write operations and are, at the core, data pipelines of the on-premises data gateway.
+
+### Folders that might have to be excluded from antivirus scanning in the on-premises data gateway server
+
+> [!NOTE]
+> The following place holder Drive represents the letter of the drive on which the on-premises data gateway is installed. Typically, the driver letter is C.
+> The following place holder ServiceAccount represents the service account that's running the on-premises data gateway. The default account is PBIEgwService.
+
+* Logging directory: **Drive**:\Windows\ServiceProfiles\ **ServiceAccount** \AppData\Local\Microsoft\On-premises data gateway
+* Spool storage directory: **Drive**:\Windows\ServiceProfiles\ **ServiceAccount** \AppData\Local\Microsoft\On-premises data gateway\Spooler
+
 ## Next steps
 
 * [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools)
