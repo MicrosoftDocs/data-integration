@@ -2,7 +2,7 @@
 title: Monitor and optimize on-premises data gateway performance
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 5/22/2023
 ---
 
 # Monitor and optimize on-premises data gateway performance
@@ -30,7 +30,7 @@ This feature is now turned on by default.
 
 There are other values in the config file `C:\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config` that you can update as needed:
 
-* **ReportFilePath**: Determines the path where the three log files are stored. By default, this path is either *\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report* or *\Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report*. The path depends on the OS version. If you use a service account for the gateway other than *PBIEgwService*, replace this part of the path with the service account name.
+* **ReportFilePath**: Determines the path where the four log files are stored. By default, this path is either *\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report* or *\Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report*. The path depends on the OS version. If you use a service account for the gateway other than *PBIEgwService*, replace this part of the path with the service account name.
 * **ReportFileCount**: Determines the number of log files of each kind to retain. The default value is 10.
 * **ReportFileSizeInBytes**: Determines the size of the file to maintain. The default value is 104,857,600.
 * **QueryExecutionAggregationTimeInMinutes**: Determines the number of minutes for which the query execution information is aggregated. The default value is 5.
@@ -43,7 +43,7 @@ After you make the changes to the config file, restart the gateway for these con
 
 ### Understand performance logs
 
-When you turn on this feature, three new log files are created:
+When you turn on this feature, four new log files are created:
 
 * The Query Execution Report
 * The Query Start Report
