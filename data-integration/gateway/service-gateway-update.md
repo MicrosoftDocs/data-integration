@@ -20,7 +20,7 @@ Use the following steps when updating a gateway cluster with two or more members
 2. Wait for ongoing work to be completed. A waiting period of 30 minutes is sufficient for most workloads, however clusters frequently running critical long running jobs may require more time for requests to drain.
 3. Update the gateway member.
 4. Enable the updated gateway member.
-5. Repeat step 1-3 until all gateway members are updated.
+5. Repeat step 1-4 until all gateway members are updated.
 
 Disabling a gateway makes sure the load balancer doesn't try to execute queries on the member you're updating, hence reducing delays and failures.
 
