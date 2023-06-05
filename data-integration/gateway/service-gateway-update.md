@@ -12,14 +12,15 @@ We release an update every month for on-premises data gateways. Each of these up
 > [!NOTE]
 >Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. We release a new update for data gateways every month.
 
-We recommend that you update gateway members one after the other without a long lag. This process reduces sporadic failures as a query may succeed on one gateway member, but not on the other, based on its version.
+We recommend that you update gateway members one after the other in a timely manner. This process reduces sporadic failures as a query may succeed on one gateway member, but not on the other, based on disparity in capabilities across different versions.
 
 Use the following steps when updating a gateway cluster with two or more members:
 
 1. Disable one gateway member.
-2. Update the gateway member.
-3. Enable the updated gateway member.
-4. Repeat step 1-3 until all gateway members are updated.
+2. Wait for ongoing work to be completed. A waiting period of 30 minutes is sufficient for most workloads, however clusters frequently running critical long running jobs may require more time for requests to drain.
+3. Update the gateway member.
+4. Enable the updated gateway member.
+5. Repeat step 1-4 until all gateway members are updated.
 
 Disabling a gateway makes sure the load balancer doesn't try to execute queries on the member you're updating, hence reducing delays and failures.
 
