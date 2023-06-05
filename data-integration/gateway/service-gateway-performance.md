@@ -2,7 +2,7 @@
 title: Monitor and optimize on-premises data gateway performance
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 5/22/2023
 ---
 
 # Monitor and optimize on-premises data gateway performance
@@ -30,7 +30,7 @@ This feature is now turned on by default.
 
 There are other values in the config file `C:\Program Files\On-premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config` that you can update as needed:
 
-* **ReportFilePath**: Determines the path where the three log files are stored. By default, this path is either *\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report* or *\Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report*. The path depends on the OS version. If you use a service account for the gateway other than *PBIEgwService*, replace this part of the path with the service account name.
+* **ReportFilePath**: Determines the path where the four log files are stored. By default, this path is either *\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report* or *\Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report*. The path depends on the OS version. If you use a service account for the gateway other than *PBIEgwService*, replace this part of the path with the service account name.
 * **ReportFileCount**: Determines the number of log files of each kind to retain. The default value is 10.
 * **ReportFileSizeInBytes**: Determines the size of the file to maintain. The default value is 104,857,600.
 * **QueryExecutionAggregationTimeInMinutes**: Determines the number of minutes for which the query execution information is aggregated. The default value is 5.
@@ -43,7 +43,7 @@ After you make the changes to the config file, restart the gateway for these con
 
 ### Understand performance logs
 
-When you turn on this feature, three new log files are created:
+When you turn on this feature, four new log files are created:
 
 * The Query Execution Report
 * The Query Start Report
@@ -167,6 +167,20 @@ By default, the on-premises data gateway spools data before returning it to the 
    ```
 
 2. In **On-premises data gateway** > **Service Settings**, restart the gateway.
+
+## Optimize performance by excluding specific folders from antivirus scanning
+
+In order to avoid potential performance impacts, certain folders can be excluded from antivirus scanning when you use a file-level antivirus software in the server where an on-premises data gateway is installed.
+If these folders aren't excluded, you might observe performance impacts and potentially other unexpected behaviors since these folders receive a large amount of write operations and are, at the core, data pipelines of the on-premises data gateway.
+
+### Folders that might have to be excluded from antivirus scanning in the on-premises data gateway server
+
+> [!NOTE]
+> The following place holder Drive represents the letter of the drive on which the on-premises data gateway is installed. Typically, the driver letter is C.
+> The following place holder ServiceAccount represents the service account that's running the on-premises data gateway. The default account is PBIEgwService.
+
+* Logging directory: **Drive**:\Windows\ServiceProfiles\ **ServiceAccount** \AppData\Local\Microsoft\On-premises data gateway
+* Spool storage directory: **Drive**:\Windows\ServiceProfiles\ **ServiceAccount** \AppData\Local\Microsoft\On-premises data gateway\Spooler
 
 ## Next steps
 

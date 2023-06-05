@@ -15,14 +15,16 @@ Although most gateway configuration settings can be changed by using the on-prem
 
 There are three configuration files associated with using a proxy with the on-premises data gateway. The following two main configuration files apply to the gateway and its configuration process.
 
-* The first file is for the configuration screens that actually configure the gateway. If you're having issues configuring the gateway, look at the following file: _C:\Program Files\On-premises data gateway\enterprisegatewayconfigurator.exe.config_.
-* The second file is for the actual Windows service that interacts with the cloud service using the gateway. This file handles the requests: _C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config_.
+* The first file is for the configuration screens that actually configure the gateway. If you're having issues configuring the gateway, look at the following file: _C:\Program Files\On-premises data gateway\enterprisegatewayconfigurator.exe.config_. On the on-premises data gateway (personal mode), the corresponding file is _%LocalAppData%\Microsoft\On-premises data gateway (personal mode)\PersonalGatewayConfigurator.exe.config_.
+* The second file is for the actual Windows service that interacts with the cloud service using the gateway. This file handles the requests: _C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config_. On the on-premises data gateway (personal mode), the corresponding file is _%LocalAppData%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.PersonalGateway.exe.config_.
 
 If you're going to make changes to the proxy configuration, these files must be edited so that proxy configurations are exactly the same in both files.
 
 The third configuration file will need to be edited for the gateway to connect to cloud data sources through a proxy.
 
 * _C:\Program Files\On-premises data gateway\m\Microsoft.Mashup.Container.NetFX45.exe.config_
+
+On the on-premises data gateway (personal mode), the corresponding file is _%LocalAppData%\Microsoft\On-premises data gateway (personal mode)\m\Microsoft.Mashup.Container.NetFX45.exe.config_.
 
 The following section describes how to edit these files.
 
