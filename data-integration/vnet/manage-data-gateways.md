@@ -38,6 +38,10 @@ You can remove or delete VNet data gateways by selecting the gateway and selecti
 > When you remove the last gateway associated to a gateway/subnet, it might take up to 48-72 hours before you can delete the subnet or VNet.
 
 >[!Important]
-> You need to be a gateway admin of the VNet data gateway you want to remove and have the Azure Network Contributor role in the Azure portal.
+> To be able to remove or delete a VNet data gateway, you need to:
+>
+> * Be a gateway admin of the VNet data gateway you want to remove
+> * Have the Azure Network Contributor role in the Azure portal
+> * Register the Microsoft.PowerPlatform provider as a resource provider
 
 ![Remove VNet data gateway.](media/remove-gateway.png)
