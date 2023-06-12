@@ -73,6 +73,9 @@ In the file, expand the `<configurations>` section to include the following cont
 
 Configuring this third file might be necessary if your proxy is a requirement for all internet communication, especially for corporate usage where networks are secure and locked-down. If a proxy is required for gateway communication, it's likely also needed for any internet traffic from containers. In this case, the gateway might appear to be operating successfully until any container makes any external (internet) query. This issue is especially applicable to dataflows, which attempt to push the resulting query of on-premises data to Azure Data Lake Storage. But it also applies when a gateway query merges an on-premises dataset with an internet-bound dataset.
 
+In addition, to use the gateway with output destinations, the gateway may need to be configured to be able to pass through a firewall or proxy to reach the destination data source. If the customer is using a proxy server, this may require enable-listing URLs to appropriate destinations. i.e. (*-datawarehouse.pbidedicated.windows.net) for LakeHouse, (*.dfs.core.windows.net) for DataLake, etc.
+
+
 To learn more about the configuration of the proxy elements for .NET configuration files, go to [defaultProxy Element (Network settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
 ## Change the gateway service account to a domain user
