@@ -12,7 +12,7 @@ You can use a cluster of virtual network data gateways to load balance the queri
 
 ## High-availability and load balancing a cluster for a virtual network data gateway
 
-You can create high-availability clusters when creating a new virtual network data gateway. Having multiple gateways in the cluster ensures that your organization can access your data behind the virtual network and avoid a single point of failure when accessing on-premises data resources. A cluster with multiple gateways also allows for load balancing. The selection of a gateway during load balancing is random.
+You can create high-availability clusters when creating a new virtual network data gateway. Having multiple gateways in the cluster ensures that your organization can access your data behind the virtual network and avoid a single point of failure when accessing on-premises data resources. A cluster with multiple gateways not only provides high-availability, but also provides load balancing functionality. The selection of a gateway during load balancing is random.
 
 ## How to create a cluster of multiple virtual network data gateways
 
