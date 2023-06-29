@@ -75,6 +75,10 @@ Configuring this third file might be necessary if your proxy is a requirement fo
 
 To learn more about the configuration of the proxy elements for .NET configuration files, go to [defaultProxy Element (Network settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
 
+### Configure gateway for output destinations
+
+In addition, to use the gateway with output destinations, the gateway might need to be configured to be able to pass through a firewall or proxy to reach the destination data source. If the customer is using a proxy server, this might require enable-listing URLs to appropriate destinations, for example, (*-datawarehouse.pbidedicated.windows.net) for LakeHouse, (*.dfs.core.windows.net) for DataLake, and so on.
+
 ## Change the gateway service account to a domain user
 
 As explained earlier, when you configure the proxy settings to use default credentials, you might come across authentication issues with your proxy. This situation occurs when the default service account is the Service SID, and not an authenticated domain user.
