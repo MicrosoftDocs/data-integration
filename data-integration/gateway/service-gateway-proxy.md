@@ -77,7 +77,7 @@ To learn more about the configuration of the proxy elements for .NET configurati
 
 ### Configure gateway for output destinations
 
-In addition, to use the gateway with output destinations, the gateway might need to be configured to be able to pass through a firewall or proxy to reach the destination data source. If you're using a proxy server, this passthrough might require enable-listing URLs to appropriate destinations, for example (\*.datawarehouse.pbidedicated.windows.net) for LakeHouse, (\*.dfs.core.windows.net) for Data Lake, and so on.
+In addition, to use the gateway with output destinations, the gateway might need to be configured to be able to pass through a firewall or proxy to reach the destination data source. If you're using a proxy server, this passthrough might require enable-listing URLs to appropriate destinations, for example \*.datawarehouse.pbidedicated.windows.net for LakeHouse, \*.dfs.core.windows.net for Data Lake, and so on.
 
 ## Change the gateway service account to a domain user
 
