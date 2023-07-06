@@ -2,7 +2,7 @@
 title: Configure proxy settings for the on-premises data gateway
 description: Provides information about configuration of proxy settings for the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 7/5/2023
 ---
 # Configure proxy settings for the on-premises data gateway
 
@@ -20,7 +20,7 @@ There are three configuration files associated with using a proxy with the on-pr
 
 If you're going to make changes to the proxy configuration, these files must be edited so that proxy configurations are exactly the same in both files.
 
-The third configuration file will need to be edited for the gateway to connect to cloud data sources through a proxy.
+The third configuration file needs to be edited for the gateway to connect to cloud data sources through a proxy.
 
 * _C:\Program Files\On-premises data gateway\m\Microsoft.Mashup.Container.NetFX45.exe.config_
 
@@ -57,7 +57,7 @@ In addition to using default credentials, you can add a `<proxy>` element to def
 </system.net>
 ```
 
-You'll also need to edit the _Microsoft.Mashup.Container.NetFX45.exe.config_ file if you want the gateway to connect to cloud data sources through a gateway.
+You also need to edit the _Microsoft.Mashup.Container.NetFX45.exe.config_ file if you want the gateway to connect to cloud data sources through a gateway.
 
 In the file, expand the `<configurations>` section to include the following contents, and update the `proxyaddress` attribute with your proxy information. The following example routes all cloud requests through a specific proxy with the IP address 192.168.1.10.
 
@@ -77,12 +77,12 @@ To learn more about the configuration of the proxy elements for .NET configurati
 
 ### Configure gateway for output destinations
 
-In addition, to use the gateway with output destinations, the gateway might need to be configured to be able to pass through a firewall or proxy to reach the destination data source. If the customer is using a proxy server, this might require enable-listing URLs to appropriate destinations, for example, (*-datawarehouse.pbidedicated.windows.net) for LakeHouse, (*.dfs.core.windows.net) for DataLake, and so on.
+In addition, to use the gateway with output destinations, the gateway might need to be configured to be able to pass through a firewall or proxy to reach the destination data source. If you're using a proxy server, this passthrough might require enable-listing URLs to appropriate destinations, for example \*.datawarehouse.pbidedicated.windows.net for LakeHouse, \*.dfs.core.windows.net for Data Lake, and so on.
 
 ## Change the gateway service account to a domain user
 
 As explained earlier, when you configure the proxy settings to use default credentials, you might come across authentication issues with your proxy. This situation occurs when the default service account is the Service SID, and not an authenticated domain user.
-If the proxy on your organization requires a domain account in order to authenticate the request, you can change the service account of the gateway to a domain service account to allow the proper authentication with your proxy.
+If the proxy on your organization requires a domain account in order to authenticate the request, you can change the service account of the gateway to a domain service account. This change allows the proper authentication with your proxy.
 For more information about how to change the gateway service account, go to [Change the on-premises data gateway service account](service-gateway-service-account.md).
 
 > [!NOTE]
