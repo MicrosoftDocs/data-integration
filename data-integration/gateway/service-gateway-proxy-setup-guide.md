@@ -65,6 +65,11 @@ If your work environment requires Microsoft on-premises data gateway to go throu
    C:\Program Files\On-premises data gateway\m\Microsoft.Mashup.Container.NetFX45.exe.config
    Review <https://docs.microsoft.com/data-integration/gateway/service-gateway-proxy>  for additional information about configuring proxies for the Gateway.
    ```
+When running the proxy configuration consistency verification from an on-premises data gateway (personal mode), the following configuration files will be verified:
+
+   %LocalAppData%\Microsoft\On-premises data gateway (personal mode)\PersonalGatewayConfigurator.exe.config
+   %LocalAppData%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.PersonalGateway.exe.config
+   %LocalAppData%\Microsoft\On-premises data gateway (personal mode)\m\Microsoft.Mashup.Container.NetFX45.exe.config
 
 ## Inconsistent or missing proxy configuration behaviors
 
