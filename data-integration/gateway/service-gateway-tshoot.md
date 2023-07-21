@@ -170,6 +170,8 @@ After a successful refresh in Desktop, you can narrow your troubleshooting steps
 
 ## Limitations and considerations
 
+When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). If you get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials have been updated recently.  This limitation for long running refreshes exists for VNET gateways and on-premises data gateways.
+
 The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [gateway clusters](service-gateway-high-availability-clusters.md).
 
 ## Next steps
