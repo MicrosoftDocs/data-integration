@@ -2,7 +2,7 @@
 title: Create virtual network (VNet) data gateways
 description: Provides information about how to create virtual network (VNet) data gateways.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 07/14/2023
 ---
 
 # Create virtual network data gateways
@@ -52,8 +52,6 @@ This subnet should have connectivity to the data service.
     > * Don't use the subnet name "gatewaysubnet" as this is a reserved word for the Azure Gateway Subnet feature. You won't be able to use it to create a VNet data gateway in Step 3.
     > * Make sure this subnet doesn't have an IPV6 address space added.
     > * Make sure the subnet's IP range doesn't overlap with 10.0.1.x.
-
-1. Select **Resource providers**.
 
 1. Select **Microsoft.PowerPlatform/vnetaccesslinks** from the subnet delegation drop-down list.
 
