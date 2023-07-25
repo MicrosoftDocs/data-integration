@@ -127,7 +127,7 @@ sections:
           Beyond the five reserved IPs, our recommendation is to have approximately 5-7 more IPs so you can add more VNet gateways to the same VNet and Subnet.  
 
       - question: |
-          I'm a subscription owner but get an error when I try to create a subscription
+          I'm a subscription owner but I get an insufficient permissions error when I try to create a VNet data gateway
         answer: |
           Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway.
 
