@@ -118,7 +118,7 @@ The System Counter Aggregation Report contains system counter values aggregated 
 
 Now, you can visualize the data that's in the log files.
 
-1. Download the [Gateway Performance PBI template](https://download.microsoft.com/download/b/1/b/b1b229f4-a142-4d8a-8968-19e4ae95bc37/OnPremiseDataGatewayLogs.pbit), and open it by using Power BI Desktop.
+1. Download the [Gateway Performance PBI template](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/OnPremisesDataGatewayLogs.pbit), and open it by using Power BI Desktop.
 
 1. In the dialog box that opens, check that the folder path matches the value in **ReportFilePath**.
 
