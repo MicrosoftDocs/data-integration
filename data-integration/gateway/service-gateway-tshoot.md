@@ -54,6 +54,10 @@ You might come across the following error if you try to install the same version
 
 There's an issue with the machine. Contact your internal IT team to remove the temporary profile.
 
+### Error generating an asymmetric key
+
+An antivirus such as McCafee can cause the corruption or deletion of files needed for the gateway to be able to complete the setup. Disable your antivirus temporarily or configure it to ignore the gateway process. Then delete the RSA folder from the path c:\Users\<GW Service Account User>\AppData\Roaming\Microsoft\Crypto\RSA. In some cases, depending on whether you are signing in as a user or service profile, the root path might be different. Finally, restart the machine and complete the gateway setup and sign-in. 
+
 ## Troubleshoot configuration
 
 ### Firewall or proxy
@@ -169,6 +173,8 @@ In other words, if you can't refresh in Power BI Desktop from the gateway comput
 After a successful refresh in Desktop, you can narrow your troubleshooting steps to the configuration of the datasource and the dataset in the Power BI Service.
 
 ## Limitations and considerations
+
+When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). If you get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials have been updated recently, you may be hitting this error. This limitation for long running refreshes exists for both VNET gateways and on-premises data gateways.
 
 The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [gateway clusters](service-gateway-high-availability-clusters.md).
 
