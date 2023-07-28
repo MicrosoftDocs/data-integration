@@ -54,6 +54,10 @@ You might come across the following error if you try to install the same version
 
 There's an issue with the machine. Contact your internal IT team to remove the temporary profile.
 
+### Error generating an asymmetric key
+
+An antivirus such as McCafee can cause the corruption or deletion of files needed for the gateway to be able to complete the setup. Disable your antivirus temporarily or configure it to ignore the gateway process. Then delete the RSA folder from the path c:\Users\<GW Service Account User>\AppData\Roaming\Microsoft\Crypto\RSA. In some cases, depending on whether you are signing in as a user or service profile, the root path might be different. Finally, restart the machine and complete the gateway setup and sign-in. 
+
 ## Troubleshoot configuration
 
 ### Firewall or proxy
