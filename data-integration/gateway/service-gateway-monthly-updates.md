@@ -4,12 +4,15 @@ description: Learn about and download previous versions of the on-premises data 
 author: miquelladeboer
 ms.author: mideboer
 ms.topic: conceptual
-ms.date: 7/19/2023
+ms.date: 8/16/2023
 ---
 
 # Previous monthly updates to the on-premises data gateways
 
 This article describes the last six updates for the on-premises data gateways and provides links for downloading any of these versions.
+
+> [!IMPORTANT]
+> If you are using Microsoft Fabric (Preview) through an on-premises data gateway, be sure to update to the latest version of the gateway. This ensures that any updates to Fabric features and known issues are propagated through the gateway.
 
 ## July 2023 update (3000.182.4)
 
