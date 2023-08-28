@@ -4,7 +4,7 @@ description: Learn about and download previous versions of the on-premises data 
 author: miquelladeboer
 ms.author: mideboer
 ms.topic: conceptual
-ms.date: 8/22/2023
+ms.date: 8/28/2023
 ---
 
 # Previous monthly updates to the on-premises data gateways
