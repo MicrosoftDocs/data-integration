@@ -2,7 +2,7 @@
 title: VNet Data Gateway support for SQL Server and custom connectors (Preview)
 description: Describes how to use the virtual network (VNet) data gateway with the SQL Server connector and custom connectors in Power Automate.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 8/29/2022
 ---
 
 # VNet data gateway support for Power Automate and Power Apps SQL Server and custom connectors (Preview)
@@ -27,11 +27,4 @@ For an on-premises SQL server, the SQL server must be in the same virtual networ
 
 When testing the custom connector, create a **New connection** from the **Test** tab by editing the custom connector. Then in the **Select gateway** drop-down box, select the VNet data gateway.
 
-Only basic authentication, no authentication, and Windows authentication are supported through the VNet data gateway for custom connectors.
-
 [![Image of the Test tab in Power Automate with the name of the custom connector displayed in the Selected connection.](media/custom-connector-test.png)](media/custom-connector-test.png#lightbox)
-
->[!Note]
->Make sure that **Allow Azure services and resources to access this server** is set to **Yes** for your SQL Server in the **Firewalls and virtual networks** sections.
-
-![Image of the Firewalls and virtual networks for the SQL server on Azure, with Allow Azure services and resources to access this server selection set to Yes.](media/allow-azure-services.png)
