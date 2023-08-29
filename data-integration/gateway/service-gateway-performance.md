@@ -83,6 +83,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
 |**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
+|**EvaluationContext**|Contains the artifactId and DatasetId along with additional data dependind on the artifact.|
 
 The Query Execution Aggregation Report contains query information aggregated to a time interval by **GatewayObjectId**, **DataSource**, **Success**, and **QueryType**. The default value is 5 minutes, but you can adjust it. The following attributes are captured.
 
