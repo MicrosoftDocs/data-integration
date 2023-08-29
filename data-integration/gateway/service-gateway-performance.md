@@ -2,7 +2,7 @@
 title: Monitor and optimize on-premises data gateway performance
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
 ms.topic: conceptual
-ms.date: 5/22/2023
+ms.date: 8/29/2023
 ---
 
 # Monitor and optimize on-premises data gateway performance
@@ -83,6 +83,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
 |**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
+|**EvaluationContext**|Contains the artifactId and DatasetId along with additional data depending on the artifact.|
 
 The Query Execution Aggregation Report contains query information aggregated to a time interval by **GatewayObjectId**, **DataSource**, **Success**, and **QueryType**. The default value is 5 minutes, but you can adjust it. The following attributes are captured.
 
