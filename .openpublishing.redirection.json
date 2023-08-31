@@ -39,6 +39,11 @@
       "source_path": "data-integration/dataflows/dataflows-linked-entities.md",
       "redirect_url": "/power-query/dataflows/linked-entities",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "data-integration/vnet/sql-server-and-custom-connectors.md",
+      "redirect_url": "/data-integration/vnet/what-is",
+      "redirect_document_id": false
     }
   ]
 }
