@@ -11,6 +11,9 @@ ms.date: 8/28/2023
 
 This article describes the last six updates for the on-premises data gateways and provides links for downloading any of these versions.
 
+> [!IMPORTANT]
+> If you are using Microsoft Fabric (Preview) through an on-premises data gateway, be sure to update to the latest version of the gateway. This ensures that any updates to Fabric features and known issues are propagated through the gateway.
+
 ## August 2023 update (3000.186.14)
 
 For the most current release of the gateways, check out our [recent blog post](https://powerbi.microsoft.com/blog/on-premises-data-gateway-august-2023-release/) or download the latest versions:
