@@ -2,7 +2,7 @@
 title: Configure proxy settings for the on-premises data gateway
 description: Provides information about configuration of proxy settings for the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 7/5/2023
+ms.date: 9/5/2023
 ---
 # Configure proxy settings for the on-premises data gateway
 
@@ -78,6 +78,9 @@ To learn more about the configuration of the proxy elements for .NET configurati
 ### Configure gateway for output destinations
 
 In addition, to use the gateway with output destinations, the gateway might need to be configured to be able to pass through a firewall or proxy to reach the destination data source. If you're using a proxy server, this passthrough might require enable-listing URLs to appropriate destinations, for example \*.datawarehouse.pbidedicated.windows.net for LakeHouse, \*.dfs.core.windows.net for Data Lake, and so on.
+
+> [!NOTE]
+> If you are using LakeHouse destinations, you must be running at least the May 2023 release of the gateway. The Lakehouse connector isn't available in gateway versions prior to this release.
 
 ## Change the gateway service account to a domain user
 
