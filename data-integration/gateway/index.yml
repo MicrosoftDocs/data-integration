@@ -1,12 +1,12 @@
 ### YamlMime:Landing 
 title: On-premises and virtual network (VNet) data gateways documentation
-summary: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services, such as Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps. A VNet data gateway helps you to connect from Microsoft Cloud services to your Azure data services within a VNet without the need of an on-premises data gateway.
+summary: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services, such as Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps. A virtual network (VNet) data gateway helps you to connect from Microsoft Cloud services to your Azure data services within a virtual network without the need of an on-premises data gateway.
 metadata: 
   title: On-premises and virtual network (VNet) data gateways documentation
-  description: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services. 
+  description: Both the on-premises data gateway and the virtual network (VNet) data gateway provide quick and secure data transfer between your data and several Microsoft cloud services. 
   ms.prod: on-premises-data-gateway
   ms.topic: landing-page
-  ms.date: 07/27/2020
+  ms.date: 09/27/2023
   ms.custom: intro-internal
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
