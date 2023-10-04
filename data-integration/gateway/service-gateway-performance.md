@@ -145,16 +145,6 @@ By default, the gateway performs basic logging. If you're investigating slow-per
 
 Enabling this setting likely will increase the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable additional logging. We don't recommend leaving this setting enabled during normal gateway usage.
 
-When you turn on this setting, additional information (application context in the following sample) is included in the gateway logs that indicates which dataset or report this query belongs to. Not all services are able to send this information at this time and we are working on known gaps.
-
-```
-QueryAdditionalInformation is: {
-  "Application": "Dataset-Premium",
-  "ObjectId": "6de5b524-8a04-4578-961d-e65b2bf3dcd4",
-  "ApplicationContext": "{\"DatasetId\":\"6de5b524-8a04-4578-961d-ej67gdf3dcd4\",\"Sources\":[{\"ReportId\":\"e0cec7bc-f53d-4174-b551-678656fba\"}]}"
-}.
-```
-
 ## Optimize performance by streaming data
 
 By default, the on-premises data gateway spools data before returning it to the dataset, potentially causing slower performance during data load and refresh operations. The default behavior can be overridden.
