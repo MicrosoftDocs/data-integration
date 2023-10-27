@@ -1,1 +1,7 @@
-
+- name: Power Platform
+  tocHref: /data-integration/
+  topicHref: /power-platform/index
+  items:
+  - name: Data gateways
+    tocHref: /data-integration/
+    topicHref: /data-integration/index
