@@ -49,6 +49,7 @@ The following list describes FQDNs used by the gateway.
 | \*.servicebus.windows.net |443 and 9350-9354 |Listens on Azure Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
 | \*.frontend.clouddatahub.net |443 |Deprecated and not required. This domain will be removed from the public documentation as well. |
 | \*.core.windows.net |443 |Used by dataflows to write data to Azure Data Lake. |
+| \*.datawarehouse.pbidedicated.windows.net |1433 |Used by dataflows gen2 to connect to the staging lakehouse. [Learn more](https://learn.microsoft.com/en-us/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 | login.microsoftonline.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
 | \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | \*.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure AD and OAuth2. |
