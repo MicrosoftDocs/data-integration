@@ -1,5 +1,5 @@
 ---
-title: Previous monthly updates to the on-premises data gateways
+title: Currently supported monthly updates to the on-premises data gateways
 description: Learn about and download previous versions of the on-premises data gateways.
 author: miquelladeboer
 ms.author: mideboer
