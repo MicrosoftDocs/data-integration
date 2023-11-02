@@ -67,7 +67,7 @@
         href: gateway/service-gateway-powershell-support.md
     - name: Resources
       items:
-      - name: "Previous monthly updates"
+      - name: "Supported monthly updates"
         href: gateway/service-gateway-monthly-updates.md
   - name: Virtual network data gateways (Preview) docs
     expanded: true
