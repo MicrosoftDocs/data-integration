@@ -36,6 +36,8 @@
         href: gateway/service-gateway-performance-cpu.md
       - name: "Configure gateway disk space"
         href: gateway/service-gateway-configure-disk-space.md
+      - name: "Configure tenant registration settings"
+        href: gateway/service-gateway-tenant-registration.md
     - name: "Manage gateways"
       items:
       - name: "Manage in a service"
