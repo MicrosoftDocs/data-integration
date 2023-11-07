@@ -37,22 +37,4 @@ You can also update VNet data gateway details just like you do for an on-premise
 
 ## Supported data sources
 
-The following Azure data sources already available on Power Query Online are supported:
-
-* Azure Blobs
-* Azure Data Explorer
-* Azure Data Lake Storage Gen2
-* Azure SQL Database
-* Azure Synapse Analytics
-* Azure Tables
-
-VNet data gateways aren't supported for:
-
-* Data sources requiring third-party drivers like SAP, Oracle, and so on
-* The [Web](/power-query/connectors/web/web) connector
-* The [ODBC](/power-query/connectors/odbc) connector
-
->[!Note]  
->
->* On-premises data sources can be connected using ExpressRoute, but this configuration hasn't been tested and won't be supported by Microsoft during public preview.
->* Other Cloud data sources can be connected using VNet data gateways, but haven't been tested for public preview.
+See [Power BI supported data sources](https://learn.microsoft.com/en-us/data-integration/vnet/use-data-gateways-sources-power-bi#supported-azure-data-services).
