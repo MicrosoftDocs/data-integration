@@ -37,4 +37,4 @@ You can also update VNet data gateway details just like you do for an on-premise
 
 ## Supported data sources
 
-See [Power BI supported data sources](https://learn.microsoft.com/en-us/data-integration/vnet/use-data-gateways-sources-power-bi#supported-azure-data-services).
+For a list of supported data sources, go to [Power BI supported data sources](use-data-gateways-sources-power-bi.md#supported-azure-data-services).
