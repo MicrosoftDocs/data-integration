@@ -7,7 +7,7 @@ ms.date: 1/4/2023
 
 # Adjust communication settings for the on-premises data gateway
 
-This article describes several communication settings associated with the on-premises data gateway. It also describes how to adjust those settings.
+This article describes several communication settings associated with the on-premises data gateway. These will need to be adjusted to support data source connections and output destination access. There are specific requirements for Dataflows Gen1 and Gen2, visit [on-premises data gateway considerations for data destinations in Dataflow Gen2](https://learn.microsoft.com/en-us/fabric/data-factory/gateway-considerations-output-destinations) to learn more.
 
 ## Enable outbound Azure connections
 
@@ -37,7 +37,7 @@ The gateway communicates with Azure Relay by using FQDNs. If you force the gatew
 > [!NOTE]
 > The Azure datacenter IP list shows IP addresses in Classless Inter-Domain Routing (CIDR) notation. An example of this notation is 10.0.0.0/24, which doesn't mean from 10.0.0.0 through 10.0.0.24. Learn more about [CIDR notation](https://whatismyipaddress.com/cidr).
 
-The following list describes FQDNs used by the gateway.
+The following list describes FQDNs used by the gateway. These endpoints are required for the gateway to function.
 
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
@@ -47,7 +47,6 @@ The following list describes FQDNs used by the gateway.
 | \*.login.windows.net, login.live.com, aadcdn.msauth.net, login.microsoftonline.com, *.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure Active Directory (Azure AD) and OAuth2. Note that additional URLs could be required as part of the Azure Active Directory sign in process that can be unique to a tenant. |
 | \*.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP). |
 | \*.servicebus.windows.net |443 and 9350-9354 |Listens on Azure Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
-| \*.core.windows.net |443 |Used by dataflows gen1 to write data to Azure Data Lake. |
 | \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 
