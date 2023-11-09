@@ -47,6 +47,8 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 | \*.login.windows.net, login.live.com, aadcdn.msauth.net, login.microsoftonline.com, *.microsoftonline-p.com |443 |Used to authenticate the gateway app for Azure Active Directory (Azure AD) and OAuth2. Note that additional URLs could be required as part of the Azure Active Directory sign in process that can be unique to a tenant. |
 | \*.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP). |
 | \*.servicebus.windows.net |443 and 9350-9354 |Listens on Azure Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
+| \*.core.windows.net |443 |Used by dataflows to write data to Azure Data Lake. |
+| \*.datawarehouse.pbidedicated.windows.net |1433 |Used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 | \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 
