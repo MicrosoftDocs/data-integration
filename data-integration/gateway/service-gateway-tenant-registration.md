@@ -25,9 +25,9 @@ After you define a list of allowed tenants, use the following steps to add them 
 5. Select and hold (or right-click) on the "on-premises data gateway" folder you just created and select **New** > **Key** again. Name this key **Registration**.
 6. Select and hold (or right-click) on the window to the right and select **New** > **String Value**. Name the value **AllowedRegistrationTenants** (make sure it's plural and everything is spelled correctly). Select and hold (or right-click) on the **AllowedRegistrationTenants** value and select **Modify**. Set its data to a comma separated list of the tenant IDs that the machine should allow. Tenants are identified by their TenantID, which is a GUID. The results should appear as in the following screenshots.
 
-   :::image type="content" source="media/service-gateway-tenant-registration/enterprise-tenant-registration.png" alt-text="Screenshot of the registry editor with required keys added for the enterprise gateway.":::
+   :::image type="content" source="media/service-gateway-tenant-registration/enterprise-tenant-registration.png" alt-text="Screenshot of the registry editor with required keys added for the enterprise gateway." lightbox="media/service-gateway-tenant-registration/enterprise-tenant-registration.png":::
 
-   :::image type="content" source="media/service-gateway-tenant-registration/personal-tenant-registration.png" alt-text="Screenshot of the registry editor with required keys added for the personal gateway.":::
+   :::image type="content" source="media/service-gateway-tenant-registration/personal-tenant-registration.png" alt-text="Screenshot of the registry editor with required keys added for the personal gateway." lightbox="media/service-gateway-tenant-registration/personal-tenant-registration.png":::
 
 ## On-premises data gateway registration tenant settings
 
@@ -35,7 +35,7 @@ When you register the enterprise gateway, the tenant used to register is written
 
 When you register the personal gateway, the tenant used to register is written to **\\HKEY_CURRENT_USER\SOFTWARE\Microsoft\On-premises data gateway (personal mode)\Registration\RegistrationTenant**.
 
-:::image type="content" source="media/service-gateway-tenant-registration/tenant-registration-tenant-used.png" alt-text="Screenshot of the registry editor with key of tenant used to register the gateway.":::
+:::image type="content" source="media/service-gateway-tenant-registration/tenant-registration-tenant-used.png" alt-text="Screenshot of the registry editor with key of tenant used to register the gateway." lightbox="media/service-gateway-tenant-registration/tenant-registration-tenant-used.png":::
 
 ## Error associated with using a tenant not in the allow list
 
