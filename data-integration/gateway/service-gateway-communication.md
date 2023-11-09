@@ -7,7 +7,7 @@ ms.date: 1/4/2023
 
 # Adjust communication settings for the on-premises data gateway
 
-This article describes several communication settings associated with the on-premises data gateway. These will need to be adjusted to support data source connections and output destination access. There are specific requirements for Dataflows Gen1 and Gen2, visit [on-premises data gateway considerations for data destinations in Dataflow Gen2](https://learn.microsoft.com/en-us/fabric/data-factory/gateway-considerations-output-destinations) to learn more.
+This article describes several communication settings associated with the on-premises data gateway. These settings need to be adjusted to support data source connections and output destination access. There are specific requirements for Dataflows Gen1 and Gen2; visit [On-premises data gateway considerations for data destinations in Dataflow Gen2](/fabric/data-factory/gateway-considerations-output-destinations) to learn more.
 
 ## Enable outbound Azure connections
 
