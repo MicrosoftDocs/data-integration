@@ -1,99 +1,100 @@
-- name: On-premises data gateways docs
+- name: On-premises and VNet data gateways docs
   href: gateway/index.yml 
   expanded: true
   items:
-  - name: "What is an on-premises data gateway?"
-    href: gateway/service-gateway-onprem.md
-  - name: Concepts
+  - name: On-premises data gateways docs
+    expanded: true
     items:
-    - name: "On-premises data gateway architecture"
-      href: gateway/service-gateway-onprem-indepth.md    
-    - name: "On-premises data gateway FAQ"
-      href: gateway/service-gateway-onprem-faq.yml
-  - name: How to
-    items:
-    - name: "Install gateways"
-      href: gateway/service-gateway-install.md
-    - name: "Configure gateways"
+    - name: "What is an on-premises data gateway?"
+      href: gateway/service-gateway-onprem.md
+    - name: Concepts
       items:
-      - name: "Use the on-premises data gateway app"
-        href: gateway/service-gateway-app.md
-      - name: "Configure proxy settings"
-        href: gateway/service-gateway-proxy.md
-      - name: "Step by step guide on configuring your proxy settings"
-        href: gateway/service-gateway-proxy-setup-guide.md
-      - name: "Change the gateway service account"
-        href: gateway/service-gateway-service-account.md
-      - name: "Set the data center region"
-        href: gateway/service-gateway-data-region.md
-      - name: "Set the Azure Relay"
-        href: gateway/service-gateway-azure-relay.md
-      - name: "Adjust communication settings"
-        href: gateway/service-gateway-communication.md
-      - name: "Configure the gateway log file"
-        href: gateway/service-gateway-log-files.md
-      - name: "Adjust performance based on CPU"
-        href: gateway/service-gateway-performance-cpu.md
-      - name: "Configure gateway disk space"
-        href: gateway/service-gateway-configure-disk-space.md
-      - name: "Configure tenant registration settings"
-        href: gateway/service-gateway-tenant-registration.md
-    - name: "Manage gateways"
+      - name: "On-premises data gateway architecture"
+        href: gateway/service-gateway-onprem-indepth.md    
+      - name: "On-premises data gateway FAQ"
+        href: gateway/service-gateway-onprem-faq.yml
+    - name: How to
       items:
-      - name: "Manage in a service"
-        href: gateway/service-gateway-manage.md
-      - name: "Manage security roles"
-        href: gateway/manage-security-roles.md  
-      - name: "Manage high availability clusters and load balancing"
-        href: gateway/service-gateway-high-availability-clusters.md
-      - name: "Update an on-premises data gateway"
-        href: gateway/service-gateway-update.md
-      - name: "Migrate, restore, or take over a gateway"
-        href: gateway/service-gateway-migrate.md
-      - name: "Restart a gateway"
-        href: gateway/service-gateway-restart.md
-      - name: "Change a recovery key"
-        href: gateway/service-gateway-recovery-key.md
-    - name: "Plan, scale, and maintain business-critical gateway clusters"
-      href: gateway/plan-scale-maintain.md
-    - name: "Troubleshoot the on-premises data gateway"
-      href: gateway/service-gateway-tshoot.md
-    - name: "Monitor and optimize gateway performance"
-      href: gateway/service-gateway-performance.md
-  - name: Reference
+      - name: "Install gateways"
+        href: gateway/service-gateway-install.md
+      - name: "Configure gateways"
+        items:
+        - name: "Use the on-premises data gateway app"
+          href: gateway/service-gateway-app.md
+        - name: "Configure proxy settings"
+          href: gateway/service-gateway-proxy.md
+        - name: "Step by step guide on configuring your proxy settings"
+          href: gateway/service-gateway-proxy-setup-guide.md
+        - name: "Change the gateway service account"
+          href: gateway/service-gateway-service-account.md
+        - name: "Set the data center region"
+          href: gateway/service-gateway-data-region.md
+        - name: "Set the Azure Relay"
+          href: gateway/service-gateway-azure-relay.md
+        - name: "Adjust communication settings"
+          href: gateway/service-gateway-communication.md
+        - name: "Configure the gateway log file"
+          href: gateway/service-gateway-log-files.md
+        - name: "Adjust performance based on CPU"
+          href: gateway/service-gateway-performance-cpu.md
+        - name: "Configure gateway disk space"
+          href: gateway/service-gateway-configure-disk-space.md
+      - name: "Manage gateways"
+        items:
+        - name: "Manage in a service"
+          href: gateway/service-gateway-manage.md
+        - name: "Manage security roles"
+          href: gateway/manage-security-roles.md  
+        - name: "Manage high availability clusters and load balancing"
+          href: gateway/service-gateway-high-availability-clusters.md
+        - name: "Update an on-premises data gateway"
+          href: gateway/service-gateway-update.md
+        - name: "Migrate, restore, or take over a gateway"
+          href: gateway/service-gateway-migrate.md
+        - name: "Restart a gateway"
+          href: gateway/service-gateway-restart.md
+        - name: "Change a recovery key"
+          href: gateway/service-gateway-recovery-key.md
+      - name: "Plan, scale, and maintain business-critical gateway clusters"
+        href: gateway/plan-scale-maintain.md
+      - name: "Troubleshoot the on-premises data gateway"
+        href: gateway/service-gateway-tshoot.md
+      - name: "Monitor and optimize gateway performance"
+        href: gateway/service-gateway-performance.md
+    - name: Reference
+      items:
+      - name: "PowerShell support for gateway clusters"
+        href: gateway/service-gateway-powershell-support.md
+    - name: Resources
+      items:
+      - name: "Supported monthly updates"
+        href: gateway/service-gateway-monthly-updates.md
+  - name: Virtual network data gateways (Preview) docs
+    expanded: true
     items:
-    - name: "PowerShell support for gateway clusters"
-      href: gateway/service-gateway-powershell-support.md
-  - name: Resources
-    items:
-    - name: "Previous monthly updates"
-      href: gateway/service-gateway-monthly-updates.md
-- name: Virtual network data gateways docs
-  expanded: true
-  items:
-  - name: "What is a virtual network data gateway?"
-    href: vnet/overview.md
-  - name: Concepts
-    items:
-    - name: "What is a VNet?"
-      href: vnet/what-is.md
-    - name: Virtual network data gateway architecture
-      href: vnet/data-gateway-architecture.md
-  - name: How to
-    items:
-    - name: Create virtual network data gateways
-      href: vnet/create-data-gateways.md
-    - name: Manage virtual network data gateways
-      href: vnet/manage-data-gateways.md
-    - name: Use virtual network data gateway in Power BI
-      href: vnet/use-data-gateways-sources-power-bi.md
-    - name: Use virtual network data gateway in Power Platform dataflows
-      href: vnet/data-gateway-power-platform-dataflows.md
-    - name: Manage virtual network data gateway high availability and load balancing
-      href: vnet/high-availability-load-balancing.md
-    - name: Manage virtual network security roles
-      href: vnet/manage-vnet-security-roles.md
-    - name: Troubleshoot a virtual network data gateway network
-      href: vnet/troubleshoot-data-gateway.md
-  - name: Virtual network data gateway FAQs
-    href: vnet/data-gateway-faqs.yml    
+    - name: "What is a virtual network data gateway?"
+      href: vnet/overview.md
+    - name: Concepts
+      items:
+      - name: "What is a VNet?"
+        href: vnet/what-is.md
+      - name: Virtual network data gateway architecture
+        href: vnet/data-gateway-architecture.md
+    - name: How to
+      items:
+      - name: Create virtual network data gateways
+        href: vnet/create-data-gateways.md
+      - name: Manage virtual network data gateways
+        href: vnet/manage-data-gateways.md
+      - name: Use virtual network data gateway in Power BI
+        href: vnet/use-data-gateways-sources-power-bi.md
+      - name: Use virtual network data gateway in Power Platform dataflows
+        href: vnet/data-gateway-power-platform-dataflows.md
+      - name: Manage virtual network data gateway high availability and load balancing
+        href: vnet/high-availability-load-balancing.md
+      - name: Manage virtual network security roles
+        href: vnet/manage-vnet-security-roles.md
+      - name: Troubleshoot a virtual network data gateway network
+        href: vnet/troubleshoot-data-gateway.md
+    - name: Virtual network data gateway FAQs
+      href: vnet/data-gateway-faqs.yml    
