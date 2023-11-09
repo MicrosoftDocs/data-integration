@@ -37,8 +37,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-PowerPlatform",
+      "breadcrumb_path": "/data-integration/breadcrumb/toc.json",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/data-integration",
       "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi?category_id=161724",

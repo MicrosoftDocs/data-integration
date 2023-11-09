@@ -1,12 +1,12 @@
 ### YamlMime:Landing 
-title: On-premises data gateways documentation
-summary: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services, such as Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps.
+title: On-premises and virtual network (VNet) data gateways documentation
+summary: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services, such as Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps. A virtual network (VNet) data gateway helps you to connect from Microsoft Cloud services to your Azure data services within a virtual network without the need of an on-premises data gateway.
 metadata: 
-  title: On-premises data gateways documentation
-  description: The on-premises data gateway provides quick and secure data transfer between on-premises data and several Microsoft cloud services.  
+  title: On-premises and virtual network (VNet) data gateways documentation
+  description: Both the on-premises data gateway and the virtual network (VNet) data gateway provide quick and secure data transfer between your data and several Microsoft cloud services. 
   ms.prod: on-premises-data-gateway
   ms.topic: landing-page
-  ms.date: 07/27/2020
+  ms.date: 09/27/2023
   ms.custom: intro-internal
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
@@ -15,37 +15,63 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card
-  - title: Get started
+  - title: About the on-premises data gateway
     linkLists:
       - linkListType: overview
         links:
           - text: What is an on-premises data gateway?
-            url: ./service-gateway-onprem.md
+            url: service-gateway-onprem.md
           - text: On-premises data gateway architecture
-            url: ./service-gateway-onprem-indepth.md
+            url: service-gateway-onprem-indepth.md
           - text: On-premises data gateway FAQ
-            url: ./service-gateway-onprem-faq.yml
+            url: service-gateway-onprem-faq.yml
 
   # Card
-  - title: Set up and manage
+  - title: Set up and manage the on-premises data gateway
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Install gateways
-            url: ./service-gateway-install.md
-          - text: Configure gateways
-            url: ./service-gateway-app.md
-          - text: Manage gateways
-            url: ./service-gateway-manage.md
+            url: service-gateway-install.md
+          - text: Use the on-premises data gateway app
+            url: service-gateway-app.md
+          - text: Adjust communication settings
+            url: service-gateway-communication.md
 
   # Card
-  - title: Reference and resources
+  - title: On-premises data gateway resources
     linkLists:
-      - linkListType: reference
+      - linkListType: how-to-guide
         links:
-          - text: PowerShell support for gateways clusters
-            url: ./service-gateway-powershell-support.md
+          - text: Troubleshoot the gateway
+            url: service-gateway-tshoot.md
+          - text: Monitor and optimize performance
+            url: service-gateway-performance.md
       - linkListType: whats-new
         links:
           - text: Previous monthly updates
-            url: ./service-gateway-monthly-updates.md
+            url: service-gateway-monthly-updates.md
+
+  # Card
+  - title: About the virtual network (VNet) data gateway (Preview)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is a virtual network data gateway?
+            url: ../vnet/overview.md
+          - text: VNet gateway architecture
+            url: ../vnet/data-gateway-architecture.md
+          - text: VNet data gateway FAQ
+            url: ../vnet/data-gateway-faqs.yml
+
+  # Card
+  - title: Set up and manage the VNet data gateway
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create a VNet data gateway
+            url: ../vnet/create-data-gateways.md
+          - text: VNet and data sources in Power BI
+            url: ../vnet/use-data-gateways-sources-power-bi.md
+          - text: VNet in Power Platform dataflows
+            url: ../vnet/data-gateway-power-platform-dataflows.md

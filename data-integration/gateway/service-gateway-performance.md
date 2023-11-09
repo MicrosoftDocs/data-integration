@@ -74,6 +74,9 @@ The Query Execution Report contains detailed query execution information. The fo
 
 The Query Start Report contains the query and the query start time. The following attributes are captured.
 
+> [!NOTE]
+> The EvaluationContext shows up without additional logging being enabled for Power BI dataflows and Dataflow Gen2 for users on Pro licenses only. You still need additional logging enabled to view EvaluationContext for Power BI dataflows for users on Premium licenses.
+
 |Attribute |Description |
 | ---- | ---- |
 |**GatewayObjectId** |Unique identifier for the gateway. |
@@ -83,7 +86,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
 |**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
-|**EvaluationContext**|Contains the artifactId and DatasetId along with additional data depending on the artifact.|
+|**EvaluationContext**|Contains the artifactId (that is, DatasetId, DataflowsId) along with additional data depending on the artifact.|
 
 The Query Execution Aggregation Report contains query information aggregated to a time interval by **GatewayObjectId**, **DataSource**, **Success**, and **QueryType**. The default value is 5 minutes, but you can adjust it. The following attributes are captured.
 
@@ -144,16 +147,6 @@ By default, the gateway performs basic logging. If you're investigating slow-per
 ![Turn on additional logging.](media/service-gateway-performance/additional-logging.png)
 
 Enabling this setting likely will increase the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable additional logging. We don't recommend leaving this setting enabled during normal gateway usage.
-
-When you turn on this setting, additional information (application context in the following sample) is included in the gateway logs that indicates which dataset or report this query belongs to. Not all services are able to send this information at this time and we are working on known gaps.
-
-```
-QueryAdditionalInformation is: {
-  "Application": "Dataset-Premium",
-  "ObjectId": "6de5b524-8a04-4578-961d-e65b2bf3dcd4",
-  "ApplicationContext": "{\"DatasetId\":\"6de5b524-8a04-4578-961d-ej67gdf3dcd4\",\"Sources\":[{\"ReportId\":\"e0cec7bc-f53d-4174-b551-678656fba\"}]}"
-}.
-```
 
 ## Optimize performance by streaming data
 
