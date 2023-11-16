@@ -131,9 +131,9 @@ To restart the gateway Windows service from the gateway app, go to [Restart a ga
 > [!NOTE]
 >If the gateway can't communicate by using TCP, it automatically uses HTTPS. The selection in the gateway app always reflects the current protocol value.
 
-## TLS 1.2 for gateway traffic
+## TLS 1.3 for gateway traffic
 
-By default, the gateway uses Transport Layer Security (TLS) 1.2 to communicate with the Power BI service. To ensure all gateway traffic uses TLS 1.2, you might need to add or modify the following registry keys on the machine that runs the gateway service.
+By default, the gateway uses Transport Layer Security (TLS) 1.3 to communicate with the Power BI service. To ensure all gateway traffic uses TLS 1.3, you might need to add or modify the following registry keys on the machine that runs the gateway service.
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
