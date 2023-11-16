@@ -7,7 +7,7 @@ ms.date: 1/4/2023
 
 # Adjust communication settings for the on-premises data gateway
 
-This article describes several communication settings associated with the on-premises data gateway. It also describes how to adjust those settings.
+This article describes several communication settings associated with the on-premises data gateway. These settings need to be adjusted to support data source connections and output destination access. There are specific requirements for Dataflow Gen1 and Gen2; visit [On-premises data gateway considerations for data destinations in Dataflow Gen2](/fabric/data-factory/gateway-considerations-output-destinations) to learn more.
 
 ## Enable outbound Azure connections
 
@@ -37,7 +37,7 @@ The gateway communicates with Azure Relay by using FQDNs. If you force the gatew
 > [!NOTE]
 > The Azure datacenter IP list shows IP addresses in Classless Inter-Domain Routing (CIDR) notation. An example of this notation is 10.0.0.0/24, which doesn't mean from 10.0.0.0 through 10.0.0.24. Learn more about [CIDR notation](https://whatismyipaddress.com/cidr).
 
-The following list describes FQDNs used by the gateway.
+The following list describes FQDNs used by the gateway. These endpoints are required for the gateway to function.
 
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
@@ -131,9 +131,9 @@ To restart the gateway Windows service from the gateway app, go to [Restart a ga
 > [!NOTE]
 >If the gateway can't communicate by using TCP, it automatically uses HTTPS. The selection in the gateway app always reflects the current protocol value.
 
-## TLS 1.2 for gateway traffic
+## TLS 1.3 for gateway traffic
 
-By default, the gateway uses Transport Layer Security (TLS) 1.2 to communicate with the Power BI service. To ensure all gateway traffic uses TLS 1.2, you might need to add or modify the following registry keys on the machine that runs the gateway service.
+By default, the gateway uses Transport Layer Security (TLS) 1.3 to communicate with the Power BI service. To ensure all gateway traffic uses TLS 1.3, you might need to add or modify the following registry keys on the machine that runs the gateway service.
 
 ```
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
