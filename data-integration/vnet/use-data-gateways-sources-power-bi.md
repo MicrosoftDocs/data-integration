@@ -41,7 +41,7 @@ In the current release, VNet data gateways will support connectivity to the foll
 - Snowflake on Azure
 - PostgreSQL
 - SQL Server
-- And more... All data sources shown when creating a connection are supported
+- And more&mdash;all data sources shown when creating a connection are supported
 
 ## Azure Active Directory single sign-on for Direct Query
 
