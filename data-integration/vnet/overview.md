@@ -15,12 +15,6 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
 
 - Currently, this feature is available only for Fabric Dataflow Gen2, Power BI datasets, Power Platform dataflows, and Power BI paginated reports. Power BI dataflows and datamarts are not supported.
 - This feature is currently not supported in sovereign clouds.
-- Due to an Azure AD limitation you might encounter failures when the following settings are enabled together:
-  - Service endpoint for Azure AD is enabled on the delegated VNet.
-  - Conditional access policies are enabled for the tenant.
-
-  To overcome this Azure AD limitation, you can try the following workaround:
-  - If you have VNet traffic blocked by a conditional access policy, check your Azure AD sign-in log. Once you've identified the traffic, you can get the IPv6 address being used and exclude it from your policy. More information: [Location condition in Azure Active Directory conditional access](/azure/active-directory/conditional-access/location-condition#when-will-my-tenant-have-ipv6-traffic)
 
 - You can't change the region, subscription, or resource group for the VNet on which the VNet data gateway was created. This scenario isn't currently supported.
 
