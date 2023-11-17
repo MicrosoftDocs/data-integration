@@ -15,7 +15,7 @@ Logs for your VNET data gateway are available for download on the manage connect
 
 ## Notes:
 
-- You must be an admin on the VNet data gateway to download logs. Check the [manage users](manage-data-gateways.md) option to see if you are an admin.
+- You must be an admin on the VNet data gateway to download logs. Check the [manage users](manage-data-gateways.md) option to see if you're an admin.
 - The gateway must be online to provide logs. Check the status of the VNet by selecting the icon in the "Status" column. 
 - If you don’t see the download, check to make sure pop-ups aren't disabled on your browser.
 - This feature isn't available in certain regions, including Sweden central, Poland central, China regions, US Gov Virginia regions, and nateast.
@@ -33,7 +33,7 @@ Logs for your VNET data gateway are available for download on the manage connect
 | --- | --- |
 | Timestamp | The time the counter was emitted. |
 | Id | Unique identifier for the container on which your gateway is currently running. |
-| CommittedMemoryinMB | Memory used out of the total 2GB RAM reserved per VNET. |
+| CommittedMemoryinMB | Memory used out of the total 2 GB RAM reserved per VNET. |
 | CPUUsagePercentage | CPU used. |
 | MemoryAvailableinMB | Memory available. |
 
