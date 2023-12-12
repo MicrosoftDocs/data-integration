@@ -90,13 +90,12 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 
 ## Opening ports for accessing data sources and sinks:
 
-In Dataflows Gen1 and Gen2 within Data Factory, when a Mashup query combines an on-premises data source (connected via an on-premises data gateway) with a cloud data source, the entire query is executed on the on-premises data gateway. Therefore, the on-premises data gateway requires line-of-sight access to the cloud data sources. 
-Consequently, the following endpoints must be open to access data sources and sinks. 
+In Dataflows Gen1 and Gen2 within Data Factory, when a Mashup query combines an on-premises data source (connected through an on-premises data gateway) with a cloud data source, the entire query is executed on the on-premises data gateway. Therefore, the on-premises data gateway requires line-of-sight access to the cloud data sources. Consequently, the following endpoints must be open to access data sources and sinks.
+
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
 | \*.core.windows.net |443 |Used by Dataflows Gen1 to write data to Azure Data Lake. |
 | \*.datawarehouse.pbidedicated.windows.net |1433 |Used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
-
 
 ## Network ports test
 
