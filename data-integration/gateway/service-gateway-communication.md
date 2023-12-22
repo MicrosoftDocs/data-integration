@@ -81,7 +81,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 |443| \*.chinacloudapi.cn |
 |443| login.partner.microsoftonline.cn |
 |443| No Mooncake equivalent&mdash;not required to run the gateway&mdash;only used to check network during failure conditions |
-|443| No Mooncake equivalent&mdash;used during Azure AD sign in. For more information about Azure AD endpoints, go to [Check the endpoints in Azure](https://docs.azure.cn/articles/guidance/developerdifferences)
+|443| No Mooncake equivalent&mdash;used during Azure AD sign in. For more information about Azure AD endpoints, go to [Check the endpoints in Azure](https://docs.azure.com/articles/guidance/developerdifferences)
 |443| applicationinsights.azure.cn |
 |433| clientconfig.passport.net |
 |433| aadcdn.msftauth.cn |
