@@ -2,7 +2,7 @@
 title: Use virtual network (VNet) data gateway and data sources in Power BI
 description: Provides information about how to use virtual network (VNet) data gateway and data sources in Power BI.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 12/10/2023
 ---
 
 # Use virtual network data gateway and data sources in Power BI
@@ -16,17 +16,17 @@ Virtual network data gateways allow import or direct query datasets to connect t
 
 You can manage admins for a virtual network (VNet) data gateway like you do for standard data gateways either in the Power Platform admin center or on the **Manage gateways** page in Power BI.
 
-![Manage VNet data gateways.](media/vnet-in-pbi.png)
+:::image type="content" source="media/vnet-in-pbi.png" alt-text="Screenshot of the Gateway Cluster Settings page with a VNet gateway selected and the gateway's data displayed.":::
 
 ## Manage data sources
 
 You can also create data sources and share these data sources to users like you do today for data sources created on the standard data gateway.
 
-![Manage data source.](media/manage-data-source.png)
+:::image type="content" source="media/manage-data-source.png" alt-text="Screenshot of the Data Source Settings page with the data source settings filled out.":::
 
 ## Supported Azure data services
 
-In the current release, VNet data gateways will support connectivity to the following data sources:
+In the current release, VNet data gateways support connectivity to the following data sources:
 
 - Azure SQL
 - Azure Synapse Analytics
@@ -43,16 +43,19 @@ In the current release, VNet data gateways will support connectivity to the foll
 - SQL Server
 - And more&mdash;all data sources shown when creating a connection are supported
 
+> [!NOTE]
+>SQL Server on a virtual machine (VM) isn't supported.
+
 ## Azure Active Directory single sign-on for Direct Query
 
 When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure VNet data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Azure Active Directory (Azure AD) identity of the user that interacts with Power BI.
 
-To enable Azure AD SSO, on the **Manage Gateways** page in Power BI, go to the **Data source setting** page, and select the **Use SSO via Azure AD for Direct Queries** check box.
+To enable Azure AD SSO, on the **Manage Gateways** page in Power BI, go to the **Data source settings** page, and select the **Use SSO via Azure AD for Direct Queries** check box.
 
-![Azure AD SSO for Direct Query.](media/azure-ad-sso.png)
+:::image type="content" source="media/azure-ad-sso.png" alt-text="Screenshot of the data source settings page with Use SSO via Azure AD for Direct queries emphasized.":::
 
 ## Use virtual network (VNet) data gateways in Power BI datasets
 
 A Power BI report maker or creator can now publish a report and associate the dataset to the VNet data gateway data source.
 
-![Use in Power BI datasets.](media/use-in-pbi-datasets.png)
+:::image type="content" source="media/use-in-pbi-datasets.png" alt-text="Screenshot of the Gateway connection showing the data sources included in the dataset.":::
