@@ -86,6 +86,8 @@
         href: vnet/create-data-gateways.md
       - name: Manage virtual network data gateways
         href: vnet/manage-data-gateways.md
+      - name: Use virtual network data gateway in Fabric with Dataflows Gen 2
+        href: vnet/use-data-gateways-dfgen2-fabric.md
       - name: Use virtual network data gateway in Power BI
         href: vnet/use-data-gateways-sources-power-bi.md
       - name: Use virtual network data gateway in Power Platform dataflows
