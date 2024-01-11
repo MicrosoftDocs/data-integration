@@ -95,7 +95,11 @@ In Dataflows Gen1 and Gen2 within Data Factory, when a Mashup query combines an 
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
 | \*.core.windows.net |443 |Used by Dataflows Gen1 to write data to Azure Data Lake. |
-| \*.datawarehouse.pbidedicated.windows.net |1433 |Used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+| \*.datawarehouse.pbidedicated.windows.net |1433 |Old endpoint by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+| \*.datawarehouse.fabric.microsoft.com |1433 |New endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway) |
+
+> [!NOTE]
+> \*.datawarehouse.pbidedicated.windows.net is being replaced by \*.datawarehouse.fabric.microsoft.com. During this transition process, please make sure to have both endpoints open to ensure dataflow gen 2 refresh.
 
 ## Network ports test
 
