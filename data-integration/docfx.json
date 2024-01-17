@@ -54,10 +54,10 @@
         "gateway/**.*": "miquelladeboer"
       },
       "ms.prod":{
-        "gateway/**.*": "on-premises-data-gateway"
       },
       "ms.service":{
-        "vnet/**.*": "virtual-network-data-gateway"
+        "vnet/**.*": "virtual-network-data-gateway",
+        "gateway/**.*": "on-premises-data-gateway"
       }
     },
     "template": [],
