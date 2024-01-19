@@ -2,7 +2,7 @@
 title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
 ms.topic: conceptual
-ms.date: 6/6/2023
+ms.date: 1/17/2024
 ---
 
 # Install an on-premises data gateway
@@ -71,7 +71,7 @@ Because the gateway runs on the computer that you install it on, be sure to inst
     ![Entering your email address.](media/service-gateway-install/email-address.png)
 
     > [!NOTE]
-    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account's User Principal Name (UPN) will match the email address.  
+    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Microsoft Entra ID. In most cases, your Microsoft Entra ID account's User Principal Name (UPN) will match the email address.  
 
     The gateway is associated with your Office 365 organization account. You manage gateways from within the associated service.
 
@@ -135,7 +135,7 @@ To create high-availability gateway clusters, you need the November 2017 update 
     ![Entering your personal mode email address.](media/service-gateway-install/email-address-personal.png)
 
     > [!NOTE]
-    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Azure AD. In most cases, your Azure AD account's User Principal Name (UPN) will match the email address.  
+    > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Microsoft Entra ID. In most cases, your Microsoft Entra ID account's User Principal Name (UPN) will match the email address.  
 
     The gateway is associated with your Office 365 organization account. You manage gateways from within the associated service.
 
