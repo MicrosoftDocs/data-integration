@@ -2,7 +2,7 @@
 title: Manage virtual network (VNet) data gateways
 description: Provides information about how to manage virtual network (VNet) data gateways and remove them if necessary.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 1/17/2024
 ---
 
 # Manage virtual network data gateways
@@ -16,7 +16,7 @@ After you've [created](create-data-gateways.md) a virtual network (VNet) data ga
 
 ## Manage access to creating VNet data gateways (gateway installer setting)
 
-Access to creating a VNet data gateway can be limited to selected people only. To do this limitation, you must be an Azure AD Global administrator (which includes Global admins) or a Power BI service administrator. Use the **Manage gateway installers** option to manage who can create a VNet data gateway in your enterprise. This operation isn’t available for gateway admins. Go to the [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) documentation to learn more.
+Access to creating a VNet data gateway can be limited to selected people only. To do this limitation, you must be a Microsoft Entra ID Global administrator (which includes Global admins) or a Power BI service administrator. Use the **Manage gateway installers** option to manage who can create a VNet data gateway in your enterprise. This operation isn’t available for gateway admins. Go to the [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) documentation to learn more.
 
 ## Manage admins
 

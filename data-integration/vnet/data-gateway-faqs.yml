@@ -3,7 +3,7 @@ metadata:
   title: Virtual network (VNet) data gateway FAQs
   description: Frequently asked questions about virtual network (VNet) data gateway.
   ms.topic: faq
-  ms.date: 12/5/2022
+  ms.date: 1/17/2024
 
 title: Virtual network (VNet) data gateway FAQs
 summary: |
@@ -83,7 +83,7 @@ sections:
           - Make sure your data source is up and running.
           - Make sure that the data source can be accessed from within the VNet&mdash;specifically from the subnet delegated while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
           - The following Azure Network Security Groups (NSGs) may be required depending on your scenario:
-            - Allow outbound traffic to the Azure Active Directory (Azure AD) endpoint while using OAuth authentication to connect to a data source.
+            - Allow outbound traffic to the Microsoft Entra ID endpoint while using OAuth authentication to connect to a data source.
             - Allow outbound traffic to CA (Certificate Authority) while using HTTPS to connect to a data source.
 
       - question: |
