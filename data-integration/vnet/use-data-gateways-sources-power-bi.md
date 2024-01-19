@@ -2,7 +2,7 @@
 title: Use virtual network (VNet) data gateway and data sources in Power BI
 description: Provides information about how to use virtual network (VNet) data gateway and data sources in Power BI.
 ms.topic: conceptual
-ms.date: 12/10/2023
+ms.date: 1/17/2024
 ---
 
 # Use virtual network data gateway and data sources in Power BI
@@ -46,13 +46,13 @@ In the current release, VNet data gateways support connectivity to the following
 > [!NOTE]
 >SQL Server on a virtual machine (VM) isn't supported.
 
-## Azure Active Directory single sign-on for Direct Query
+## Microsoft Entra ID single sign-on for Direct Query
 
-When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure VNet data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Azure Active Directory (Azure AD) identity of the user that interacts with Power BI.
+When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure VNet data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Microsoft Entra ID identity of the user that interacts with Power BI.
 
-To enable Azure AD SSO, on the **Manage Gateways** page in Power BI, go to the **Data source settings** page, and select the **Use SSO via Azure AD for Direct Queries** check box.
+To enable Microsoft Entra ID SSO, on the **Manage Gateways** page in Power BI, go to the **Data source settings** page, and select the **Use SSO via Azure AD for Direct Queries** check box.
 
-:::image type="content" source="media/azure-ad-sso.png" alt-text="Screenshot of the data source settings page with Use SSO via Azure AD for Direct queries emphasized.":::
+:::image type="content" source="media/azure-ad-sso.png" alt-text="Screenshot of the data source settings page with Use SSO via Microsoft Entra ID for Direct queries emphasized.":::
 
 ## Use virtual network (VNet) data gateways in Power BI datasets
 

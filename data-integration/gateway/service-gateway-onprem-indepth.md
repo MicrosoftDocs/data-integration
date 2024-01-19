@@ -1,8 +1,8 @@
 ---
 title: On-premises data gateway architecture
-description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Azure Active Directory and your on-premises Active Directory.
+description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Microsoft Entra ID and your on-premises Active Directory.
 ms.topic: conceptual
-ms.date: 12/5/2022
+ms.date: 1/17/2022
 ms.custom: intro-internal
 ---
 
@@ -40,15 +40,15 @@ A stored credential is used to connect from the gateway to on-premises data sour
 
 ## Sign-in account
 
-You sign in with either a work account or a school account. This account is your organization account. If you signed up for an Office 365 offering and didn't supply your actual work email address, your account name might look like nancy@contoso.onmicrosoft.com. A cloud service stores your account within a tenant in Azure Active Directory (Azure AD). In most cases, the User Principal Name (UPN) of your Azure AD account matches your email address.
+You sign in with either a work account or a school account. This account is your organization account. If you signed up for an Office 365 offering and didn't supply your actual work email address, your account name might look like nancy@contoso.onmicrosoft.com. A cloud service stores your account within a tenant in Microsoft Entra ID. In most cases, the User Principal Name (UPN) of your Microsoft Entra ID account matches your email address.
 
 ## Network traffic security
 
 Traffic goes from the gateway to Azure Relay to the Power BI backend cluster. This traffic doesn't traverse the public internet. All Azure internal traffic goes over the Azure backbone.
 
-## Azure Active Directory
+## Microsoft Entra ID
 
-Microsoft cloud services use [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users. Azure AD is the tenant that contains usernames and security groups. Typically, the email address that you use for sign-in is the same as the UPN of your account. For more information about authentication in Power BI, go to [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
+Microsoft cloud services use [Microsoft Entra ID](/entra/fundamentals/whatis) to authenticate users. Microsoft Entra ID is the tenant that contains usernames and security groups. Typically, the email address that you use for sign-in is the same as the UPN of your account. For more information about authentication in Power BI, go to [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
 
 ### How do I tell what my UPN is?
 
@@ -56,29 +56,29 @@ You might not know your UPN, and you might not be a domain admin. To find out th
 
 Although the result looks like an email address, it's the UPN on your local domain account.
 
-### Synchronize an on-premises Active Directory with Azure Active Directory
+### Synchronize an on-premises Active Directory with Microsoft Entra ID
 
-You want each of your on-premises Active Directory accounts to match an Azure AD account, because the UPN for both accounts must be the same.
+You want each of your on-premises Active Directory accounts to match an Microsoft Entra ID account, because the UPN for both accounts must be the same.
 
-The cloud services know only about accounts within Azure AD. It doesn't matter if you add an account in your on-premises Active Directory. If the account doesn't exist in Azure AD, it can't be used.
+The cloud services know only about accounts within Microsoft Entra ID. It doesn't matter if you add an account in your on-premises Active Directory. If the account doesn't exist in Microsoft Entra ID, it can't be used.
 
-There are different ways to match your on-premises Active Directory accounts with Azure AD.
+There are different ways to match your on-premises Active Directory accounts with Microsoft Entra ID.
 
-* Add accounts manually to Azure AD.
+* Add accounts manually to Microsoft Entra ID.
 
     Create an account on the Azure portal or within the Microsoft 365 admin center. Make sure the account name matches the UPN of the on-premises Active Directory account.
 
-* Use the [Azure Active Directory Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) tool to synchronize local accounts to your Azure AD tenant.
+* Use the [Microsoft Entra ID Connect](/entra/identity/hybrid/connect/how-to-connect-sync-whatis) tool to synchronize local accounts to your Microsoft Entra ID tenant.
 
-    The Azure AD Connect tool provides options for directory synchronization and authentication setup. These options include password hash sync, pass-through authentication, and federation. If you're not a tenant admin or a local domain admin, contact your IT admin to get Azure AD Connect configured.
+    The Microsoft Entra ID Connect tool provides options for directory synchronization and authentication setup. These options include password hash sync, pass-through authentication, and federation. If you're not a tenant admin or a local domain admin, contact your IT admin to get Microsoft Entra ID Connect configured.
 
- Azure AD Connect ensures that your Azure AD UPN matches your local Active Directory UPN. This matching helps if you're using Analysis Services live connections with Power BI or single sign-on (SSO) capabilities.
+ Microsoft Entra ID Connect ensures that your Microsoft Entra ID UPN matches your local Active Directory UPN. This matching helps if you're using Analysis Services live connections with Power BI or single sign-on (SSO) capabilities.
 
 > [!NOTE]
-> Synchronizing accounts with the Azure AD Connect tool creates new accounts within your Azure AD tenant.
+> Synchronizing accounts with the Microsoft Entra ID Connect tool creates new accounts within your Microsoft Entra ID tenant.
 
 ## Next steps
 
 * [On-premises data gateway FAQ](service-gateway-onprem-faq.yml)  
 * [Azure Relay](/azure/azure-relay/relay-what-is-it)  
-* [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
+* [Microsoft Entra ID Connect](/entra/identity/hybrid/connect/how-to-connect-sync-whatis)  
