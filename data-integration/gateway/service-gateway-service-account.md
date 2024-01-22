@@ -13,7 +13,7 @@ This service account isn't the account used to connect to on-premises data sourc
 
 ## Change the service account
 
-To change the Windows service account for the on-premises data gateway:
+It is not necessary to change the service account, but you can, if necessary. To change the Windows service account for the on-premises data gateway:
 
 1. Open the [on-premises data gateway app](service-gateway-app.md), select **Service settings**, and then select **Change account**.
 
