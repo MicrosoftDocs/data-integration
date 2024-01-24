@@ -138,6 +138,10 @@ You also can customize this template file to suit your needs. For more informati
 
 By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure there is adequate free disk space. More information: [Gateway spooling data](service-gateway-configure-disk-space.md#gateway-spooling-data)
 
+## Monitoring gateway member concurrency
+
+By default, the limit for the number of queries that can run simultaneously on a gateway node is **40**. Hitting this limit often will cause incoming queries to get queued pending to run for a long time, which will result in performance degradation and timeout type of errors. If you suspect a gateway member is hitting this limit, please enable [additional logging](https://learn.microsoft.com/data-integration/gateway/service-gateway-performance#slow-performing-queries), export the gateway logs, take a look at the _Mashup*.log_ files, look for "runningCount" and "pendingCount" keywords and verify if the "runningCount" is often near 40, or if the "pendingCount" is often above zero. Refer to this [document](https://learn.microsoft.com/data-integration/gateway/plan-scale-maintain#when-to-scale-a-gateway-cluster) for more details on how to plan and scale your gateway.
+
 ## Slow-performing queries
 
 Long-running queries might require additional modification on your data source or further optimization of the query itself. This could be either for Power BI refreshes or for direct database queries, like Power BI DirectQuery, Power Apps, or Azure Logic Apps.
