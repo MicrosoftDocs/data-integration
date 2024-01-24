@@ -88,7 +88,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Azure Relay, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-relay).
 
-## Opening additional ports for Dataflows Gen1 & Gen2 using OPDG
+## Opening extra ports for Dataflow Gen1 and Gen2 using OPDG
 
 In Dataflow Gen1 and Gen2 within Fabric Data Factory, when a Mashup query combines an on-premises data source (connected through an on-premises data gateway) with a cloud data source, the entire query is executed on the on-premises data gateway. Therefore, the following endpints must be open to alloww on-premises data gateway line-of-sight access to the cloud data sources.
 
