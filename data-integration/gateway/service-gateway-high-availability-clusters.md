@@ -37,7 +37,7 @@ For example, to provide load balancing from the Power BI service, select the gea
 
 ![Gateway cluster settings.](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
 
-## Load balance based on CPU, Memory, concurrency limits
+## Load balance based on CPU and Memory limits
 
 As mentioned earlier, the selection of a gateway during load balancing is random. Gateway admins can, however, throttle the resource usage of each gateway member. With throttling, you can make sure either a gateway member or the entire gateway cluster isn't overloaded. Overloaded system resources may cause request failures.
 
@@ -51,7 +51,7 @@ A gateway admin should update the following settings in  the _Microsoft.PowerBI.
 
 - **ResourceUtilizationAggregationTimeInMinutes** - This configuration sets the time in minutes for which CPU and memory system counters of the gateway machine are aggregated. The aggregated values are then compared against the respective threshold limits set for **CPUUtilizationPercentageThreshold** and **MemoryUtilizationPercentageThreshold**. The default value for this configuration is 5.
 
-- **ConcurrentOperationLimitPreview** - This configuration sets concurrent operation limit for the Gateway. **BypassConcurrentOperationLimit** can be set to remove all concurrent operation limits. The default value for this configuration is 40.
+Overall resource utilization is not fixed under the set thresholds. Requests may allocate CPU and memory as necessary after being accepted by a Gateway cluster member.
 
 > [!NOTE]
 > You can also change the load balancing setting through [PowerShell](/powershell/module/datagateway/set-datagatewaycluster).
