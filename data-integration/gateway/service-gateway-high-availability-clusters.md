@@ -51,7 +51,7 @@ A gateway admin should update the following settings in  the _Microsoft.PowerBI.
 
 - **ResourceUtilizationAggregationTimeInMinutes** - This configuration sets the time in minutes for which CPU and memory system counters of the gateway machine are aggregated. The aggregated values are then compared against the respective threshold limits set for **CPUUtilizationPercentageThreshold** and **MemoryUtilizationPercentageThreshold**. The default value for this configuration is 5.
 
-Overall resource utilization is not fixed under the set thresholds. Requests may allocate CPU and memory as necessary after being accepted by a Gateway cluster member.
+Overall resource utilization isn't fixed under the set thresholds. Requests can allocate CPU and memory as necessary after being accepted by a Gateway cluster member.
 
 > [!NOTE]
 > You can also change the load balancing setting through [PowerShell](/powershell/module/datagateway/set-datagatewaycluster).
