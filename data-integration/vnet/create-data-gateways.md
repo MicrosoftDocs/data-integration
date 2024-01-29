@@ -68,9 +68,9 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
 
 1. Select **Virtual network (VNet) data gateway** > **New**.
 
-1. Select the subscription, resource group, VNet and the Subnet. Only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
+1. Select the license capacity, subscription, resource group, VNet and the Subnet. Only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
 
-1. By default, we provide a unique name for this data gateway, but you could optionally update it.
+1. By default, we provide a unique name for this data gateway, but you could optionally update it. You can also optionally configure the [high availability and load balancing options](high-availability-load-balancing.md#high-availability-and-load-balancing-a-cluster-for-a-virtual-network-data-gateway) in the Advanced settings section.
 
 1. Select **Save**. This VNet data gateway is now displayed in your **Virtual network data gateways** tab. A VNet data gateway is a managed gateway that could be used for controlling access to this resource for Power platform users.  
 
