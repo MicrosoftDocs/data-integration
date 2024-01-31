@@ -74,7 +74,7 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
 
 1. Select **Save**. This VNet data gateway is now displayed in your **Virtual network data gateways** tab. A VNet data gateway is a managed gateway that could be used for controlling access to this resource for Power platform users.  
 
-    ![VNet data gateway.](media/vnet-data-gateway.png)
+    ![VNet data gateway.](media/create-vnet-settings-capacity.png)
 
 ## Regions supported for VNet data gateways
 
