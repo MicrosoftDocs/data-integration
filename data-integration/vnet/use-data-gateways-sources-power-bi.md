@@ -175,7 +175,7 @@ In the current release, VNet data gateways support connectivity to the following
 - Spark
 - SparkPost
 - SpotlightCloudReports
-- SQL Server
+- Azure SQL
 - SumTotal BI Connector
 - SurveyMonkey
 - SweetIQ
