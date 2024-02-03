@@ -42,7 +42,8 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/data-integration",
       "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi?category_id=161724",
-      "recommendations": true
+      "recommendations": true,
+      "ms.service": "data-integration-gateways"
     },
     "fileMetadata": {
       "ms.author":{
@@ -53,11 +54,9 @@
         "vnet/**.*": "nikkiwaghani",
         "gateway/**.*": "miquelladeboer"
       },
-      "ms.prod":{
-      },
-      "ms.service":{
-        "vnet/**.*": "virtual-network-data-gateway",
-        "gateway/**.*": "on-premises-data-gateway"
+      "ms.subservice":{
+        "vnet/**.*": "virtual-network-data-gateways",
+        "gateway/**.*": "on-premises-data-gateways"
       }
     },
     "template": [],
