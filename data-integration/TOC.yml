@@ -11,6 +11,8 @@
       items:
       - name: "On-premises data gateway architecture"
         href: gateway/service-gateway-onprem-indepth.md    
+      - name: "Virtual network data gateways business model"
+        href: vnet/data-gateway-business-model.md      
       - name: "On-premises data gateway FAQ"
         href: gateway/service-gateway-onprem-faq.yml
     - name: How to
@@ -88,6 +90,8 @@
         href: vnet/create-data-gateways.md
       - name: Manage virtual network data gateways
         href: vnet/manage-data-gateways.md
+      - name: Use virtual network data gateway in Fabric with Dataflows Gen 2
+        href: vnet/use-data-gateways-dfgen2-fabric.md
       - name: Use virtual network data gateway in Power BI
         href: vnet/use-data-gateways-sources-power-bi.md
       - name: Use virtual network data gateway in Power Platform dataflows
