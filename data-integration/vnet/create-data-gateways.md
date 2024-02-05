@@ -33,7 +33,7 @@ On the Azure portal, sign in as a subscription owner and register `Microsoft.Pow
 
 1. Search for and select **Microsoft.PowerPlatform**, and then select **Register**.
 
-    ![Register resource provider.](media/register-resource-provider.png)
+   :::image type="content" source="media/register-resource-provider.png" lightbox="media/register-resource-provider.png" alt-text="Screenshot showing the Resource providers tab of a subscription on the Azure portal.":::
 
 ## Step 2: Associate the subnet to Microsoft Power Platform
 
@@ -57,7 +57,7 @@ This subnet should have connectivity to the data service.
 
 1. Select **Save**.
 
-    ![Associate subnet.](media/associate-subnet.png)
+   :::image type="content" source="media/associate-subnet.png" alt-text="Screenshot showing the Add subnet dialog with the Delegate subnet to a service setting showing Microsoft.PowerPlatform/vnetaccesslinks selected.":::
 
 ## Step 3: Create a VNet data gateway
 
@@ -75,7 +75,7 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
 
 1. Select **Save**. This VNet data gateway is now displayed in your **Virtual network data gateways** tab. A VNet data gateway is a managed gateway that could be used for controlling access to this resource for Power platform users.  
 
-    ![VNet data gateway.](media/vnet-data-gateway.png)
+   :::image type="content" source="media/vnet-data-gateway.png" alt-text="Screenshot showing the New virtual network data gateway dialog.":::
 
 ## Regions supported for VNet data gateways
 
