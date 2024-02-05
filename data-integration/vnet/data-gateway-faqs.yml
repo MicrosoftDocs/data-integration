@@ -38,7 +38,7 @@ sections:
       - question: |
           What are the licensing requirements in Power BI to use VNet data gateways?
         answer: |
-          Virtual network data gateways are a premium-only feature, and will be available only in Fabric and Power BI Premium workspaces and Premium Per Capacity (PPC) licenses. Licensing requirements might change when VNet data gateways become generally available.
+          Virtual network data gateways are a premium-only feature, and will be available only in Fabric and Power BI Premium workspaces and Premium Per Capacity (PPC) licenses.
 
       - question: |
           Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them using VNet data gateways?
