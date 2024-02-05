@@ -202,9 +202,6 @@ In the current release, VNet data gateways support connectivity to the following
 - Zoho Creator
 - Zucchetti HR Infinity
 
-> [!NOTE]
->SQL Server on a virtual machine (VM) isn't supported.
-
 ## Microsoft Entra ID single sign-on for Direct Query
 
 When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure VNet data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Microsoft Entra ID identity of the user that interacts with Power BI.
