@@ -50,13 +50,14 @@ This subnet should have connectivity to the data service.
     > [!NOTE]
     >
     > * Don't use the subnet name "gatewaysubnet" as this is a reserved word for the Azure Gateway Subnet feature. You won't be able to use it to create a VNet data gateway in Step 3.
+    > * Make sure this subnet doesn't have an IPV6 address space added.
     > * Make sure the subnet's IP range doesn't overlap with 10.0.1.x.
 
 1. Select **Microsoft.PowerPlatform/vnetaccesslinks** from the subnet delegation drop-down list.
 
 1. Select **Save**.
 
-   :::image type="content" source="media/associate-subnet.png" alt-text="Screenshot showing the Add subnet dialog with the Delegate subnet to a service setting showing Microsoft.PowerPlatform/vnetaccesslinks selected.":::
+   :::image type="content" source="media/associate-subnet.png" lightbox="media/associate-subnet.png" alt-text="Screenshot showing the Add subnet dialog with the Delegate subnet to a service setting showing Microsoft.PowerPlatform/vnetaccesslinks selected.":::
 
 ## Step 3: Create a VNet data gateway
 
@@ -68,13 +69,13 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
 
 1. Select **Virtual network (VNet) data gateway** > **New**.
 
-1. Select the license capacity, subscription, resource group, VNet and the Subnet. Only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
+1. Select the subscription, resource group, VNet and the Subnet. Only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
 
-1. By default, we provide a unique name for this data gateway, but you could optionally update it. You can also optionally configure the [high availability and load balancing options](high-availability-load-balancing.md#high-availability-and-load-balancing-a-cluster-for-a-virtual-network-data-gateway) in the Advanced settings section.
+1. By default, we provide a unique name for this data gateway, but you could optionally update it.
 
 1. Select **Save**. This VNet data gateway is now displayed in your **Virtual network data gateways** tab. A VNet data gateway is a managed gateway that could be used for controlling access to this resource for Power platform users.  
 
-   :::image type="content" source="media/vnet-data-gateway.png" alt-text="Screenshot showing the New virtual network data gateway dialog.":::
+   :::image type="content" source="media/vnet-data-gateway.png" lightbox="media/vnet-data-gateway.png" alt-text="Screenshot showing the New virtual network data gateway dialog.":::
 
 ## Regions supported for VNet data gateways
 
