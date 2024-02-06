@@ -52,7 +52,7 @@ landingContent:
             url: service-gateway-monthly-updates.md
 
   # Card
-  - title: About the virtual network (VNet) data gateway (Preview)
+  - title: About the virtual network (VNet) data gateway
     linkLists:
       - linkListType: overview
         links:
