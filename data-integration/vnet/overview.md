@@ -14,7 +14,7 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
 ## Limitations
 
 - Currently, this feature is available only for Fabric Dataflow Gen2, Power BI datasets, Power Platform dataflows, and Power BI paginated reports. Power BI dataflows and datamarts are not supported.
-- This feature is currently not supported in sovereign clouds.
+- This feature is currently not supported in GCC L2 and Air Gap clouds.
 
 - You can't change the region, subscription, or resource group for the VNet on which the VNet data gateway was created. This scenario isn't currently supported.
 
