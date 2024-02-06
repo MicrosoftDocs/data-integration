@@ -73,7 +73,7 @@
       items:
       - name: "Supported monthly updates"
         href: gateway/service-gateway-monthly-updates.md
-  - name: Virtual network data gateways (Preview) docs
+  - name: Virtual network data gateways docs
     expanded: true
     items:
     - name: "What is a virtual network data gateway?"

@@ -8,7 +8,7 @@ ms.date: 11/17/2022
 
 # Use virtual network (VNet) data gateway in Power Platform dataflows
 
-Virtual network data gateways let Power Platform dataflows connect to data services secured in an Azure VNet without the need of an on-premises data gateway. For more information about virtual network data gateways and their limitations, go to [What is a virtual network (VNet) data gateway (Preview)](what-is.md).
+Virtual network data gateways let Power Platform dataflows connect to data services secured in an Azure VNet without the need of an on-premises data gateway. For more information about virtual network data gateways and their limitations, go to [What is a virtual network (VNet) data gateway](what-is.md).
 
 >[!Note]
 >
