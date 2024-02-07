@@ -86,7 +86,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
 |**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
-|**EvaluationContext**|Contains the artifactId (that is, DatasetId, DataflowsId) along with additional data depending on the artifact. Note that this field only populates for Dataflow Gen2 and Power Platform dataflows.|
+|**EvaluationContext**|Contains the artifactId (that is, ModelID, DataflowsId) along with additional data depending on the artifact. Note that this field only populates for Dataflow Gen2 and Power Platform dataflows.|
 
 The Query Execution Aggregation Report contains query information aggregated to a time interval by **GatewayObjectId**, **DataSource**, **Success**, and **QueryType**. The default value is 5 minutes, but you can adjust it. The following attributes are captured.
 
@@ -130,7 +130,7 @@ Now, you can visualize the data that's in the log files.
 
 1. Select **Load**, and the template file starts loading the data from your log files. All visuals are populated by using the data in the reports.
 
-1. Optionally, save this file as a PBIX, and publish it to your service for automatic refreshes. To learn more, go to [Publish datasets and reports from Power BI Desktop](/power-bi/create-reports/desktop-upload-desktop-files).
+1. Optionally, save this file as a PBIX, and publish it to your service for automatic refreshes. To learn more, go to [Publish semantic models and reports from Power BI Desktop](/power-bi/create-reports/desktop-upload-desktop-files).
 
 You also can customize this template file to suit your needs. For more information on Power BI templates, go to this [Microsoft Power BI blog post](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
@@ -150,7 +150,7 @@ Enabling this setting likely will increase the log size significantly, based on 
 
 ## Optimize performance by streaming data
 
-By default, the on-premises data gateway spools data before returning it to the dataset, potentially causing slower performance during data load and refresh operations. The default behavior can be overridden.
+By default, the on-premises data gateway spools data before returning it to the semantic model, potentially causing slower performance during data load and refresh operations. The default behavior can be overridden.
 
 1. In the C:\Program Files\On-Premises data gateway\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config file, set the **StreamBeforeRequestCompletes** setting to **True**, and then save.
 

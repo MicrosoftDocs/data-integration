@@ -107,7 +107,7 @@ sections:
       - question: |
           Does the gateway support cross-tenant Microsoft Entra ID access?
         answer: |
-          No, cross-tenant Microsoft Entra ID access isn't supported. A Power BI dataset in a tenant can't connect to data sources from a different tenant using a Microsoft Entra ID account. This limitation applies whether the data source uses an on-premises data gateway or not. To overcome this limitation, use an authentication type other than OAuth.
+          No, cross-tenant Microsoft Entra ID access isn't supported. A Power BI semantic model in a tenant can't connect to data sources from a different tenant using a Microsoft Entra ID account. This limitation applies whether the data source uses an on-premises data gateway or not. To overcome this limitation, use an authentication type other than OAuth.
 
       - question: |
           Can I force the gateway to use HTTPS traffic with Azure Relay instead of TCP?  
