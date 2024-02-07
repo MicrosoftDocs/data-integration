@@ -46,7 +46,7 @@ Separate development workloads from business-critical ones by setting up one or 
 
 ![Image of a development and test gateway cluster with three gateways and a separate production cluster with three gateways](media/plan-scale-maintain/dev-production-clusters.png)
 
-Use a development gateway cluster to test out new datasets, reports, queries, and so on. Once a new workload has been verified, migrate it to a business-critical gateway cluster. This process prevents new, untested, or experimental workloads from having performance impacts on productions workloads.
+Use a development gateway cluster to test out new semantic models, reports, queries, and so on. Once a new workload has been verified, migrate it to a business-critical gateway cluster. This process prevents new, untested, or experimental workloads from having performance impacts on productions workloads.
 
 Also use your development gateway cluster(s) to test new gateway updates before applying updates to your business-critical gateway clusters. New gateway updates should be deployed for a minimum of 24 hours in the development gateway cluster(s) before being used on business-critical gateway cluster(s).
 
