@@ -26,23 +26,9 @@ You can also create data sources and share these data sources to users like you 
 
 ## Supported Azure data services
 
-In the current release, VNet data gateways support connectivity to the following data sources:
+In the current release, VNet data gateways support connectivity to all of the following data sources.
 
-- AdMaD
-- Admin Insights
-- Amazon Redshift
-- Amazon S3
-- Analysis Services
-- Anaplan Connection Configuration
-- appFigures
-- AriaConnector
-- Asana
-- Assemble Views
-- AtScale cubes
-- Autodesk Construction Cloud
-- Automation Anywhere
-- AutomyDataAnalytics
-- AutoPremium
+Supported sources with secure connectivity:
 - Azure Batch
 - Azure Blob Storage
 - Azure Cosmos DB v1
@@ -64,7 +50,25 @@ In the current release, VNet data gateways support connectivity to the following
 - Azure Resource Graph
 - Azure Synapse Analytics workspace
 - Azure Synapse Workspace
+- Azure SQL
 - Azure Table Storage
+
+Sources supported with public endpoints:
+- AdMaD
+- Admin Insights
+- Amazon Redshift
+- Amazon S3
+- Analysis Services
+- Anaplan Connection Configuration
+- appFigures
+- AriaConnector
+- Asana
+- Assemble Views
+- AtScale cubes
+- Autodesk Construction Cloud
+- Automation Anywhere
+- AutomyDataAnalytics
+- AutoPremium
 - BitSightSecurityRatings
 - Bloomberg Data and Analytics  v1.1.3
 - BQECore
@@ -78,6 +82,7 @@ In the current release, VNet data gateways support connectivity to the following
 - Common Data Service (Legacy)
 - Connect to comScore Digital Analytix
 - Connect to Viva Insights Data
+- CSV
 - Databricks
 - Dataflows
 - Datamarts
@@ -158,6 +163,7 @@ In the current release, VNet data gateways support connectivity to the following
 - Quick Base Connector
 - QuickBooks Online
 - Roamler
+- Salesforce Objects
 - ScopevisioPowerBICon
 - SentryOne
 - SFTP
