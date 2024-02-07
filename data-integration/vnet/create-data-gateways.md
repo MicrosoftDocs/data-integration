@@ -77,6 +77,9 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
 
    :::image type="content" source="media/vnet-data-gateway.png" lightbox="media/vnet-data-gateway.png" alt-text="Screenshot showing the New virtual network data gateway dialog.":::
 
+   > [!NOTE]
+   > Depending on the permissions of your account, you may first be prompted to choose a capacity before selecting a subscription as shown on the previous screenshot of the New virtual network data gateway dialog.
+
 ## Regions supported for VNet data gateways
 
 Your Azure VNet region needs to be in one of the following regions for you to be able to create a virtual network (VNet) data gateway:
