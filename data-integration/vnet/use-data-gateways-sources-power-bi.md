@@ -7,7 +7,7 @@ ms.date: 1/17/2024
 
 # Use virtual network data gateway and data sources in Power BI
 
-Virtual network data gateways allow import or direct query datasets to connect to data services within an Azure VNet without the need of an on-premises data gateway.
+Virtual network data gateways allow import or direct query semantic models to connect to data services within an Azure VNet without the need of an on-premises data gateway.
 
 > [!NOTE]
 > Virtual network data gateways is a Premium and Embedded feature, and will be available only in Power BI Premium workspaces, Premium Per User (PPU), and Power BI Embedded for public preview. However, licensing requirements might change when VNet data gateways become generally available.
@@ -82,7 +82,7 @@ In the current release, VNet data gateways support connectivity to the following
 - Dataflows
 - Datamarts
 - Dataverse
-- DataWorld.Dataset
+- DataWorld.semantic model
 - DCW - Integrations Platform Insights
 - Delta Sharing
 - Dremio Cloud
@@ -213,8 +213,8 @@ To enable Microsoft Entra ID SSO, on the **Manage Gateways** page in Power BI, g
 
 :::image type="content" source="media/azure-ad-sso.png" alt-text="Screenshot of the data source settings page with Use SSO via Microsoft Entra ID for Direct queries emphasized.":::
 
-## Use virtual network (VNet) data gateways in Power BI datasets
+## Use virtual network (VNet) data gateways in Power BI semantic models
 
-A Power BI report maker or creator can now publish a report and associate the dataset to the VNet data gateway data source.
+A Power BI report maker or creator can now publish a report and associate the semantic model to the VNet data gateway data source.
 
-:::image type="content" source="media/use-in-pbi-datasets.png" alt-text="Screenshot of the Gateway connection showing the data sources included in the dataset.":::
+:::image type="content" source="media/use-in-pbi-datasets.png" alt-text="Screenshot of the Gateway connection showing the data sources included in the semantic model.":::
