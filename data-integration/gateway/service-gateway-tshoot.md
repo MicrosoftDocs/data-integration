@@ -170,7 +170,7 @@ This technique allows you to test iteratively, testing the connection on the gat
 
 Although it isn't a guarantee of a successful refresh through the gateway, a successful Power BI Desktop refresh from the gateway computer is a strong indicator that everything is configured correctly on the gateway computer.
 In other words, if you can't refresh in Power BI Desktop from the gateway computer, it's highly unlikely that a refresh through the gateway will succeed.
-After a successful refresh in Desktop, you can narrow your troubleshooting steps to the configuration of the datasource and the dataset in the Power BI Service.
+After a successful refresh in Desktop, you can narrow your troubleshooting steps to the configuration of the datasource and the semantic model in the Power BI Service.
 
 ## Limitations and considerations
 
