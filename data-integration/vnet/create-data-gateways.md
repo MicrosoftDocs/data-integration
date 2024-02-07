@@ -3,6 +3,7 @@ title: Create virtual network (VNet) data gateways
 description: Provides information about how to create virtual network (VNet) data gateways.
 ms.topic: conceptual
 ms.date: 07/14/2023
+ms.custom: references_regions
 ---
 
 # Create virtual network data gateways
@@ -76,6 +77,9 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
 1. Select **Save**. This VNet data gateway is now displayed in your **Virtual network data gateways** tab. A VNet data gateway is a managed gateway that could be used for controlling access to this resource for Power platform users.  
 
    :::image type="content" source="media/vnet-data-gateway.png" lightbox="media/vnet-data-gateway.png" alt-text="Screenshot showing the New virtual network data gateway dialog.":::
+
+   > [!NOTE]
+   > Depending on the permissions of your account, you may first be prompted to choose a capacity before selecting a subscription as shown on the previous screenshot of the New virtual network data gateway dialog.
 
 ## Regions supported for VNet data gateways
 
