@@ -5,9 +5,9 @@ ms.topic: conceptual
 ms.date: 01/26/2024
 ---
 
-# Virtual network (VNET) data gateways
+# Virtual network (VNET) data gateways business model
 
-The VNET Data Gateway is a network security offering that lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a VNET Data Gateway. The VNET Data Gateway ensures no traffic is exposed to a public endpoint. In addition, you can force all traffic to your datasource to go through a gateway, allowing for comprehensive auditing of secure data sources. To learn more and get started, visit [VNET Data Gateways](overview.md).
+This article covers billing and related best practices for the VNET Data Gateway. The VNET Data Gateway is a network security offering that lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a VNET Data Gateway. The VNET Data Gateway ensures no traffic is exposed to a public endpoint. In addition, you can force all traffic to your datasource to go through a gateway, allowing for comprehensive auditing of secure data sources. To learn more and get started, visit [VNET Data Gateways](overview.md).
 
 ![VNet data gateway architecture.](media/VNet-gateway-architecture-no-swift.png)
 
@@ -15,8 +15,8 @@ The VNET Data Gateway is a network security offering that lets you connect your 
 
 The VNET Data Gateway is billed as an additive premium infrastructure charge, associated to a Premium or Fabric capacity. This means that it has its own meter and incurs a bill that is consistent across and in addition to all artifacts. Total Bill of running an artifact through the VNET Data Gateway = Artifact Charge + VNET Data Gateway Charge
 The VNET Data Gateway Charge is proportional to your usage of the VNET Data Gateway; we define usage as uptime, or anytime the VNET Data Gateway is on. A single VNET Data Gateway uses two cores.
-- Consumption Units (CU) consumption rate: 2x
-- Price: 2x (CU consumption rate) * 2 cores (per VNET Data Gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per VNET/hour
+- Consumption Unit (CU) consumption rate: 2x
+- Price: 2x (CU Consumption rate) * 2 cores (per VNET Data Gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per VNET/hour
 
 ## Best Practices
 
