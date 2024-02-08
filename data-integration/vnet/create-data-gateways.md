@@ -67,13 +67,15 @@ This subnet should have connectivity to the data service.
 
 A Microsoft Power Platform user enables the subnet for use in Microsoft Power Platform and creates a VNet data gateway. By doing this process, the user authorizes the Microsoft Power Platform VNet service to inject containers into the subnet. The user also needs to have the Azure [Network Contributor](/azure/role-based-access-control/built-in-roles#network-contributor) role in the subscription to be able to perform this action.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power BI homepage](https://app.powerbi.com).
 
-1. In the left navigation pane, select **Data (preview)**.
+1. In the top navigation bar, select the settings gear icon on the right.
 
+1. From the drop down, select the Manage connections and gateways page.
+   
 1. Select **Virtual network (VNet) data gateway** > **New**.
 
-1. Select the subscription, resource group, VNet and the Subnet. Only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
+1. Select the license capacity, subscription, resource group, VNet and the Subnet. Note that for Power Platform users, option to choose a capacity will show starting next week. Also, only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
 
 1. By default, we provide a unique name for this data gateway, but you could optionally update it.
 
