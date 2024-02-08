@@ -5,9 +5,9 @@ ms.topic: conceptual
 ms.date: 01/26/2024
 ---
 
-# Virtual network (VNET) data gateways
+# Virtual network (VNET) data gateways business model
 
-The VNET Data Gateway is a network security offering that lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a VNET Data Gateway. The VNET Data Gateway ensures no traffic is exposed to a public endpoint. In addition, you can force all traffic to your datasource to go through a gateway, allowing for comprehensive auditing of secure data sources. To learn more and get started, visit [VNET Data Gateways](overview.md).
+This article will cover billing and related best practices for the VNET Data Gateway. The VNET Data Gateway is a network security offering that lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a VNET Data Gateway. The VNET Data Gateway ensures no traffic is exposed to a public endpoint. In addition, you can force all traffic to your datasource to go through a gateway, allowing for comprehensive auditing of secure data sources. To learn more and get started, visit [VNET Data Gateways](overview.md).
 
 ![VNet data gateway architecture.](media/VNet-gateway-architecture-no-swift.png)
 
