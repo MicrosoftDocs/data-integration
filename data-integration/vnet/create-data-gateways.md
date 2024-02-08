@@ -13,6 +13,9 @@ Details to consider when creating a VNet data gateway:
 - The creation of VNET data gateways across tenant boundaries isn't supported.
 - The metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your Power BI home’s default region. However, the VNet data gateway runs in the same region as your Azure VNet. Sometimes, there's a difference between the default environment of Power Platform and the default region of Power BI. This might impact the regions you pick.
 
+    > [!NOTE]
+    > VNET charges will only start showing the Capacity Metrics app on 2/26.
+
 Creating a virtual network (VNet) data gateway is a three-step process:
 
 > [Step 1: Register Microsoft.PowerPlatform as a resource provider](#step-1-register-microsoftpowerplatform-as-a-resource-provider)
@@ -64,13 +67,15 @@ This subnet should have connectivity to the data service.
 
 A Microsoft Power Platform user enables the subnet for use in Microsoft Power Platform and creates a VNet data gateway. By doing this process, the user authorizes the Microsoft Power Platform VNet service to inject containers into the subnet. The user also needs to have the Azure [Network Contributor](/azure/role-based-access-control/built-in-roles#network-contributor) role in the subscription to be able to perform this action.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power BI homepage](https://app.powerbi.com).
 
-1. In the left navigation pane, select **Data (preview)**.
+1. In the top navigation bar, select the settings gear icon on the right.
 
+1. From the drop down, select the Manage connections and gateways page.
+   
 1. Select **Virtual network (VNet) data gateway** > **New**.
 
-1. Select the subscription, resource group, VNet and the Subnet. Only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
+1. Select the license capacity, subscription, resource group, VNet and the Subnet. Note that for Power Platform users, option to choose a capacity will show starting next week. Also, only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
 
 1. By default, we provide a unique name for this data gateway, but you could optionally update it.
 
