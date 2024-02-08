@@ -15,8 +15,16 @@ The VNET Data Gateway is a network security offering that lets you connect your 
 
 The VNET Data Gateway is billed as an additive premium infrastructure charge, associated to a Premium or Fabric capacity. This means that it has its own meter and incurs a bill that is consistent across and in addition to all artifacts. Total Bill of running an artifact through the VNET Data Gateway = Artifact Charge + VNET Data Gateway Charge
 The VNET Data Gateway Charge is proportional to your usage of the VNET Data Gateway; we define usage as uptime, or anytime the VNET Data Gateway is on. A single VNET Data Gateway uses two cores.
-- CU consumption rate: 2x
-- Price: 2x (CU Consumption rate) * 2 cores (per VNET Data Gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per VNET/hour
+- Consumption Units (CU) consumption rate: 2x
+- Price: 2x (CU consumption rate) * 2 cores (per VNET Data Gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per VNET/hour
+
+## Best Practices
+
+You can set up your VNET data gateways without paying anything! There's no cost associated with setting up a VNET data gateway. You can set up connections today for free. We start to bill when your first query runs or you run a test connection.
+
+To reduce costs, you can actively manage the time to live on your VNET data gateway in settings. Learn more [here](manage-data-gateways.md#manage-settings).
+
+To check if your VNET data gateway is on or off, you can use the status icon on the **Manage connections and gateways** page.
 
 ## Fabric Capacity Metrics Application
 Remember that VNET Data Gateways don't map to a single workspace or artifact. Rather, each gateway incurs a single charge on the capacity that encompasses the uptime of all the other artifacts and workspaces using it to connect to data sources.
