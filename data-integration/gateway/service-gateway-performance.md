@@ -138,11 +138,15 @@ You also can customize this template file to suit your needs. For more informati
 
 By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure there is adequate free disk space. More information: [Gateway spooling data](service-gateway-configure-disk-space.md#gateway-spooling-data)
 
+## Monitoring gateway member concurrency
+
+By default, the limit for the number of queries that can run simultaneously on a gateway node is **40**. Hitting this limit often will cause incoming queries to get queued pending to run for a long time, which will result in performance degradation and timeout type of errors. If you suspect a gateway member is hitting this limit, please enable [additional logging](service-gateway-performance.md#slow-performing-queries), export the gateway logs, take a look at the _Mashup*.log_ files, look for "runningCount" and "pendingCount" keywords and verify if the "runningCount" is often near 40, or if the "pendingCount" is often above zero. Refer to this [document](plan-scale-maintain.md#when-to-scale-a-gateway-cluster) for more details on how to plan and scale your gateway.
+
 ## Slow-performing queries
 
 Long-running queries might require additional modification on your data source or further optimization of the query itself. This could be either for Power BI refreshes or for direct database queries, like Power BI DirectQuery, Power Apps, or Azure Logic Apps.
 
-By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the performance monitoring feature, you can temporarily enable **Additional logging** to gather additional log information. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
+By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the performance monitoring feature, you can temporarily enable **Additional logging** to gather additional log information, including mashup engine logs, query strings, and verbose-level tracing. These logs are written to the same place as your normal gateway logs. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
 
 ![Turn on additional logging.](media/service-gateway-performance/additional-logging.png)
 
