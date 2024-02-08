@@ -3,6 +3,7 @@ title: Create virtual network (VNet) data gateways
 description: Provides information about how to create virtual network (VNet) data gateways.
 ms.topic: conceptual
 ms.date: 07/14/2023
+ms.custom: references_regions
 ---
 
 # Create virtual network data gateways
@@ -11,6 +12,9 @@ Details to consider when creating a VNet data gateway:
 - Before creating a VNet data gateway, check that the feature is [supported in your region](#regions-supported-for-vnet-data-gateways).
 - The creation of VNET data gateways across tenant boundaries isn't supported.
 - The metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your Power BI home’s default region. However, the VNet data gateway runs in the same region as your Azure VNet. Sometimes, there's a difference between the default environment of Power Platform and the default region of Power BI. This might impact the regions you pick.
+
+    > [!NOTE]
+    > VNET charges will only start showing the Capacity Metrics app on 2/26.
 
 Creating a virtual network (VNet) data gateway is a three-step process:
 
@@ -33,7 +37,7 @@ On the Azure portal, sign in as a subscription owner and register `Microsoft.Pow
 
 1. Search for and select **Microsoft.PowerPlatform**, and then select **Register**.
 
-    ![Register resource provider.](media/register-resource-provider.png)
+   :::image type="content" source="media/register-resource-provider.png" lightbox="media/register-resource-provider.png" alt-text="Screenshot showing the Resource providers tab of a subscription on the Azure portal.":::
 
 ## Step 2: Associate the subnet to Microsoft Power Platform
 
@@ -50,13 +54,14 @@ This subnet should have connectivity to the data service.
     > [!NOTE]
     >
     > * Don't use the subnet name "gatewaysubnet" as this is a reserved word for the Azure Gateway Subnet feature. You won't be able to use it to create a VNet data gateway in Step 3.
+    > * Make sure this subnet doesn't have an IPV6 address space added.
     > * Make sure the subnet's IP range doesn't overlap with 10.0.1.x.
 
 1. Select **Microsoft.PowerPlatform/vnetaccesslinks** from the subnet delegation drop-down list.
 
 1. Select **Save**.
 
-    ![Associate subnet.](media/associate-subnet.png)
+   :::image type="content" source="media/associate-subnet.png" lightbox="media/associate-subnet.png" alt-text="Screenshot showing the Add subnet dialog with the Delegate subnet to a service setting showing Microsoft.PowerPlatform/vnetaccesslinks selected.":::
 
 ## Step 3: Create a VNet data gateway
 
@@ -72,11 +77,14 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
 
 1. Select the license capacity, subscription, resource group, VNet and the Subnet. Note that for Power Platform users, option to choose a capacity will show starting next week. Also, only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
 
-1. By default, we provide a unique name for this data gateway, but you could optionally update it. You can also optionally configure the [high availability and load balancing options](high-availability-load-balancing.md#high-availability-and-load-balancing-a-cluster-for-a-virtual-network-data-gateway) in the Advanced settings section.
+1. By default, we provide a unique name for this data gateway, but you could optionally update it.
 
 1. Select **Save**. This VNet data gateway is now displayed in your **Virtual network data gateways** tab. A VNet data gateway is a managed gateway that could be used for controlling access to this resource for Power platform users.  
 
-    ![VNet data gateway.](media/create-vnet-settings-capacity.png)
+   :::image type="content" source="media/vnet-data-gateway.png" lightbox="media/vnet-data-gateway.png" alt-text="Screenshot showing the New virtual network data gateway dialog.":::
+
+   > [!NOTE]
+   > Depending on the permissions of your account, you may first be prompted to choose a capacity before selecting a subscription as shown on the previous screenshot of the New virtual network data gateway dialog.
 
 ## Regions supported for VNet data gateways
 

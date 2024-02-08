@@ -7,7 +7,7 @@ ms.date: 1/17/2024
 
 # Use virtual network data gateway and data sources in Power BI
 
-Virtual network data gateways allow import or direct query datasets to connect to data services within an Azure VNet without the need of an on-premises data gateway.
+Virtual network data gateways allow import or direct query semantic models to connect to data services within an Azure VNet without the need of an on-premises data gateway.
 
 > [!NOTE]
 > Virtual network data gateways is a Premium and Embedded feature, and will be available only in Power BI Premium workspaces, Premium Per User (PPU), and Power BI Embedded for public preview. However, licensing requirements might change when VNet data gateways become generally available.
@@ -26,23 +26,9 @@ You can also create data sources and share these data sources to users like you 
 
 ## Supported Azure data services
 
-In the current release, VNet data gateways support connectivity to the following data sources:
+In the current release, VNet data gateways support connectivity to all of the following data sources.
 
-- AdMaD
-- Admin Insights
-- Amazon Redshift
-- Amazon S3
-- Analysis Services
-- Anaplan Connection Configuration
-- appFigures
-- AriaConnector
-- Asana
-- Assemble Views
-- AtScale cubes
-- Autodesk Construction Cloud
-- Automation Anywhere
-- AutomyDataAnalytics
-- AutoPremium
+Supported sources with secure connectivity:
 - Azure Batch
 - Azure Blob Storage
 - Azure Cosmos DB v1
@@ -64,7 +50,25 @@ In the current release, VNet data gateways support connectivity to the following
 - Azure Resource Graph
 - Azure Synapse Analytics workspace
 - Azure Synapse Workspace
+- Azure SQL
 - Azure Table Storage
+
+Sources supported with public endpoints:
+- AdMaD
+- Admin Insights
+- Amazon Redshift
+- Amazon S3
+- Analysis Services
+- Anaplan Connection Configuration
+- appFigures
+- AriaConnector
+- Asana
+- Assemble Views
+- AtScale cubes
+- Autodesk Construction Cloud
+- Automation Anywhere
+- AutomyDataAnalytics
+- AutoPremium
 - BitSightSecurityRatings
 - Bloomberg Data and Analytics  v1.1.3
 - BQECore
@@ -78,11 +82,12 @@ In the current release, VNet data gateways support connectivity to the following
 - Common Data Service (Legacy)
 - Connect to comScore Digital Analytix
 - Connect to Viva Insights Data
+- CSV
 - Databricks
 - Dataflows
 - Datamarts
 - Dataverse
-- DataWorld.Dataset
+- DataWorld.semantic model
 - DCW - Integrations Platform Insights
 - Delta Sharing
 - Dremio Cloud
@@ -158,6 +163,7 @@ In the current release, VNet data gateways support connectivity to the following
 - Quick Base Connector
 - QuickBooks Online
 - Roamler
+- Salesforce Objects
 - ScopevisioPowerBICon
 - SentryOne
 - SFTP
@@ -202,9 +208,6 @@ In the current release, VNet data gateways support connectivity to the following
 - Zoho Creator
 - Zucchetti HR Infinity
 
-> [!NOTE]
->SQL Server on a virtual machine (VM) isn't supported.
-
 ## Microsoft Entra ID single sign-on for Direct Query
 
 When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure VNet data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Microsoft Entra ID identity of the user that interacts with Power BI.
@@ -213,8 +216,8 @@ To enable Microsoft Entra ID SSO, on the **Manage Gateways** page in Power BI, g
 
 :::image type="content" source="media/azure-ad-sso.png" alt-text="Screenshot of the data source settings page with Use SSO via Microsoft Entra ID for Direct queries emphasized.":::
 
-## Use virtual network (VNet) data gateways in Power BI datasets
+## Use virtual network (VNet) data gateways in Power BI semantic models
 
-A Power BI report maker or creator can now publish a report and associate the dataset to the VNet data gateway data source.
+A Power BI report maker or creator can now publish a report and associate the semantic model to the VNet data gateway data source.
 
-:::image type="content" source="media/use-in-pbi-datasets.png" alt-text="Screenshot of the Gateway connection showing the data sources included in the dataset.":::
+:::image type="content" source="media/use-in-pbi-datasets.png" alt-text="Screenshot of the Gateway connection showing the data sources included in the semantic model.":::
