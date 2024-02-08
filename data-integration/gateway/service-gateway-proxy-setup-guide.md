@@ -75,7 +75,7 @@ When running the proxy configuration consistency verification from an on-premise
 
 If the proxy definition is either missing or inconsistent, you can experience different behaviors with your on-premises data gateway. A few examples are:
 
-* A dataset or dataflow refresh failure, error message example: `Error: Unable to connect to the remote server`.
+* A semantic model or dataflow refresh failure, error message example: `Error: Unable to connect to the remote server`.
 * While launching on premises data gateway, you fail to sign in, the sign-in prompt appears but its content can't be displayed, or an error message page is displayed.
 * The Network Port test results report failures connecting to the servers.
 

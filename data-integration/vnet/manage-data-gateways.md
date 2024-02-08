@@ -2,7 +2,7 @@
 title: Manage virtual network (VNet) data gateways
 description: Provides information about how to manage virtual network (VNet) data gateways and remove them if necessary.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 1/17/2024
 ---
 
 # Manage virtual network data gateways
@@ -16,7 +16,7 @@ After you've [created](create-data-gateways.md) a virtual network (VNet) data ga
 
 ## Manage access to creating VNet data gateways (gateway installer setting)
 
-Access to creating a VNet data gateway can be limited to selected people only. To do this limitation, you must be an Azure AD Global administrator (which includes Global admins) or a Power BI service administrator. Use the **Manage gateway installers** option to manage who can create a VNet data gateway in your enterprise. This operation isn’t available for gateway admins. Go to the [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) documentation to learn more.
+Access to creating a VNet data gateway can be limited to selected people only. To do this limitation, you must be a Microsoft Entra ID Global administrator (which includes Global admins) or a Power BI service administrator. Use the **Manage gateway installers** option to manage who can create a VNet data gateway in your enterprise. This operation isn’t available for gateway admins. Go to the [manage gateway installers](/power-platform/admin/onpremises-data-gateway-management#manage-gateway-installers) documentation to learn more.
 
 ## Manage admins
 
@@ -24,11 +24,22 @@ You can manage admins for this VNet data gateway like you do for standard data g
 
 ![Manage admins.](media/manage-admins.png)
 
+## Manage capacity for billing
+
+The capacity linked to your VNet data gateway incurs the bill. You can view and edit this capacity in the [settings](manage-data-gateways.md#manage-settings) for the gateway. Fabric and Power BI capacities are valid.
+
+> [!NOTE]
+> Existing preview users are required to assign a capacity to each of their existing gateways in order to make edits to their configuration, or to create new gateways after February 1st, 2024.
+
 ## Manage settings
 
 You can view properties for a selected VNet data gateway in the Power Platform admin center by selecting **Settings**.
 
 ![Manage settings.](media/manage-settings.png)
+
+### Time to auto-pause
+
+Sometimes referred to as time to live, this setting allows you to shutdown a VNet data gateway that has been idling for the designated amount of time. Idling starts after the last query has finished executing. The interval to wait options include: 30 minutes, 1 hour, 1 hour and 30 minutes, 2 hours, 2 hours and 30 minutes, 4 hours, 6 hours, 8 hours, 12 hours, and 24 hours.
 
 ## Remove VNet data gateways
 

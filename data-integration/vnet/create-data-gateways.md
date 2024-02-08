@@ -3,6 +3,7 @@ title: Create virtual network (VNet) data gateways
 description: Provides information about how to create virtual network (VNet) data gateways.
 ms.topic: conceptual
 ms.date: 07/14/2023
+ms.custom: references_regions
 ---
 
 # Create virtual network data gateways
@@ -11,6 +12,9 @@ Details to consider when creating a VNet data gateway:
 - Before creating a VNet data gateway, check that the feature is [supported in your region](#regions-supported-for-vnet-data-gateways).
 - The creation of VNET data gateways across tenant boundaries isn't supported.
 - The metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your Power BI home’s default region. However, the VNet data gateway runs in the same region as your Azure VNet. Sometimes, there's a difference between the default environment of Power Platform and the default region of Power BI. This might impact the regions you pick.
+
+    > [!NOTE]
+    > VNET charges will only start showing the Capacity Metrics app on 2/26.
 
 Creating a virtual network (VNet) data gateway is a three-step process:
 
@@ -33,7 +37,7 @@ On the Azure portal, sign in as a subscription owner and register `Microsoft.Pow
 
 1. Search for and select **Microsoft.PowerPlatform**, and then select **Register**.
 
-    ![Register resource provider.](media/register-resource-provider.png)
+   :::image type="content" source="media/register-resource-provider.png" lightbox="media/register-resource-provider.png" alt-text="Screenshot showing the Resource providers tab of a subscription on the Azure portal.":::
 
 ## Step 2: Associate the subnet to Microsoft Power Platform
 
@@ -57,25 +61,30 @@ This subnet should have connectivity to the data service.
 
 1. Select **Save**.
 
-    ![Associate subnet.](media/associate-subnet.png)
+   :::image type="content" source="media/associate-subnet.png" lightbox="media/associate-subnet.png" alt-text="Screenshot showing the Add subnet dialog with the Delegate subnet to a service setting showing Microsoft.PowerPlatform/vnetaccesslinks selected.":::
 
 ## Step 3: Create a VNet data gateway
 
 A Microsoft Power Platform user enables the subnet for use in Microsoft Power Platform and creates a VNet data gateway. By doing this process, the user authorizes the Microsoft Power Platform VNet service to inject containers into the subnet. The user also needs to have the Azure [Network Contributor](/azure/role-based-access-control/built-in-roles#network-contributor) role in the subscription to be able to perform this action.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power BI homepage](https://app.powerbi.com).
 
-1. In the left navigation pane, select **Data (preview)**.
+1. In the top navigation bar, select the settings gear icon on the right.
 
+1. From the drop down, select the Manage connections and gateways page.
+   
 1. Select **Virtual network (VNet) data gateway** > **New**.
 
-1. Select the subscription, resource group, VNet and the Subnet. Only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
+1. Select the license capacity, subscription, resource group, VNet and the Subnet. Note that for Power Platform users, option to choose a capacity will show starting next week. Also, only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list.
 
 1. By default, we provide a unique name for this data gateway, but you could optionally update it.
 
 1. Select **Save**. This VNet data gateway is now displayed in your **Virtual network data gateways** tab. A VNet data gateway is a managed gateway that could be used for controlling access to this resource for Power platform users.  
 
-    ![VNet data gateway.](media/vnet-data-gateway.png)
+   :::image type="content" source="media/vnet-data-gateway.png" lightbox="media/vnet-data-gateway.png" alt-text="Screenshot showing the New virtual network data gateway dialog.":::
+
+   > [!NOTE]
+   > Depending on the permissions of your account, you may first be prompted to choose a capacity before selecting a subscription as shown on the previous screenshot of the New virtual network data gateway dialog.
 
 ## Regions supported for VNet data gateways
 

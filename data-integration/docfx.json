@@ -54,11 +54,9 @@
         "vnet/**.*": "nikkiwaghani",
         "gateway/**.*": "miquelladeboer"
       },
-      "ms.prod":{
-        "gateway/**.*": "on-premises-data-gateway"
-      },
-      "ms.service":{
-        "vnet/**.*": "virtual-network-data-gateway"
+      "ms.subservice":{
+        "vnet/**.*": "virtual-network-data-gateways",
+        "gateway/**.*": "on-premises-data-gateways"
       }
     },
     "template": [],

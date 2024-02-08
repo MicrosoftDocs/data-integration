@@ -10,7 +10,7 @@
     - name: Concepts
       items:
       - name: "On-premises data gateway architecture"
-        href: gateway/service-gateway-onprem-indepth.md    
+        href: gateway/service-gateway-onprem-indepth.md         
       - name: "On-premises data gateway FAQ"
         href: gateway/service-gateway-onprem-faq.yml
     - name: How to
@@ -71,7 +71,7 @@
       items:
       - name: "Supported monthly updates"
         href: gateway/service-gateway-monthly-updates.md
-  - name: Virtual network data gateways (Preview) docs
+  - name: Virtual network data gateways docs
     expanded: true
     items:
     - name: "What is a virtual network data gateway?"
@@ -82,12 +82,16 @@
         href: vnet/what-is.md
       - name: Virtual network data gateway architecture
         href: vnet/data-gateway-architecture.md
+      - name: "Virtual network data gateways business model"
+        href: vnet/data-gateway-business-model.md 
     - name: How to
       items:
       - name: Create virtual network data gateways
         href: vnet/create-data-gateways.md
       - name: Manage virtual network data gateways
         href: vnet/manage-data-gateways.md
+      - name: Use virtual network data gateway in Fabric with Dataflows Gen 2
+        href: vnet/use-data-gateways-dfgen2-fabric.md
       - name: Use virtual network data gateway in Power BI
         href: vnet/use-data-gateways-sources-power-bi.md
       - name: Use virtual network data gateway in Power Platform dataflows
