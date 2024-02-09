@@ -37,9 +37,9 @@ You can view properties for a selected VNet data gateway in the Power Platform a
 
 ![Manage settings.](media/manage-settings.png)
 
-### Time to auto-pause
+## Manage time to auto-shutdown
 
-Sometimes referred to as time to live, this setting allows you to shutdown a VNet data gateway that has been idling for the designated amount of time. Idling starts after the last query has finished executing. The interval to wait options include: 30 minutes, 1 hour, 1 hour and 30 minutes, 2 hours, 2 hours and 30 minutes, 4 hours, 6 hours, 8 hours, 12 hours, and 24 hours.
+This setting allows you to shutdown a VNet data gateway that has been idling for the designated amount of time. Idling starts after the last query has finished executing. The interval to wait options include: 30 minutes, 1 hour, 1 hour and 30 minutes, 2 hours, 2 hours and 30 minutes, 4 hours, 6 hours, 8 hours, 12 hours, and 24 hours.
 
 ## Remove VNet data gateways
 
