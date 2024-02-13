@@ -43,7 +43,7 @@ Supported sources with secure connectivity:
 - Azure Databricks workspace
 - Azure DevOps (Boards only)
 - Azure Function
-- Azure HDInsight on AKS Trino
+- Azure HDInsight on Azure Kubernetes Services (AKS) Trino
 - Azure HDInsight Spark
 - Azure Keyvault Service
 - Azure Machine Learning
@@ -117,7 +117,7 @@ Sources supported with public endpoints:
 - Google Sheets
 - HDInsight Interactive Query
 - Hexagon PPM Smart API
-- Hive LLAP
+- Hive Live Long and Process (LLAP)
 - IBM Netezza
 - Impala
 - Azure Enterprise
@@ -137,7 +137,7 @@ Sources supported with public endpoints:
 - MetricsCES
 - MetricsDataConnector
 - Microsoft Teams Personal Analytics
-- Microsoft365
+- Microsoft 365
 - MicrosoftCallQuality
 - MicroStrategy for Power BI ver. 2.4.5
 - mixpanel
@@ -150,12 +150,12 @@ Sources supported with public endpoints:
 - Plantronics
 - Planview Enterprise Architecture
 - Planview IdeaPlace
-- Planview OKR
+- Planview Objectives and Key Results (OKR)
 - Planview Portfolios
 - Planview ProjectPlace
 - PostgreSQL
 - Power BI dataflows (Legacy)
-- PowerBI Semantic Model
+- Power BI Semantic Model
 - ProductInsights
 - Productioneer Connector
 - Profisee
@@ -165,12 +165,11 @@ Sources supported with public endpoints:
 - Roamler
 - Salesforce Objects
 - ScopevisioPowerBICon
+- Secure File Transfer Protocol (SFTP)
 - SentryOne
-- SFTP
 - ShareAdvance ProjectIntelligence Data Source Information
 - SharePoint
 - ShortcutsBI
-- SIS-CC SDMX Connector for SDMX-CSV web services
 - Siteimprove
 - Smartsheet.Tables
 - Snowflake
@@ -181,7 +180,7 @@ Sources supported with public endpoints:
 - Spark
 - SparkPost
 - SpotlightCloudReports
-- Azure SQL
+- Statistical Information System Collaboration Community (SIS-CC) Statistical Data and Metadata Exchange (SDMX) Connector for SDMX-CSV web services
 - SumTotal BI Connector
 - SurveyMonkey
 - SweetIQ
