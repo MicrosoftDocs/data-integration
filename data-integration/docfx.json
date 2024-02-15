@@ -39,9 +39,10 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-PowerPlatform",
       "breadcrumb_path": "/data-integration/breadcrumb/toc.json",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/data-integration",
-      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi?category_id=161724",
+      "feedback_system": "Standard",
+      "feedback_product_url": "https://ideas.fabric.microsoft.com/?forum=2d80fd4a-16cb-4189-896b-e0dac5e08b41",
+      "feedback_help_link_url": "https://community.fabric.microsoft.com/t5/Forums/ct-p/PBI_Comm_Forums",
+      "feedback_help_link_type": "ask-the-community",
       "recommendations": true,
       "ms.service": "data-integration-gateways"
     },
