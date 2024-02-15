@@ -18,7 +18,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 ### Minimum requirements
 
 * .NET Framework 4.8
-* A 64-bit version of Windows 10 or a 64-bit version of Windows Server 2016
+* A 64-bit version of Windows 10 or a 64-bit version of Windows Server 2019
 * 4-GB disk space for [performance monitoring](service-gateway-performance.md#gateway-performance-monitoring-public-preview) logs (in default configuration)
 
 > [!NOTE]
