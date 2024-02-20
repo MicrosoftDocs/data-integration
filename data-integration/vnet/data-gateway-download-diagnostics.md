@@ -33,7 +33,7 @@ Logs for your VNET data gateway are available for download on the **Manage conne
 | Attribute | Description |
 | --- | --- |
 | Timestamp | The time the counter was emitted. |
-| Id | Unique identifier for the container on which your gateway is currently running. |
+| ID | Unique identifier for the container on which your gateway is currently running. |
 | CommittedMemoryinMB | Memory used out of the total 2 GB RAM reserved per VNET. |
 | CPUUsagePercentage | CPU used. |
 | MemoryAvailableinMB | Memory available. |
@@ -56,7 +56,7 @@ Logs for your VNET data gateway are available for download on the **Manage conne
 
 | Attribute | Description |
 | --- | --- |
-| Id | Gateway object identifier. |
+| ID | Gateway object identifier. |
 | Timestamp | Start of the query execution. |
 | QueryId | Query identifier. |
 | InstanceId | Identifier for the container on which your gateway is currently running. |
