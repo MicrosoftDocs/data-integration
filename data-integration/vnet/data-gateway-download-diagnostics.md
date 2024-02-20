@@ -26,7 +26,7 @@ Logs for your VNET data gateway are available for download on the **Manage conne
 1. From the page header in the [Power BI service](https://app.powerbi.com), select the **Settings** icon and then select **Manage connections and gateways**.
 2. Select the **Virtual network data gateways** tab.
 3. Find your VNet data gateway and, in the same row, select the download icon in the **Download diagnostics** column.
-4. Open the downloaded folder to view the logs.
+4. To view the logs, open the downloaded folder.
 
 ## SystemCounters
 
@@ -34,7 +34,7 @@ Logs for your VNET data gateway are available for download on the **Manage conne
 | --- | --- |
 | Timestamp | The time the counter was emitted. |
 | ID | Unique identifier for the container on which your gateway is currently running. |
-| CommittedMemoryinMB | Memory used out of the total 2 GB RAM reserved per VNET. |
+| CommittedMemoryinMB | Memory used out of the total 2-GB RAM reserved per VNET. |
 | CPUUsagePercentage | CPU used. |
 | MemoryAvailableinMB | Memory available. |
 
