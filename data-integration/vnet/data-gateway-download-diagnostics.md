@@ -19,6 +19,7 @@ Logs for your VNET data gateway are available for download on the manage connect
 - The gateway must be online to provide logs. Check the status of the VNet by selecting the icon in the "Status" column. 
 - If you don’t see the download, check to make sure pop-ups aren't disabled on your browser.
 - This feature isn't available in certain regions, including Sweden central, Poland central, China regions, and US Gov Virginia regions.
+- Mashup logs are in .jsonl format, while SystemCounters and QueryExecutionReport are in parquet format.
 
 ## How to download logs
 
