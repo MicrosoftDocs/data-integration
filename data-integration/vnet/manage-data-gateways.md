@@ -46,7 +46,7 @@ This setting allows you to shutdown a VNet data gateway that has been idling for
 You can remove or delete VNet data gateways by selecting the gateway and selecting **Remove**.
 
 > [!NOTE]
-> When you remove the last gateway associated to a gateway/subnet, it might take up to 48-72 hours before you can delete the subnet or VNet.
+> When you remove the last gateway associated to a gateway/subnet, it might take up to 48-72 hours before you can delete the subnet or VNet. When bringing a previously deprovisioned VNet online, it typically takes about 2 minutes to become available, but can take up to 15 minutes in some cases before it's available.
 
 >[!Important]
 > To be able to remove or delete a VNet data gateway, you need to:

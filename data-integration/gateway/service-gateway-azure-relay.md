@@ -43,7 +43,7 @@ If you want to keep your data within the region where it’s stored, all you nee
 * [Bring your own relay](#steps-to-provide-your-own-relay-details) that lives in the same region as the data.
 * Make sure your capacity is in the same region.
 
-When you install an on-premises data gateway, it must be in the home tenant region to work with Power BI. Data from your gateway must travel to the relay, then to the location of your [Power BI capacity](/power-bi/enterprise/service-admin-premium-manage). An Azure Relay automatically gets installed in the same region as the on-premises data gateway.
+When you install an on-premises data gateway, you must select the region of the home tenant to work with Power BI. Data from your gateway must travel to the relay, then to the location of your [Power BI capacity](/power-bi/enterprise/service-admin-premium-manage). An Azure Relay automatically gets installed in the same region selected for the on-premises data gateway during its configuration.
 
 However, you have the option to choose your own relay in a different location. Then, the data will transfer through the location of your assigned relay instead. Only metadata will go to the gateway application in the home region and this condition can't be changed. This means you can keep your data within the region it's stored in if your relay, the capacity, and the data are all in the same region.
 

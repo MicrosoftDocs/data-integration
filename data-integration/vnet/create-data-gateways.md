@@ -41,7 +41,10 @@ On the Azure portal, sign in as a subscription owner and register `Microsoft.Pow
 
 ## Step 2: Associate the subnet to Microsoft Power Platform
 
-A user in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet, like the Azure [Network Contributor](/azure/role-based-access-control/built-in-roles#network-contributor) role, can delegate the subnet within the same VNet to Microsoft Power Platform. Subnet delegation enables you to designate a specific subnet for an Azure PaaS service of your choice that needs to be injected into your virtual network.
+A user in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet, like the Azure [Network Contributor](/azure/role-based-access-control/built-in-roles#network-contributor) role, can delegate the subnet within the same VNet to Microsoft Power Platform. Subnet delegation enables you to designate a specific subnet for an Azure PaaS service of your choice that needs to be injected into your virtual network. 
+
+> [!NOTE]
+> The assignment of a user to the Network Contributor role or granting of the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet is configured in Azure, so users unfamiliar with how to do this should contact the person in their organization who manages Azure virtual networks to assist them with the change.
 
 This subnet should have connectivity to the data service.
 
