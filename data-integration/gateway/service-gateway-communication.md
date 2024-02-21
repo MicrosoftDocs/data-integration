@@ -165,7 +165,7 @@ A service tag represents a group of IP address prefixes from a given Azure servi
 * AzureActiveDirectory
 * AzureCloud
 
-The on-premises data gateway uses Azure Relay for some communication. However, there are no service tags for the Azure Relay service. ServiceBus service tags specifically pertain to the Service queues and topics feature, but not for Azure Relay.
+The on-premises data gateway uses Azure Relay for some communication. However, there are no service tags for the Azure Relay service. ServiceBus service tags are still required though because they still pertain to the service queues and topics feature, even though not for Azure Relay.
 
 The AzureCloud service tag represents all global Azure Data Center IP addresses. Since Azure Relay service is built on top of Azure Compute, Azure Relay public IPs are a subset of the AzureCloud IPs. More information: [Azure service tags overview](/azure/virtual-network/service-tags-overview)
 
