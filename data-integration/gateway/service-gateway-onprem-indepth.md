@@ -8,7 +8,7 @@ ms.custom: intro-internal
 
 # On-premises data gateway architecture
 
-Users in your organization can access on-premises data to which they already have access authorization. But before those users can connect to your on-premises data source, an on-premises data gateway needs to be installed and configured.
+Users in your organization can access on-premises data to which they already have access authorization from services in the cloud like Power BI, Power Platform, and Microsoft Fabric. But before those users can connect the cloud service to your on-premises data source, an on-premises data gateway needs to be installed and configured.
 
 The gateway facilitates quick and secure behind-the-scenes communication. This communication flows from a user in the cloud to your on-premises data source and then back to the cloud.
 
