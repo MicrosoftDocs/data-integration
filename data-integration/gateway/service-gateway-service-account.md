@@ -69,8 +69,8 @@ Group managed service accounts (gMSAs) can be used for the data gateway in place
 
 1. On the computer hosting the data gateway, launch the Services applet.
 1. Locate the service **On-premises data gateway service** and double-click it to open its properties.
-1. Update the service name to the galue for the gMSA you wish to use and click **OK**.
-   ![DGgMSA](https://github.com/MicrosoftDocs/data-integration/assets/126546027/c79bb35f-b877-474d-8627-9d8768415ba9)
+1. Update the service name to the value for the gMSA you wish to use and click **OK**.
+   ![DGgMSA](media/enter-recovery-key.png)
    > [!NOTE]
    > Be sure to include the $ at the end of the account name. Do not specify a password when using a group managed service account.
 1. Select **OK** to acknowledge that the *Logon as a service* right has been granted to the group managed service account.
@@ -79,7 +79,7 @@ Group managed service accounts (gMSAs) can be used for the data gateway in place
 1. Launch the On-premises data gateway app. When prompted, sign in as an administrator of the gateway.
 1. Select **Migrate, restore, or takeover an existing gateway** and click **Next**.
 1. Enter the recovery key that you created when you set up the gatway and click **Configure**.
-   ![DGgMSA2](https://github.com/MicrosoftDocs/data-integration/assets/126546027/203f304f-d2fe-45ac-8904-c07ebd6ae314)
+   ![DGgMSA2](media/update-service-account)
 1. Select **Close** to exit the data gateway app configuration.
 
 ## Next steps
