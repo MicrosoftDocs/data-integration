@@ -45,6 +45,43 @@ It is not necessary to change the service account, but you can, if necessary. To
 > [!NOTE]
 > To reset the gateway to the default service account, you need to uninstall and reinstall the gateway. You need the recovery key for this operation.
 >
+## Switch to a group managed service account (gMSA)
+
+Group managed service accounts (gMSAs) can be used for the data gateway in place of normal accounts. To use a gMSA, you can follow these steps.
+
+1. On a computer with the Remote Server Administration Tools installed, run the following command to configure a KDS Root key (if it has not already been done in your organization):
+```powershell
+Add-KdsRootKey -EffectiveImmediately
+```
+2. Run the following command to create the group managed service account. Use the **Name** parameter to specify the service account name and the **PrincipalsAllowedToRetrieveManagedPassword** parameter to specify the NetBIOS name of the computers allowed to use the group managed service account.
+```powershell
+New-ADServiceAccount -Name "PowerBiDGgMSA" -PrincipalsAllowedToRetrieveManagedPassword server1$ -DnsHostName server1.contoso.com -Enabled $True
+```
+> [!NOTE]
+> The $ at the end of the NetBIOS server name is necessary to indicate the computer account.
+>
+3. Add the service account to the computer hosting the data gateway.
+```powershell
+Install-ADServiceAccount -Identity PowerBiDGgMSA
+```
+> [!NOTE]
+> This step must be performed on the computer hosting the data gateway.
+>
+4. On the computer hosting the data gateway, launch the Services applet.
+5. Locate the service **On-premises data gateway service** and double-click it to open its properties.
+6. Update the service name to the galue for the gMSA you wish to use and click **OK**.
+![DGgMSA](https://github.com/MicrosoftDocs/data-integration/assets/126546027/c79bb35f-b877-474d-8627-9d8768415ba9)
+> [!NOTE]
+> Be sure to include the $ at the end of the account name. Do not specify a password when using a group managed service account.
+>
+7. Click **OK** to acknowledge that the *Logon as a service* right has been granted to the group managed service account.
+8. Click **OK** to acknowledge that the service has to be stopped and restarted manually.
+9. Restart the service from the Services applet.
+10. Launch the On-premises data gateway app. When prompted, sign in as an administrator of the gateway.
+11. Select **Migrate, restore, or takeover an existing gateway** and click **Next**.
+12. Enter the recovery key that you created when you set up the gatway and click **Configure**.
+![DGgMSA2](https://github.com/MicrosoftDocs/data-integration/assets/126546027/203f304f-d2fe-45ac-8904-c07ebd6ae314)
+13. Click **Close** to exit the data gateway app configuration.
 
 ## Next steps
 
