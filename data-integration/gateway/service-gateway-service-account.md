@@ -26,21 +26,21 @@ It is not necessary to change the service account, but you can, if necessary. To
 
 1. Select **Change account**. You need the recovery key to change the service account.
 
-   ![Change account.](media/service-gateway-service-account/change-account.png)
-
+   :::image type="content" source="media/service-gateway-service-account/change-account.png" alt-text="Screenshot showing the Change account option."::
+   
 1. Provide the service account and password, and select **Configure**.
 
-   ![Configure account.](media/service-gateway-service-account/configure-account.png)
+   :::image type="content" source="media/service-gateway-service-account/configure-account.png" alt-text="Screenshot showing the Configure option."::
 
 1. Provide your sign-in account, and select **Sign in**.
 
-   ![Account sign-in.](media/service-gateway-service-account/account-sign-in.png)
+   :::image type="content" source="media/service-gateway-service-account/account-sign-in.png" alt-text="Screenshot showing the account sign in screen."::
 
 1. On the next windows, select **Migrate, restore or takeover an existing gateway**, and follow the process for [restoring](service-gateway-migrate.md) your gateway.
 
 1. After the restoration is complete, the new gateway uses the domain account.
 
-   ![Domain account.](media/service-gateway-service-account/domain-account.png)
+   :::image type="content" source="media/service-gateway-service-account/domain-account.png" alt-text="Screenshot showing the domain account."::
 
 > [!NOTE]
 > To reset the gateway to the default service account, you need to uninstall and reinstall the gateway. You need the recovery key for this operation.
@@ -70,7 +70,7 @@ Group managed service accounts (gMSAs) can be used for the data gateway in place
 1. On the computer hosting the data gateway, launch the Services applet.
 1. Locate the service **On-premises data gateway service** and double-click it to open its properties.
 1. Update the logon in the service properties to the gMSA you wish to use and select **OK**.
-   ![DGgMSA](media/service-gateway-service-account/update-service-account.png)
+   :::image type="content" source="media/service-gateway-service-account/update-service-account.png" alt-text="Screenshot showing where to update the service logon account in the service properties."::
    > [!NOTE]
    > Be sure to include the $ at the end of the account name. Do not specify a password when using a group managed service account.
 1. Select **OK** to acknowledge that the *Logon as a service* right has been granted to the group managed service account.
@@ -79,7 +79,7 @@ Group managed service accounts (gMSAs) can be used for the data gateway in place
 1. Launch the On-premises data gateway app. When prompted, sign in as an administrator of the gateway.
 1. Select **Migrate, restore, or takeover an existing gateway** and click **Next**.
 1. Enter the recovery key that you created when you set up the gatway and click **Configure**.
-   ![DGgMSA2](media/service-gateway-service-account/enter-recovery-key.png)
+   :::image type="content" source="media/service-gateway-service-account/enter-recovery-key.png" alt-text="Screenshot showing where to enter the recovery key for the gateway."::
 1. Select **Close** to exit the data gateway app configuration.
 
 ## Next steps
