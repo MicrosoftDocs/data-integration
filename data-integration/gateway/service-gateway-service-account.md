@@ -78,7 +78,7 @@ Group managed service accounts (gMSAs) can be used for the data gateway in place
 1. Restart the service from the Services applet.
 1. Launch the On-premises data gateway app. When prompted, sign in as an administrator of the gateway.
 1. Select **Migrate, restore, or takeover an existing gateway** and click **Next**.
-1. Enter the recovery key that you created when you set up the gatway and click **Configure**.
+1. Enter the recovery key that you created when you set up the gateway and click **Configure**.
    :::image type="content" source="media/service-gateway-service-account/enter-recovery-key.png" alt-text="Screenshot showing where to enter the recovery key for the gateway.":::
 1. Select **Close** to exit the data gateway app configuration.
 
