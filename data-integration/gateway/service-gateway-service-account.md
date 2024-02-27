@@ -67,7 +67,7 @@ Group managed service accounts (gMSAs) can be used for the data gateway in place
    > [!NOTE]
    > This step must be performed on the computer hosting the data gateway.
 
-1. On the computer hosting the data gateway, launch the Services applet.
+1. On the computer hosting the data gateway, launch the Services applet from Administrative Tools or by pressing Windows-R to launch a **Run** window, and running _services.msc_.
 1. Locate the service **On-premises data gateway service** and double-click it to open its properties.
 1. Update the logon in the service properties to the gMSA you wish to use and select **OK**.
    :::image type="content" source="media/service-gateway-service-account/update-service-account.png" alt-text="Screenshot showing where to update the service logon account in the service properties.":::
