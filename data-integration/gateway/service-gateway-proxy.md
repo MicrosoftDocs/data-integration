@@ -51,7 +51,7 @@ In addition to using default credentials, you can add a `<proxy>` element to def
             autoDetect="false"  
             proxyaddress="http://192.168.1.10:3128"  
             bypassonlocal="false"  
-            usesystemdefault="true"
+            usesystemdefault="false"
         />  
     </defaultProxy>
 </system.net>
