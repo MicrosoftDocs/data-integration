@@ -14,7 +14,7 @@ This article covers billing and related best practices for the VNET Data Gateway
 ## Summary
 
 The VNET Data Gateway is billed as an additive premium infrastructure charge, associated to a Premium or Fabric capacity. This means that it has its own meter and incurs a bill that is consistent across and in addition to all artifacts. Total Bill of running an artifact through the VNET Data Gateway = Artifact Charge + VNET Data Gateway Charge
-The VNET Data Gateway Charge is proportional to your usage of the VNET Data Gateway; we define usage as uptime, or anytime the VNET Data Gateway is on. A single VNET Data Gateway uses two cores.
+The VNET Data Gateway Charge is proportional to your usage of the VNET Data Gateway; we define usage as uptime, or anytime the VNET Data Gateway is on. A single VNET Data Gateway uses two cores. The CU consumption rate is a fixed rate that we decide, depending on what we want to charge. Learn more about CUs [here](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-operations).
 - Consumption Unit (CU) consumption rate: 2x
 - Price: 2x (CU Consumption rate) * 2 cores (per VNET Data Gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per VNET/hour
 
