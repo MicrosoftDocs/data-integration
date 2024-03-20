@@ -35,4 +35,3 @@ In the following picture, each box represents a different meter. A meter keeps t
 ![Virtual Network Data Gateway Meters](media/vnet-business-model.png)
 
 If you're using a Premium Power BI capacity, you can learn more about how to view and manage your bill [here](https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-premium-manage#manage-capacity).
-
