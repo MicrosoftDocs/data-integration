@@ -32,6 +32,6 @@ Virtual network data gateways don't map to a single workspace or artifact. Rathe
 If you're using a Fabric capacity, the bill shows up as its own line item in the Fabric Capacity Metrics app with the artifact and workspace name as _Virtual Network Data Gateway_.
 In the following picture, each box represents a different meter. A meter keeps track of the bill incurred for whichever service it maps to. For example, the Power Query Compute box represents a meter that tracks the compute used by the Mashup Engine to execute M queries.
 
-![Virtual Network Data Gateway Meters](media/vnet-business-model.png)
+![Virtual network data gateway meters](media/vnet-business-model.png)
 
 If you're using a Premium Power BI capacity, you can learn more about how to view and manage your bill [here](https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-premium-manage#manage-capacity).
