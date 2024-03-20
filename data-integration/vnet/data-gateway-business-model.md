@@ -14,7 +14,7 @@ Data Gateway. The virtual network data gateway is a network security offering th
 
 The virtual network data gateway is billed as an additive premium infrastructure charge, billed to a Premium or Fabric capacity. This means that it has its own meter and incurs a bill that is consistent across and in addition to all artifacts. Total Bill of running an artifact through the virtual network data gateway = artifact charge + virtual network data gateway Charge.
 
-The virtual network data gateway Charge is proportional to your usage of the virtual network data gateway; we define usage as uptime, or anytime the virtual network data gateway is on. A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate that we decide, depending on what we want to charge. Learn more about CUs [here](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-operations).
+The virtual network data gateway Charge is proportional to your usage of the virtual network data gateway; we define usage as uptime, or anytime the virtual network data gateway is on. A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate that we decide, depending on what we want to charge. Learn more about CUs [here](/fabric/enterprise/fabric-operations).
 
 - Consumption Unit (CU) consumption rate: 2x
 - Price: 2x (CU Consumption rate) * 2 cores (per virtual network data gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per VNET/hour
@@ -34,4 +34,4 @@ In the following picture, each box represents a different meter. A meter keeps t
 
 ![Virtual network data gateway meters](media/vnet-business-model.png)
 
-If you're using a Premium Power BI capacity, you can learn more about how to view and manage your bill [here](https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-premium-manage#manage-capacity).
+If you're using a Premium Power BI capacity, you can learn more about how to view and manage your bill [here](/power-bi/enterprise/service-admin-premium-manage#manage-capacity).
