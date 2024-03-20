@@ -39,7 +39,7 @@ sections:
           What are the licensing requirements in Power BI to use VNet data gateways?
         answer: |
           Virtual network data gateways are a premium-only feature and will be available only in Fabric and Power BI Premium capacities.
-
+          
       - question: |
           Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them using VNet data gateways?
         answer: |
@@ -139,8 +139,8 @@ sections:
       - question: |
           Does all of the data when using the VNet data gateway remain on Microsoft's backbone network when accessing Azure Data Sources?
         answer: |
-          How does security compare to the on-premise data gateway?
-          Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use an internal Microsoft tunnel that doesn't reach the public internet between the virtual network and Power BI service. On the other hand, the on-premise data gateway opens a connection to use Azure Relay to connect to the Power BI service.
+          How does security compare to the on-premises data gateway?
+          Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use an internal Microsoft tunnel that doesn't reach the public internet between the virtual network and Power BI service. On the other hand, the on-premises data gateway opens a connection to use Azure Relay to connect to the Power BI service.
 
       - question: |
           Which Azure components need to be in the same region?
