@@ -16,7 +16,7 @@ Virtual network data gateways allow import or direct query semantic models to co
 
 You can manage admins for a virtual network data gateway like you do for standard data gateways either in the Power Platform admin center or on the **Manage gateways** page in Power BI.
 
-:::image type="content" source="media/virtual network-in-pbi.png" alt-text="Screenshot of the Gateway Cluster Settings page with a virtual network gateway selected and the gateway's data displayed.":::
+:::image type="content" source="media/vnet-in-pbi.png" alt-text="Screenshot of the Gateway Cluster Settings page with a virtual network gateway selected and the gateway's data displayed.":::
 
 ## Manage data sources
 
