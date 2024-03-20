@@ -28,7 +28,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 
 * An 8-core CPU
 * 8 GB of memory
-* A 64-bit version of Windows Server 2016 or later
+* A 64-bit version of Windows Server 2019 or later
 * Solid-state drive (SSD) storage for spooling
 
 ### Related considerations
