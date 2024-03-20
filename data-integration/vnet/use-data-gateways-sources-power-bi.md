@@ -29,11 +29,13 @@ You can also create data sources and share these data sources to users like you 
 In the current release, VNet data gateways support connectivity to all of the following data sources.
 
 Supported sources with secure connectivity:
+- Azure AI Search
 - Azure Batch
 - Azure Blob Storage
 - Azure Cosmos DB v1
 - Azure Cosmos DB v2
 - Azure Cost Management
+- Azure Database for PostgreSQL
 - Azure Data Explorer (Kusto)
 - Azure Data Factory Workspace
 - Azure Data Lake Analytics
@@ -43,7 +45,9 @@ Supported sources with secure connectivity:
 - Azure Databricks workspace
 - Azure DevOps (Boards only)
 - Azure Function
+- Azure HDInsight Cluster
 - Azure HDInsight on Azure Kubernetes Services (AKS) Trino
+- Azure HDInsight on Demaind Cluster
 - Azure HDInsight Spark
 - Azure Keyvault Service
 - Azure Machine Learning
@@ -51,16 +55,21 @@ Supported sources with secure connectivity:
 - Azure Synapse Analytics workspace
 - Azure Synapse Workspace
 - Azure SQL
+- Azure SQL Database Managed Instance
 - Azure Table Storage
 
 Sources supported with public endpoints:
+- Acterys
+- Adobe Analytics
 - AdMaD
 - Admin Insights
+- Amazon RDS for SQL Server
 - Amazon Redshift
 - Amazon S3
 - Analysis Services
 - Anaplan Connection Configuration
 - appFigures
+- Aptix - Integrations Platform Insights
 - AriaConnector
 - Asana
 - Assemble Views
@@ -76,10 +85,12 @@ Sources supported with public endpoints:
 - CData Connect Cloud
 - Celonis EMS
 - Cherwell Data Connector v1.0
+- CloudBluePSA
 - CloudScope
 - CloudScopeInstagram
 - Cognite Data Fusion (CDF)
 - Common Data Service (Legacy)
+- Confluent Cloud
 - Connect to comScore Digital Analytix
 - Connect to Viva Insights Data
 - CSV
@@ -90,8 +101,10 @@ Sources supported with public endpoints:
 - DataWorld.semantic model
 - DCW - Integrations Platform Insights
 - Delta Sharing
+- Digital Analytix
 - Dremio Cloud
 - Dremio Software
+- Dynamics 365
 - Dynamics 365 Business Central
 - Dynamics 365 Business Central (on-premises)
 - Dynamics 365 Customer Insights
@@ -104,13 +117,16 @@ Sources supported with public endpoints:
 - EQuIS
 - EventHub
 - eWayCRM
+- Fabric Data Pipelines
 - FactSetAnalytics
 - FactSetRMS
 - Fhir
 - From Paxata
 - FTP
 - GitHub
+- GitHub - Source Control (preview)
 - Goals
+- Google Pub Sub
 - Google BigQuery
 - Google BigQuery (Azure AD)
 - Google Cloud Storage
@@ -118,6 +134,7 @@ Sources supported with public endpoints:
 - HDInsight Interactive Query
 - Hexagon PPM Smart API
 - Hive Live Long and Process (LLAP)
+- Http
 - IBM Netezza
 - Impala
 - Azure Enterprise
@@ -125,15 +142,21 @@ Sources supported with public endpoints:
 - InfinityConnector
 - Information Grid BI Services
 - Intune Data Warehouse
+- inwink source
 - IoTHub
 - JamfPro
 - JDIConnector
 - KaizalaAttendanceReports
 - KaizalaReports
 - KaizalaSurveyReports
+- Kinesis
 - Kognitwin v1.1
 - Lakehouse
+- LEAP.Contents
 - LinkedIn Sales Navigator
+- LinkedIn Learning
+- Microsoft Outlook
+- Microsoft Teams
 - MetricsCES
 - MetricsDataConnector
 - Microsoft Teams Personal Analytics
@@ -144,9 +167,11 @@ Sources supported with public endpoints:
 - MongoDBAtlasForPipeline
 - MongoDBForPipeline
 - myob_ar
+- MySQL
 - Navigational data
 - OData
 - Office365Mon2
+- Oracle Cloud Storage
 - Plantronics
 - Planview Enterprise Architecture
 - Planview IdeaPlace
@@ -162,7 +187,9 @@ Sources supported with public endpoints:
 - QuestionPro Connector
 - Quick Base Connector
 - QuickBooks Online
+- REST
 - Roamler
+- Samsara API Get Records (Beta)
 - Salesforce Objects
 - ScopevisioPowerBICon
 - Secure File Transfer Protocol (SFTP)
@@ -181,8 +208,10 @@ Sources supported with public endpoints:
 - SparkPost
 - SpotlightCloudReports
 - Statistical Information System Collaboration Community (SIS-CC) Statistical Data and Metadata Exchange (SDMX) Connector for SDMX-CSV web services
+- SQL Server
 - SumTotal BI Connector
 - SurveyMonkey
+- Supermetrics
 - SweetIQ
 - TeamDesk.Database
 - Tenforce (Smart)List
@@ -191,6 +220,7 @@ Sources supported with public endpoints:
 - UsageMetricsDataConnector
 - Usercube
 - UserVoice
+- Viva Insights Data
 - Vena 1.0.4
 - Vertica
 - VesselInsight
