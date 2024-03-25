@@ -26,7 +26,7 @@ You can manage admins for this VNet data gateway like you do for standard data g
 
 ## Manage capacity for billing
 
-The capacity linked to your VNet data gateway incurs the bill. You can view and edit this capacity in the [settings](manage-data-gateways.md#manage-settings) for the gateway. Fabric and Power BI capacities are valid.
+The capacity linked to your VNet data gateway incurs the bill. You can view and edit this capacity in the [settings](manage-data-gateways.md#manage-settings) for the gateway. Fabric and Power BI capacities are valid. We support F and P SKUs today.
 
 > [!NOTE]
 > Existing preview users are required to assign a capacity to each of their existing gateways in order to make edits to their configuration, or to create new gateways after February 1st, 2024.
