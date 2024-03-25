@@ -15,7 +15,7 @@ The gateway relies on Azure Relay for cloud connectivity. The gateway correspond
 
 If you registered for either a Power BI tenant or an Office 365 tenant, your Azure region defaults to the region of that service. Otherwise, your Azure region might be the one closest to you.
 
-If a firewall blocks outbound connections, configure the firewall to allow outbound connections from the gateway to its associated Azure region.
+If a firewall blocks outbound connections, configure the firewall to allow outbound connections from the gateway to its associated Azure region. The firewall rules on the gateway server and/or customer's proxy servers need to be updated to allow outbound traffic from the gateway server to the below endpoints. If your firewall does not support wildcards, then use the IP addresses from [Azure IP Ranges and Service Tags](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fdownload%2Fdetails.aspx%3Fid%3D56519&data=05%7C02%7CNikita.Waghani%40microsoft.com%7Caaa71e3a46df465f10ce08dc4a944869%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638467247942873812%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=gnMtWIOsUsZocKEu3zqPMs9e2d7gVIPH%2B28OqlIhLps%3D&reserved=0). Note that they will need to be kept in sync each month.
 
 ## Ports
 
