@@ -12,7 +12,6 @@ Virtual network data gateways let Power Platform dataflows connect to data servi
 
 >[!Note]
 >
->* During public preview, Power platform dataflows users will have access to this feature for *free*. However, licensing requirements might change when VNet data gateways become generally available.
 >* For Power Platform dataflows, this feature currently doesn't support the ability to write to a privatized data lake or Dataverse.
 
 ## Connect to data using a VNet data gateway
@@ -37,4 +36,4 @@ You can also update VNet data gateway details just like you do for an on-premise
 
 ## Supported data sources
 
-For a list of supported data sources, go to [Power BI supported data sources](use-data-gateways-sources-power-bi.md#supported-azure-data-services).
+Power Platform dataflows support the same data sources that Power BI does. For a list of supported data sources, go to [Power BI supported data sources](use-data-gateways-sources-power-bi.md#supported-azure-data-services).

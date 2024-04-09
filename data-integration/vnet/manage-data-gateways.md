@@ -26,7 +26,7 @@ You can manage admins for this VNet data gateway like you do for standard data g
 
 ## Manage capacity for billing
 
-The capacity linked to your VNet data gateway incurs the bill. You can view and edit this capacity in the [settings](manage-data-gateways.md#manage-settings) for the gateway. Fabric and Power BI capacities are valid.
+The capacity linked to your VNet data gateway incurs the bill. You can view and edit this capacity in the [settings](manage-data-gateways.md#manage-settings) for the gateway. Fabric and Power BI capacities are valid. We support F and P SKUs today.
 
 > [!NOTE]
 > Existing preview users are required to assign a capacity to each of their existing gateways in order to make edits to their configuration, or to create new gateways after February 1st, 2024.
@@ -46,7 +46,7 @@ This setting allows you to shutdown a VNet data gateway that has been idling for
 You can remove or delete VNet data gateways by selecting the gateway and selecting **Remove**.
 
 > [!NOTE]
-> When you remove the last gateway associated to a gateway/subnet, it might take up to 48-72 hours before you can delete the subnet or VNet.
+> When you remove the last gateway associated to a gateway/subnet, it might take up to 48-72 hours before you can delete the subnet or VNet. When bringing a previously deprovisioned VNet online, it typically takes about 2 minutes to become available, but can take up to 15 minutes in some cases before it's available.
 
 >[!Important]
 > To be able to remove or delete a VNet data gateway, you need to:

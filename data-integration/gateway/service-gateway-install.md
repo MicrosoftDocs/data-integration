@@ -28,7 +28,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 
 * An 8-core CPU
 * 8 GB of memory
-* A 64-bit version of Windows Server 2016 or later
+* A 64-bit version of Windows Server 2019 or later
 * Solid-state drive (SSD) storage for spooling
 
 ### Related considerations
@@ -37,13 +37,13 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * Gateways aren't supported on Windows containers.
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
-* If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
+* If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Microsoft Entra environment as the data sources.
 * Don't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
 * If a gateway uses a wireless network, its performance might suffer. We recommend that you set the gateway on a wired device for best network performance.
 * If you use a virtualization layer for your virtual machine, performance might suffer or perform inconsistently.
 * You could install other applications on the gateway machine, but these applications might degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention.
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. An on-premises data gateway (personal mode) can be used only with Power BI. You can't have more than one gateway running in the same mode on the same computer.
-* The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
+* When using an on-premises data gateway (standard mode) to access a data source on a remote domain, the gateway has to be installed on a domain joined machine having a trust relationship with the target domain.
 * When private link is enabled, disable private link before installing the gateway. After installation, you can re-enable it. If private link is enabled, you'll get the following error when trying to register a new gateway or migrate/restore/takeover an existing gateway:
 
    `System.NullReferenceException: Object reference not set to an instance of an object`
@@ -59,7 +59,7 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 1. [Download the standard gateway](https://go.microsoft.com/fwlink/?LinkId=2116849&clcid=0x409).
 
    >[!Note]
-   >The on-premises data gateway (standard mode) has to be installed on a domain joined machine having a trust relationship with the target domain.
+   > If the on-premises data gateway (standard mode) requires access to a remote data source in a different domain, it must be installed on a domain joined machine having a trust relationship with the target domain.
 
 1. In the gateway installer, keep the default installation path, accept the terms of use, and then select **Install**.
 
