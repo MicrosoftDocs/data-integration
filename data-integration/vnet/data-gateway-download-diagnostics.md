@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.date: 11/17/2023
 ---
 
-# Download logs on the virtual network (VNET) data gateway
+# Download logs on the virtual network (VNET) data gateway (preview)
 
 Logs for your VNET data gateway are available for download on the **Manage connections and gateways** page. Three folders are downloaded:
 
@@ -18,7 +18,7 @@ Logs for your VNET data gateway are available for download on the **Manage conne
 - You must be an admin on the VNet data gateway to download logs. Check the [manage users](manage-data-gateways.md) option to see if you're an admin.
 - The gateway must be online to provide logs. Check the status of the VNet by selecting the icon in the "Status" column. 
 - If you don’t see the download, check to make sure pop-ups aren't disabled on your browser.
-- This feature isn't available in certain regions, including Sweden central, Poland central, China regions, and US Gov Virginia regions.
+- This feature isn't available in certain regions, including Mexico central, Spain central, Qatar central, China regions, and US Gov Virginia regions.
 - Mashup logs are in JSONL format, while SystemCounters and QueryExecutionReport are in Parquet format.
 
 ## How to download logs
@@ -34,7 +34,7 @@ Logs for your VNET data gateway are available for download on the **Manage conne
 | --- | --- |
 | Timestamp | The time the counter was emitted. |
 | ID | Unique identifier for the container on which your gateway is currently running. |
-| CommittedMemoryinMB | Memory used out of the total 2-GB RAM reserved per VNET. |
+| CommittedMemoryinMB | Memory used out of the total 8-GB RAM reserved per VNET. |
 | CPUUsagePercentage | CPU used. |
 | MemoryAvailableinMB | Memory available. |
 

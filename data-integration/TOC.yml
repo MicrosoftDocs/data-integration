@@ -78,7 +78,7 @@
       href: vnet/overview.md
     - name: Concepts
       items:
-      - name: "What is a VNet?"
+      - name: "What is a virtual network?"
         href: vnet/what-is.md
       - name: Virtual network data gateway architecture
         href: vnet/data-gateway-architecture.md

@@ -28,7 +28,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 
 * An 8-core CPU
 * 8 GB of memory
-* A 64-bit version of Windows Server 2016 or later
+* A 64-bit version of Windows Server 2019 or later
 * Solid-state drive (SSD) storage for spooling
 
 ### Related considerations
@@ -37,7 +37,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * Gateways aren't supported on Windows containers.
 * The user installing the gateway must be the admin of the gateway.
 * The gateway can't be installed on a domain controller.
-* If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
+* If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Microsoft Entra environment as the data sources.
 * Don't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
 * If a gateway uses a wireless network, its performance might suffer. We recommend that you set the gateway on a wired device for best network performance.
 * If you use a virtualization layer for your virtual machine, performance might suffer or perform inconsistently.

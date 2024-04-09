@@ -49,6 +49,7 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 | \*.servicebus.windows.net |443 and 9350-9354 |Listens on Azure Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
 | \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
+| \*.frontend.clouddatahub.net |443 |Required for Fabric Pipeline execution. |
 
 For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 
