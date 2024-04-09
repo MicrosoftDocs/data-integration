@@ -61,6 +61,7 @@ Supported sources with secure connectivity:
 Sources supported with public endpoints:
 
 - Acterys
+- Access Database
 - Adobe Analytics
 - AdMaD
 - Admin Insights
@@ -118,6 +119,7 @@ Sources supported with public endpoints:
 - EQuIS
 - EventHub
 - eWayCRM
+- Excel
 - Fabric Data Pipelines
 - FactSetAnalytics
 - FactSetRMS
@@ -136,6 +138,7 @@ Sources supported with public endpoints:
 - Hexagon PPM Smart API
 - Hive Live Long and Process (LLAP)
 - Http
+- HTML
 - IBM Netezza
 - Impala
 - Azure Enterprise
@@ -147,6 +150,7 @@ Sources supported with public endpoints:
 - IoTHub
 - JamfPro
 - JDIConnector
+- JSON
 - KaizalaAttendanceReports
 - KaizalaReports
 - KaizalaSurveyReports
@@ -173,6 +177,7 @@ Sources supported with public endpoints:
 - OData
 - Office365Mon2
 - Oracle Cloud Storage
+- PDF
 - Plantronics
 - Planview Enterprise Architecture
 - Planview IdeaPlace
@@ -214,6 +219,7 @@ Sources supported with public endpoints:
 - SurveyMonkey
 - Supermetrics
 - SweetIQ
+- Text file
 - TeamDesk.Database
 - Tenforce (Smart) List
 - Timelog
@@ -234,6 +240,7 @@ Sources supported with public endpoints:
 - Wrike
 - WtsParadigm
 - Xero - Contents
+- XML
 - Zendesk
 - Zoho Creator
 - Zucchetti HR Infinity
