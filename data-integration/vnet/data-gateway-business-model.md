@@ -32,6 +32,7 @@ To check if your virtual network data gateway is on or off, you can use the stat
 The table below summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
 
 |Time the VNET is on |Calculation	|Charge on capacity |
+|--------------------|------------|-------------------|
 |h hours	|2 * 2 * 0.18 * h	|$0.72h |
 |30 minutes	|2 * 2 * 0.18 * 0.5 hours	|0.36 |
 |1 hour	|2 * 2 * 0.18 * 1 hour	|0.72 |
