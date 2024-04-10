@@ -12,7 +12,6 @@ Virtual network data gateways let Power Platform dataflows connect to data servi
 
 >[!Note]
 >
->* During public preview, Power Platform dataflows users will have access to this feature for *free*. However, licensing requirements might change when VNet data gateways become generally available.
 >* For Power Platform dataflows, this feature currently doesn't support the ability to write to a privatized data lake or Dataverse.
 
 ## Connect to data using a VNet data gateway
