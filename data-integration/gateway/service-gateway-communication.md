@@ -91,7 +91,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 
 ## Opening extra ports for Dataflow Gen1 and Gen2 using OPDG
 
-In Dataflow Gen1 and Gen2 within Fabric Data Factory, when a Mashup query combines an on-premises data source (connected through an on-premises data gateway) with a cloud data source, the entire query is executed on the on-premises data gateway. Therefore, the following endpints must be open to alloww on-premises data gateway line-of-sight access to the cloud data sources.
+In Dataflow Gen1 and Gen2 within Fabric Data Factory, when a Dataflow contains queries that use an on-premises data source (connected through an on-premises data gateway) and queries with a cloud data source, the entire dataflow is executed on the Mashup Engine of the on-premises data gateway. Therefore, the following endpints must be open to alloww on-premises data gateway line-of-sight access to the cloud data sources.
 
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
