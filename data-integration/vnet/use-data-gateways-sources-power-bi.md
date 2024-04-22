@@ -10,7 +10,7 @@ ms.date: 1/17/2024
 Virtual network data gateways allow import or direct query semantic models to connect to data services within an Azure virtual network without the need of an on-premises data gateway.
 
 > [!NOTE]
-> Virtual network data gateways is available for Power BI only in Premium and Embedded workspaces. The feature is available for all Fabric workspaces.
+> Virtual network data gateways is available for Power BI only in Premium workspaces. It is not available for EM and A SKUs. The feature is available for all Fabric workspaces. 
 
 ## Manage Virtual network data gateways
 
