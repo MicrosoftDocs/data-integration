@@ -78,7 +78,7 @@ A Microsoft Power Platform user enables the subnet for use in Microsoft Power Pl
    
 1. Select **Virtual network (VNet) data gateway** > **New**.
 
-1. Select the license capacity, subscription, resource group, VNet and the Subnet. Only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list. VNET data gateways require a [Power BI Premium capacity](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-what-is) license (A4 SKU or higher or any P SKU) or [Fabric license](https://learn.microsoft.com/en-us/fabric/enterprise/buy-subscription) to be used (any SKU).
+1. Select the license capacity, subscription, resource group, VNet and the Subnet. Only subnets that are delegated to Microsoft Power Platform are displayed in the drop-down list. VNET data gateways require a [Power BI Premium capacity](https://learn.microsoft.com/power-bi/enterprise/service-premium-what-is) license (A4 SKU or higher or any P SKU) or [Fabric license](https://learn.microsoft.com/fabric/enterprise/buy-subscription) to be used (any SKU).
 
 1. By default, we provide a unique name for this data gateway, but you could optionally update it.
 
