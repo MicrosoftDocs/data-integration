@@ -15,7 +15,7 @@ sections:
       - question: |
           Does the vnet data gateway support Azure government cloud?
         answer: | 
-          We support GCC except for L2 and we provide support for some L4 regions.
+          We support GCC L4 (Texas and Virginia) and L5 (DoD East).
 
       - question: |
           Does the vnet data gateway support Azure air gapped clouds?
