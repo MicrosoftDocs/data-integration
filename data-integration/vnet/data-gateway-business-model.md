@@ -41,10 +41,23 @@ The table below summarizes the bill you can expect from using a single virtual n
 |24 hours	|2 * 2 * 0.18 * 24 hours	|17.28 |
 
 ## View and Manage your Bill
-Virtual network data gateways don't map to a single workspace or artifact. Rather, each gateway incurs a single charge on the capacity that encompasses the uptime of all the other artifacts and workspaces using it to connect to data sources.
-If you're using a Fabric capacity, the bill shows up as its own line item in the Fabric Capacity Metrics app with the artifact and workspace name as _Virtual Network Data Gateway_.
-In the following picture, each box represents a different meter. A meter keeps track of the bill incurred for whichever service it maps to. For example, the Power Query Compute box represents a meter that tracks the compute used by the Mashup Engine to execute M queries.
+Virtual network data gateways don't map to a single workspace or artifact. On top of the usual charge you incur for using the artifact, the gateway incurs an additional charge with the operation name VNET Data Gateway Uptime that costs $0.72 per hour the VNET data gateway is on. This additional charge covers the infrastructure used to operate the gateway. 
 
+To view your bill, use the Fabric Capacity Metrics app. You will see three line items:
+
+|Item Kind	|Item Name	|Operation |Utilization Type |
+|-----------|-----------|----------|-----------------|
+|Vnet Data Gateway	|VNet Data Gateway |VNet Data Gateway Uptime  |Background |
+|Dataset 	|Global Revenue Analytics	|VNet Data Gateway	|Background |
+|Dataset	|Global Revenue Analytics	|Dataset On-Demand Refresh	|Background |
+
+Description of each line item by Operation name:
+•	VNET Data Gateway Uptime: The additional charge from using the VNET data gateway. This is billed at $0.72/hour and is consistent across all artifacts.
+•	(Dataset) VNET Data Gateway: This is the charge for compute from executing queries on the M Engine. The VNET Data Gateway hosts the M Engine and reports its usage to the semantic model artifact.
+•	(Dataset) Dataset On-Demand Refresh: This is the charge for compute from using the Analysis Services engine to execute the semantic model.
+The charges from the item kind dataset should be the same as they would be without using the VNET data gateway. The VNET data gateway uptime charge is the only additional charge. 
+
+Below is a diagram illustrating the above. You can see that under semantic models there are two compute engines (Analysis Service compute and the Power Query or Mashup Engine compute) and one infrastructure item for the VNET Data Gateway that all need to be charged for. If you use OneLake for storage, you would be billed for that too.
 ![Virtual network data gateway meters](media/vnet-business-model.png)
 
 If you're using a Premium Power BI capacity, you can learn more about how to view and manage your bill [here](/power-bi/enterprise/service-admin-premium-manage#manage-capacity).
