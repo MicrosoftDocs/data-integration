@@ -13,6 +13,16 @@ sections:
   - name: Ignored
     questions:
       - question: |
+          Does the vnet data gateway support Azure government cloud?
+        answer: | 
+          We support GCC L4 (Texas and Virginia) and L5 (DoD East).
+
+      - question: |
+          Does the vnet data gateway support Azure air gapped clouds?
+        answer: | 
+          We support air gapped clouds in US Nat East/West and US Sec East/West.
+          
+      - question: |
           How can I secure connectivity from my network to Power BI?
         answer: |
           Use Private links to secure this connectivity. More information: [Power BI Private Links documentation](/power-bi/admin/service-security-private-links)  
