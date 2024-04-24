@@ -45,7 +45,8 @@ Virtual network data gateways don't map to a single workspace or artifact. On to
 
 To view your bill, use the Fabric Capacity Metrics app. You will see three line items:
 
-**|Item Kind	|Item Name	|Operation |Utilization Type |**
+|Item Kind	|Item Name	|Operation |Utilization Type |
+|-----------|-----------|----------|-----------------|
 |Vnet Data Gateway	|VNet Data Gateway |VNet Data Gateway Uptime  |Background |
 |Dataset 	|Global Revenue Analytics	|VNet Data Gateway	|Background |
 |Dataset	|Global Revenue Analytics	|Dataset On-Demand Refresh	|Background |
