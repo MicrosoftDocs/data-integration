@@ -17,7 +17,7 @@ The virtual network (VNet) data gateway helps you to connect from Microsoft Clou
 
 - VNet data gateway is currently only available for P and F SKUs, and not available for EM and A SKUs.
 
-- This feature is currently not supported in GCC L2 and Air Gap clouds.
+- This feature is currently not supported in GCC L2. We do support GCC L4 (Texas and Virginia) and L5 (DoD East). We support air gapped clouds in US Nat East/West and US Sec East/West.
 
 - You can't change the region, subscription, or resource group for the VNet on which the VNet data gateway was created. This scenario isn't currently supported.
 
