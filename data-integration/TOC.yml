@@ -1,5 +1,5 @@
 - name: On-premises and VNet data gateways docs
-  href: gateway/index.yml 
+  href: /data-integration/gateway/index.yml 
   expanded: true
   items:
   - name: On-premises data gateways docs
