@@ -1,12 +1,12 @@
 - name: On-premises and VNet data gateways docs
-  href: /data-integration/gateway/index.yml 
+  href: /data-integration/gateway
   expanded: true
   items:
   - name: On-premises data gateways docs
     expanded: true
     items:
     - name: "What is an on-premises data gateway?"
-      href: gateway/service-gateway-onprem.md
+      href: /data-integration/gateway/service-gateway-onprem.md
     - name: Concepts
       items:
       - name: "On-premises data gateway architecture"
