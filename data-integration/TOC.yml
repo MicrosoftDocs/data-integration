@@ -12,7 +12,7 @@
       - name: "On-premises data gateway architecture"
         href: gateway/service-gateway-onprem-indepth.md         
       - name: "On-premises data gateway FAQ"
-        href: gateway/service-gateway-onprem-faq.md
+        href: gateway/service-gateway-onprem-faq.yml
     - name: How to
       items:
       - name: "Install gateways"
@@ -103,6 +103,6 @@
       - name: Troubleshoot a virtual network data gateway network
         href: vnet/troubleshoot-data-gateway.md
       - name: Virtual network data gateway FAQs
-        href: vnet/data-gateway-faqs.md
+        href: vnet/data-gateway-faqs.yml
       - name: Download diagnostics logs
         href: vnet/data-gateway-download-diagnostics.md
