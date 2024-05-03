@@ -31,14 +31,31 @@ To check if your virtual network data gateway is on or off, you can use the stat
 ## Example Charges on your capacity
 The table below summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
 
-|Time the VNET is on |Calculation	|Charge on capacity |
-|--------------------|------------|-------------------|
-|h hours	|2 * 2 * 0.18 * h	|$0.72h |
-|30 minutes	|2 * 2 * 0.18 * 0.5 hours	|0.36 |
-|1 hour	|2 * 2 * 0.18 * 1 hour	|0.72 |
-|2 hours	|2 * 2 * 0.18 * 2 hours	|1.44 |
-|8 hours	|2 * 2 * 0.18 * 8 hours	|5.76 |
-|24 hours	|2 * 2 * 0.18 * 24 hours	|17.28 |
+The calculation factors in the CU consumption rate of 2, the use of two cores in a VNET data gateway, the number of nodes or gateway members deployed, and the price of the VNET data gateway infrastructure at $0.18. to calculate the final price you will pay, use the equation below and plug in the number of gateway members (sometime called nodes) in your cluster and the number of hours they are on:
+
+- CU Consumption fixed rate = 2
+- Fixed number of cores per virtual network data gateway = 2
+- Fixed Pay as You Go price for one CU per hour = $0.18
+- Number of [gateway members](https://learn.microsoft.com/en-us/data-integration/vnet/high-availability-load-balancing#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check this number in the advanced settings of your VNET data gateway.
+
+Price incurred = (CU Consumption rate) * (Number of cores per virtual network data gateway) * (Pay as You Go price per CU per core per hour) * (Number of hours) * (Number of gateway members)
+
+Price incurred = 2 CUs * 2 cores * $0.18 per CU per core per hour * (Number of hours) * (Number of gateway members)
+
+_Price incurred = $0.72 per hour * Number of hours * Number of gateway members_
+
+The table below includes sample calculations of a few scenarios with different uptimes and number of gateway member nodes. The first scenario in the table shows the minimum charge you can incur to use the VNET data gateway. This entails keepin the gateway on for 30 minutes and using only one node. In this case you are charged $0.36. The final scenario shows the maximum possible charge. This entails keeping the gateway always on, for 24 hours, and using the maximum high availability cluster setting of five nodes. In the case you are charged $86.40.
+
+|Time the VNET is on |Number of Nodes| Calculation	|Charge on capacity |
+|--------------------|---------------|--------------|-------------------|
+|h hours	|n Nodes | 2 cores per VNET * 2 CUs consumed * 0.18 * h * n	|$0.72 * h * n |
+|30 minutes	|1 Node | 0.72 * 0.5 hours * 1	|0.36 |
+|1 hour	|1 Node | 0.72 * 1 hour * 1 node	|0.72 |
+|1 hour	|2 Nodes | 0.72 * 1 hour * 2 nodes	|1.44 |
+|2 hours |2 Nodes | 0.72 * 2 hours * 2 node	|2.88 |
+|8 hours |3 Nodes | 0.72 * 8 hours * 3 nodes |17.28 |
+|24 hours	|3 Nodes | 0.72 * 24 hours * 3 nodes	|51.84 |
+|24 hours	|5 Nodes | 0.72 * 24 hours * 5 nodes	|86.40 |
 
 ## View and Manage your Bill
 Virtual network data gateways don't map to a single workspace or artifact. On top of the usual charge you incur for using the artifact, the gateway incurs an additional charge with the operation name VNET Data Gateway Uptime that costs $0.72 per hour the VNET data gateway is on. This additional charge covers the infrastructure used to operate the gateway. 
