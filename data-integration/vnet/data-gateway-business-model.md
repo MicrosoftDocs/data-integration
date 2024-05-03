@@ -31,7 +31,7 @@ To check if your virtual network data gateway is on or off, you can use the stat
 ## Example Charges on your capacity
 The table below summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
 
-The calculation factors in the CU consumption rate of 2, the use of two cores in a VNET data gateway, the number of nodes or gateway members deployed, and the price of the VNET data gateway infrastructure at $0.18. to calculate the final price you will pay, use the equation below and plug in the number of gateway members (sometime called nodes) in your cluster and the number of hours they are on:
+The calculation factors in the CU consumption rate of 2, the use of two cores in a VNET data gateway, the number of nodes or gateway members deployed, and the price of the VNET data gateway infrastructure at $0.18. To calculate the final price you will pay, use the equation below and plug in the number of gateway members (sometimes called nodes) in your cluster and the number of hours they are on:
 
 - CU Consumption fixed rate = 2
 - Fixed number of cores per virtual network data gateway = 2
@@ -44,7 +44,7 @@ Price incurred = 2 CUs * 2 cores * $0.18 per CU per core per hour * (Number of h
 
 _Price incurred = $0.72 per hour * Number of hours * Number of gateway members_
 
-The table below includes sample calculations of a few scenarios with different uptimes and number of gateway member nodes. The first scenario in the table shows the minimum charge you can incur to use the VNET data gateway. This entails keepin the gateway on for 30 minutes and using only one node. In this case you are charged $0.36. The final scenario shows the maximum possible charge. This entails keeping the gateway always on, for 24 hours, and using the maximum high availability cluster setting of five nodes. In the case you are charged $86.40.
+The table below includes sample calculations of a few scenarios with different uptimes and number of gateway member nodes. The first scenario in the table shows the minimum possible price incurred for using a VNET data gateway. This entails keepin the gateway on for 30 minutes and using only one node. In this scenario the final price incurred is $0.36. The final scenario shows the maximum possible price incurred for using a gateway. This entails keeping the gateway always on, for 24 hours, and using the maximum high availability cluster setting of five nodes. In this scenario the final price incurred is $86.40.
 
 |Time the VNET is on |Number of Nodes| Calculation	|Charge on capacity |
 |--------------------|---------------|--------------|-------------------|
