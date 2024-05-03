@@ -36,7 +36,7 @@ The calculation factors in the CU consumption rate of 2, the use of two cores in
 - CU Consumption fixed rate = 2
 - Fixed number of cores per virtual network data gateway = 2
 - Fixed Pay as You Go price for one CU per hour = $0.18
-- Number of [gateway members](https://learn.microsoft.com/en-us/data-integration/vnet/high-availability-load-balancing#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check this number in the advanced settings of your VNET data gateway.
+- Number of [gateway members](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check this number in the advanced settings of your VNET data gateway.
 
 Price incurred = (CU Consumption rate) * (Number of cores per virtual network data gateway) * (Pay as You Go price per CU per core per hour) * (Number of hours) * (Number of gateway members)
 
