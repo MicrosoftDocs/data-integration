@@ -31,14 +31,14 @@ To check if your virtual network data gateway is on or off, you can use the stat
 ## Example Charges on your capacity
 The following table summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
 
-This calculation considers all of the following:
+This calculation considers all of the following details:
 
 - CU consumption rate
 - 2 cores in a virtual network data gateway
 - Number of nodes or gateway members deployed
 - Price of the virtual network data gateway infrastructure at $0.18
 
-To calculate the final price you pay, use the following calculation, providing the number of gateway members (sometimes called nodes) in your cluster and the number of hours they are on:
+To calculate the final price you pay, use the following calculation. Provide the number of gateway members, sometimes called nodes, in your cluster, and the number of hours they are running.
 
 - CU Consumption fixed rate = 2
 - Fixed number of cores per virtual network data gateway = 2
@@ -51,7 +51,7 @@ Price incurred = 2 CUs * 2 cores * $0.18 per CU per core per hour * (Number of h
 
 _Price incurred = $0.72 per hour * Number of hours * Number of gateway members_
 
-The following table includes sample calculations of a few scenarios with different uptimes and number of gateway member nodes. The first scenario in the table shows the minimum possible price incurred for using a virtual network data gateway. This entails keepin the gateway on for 30 minutes and using only one node. In this scenario, the final price incurred is $0.36. The final scenario shows the maximum possible price incurred for using a gateway. This scenario entails keeping the gateway always on for 24 hours, and using the maximum high availability cluster setting of five nodes. In this scenario the final price incurred is $86.40.
+The following table includes sample calculations of a few scenarios with different uptimes and number of gateway member nodes. The first scenario in the table shows the minimum possible price incurred for using a virtual network data gateway. This scenario entails keeping the gateway on for 30 minutes and using only one node. In this scenario, the final price incurred is $0.36. The final scenario shows the maximum possible price incurred for using a gateway. This scenario entails keeping the gateway always on for 24 hours, and using the maximum high availability cluster setting of five nodes. In this scenario the final price incurred is $86.40.
 
 |Time the virtual network is on |Number of Nodes| Calculation	|Charge on capacity |
 |--------------------|---------------|--------------|-------------------|
@@ -65,7 +65,7 @@ The following table includes sample calculations of a few scenarios with differe
 |24 hours	|5 Nodes | 0.72 * 24 hours * 5 nodes	|86.40 |
 
 ## View and Manage your Bill
-Virtual network data gateways don't map to a single workspace or artifact. On top of the usual charge you incur for using the artifact, the gateway incurs an extra charge with the operation name virtual network Data Gateway Uptime that costs $0.72 per hour the virtual network data gateway is on. This additional charge covers the infrastructure used to operate the gateway. 
+Virtual network data gateways don't map to a single workspace or artifact. On top of the usual charge you incur for using the artifact, the gateway incurs an extra charge with the operation name virtual network Data Gateway Uptime that costs $0.72 per hour the virtual network data gateway is on. This extra charge covers the infrastructure used to operate the gateway. 
 
 To view your bill, use the Fabric Capacity Metrics app. You see three line items:
 
@@ -76,12 +76,12 @@ To view your bill, use the Fabric Capacity Metrics app. You see three line items
 |Dataset	|Global Revenue Analytics	|Dataset On-Demand Refresh	|Background |
 
 Description of each line item by Operation name:
-•	Virtual network Data Gateway Uptime: The additional charge from using the virtual network data gateway. This is billed at $0.72/hour and is consistent across all artifacts.
-•	(Dataset) Virtual network Data Gateway: This is the charge for compute from executing queries on the M Engine. The virtual network Data Gateway hosts the M Engine and reports its usage to the semantic model artifact.
-•	(Dataset) Dataset On-Demand Refresh: This is the charge for compute from using the Analysis Services engine to execute the semantic model.
-The charges from the item kind dataset should be the same as they would be without using the virtual network data gateway. The virtual network data gateway uptime charge is the only additional charge. 
+•	Virtual network Data Gateway Uptime: The extra charge from using the virtual network data gateway. This charge is billed at $0.72/hour and is consistent across all artifacts.
+•	(Dataset) Virtual network Data Gateway: The charge for compute from executing queries on the M Engine. The virtual network Data Gateway hosts the M Engine and reports its usage to the semantic model artifact.
+•	(Dataset) Dataset On-Demand Refresh: The charge for compute from using the Analysis Services engine to execute the semantic model.
+The charges from the item kind dataset should be the same as they would be without using the virtual network data gateway. The virtual network data gateway uptime charge is the only extra charge. 
 
-The following diagram illustrates this. You can see that under semantic models there are two compute engines (Analysis Service compute and the Power Query or Mashup Engine compute) and one infrastructure item for the virtual network Data Gateway that all need to be charged for. If you use OneLake for storage, you would be billed for that too.
+The following diagram illustrates how the cost model works. You can see that under semantic models there are two compute engines (Analysis Service compute and the Power Query or Mashup Engine compute) and one infrastructure item for the virtual network Data Gateway that all need to be charged for. If you use OneLake for storage, you would be billed for that too.
 
 :::image type="content" source="media\vnet-business-model.png" alt-text="Diagram showing virtual network data gateway meters.":::
 
