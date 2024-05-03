@@ -50,6 +50,11 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 | \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 | \*.frontend.clouddatahub.net |443 |Required for Fabric Pipeline execution. |
+| \*.datawarehouse.pbidedicated.windows.net |1433 |Old endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+| \*.datawarehouse.fabric.microsoft.com |1433 |New endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+
+> [!NOTE]
+> \*.datawarehouse.pbidedicated.windows.net is being replaced by \*.datawarehouse.fabric.microsoft.com. During this transition process, make sure to have both endpoints open to ensure Dataflow Gen2 refresh.
 
 For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 
@@ -89,19 +94,14 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Azure Relay, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-relay).
 
-## Opening additional ports for Fabric Mashup-based workloads connecting to both cloud and on-premises data sources while using OPDG.
+## Opening ports for Fabric Mashup-based workloads connecting to both cloud and on-premises data sources while using OPDG.
 
 Within Fabric, when a mashup-based workload (e.g. Semantic model, Dataflow, etc.) contains query that connects to on-premises data sources (connected through an On-premises Data Gateway) and also connects to cloud data sources, the entire query is executed on the Mashup Engine of the On-premises Data Gateway. Therefore, the following endpints must be open to allow On-premises Data Gateway line-of-sight access to the cloud data sources.
 
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
-| \*.core.windows.net |443 |Used to write data to Azure Data Lake. |
-| \*.datawarehouse.pbidedicated.windows.net |1433 |Old endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
-| \*.datawarehouse.fabric.microsoft.com |1433 |New endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+| \*.core.windows.net |443 |Used to write data to Azure Data Lake.|
 | \*.dfs.fabric.microsoft.com  |1433 |Endpoint used to connect to OneLake.|
-
-> [!NOTE]
-> \*.datawarehouse.pbidedicated.windows.net is being replaced by \*.datawarehouse.fabric.microsoft.com. During this transition process, make sure to have both endpoints open to ensure Dataflow Gen2 refresh.
 
 ## Network ports test
 
