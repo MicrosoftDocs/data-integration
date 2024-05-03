@@ -91,7 +91,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 
 ## Opening additional ports for Fabric Mashup-based workloads connecting to both cloud and on-premises data sources while using OPDG.
 
-Within Fabric, when a mashup-based workload (e.g. Semantic model, Dataflow, etc.) contains queries that use an on-premises data source (connected through an On-premises Data Gateway) and also queries with cloud data sourcse, the entire query is executed on the Mashup Engine of the On-premises Data Gateway. Therefore, the following endpints must be open to allow On-premises Data Gateway line-of-sight access to the cloud data sources.
+Within Fabric, when a mashup-based workload (e.g. Semantic model, Dataflow, etc.) contains query that connects to on-premises data sources (connected through an On-premises Data Gateway) and also connects to cloud data sources, the entire query is executed on the Mashup Engine of the On-premises Data Gateway. Therefore, the following endpints must be open to allow On-premises Data Gateway line-of-sight access to the cloud data sources.
 
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
