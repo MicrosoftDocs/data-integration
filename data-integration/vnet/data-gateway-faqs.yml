@@ -58,7 +58,7 @@ sections:
       - question: |
           Why can't I create a VNet Data Gateway connection with OAuth authentication towards an Azure resource configured with private endpoints?
         answer: |
-          If you are getting errors such as `Authorization failed for Public API route` or `DM_GWPipeline_Client_OAuthTokenLoginFailedError` when trying to create a VNet Data Gateway connection with OAuth authentication towards an Azure resource configured with private endpoints, this means that you haven't yet allowed the authentication to go privately as it requires calling a different azure service - Entra ID. 
+          If you are getting errors such as `Authorization failed for Public API route` or `DM_GWPipeline_Client_OAuthTokenLoginFailedError` when trying to create a VNet Data Gateway connection with OAuth authentication towards an Azure resource with a firewall blocking public internet access and configured with private endpoints, this means that you need to explicitly create a service endpoint for private authentication by calling the Microsoft Entra ID service. 
           To resolve this situation please go to the VNet subnet used for the VNet Data Gateway, and enable the service endpoint Microsoft.AzureActiveDirectory as depicted below.
           ![Image of VNET config on service endpoint for Microsoft EntraID](media/troubleshoot-data-gateway/VNET_AddMicrosoftEntraID.png#lightbox)
       
