@@ -2,7 +2,7 @@
 title: Virtual network data gateways business and billing model
 description: Provides information about the bill incurred by the virtual network data gateways.
 ms.topic: conceptual
-ms.date: 01/26/2024
+ms.date: 05/06/2024
 ---
 
 # Virtual network data gateways business and billing model

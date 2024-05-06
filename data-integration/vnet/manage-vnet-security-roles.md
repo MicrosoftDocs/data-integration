@@ -2,7 +2,7 @@
 title: Manage security roles of a VNet data gateway
 description: Provides information about how to manage security roles of a virtual network (VNet) data gateway.
 ms.topic: conceptual
-ms.date: 11/7/2022
+ms.date: 05/06/2024
 ---
 
 # Manage security roles of a VNet data gateway

@@ -2,7 +2,7 @@
 title: Use VNet data gateways with Dataflow Gen2 in Fabric
 description: Discusses how to create a Dataflow Gen2 in Fabric with a connection through the VNet data gateway.
 ms.topic: conceptual
-ms.date: 1/10/2024
+ms.date: 05/06/2024
 ---
 
 # Run a Fabric Dataflow Gen2 through the VNet data gateway

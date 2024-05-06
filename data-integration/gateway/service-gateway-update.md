@@ -2,7 +2,7 @@
 title: Update an on-premises data gateway
 description: Describes how to update to the latest version of the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 
 # Update an on-premises data gateway
