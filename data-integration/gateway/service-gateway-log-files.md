@@ -2,7 +2,7 @@
 title: Configure log files for the on-premises data gateway
 description: Describes how to configure gateway log retention for various versions of the on-premise data gateway.
 ms.topic: conceptual
-ms.date: 02/09/2023
+ms.date: 05/06/2024
 ---
 # Configure log files for the on-premises data gateway
 

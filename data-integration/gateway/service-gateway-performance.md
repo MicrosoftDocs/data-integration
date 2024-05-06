@@ -2,7 +2,7 @@
 title: Monitor and optimize on-premises data gateway performance
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
 ms.topic: conceptual
-ms.date: 8/29/2023
+ms.date: 05/06/2024
 ---
 
 # Monitor and optimize on-premises data gateway performance

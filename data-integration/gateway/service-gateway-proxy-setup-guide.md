@@ -2,7 +2,7 @@
 title: Step by step guide on configuring your proxy settings
 description: Provides step by step instructions on how to configure the proxy settings for the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 # Step by step guide on configuring your proxy settings
 

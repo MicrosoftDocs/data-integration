@@ -3,7 +3,7 @@ title: Troubleshoot a virtual network (VNet) network
 description: Describes how to use the Power Platform admin center to troubleshoot network connectivity issues between a virtual network data gateway and the data source.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 6/29/2023
+ms.date: 05/06/2024
 ---
 
 # Troubleshoot a virtual network data gateway

@@ -2,7 +2,7 @@
 title: Change the recovery key for an on-premises data gateway
 description: You can change the recovery key, which the gateway uses to create extra keys that encrypt data source and connection credentials.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 
 # Change the recovery key for an on-premises data gateway
