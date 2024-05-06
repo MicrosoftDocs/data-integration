@@ -33,9 +33,9 @@ You can choose to let traffic be distributed evenly across gateways in a cluster
 > [!NOTE]
 > It is recommended to disable or remove an offline gateway member in the cluster. If a gateway member is offline instead of disabled or removed, we may try to execute a query on that offline member, before moving to the next one. This can negatively impact the performance.
 
-For example, to provide load balancing from the Power BI service, select the gear icon ![A gear icon.](media/service-gateway-manage/icon-gear.png) in the upper-right corner, then select **Manage gateways**. Next, select **Distribute requests across all active gateways in this cluster**.
+For example, to provide load balancing from the Power BI service, select the gear icon :::image type="content" source="media/service-gateway-manage/icon-gear.png" alt-text="A gear icon."::: in the upper-right corner, then select **Manage gateways**. Next, select **Distribute requests across all active gateways in this cluster**.
 
-![Gateway cluster settings.](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
+:::image type="content" source="media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png" alt-text="Gateway cluster settings.":::
 
 ## Load balance based on CPU and Memory limits
 
