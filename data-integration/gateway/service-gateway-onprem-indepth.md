@@ -2,7 +2,7 @@
 title: On-premises data gateway architecture
 description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Microsoft Entra ID and your on-premises Active Directory.
 ms.topic: conceptual
-ms.date: 1/17/2022
+ms.date: 05/06/2024
 ms.custom: intro-internal
 ---
 
@@ -18,7 +18,7 @@ This article doesn't provide step-by-step guidance on how to install and configu
 
 ## How the gateway works
 
-![Relationship among cloud services, gateway, and data sources.](./media/service-gateway-onprem-indepth/on-prem-data-gateway-how-it-works.png)
+:::image type="content" source="./media/service-gateway-onprem-indepth/on-prem-data-gateway-how-it-works.png" alt-text="Relationship among cloud services, gateway, and data sources.":::
 
 Let's first look at what happens when you interact with an element that is connected to an on-premises data source.
 

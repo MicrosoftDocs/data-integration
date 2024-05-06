@@ -2,7 +2,7 @@
 title: Manage virtual network (VNet) data gateways
 description: Provides information about how to manage virtual network (VNet) data gateways and remove them if necessary.
 ms.topic: conceptual
-ms.date: 1/17/2024
+ms.date: 05/06/2024
 ---
 
 # Manage virtual network data gateways
@@ -12,7 +12,7 @@ After you've [created](create-data-gateways.md) a virtual network (VNet) data ga
 > [!NOTE]
 > The **Virtual network data gateways** tab won't be visible when the **Tenant Administration** toggle is turned on.
 
-![Manage VNet data gateways.](media/manage-vnet-data-gateways.png)
+:::image type="content" source="media/manage-vnet-data-gateways.png" alt-text="Manage VNet data gateways.":::
 
 ## Manage access to creating VNet data gateways (gateway installer setting)
 
@@ -22,7 +22,7 @@ Access to creating a VNet data gateway can be limited to selected people only. T
 
 You can manage admins for this VNet data gateway like you do for standard data gateways in the Power Platform admin center. To add or remove admins, select a gateway, and then select **Manage Users**.
 
-![Manage admins.](media/manage-admins.png)
+:::image type="content" source="media/manage-admins.png" alt-text="Manage admins.":::
 
 ## Manage capacity for billing
 
@@ -35,7 +35,7 @@ The capacity linked to your VNet data gateway incurs the bill. You can view and 
 
 You can view properties for a selected VNet data gateway in the Power Platform admin center by selecting **Settings**.
 
-![Manage settings.](media/manage-settings.png)
+:::image type="content" source="media/manage-settings.png" alt-text="Manage settings.":::
 
 ### Time to auto-shutdown
 
@@ -55,4 +55,4 @@ You can remove or delete VNet data gateways by selecting the gateway and selecti
 > * Have the Azure Network Contributor role in the Azure portal
 > * Register the Microsoft.PowerPlatform provider as a resource provider
 
-![Remove VNet data gateway.](media/remove-gateway.png)
+:::image type="content" source="media/remove-gateway.png" alt-text="Remove VNet data gateway.":::
