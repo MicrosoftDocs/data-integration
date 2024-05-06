@@ -2,14 +2,14 @@
 title: What is a virtual network (VNet) data gateway
 description: Virtual network (VNet) data gateway helps you to connect from Microsoft Cloud services to your Azure data services within a VNet without the need of an on-premises data gateway.
 ms.topic: overview
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 
 # What is a virtual network (VNet) data gateway?
 
 The virtual network (VNet) data gateway helps you to connect from Microsoft Cloud services to your Azure data services within a VNet without the need of an on-premises data gateway. The VNet data gateway securely communicates with the data source, executes queries, and transmits results back to the service.
 
-![VNet overview.](media/vnet-overview.png)
+:::image type="content" source="media/vnet-overview.png" alt-text="VNet overview.":::
 
 ## Limitations
 

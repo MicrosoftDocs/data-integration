@@ -4,7 +4,7 @@ description: Learn about currently supported versions of the on-premises data ga
 author: miquelladeboer
 ms.author: mideboer
 ms.topic: conceptual
-ms.date: 03/14/2024
+ms.date: 05/06/2024
 ---
 
 # Currently supported monthly updates to the on-premises data gateways

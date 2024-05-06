@@ -2,7 +2,7 @@
 title: Troubleshoot the on-premises data gateway
 description: This article provides ways for you to troubleshoot issues you might have with the on-premises data gateway. It provides potential workarounds to known issues and tools to assist you.
 ms.topic: troubleshooting
-ms.date: 12/5/2022
+ms.date: 05/06/2024
 ---
 
 # Troubleshoot the on-premises data gateway
@@ -48,7 +48,7 @@ You might encounter installation failure when antivirus software, like McAfee En
 
 You might come across the following error if you try to install the same version or a previous version of the gateway compared to the one that you already have.
 
-![Gateway installation error.](media/service-gateway-tshoot/gateway-install-error.png)
+:::image type="content" source="media/service-gateway-tshoot/gateway-install-error.png" alt-text="Gateway installation error.":::
 
 ### Error: The user profile is a temporary profile
 
@@ -96,19 +96,19 @@ When a gateway is facing connectivity issues, you might observe different sympto
 
 You might come across one of the following indications in the manage gateways page if there's a connectivity issue.
 
-[![Gateway offline in manage gateways page.](media/service-gateway-tshoot/manage-gateway-offline.png)](media/service-gateway-tshoot/manage-gateway-offline.png#lightbox)
+[:::image type="content" source="media/service-gateway-tshoot/manage-gateway-offline.png#lightbox" alt-text="Gateway offline in manage gateways page.](media/service-gateway-tshoot/manage-gateway-offline.png)":::
 
 #### Error: Your data gateway is offline or couldn't be reached.
 
 You might come across one of the following data refresh errors if there's a connectivity issue.
 
-[![Gateway offline or couldn't be reached error.](media/service-gateway-tshoot/gateway-offline.png)](media/service-gateway-tshoot/gateway-offline.png#lightbox)
+[:::image type="content" source="media/service-gateway-tshoot/gateway-offline.png#lightbox" alt-text="Gateway offline or couldn't be reached error.](media/service-gateway-tshoot/gateway-offline.png)":::
 
 #### Error: Network request returned unexpected error.
 
 You might come across one of the following errors when trying to sign in to the  gateway configurator if there's a connectivity issue.
 
-[![Gateway configurator network unpexted error.](media/service-gateway-tshoot/network-unexpected-error.png)](media/service-gateway-tshoot/network-unexpected-error.png#lightbox)
+[:::image type="content" source="media/service-gateway-tshoot/network-unexpected-error.png#lightbox" alt-text="Gateway configurator network unpexted error.](media/service-gateway-tshoot/network-unexpected-error.png)":::
 
 Connectivity issues can have several different causes. Therefore, if you run into any of the previously mentioned symptoms, perform the following verifications:
 
@@ -145,7 +145,7 @@ The gateway has a concurrency limit of 30. If you're getting this error, it mean
 
 There are several logs you can collect for the gateway, and you should always start with the logs. The simplest way to collect logs after you install the gateway is through the [on-premises data gateway app](service-gateway-app.md). In the on-premises data gateway app, select **Diagnostics** and then select the **Export logs** link, as shown in the following image.
 
-![On-premises data gateway app logs.](media/service-gateway-tshoot/gateway-onprem-UI-logs.png)
+:::image type="content" source="media/service-gateway-tshoot/gateway-onprem-UI-logs.png" alt-text="On-premises data gateway app logs.":::
 
 This file is saved to the ODGLogs folder on your Windows desktop in .zip format.
 
@@ -159,7 +159,7 @@ To find the event logs for the *on-premises data gateway service*, follow these 
 
 1. Select **On-premises data gateway service**.
 
-![On-premises data gateway event logs.](media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png)
+:::image type="content" source="media/service-gateway-tshoot/on-prem-data-gateway-event-logs.png" alt-text="On-premises data gateway event logs.":::
 
 ## Troubleshoot refresh failures for a specific source
 

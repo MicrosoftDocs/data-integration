@@ -3,7 +3,7 @@ title: Configure gateway disk space
 description: Describes how to troubleshoot out of disk space errors caused by gateway spooling and persistent cache filling up all disk space.
 ms.reviewer: mideboer
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 
 # Configure gateway disk space
@@ -38,7 +38,7 @@ When spooling causes an "out of disk space" error, use the following steps to ch
 >[!NOTE]
 > If you modify the path, you'll also need to restart the on-premises data gateway service.
 
-[![Screenshot](media/service-gateway-configure-disk-space/restart-service.png)](media/service-gateway-configure-disk-space/restart-service.png#lightbox)
+[:::image type="content" source="media/service-gateway-configure-disk-space/restart-service.png#lightbox" alt-text="Screenshot](media/service-gateway-configure-disk-space/restart-service.png)":::
 
 ## Mashup engine persistent cache
 

@@ -2,7 +2,7 @@
 title: Set the Azure Relay for on-premises data gateway
 description: Learn how to change the details of the Azure Relay for an on-premises data gateway.
 ms.topic: conceptual
-ms.date: 5/1/2023
+ms.date: 05/06/2024
 ---
 
 # Set the Azure Relay for on-premises data gateway
@@ -16,22 +16,22 @@ During installation of the on-premises data gateway, the Azure Relays are automa
 
 1. Select **Provide Relay details**.
 
-   ![Select Provide Relay details.](media/service-gateway-azure-relay/configure-gateway-2.png)
+   :::image type="content" source="media/service-gateway-azure-relay/configure-gateway-2.png" alt-text="Select Provide Relay details.":::
 
 2. You can now provide more details about your relay.
 
-   ![Provide additional relay details.](media/service-gateway-azure-relay/provide-relay-details.png)
+   :::image type="content" source="media/service-gateway-azure-relay/provide-relay-details.png" alt-text="Provide additional relay details.":::
 
    1. **WCF Relay endpoint URI**&mdash;Provide the URI (highlighted below) for your WCF relay from the Azure portal.
 
-      ![Provide the WCF relay URI.](media/service-gateway-azure-relay/wfc-relay-uri.png)
+      :::image type="content" source="media/service-gateway-azure-relay/wfc-relay-uri.png" alt-text="Provide the WCF relay URI.":::
 
       >[!NOTE]
       >The WCF Relay endpoint URI must be unique for every gateway and can't be re-used for other gateways.
   
    2. **Send key value and the Listen Key Value**&mdash;Create two shared access policies, one called SendAccessKey and the other ListenAccessKey. Provide either the primary or the secondary keys in the on-premises data gateway app. To learn more, go to [Azure Relay authentication and authorization](/azure/azure-relay/relay-authentication-and-authorization).
 
-       ![Send and listen access keys.](media/service-gateway-azure-relay/send-access-key-policy.png)
+       :::image type="content" source="media/service-gateway-azure-relay/send-access-key-policy.png" alt-text="Send and listen access keys.":::
 
 >[!Note]
 >If you recover an existing gateway with customized relay details to a new machine, you'll have to explicitly uninstall the gateway from the old machine or rotate the sender and listener keys. If this operation isn't done, then queries through this gateway may fail.

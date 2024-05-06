@@ -2,7 +2,7 @@
 title: Virtual network (VNet) data gateway architecture
 description: Overview of virtual network (VNet) data gateway Architecture.
 ms.topic: conceptual
-ms.date: 2/23/2023
+ms.date: 05/06/2024
 ---
 
 # Virtual network data gateway architecture
@@ -27,7 +27,7 @@ Let's first look at what happens when you interact with a Power BI report that's
 
 Here's a network diagram illustrating the data pathway between Power BI cluster and a SQL database data source:
 
-![VNet data gateway architecture.](media/vnet-gateway-architecture-no-swift.png)
+:::image type="content" source="media/vnet-gateway-architecture-no-swift.png" alt-text="VNet data gateway architecture.":::
 
 When the workload starts up, the VNet data gateway leases an IP from the delegated subnet, which means it's obeying the network security group (NSG) and network address translation (NAT) rules on the target VNet. Traffic going through this IP address obeys all NSG rules that are applied to the subnet.
 

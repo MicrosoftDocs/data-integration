@@ -2,7 +2,7 @@
 title: Virtual network data gateways business and billing model
 description: Provides information about the bill incurred by the virtual network data gateways.
 ms.topic: conceptual
-ms.date: 01/26/2024
+ms.date: 05/06/2024
 ---
 
 # Virtual network data gateways business and billing model
@@ -26,7 +26,7 @@ You can set up your virtual network data gateways for free. There's no cost asso
 To reduce costs, you can actively manage the time to live on your virtual network data gateway in settings. Learn more [here](manage-data-gateways.md#manage-settings).
 
 To check if your virtual network data gateway is on or off, you can use the status icon on the **Manage connections and gateways** page.
-![image](https://github.com/MicrosoftDocs/data-integration-pr/assets/107279699/32a68141-f942-44bb-8fc8-238b0898c80c)
+:::image type="content" source="https://github.com/MicrosoftDocs/data-integration-pr/assets/107279699/32a68141-f942-44bb-8fc8-238b0898c80c" alt-text="image":::
 
 ## Example Charges on your capacity
 The following table summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
