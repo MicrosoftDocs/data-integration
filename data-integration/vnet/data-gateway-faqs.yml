@@ -1,24 +1,24 @@
 ### YamlMime:FAQ
 metadata:
-  title: Virtual network (VNet) data gateway FAQs
-  description: Frequently asked questions about virtual network (VNet) data gateway.
+  title: Virtual network (virtual network) data gateway FAQs
+  description: Frequently asked questions about virtual network (virtual network) data gateway.
   ms.topic: faq
   ms.date: 1/17/2024
 
-title: Virtual network (VNet) data gateway FAQs
+title: Virtual network (virtual network) data gateway FAQs
 summary: |
-  This article contains a list of frequent asked questions (FAQs) about the virtual network (VNet) data gateways.
+  This article contains a list of frequent asked questions (FAQs) about the virtual network (virtual network) data gateways.
 
 sections:
   - name: Ignored
     questions:
       - question: |
-          Does the vnet data gateway support Azure government cloud?
+          Does the virtual network data gateway support Azure Government cloud?
         answer: | 
           We support GCC L4 (Texas and Virginia) and L5 (DoD East).
 
       - question: |
-          Does the vnet data gateway support Azure air gapped clouds?
+          Does the virtual network data gateway support Azure air gapped clouds?
         answer: | 
           We support air gapped clouds in US Nat East/West and US Sec East/West.
           
@@ -28,62 +28,70 @@ sections:
           Use Private links to secure this connectivity. More information: [Power BI Private Links documentation](/power-bi/admin/service-security-private-links)  
 
       - question: |
-          Where is my VNet data gateway?
+          Where is my virtual network data gateway?
         answer: |
-          The VNet data gateway is physically in the same region as your Azure VNet. However, the metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your tenant’s default region. You can manage all VNet data gateways when you select your tenant’s home region in [Power platform admin center](manage-data-gateways.md).
+          The virtual network data gateway is physically in the same region as your Azure virtual network. However, the metadata (name, details, data sources, encrypted credentials, and so on) for all your virtual network data gateways are stored in your tenant’s default region. You can manage all virtual network data gateways when you select your tenant’s home region in [Power platform admin center](manage-data-gateways.md).
 
       - question: |
-          Does the VNet data gateway support conditional access policies?
+          Does the virtual network data gateway support conditional access policies?
         answer: |
-          Yes. You can use a VNet data gateway and your conditional access policies will still apply.
+          Yes. You can use a virtual network data gateway and your conditional access policies still applies.
           
       - question: |
-          What data sources are supported on the VNet data gateway?
+          What data sources are supported on the virtual network data gateway?
         answer: |
           A complete list of supported data services:
 
-          * for Power BI is available in [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
-          * for Power Platform dataflows is available in [Supported data sources](data-gateway-power-platform-dataflows.md#supported-data-sources)
+          * For Power BI is available in [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services)
+          * For Power Platform dataflows is available in [Supported data sources](data-gateway-power-platform-dataflows.md#supported-data-sources)
 
       - question: |
-          What are the licensing requirements in Power BI to use VNet data gateways?
+          What are the licensing requirements in Power BI to use virtual network data gateways?
         answer: |
-          Virtual network data gateways are a premium-only feature and will be available only in Fabric and Power BI Premium capacities.
+          Virtual network data gateways are a premium-only feature and is available only in Fabric and Power BI Premium capacities.
           
       - question: |
-          Some of my data sources are connected to my VNet using service endpoint and some using private endpoint. Can I connect to all of them using VNet data gateways?
+          Some of my data sources are connected to my virtual network using service endpoint and some using private endpoint. Can I connect to all of them using virtual network data gateways?
         answer: |
           Yes
 
       - question: |
-          Why am I not able to create a service endpoint for my data source in my VNet?
+          Why am I not able to create a service endpoint for my data source in my virtual network?
         answer: |
-          Review [Azure VNet documentation](/azure/virtual-network/virtual-networks-overview) for restrictions (for example, region related) on VNets, endpoints, and associated Azure resources.
+          Review [Azure virtual network documentation](/azure/virtual-network/virtual-networks-overview) for restrictions (for example, region related) on VNets, endpoints, and associated Azure resources.
 
       - question: |
-          How do I create a private endpoint for my data sources and associate it to a VNet?
+          How do I create a private endpoint for my data sources and associate it to a virtual network?
         answer: |
           Review the corresponding Azure data service product documentation to check if private endpoints are supported and on how to enable them.  
+      
+      - question: |
+          Why can't I create a virtual network Data Gateway connection with OAuth authentication towards an Azure resource configured with private endpoints?
+        answer: |
+          If you're getting errors such as `Authorization failed for Public API route` or `DM_GWPipeline_Client_OAuthTokenLoginFailedError` when trying to create a virtual network Data Gateway connection with OAuth authentication towards an Azure resource with a firewall blocking public internet access and configured with private endpoints, this means that you need to explicitly create a service endpoint for private authentication by calling the Microsoft Entra ID service. 
+          To resolve this situation, go to the virtual network subnet used for the virtual network Data Gateway, and enable the service endpoint Microsoft.AzureActiveDirectory as depicted below.
 
+          :::image type="content" source="media/troubleshoot-data-gateway/virtual-network-add-entra-id.png" lightbox="media/troubleshoot-data-gateway/virtual-network-add-entra-id.png" alt-text="Screenshot showing virtual network configuration on service endpoint for Microsoft Entra ID.":::
+      
       - question: |
           Can I use this feature if my data source is in East US and my Power BI home region is in East US2?
         answer: |
-          Yes, there's no dependency on the Power BI home region for this feature. If this feature is enabled in the region where the VNet exists, you'll be able to create a new VNet data gateway.
+          Yes, there's no dependency on the Power BI home region for this feature. If this feature is enabled in the region where the virtual network exists, you are able to create a new virtual network data gateway.
 
       - question: |
-          Can I choose the region where VNet data gateways are created?
+          Can I choose the region where virtual network data gateways are created?
         answer: |
-          No. The VNet data gateway is physically in the same region as your Azure VNet. Currently, you also can't choose where the metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored. It's stored in your tenant’s default region.
+          No. The virtual network data gateway is physically in the same region as your Azure virtual network. Currently, you also can't choose where the metadata (name, details, data sources, encrypted credentials, and so on) for all your virtual network data gateways are stored. That data is stored in your tenant's default region.
 
       - question: |
-          Does VNet data gateway support cross-tenant scenarios?
+          Does virtual network data gateway support cross-tenant scenarios?
         answer: |
-          No. The VNet data gateway must be created in the same tenant as the Power BI tenant.
+          No. The virtual network data gateway must be created in the same tenant as the Power BI tenant.
 
       - question: |
-          Will I be able to use this feature if my tenant is in East US (United States) and Power platform environment is in Europe?
+          Can I use this feature if my tenant is in East US (United States) and Power platform environment is in Europe?
         answer: |
-          No, VNet gateways are currently available only in your tenant’s home region.
+          No, virtual network gateways are currently available only in your tenant’s home region.
 
       - question: |
           Why can’t I connect to the data source?
@@ -91,63 +99,63 @@ sections:
           Few areas to check:
 
           - Make sure your data source is up and running.
-          - Make sure that the data source can be accessed from within the VNet&mdash;specifically from the subnet delegated while creating the VNet data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
-          - The following Azure Network Security Groups (NSGs) may be required depending on your scenario:
+          - Make sure that the data source can be accessed from within the virtual network&mdash;specifically from the subnet delegated while creating the virtual network data gateway. For instance, you could deploy a VM in the subnet and check if you can connect to the data source.
+          - The following Azure Network Security Groups (NSGs) could be required depending on your scenario:
             - Allow outbound traffic to the Microsoft Entra ID endpoint while using OAuth or Service Principal authentication to connect to a data source.
             - Allow outbound traffic to CA (Certificate Authority) while using HTTPS to connect to a data source.
 
       - question: |
-          How is the connectivity between the VNet service and your VNet secured?
+          How is the connectivity between the virtual network service and your virtual network secured?
         answer: |
-          The connectivity between the new VNet service and your VNet is via HTTPS and TLS 1.2.
+          The connectivity between the new virtual network service and your virtual network is via HTTPS and TLS 1.2.
 
       - question: |
-          Are there any known connectivity issues for SQL serverless with auto-pause?
+          Are there any known connectivity issues for SQL serverless with autopause?
         answer: |
           For SQL serverless with auto-pause, the first request might fail if SQL is in a paused state, but the next ones will succeed.
 
       - question: |
-          Is there a delay when the VNet gateway is used for the first time or after a period of inactivity?
+          Is there a delay when the virtual network gateway is used for the first time or after a period of inactivity?
         answer: |
-          When used for the first time, the VNet gateway takes about 2 minutes to get set up. Similarly, if the VNet data gateway isn't used for 30 minutes, you could experience a delay of about a minute the next time you use it.
+          When used for the first time, the virtual network gateway takes about 2 minutes to get setup. Similarly, if the virtual network data gateway isn't used for 30 minutes, you could experience a delay of about a minute the next time you use it.
 
       - question: |
           Is this feature supported in sovereign clouds?
         answer: |
-          No, only commercial clouds will be supported for the public preview release.
+          No, only commercial clouds are supported for the public preview release.
 
       - question: |
-          What is the hardware configuration for a VNet data gateway?
+          What is the hardware configuration for a virtual network data gateway?
         answer: |
-          Every VNet data gateway has a maximum capacity of:
+          Every virtual network data gateway has a maximum capacity of:
           
           * 2 cores
           * 8 GB of RAM each
           
-          At this time, this is the only available hardware configuration and it can't be scaled or changed.
+          Currently, this capacity is the only available hardware configuration and it can't be scaled or changed.
 
       - question: |
-          Can I create multiple VNet data gateways for the same Azure data service?  
+          Can I create multiple virtual network data gateways for the same Azure data service?  
         answer: |
           Yes
 
       - question: |
-          Why can't I delete the subnet or the VNet that delegated to Power Platform?
+          Why can't I delete the subnet or the virtual network that delegated to Power Platform?
         answer: |
-          Check if there are other gateways using the same VNet and subnet. To be able to delete, it would take up to 48 to 72 hours after the last gateway using this VNet and subnet was removed.
+          Check if there are other gateways using the same virtual network and subnet. To be able to delete, it would take up to 48 to 72 hours after the last gateway using this virtual network and subnet was removed.
 
       - question: |
           How large does the delegated subnet need to be?
         answer: |
-          Beyond the five reserved IPs, our recommendation is to have approximately 5-7 more IPs so you can add more VNet gateways to the same VNet and Subnet.  
+          Beyond the five reserved IPs, our recommendation is to have approximately 5-7 more IPs so you can add more virtual network gateways to the same virtual network and Subnet.  
 
       - question: |
-          I'm a subscription owner but I get an insufficient permissions error when I try to create a VNet data gateway
+          I'm a subscription owner but I get an insufficient permissions error when I try to create a virtual network data gateway.
         answer: |
-          Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet like the Azure Network Contributor role. This permission is required for creating a VNet data gateway.
+          Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the virtual network like the Azure Network Contributor role. This permission is required for creating a virtual network data gateway.
 
       - question: |
-          Does all of the data when using the VNet data gateway remain on Microsoft's backbone network when accessing Azure Data Sources?
+          Does all of the data when using the virtual network data gateway remain on Microsoft's backbone network when accessing Azure Data Sources?
         answer: |
           How does security compare to the on-premises data gateway?
           Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use an internal Microsoft tunnel that doesn't reach the public internet between the virtual network and Power BI service. On the other hand, the on-premises data gateway opens a connection to use Azure Relay to connect to the Power BI service.
@@ -159,14 +167,14 @@ sections:
           If you're using a service endpoint, the virtual network and subnet should be in the same region as the data to which you're connecting. If you're using a private endpoint, they can be in different regions. The data gateway configuration lives in the Power BI home tenant region. 
 
       - question: |
-          Is there any way to connect from the subnet of one VNet to the data source of another VNet?
+          Is there any way to connect from the subnet of one virtual network to the data source of another virtual network?
         answer: |
-          A VNet gateway can generally reach sources that are reachable within that same VNet. If there's another VNet that's completely isolated from the first, then another VNet gateway is necessary.
+          A virtual network gateway can generally reach sources that are reachable within that same virtual network. If there's another virtual network that is isolated from the first, then another virtual network gateway is necessary.
            
       - question: |
           Any other known issues?
         answer: |
-          * The VNet's subnet's IP range can't overlap with 10.0.1.x.
+          * The virtual network's subnet's IP range can't overlap with 10.0.1.x.
           * You can't delegate a subnet called `gatewaysubnet` to the Power Platform admin center. This restriction is because it's a reserved word for the Azure Gateway Subnet feature.
-          * You can't change the region, subscription, or resource group for the VNet on which the VNet data gateway was created. This scenario isn't currently supported.
+          * You can't change the region, subscription, or resource group for the virtual network on which the virtual network data gateway was created. This scenario isn't currently supported.
           * If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired.
