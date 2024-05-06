@@ -45,10 +45,10 @@ To manage VNet data gateways:
 3. Select a gateway cluster.
 4. In the top ribbon or from the three dot drop-down menu, select **Manage users**.
 
-   [![Screenshot of the Power Platform admin center emphasizing the virtual network data gateways and the manage users selection location.](media/manage-security-roles/manage-users.png)](media/manage-security-roles/manage-users.png#lightbox)
+   [:::image type="content" source="media/manage-security-roles/manage-users.png#lightbox" alt-text="Screenshot of the Power Platform admin center emphasizing the virtual network data gateways and the manage users selection location.](media/manage-security-roles/manage-users.png)":::
 
 5. Depending on your role, you can now assign users to the gateway.
 
-   [![Screenshot of the Manage users page.](media/manage-security-roles/assign-gateway-users.png)](media/manage-security-roles/assign-gateway-users.png#lightbox)
+   [:::image type="content" source="media/manage-security-roles/assign-gateway-users.png#lightbox" alt-text="Screenshot of the Manage users page.](media/manage-security-roles/assign-gateway-users.png)":::
 
 To manage data sources, follow the guidance in [how to manage on-premises data gateway data sources](/data-integration/gateway/manage-security-roles#:~:text=To%20manage%20data%20sources%3A).

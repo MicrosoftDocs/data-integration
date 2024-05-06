@@ -126,7 +126,7 @@ Now, you can visualize the data that's in the log files.
 
 1. In the dialog box that opens, check that the folder path matches the value in **ReportFilePath**.
 
-    ![Pop-up for the folder path.](media/service-gateway-performance/gateway-folder-path-pop-up.png)
+    :::image type="content" source="media/service-gateway-performance/gateway-folder-path-pop-up.png" alt-text="Pop-up for the folder path.":::
 
 1. Select **Load**, and the template file starts loading the data from your log files. All visuals are populated by using the data in the reports.
 
@@ -148,7 +148,7 @@ Long-running queries might require additional modification on your data source o
 
 By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the performance monitoring feature, you can temporarily enable **Additional logging** to gather additional log information, including mashup engine logs, query strings, and verbose-level tracing. These logs are written to the same place as your normal gateway logs. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
 
-![Turn on additional logging.](media/service-gateway-performance/additional-logging.png)
+:::image type="content" source="media/service-gateway-performance/additional-logging.png" alt-text="Turn on additional logging.":::
 
 Enabling this setting likely will increase the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable additional logging. We don't recommend leaving this setting enabled during normal gateway usage.
 

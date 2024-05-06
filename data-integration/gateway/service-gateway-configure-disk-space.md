@@ -38,7 +38,7 @@ When spooling causes an "out of disk space" error, use the following steps to ch
 >[!NOTE]
 > If you modify the path, you'll also need to restart the on-premises data gateway service.
 
-[![Screenshot](media/service-gateway-configure-disk-space/restart-service.png)](media/service-gateway-configure-disk-space/restart-service.png#lightbox)
+[:::image type="content" source="media/service-gateway-configure-disk-space/restart-service.png#lightbox" alt-text="Screenshot](media/service-gateway-configure-disk-space/restart-service.png)":::
 
 ## Mashup engine persistent cache
 

@@ -18,7 +18,7 @@ This article doesn't provide step-by-step guidance on how to install and configu
 
 ## How the gateway works
 
-![Relationship among cloud services, gateway, and data sources.](./media/service-gateway-onprem-indepth/on-prem-data-gateway-how-it-works.png)
+:::image type="content" source="./media/service-gateway-onprem-indepth/on-prem-data-gateway-how-it-works.png" alt-text="Relationship among cloud services, gateway, and data sources.":::
 
 Let's first look at what happens when you interact with an element that is connected to an on-premises data source.
 
