@@ -163,8 +163,10 @@ By default, the on-premises data gateway spools data before returning it to the 
       <value>True</value>
    </setting>
    ```
-
 2. In **On-premises data gateway** > **Service Settings**, restart the gateway.
+
+> [!NOTE]
+> Enabling _StreamBeforeRequestCompletes_ may cause query reliability issues when using slow data sources or with unstable/limited network connections.
 
 ## Optimize performance by excluding specific folders from antivirus scanning
 
