@@ -102,6 +102,8 @@
         href: vnet/manage-vnet-security-roles.md
       - name: Troubleshoot a virtual network data gateway network
         href: vnet/troubleshoot-data-gateway.md
+      - name: Virtual network data gateway best practices
+        href: vnet/vnet-best-practices.md
       - name: Virtual network data gateway FAQs
         href: vnet/data-gateway-faqs.yml
       - name: Download diagnostics logs
