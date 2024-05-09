@@ -15,14 +15,14 @@ If you're using a storage account, for example Databricks, Snowflake, or Azure D
 
 1. Navigate to the subnet delegated to your virtual network data gateway.
 
-   :::image type="content" source="media/vnet-best-practices/navigate-to-vnet-gateway-subnet.png" alt-text="Screenshot showing how to navigate to the virtual network for your gateway.":::
+   :::image type="content" source="media/vnet-best-practices/navigate-to-vnet-gateway-subnet.png" lightbox="media/vnet-best-practices/navigate-to-vnet-gateway-subnet.png" alt-text="Screenshot showing how to navigate to the virtual network for your gateway.":::
 
 1. Scroll down to **Service Endpoints** and expand the dropdown menu.
-   :::image type="content" source="media/vnet-best-practices/service-endpoints.png" alt-text="Screenshot showing where to select subnet Service Endpoints in your virtual network data gateway configuration in Azure.":::
+   :::image type="content" source="media/vnet-best-practices/service-endpoints.png" lightbox="media/vnet-best-practices/service-endpoints.png" alt-text="Screenshot showing where to select subnet Service Endpoints in your virtual network data gateway configuration in Azure.":::
 
 1. Select **Microsoft.Storage**.
 
-   :::image type="content" source="media/vnet-best-practices/save-endpoint.png" alt-text="Screenshot showing where to save the newly defined service endpoint.":::
+   :::image type="content" source="media/vnet-best-practices/save-endpoint.png" lightbox="media/vnet-best-practices/save-endpoint.png" alt-text="Screenshot showing where to save the newly defined service endpoint.":::
 
 ## Related content
 
