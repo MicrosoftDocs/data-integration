@@ -115,7 +115,7 @@ sections:
           Yes, for more information, go to [Force HTTPS communication with Azure Relay](service-gateway-communication.md#force-https-communication-with-azure-relay). Turning on this feature has little effect on performance.
           
       - question: |
-          Are the on-premises data gateway and Data Management Gateway, which is used by Azure Machine Learning Studio and Azure Data Factory, the same thing?  
+          Are the on-premises data gateway and Data Management Gateway, which is used by Azure Machine Learning studio and Azure Data Factory, the same thing?  
         answer: |
           No, they're different products. To get more information about Data Management Gateway, which is now called Self-hosted Integration Runtime, go to [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).
           
