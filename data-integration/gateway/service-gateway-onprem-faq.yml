@@ -18,7 +18,7 @@ sections:
       - question: |
           Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials are updated recently.
         answer: |
-          When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. This limitation for long running refreshes exists for VNET gateways and on-premises data gateways. Dataflows specifically were recently updated to support token refresh, so they are no longer subject to the 1 hour timeout. However, other artifacts such as pipelines or copy jobs are still subject to the limitation. 
+          When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. This limitation for long running refreshes exists for VNET gateways and on-premises data gateways. Dataflows specifically were recently updated to support token refresh, so they are no longer subject to the 1 hour timeout. However, other artifacts, such as pipelines, copy jobs, or semantic models, are still subject to the limitation. 
 
       - question: |
           What are the requirements for the gateway?  
@@ -115,7 +115,7 @@ sections:
           Yes, for more information, go to [Force HTTPS communication with Azure Relay](service-gateway-communication.md#force-https-communication-with-azure-relay). Turning on this feature has little effect on performance.
           
       - question: |
-          Are the on-premises data gateway and Data Management Gateway, which is used by Azure Machine Learning studio and Azure Data Factory, the same thing?  
+          Are the on-premises data gateway and Data Management Gateway, which is used by Azure Machine Learning Studio and Azure Data Factory, the same thing?  
         answer: |
           No, they're different products. To get more information about Data Management Gateway, which is now called Self-hosted Integration Runtime, go to [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).
           
@@ -232,7 +232,7 @@ sections:
       - question: |
           Are there any known issues?
         answer: |
-          * If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired. All artifacts other than dataflows can be subject to this timeout, but dataflows have been recently updated to support token refresh, and are not subject to the limitation anymore.
+          If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired. All artifacts other than dataflows can be subject to this timeout, but dataflows have been recently updated to support token refresh, and are not subject to the limitation anymore.
 
 additionalContent: |
 
