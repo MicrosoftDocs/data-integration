@@ -74,9 +74,6 @@ The Query Execution Report contains detailed query execution information. The fo
 
 The Query Start Report contains the query and the query start time. The following attributes are captured.
 
-> [!NOTE]
-> The EvaluationContext shows up without additional logging being enabled for Power BI dataflows and Dataflow Gen2 for users on Pro licenses only. You still need additional logging enabled to view EvaluationContext for Power BI dataflows for users on Premium licenses.
-
 |Attribute |Description |
 | ---- | ---- |
 |**GatewayObjectId** |Unique identifier for the gateway. |
