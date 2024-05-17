@@ -48,7 +48,7 @@ sections:
       - question: |
           What are the licensing requirements in Power BI to use virtual network data gateways?
         answer: |
-          Virtual network data gateways are a premium-only feature and is available only in Fabric and Power BI Premium capacities.
+          Virtual network data gateways are a premium-only feature and is available only in Fabric (any SKU) and Power BI Premium capacities (A4 SKU or higher or any P SKU).
           
       - question: |
           Some of my data sources are connected to my virtual network using service endpoint and some using private endpoint. Can I connect to all of them using virtual network data gateways?

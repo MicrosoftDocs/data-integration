@@ -1,12 +1,12 @@
 ---
 title: Virtual network data gateways business and billing model
-description: Provides information about the bill incurred by the virtual network data gateways.
+description: This article provides information about the charges incurred by use of the virtual network data gateway.
 ms.topic: conceptual
 ms.date: 05/06/2024
 ---
 
 # Virtual network data gateways business and billing model
-Data Gateway. The virtual network data gateway is a network security offering that lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a virtual network data gateway. The virtual network data gateway ensures no traffic is exposed to a public endpoint. In addition, you can force all traffic to your datasource to go through a gateway, allowing for comprehensive auditing of secure data sources. To learn more and get started, refer to [virtual network data gateways](overview.md).
+The virtual network data gateway is a network security offering that lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a virtual network data gateway. The virtual network data gateway ensures no traffic is exposed to a public endpoint. In addition, you can force all traffic to your datasource to go through a gateway, allowing for comprehensive auditing of secure data sources. To learn more and get started, refer to [virtual network data gateways](overview.md).
 
 :::image type="content" source="media\vnet-gateway-architecture-no-swift.png" alt-text="Diagram of the virtual network data gateway architecture.":::
 
@@ -26,10 +26,11 @@ You can set up your virtual network data gateways for free. There's no cost asso
 To reduce costs, you can actively manage the time to live on your virtual network data gateway in settings. Learn more [here](manage-data-gateways.md#manage-settings).
 
 To check if your virtual network data gateway is on or off, you can use the status icon on the **Manage connections and gateways** page.
-:::image type="content" source="https://github.com/MicrosoftDocs/data-integration-pr/assets/107279699/32a68141-f942-44bb-8fc8-238b0898c80c" alt-text="image":::
 
 ## Example Charges on your capacity
 The following table summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
+
+:::image type="content" source="https://github.com/MicrosoftDocs/data-integration-pr/assets/107279699/32a68141-f942-44bb-8fc8-238b0898c80c" alt-text="image":::
 
 This calculation considers all of the following details:
 
@@ -42,7 +43,7 @@ To calculate the final price you pay, use the following calculation. Provide the
 
 - CU Consumption fixed rate = 2
 - Fixed number of cores per virtual network data gateway = 2
-- Fixed Pay as You Go price for one CU per hour = $0.18
+- Fixed pay-as-you-go price for one CU per hour = $0.18
 - Number of [gateway members](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check this number in the advanced settings of your virtual network data gateway.
 
 Price incurred = (CU Consumption rate) * (Number of cores per virtual network data gateway) * (Pay as You Go price per CU per core per hour) * (Number of hours) * (Number of gateway members)
@@ -71,18 +72,21 @@ To view your bill, use the Fabric Capacity Metrics app. You see three line items
 
 |Item Kind	|Item Name	|Operation |Utilization Type |
 |-----------|-----------|----------|-----------------|
-|Virtual network Data Gateway	|Virtual network Data Gateway |Virtual network Data Gateway Uptime  |Background |
-|Dataset 	|Global Revenue Analytics	|Virtual network Data Gateway	|Background |
-|Dataset	|Global Revenue Analytics	|Dataset On-Demand Refresh	|Background |
+|Virtual network data gateway	|Virtual network data gateway |Virtual network data gateway uptime  |Background |
+|Dataset 	|Global revenue analytics	|Virtual network data gateway	|Background |
+|Dataset	|Global revenue analytics	|Dataset on-demand refresh	|Background |
 
 Description of each line item by Operation name:
-•	Virtual network Data Gateway Uptime: The extra charge from using the virtual network data gateway. This charge is billed at $0.72/hour and is consistent across all artifacts.
-•	(Dataset) Virtual network Data Gateway: The charge for compute from executing queries on the M Engine. The virtual network Data Gateway hosts the M Engine and reports its usage to the semantic model artifact.
-•	(Dataset) Dataset On-Demand Refresh: The charge for compute from using the Analysis Services engine to execute the semantic model.
+-	**Virtual network data gateway uptime** The extra charge from using the virtual network data gateway. This is billed at $0.72/hour and is consistent across all artifacts.
+-	**(Dataset) Virtual network data gateway** The charge for compute from executing queries on the M Engine. The Virtual network data gateway hosts the M Engine and reports its usage to the semantic model artifact.
+-	**(Dataset) Dataset on-demand refresh** The charge for compute from using the Analysis Services engine to execute the semantic model.
+
 The charges from the item kind dataset should be the same as they would be without using the virtual network data gateway. The virtual network data gateway uptime charge is the only extra charge. 
 
 The following diagram illustrates how the cost model works. You can see that under semantic models there are two compute engines (Analysis Service compute and the Power Query or Mashup Engine compute) and one infrastructure item for the virtual network Data Gateway that all need to be charged for. If you use OneLake for storage, you would be billed for that too.
 
 :::image type="content" source="media\vnet-business-model.png" alt-text="Diagram showing virtual network data gateway meters.":::
+
+## Related content
 
 If you're using a Premium Power BI capacity, you can learn more about how to view and manage your bill [here](/power-bi/enterprise/service-admin-premium-manage#manage-capacity).
