@@ -1,6 +1,6 @@
 ---
 title: Virtual network data gateways business and billing model
-description: Provides information about the bill incurred by the virtual network data gateways.
+description: This article provides information about the charges incurred by use of the virtual network data gateway.
 ms.topic: conceptual
 ms.date: 01/26/2024
 ---
@@ -17,7 +17,7 @@ The virtual network data gateway is billed as an additive premium infrastructure
 The virtual network data gateway Charge is proportional to your usage of the virtual network data gateway; we define usage as uptime, or anytime the virtual network data gateway is on. A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate that we decide, depending on what we want to charge. Learn more about CUs [here](/fabric/enterprise/fabric-operations).
 
 - Consumption Unit (CU) consumption rate: 2x
-- Price: 2x (CU Consumption rate) * 2 cores (per virtual network data gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per VNET/hour
+- Price: 2x (CU Consumption rate) * 2 cores (per virtual network data gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per virtual network/hour
 
 ## Best Practices
 
@@ -27,27 +27,28 @@ To reduce costs, you can actively manage the time to live on your virtual networ
 
 To check if your virtual network data gateway is on or off, you can use the status icon on the **Manage connections and gateways** page.
 
-The table below summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
+The following table summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
 ![image](https://github.com/MicrosoftDocs/data-integration-pr/assets/107279699/32a68141-f942-44bb-8fc8-238b0898c80c)
 
 ## View and Manage your Bill
-Virtual network data gateways don't map to a single workspace or artifact. On top of the usual charge you incur for using the artifact, the gateway incurs an additional charge with the operation name VNET Data Gateway Uptime that costs $0.72 per hour the VNET data gateway is on. This additional charge covers the infrastructure used to operate the gateway. 
+Virtual network data gateways don't map to a single workspace or artifact. On top of the usual charge you incur for using the artifact, the gateway incurs an extra charge with the operation name **Virtual network data gateway uptime** that costs $0.72 per hour the virtual network data gateway is on. This extra charge covers the infrastructure used to operate the gateway. 
 
 To view your bill, use the Fabric Capacity Metrics app. You will see three line items:
 
 |Item Kind	|Item Name	|Operation |Utilization Type |
 |-----------|-----------|----------|-----------------|
-|Vnet Data Gateway	|VNet Data Gateway |VNet Data Gateway Uptime  |Background |
-|Dataset 	|Global Revenue Analytics	|VNet Data Gateway	|Background |
-|Dataset	|Global Revenue Analytics	|Dataset On-Demand Refresh	|Background |
+|Virtual network data gateway	|Virtual network data gateway |Virtual network data gateway uptime  |Background |
+|Dataset 	|Global revenue analytics	|Virtual network data gateway	|Background |
+|Dataset	|Global revenue analytics	|Dataset on-demand refresh	|Background |
 
 Description of each line item by Operation name:
-•	VNET Data Gateway Uptime: The additional charge from using the VNET data gateway. This is billed at $0.72/hour and is consistent across all artifacts.
-•	(Dataset) VNET Data Gateway: This is the charge for compute from executing queries on the M Engine. The VNET Data Gateway hosts the M Engine and reports its usage to the semantic model artifact.
-•	(Dataset) Dataset On-Demand Refresh: This is the charge for compute from using the Analysis Services engine to execute the semantic model.
-The charges from the item kind dataset should be the same as they would be without using the VNET data gateway. The VNET data gateway uptime charge is the only additional charge. 
+•	**Virtual network data gateway uptime** The extra charge from using the virtual network data gateway. This is billed at $0.72/hour and is consistent across all artifacts.
+•	**(Dataset) Virtual network data gateway** The charge for compute from executing queries on the M Engine. The Virtual network data gateway hosts the M Engine and reports its usage to the semantic model artifact.
+•	**(Dataset) Dataset on-demand refresh** The charge for compute from using the Analysis Services engine to execute the semantic model.
 
-Below is a diagram illustrating the above. You can see that under semantic models there are two compute engines (Analysis Service compute and the Power Query or Mashup Engine compute) and one infrastructure item for the VNET Data Gateway that all need to be charged for. If you use OneLake for storage, you would be billed for that too.
+The charges from the item kind dataset should be the same as they would be without using the virtual network data gateway. The virtual network data gateway uptime charge is the only extra charge. 
+
+A diagram illustrating this follows. You can see that under semantic models there are two compute engines (Analysis Service compute and the Power Query or Mashup Engine compute) and one infrastructure item for the Virtual network data gateway that all need to be charged for. If you use OneLake for storage, you would be billed for that too.
 ![Virtual network data gateway meters](media/vnet-business-model.png)
 
 If you're using a Premium Power BI capacity, you can learn more about how to view and manage your bill [here](/power-bi/enterprise/service-admin-premium-manage#manage-capacity).
