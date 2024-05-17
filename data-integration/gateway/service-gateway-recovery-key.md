@@ -2,7 +2,7 @@
 title: Change the recovery key for an on-premises data gateway
 description: You can change the recovery key, which the gateway uses to create extra keys that encrypt data source and connection credentials.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 
 # Change the recovery key for an on-premises data gateway
@@ -25,19 +25,19 @@ Use the following steps to change the recovery key.
 
 1. On the **Recovery Keys** tab, select **Set new recovery key**. In a cluster with more than one member, this action disables all other gateway members. You re-enable these members later in this process.
 
-    ![Set new recovery key.](media/service-gateway-recovery-key/set-new-recovery-key.png)
+    :::image type="content" source="media/service-gateway-recovery-key/set-new-recovery-key.png" alt-text="Set new recovery key.":::
 
 1. Enter the current recovery key and the new one.
 
-    ![Add new recovery key.](media/service-gateway-recovery-key/add-new-recovery-key.png)
+    :::image type="content" source="media/service-gateway-recovery-key/add-new-recovery-key.png" alt-text="Add new recovery key.":::
 
 1. Select **Configure** to change the recovery key. This step performs a recovery of the gateway and encrypts all Power BI data source credentials using the new recovery key.
 
-    ![Configure new recovery key.](media/service-gateway-recovery-key/configure-new-recovery-key.png)
+    :::image type="content" source="media/service-gateway-recovery-key/configure-new-recovery-key.png" alt-text="Configure new recovery key.":::
 
     After you've created the new key, the app shows that there's now a secondary or _legacy_ recovery key. The gateway maintains both keys on the machine where it's installed, so connections that use the legacy recovery key don't fail. If you want to delete the legacy key, go to [Delete the legacy recovery key](#delete-the-legacy-recovery-key).
 
-    ![Legacy recovery key.](media/service-gateway-recovery-key/legacy-recovery-key.png)
+    :::image type="content" source="media/service-gateway-recovery-key/legacy-recovery-key.png" alt-text="Legacy recovery key.":::
 
 1. If you have a gateway cluster with more than one member, perform an [uninstall and recovery](service-gateway-migrate.md) for each gateway member.  The recovery process will ask for both the old and the new key.
 
@@ -51,4 +51,4 @@ After you've created a new recovery key, you can delete the legacy recovery key.
 
 1. On the **Recovery Keys** tab, select **Delete legacy recovery key**.
 
-    ![Delete legacy recovery key.](media/service-gateway-recovery-key/delete-legacy-recovery-key.png)
+    :::image type="content" source="media/service-gateway-recovery-key/delete-legacy-recovery-key.png" alt-text="Delete legacy recovery key.":::

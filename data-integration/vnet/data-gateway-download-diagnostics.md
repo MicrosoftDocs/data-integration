@@ -2,7 +2,7 @@
 title: Download logs on the VNet data gateway
 description: Provides information about how to download and interpret virtual network (VNet) data gateways logs.
 ms.topic: conceptual
-ms.date: 11/17/2023
+ms.date: 05/06/2024
 ---
 
 # Download logs on the virtual network (VNET) data gateway (preview)

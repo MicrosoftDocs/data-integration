@@ -2,7 +2,7 @@
 title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
 ms.topic: conceptual
-ms.date: 1/17/2024
+ms.date: 05/06/2024
 ---
 
 # Install an on-premises data gateway
@@ -63,11 +63,11 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
 1. In the gateway installer, keep the default installation path, accept the terms of use, and then select **Install**.
 
-    ![Installing to the default installation path.](media/service-gateway-install/install-path.png)
+    :::image type="content" source="media/service-gateway-install/install-path.png" alt-text="Installing to the default installation path.":::
 
 1. Enter the email address for your Office 365 organization account, and then select **Sign in**.
 
-    ![Entering your email address.](media/service-gateway-install/email-address.png)
+    :::image type="content" source="media/service-gateway-install/email-address.png" alt-text="Entering your email address.":::
 
     > [!NOTE]
     > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Microsoft Entra ID. In most cases, your Microsoft Entra ID account's User Principal Name (UPN) will match the email address.  
@@ -78,11 +78,11 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
 1. Select **Register a new gateway on this computer** > **Next**.
 
-    ![Registering the gateway.](media/service-gateway-install/register-gateway.png)
+    :::image type="content" source="media/service-gateway-install/register-gateway.png" alt-text="Registering the gateway.":::
 
 1. Enter a name for the gateway. The name must be unique across the tenant. Also enter a recovery key. You'll need this key if you ever want to recover or move your gateway. Select **Configure**.
 
-    ![Configuring the gateway.](media/service-gateway-install/configure-gateway.png)
+    :::image type="content" source="media/service-gateway-install/configure-gateway.png" alt-text="Configuring the gateway.":::
 
     >[!Important]
     > You are responsible for keeping the gateway recovery key in a safe place where it can be retrieved later. Microsoft doesn't have access to this key and it can't be retrieved by us.
@@ -98,7 +98,7 @@ Because the gateway runs on the computer that you install it on, be sure to inst
 
 1. Review the information in the final window. Because this example uses the same account for Power BI, Power Apps, and Power Automate, the gateway is available for all three services. Select **Close**.
 
-    ![Gateway summary.](media/service-gateway-install/summary-screen.png)
+    :::image type="content" source="media/service-gateway-install/summary-screen.png" alt-text="Gateway summary.":::
 
 Now that you've installed a gateway, you can add another gateway to create a cluster.
 
@@ -119,7 +119,7 @@ To create high-availability gateway clusters, you need the November 2017 update 
 
 1. After you sign in to your Office 365 organization account, register the gateway. Select **Add to an existing cluster**. In the **Available gateway clusters** list, select the *primary gateway*, which is the first gateway you installed. Enter the recovery key for that gateway. Select **Configure**.
 
-    ![Adding a gateway to a cluster.](media/service-gateway-install/add-cluster.png)
+    :::image type="content" source="media/service-gateway-install/add-cluster.png" alt-text="Adding a gateway to a cluster.":::
 
 ## Download and install a personal mode gateway
 
@@ -127,11 +127,11 @@ To create high-availability gateway clusters, you need the November 2017 update 
 
 1. In the gateway installer, enter the default installation path, accept the terms of use, and then select **Install**.
 
-    ![Installing personal mode to the installation path.](media/service-gateway-install/install-path-personal.png)
+    :::image type="content" source="media/service-gateway-install/install-path-personal.png" alt-text="Installing personal mode to the installation path.":::
 
 1. Enter the email address for your Office 365 organization account, and then select **Sign in**.
 
-    ![Entering your personal mode email address.](media/service-gateway-install/email-address-personal.png)
+    :::image type="content" source="media/service-gateway-install/email-address-personal.png" alt-text="Entering your personal mode email address.":::
 
     > [!NOTE]
     > You need to sign in with either a work account or a school account. This account is an *organization account*. If you signed up for an Office 365 offering and didn't supply your work email address, your address might look like nancy\@contoso.onmicrosoft.com. Your account is stored within a tenant in Microsoft Entra ID. In most cases, your Microsoft Entra ID account's User Principal Name (UPN) will match the email address.  
@@ -140,7 +140,7 @@ To create high-availability gateway clusters, you need the November 2017 update 
 
 1. You're now signed in to your account. Select **Close**.
 
-    ![Personal mode gateway summary.](media/service-gateway-install/summary-screen-personal.png)
+    :::image type="content" source="media/service-gateway-install/summary-screen-personal.png" alt-text="Personal mode gateway summary.":::
 
 ## Next steps
 

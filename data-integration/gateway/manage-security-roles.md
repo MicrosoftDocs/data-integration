@@ -4,7 +4,7 @@ title: Manage security roles
 description: Learn how to manage permissions and data sources for the on-premises data gateway.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 3/8/2023
+ms.date: 05/06/2024
 ---
 
 # Manage security roles of an on-premises data gateway
@@ -57,7 +57,7 @@ To manage on-premises data gateways:
 
 5. Depending on your role, you can now assign users to the gateway.
 
-   ![Image of the Manage users dialog box, with a new user emphasized, the Connection Creator role selected, and multiple data sources selected.](media/manage-security-roles/manage-gateways.png)
+   :::image type="content" source="media/manage-security-roles/manage-gateways.png" alt-text="Image of the Manage users dialog box, with a new user emphasized, the Connection Creator role selected, and multiple data sources selected.":::
 
 To manage data sources:
 
@@ -69,7 +69,7 @@ To manage data sources:
 
 4. Depending on your role, you can now assign users to the connection.
 
-   ![Image of the Manage users dialog box, with a new user emphasized, and the User role selected.](media/manage-security-roles/manage-data-sources.png)
+   :::image type="content" source="media/manage-security-roles/manage-data-sources.png" alt-text="Image of the Manage users dialog box, with a new user emphasized, and the User role selected.":::
 
 ## Restricting access for on-premises data gateways
 
@@ -79,16 +79,16 @@ Your admin can update the data gateway settings through the Power Platform admin
 
 1. Go to the [Power Platform admin center](https://aka.ms/ppac).
 
-   [![Screenshot of opening page of the Power Platform admin center.](media/manage-security-roles/admin-center-home.png)](media/manage-security-roles/admin-center-home.png#lightbox)
+   [:::image type="content" source="media/manage-security-roles/admin-center-home.png#lightbox" alt-text="Screenshot of opening page of the Power Platform admin center.](media/manage-security-roles/admin-center-home.png)":::
 
 2. Select **Data (preview)**.
 
-   [![Screenshot of the Power Platform admin center with the Data (Preview) tab selected on the left side of the page.](media/manage-security-roles/admin-data-preview.png)](media/manage-security-roles/admin-data-preview.png#lightbox)
+   [:::image type="content" source="media/manage-security-roles/admin-data-preview.png#lightbox" alt-text="Screenshot of the Power Platform admin center with the Data (Preview) tab selected on the left side of the page.](media/manage-security-roles/admin-data-preview.png)":::
 
 3. Select **On-premises data gateway** and turn on **Tenant administration for gateways**.
 
-   [![Screenshot of the Power Platform admin center with the On-premises data gateway tab selected, and the Tenant administration for gateways switch turned on.](media/manage-security-roles/tenant-admin-gateway.png)](media/manage-security-roles/tenant-admin-gateway.png#lightbox)
+   [:::image type="content" source="media/manage-security-roles/tenant-admin-gateway.png#lightbox" alt-text="Screenshot of the Power Platform admin center with the On-premises data gateway tab selected, and the Tenant administration for gateways switch turned on.](media/manage-security-roles/tenant-admin-gateway.png)":::
 
 4. Turn on **Restrict users in your organization from installing gateways**. You can also allow specific users to override the restriction.
 
-   [![Screenshot of the Manage gateway installers page with Restrict users in your organization from installing gateways switch turned on.](media/manage-security-roles/restrict-users.png)](media/manage-security-roles/restrict-users.png#lightbox)
+   [:::image type="content" source="media/manage-security-roles/restrict-users.png#lightbox" alt-text="Screenshot of the Manage gateway installers page with Restrict users in your organization from installing gateways switch turned on.](media/manage-security-roles/restrict-users.png)":::

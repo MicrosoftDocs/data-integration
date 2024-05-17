@@ -2,7 +2,7 @@
 title: Use virtual network data gateway and data sources in Power BI
 description: Provides information about how to use virtual network data gateway and data sources in Power BI.
 ms.topic: conceptual
-ms.date: 1/17/2024
+ms.date: 05/06/2024
 ---
 
 # Use virtual network data gateway and data sources in Power BI
@@ -26,9 +26,9 @@ You can also create data sources and share these data sources to users like you 
 
 ## Supported Azure data services
 
-In the current release, virtual network data gateways support connectivity to all of the following data sources.
+The VNet Data Gateway can be used to connect to private resources in Azure without any additional setup. It can also be used to connect to private resources outside of Azure with additional network setup such as Express Routes and/or VPNs. The scenarios requiring additional network setup are not currently receiving  support.
 
-Supported sources with secure connectivity:
+Sources with secure connectivity without additional set up:
 - Azure AI Search
 - Azure Batch
 - Azure Blob Storage
@@ -57,8 +57,9 @@ Supported sources with secure connectivity:
 - Azure SQL
 - Azure SQL Managed Instance
 - Azure Table Storage
+- Snowflake
 
-Sources supported with public endpoints:
+Sources supported with public endpoints or secure connectivity with additional network set up:
 
 - Acterys
 - Access Database
@@ -205,7 +206,6 @@ Sources supported with public endpoints:
 - ShortcutsBI
 - Siteimprove
 - Smartsheet.Tables
-- Snowflake
 - SocialbakersMetrics
 - SoftOne BI
 - SolarWindsServiceDesk

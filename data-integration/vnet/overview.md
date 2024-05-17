@@ -2,20 +2,20 @@
 title: What is a virtual network (VNet) data gateway
 description: Virtual network (VNet) data gateway helps you to connect from Microsoft Cloud services to your Azure data services within a VNet without the need of an on-premises data gateway.
 ms.topic: overview
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 
 # What is a virtual network (VNet) data gateway?
 
 The virtual network (VNet) data gateway helps you to connect from Microsoft Cloud services to your Azure data services within a VNet without the need of an on-premises data gateway. The VNet data gateway securely communicates with the data source, executes queries, and transmits results back to the service.
 
-![VNet overview.](media/vnet-overview.png)
+:::image type="content" source="media/vnet-overview.png" alt-text="VNet overview.":::
 
 ## Limitations
 
 - Currently, this feature is available only for Fabric Dataflow Gen2, Power BI semantic models, Power Platform dataflows, and Power BI paginated reports. Power BI dataflows and datamarts are not supported.
 
-- VNet data gateway is currently only available for P and F SKUs, and not available for EM and A SKUs.
+- VNet data gateway is currently available for P, F, and A4 or above (A4, A5, A6, and A7) SKUs. For F SKUs we reccomend that you use F8 and above but all F SKUs will work.
 
 - This feature is currently not supported in GCC L2. We do support GCC L4 (Texas and Virginia) and L5 (DoD East). We support air gapped clouds in US Nat East/West and US Sec East/West.
 

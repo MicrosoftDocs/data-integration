@@ -2,7 +2,7 @@
 title: Manage on-premises data gateway high-availability clusters and load balancing
 description: You can create clusters of on-premises data gateways to provide high availability for your enterprise. In addition, you can configure your clusters to provide load balancing over multiple computers.
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 
 # Manage on-premises data gateway high-availability clusters and load balancing
@@ -13,10 +13,11 @@ You can use an on-premises data gateway cluster to avoid single points of failur
 
 You can create high-availability clusters of gateway installations. The clusters help ensure that your organization can access on-premises data resources from cloud services like Power BI and Power Apps. Gateway admins use such clusters to avoid single points of failure when accessing on-premises data resources.
 
-The gateway cloud service always uses the primary gateway in a cluster unless that gateway isn't available. In that case, the service switches to the next available gateway in the cluster.
+The gateway cloud service always uses the primary gateway in a cluster unless that gateway isn't available. In that case, the service switches to the next available gateway in the cluster. Each cluster supports up to ten gateway members (sometimes called nodes). 
 
 >[!Note]
 > Make sure the gateway members in a cluster are running the same gateway version, as different versions could cause unexpected failures based on supported functionality.
+> Gateway clusters currently running more than 10 nodes will continue to operate but not alow new additions.
 
 ### Manage a gateway cluster
 
@@ -33,9 +34,9 @@ You can choose to let traffic be distributed evenly across gateways in a cluster
 > [!NOTE]
 > It is recommended to disable or remove an offline gateway member in the cluster. If a gateway member is offline instead of disabled or removed, we may try to execute a query on that offline member, before moving to the next one. This can negatively impact the performance.
 
-For example, to provide load balancing from the Power BI service, select the gear icon ![A gear icon.](media/service-gateway-manage/icon-gear.png) in the upper-right corner, then select **Manage gateways**. Next, select **Distribute requests across all active gateways in this cluster**.
+For example, to provide load balancing from the Power BI service, select the gear icon :::image type="content" source="media/service-gateway-manage/icon-gear.png" alt-text="A gear icon."::: in the upper-right corner, then select **Manage gateways**. Next, select **Distribute requests across all active gateways in this cluster**.
 
-![Gateway cluster settings.](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
+:::image type="content" source="media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png" alt-text="Gateway cluster settings.":::
 
 ## Load balance based on CPU and Memory limits
 

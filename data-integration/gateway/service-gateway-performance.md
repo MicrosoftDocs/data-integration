@@ -2,7 +2,7 @@
 title: Monitor and optimize on-premises data gateway performance
 description: This article provides ways for you to monitor and optimize the performance of the on-premises data gateway activities.
 ms.topic: conceptual
-ms.date: 8/29/2023
+ms.date: 05/06/2024
 ---
 
 # Monitor and optimize on-premises data gateway performance
@@ -74,9 +74,6 @@ The Query Execution Report contains detailed query execution information. The fo
 
 The Query Start Report contains the query and the query start time. The following attributes are captured.
 
-> [!NOTE]
-> The EvaluationContext shows up without additional logging being enabled for Power BI dataflows and Dataflow Gen2 for users on Pro licenses only. You still need additional logging enabled to view EvaluationContext for Power BI dataflows for users on Premium licenses.
-
 |Attribute |Description |
 | ---- | ---- |
 |**GatewayObjectId** |Unique identifier for the gateway. |
@@ -86,7 +83,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
 |**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
-|**EvaluationContext**|Contains the artifactId (that is, ModelID, DataflowsId) along with additional data depending on the artifact. Note that this field only populates for Dataflow Gen2 and Power Platform dataflows.|
+|**EvaluationContext**|Contains the artifactId (that is, ModelID, DataflowsId) along with additional data depending on the artifact. Note that this field only populates for Semantic Models, Dataflow Gen2, and Power Platform dataflows.|
 
 The Query Execution Aggregation Report contains query information aggregated to a time interval by **GatewayObjectId**, **DataSource**, **Success**, and **QueryType**. The default value is 5 minutes, but you can adjust it. The following attributes are captured.
 
@@ -126,7 +123,7 @@ Now, you can visualize the data that's in the log files.
 
 1. In the dialog box that opens, check that the folder path matches the value in **ReportFilePath**.
 
-    ![Pop-up for the folder path.](media/service-gateway-performance/gateway-folder-path-pop-up.png)
+    :::image type="content" source="media/service-gateway-performance/gateway-folder-path-pop-up.png" alt-text="Pop-up for the folder path.":::
 
 1. Select **Load**, and the template file starts loading the data from your log files. All visuals are populated by using the data in the reports.
 
@@ -148,7 +145,7 @@ Long-running queries might require additional modification on your data source o
 
 By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the performance monitoring feature, you can temporarily enable **Additional logging** to gather additional log information, including mashup engine logs, query strings, and verbose-level tracing. These logs are written to the same place as your normal gateway logs. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
 
-![Turn on additional logging.](media/service-gateway-performance/additional-logging.png)
+:::image type="content" source="media/service-gateway-performance/additional-logging.png" alt-text="Turn on additional logging.":::
 
 Enabling this setting likely will increase the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable additional logging. We don't recommend leaving this setting enabled during normal gateway usage.
 
@@ -163,8 +160,10 @@ By default, the on-premises data gateway spools data before returning it to the 
       <value>True</value>
    </setting>
    ```
-
 2. In **On-premises data gateway** > **Service Settings**, restart the gateway.
+
+> [!NOTE]
+> Enabling _StreamBeforeRequestCompletes_ may cause query reliability issues when using slow data sources or with unstable/limited network connections.
 
 ## Optimize performance by excluding specific folders from antivirus scanning
 

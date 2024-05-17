@@ -3,7 +3,7 @@ title: Migrate, restore, or take over an on-premises data gateway
 description: Learn how to move a gateway to a new computer, recover a damaged gateway, or take over ownership of a gateway.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 
 # Migrate, restore, or take over an on-premises data gateway
@@ -19,7 +19,7 @@ If you're restoring the gateway on the computer that has the original gateway in
 
 1. After you've signed in to your Office 365 account, register the gateway. Select **Migrate, restore, or takeover an existing gateway** > **Next**.
 
-    ![Choosing to migrate, restore, or take over a gateway.](media/service-gateway-migrate/register-gateway.png)
+    :::image type="content" source="media/service-gateway-migrate/register-gateway.png" alt-text="Choosing to migrate, restore, or take over a gateway.":::
 
 1. Select from the available clusters and gateways, and enter the recovery key for the selected gateway. You created and safely stored the recovery key when you originally installed the gateway. For more information, go to step 5 in [Install an on-premises data gateway](service-gateway-install.md).
 
@@ -28,7 +28,7 @@ If you're restoring the gateway on the computer that has the original gateway in
 
 1. Select **Configure**.
 
-    ![Configuring the migration, restoration, or takeover of a gateway.](media/service-gateway-migrate/migrate-restore-takeover.png)
+    :::image type="content" source="media/service-gateway-migrate/migrate-restore-takeover.png" alt-text="Configuring the migration, restoration, or takeover of a gateway.":::
 
 After the configuration finishes, the process of migrating, restoring, or taking over is complete.
 

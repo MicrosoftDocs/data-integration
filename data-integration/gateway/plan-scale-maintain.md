@@ -4,7 +4,7 @@ title: Plan, scale, and maintain a business-critical gateway solution
 description: Learn how to plan, scale, and maintain gateways and gateway clusters that are deployed in business-critical scenarios.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 11/17/2022
+ms.date: 05/06/2024
 ---
 
 # Plan, scale, and maintain a business-critical gateway solution  
@@ -24,7 +24,7 @@ The following important terms are used throughout this article:
 
 The following image demonstrates the relationship between the concepts defined above.
 
-![Image of a gateway cluster as part of three gateway servers, each containing a separate gateway](media/plan-scale-maintain/gateway-terminology.png)
+:::image type="content" source="media/plan-scale-maintain/gateway-terminology.png" alt-text="Image of a gateway cluster as part of three gateway servers, each containing a separate gateway":::
 
 ## Recommendations for business-critical gateways
 
@@ -44,7 +44,7 @@ If you currently don't know all your gateway recovery keys, this is a **signific
 
 Separate development workloads from business-critical ones by setting up one or more development gateway clusters and one or more production gateway clusters as described below.
 
-![Image of a development and test gateway cluster with three gateways and a separate production cluster with three gateways](media/plan-scale-maintain/dev-production-clusters.png)
+:::image type="content" source="media/plan-scale-maintain/dev-production-clusters.png" alt-text="Image of a development and test gateway cluster with three gateways and a separate production cluster with three gateways":::
 
 Use a development gateway cluster to test out new semantic models, reports, queries, and so on. Once a new workload has been verified, migrate it to a business-critical gateway cluster. This process prevents new, untested, or experimental workloads from having performance impacts on productions workloads.
 
@@ -56,7 +56,7 @@ If you're creating a gateway cluster for a large number of users in your organiz
 
 We don't recommend that a single business-critical gateway cluster be used for an entire company (unless the company is small). In a single gateway cluster scenario, one user could conceivably send a query that causes a significant performance impact to all traffic across the gateway. If the gateway is used across the entire company, the performance impact could affect the entire company. Also, when a gateway cluster is used across an entire company, it might be more difficult for you to identify which query might be causing a performance problem when using the [gateway performance monitoring](service-gateway-performance.md) feature.
 
-![Image of an example organization with separate gateway clusters for enterprise BI and apps, the finance department, the marketing department, and personal BI and apps.](media/plan-scale-maintain/multiple-gateway-clusters.png)
+:::image type="content" source="media/plan-scale-maintain/multiple-gateway-clusters.png" alt-text="Image of an example organization with separate gateway clusters for enterprise BI and apps, the finance department, the marketing department, and personal BI and apps.":::
 
 ### Use the gateway high availability and load balancing features
 
@@ -107,7 +107,7 @@ Since refreshes and queries distributed across gateway nodes can have vastly dif
 
 ##### Scaling up a gateway cluster
 
-![Image of a query failure using a gateway cluster with two gateways that have 5 GB of memory and a query success using a custer with two gateway, with one gateway that has 7 GB of memory](media/plan-scale-maintain/scaled-up-cluster.png)
+:::image type="content" source="media/plan-scale-maintain/scaled-up-cluster.png" alt-text="Image of a query failure using a gateway cluster with two gateways that have 5 GB of memory and a query success using a custer with two gateway, with one gateway that has 7 GB of memory":::
 
 Scaling up is when you increase the specifications (CPU, memory, disk, and so on) of your gateway servers.
 
@@ -115,7 +115,7 @@ Scaling up might be required if the maximum CPU or memory is reached when the ga
 
 ##### Scaling out a gateway cluster
 
-![Image of a query failure using a cluster with two gateways with 5 GB of memory each and a query success using a cluster with three gateways with 5 GB of memory each](media/plan-scale-maintain/scaled-out-cluster.png)
+:::image type="content" source="media/plan-scale-maintain/scaled-out-cluster.png" alt-text="Image of a query failure using a cluster with two gateways with 5 GB of memory each and a query success using a cluster with three gateways with 5 GB of memory each":::
 
 Scaling out is required if the gateway server already has high specifications (in other words, the gateway server has been scaling up already), or you've reached the limits of what a single gateway server can manage because of the number of concurrent queries being executed. Broad-based load increase across the entire gateway member set is a good indication that scaling a cluster by adding nodes is the correct course of action. [When to scale a gateway cluster](#when-to-scale-a-gateway-cluster) provides specific thresholds that indicate when it's time to scale. For more information about scaling out, go to [Use the gateway high availability and load balancing features](#use-the-gateway-high-availability-and-load-balancing-features).
 
