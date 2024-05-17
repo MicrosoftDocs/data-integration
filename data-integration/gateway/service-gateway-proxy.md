@@ -13,7 +13,7 @@ The following post on superuser.com discusses how you can try to determine if yo
 
 Although most gateway configuration settings can be changed by using the on-premises data gateway app, proxy information is configured within a .NET configuration file. The location and file names are different, depending on the gateway you're using.
 
-There are three configuration files associated with using a proxy with the on-premises data gateway. The following two main configuration files apply to the gateway and its configuration process.
+There are four configuration files associated with using a proxy with the on-premises data gateway. The following two main configuration files apply to the gateway and its configuration process.
 
 * The first file is for the configuration screens that actually configure the gateway. If you're having issues configuring the gateway, look at the following file: _C:\Program Files\On-premises data gateway\enterprisegatewayconfigurator.exe.config_. On the on-premises data gateway (personal mode), the corresponding file is _%LocalAppData%\Microsoft\On-premises data gateway (personal mode)\PersonalGatewayConfigurator.exe.config_.
 * The second file is for the actual Windows service that interacts with the cloud service using the gateway. This file handles the requests: _C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config_. On the on-premises data gateway (personal mode), the corresponding file is _%LocalAppData%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.PersonalGateway.exe.config_.
@@ -25,6 +25,10 @@ The third configuration file needs to be edited for the gateway to connect to cl
 * _C:\Program Files\On-premises data gateway\m\Microsoft.Mashup.Container.NetFX45.exe.config_
 
 On the on-premises data gateway (personal mode), the corresponding file is _%LocalAppData%\Microsoft\On-premises data gateway (personal mode)\m\Microsoft.Mashup.Container.NetFX45.exe.config_.
+
+The fourth configuration file needs to be edited for the gateway to connect to Fabric Pipelines services through a proxy.
+
+* _C:\Program Files\On-premises data gateway\FabricIntegrationRuntime\5.0\Shared\Fabricworker.exe.config_
 
 The following section describes how to edit these files.
 
