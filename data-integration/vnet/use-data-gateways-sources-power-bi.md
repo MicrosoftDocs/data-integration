@@ -26,9 +26,9 @@ You can also create data sources and share these data sources to users like you 
 
 ## Supported Azure data services
 
-The VNet Data Gateway can be used to connect to private resources in Azure without any additional setup. It can also be used to connect to private resources outside of Azure with additional network setup such as Express Routes and/or VPNs. The scenarios requiring additional network setup are not currently receiving  support.
+The VNet Data Gateway can be used to connect securely to private resources in Azure without any additional setup. It can also be used to connect securely to private resources outside of Azure with additional network setup such as Express Routes and/or VPNs. In both secure scenarios, traffic will remain on the Azure backbone or go to the data source through private endpoints. The scenarios requiring additional network setup are not currently receiving  support.
 
-Sources with secure connectivity without additional set up:
+Sources with secure private endpoint connectivity without additional set up:
 - Azure AI Search
 - Azure Batch
 - Azure Blob Storage
@@ -59,7 +59,7 @@ Sources with secure connectivity without additional set up:
 - Azure Table Storage
 - Snowflake
 
-Sources supported with public endpoints or secure connectivity with additional network set up:
+Sources supported with public endpoints or secure private endpoint connectivity with additional network set up:
 
 - Acterys
 - Access Database
