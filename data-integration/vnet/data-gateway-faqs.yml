@@ -15,7 +15,7 @@ sections:
       - question: |
           Does the virtual network data gateway support Azure Government cloud?
         answer: | 
-          We support GCC L4 (Texas and Virginia) and L5 (DoD East).
+          We support GCC L4 (Texas and Virginia) and L5 (DoD East). This feature is currently not supported in GCC L2.
 
       - question: |
           Does the virtual network data gateway support Azure air gapped clouds?
