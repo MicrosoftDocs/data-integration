@@ -83,7 +83,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
 |**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
-|**EvaluationContext**|Contains the artifactId (that is, ModelID, DataflowsId) along with additional data depending on the artifact. Note that this field only populates for Semantic Models, Dataflow Gen2, and Power Platform dataflows.|
+|**EvaluationContext**|Contains the artifactId (eg., ModelID, DataflowsId, etc.) along with additional trace Id data that varies depending on the artifact. Note that this field only populates for Semantic Models, Dataflow Gen2, and Power Platform dataflows. Power BI Dataflows Gen1 and Paginated Reports are not supported. |
 
 The Query Execution Aggregation Report contains query information aggregated to a time interval by **GatewayObjectId**, **DataSource**, **Success**, and **QueryType**. The default value is 5 minutes, but you can adjust it. The following attributes are captured.
 
