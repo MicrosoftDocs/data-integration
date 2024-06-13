@@ -63,6 +63,8 @@
         href: gateway/service-gateway-tshoot.md
       - name: "Monitor and optimize gateway performance"
         href: gateway/service-gateway-performance.md
+      - name: "Data protection with connection auditing"
+        href: gateway/data-connection-auditing.md
     - name: Reference
       items:
       - name: "PowerShell support for gateway clusters"
