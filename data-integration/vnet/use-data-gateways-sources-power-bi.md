@@ -34,6 +34,7 @@ The VNet Data Gateway can be used to connect securely to your data sources. Ther
 In scenarios 1 and 2 above, all traffic will remain on the Azure backbone and is never exposed to the public internet.
 
 Azure sources that support secure private endpoint connectivity (scenario 1 described above):
+
 - Azure AI Search
 - Azure Batch
 - Azure Blob Storage
