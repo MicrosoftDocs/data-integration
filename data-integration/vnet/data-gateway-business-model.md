@@ -1,22 +1,26 @@
 ---
-title: Virtual network data gateways business and billing model
+title: Virtual network data gateways pricing and billing 
 description: This article provides information about the charges incurred by use of the virtual network data gateway.
 ms.topic: conceptual
 ms.date: 05/06/2024
 ---
 
-# Virtual network data gateways business and billing model
+# Virtual network data gateways pricing and billing
 The virtual network data gateway is a network security offering that lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a virtual network data gateway. The virtual network data gateway ensures no traffic is exposed to a public endpoint. In addition, you can force all traffic to your datasource to go through a gateway, allowing for comprehensive auditing of secure data sources. To learn more and get started, refer to [virtual network data gateways](overview.md).
 
 :::image type="content" source="media\vnet-gateway-architecture-no-swift.png" alt-text="Diagram of the virtual network data gateway architecture.":::
 
-## Summary
+## Understand how and where the VNET is billed
 
 The virtual network data gateway is billed as an additive premium infrastructure charge, billed to a Premium or Fabric capacity. This means that it has its own meter and incurs a bill that is consistent across and in addition to all artifacts. Total Bill of running an artifact through the virtual network data gateway = artifact charge + virtual network data gateway Charge.
 
-The virtual network data gateway Charge is proportional to your usage of the virtual network data gateway; we define usage as uptime, or anytime the virtual network data gateway is on. A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate that we decide, depending on what we want to charge. Learn more about CUs [here](/fabric/enterprise/fabric-operations).
+The virtual network data gateway Charge is proportional to your usage of the virtual network data gateway; we define usage as uptime, or anytime the virtual network data gateway is on. 
 
-- Consumption Unit (CU) consumption rate: 2x
+Your bill is automatically charged to the capacity linked to your VNET data gateway. When you signed up for your capacity, you paid for a certain amount of capacity unit hours, or CUh. When you use you VNET, this prepaid amount is drained. This side of the metrics can only be seen from the consumption metrics app. A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate. Learn more about CUs [here](https://learn.microsoft.com/en-us/fabric/enterprise/azure-billing).
+
+https://learn.microsoft.com/en-us/fabric/enterprise/azure-billing
+
+- Consumption Unit (CU) consumption rate per core: 2x
 - Price: 2x (CU Consumption rate) * 2 cores (per virtual network data gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per virtual network/hour
 
 ## Best Practices
@@ -68,7 +72,7 @@ The following table includes sample calculations of a few scenarios with differe
 ## View and Manage your Bill
 Virtual network data gateways don't map to a single workspace or artifact. On top of the usual charge you incur for using the artifact, the gateway incurs an extra charge with the operation name virtual network Data Gateway Uptime that costs $0.72 per hour the virtual network data gateway is on. This extra charge covers the infrastructure used to operate the gateway. 
 
-To view your bill, use the Fabric Capacity Metrics app. You see three line items:
+To view your bill, use the [Fabric Capacity Metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app). You see three line items:
 
 |Item Kind	|Item Name	|Operation |Utilization Type |
 |-----------|-----------|----------|-----------------|
