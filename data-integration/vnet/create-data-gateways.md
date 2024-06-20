@@ -9,12 +9,12 @@ ms.custom: references_regions
 # Create virtual network data gateways
 
 Details to consider when creating a VNet data gateway:
+- VNET data gateways require a Power BI Premium capacity license (
+A4 SKU or higher or any P SKU) or a Fabric license (any SKU).
 - Before creating a VNet data gateway, check that the feature is [supported in your region](#regions-supported-for-vnet-data-gateways).
 - The creation of VNET data gateways across tenant boundaries isn't supported.
 - The metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your Power BI home’s default region. However, the VNet data gateway runs in the same region as your Azure VNet. Sometimes, there's a difference between the default environment of Power Platform and the default region of Power BI. This might impact the regions you pick.
 
-    > [!NOTE]
-    > VNET charges will only start showing the Capacity Metrics app on 2/26.
 
 Creating a virtual network (VNet) data gateway is a three-step process:
 
