@@ -8,7 +8,7 @@ ms.date: 05/06/2024
 # Virtual network data gateways pricing and billing
 The virtual network data gateway is a network security offering that lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a virtual network data gateway. The virtual network data gateway ensures no traffic is exposed to a public endpoint. In addition, you can force all traffic to your datasource to go through a gateway, allowing for comprehensive auditing of secure data sources. To learn more and get started, refer to [virtual network data gateways](overview.md).
 
-:::image type="content" source="media\vnet-gateway-architecture-no-swift.png" alt-text="Diagram of the virtual network data gateway architecture.":::
+:::image type="content" source="media\vnet-gateway-architecture-no-swift.png" lightbox="media\vnet-gateway-architecture-no-swift.png" alt-text="Diagram of the virtual network data gateway architecture.":::
 
 ## Understand how and where the virtual network is billed
 
