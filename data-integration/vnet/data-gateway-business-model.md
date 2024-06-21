@@ -10,17 +10,15 @@ The virtual network data gateway is a network security offering that lets you co
 
 :::image type="content" source="media\vnet-gateway-architecture-no-swift.png" alt-text="Diagram of the virtual network data gateway architecture.":::
 
-## Understand how and where the VNET is billed
+## Understand how and where the virtual network is billed
 
-The virtual network data gateway is billed to a Power BI Premium or Fabric capacity. The VNet data gateway is infrastructure that can be used by many different artifacts, like Dataflows Gen2, semantic models, etc. The gateway is billed for the time that it is up and running. This means that it incurs a bill that is consistent despite which artifact it is supporting. The artifact is also charged as normal as a separate charge.
+The virtual network data gateway is billed to a Power BI Premium or Fabric capacity. The virtual network data gateway is infrastructure that supports many different artifacts, like Dataflows Gen2, semantic models, etc. The gateway is billed for the time that it's up and running. This means its bill is consistent regardless of which artifact uses it. The artifact is also charged as normal as a separate charge.
 
 The virtual network data gateway charge is according to the uptime of the virtual network data gateway; uptime is anytime the virtual network data gateway is on. 
 
-A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate that we decide, depending on what we want to charge. Learn more about CUs [here](/fabric/enterprise/fabric-operations).
+A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate that we decide, depending on what we want to charge. Learn more about CUs [on the Fabric operations page](/fabric/enterprise/fabric-operations).
 
-Your bill is automatically charged to the capacity linked to your VNET data gateway. When you signed up for your capacity, you paid for a certain amount of capacity unit hours, or CUh. When you use you VNET, this prepaid amount is drained. This side of the metrics can only be seen from the consumption metrics app. A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate. Learn more about CUs [here](https://learn.microsoft.com/en-us/fabric/enterprise/azure-billing).
-
-https://learn.microsoft.com/en-us/fabric/enterprise/azure-billing
+Your bill is automatically charged to the capacity linked to your virtual network data gateway. When you signed up for your capacity, you paid for a certain number of capacity unit hours, or CUh. When you use your virtual network, this prepaid amount is drained. This side of the metrics can only be seen from the consumption metrics app. A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate. Learn more about CUs [on the Fabric Azure billing page](/fabric/enterprise/azure-billing).
 
 - Consumption Unit (CU) consumption rate per core: 2x
 - Price: 2x (CU Consumption rate) * 2 cores (per virtual network data gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per virtual network/hour
@@ -45,7 +43,7 @@ This calculation considers all of the following details:
 - Number of nodes or gateway members deployed
 - Price of the virtual network data gateway infrastructure at $0.18
 
-To calculate the final price you pay, use the following calculation. Provide the number of gateway members, sometimes called nodes, in your cluster, and the number of hours they are running.
+To calculate the final price you pay, use the following calculation. Provide the number of gateway members, sometimes called nodes, in your cluster, and the number of hours they're running.
 
 - CU Consumption fixed rate = 2
 - Fixed number of cores per virtual network data gateway = 2
@@ -74,7 +72,7 @@ The following table includes sample calculations of a few scenarios with differe
 ## View and manage your Bill
 To view your bill, use the [Fabric Capacity Metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app). 
 
-You will see three line items:
+You see three line items:
 
 |Item Kind	|Item Name	|Operation |Utilization Type |
 |-----------|-----------|----------|-----------------|
@@ -83,7 +81,7 @@ You will see three line items:
 |Dataset	|Global revenue analytics	|Dataset on-demand refresh	|Background |
 
 Description of each line item by Operation name:
--	**Virtual network data gateway uptime** The charge from using the virtual network data gateway. This is billed at $0.72/hour and is consistent across all artifacts.
+-	**Virtual network data gateway uptime** The charge from using the virtual network data gateway. This uptime is billed at $0.72/hour and is consistent across all artifacts.
 -	**(Dataset) Virtual network data gateway** The charge for compute from executing queries on the M Engine. The Virtual network data gateway hosts the M Engine and reports its usage to the semantic model artifact.
 -	**(Dataset) Dataset on-demand refresh** The charge for compute from using the Analysis Services engine to execute the semantic model.
 
