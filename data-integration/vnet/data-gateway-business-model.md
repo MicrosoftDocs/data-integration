@@ -70,7 +70,7 @@ The following table includes sample calculations of a few scenarios with differe
 |24 hours	|5 Nodes | 0.72 * 24 hours * 5 nodes	|86.40 |
 
 ## View and manage your Bill
-To view your bill, use the [Fabric Capacity Metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app). 
+To view your bill, use the [Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). 
 
 You see three line items:
 
