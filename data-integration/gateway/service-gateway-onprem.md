@@ -13,7 +13,7 @@ ms.date: 05/06/2024
 >[!NOTE]
 >Beginning on March 15, 2023, any Power BI dataflow using an on-premises data gateway version older than April 2021 might fail. To ensure your refreshes continue to work correctly, be sure to update your gateway to the latest version and sign in to it.
 
-The on-premises data gateway acts as a bridge. It provides quick and secure data transfer between on-premises data, which is data that isn't in the cloud, and several Microsoft cloud services. These services include Power BI, Power Apps, Power Automate, Azure Analysis Services, and Azure Logic Apps.
+The on-premises data gateway is a locally installed Windows client application that acts as a bridge between your local on-premises data sources and services in the Microsoft cloud. It provides quick and secure data transfer and requires no inbound ports to your network - only outbound ports to reach the Azure web service to which the gateway connects. The gateway functions with multiple services including Azure Analysis Services, Azure Data Factory, Azure Logic Apps, Microsoft Fabric, Power Apps, Power Automate, and Power BI.
 
 By using a gateway, organizations can keep databases and other data sources on their on-premises networks while securely using that on-premises data in cloud services.
 
@@ -21,7 +21,7 @@ By using a gateway, organizations can keep databases and other data sources on t
 
 :::image type="content" source="media/service-gateway-getting-started/on-premises-data-gateway.png" alt-text="Gateway overview.":::
 
-For detailed information on how the gateway works, go to [On-premises data gateway architecture](service-gateway-onprem-indepth.md).
+The on-premises data gateway initiates outbound connections to the cloud, but requires no inbound connections. All communication from the cloud is recieved in responses to polling over the outbound connections. For detailed information on how the gateway works, see [On-premises data gateway architecture](service-gateway-onprem-indepth.md) and [Adjust communication settings for the on-premises data gateway](service-gateway-communication.md).
 
 ## Types of gateways
 
