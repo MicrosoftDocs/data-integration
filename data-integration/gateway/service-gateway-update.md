@@ -28,7 +28,7 @@ Disabling a gateway makes sure the load balancer doesn't try to execute queries 
 
 To update a gateway:
 
-1. Download the latest [standard mode gateway](https://go.microsoft.com/fwlink/?LinkId=2116849&clcid=0x409) or [personal mode gateway](https://go.microsoft.com/fwlink/?LinkId=2116848&clcid=0x409) and run the installation program. If the version you're trying to install isn't newer than the version already installed, you'll receive one of the following error messages.
+1. Download the latest [standard mode gateway](https://go.microsoft.com/fwlink/?LinkId=2116849&clcid=0x409) or [personal mode gateway](https://go.microsoft.com/fwlink/?LinkId=2116848&clcid=0x409) and run the installation program. If the version you're trying to install isn't newer than the version already installed, you'll receive one of the following error messages. To review recent updates, refer to the [Currently supported monthly updates](service-gateway-monthly-updates.md).
 
    :::image type="content" source="media/service-gateway-update/gateway-same-version.png" alt-text="The update version is the same as the installed version.":::
 
