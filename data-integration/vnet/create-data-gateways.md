@@ -56,7 +56,7 @@ This subnet should have connectivity to the data service.
 
     > [!NOTE]
     >
-    > * Don't use the subnet name "gatewaysubnet" as this is a reserved word for the Azure Gateway Subnet feature. You won't be able to use it to create a VNet data gateway in Step 3.
+    > * Don't use the subnet names "gatewaysubnet" or "AzureBastionSubnet" as these are reserved words for other features. You won't be able to use it to create a VNet data gateway in Step 3.
     > * Make sure this subnet doesn't have an IPV6 address space added.
     > * Make sure the subnet's IP range doesn't overlap with 10.0.1.x.
 
