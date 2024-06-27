@@ -32,9 +32,17 @@ To reduce costs, you can actively manage the time to live on your virtual networ
 To check if your virtual network data gateway is on or off, you can use the status icon on the **Manage connections and gateways** page.
 
 ## Example Charges on your capacity
+
 The following table summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
 
-:::image type="content" source="https://github.com/MicrosoftDocs/data-integration-pr/assets/107279699/32a68141-f942-44bb-8fc8-238b0898c80c" alt-text="image":::
+| Time the VNET is on | Calculation               | Charge on capacity |
+|---------------------|---------------------------|--------------------|
+| h hours             | 2 * 2 * 0.18 * h          | $0.72h             |
+| 30 minutes          | 2 * 2 * 0.18 * 0.5 hours  | 0.36               |
+| 1 hour              | 2 * 2 * 0.18 * 1 hour     | 0.72               |
+| 2 hours             | 2 * 2 * 0.18 * 2 hours    | 1.44               |
+| 8 hours             | 2 * 2 * 0.18 * 8 hours    | 5.76               |
+| 24 hours            | 2 * 2 * 0.18 * 24 hours   | 17.28              |
 
 This calculation considers all of the following details:
 
