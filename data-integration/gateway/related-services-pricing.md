@@ -1,17 +1,22 @@
 ---
-title: Pricing for services supported by the virtual network data gateway
-description: This article provides links to pricing details for the services that support the virtual network data gateway.
+title: Pricing for services supported by the data gateway
+description: This article provides links to pricing details for the services that support the on-permises and virtual network data gateways.
 ms.topic: concept-article
 ms.date: 06/27/2024
 ai.usage: ai-assisted
 ---
-# Pricing for services supported by the virtual network data gateway
+# Pricing for services supported by the data gateway
 
-The virtual network data gateway helps you connect from Microsoft cloud services to your Azure data services within a virtual network without the need for an on-premises data gateway. It provides secure data transfer and is particularly suited for scenarios involving Azure virtual networks. This article provides a list of the services that can use the virtual network data gateway, along with links to their respective pricing information and billing pages where available.
+The on-premises and virtual network data gateways help you connect from on-premises and Microsoft cloud services to your Azure data services within a virtual network without the need for an on-premises data gateway. It provides secure data transfer and is particularly suited for scenarios involving Azure virtual networks. This article provides a list of the services that can use the data gateway, along with links to their respective pricing information and billing pages where available.
 
 ## Azure AI Search
 
 [Azure AI Search Pricing](https://azure.microsoft.com/pricing/details/search/)
+
+## Azure Analysis Services
+
+- [Azure Analysis Services Pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
+- [Azure Analysis Services Billing](/analysis-services/analysis-services-overview)
 
 ## Azure Batch
 
@@ -38,6 +43,11 @@ The virtual network data gateway helps you connect from Microsoft cloud services
 ## Azure Data Explorer (Kusto)
 
 [Azure Data Explorer Pricing](https://azure.microsoft.com/pricing/details/data-explorer/)
+
+## Azure Data Factory
+
+- [Azure Data Factory Pricing](https://azure.microsoft.com/pricing/details/data-factory/)
+- [Azure Data Factory Billing](/azure/data-factory/pricing-concepts)
 
 ## Azure Data Lake Analytics
 
@@ -91,6 +101,26 @@ The virtual network data gateway helps you connect from Microsoft cloud services
 ## Azure Snowflake
 
 [Snowflake on Azure Pricing](https://azuremarketplace.microsoft.com/marketplace/apps/snowflake.data_cloud?tab=PlansAndPrice)
+
+## Logic Apps
+
+- [Logic Apps Pricing](https://azure.microsoft.com/pricing/details/logic-apps/)
+- [Logic Apps Billing](/azure/logic-apps/logic-apps-pricing)
+
+## Microsoft Fabric
+
+- [Microsoft Fabric Pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing#tabs-pill-bar-oca31b_tab1)
+- [Microsoft Fabric Billing](/fabric/enterprise/azure-billing)
+
+## Power Apps
+
+- [Power Apps Pricing](https://powerapps.microsoft.com/pricing/)
+- [Power Apps Billing](/power-platform/admin/pricing-billing-skus)
+
+## Power Automate
+
+- [Power Automate Pricing](https://flow.microsoft.com/pricing/)
+- [Power Automate Billing](/power-automate/billing-questions)
 
 ## Power BI (Non-Premium)
 

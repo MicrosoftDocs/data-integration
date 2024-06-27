@@ -93,4 +93,4 @@ The following diagram illustrates how the cost model works. For example, you can
 
 ## Related content
 
-[Pricing details for services that can use the virtual network data gateway](services-pricing-virtual-network-data-gateway.md)
+[Pricing details for services that can use the data gateway](../gateway/related-services-pricing.md)
