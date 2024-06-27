@@ -20,12 +20,12 @@ The virtual network data gateway helps you connect from Microsoft cloud services
 ## Azure Blob Storage
 
 - [Azure Blob Storage Pricing](https://azure.microsoft.com/pricing/details/storage/blobs/)
-- [Azure Storage Billing](/storage/common/storage-account-overview.md)
+- [Azure Storage Billing](/azure/storage/common/storage-account-overview)
 
 ## Azure Cosmos DB
 
 - [Azure Cosmos DB Pricing](https://azure.microsoft.com/pricing/details/cosmos-db/)
-- [Azure Cosmos DB Billing](/cosmos-db/monitor-costs.md)
+- [Azure Cosmos DB Billing](/azure/cosmos-db/monitor-costs)
 
 ## Azure Cost Management
 
@@ -74,7 +74,7 @@ The virtual network data gateway helps you connect from Microsoft cloud services
 ## Azure Synapse Analytics
 
 [Azure Synapse Analytics Pricing](https://azure.microsoft.com/pricing/details/synapse-analytics/)
-[Azure Synapse Analytics Billing](/synapse-analytics/synapse-billing.md)
+[Azure Synapse Analytics Billing](/azure/synapse-analytics/synapse-billing)
 
 ## Azure SQL Database
 
@@ -92,29 +92,17 @@ The virtual network data gateway helps you connect from Microsoft cloud services
 
 [Snowflake on Azure Pricing](https://azuremarketplace.microsoft.com/marketplace/apps/snowflake.data_cloud?tab=PlansAndPrice)
 
-## Power BI Premium
-
-[Power BI Premium Pricing](https://powerbi.microsoft.com/pricing/)
-[Power BI Premium Billing](/power-bi/service-admin-premium-billing)
-
 ## Power BI (Non-Premium)
 
-[Power BI Pricing](https://powerbi.microsoft.com/pricing/)
-[Power BI Billing](/power-bi/service-admin-premium-billing)
+- [Power BI Pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 
-## Power BI Semantic Models
+## Power BI Premium
 
-[Power BI Semantic Models Pricing](https://powerbi.microsoft.com/pricing/)
-[Power BI Semantic Models Billing](/power-bi/service-admin-premium-billing)
-
-## Power BI Paginated Reports
-
-[Power BI Paginated Reports Pricing](https://powerbi.microsoft.com/pricing/)
-[Power BI Paginated Reports Billing](/power-bi/service-admin-premium-billing)
+- [Power BI Premium Pricing](/power-bi/admin/service-premium-what-is#pricing)
 
 ## Power Platform Dataflows
 
-[Power Platform Pricing](https://powerplatform.microsoft.com/pricing/)
+[Power Platform Pricing](https://www.microsoft.com/power-platform/products/power-apps/pricing)
 [Power Platform Billing](/power-platform/admin/admin-pricing-billing)
 
 ## Related content

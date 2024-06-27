@@ -14,27 +14,28 @@ The on-premises data gateway provides quick and secure data transfer between on-
 For detailed information on billing, invoicing, metering, and monitoring for services using the on-premises data gateway, please refer to the following links:
 
 ## Azure Analysis Services
+
 - [Azure Analysis Services Pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
-- [Azure Analysis Services Billing](/analysis-services/analysis-services-overview.md)
+- [Azure Analysis Services Billing](/analysis-services/analysis-services-overview)
 
 ## Azure Data Factory
 
 - [Azure Data Factory Pricing](https://azure.microsoft.com/pricing/details/data-factory/)
-- [Azure Data Factory Billing](/data-factory/data-factory-pricing.md)
+- [Azure Data Factory Billing](/azure/data-factory/data-factory-pricing)
 
 ## Azure Synapse Analytics
 
 - [Azure Synapse Analytics Pricing](https://azure.microsoft.com/pricing/details/synapse-analytics/)
-- [Azure Synapse Analytics Billing](/synapse-analytics/synapse-billing.md)
+- [Azure Synapse Analytics Billing](//azure/synapse-analytics/synapse-billing)
 
 ## Logic Apps
 
 - [Logic Apps Pricing](https://azure.microsoft.com/pricing/details/logic-apps/)
-- [Logic Apps Billing](/logic-apps/logic-apps-pricing.md)
+- [Logic Apps Billing](/azure/logic-apps/logic-apps-pricing)
 
 ## Microsoft Fabric
 
-- [Microsoft Fabric Pricing](https://azure.microsoft.com/pricing/details/microsoft-fabric/)
+- [Microsoft Fabric Pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing#tabs-pill-bar-oca31b_tab1)
 - [Microsoft Fabric Billing](/fabric/enterprise/azure-billing)
 
 ## Power Apps
@@ -45,18 +46,15 @@ For detailed information on billing, invoicing, metering, and monitoring for ser
 ## Power Automate
 
 - [Power Automate Pricing](https://flow.microsoft.com/pricing/)
-- [Power Automate Billing](/power-automate/billing)
+- [Power Automate Billing](/power-automate/billing-questions)
 
 ## Power BI (Non-Premium)
 
-- [Power BI Pricing](/power-bi/service-admin-premium)
-- [Power BI Billing](/power-bi/service-billing)
+- [Power BI Pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 
 ## Power BI Premium
 
 - [Power BI Premium Pricing](/power-bi/admin/service-premium-what-is#pricing)
-- [Power BI Premium Billing and Invoicing](/power-bi/admin/service-premium-billing)
-- [Power BI Premium Monitoring and Metering](/power-bi/admin/service-premium-monitoring)
 
 ## Related content
 
