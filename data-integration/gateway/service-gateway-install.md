@@ -13,6 +13,9 @@ As we explain in the [overview](service-gateway-onprem.md#types-of-gateways), yo
 
 In this article, we show you how to install a standard gateway, how to add another gateway to create a cluster, and how to install a personal mode gateway.
 
+> [!NOTE]
+> To update an existing gateway to a later version, refer to [Update an on-premises data gateway](service-gateway-update.md).
+
 ## Requirements
 
 ### Minimum requirements
