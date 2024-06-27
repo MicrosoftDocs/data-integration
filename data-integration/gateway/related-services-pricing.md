@@ -30,7 +30,7 @@ The on-premises and virtual network data gateways help you connect from on-premi
 ## Azure Cosmos DB
 
 - [Azure Cosmos DB Pricing](https://azure.microsoft.com/pricing/details/cosmos-db/)
-- [Azure Cosmos DB Billing](/azure/cosmos-db/monitor-costs)
+- [Azure Cosmos DB Billing](/azure/cosmos-db/plan-manage-costs)
 
 ## Azure Cost Management
 
@@ -84,7 +84,6 @@ The on-premises and virtual network data gateways help you connect from on-premi
 ## Azure Synapse Analytics
 
 [Azure Synapse Analytics Pricing](https://azure.microsoft.com/pricing/details/synapse-analytics/)
-[Azure Synapse Analytics Billing](/azure/synapse-analytics/synapse-billing)
 
 ## Azure SQL Database
 
@@ -133,8 +132,8 @@ The on-premises and virtual network data gateways help you connect from on-premi
 ## Power Platform Dataflows
 
 [Power Platform Pricing](https://www.microsoft.com/power-platform/products/power-apps/pricing)
-[Power Platform Billing](/power-platform/admin/admin-pricing-billing)
 
 ## Related content
 
-[Virtual network data gateways pricing and billing](data-gateway-business-model.md)
+[Virtual network data gateways pricing and billing](../vnet/data-gateway-business-model.md)
+[What is an on-premises data gateway](service-gateway-onprem.md)
