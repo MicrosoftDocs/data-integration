@@ -13,6 +13,9 @@ As we explain in the [overview](service-gateway-onprem.md#types-of-gateways), yo
 
 In this article, we show you how to install a standard gateway, how to add another gateway to create a cluster, and how to install a personal mode gateway.
 
+> [!NOTE]
+> To update an existing gateway to a later version, refer to [Update an on-premises data gateway](service-gateway-update.md).
+
 ## Requirements
 
 ### Minimum requirements
@@ -44,7 +47,8 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * You could install other applications on the gateway machine, but these applications might degrade gateway performance. If you do install other applications on the gateway machine, be sure to monitor the gateway closely to check if there's any resource contention.
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. An on-premises data gateway (personal mode) can be used only with Power BI. You can't have more than one gateway running in the same mode on the same computer.
 * When using an on-premises data gateway (standard mode) to access a data source on a remote domain, the gateway has to be installed on a domain joined machine having a trust relationship with the target domain.
-* Using an on-premises data gateway with private link enabled is not supported. If private link is enabled, you'll get the following error when trying to register a new gateway or migrate/restore/takeover an existing gateway:
+
+* <a name="private-link-consideration"></a>Using an on-premises data gateway with private link enabled is not supported. If private link is enabled, you'll get the following error when trying to register a new gateway or migrate/restore/takeover an existing gateway:
 
    `System.NullReferenceException: Object reference not set to an instance of an object`
 

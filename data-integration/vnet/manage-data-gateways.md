@@ -56,3 +56,7 @@ You can remove or delete VNet data gateways by selecting the gateway and selecti
 > * Register the Microsoft.PowerPlatform provider as a resource provider
 
 :::image type="content" source="media/remove-gateway.png" alt-text="Remove VNet data gateway.":::
+
+## Related content
+
+For detailed instructions on managing capacity in Fabric and Power BI, refer to [Manage your Fabric capacity](/fabric/admin/capacity-settings?tabs=power-bi-premium).
