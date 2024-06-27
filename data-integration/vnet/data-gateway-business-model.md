@@ -82,16 +82,17 @@ To view your bill, use the [Fabric Capacity Metrics app](/fabric/enterprise/metr
 
 You see three line items:
 
-|Item Kind	|Item Name	|Operation |Utilization Type |
+|Item Kind|Item Name|Operation |Utilization Type |
 |-----------|-----------|----------|-----------------|
-|Virtual network data gateway	|Virtual network data gateway |Virtual network data gateway uptime  |Background |
-|Dataset 	|Global revenue analytics	|Virtual network data gateway	|Background |
-|Dataset	|Global revenue analytics	|Dataset on-demand refresh	|Background |
+|Virtual network data gateway|Virtual network data gateway |Virtual network data gateway uptime  |Background |
+|Dataset|Global revenue analytics|Virtual network data gateway|Background |
+|Dataset|Global revenue analytics|Dataset on-demand refresh|Background |
 
 Description of each line item by Operation name:
--	**Virtual network data gateway uptime** The charge from using the virtual network data gateway. This uptime is billed at $0.72/hour and is consistent across all artifacts.
--	**(Dataset) Virtual network data gateway** The charge for compute from executing queries on the M Engine. The Virtual network data gateway hosts the M Engine and reports its usage to the semantic model artifact.
--	**(Dataset) Dataset on-demand refresh** The charge for compute from using the Analysis Services engine to execute the semantic model.
+
+- **Virtual network data gateway uptime** The charge from using the virtual network data gateway. This uptime is billed at $0.72/hour and is consistent across all artifacts.
+- **(Dataset) Virtual network data gateway** The charge for compute from executing queries on the M Engine. The Virtual network data gateway hosts the M Engine and reports its usage to the semantic model artifact.
+- **(Dataset) Dataset on-demand refresh** The charge for compute from using the Analysis Services engine to execute the semantic model.
 
 The charges from the item kind dataset are the same as they would be without using the virtual network data gateway.
 
