@@ -7,7 +7,7 @@ ai.usage: ai-assisted
 ---
 # Pricing for services supported by the data gateway
 
-The on-premises and virtual network data gateways help you connect from on-premises and Microsoft cloud services to your Azure data services within a virtual network without the need for an on-premises data gateway. It provides secure data transfer and is particularly suited for scenarios involving Azure virtual networks. This article provides a list of the services that can use the data gateway, along with links to their respective pricing information and billing pages where available.
+The on-premises and virtual network data gateways help you connect from on-premises and Microsoft cloud services to your Azure data services.  This article provides a list of the services that can use the data gateways, along with links to their respective pricing information and billing pages where available.
 
 ## Azure AI Search
 
