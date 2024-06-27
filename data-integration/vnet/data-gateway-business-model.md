@@ -93,4 +93,4 @@ The following diagram illustrates how the cost model works. For example, you can
 
 ## Related content
 
-If you're using a Premium Power BI capacity, you can learn more about how to view and manage your bill [here](/power-bi/enterprise/service-admin-premium-manage#manage-capacity).
+[Pricing details for services that can use the virtual network data gateway](services-pricing-virtual-network-data-gateway.md)
