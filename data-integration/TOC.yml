@@ -84,7 +84,7 @@
         href: vnet/what-is.md
       - name: Virtual network data gateway architecture
         href: vnet/data-gateway-architecture.md
-      - name: "Virtual network data gateways business model"
+      - name: "Virtual network data gateways pricing and billing"
         href: vnet/data-gateway-business-model.md
     - name: How to
       items:
