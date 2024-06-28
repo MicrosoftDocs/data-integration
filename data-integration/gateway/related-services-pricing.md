@@ -3,7 +3,7 @@ title: Pricing for services supported by the data gateway
 description: This article provides links to pricing details for the services that support the on-permises and virtual network data gateways.
 ms.topic: concept-article
 ms.date: 06/27/2024
-ai.usage: ai-assisted
+ai-usage: ai-assisted
 ---
 # Pricing for services supported by the data gateway
 
