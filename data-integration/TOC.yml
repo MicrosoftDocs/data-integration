@@ -13,6 +13,8 @@
         href: gateway/service-gateway-onprem-indepth.md         
       - name: "On-premises data gateway FAQ"
         href: gateway/service-gateway-onprem-faq.yml
+      - name: "Pricing for related services"
+        href: gateway/related-services-pricing.md
     - name: How to
       items:
       - name: "Install gateways"
@@ -86,6 +88,8 @@
         href: vnet/data-gateway-architecture.md
       - name: "Virtual network data gateways pricing and billing"
         href: vnet/data-gateway-business-model.md
+      - name: "Pricing for related services"
+        href: gateway/related-services-pricing.md
     - name: How to
       items:
       - name: Create virtual network data gateways
