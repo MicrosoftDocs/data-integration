@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ---
 # Pricing for services supported by the data gateway
 
-The on-premises and virtual network data gateways help you connect from on-premises and Microsoft cloud services to your Azure data services.  This article provides a list of the services that can use the data gateways, along with links to their respective pricing information and billing pages where available.
+The on-premises and virtual network data gateways help you connect from on-premises and Microsoft cloud services to your Azure data services.  This article provides a list of links to the pricing information and billing pages where available for the various services that support the gateways.
 
 ## Azure AI Search
 
@@ -123,11 +123,11 @@ The on-premises and virtual network data gateways help you connect from on-premi
 
 ## Power BI (Non-Premium)
 
-- [Power BI Pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)
+[Power BI Pricing](https://www.microsoft.com/power-platform/products/power-bi/pricing)
 
 ## Power BI Premium
 
-- [Power BI Premium Pricing](/power-bi/admin/service-premium-what-is#pricing)
+[Power BI Premium Pricing](/power-bi/admin/service-premium-what-is#pricing)
 
 ## Power Platform Dataflows
 
