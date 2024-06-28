@@ -1,17 +1,13 @@
 ---
 title: Pricing for services supported by the data gateway
-description: This article provides links to pricing details for the services that support the on-permises and virtual network data gateways.
+description: This article provides links to pricing details for the services that support the on-premises and virtual network data gateways.
 ms.topic: concept-article
 ms.date: 06/27/2024
 ai-usage: ai-assisted
 ---
 # Pricing for services supported by the data gateway
 
-The on-premises and virtual network data gateways help you connect from on-premises and Microsoft cloud services to your Azure data services.  This article provides a list of links to the pricing information and billing pages where available for the various services that support the gateways.
-
-## Azure AI Search
-
-[Azure AI Search Pricing](https://azure.microsoft.com/pricing/details/search/)
+The on-premises and virtual network data gateways help you connect from on-premises and Microsoft cloud services to your Azure data services. This article provides a list of links to the pricing information and billing pages where available for the various services that support the gateways.
 
 ## Azure Analysis Services
 
@@ -22,23 +18,10 @@ The on-premises and virtual network data gateways help you connect from on-premi
 
 [Azure Batch Pricing](https://azure.microsoft.com/pricing/details/batch/)
 
-## Azure Blob Storage
-
-- [Azure Blob Storage Pricing](https://azure.microsoft.com/pricing/details/storage/blobs/)
-- [Azure Storage Billing](/azure/storage/common/storage-account-overview)
-
 ## Azure Cosmos DB
 
 - [Azure Cosmos DB Pricing](https://azure.microsoft.com/pricing/details/cosmos-db/)
 - [Azure Cosmos DB Billing](/azure/cosmos-db/plan-manage-costs)
-
-## Azure Cost Management
-
-[Azure Cost Management Pricing](https://azure.microsoft.com/pricing/details/cost-management/)
-
-## Azure Database for PostgreSQL
-
-[Azure Database for PostgreSQL Pricing](https://azure.microsoft.com/pricing/details/postgresql/)
 
 ## Azure Data Explorer (Kusto)
 
@@ -49,57 +32,17 @@ The on-premises and virtual network data gateways help you connect from on-premi
 - [Azure Data Factory Pricing](https://azure.microsoft.com/pricing/details/data-factory/)
 - [Azure Data Factory Billing](/azure/data-factory/pricing-concepts)
 
-## Azure Data Lake Analytics
-
-[Azure Data Lake Analytics Pricing](https://azure.microsoft.com/pricing/details/data-lake-analytics/)
-
-## Azure Data Lake Storage
-
-[Azure Data Lake Storage Pricing](https://azure.microsoft.com/pricing/details/storage/data-lake/)
-
 ## Azure Databricks
 
 [Azure Databricks Pricing](https://azure.microsoft.com/pricing/details/databricks/)
-
-## Azure DevOps (Boards only)
-
-[Azure DevOps Pricing](https://azure.microsoft.com/pricing/details/devops/)
 
 ## Azure Function
 
 [Azure Function Pricing](https://azure.microsoft.com/pricing/details/functions/)
 
-## Azure HDInsight
-
-[Azure HDInsight Pricing](https://azure.microsoft.com/pricing/details/hdinsight/)
-
-## Azure Key Vault
-
-[Azure Key Vault Pricing](https://azure.microsoft.com/pricing/details/key-vault/)
-
-## Azure Machine Learning
-
-[Azure Machine Learning Pricing](https://azure.microsoft.com/pricing/details/machine-learning/)
-
 ## Azure Synapse Analytics
 
 [Azure Synapse Analytics Pricing](https://azure.microsoft.com/pricing/details/synapse-analytics/)
-
-## Azure SQL Database
-
-[Azure SQL Database Pricing](https://azure.microsoft.com/pricing/details/sql-database/)
-
-## Azure SQL Managed Instance
-
-[Azure SQL Managed Instance Pricing](https://azure.microsoft.com/pricing/details/azure-sql-managed-instance/)
-
-## Azure Table Storage
-
-[Azure Table Storage Pricing](https://azure.microsoft.com/pricing/details/storage/tables/)
-
-## Azure Snowflake
-
-[Snowflake on Azure Pricing](https://azuremarketplace.microsoft.com/marketplace/apps/snowflake.data_cloud?tab=PlansAndPrice)
 
 ## Logic Apps
 
