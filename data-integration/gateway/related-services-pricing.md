@@ -14,29 +14,10 @@ The on-premises and virtual network data gateways help you connect from on-premi
 - [Azure Analysis Services Pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
 - [Azure Analysis Services Billing](/analysis-services/analysis-services-overview)
 
-## Azure Batch
-
-[Azure Batch Pricing](https://azure.microsoft.com/pricing/details/batch/)
-
-## Azure Cosmos DB
-
-- [Azure Cosmos DB Pricing](https://azure.microsoft.com/pricing/details/cosmos-db/)
-- [Azure Cosmos DB Billing](/azure/cosmos-db/plan-manage-costs)
-
-## Azure Data Explorer (Kusto)
-
-[Azure Data Explorer Pricing](https://azure.microsoft.com/pricing/details/data-explorer/)
-
 ## Azure Data Factory
 
 - [Azure Data Factory Pricing](https://azure.microsoft.com/pricing/details/data-factory/)
 - [Azure Data Factory Billing](/azure/data-factory/pricing-concepts)
-
-## Azure Databricks
-
-[Azure Databricks Pricing](https://azure.microsoft.com/pricing/details/databricks/)
-
-## Azure Function
 
 [Azure Function Pricing](https://azure.microsoft.com/pricing/details/functions/)
 
