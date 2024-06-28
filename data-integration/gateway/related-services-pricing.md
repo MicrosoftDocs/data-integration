@@ -12,7 +12,6 @@ The on-premises and virtual network data gateways help you connect from on-premi
 ## Azure Analysis Services
 
 - [Azure Analysis Services Pricing](https://azure.microsoft.com/pricing/details/analysis-services/)
-- [Azure Analysis Services Billing](/analysis-services/analysis-services-overview)
 
 ## Azure Data Factory
 
