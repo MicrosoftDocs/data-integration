@@ -18,6 +18,7 @@ The gateway cloud service always uses the primary gateway in a cluster unless th
 >[!Note]
 > Make sure the gateway members in a cluster are running the same gateway version, as different versions could cause unexpected failures based on supported functionality.
 > Gateway clusters currently running more than 10 members will continue to operate but not allow new additions unless a member is deleted first.
+> When using Dataflows Gen2, the primary member in a cluster must be up to create new or edit existing connections.  
 
 ### Manage a gateway cluster
 
