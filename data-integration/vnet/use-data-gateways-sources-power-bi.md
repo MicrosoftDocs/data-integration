@@ -9,7 +9,7 @@ ms.date: 05/06/2024
 
 Virtual network data gateways allow import or direct query semantic models to connect to data services within an Azure virtual network without the need of an on-premises data gateway.
 
-In Power BI, VNET data gateways require a Power BI Premium capacity license (A4 SKU or higher or any P SKU).
+In Power BI, VNET data gateways require a Power BI Premium capacity license (A4 SKU or higher or any F or P SKU).
 
 ## Manage Virtual network data gateways
 
