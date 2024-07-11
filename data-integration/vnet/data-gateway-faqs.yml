@@ -125,14 +125,9 @@ sections:
           No, only commercial clouds are supported for the public preview release.
 
       - question: |
-          What is the hardware configuration for a virtual network data gateway?
+          Do I need to manage any hardware to use the VNET Data Gateway? 
         answer: |
-          Every virtual network data gateway has a maximum capacity of:
-          
-          * 2 cores
-          * 8 GB of RAM each
-          
-          Currently, this capacity is the only available hardware configuration and it can't be scaled or changed.
+          No. The VNET data gateway provides fully managed compute. You can choose to scale the number of nodes in each cluster.
 
       - question: |
           Can I create multiple virtual network data gateways for the same Azure data service?  
