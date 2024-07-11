@@ -21,7 +21,6 @@ This article outlines the capability to view audit logs on all actions taken on 
 We're excited to announce auditing for all activity on data source connections within Fabric for the following artifacts: data pipelines, Dataflows Gen2, semantic models, and datamarts. Tenant admins can now use the Purview auditing portal to find any call made to a connection, including both failed and successful calls to create, delete, update, or use connections. For each connection, users can find all connections by querying:
 
 - Time period
-- User (using the user object ID to query the user name through Microsoft Graph)
 - Data source name
 - Data source path
 - Data source kind
