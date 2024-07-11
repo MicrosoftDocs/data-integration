@@ -9,11 +9,16 @@ ms.date: 05/06/2024
 
 The virtual network data gateway lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform to securely communicate with the data source, execute queries, and transmit results back to the service. 
 - You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a virtual network data gateway.
-- The virtual network data gateway is a powerful network security offering: it can be used in with private endpoints for Azure data sources to ensure that no traffic is ever exposed to a public endpoint.
+
+# Why use the VNet data gateway?
+
+The virtual network data gateway:
+- Is a powerful network security offering: it can be used in with private endpoints for Azure data sources to ensure that no traffic is ever exposed to a public endpoint.
 - It supports Private Link scenarios. To learn more, see [using your VNET data gateway with Private Links]().
 - It can be used with public endpoints for Azure, other cloud, and on-premises data sources.
 - The hardware is fully managed and it can thus be a more cost effective alternative to the on-premises data gateway.
 - It can be used to provide comprehensive auditing for all traffic to your datasource.
+- It provides compute isolation enhancing security from cross tenant attacks.
 
 :::image type="content" source="media/vnet-overview.png" alt-text="VNet overview.":::
 
