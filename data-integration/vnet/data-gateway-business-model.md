@@ -2,7 +2,7 @@
 title: Virtual network data gateways capacity consumption 
 description: This article provides information about the charges incurred by use of the virtual network data gateway.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 07/11/2024
 ---
 
 # Virtual network data gateways capacity consumption
@@ -26,14 +26,14 @@ Your bill is automatically charged to the capacity linked to your virtual networ
 
 _Capacity consumption = (CU Consumption rate) * (Uptime in hours) * (Number of gateway members)_
 
-## Best Practices to Manage Cost
+## Best practices to manage costs
 
 - You can set up your virtual network data gateways and connections on the gateway for free. We start to bill when your first query runs or you run a test connection.
 - Configure your queries to run concurrently. Each gateway member can run six queries concurrently.
 - Maintain a minimum number of gateway members for your needs. The number of [gateway members](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check and configure this number in the advanced settings of your virtual network data gateway.
 - To reduce costs, you can actively manage the time to live on your virtual network data gateway in settings. Learn more [here](manage-data-gateways.md#manage-settings).
 
-## View and manage your Bill
+## View and manage your bill
 
 To view your bill, use the [Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). 
 
