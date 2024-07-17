@@ -16,9 +16,15 @@ This article describes the last six updates for the on-premises data gateways an
 
 Download the latest versions:
 
+## July 2024 update (3000.230.12)
+
+- [List of features released](https://powerbi.microsoft.com/en-us/blog/on-premises-data-gateway-july-2024-release/)
+- Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-24-07.exe)
+- Download the [latest on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-24-07.exe)
+
 ## June 2024 update (3000.226.5)
 
-- [List of features released](https://powerbi.microsoft.com/en-us/blog/on-premises-data-gateway-june-2024-release/))
+- [List of features released](https://powerbi.microsoft.com/en-us/blog/on-premises-data-gateway-june-2024-release/)
 - Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-24-06.exe)
 - Download the [latest on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-24-06.exe)
 
@@ -45,12 +51,6 @@ Download the latest versions:
 - [List of features released](https://powerbi.microsoft.com/en-us/blog/on-premises-data-gateway-february-2024-release/)
 - [Download the February 2024 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-24-02.exe)
 - [Download the February 2024 version of the on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-24-02.exe)
-
-## December 2023 update (3000.202.13)
-
-- [List of features released](https://powerbi.microsoft.com/en-us/blog/on-premises-data-gateway-december-2023-release/)
-- [Download the December 2023 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-23-12.exe)
-- [Download the December 2023 version of the on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-23-12.exe)
 
 ## Next steps
 
