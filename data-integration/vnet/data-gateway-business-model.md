@@ -28,7 +28,7 @@ _Capacity consumption = (CU Consumption rate) * (Uptime in hours) * (Number of g
 ## Assign a valid capacity to virtual network data gateway
 Each virtual network data gateway must be attached to a valid capacity, such as Power BI Premium or Fabric capacity. If your virtual network data gateway lacks a valid capacity, you can select an existing one from the settings page.
 
-:::image type="content" source="media\vnet-data-gateway-attached-capacity.png" alt-text="Diagram showing virtual network data gateway capacity.":::
+:::image type="content" source="media\vnet-data-gateway-attached-capacity.png" lightbox="media\vnet-data-gateway-attached-capacity.png" alt-text="Diagram showing virtual network data gateway capacity.":::
 
 ## Best practices to manage costs
 
