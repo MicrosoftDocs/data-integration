@@ -1,6 +1,6 @@
 ---
 title: Download logs on the VNet data gateway
-description: Provides information about how to download and interpret virtual network (VNet) data gateways logs.
+description: This document provides information about how to download and interpret virtual network (VNet) data gateways logs.
 ms.topic: conceptual
 ms.date: 05/06/2024
 ---
@@ -16,6 +16,7 @@ Logs for your VNET data gateway are available for download on the **Manage conne
 ## Notes:
 
 - You must be an admin on the VNet data gateway to download logs. Check the [manage users](manage-data-gateways.md) option to see if you're an admin.
+- Retention of logs: MashupLogs are kept for the past 48 hours. The SystemCounters and QueryExecutionReport logs are kept for the past 29 days. Currently, customers don't have the ability to change how long the logs are retained.
 - The gateway must be online to provide logs. Check the status of the VNet by selecting the icon in the "Status" column. 
 - If you don’t see the download, check to make sure pop-ups aren't disabled on your browser.
 - This feature isn't available in certain regions, including Mexico central, Spain central, Qatar central, China regions, and US Gov Virginia regions.
