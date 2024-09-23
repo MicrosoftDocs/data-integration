@@ -3,7 +3,7 @@ title: Virtual network data gateways capacity consumption
 description: This article provides information about the charges incurred by use of the virtual network data gateway.
 ms.topic: conceptual
 ms.date: 07/11/2024
-ai-usage:ai-assisted
+ai-usage: ai-assisted
 ---
 
 # Virtual network data gateways capacity consumption
