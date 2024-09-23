@@ -3,6 +3,7 @@ title: Virtual network data gateways capacity consumption
 description: This article provides information about the charges incurred by use of the virtual network data gateway.
 ms.topic: conceptual
 ms.date: 07/11/2024
+ai-usage:ai-assisted
 ---
 
 # Virtual network data gateways capacity consumption
@@ -24,6 +25,9 @@ Your bill is automatically charged to the capacity linked to your virtual networ
 - To reduce costs, you can actively manage the time to live on your virtual network data gateway in settings. Learn more [here](manage-data-gateways.md#manage-settings).
 
 _Capacity consumption = (CU Consumption rate) * (Uptime in hours) * (Number of gateway members)_
+
+>[!NOTE]
+>The CU consumption rate is fixed at 4CUs per gateway member. However, the billing model rounds up to the nearest hour. This means that if you use the gateway for a short duration, such as 5 minutes, you are still billed for the entire hour.
 
 ## Assign a valid capacity to virtual network data gateway
 Each virtual network data gateway must be attached to a valid capacity, such as Power BI Premium or Fabric capacity. If your virtual network data gateway lacks a valid capacity, you can select an existing one from the settings page.
@@ -60,8 +64,6 @@ The charges from the item kind dataset are the same as they would be without usi
 The following diagram illustrates how the cost model works. For example, you can see that under semantic models there are two compute engines. The Analysis Services and Power Query Mashup Engine compute costs are each infrastructure items that incur costs over the virtual network Data Gateway. If you use OneLake for storage, you would be billed for that additional cost too.
 
 :::image type="content" source="media\vnet-business-model.png" alt-text="Diagram showing virtual network data gateway meters.":::
-
-
 
 ## Related content
 
