@@ -28,10 +28,10 @@ By default, the number of gateways is set to 1. This setting means that only one
 
 The virtual network data gateway cluster auto-pauses after a certain time of inactivity. After the gateway is auto paused, it takes about 2 to 3 minutes for the cluster to become available again. By default, the time interval of inactivity before auto-pause is set to 30 minutes. You can increase this time interval to a maximum of 24 hours. There's no support for leaving the virtual network data gateway cluster always on.
 
-:::image type="content" source="media/high-availability-load-balancing/setting-time-interval.png" alt-text="Image of the VNet gateway advanced options, with the Time interval set to 1 hour 30 minutes and the number of gateways set to 2.":::
+:::image type="content" source="media/high-availability-load-balancing/setting-time-interval.png" alt-text="Screenshot of the VNet gateway advanced options, with the Time interval set to 1 hour 30 minutes and the number of gateways set to 2.":::
 
 ## How to change the high availability options
 
 At any point in time, you can change the number of gateways you have in the cluster. You can also change the time interval of inactivity before auto pause. To edit these settings, select a virtual network data gateway, and then select **Settings** on the top. You can now change the advanced options on the **Settings** panel.
 
-[:::image type="content" source="media/high-availability-load-balancing/change-vnet-settings.png#lightbox" alt-text="Image with a VNet data gateway selected, the setting selection emphasized, and the Settings panel open.](media/high-availability-load-balancing/change-vnet-settings.png)":::
+:::image type="content" source="media/high-availability-load-balancing/change-vnet-settings.png" alt-text="Screenshot with a VNet data gateway selected, the setting selection emphasized, and the Settings panel open." lightbox="media/high-availability-load-balancing/change-vnet-settings.png":::
