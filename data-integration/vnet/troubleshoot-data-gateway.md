@@ -31,7 +31,7 @@ The troubleshooting information includes the following data:
 
 3. Select the gateway you want to troubleshoot and then select **Troubleshoot network** in the ribbon at the top of the page.
 
-   [:::image type="content" source="media/troubleshoot-data-gateway/troubleshoot-network.png#lightbox" alt-text="Image of the Power Query admin center with Data (preview) menu item open, a gateway selected, and the Troubleshoot network selection emphasized.](media/troubleshoot-data-gateway/troubleshoot-network.png)":::
+   :::image type="content" source="media/troubleshoot-data-gateway/troubleshoot-network.png" alt-text="Image of the Power Query admin center with Data (preview) menu item open, a gateway selected, and the Troubleshoot network selection emphasized." lightbox="media/troubleshoot-data-gateway/troubleshoot-network.png":::
 
    _The gateway needs to be active. If the gateway is auto paused, it will be started, and it can take up to 2 minutes for the gateway to become active._
 

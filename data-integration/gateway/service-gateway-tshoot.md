@@ -96,19 +96,19 @@ When a gateway is facing connectivity issues, you might observe different sympto
 
 You might come across one of the following indications in the manage gateways page if there's a connectivity issue.
 
-[:::image type="content" source="media/service-gateway-tshoot/manage-gateway-offline.png#lightbox" alt-text="Gateway offline in manage gateways page.](media/service-gateway-tshoot/manage-gateway-offline.png)":::
+:::image type="content" source="media/service-gateway-tshoot/manage-gateway-offline.png" alt-text="Gateway offline in manage gateways page." lightbox="media/service-gateway-tshoot/manage-gateway-offline.png":::
 
 #### Error: Your data gateway is offline or couldn't be reached.
 
 You might come across one of the following data refresh errors if there's a connectivity issue.
 
-[:::image type="content" source="media/service-gateway-tshoot/gateway-offline.png#lightbox" alt-text="Gateway offline or couldn't be reached error.](media/service-gateway-tshoot/gateway-offline.png)":::
+:::image type="content" source="media/service-gateway-tshoot/gateway-offline.png" alt-text="Gateway offline or couldn't be reached error." lightbox="media/service-gateway-tshoot/gateway-offline.png":::
 
 #### Error: Network request returned unexpected error.
 
 You might come across one of the following errors when trying to sign in to the  gateway configurator if there's a connectivity issue.
 
-[:::image type="content" source="media/service-gateway-tshoot/network-unexpected-error.png#lightbox" alt-text="Gateway configurator network unpexted error.](media/service-gateway-tshoot/network-unexpected-error.png)":::
+:::image type="content" source="media/service-gateway-tshoot/network-unexpected-error.png" alt-text="Gateway configurator network unpexted error." lightbox="media/service-gateway-tshoot/network-unexpected-error.png":::
 
 Connectivity issues can have several different causes. Therefore, if you run into any of the previously mentioned symptoms, perform the following verifications:
 

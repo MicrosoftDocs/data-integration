@@ -79,16 +79,16 @@ Your admin can update the data gateway settings through the Power Platform admin
 
 1. Go to the [Power Platform admin center](https://aka.ms/ppac).
 
-   [:::image type="content" source="media/manage-security-roles/admin-center-home.png#lightbox" alt-text="Screenshot of opening page of the Power Platform admin center.](media/manage-security-roles/admin-center-home.png)":::
+   :::image type="content" source="media/manage-security-roles/admin-center-home.png" alt-text="Screenshot of opening page of the Power Platform admin center." lightbox="media/manage-security-roles/admin-center-home.png":::
 
 2. Select **Data (preview)**.
 
-   [:::image type="content" source="media/manage-security-roles/admin-data-preview.png#lightbox" alt-text="Screenshot of the Power Platform admin center with the Data (Preview) tab selected on the left side of the page.](media/manage-security-roles/admin-data-preview.png)":::
+   :::image type="content" source="media/manage-security-roles/admin-data-preview.png" alt-text="Screenshot of the Power Platform admin center with the Data (Preview) tab selected on the left side of the page." lightbox="media/manage-security-roles/admin-data-preview.png":::
 
 3. Select **On-premises data gateway** and turn on **Tenant administration for gateways**.
 
-   [:::image type="content" source="media/manage-security-roles/tenant-admin-gateway.png#lightbox" alt-text="Screenshot of the Power Platform admin center with the On-premises data gateway tab selected, and the Tenant administration for gateways switch turned on.](media/manage-security-roles/tenant-admin-gateway.png)":::
+   :::image type="content" source="media/manage-security-roles/tenant-admin-gateway.png" alt-text="Screenshot of the Power Platform admin center with the On-premises data gateway tab selected, and the Tenant administration for gateways switch turned on." lightbox="media/manage-security-roles/tenant-admin-gateway.png":::
 
 4. Turn on **Restrict users in your organization from installing gateways**. You can also allow specific users to override the restriction.
 
-   [:::image type="content" source="media/manage-security-roles/restrict-users.png#lightbox" alt-text="Screenshot of the Manage gateway installers page with Restrict users in your organization from installing gateways switch turned on.](media/manage-security-roles/restrict-users.png)":::
+   :::image type="content" source="media/manage-security-roles/restrict-users.png" alt-text="Screenshot of the Manage gateway installers page with Restrict users in your organization from installing gateways switch turned on." lightbox="media/manage-security-roles/restrict-users.png":::

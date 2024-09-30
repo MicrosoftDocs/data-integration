@@ -35,10 +35,10 @@ When spooling causes an "out of disk space" error, use the following steps to ch
 5. Modify this path to a location that contains enough disk space for your business needs.  
 6. Once modified, save the file and restart the on-premises data gateway.
 
->[!NOTE]
+> [!NOTE]
 > If you modify the path, you'll also need to restart the on-premises data gateway service.
 
-[:::image type="content" source="media/service-gateway-configure-disk-space/restart-service.png#lightbox" alt-text="Screenshot](media/service-gateway-configure-disk-space/restart-service.png)":::
+:::image type="content" source="media/service-gateway-configure-disk-space/restart-service.png" alt-text="Screenshot of the Windows Services dialog with the on-premises data gateway service emphasized." lightbox="media/service-gateway-configure-disk-space/restart-service.png":::
 
 ## Mashup engine persistent cache
 
