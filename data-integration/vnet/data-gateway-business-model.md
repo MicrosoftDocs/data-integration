@@ -27,7 +27,7 @@ Your bill is automatically charged to the capacity linked to your virtual networ
 _Capacity consumption = (CU Consumption rate) * (Uptime in hours) * (Number of gateway members)_
 
 >[!NOTE]
->The CU consumption rate is fixed at 4CUs per gateway member. However, the billing model rounds up to the nearest hour. This means that if you use the gateway for a short duration, such as 5 minutes, you are still billed for the entire hour.
+>The CU consumption rate is fixed at 4CUs per gateway member. The billing model bills per minute and does not round up. This means that if you use the gateway for a short duration, you are only charged for what you use.
 
 ## Assign a valid capacity to virtual network data gateway
 Each virtual network data gateway must be attached to a valid capacity, such as Power BI Premium or Fabric capacity. If your virtual network data gateway lacks a valid capacity, you can select an existing one from the settings page.
