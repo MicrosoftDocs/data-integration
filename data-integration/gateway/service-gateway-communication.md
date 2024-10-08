@@ -50,6 +50,7 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 | \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 | \*.frontend.clouddatahub.net |443 |Required for Fabric Pipeline execution. |
+| \*.pbidedicated.windows.net |1433 |The endpoint used by Datamart and Data warehouse. |
 | \*.datawarehouse.pbidedicated.windows.net |1433 |Old endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 | \*.datawarehouse.fabric.microsoft.com |1433 |New endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 
