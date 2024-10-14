@@ -16,8 +16,9 @@ Logs for your VNET data gateway are available for download on the **Manage conne
 ## Notes:
 
 - You must be an admin on the VNet data gateway to download logs. Check the [manage users](manage-data-gateways.md) option to see if you're an admin.
-- Retention of logs: MashupLogs are kept for the past 48 hours. The SystemCounters and QueryExecutionReport logs are kept for the past 29 days. Currently, customers don't have the ability to change how long the logs are retained.
+- Retention of logs: MashupLogs are kept for the past 48 hours. The SystemCounters and QueryExecutionReport logs are kept for the past 29 days. Currently, customers have the ability to change how long the logs are retained during the retention period.
 - The gateway must be online to provide logs. Check the status of the VNet by selecting the icon in the "Status" column. 
+- The download isn't available if the Fabric private link is enabled in your tenant.
 - If you don’t see the download, check to make sure pop-ups aren't disabled on your browser.
 - This feature isn't available in certain regions, including Mexico central, Spain central, Qatar central, China regions, and US Gov Virginia regions.
 - Mashup logs are in JSONL format, while SystemCounters and QueryExecutionReport are in Parquet format.
@@ -26,8 +27,15 @@ Logs for your VNET data gateway are available for download on the **Manage conne
 
 1. From the page header in the [Power BI service](https://app.powerbi.com), select the **Settings** icon and then select **Manage connections and gateways**.
 2. Select the **Virtual network data gateways** tab.
-3. Find your VNet data gateway and, in the same row, select the download icon in the **Download diagnostics** column.
-4. To view the logs, open the downloaded folder.
+3. Find your VNet data gateway and, in the same row, select the download icon.
+
+:::image type="content" source="media\diagnostics\diagnostics_download.png" lightbox="media\diagnostics\diagnostics_download.png" alt-text="Diagnostics download icon":::
+
+4. In the pop-up window, you can choose the specific log category you need or select all available logs. Additionally, you have the option to pick a predefined time range or customize the time range to suit your needs.
+
+:::image type="content" source="media\diagnostics\diagnostics_download_filter_window.png" lightbox="media\diagnostics\diagnostics_download_filter_window.png" alt-text="Choose log category and time range":::
+
+5. Click **Download diagnostics** buttion, and view logs in the downloaded folder.
 
 ## SystemCounters
 
