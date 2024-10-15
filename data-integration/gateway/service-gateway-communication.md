@@ -92,16 +92,16 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Azure Relay, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-relay).
 
-## Opening ports for Fabric Dataflows Gen1 & Gen2 using the gateway.
+## Opening ports for Fabric Dataflow Gen1 and Gen2 using the gateway
 
-When any mashup-based workload (e.g., Semantic models, Fabric Dataflows, etc.) contains a query that connects to both on-premises data sources (via an on-premises data gateway) and cloud data sources, the entire query is executed on the mashup engine of the on-premises data gateway. Therefore, endpoints must be open to allow the on-premises data gateway in all Mashup-based workloads to have line-of-sight access to the cloud data sources for both data source and output destination. 
+When any mashup-based workload (for example, Semantic models, Fabric dataflows, and so on) contains a query that connects to both on-premises data sources (using an on-premises data gateway) and cloud data sources, the entire query is executed on the mashup engine of the on-premises data gateway. Therefore, endpoints must be open to allow the on-premises data gateway in all mashup-based workloads to have line-of-sight access to the cloud data sources for both data source and output destination. 
 
-Specially for Fabric Dataflows Gen1 and Gen2, the following endpoints must also be open to allow the on-premises data gateway access to Azure Data Lake and the Fabric staging lakehouse cloud data sources.
+Specially for Fabric Dataflow Gen1 and Gen2, the following endpoints must also be open to allow the on-premises data gateway access to Azure Data Lake and the Fabric staging lakehouse cloud data sources.
 
-| Public Cloud Domain names | Outbound ports | Description |
+| Public cloud domain names | Outbound ports | Description |
 | --- | --- | --- |
-| \*.core.windows.net |443 |Used by Dataflows Gen1 to write data to Azure Data Lake.|
-| \*.dfs.fabric.microsoft.com  |1433 |Endpoint used by Dataflows Gen1 & Gen2 to connect to OneLake.[Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+| \*.core.windows.net |443 |Used by Dataflow Gen1 to write data to Azure Data Lake.|
+| \*.dfs.fabric.microsoft.com  |1433 |Endpoint used by Dataflow Gen1 and Gen2 to connect to OneLake. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 | \*.datawarehouse.pbidedicated.windows.net |1433 |Old endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 | \*.datawarehouse.fabric.microsoft.com |1433 |New endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 
