@@ -2,7 +2,7 @@
 title: Adjust communication settings for the on-premises data gateway
 description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Relay, how to force the gateway to communicate with Azure Relay by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 10/15/2024
 ---
 
 # Adjust communication settings for the on-premises data gateway
@@ -50,6 +50,7 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 | \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 | \*.frontend.clouddatahub.net |443 |Required for Fabric Pipeline execution. |
+| \*.pbidedicated.windows.net |1433 |The endpoint used by Datamart, warehouse, and SQL analytics endpoint. |
 | \*.datawarehouse.pbidedicated.windows.net |1433 |Old endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 | \*.datawarehouse.fabric.microsoft.com |1433 |New endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 
