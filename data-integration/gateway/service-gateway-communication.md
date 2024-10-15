@@ -39,6 +39,7 @@ The gateway communicates with Azure Relay by using FQDNs. If you force the gatew
 
 
 The following list describes FQDNs used by the gateway. These endpoints are required for the gateway to function.
+
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
 | \*.download.microsoft.com |80 |Used to download the installer. The gateway app also uses this domain to check the version and gateway region. |
@@ -53,6 +54,7 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 
 
 For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
+
 | Ports | GCC | GCC High | DoD |
 | --- | --- | --- | --- |
 | 80 | \*.download.microsoft.com |\*.download.microsoft.com |\*.download.microsoft.com |
@@ -69,6 +71,7 @@ For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 
 
 For China Cloud (Mooncake), the following FQDNs are used by the gateway.
+
 | Ports | China Cloud (Mooncake) |
 | --- | --- |
 | 80 | \*.download.microsoft.com |
@@ -94,6 +97,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 When any mashup-based workload (e.g., Semantic models, Fabric Dataflows, etc.) contains a query that connects to both on-premises data sources (via an on-premises data gateway) and cloud data sources, the entire query is executed on the mashup engine of the on-premises data gateway. Therefore, endpoints must be open to allow the on-premises data gateway in all Mashup-based workloads to have line-of-sight access to the cloud data sources for both data source and output destination. 
 
 Specially for Fabric Dataflows Gen1 and Gen2, the following endpoints must also be open to allow the on-premises data gateway access to Azure Data Lake and the Fabric staging lakehouse cloud data sources.
+
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
 | \*.core.windows.net |443 |Used by Dataflows Gen1 to write data to Azure Data Lake.|
