@@ -29,11 +29,11 @@ Logs for your virtual network data gateway are available for download on the **M
 2. Select the **Virtual network data gateways** tab.
 3. Find your virtual network data gateway and, in the same row, select the download icon.
 
-:::image type="content" source="media\diagnostics\diagnostics_download.png" lightbox="media\diagnostics\diagnostics_download.png" alt-text="Diagnostics download icon":::
+:::image type="content" source="media\diagnostics\diagnostics-download.png" lightbox="media\diagnostics\diagnostics-download.png" alt-text="Diagnostics download icon":::
 
 4. In the pop-up window, you can choose the specific log category you need or select all available logs. Additionally, you have the option to pick a predefined time range or customize the time range to suit your needs.
 
-:::image type="content" source="media\diagnostics\diagnostics_download_filter_window.png" lightbox="media\diagnostics\diagnostics_download_filter_window.png" alt-text="Choose log category and time range":::
+:::image type="content" source="media\diagnostics\diagnostics-download-filter-window.png" lightbox="media\diagnostics\diagnostics-download-filter-window.png" alt-text="Choose log category and time range":::
 
 5. Select **Download diagnostics** button, and view logs in the downloaded folder.
 
