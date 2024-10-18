@@ -183,7 +183,6 @@ Sources supported through either public endpoints or secure private endpoint con
 - OData
 - Office365Mon2
 - Oracle Cloud Storage
-- PDF
 - Plantronics
 - Planview Enterprise Architecture
 - Planview IdeaPlace
