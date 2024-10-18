@@ -51,7 +51,7 @@ sections:
       - question: |
           What is the actual Windows service called?  
         answer: |
-          On your local computer, in the Services app, the service is called "On-premises data gateway service."" In Task Manager, on the Services tab, the service name is "PBIEgwService". By default, the Windows service uses "NT SERVICE\PBIEgwService" as the Service SID (SSID).
+          On your local computer, in the Services app, the service is called "On-premises data gateway service." In Task Manager, on the Services tab, the service name is "PBIEgwService". By default, the Windows service uses "NT SERVICE\PBIEgwService" as the Service SID (SSID).
 
       - question: |
           Can the gateway Windows service run with a Microsoft Entra ID account?  
