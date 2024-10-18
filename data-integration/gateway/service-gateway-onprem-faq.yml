@@ -18,8 +18,7 @@ sections:
       - question: |
           Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials are updated recently.
         answer: |
-          When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. This limitation for long running refreshes exists for VNET gateways and on-premises data gateways. Dataflows specifically were recently updated to support token refresh, so they are no longer subject to the 1 hour timeout. However, other artifacts, such as pipelines, copy jobs, or semantic models, are still subject to the limitation. 
-
+          If you're using OAuth2 credentials, the access token might expire midway during the refresh operation. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. This limitation for long running refreshes applies for VNET gateways and on-premises data gateways. Gateway support for refreshing such tokens varies depending on the scenario.  For Dataflows such support existed before the October 2024 release. For semantic models, the support was introduced in October 2024. However, other items, such as pipelines or copy jobs, are still subject to the limitation.
       - question: |
           What are the requirements for the gateway?  
         answer: |
@@ -52,7 +51,7 @@ sections:
       - question: |
           What is the actual Windows service called?  
         answer: |
-          On your local computer, in the Services app, the service is called "On-premises data gateway service". In Task Manager, on the Services tab, the service name is "PBIEgwService". By default, the Windows service uses "NT SERVICE\PBIEgwService" as the Service SID (SSID).
+          On your local computer, in the Services app, the service is called "On-premises data gateway service."" In Task Manager, on the Services tab, the service name is "PBIEgwService". By default, the Windows service uses "NT SERVICE\PBIEgwService" as the Service SID (SSID).
 
       - question: |
           Can the gateway Windows service run with a Microsoft Entra ID account?  
@@ -94,7 +93,7 @@ sections:
           For example, assume your SQL Server computer isn't in your perimeter network. Also, assume you can't connect to that computer from the perimeter network. If you place the gateway in your perimeter network, the gateway can't reach the SQL Server computer.
           
       - question: |
-          If the server on which the gateway is installed is only using an IPv6 address and connects with a data source (for example, Azure SQL/File Server/Database on Azure VM) using an IPv6 address only, is it possible to communicate from Power BI service to those data sources through the gateway? 
+          If the server on which the gateway is installed is only using an IPv6 address and connects with a data source (for example, Azure SQL/File Server/Database on Azure VM) using an IPv6 address only, is it possible to communicate from the Power BI service to those data sources through the gateway? 
         answer: |
           Yes.
 
@@ -114,7 +113,7 @@ sections:
           Yes, for more information, go to [Force HTTPS communication with Azure Relay](service-gateway-communication.md#force-https-communication-with-azure-relay). Turning on this feature has little effect on performance.
           
       - question: |
-          Are the on-premises data gateway and Data Management Gateway, which is used by Azure Machine Learning Studio and Azure Data Factory, the same thing?  
+          Are the on-premises data gateway and Data Management Gateway, which is used by Azure Machine Learning studio and Azure Data Factory, the same thing?  
         answer: |
           No, they're different products. To get more information about Data Management Gateway, which is now called Self-hosted Integration Runtime, go to [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime).
           
@@ -167,13 +166,13 @@ sections:
           You can also look at your data source's tools for tracing queries. For example, if SQL Server and SQL Server Analysis Services are data sources, you can use SQL Server Extended Events or SQL Server Profiler to trace queries.
 
       - question: |
-          What do I need to do if I've reached the maximum limit of 1000 data sources per user, and how do I avoid reaching this limit?
+          What do I need to do if I reach the maximum limit of 1,000 data sources per user, and how do I avoid reaching this limit?
         answer: |
-          Users are limited to 1000 data sources per user.
+          Users are limited to 1,000 data sources per user.
 
-          If you've reached the maximum number of data sources limit, verify that the number of data sources per user hasn't surpassed the limit. To resolve any related issues, you can manually [remove the data sources](/power-bi/connect-data/service-gateway-data-sources#remove-a-data-source) from the admin center or, alternatively, use the following Gateway PowerShell script to find and bulk-delete any data sources that exceed the limit.
+          If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit. To resolve any related issues, you can manually [remove the data sources](/power-bi/connect-data/service-gateway-data-sources#remove-a-data-source) from the admin center or, alternatively, use the following Gateway PowerShell script to find and bulk-delete any data sources that exceed the limit.
 
-          ```powershell
+          ```PowerShell
           ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps
           ## PowerShell version of '7.0.0' to run
           ## required module "DataGateway" Install-Module -Name DataGateway and sign in the same user who exceeded the 1000 limit
@@ -195,7 +194,7 @@ sections:
           }
           ``` 
 
-          How do I avoid reaching this limit? If you're an ISV or any other Power BI Embedded app owner with many customers, use [service principal profiles](/power-bi/developer/embedded/embed-multi-tenancy) for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you select the folder containing those Excel files instead.
+          How do I avoid reaching this limit? If you're an ISV or any other Power BI Embedded app owner with many customers, use [service principal profiles](/power-bi/developer/embedded/embed-multi-tenancy) for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
 
   - name: Administration
     questions:
@@ -214,7 +213,7 @@ sections:
       - question: |
           If gateway migration fails, can gateway activity be continued from the old gateway server? Does this require any manual operation?
         answer: |
-          If the migration process fails on the new server, the on-premises data gateway still exists in the old server and you can still run that gateway unless the server is offline or the gateway software has been uninstalled. However, to restore the gateway on the old server, you might be asked to use your gateway recovery key.
+          If the migration process fails on the new server, the on-premises data gateway still exists in the old server. You can still run that gateway unless the server is offline or the gateway software has been uninstalled. However, to restore the gateway on the old server, you might be asked to use your gateway recovery key.
   
       - question: | 
           How long does a complete on-premises data gateway migration take?
@@ -222,7 +221,7 @@ sections:
           Since migration includes only two tasks, installing the gateway and restoration and configuration on new server, migration can usually be completed in 10 to 15 minutes.
 
       - question: | 
-          If we assume that the whole migration process will take 5 minutes, for all the refreshes that occur in these 5 minutes, where will the traffic go? Will it go through the old gateway server before the migration completes?
+          If we assume that the whole migration process takes 5 minutes, for all the refreshes that occur in these 5 minutes, where will the traffic go? Will it go through the old gateway server before the migration completes?
         answer: |
           Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. More information: [Minimize migration downtime](/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime)
 
@@ -231,8 +230,8 @@ sections:
       - question: |
           Are there any known issues?
         answer: |
-          If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired. All artifacts other than dataflows can be subject to this timeout, but dataflows have been recently updated to support token refresh, and are not subject to the limitation anymore.
-
+          If you're using a data gateway older than October 2024 and an OAuth-based refresh of your semantic model takes longer than one hour, the refresh might be canceled with the error "Invalid Connection Credentials" or the connection may time out. The issue is likely that the credential expired. Make sure you update your data gateways to the latest version. Beginning with the October 2024 release, VNET gateways and on-premises data gateways support token refresh, and aren't subject to this limitation anymore.
+          
 additionalContent: |
 
   ## Next steps
