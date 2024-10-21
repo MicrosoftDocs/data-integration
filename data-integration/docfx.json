@@ -49,11 +49,11 @@
     "fileMetadata": {
       "ms.author":{
         "vnet/**.*": "nikkiwaghani",
-        "gateway/**.*": "mideboer"
+        "gateway/**.*": "nikkiwaghani"
       },
       "author":{
         "vnet/**.*": "nikkiwaghani",
-        "gateway/**.*": "miquelladeboer"
+        "gateway/**.*": "nikkiwaghani"
       },
       "ms.subservice":{
         "vnet/**.*": "virtual-network-data-gateways",
