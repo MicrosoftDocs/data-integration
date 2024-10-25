@@ -18,7 +18,7 @@ The virtual network data gateway charge is according to the uptime of the virtua
 
 The virtual network data gateway consumes the capacity of a Power BI Premium or Fabric capacity. Capacities are billed by capacity unit hours, or CU hours. To learn more about CUs, visit the [Fabric operations page](/fabric/enterprise/fabric-operations). The VNET data gateway charges with a fixed CU consumption rate of 4CUs per gateway member (a member is a single gateway node in a cluster).
 
-Your bill is automatically charged to the capacity linked to your virtual network data gateway. When you signed up for your capacity, you paid for some capacity unit hours. When you use your virtual network, this prepaid amount is consumed. This side of the metrics can only be seen from the consumption metrics app. You can still use the gateway if your capacity has less than 4 CUs, it just requires that the gateways time share the capacity. In other words, the gateways can't run concurrently.
+Your bill is automatically charged to the capacity linked to your virtual network data gateway. When you signed up for your capacity, you paid for some capacity unit hours. When you use your virtual network, this prepaid amount is consumed. This side of the metrics can only be seen from the consumption metrics app.
 
 - Consumption Unit (CU) consumption rate per gateway member: 4 CUs per hour
 - Number of [gateway members](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check this number in the advanced settings of your virtual network data gateway.
