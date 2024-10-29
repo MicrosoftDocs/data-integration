@@ -16,9 +16,10 @@ sections:
           No, services can generally connect to cloud data sources without a gateway. However, you might need a data gateway if your data sources are behind a firewall, require a VPN, or are on virtual networks.
           
       - question: |
-          Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials are updated recently.
+          Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing data sources using OAuth2 credentials from Dataflows Gen1 even though the credentials are updated recently (mid-stream token refresh issue).
         answer: |
-          If you're using OAuth2 credentials, the access token might expire midway during the refresh operation. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. This limitation for long running refreshes applies for VNET gateways and on-premises data gateways. Gateway support for refreshing such tokens varies depending on the scenario.  For Dataflows such support existed before the October 2024 release. For semantic models, the support was introduced in October 2024. However, other items, such as pipelines or copy jobs, are still subject to the limitation.
+          When using OAuth2 credentials in Dataflows Gen1, the gateway doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. Dataflows Gen2, Semantic models, Data pipelines are able to refresh tokens mid-stream and should not be impacted due to this. 
+
       - question: |
           What are the requirements for the gateway?  
         answer: |
@@ -225,13 +226,6 @@ sections:
         answer: |
           Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. More information: [Minimize migration downtime](/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime)
 
-  - name: Known Issues
-    questions:
-      - question: |
-          Are there any known issues?
-        answer: |
-          If you're using a data gateway older than October 2024 and an OAuth-based refresh of your semantic model takes longer than one hour, the refresh might be canceled with the error "Invalid Connection Credentials" or the connection may time out. The issue is likely that the credential expired. Make sure you update your data gateways to the latest version. Beginning with the October 2024 release, VNET gateways and on-premises data gateways support token refresh, and aren't subject to this limitation anymore.
-          
 additionalContent: |
 
   ## Next steps
