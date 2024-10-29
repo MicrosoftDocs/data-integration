@@ -36,7 +36,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 
 ### Related considerations
 
-* Workloads may have specific requirements around compatible gateway versions. For dataflows, see [using dataflows with on-premises data](https://learn.microsoft.com/en-us/power-query/dataflows/using-dataflows-with-on-premises-data).
+* Workloads may have specific requirements around compatible gateway versions. For dataflows, see [using dataflows with on-premises data](https://learn.microsoft.com/power-query/dataflows/using-dataflows-with-on-premises-data).
 * Gateways aren't supported on Server Core installations.
 * Gateways aren't supported on Windows containers.
 * The user installing the gateway must be the admin of the gateway.
