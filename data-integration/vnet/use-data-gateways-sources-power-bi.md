@@ -32,7 +32,7 @@ The VNet Data Gateway can be used to connect securely to your data sources. Ther
 
 In scenarios 1 and 2, all traffic remains on the Azure backbone and is never exposed to the public internet.
 
-Azure sources that support secure private endpoint connectivity (scenario 1 described above):
+Azure sources that support secure private endpoint connectivity (as in scenario 1):
 
 - Azure AI Search
 - Azure Batch
@@ -64,7 +64,7 @@ Azure sources that support secure private endpoint connectivity (scenario 1 desc
 - Azure Table Storage
 - Azure Snowflake
 
-Sources supported through either public endpoints or secure private endpoint connectivity with Express Route or VPNs (scenarios 2 and 3 from above):
+Sources supported through either public endpoints or secure private endpoint connectivity with Express Route or VPNs (scenarios 2 and 3):
 
 - Acterys
 - Access Database
