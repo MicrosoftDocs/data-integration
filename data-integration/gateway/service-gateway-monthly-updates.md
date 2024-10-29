@@ -16,7 +16,7 @@ This article describes the last six updates for the on-premises data gateways an
 
 Download the latest versions:
 
-## October 2024 update (3000.242.5)
+## October 2024 update (3000.242.9)
 
 - [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-october-2024-release/)
 - Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall.exe)
