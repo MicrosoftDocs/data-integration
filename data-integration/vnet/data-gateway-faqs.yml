@@ -18,6 +18,11 @@ sections:
           We support GCC L4 (Texas and Virginia) and L5 (DoD East). This feature is currently not supported in GCC L2.
 
       - question: |
+          How should I manage my Azure resources after deleting a VNET data gateway?
+        answer: | 
+          Customers should not remove the subscription level RP assignment until at least three hours after deleting a gateway because we still need to clean up resources.
+
+      - question: |
           Does the virtual network data gateway support Azure air gapped clouds?
         answer: | 
           We support air gapped clouds in US Nat East/West and US Sec East/West.
