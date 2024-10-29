@@ -26,13 +26,13 @@ You can also create data sources and share these data sources to users like you 
 ## Supported Azure data services
 
 The VNet Data Gateway can be used to connect securely to your data sources. There are a few different ways you can use the VNET to connect:
-1. Connecting to your private resources in Azure. For this scenario, you will need to setup a private endpoint and private DNS zone or service endpoints on your data source.
-2. Connecting to your private resources outside of Azure. For this scenario, you will need to use Express Route and/or VPNs.
+1. Connecting to your private resources in Azure. For this scenario, you need to setup a private endpoint and private DNS zone or service endpoints on your data source.
+2. Connecting to your private resources outside of Azure. For this scenario, you need to use Express Route and/or VPNs.
 3. Connecting to public resources.
 
-In scenarios 1 and 2 above, all traffic will remain on the Azure backbone and is never exposed to the public internet.
+In scenarios 1 and 2, all traffic remains on the Azure backbone and is never exposed to the public internet.
 
-Azure sources that support secure private endpoint connectivity (scenario 1 described above):
+Azure sources that support secure private endpoint connectivity (as in scenario 1):
 
 - Azure AI Search
 - Azure Batch
@@ -64,7 +64,7 @@ Azure sources that support secure private endpoint connectivity (scenario 1 desc
 - Azure Table Storage
 - Azure Snowflake
 
-Sources supported through either public endpoints or secure private endpoint connectivity with Express Route or VPNs (scenarios 2 and 3 from above):
+Sources supported through either public endpoints or secure private endpoint connectivity with Express Route or VPNs (scenarios 2 and 3):
 
 - Acterys
 - Access Database
@@ -183,7 +183,6 @@ Sources supported through either public endpoints or secure private endpoint con
 - OData
 - Office365Mon2
 - Oracle Cloud Storage
-- PDF
 - Plantronics
 - Planview Enterprise Architecture
 - Planview IdeaPlace

@@ -44,7 +44,7 @@ You sign in with either a work account or a school account. This account is your
 
 ## Network traffic security
 
-Traffic goes from the gateway to Azure Relay to the Power BI backend cluster. This traffic doesn't traverse the public internet. All Azure internal traffic goes over the Azure backbone.
+Traffic goes from the gateway to Azure Relay to the Power BI backend cluster. By using express route, you can make sure this traffic doesn't traverse the public internet. All Azure internal traffic goes over the Azure backbone.
 
 ## Microsoft Entra ID
 

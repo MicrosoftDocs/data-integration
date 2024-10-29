@@ -32,6 +32,8 @@ The virtual network data gateway:
 
 - You can't change the region, subscription, or resource group for the VNet on which the VNet data gateway was created. This scenario isn't currently supported.
 
+- You may see the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials, even though the credentials have been updated recently, for dataflows. When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies.
+
 - Power BI semantic models:
 
   - A list of supported data services for Power BI semantic models is available in [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services).
