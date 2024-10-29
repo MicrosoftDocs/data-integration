@@ -36,6 +36,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 
 ### Related considerations
 
+* Workloads may have specific requirements around compatible gateway versions. For dataflows, see [using dataflows with on-premises data](https://learn.microsoft.com/power-query/dataflows/using-dataflows-with-on-premises-data).
 * Gateways aren't supported on Server Core installations.
 * Gateways aren't supported on Windows containers.
 * The user installing the gateway must be the admin of the gateway.
@@ -48,7 +49,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * You can install up to two gateways on a single computer: one running in personal mode and the other running in standard mode. An on-premises data gateway (personal mode) can be used only with Power BI. You can't have more than one gateway running in the same mode on the same computer.
 * When using an on-premises data gateway (standard mode) to access a data source on a remote domain, the gateway has to be installed on a domain joined machine having a trust relationship with the target domain.
 
-* <a name="private-link-consideration"></a>Using an on-premises data gateway with private link enabled is not supported. If private link is enabled, you'll get the following error when trying to register a new gateway or migrate/restore/takeover an existing gateway:
+* <a name="private-link-consideration"></a>Using an on-premises data gateway with private link enabled isn't supported. We recommend using the [VNET data gateway](../vnet/overview.md), which does support private link scenarios. If private link is enabled, you get the following error when trying to register a new gateway or migrate/restore/takeover an existing gateway:
 
    `System.NullReferenceException: Object reference not set to an instance of an object`
 

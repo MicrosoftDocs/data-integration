@@ -68,7 +68,7 @@ This subnet should have connectivity to the data service.
 
 ## Step 3: Create a VNet data gateway
 
-A Microsoft Power Platform user enables the subnet for use in Microsoft Power Platform and creates a VNet data gateway. By doing this process, the user authorizes the Microsoft Power Platform VNet service to inject containers into the subnet. The user also needs to have the Azure [Network Contributor](/azure/role-based-access-control/built-in-roles#network-contributor) role in the subscription to be able to perform this action.
+A Microsoft Power Platform user enables the subnet for use in Microsoft Power Platform and creates a VNet data gateway. By doing this process, the user authorizes the Microsoft Power Platform VNet service to inject containers into the subnet. The user also needs Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet to be able to perform this action.
 
 1. Sign in to the [Power BI homepage](https://app.powerbi.com).
 
@@ -117,7 +117,6 @@ Your Azure VNet region needs to be in one of the following regions for you to be
 * UK South
 * West Central US
 * West Europe
-* West India
 * West US
 * West US 2
 

@@ -17,6 +17,8 @@ To monitor performance, gateway admins have traditionally depended on manually m
 > [!NOTE]
 > Gateway diagnostics doesn't capture diagnostics directly related to the (virtual) machine and its network, like bandwidth or latency. However, these diagnostics might impact your gateway performance. You can use resource monitoring tools to monitor your machine.
 
+:::image type="content" source="media/service-gateway-performance/gateway-PBI-template.png" lightbox="media/service-gateway-performance/gateway-PBI-template.png" alt-text="The Power BI Diagnostics report.":::
+
 ### Performance logging
 
 This feature is now turned on by default.

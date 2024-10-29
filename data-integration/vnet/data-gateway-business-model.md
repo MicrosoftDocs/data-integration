@@ -1,83 +1,47 @@
 ---
-title: Virtual network data gateways pricing and billing 
+title: Virtual network data gateways capacity consumption 
 description: This article provides information about the charges incurred by use of the virtual network data gateway.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 07/11/2024
+ai-usage: ai-assisted
 ---
 
-# Virtual network data gateways pricing and billing
-The virtual network data gateway is a network security offering that lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a virtual network data gateway. The virtual network data gateway ensures no traffic is exposed to a public endpoint. In addition, you can force all traffic to your datasource to go through a gateway, allowing for comprehensive auditing of secure data sources. To learn more and get started, refer to [virtual network data gateways](overview.md).
+# Virtual network data gateways capacity consumption
+The virtual network data gateway consumes the capacity of a Power BI Premium or Fabric capacity. The virtual network data gateway is infrastructure that supports many different artifacts, like Dataflows Gen2, semantic models, etc. The gateway consumes capacity for the time that it's up and running. As a consequence, the gateway's capacity consumption is consistent regardless of which artifact uses it.
 
-:::image type="content" source="media\vnet-gateway-architecture-no-swift.png" alt-text="Diagram of the virtual network data gateway architecture.":::
+To learn more and get started using the VNet data gateway, refer to [virtual network data gateways](overview.md).
 
-## Understand how and where the virtual network is billed
 
-The virtual network data gateway is billed to a Power BI Premium or Fabric capacity. The virtual network data gateway is infrastructure that supports many different artifacts, like Dataflows Gen2, semantic models, etc. The gateway is billed for the time that it's up and running. As a consequence, the gateway's bill is consistent regardless of which artifact uses it. The artifact is also charged as normal as a separate charge.
+## Understand how and where the virtual network consumes capacity
 
 The virtual network data gateway charge is according to the uptime of the virtual network data gateway; uptime is anytime the virtual network data gateway is on. 
 
-A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate that we decide, depending on what we want to charge. Learn more about CUs [on the Fabric operations page](/fabric/enterprise/fabric-operations).
+The virtual network data gateway consumes the capacity of a Power BI Premium or Fabric capacity. Capacities are billed by capacity unit hours, or CU hours. To learn more about CUs, visit the [Fabric operations page](/fabric/enterprise/fabric-operations). The VNET data gateway charges with a fixed CU consumption rate of 4CUs per gateway member (a member is a single gateway node in a cluster).
 
-Your bill is automatically charged to the capacity linked to your virtual network data gateway. When you signed up for your capacity, you paid for some capacity unit hours, or CUh. When you use your virtual network, this prepaid amount is drained. This side of the metrics can only be seen from the consumption metrics app. A single virtual network data gateway uses two cores. The CU consumption rate is a fixed rate. Learn more about CUs [on the Fabric Azure billing page](/fabric/enterprise/azure-billing). You can still use the gateway if your capacity has less than 4 CU, it just requires that the gateways time share the capacity. In other words, the gateways can't run concurrently.
+Your bill is automatically charged to the capacity linked to your virtual network data gateway. When you signed up for your capacity, you paid for some capacity unit hours. When you use your virtual network, this prepaid amount is consumed. This side of the metrics can only be seen from the consumption metrics app.
 
-- Consumption Unit (CU) consumption rate per core: 2x
-- Price: 2x (CU Consumption rate) * 2 cores (per virtual network data gateway) * $0.18 (Pay as You Go price for one CU per hour) = $0.72 per virtual network/hour
-
-## Best Practices
-
-You can set up your virtual network data gateways and connections on the gateway for free. We start to bill when your first query runs or you run a test connection.
-
-To reduce costs, you can actively manage the time to live on your virtual network data gateway in settings. Learn more [here](manage-data-gateways.md#manage-settings).
-
-To check if your virtual network data gateway is on or off, you can use the status icon on the **Manage connections and gateways** page.
-
-## Example Charges on your capacity
-
-The following table summarizes the bill you can expect from using a single virtual network data gateway for the designated amount of time.
-
-| Time the virtual network is on | Calculation               | Charge on capacity |
-|---------------------|---------------------------|--------------------|
-| h hours             | 2 * 2 * 0.18 * h          | $0.72h             |
-| 30 minutes          | 2 * 2 * 0.18 * 0.5 hours  | 0.36               |
-| 1 hour              | 2 * 2 * 0.18 * 1 hour     | 0.72               |
-| 2 hours             | 2 * 2 * 0.18 * 2 hours    | 1.44               |
-| 8 hours             | 2 * 2 * 0.18 * 8 hours    | 5.76               |
-| 24 hours            | 2 * 2 * 0.18 * 24 hours   | 17.28              |
-
-This calculation considers all of the following details:
-
-- CU consumption rate
-- 2 cores in a virtual network data gateway
-- Number of nodes or gateway members deployed
-- Price of the virtual network data gateway infrastructure at $0.18
-
-To calculate the final price you pay, use the following calculation. Provide the number of gateway members, sometimes called nodes, in your cluster, and the number of hours they're running.
-
-- CU Consumption fixed rate = 2
-- Fixed number of cores per virtual network data gateway = 2
-- Fixed pay-as-you-go price for one CU per hour = $0.18
+- Consumption Unit (CU) consumption rate per gateway member: 4 CUs per hour
 - Number of [gateway members](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check this number in the advanced settings of your virtual network data gateway.
+- To reduce costs, you can actively manage the time to live on your virtual network data gateway in settings. Learn more [here](manage-data-gateways.md#manage-settings).
 
-Price incurred = (CU Consumption rate) * (Number of cores per virtual network data gateway) * (Pay as You Go price per CU per core per hour) * (Number of hours) * (Number of gateway members)
+_Capacity consumption = (CU Consumption rate) * (Uptime in hours) * (Number of gateway members)_
 
-Price incurred = 2 CUs * 2 cores * $0.18 per CU per core per hour * (Number of hours) * (Number of gateway members)
+>[!NOTE]
+>The CU consumption rate is fixed at 4CUs per gateway member. The billing model bills per minute and does not round up. This means that if you use the gateway for a short duration, you are only charged for what you use.
 
-_Price incurred = $0.72 per hour * Number of hours * Number of gateway members_
+## Assign a valid capacity to virtual network data gateway
+Each virtual network data gateway must be attached to a valid capacity, such as Power BI Premium or Fabric capacity. If your virtual network data gateway lacks a valid capacity, you can select an existing one from the settings page.
 
-The following table includes sample calculations of a few scenarios with different uptimes and number of gateway member nodes. The first scenario in the table shows the minimum possible price incurred for using a virtual network data gateway. This scenario entails keeping the gateway on for 30 minutes and using only one node. In this scenario, the final price incurred is $0.36. The final scenario shows the maximum possible price incurred for using a gateway. This scenario entails keeping the gateway always on for 24 hours, and using the maximum high availability cluster setting of five nodes. In this scenario the final price incurred is $86.40.
+:::image type="content" source="media\vnet-data-gateway-attached-capacity.png" lightbox="media\vnet-data-gateway-attached-capacity.png" alt-text="Diagram showing virtual network data gateway capacity.":::
 
-|Time the virtual network is on |Number of Nodes| Calculation	|Charge on capacity |
-|--------------------|---------------|--------------|-------------------|
-|h hours|n Nodes | 2 cores per virtual network * 2 CUs consumed * 0.18 * h * n	|$0.72 * h * n |
-|30 minutes|1 Node | 0.72 * 0.5 hours * 1|0.36 |
-|1 hour|1 Node | 0.72 * 1 hour * 1 node|0.72 |
-|1 hour|2 Nodes | 0.72 * 1 hour * 2 nodes|1.44 |
-|2 hours|2 Nodes | 0.72 * 2 hours * 2 node|2.88 |
-|8 hours|3 Nodes | 0.72 * 8 hours * 3 nodes|17.28 |
-|24 hours|3 Nodes | 0.72 * 24 hours * 3 nodes|51.84 |
-|24 hours|5 Nodes | 0.72 * 24 hours * 5 nodes|86.40 |
+## Best practices to manage costs
 
-## View and manage your Bill
+- You can set up your virtual network data gateways and connections on the gateway for free. We start to bill when your first query runs or you run a test connection.
+- Configure your queries to run concurrently. Each gateway member can run six queries concurrently.
+- Maintain a minimum number of gateway members for your needs. The number of [gateway members](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check and configure this number in the advanced settings of your virtual network data gateway.
+- To reduce costs, reduce the time to live on your virtual network data gateway in settings. When ever there is a new query execution, the virtual network data gateway is automatically turned on. Learn more [here](manage-data-gateways.md#manage-settings).
+
+## View and manage your bill
 
 To view your bill, use the [Fabric Capacity Metrics app](/fabric/enterprise/metrics-app). 
 
@@ -91,7 +55,7 @@ You see three line items:
 
 Description of each line item by Operation name:
 
-- **Virtual network data gateway uptime** The charge from using the virtual network data gateway. This uptime is billed at $0.72/hour and is consistent across all artifacts.
+- **Virtual network data gateway uptime** The charge from using the virtual network data gateway. This uptime is billed at 4 CUs/hour and is consistent across all artifacts.
 - **(Dataset) Virtual network data gateway** The charge for compute from executing queries on the M Engine. The Virtual network data gateway hosts the M Engine and reports its usage to the semantic model artifact.
 - **(Dataset) Dataset on-demand refresh** The charge for compute from using the Analysis Services engine to execute the semantic model.
 
