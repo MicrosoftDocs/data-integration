@@ -23,6 +23,11 @@ sections:
           Customers should not remove the subscription level RP assignment until at least three hours after deleting a gateway because we still need to clean up resources.
 
       - question: |
+          Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing data sources using OAuth2 credentials from Dataflows Gen1 even though the credentials are updated recently (mid-stream token refresh issue)?
+        answer: |
+          When using OAuth2 credentials in Dataflows Gen1, the gateway doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. Dataflows Gen2, Semantic models, Data pipelines are able to refresh tokens mid-stream and should not be impacted due to this.
+          
+      - question: |
           Does the virtual network data gateway support Azure air gapped clouds?
         answer: | 
           We support air gapped clouds in US Nat East/West and US Sec East/West.
