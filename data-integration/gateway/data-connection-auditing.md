@@ -16,7 +16,7 @@ Data exfiltration occurs when sensitive business data is accidentally or intenti
 
 ## How to use data connection auditing
 
-This article outlines the capability to view audit logs on all actions taken on connections in your tenant. You can view all attempted create, read, update or delete actions(CRUDs), and all retrieval of data from all your data sources across your tenant.
+This article outlines the capability to view audit logs on all actions taken on connections in your tenant. You can view all attempted create, read, update or delete actions (CRUDs), and all retrieval of data from all your data sources across your tenant.
 
 Auditing for data source connections within Fabric will cover the following artifacts: data pipelines, dataflows gen2, semantic models, and datamarts, as well as some scenarios in EventStream, Replicator, CosmosDB, Kusto and Shortcuts. Tenant admins can now use the Purview auditing portal to find any call made to a connection, including both failed and successful calls to create, delete, update, or use connections. For each connection, users can find all connections by querying:
 
@@ -25,6 +25,7 @@ Auditing for data source connections within Fabric will cover the following arti
 - Data source path
 - Data source kind
 - Gateway ID
+- activity name: UpdateDatasourceCredentials
 
 For each attempted connection, we include the following information:
 
