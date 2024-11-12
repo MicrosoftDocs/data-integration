@@ -70,7 +70,7 @@ Logs for your virtual network data gateway are available for download on the **M
 | QueryId | Query identifier. |
 | InstanceId | Identifier for the container on which your gateway is currently running. |
 | RequestId | Request identifier. |
-| QueryType | Query type, that is, DirectQuery, PollingModeQuery. |
+| QueryType | Query type that is, DirectQuery or Data refresh operations including semantic model and dataflow refreshes. |
 | ConnectionPath | Data source kinds and paths. |
 | Status | Indicates whether the query failed or succeeded. |
 | StartTime | Start of the query execution. |

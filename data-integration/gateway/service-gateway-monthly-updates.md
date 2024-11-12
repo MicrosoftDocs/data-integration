@@ -16,11 +16,17 @@ This article describes the last six updates for the on-premises data gateways an
 
 Download the latest versions:
 
+## October 2024 update (3000.242)
+
+- [List of features released](https://powerbi.microsoft.com/blog/on-premises-data-gateway-october-2024-release/)
+- Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall.exe)
+- Download the [latest on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode).exe)
+
 ## September 2024 update (3000.238)
 
 - [List of features released](https://powerbi.microsoft.com/en-us/blog/on-premises-data-gateway-september-2024-release/)
-- Download the [latest on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall.exe)
-- Download the [latest on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode).exe)
+- [Download the October 2024 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-24-09.exe)
+- [Download the October 2024 version of the on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-24-09.exe)
 
 ## August 2024 update (3000.234)
 
