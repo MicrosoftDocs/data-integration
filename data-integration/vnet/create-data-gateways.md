@@ -106,15 +106,20 @@ Your Azure VNet region needs to be in one of the following regions for you to be
 * Germany West Central
 * Japan East
 * Korea Central
+* Italy North
 * North Central US
 * North Europe
 * Norway East
+* Poland Central
+* Spain Central
 * South Africa North
 * South Central US
 * Southeast Asia
+* Sweden Central
 * Switzerland North
 * UAE North
 * UK South
+* UK West
 * West Central US
 * West Europe
 * West US
