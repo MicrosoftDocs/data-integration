@@ -7,16 +7,17 @@ ms.date: 05/06/2024
 
 # Download logs on the virtual network (VNET) data gateway (preview)
 
-Logs for your virtual network data gateway are available for download on the **Manage connections and gateways** page. Three folders are downloaded:
+Logs for your virtual network data gateway are available for download on the **Manage connections and gateways** page. Four folders are downloaded:
 
 - System Counters
 - Mashup Logs
 - Query Execution Report
+- Resource Consumption
 
 ## Notes:
 
 - You must be an admin on the virtual network data gateway to download logs. Check the [manage users](manage-data-gateways.md) option to see if you're an admin.
-- Retention of logs: MashupLogs are kept for the past 48 hours. The SystemCounters and QueryExecutionReport logs are kept for the past 29 days. Currently, customers have the ability to change how long the logs are retained during the retention period.
+- Retention of logs: MashupLogs are kept for the past 48 hours. The SystemCounters, QueryExecutionReport and Resource Consumption logs are kept for the past 29 days. Currently, customers don't have the ability to change how long the logs are retained during the retention period.
 - The gateway must be online to provide logs. Check the status of the virtual network by selecting the icon in the "Status" column. 
 - The download isn't available if the Fabric private link is enabled in your tenant.
 - If you don’t see the download, check to make sure pop-ups aren't disabled on your browser.
@@ -80,3 +81,14 @@ Logs for your virtual network data gateway are available for download on the **M
 | DataReadingAndSerializationStartTime | Start of data serialization. |
 | DataReadingAndSerializationDurationMS | Duration of the data serialization. |
 | StreamingDurationMS | Duration of the data streaming. |
+
+## Resource Consumption
+
+| Attribute | Description |
+| --- | --- |
+| CapacityId | ID of the capacity that is charged |
+| CapacityUnitSeconds | Capacity consumption emitted, as CapacityUnitSeconds |
+| GatewayId | Gateway object identifier |
+| GatewayName | Name of the gateway |
+| Id | Log identifier |
+| Timestamp | The time consumption was emitted |
