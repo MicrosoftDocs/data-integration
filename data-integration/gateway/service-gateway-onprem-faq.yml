@@ -172,7 +172,7 @@ sections:
           Users are limited to 1,000 data sources per user on each personal or enterprise gateway.
 
           If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit. To resolve any related issues, you can manually [remove the data sources](/power-bi/connect-data/service-gateway-data-sources#remove-a-data-source) from the admin center or, alternatively:
-          * Use the following PowerShell script to find your personal gateway that exceed the limit and bulk-delete all data sources using it.
+          * Use the following PowerShell script to find your personal gateway that exceeds the limit and bulk-delete all data sources using it.
 
           ```PowerShell
           ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps
@@ -196,7 +196,7 @@ sections:
           }
           ``` 
 
-          * Use the following PowerShell script to bulk-delete all data sources using a specific enterprise gateways:
+          * Use the following PowerShell script to bulk-delete all data sources using a specific enterprise gateway:
           
           ```PowerShell
           ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps
@@ -217,7 +217,7 @@ sections:
           ```
           
           **How do I avoid reaching this limit?**
-          If you're an ISV or any other Power BI Embedded app owner with many customers, use [service principal profiles](/power-bi/developer/embedded/embed-multi-tenancy) for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
+          If you're an ISV or any other Power BI embedded app owner with many customers, use [service principal profiles](/power-bi/developer/embedded/embed-multi-tenancy) for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
 
   - name: Administration
     questions:
