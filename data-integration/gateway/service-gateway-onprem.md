@@ -51,7 +51,7 @@ There are four main steps for using a gateway.
 * While using the gateway with Power BI in Direct Query Mode, there's a 16-MB uncompressed data response limit.
 * For information about installation considerations, go to [Related considerations](service-gateway-install.md#related-considerations).
 * We cache credentials on the gateway client side, which improves the performance of the queries executed on the gateway. The cache expires in a matter of hours. However, this means that changed credentials may not be immediately reflected and can cause refreshed to fail. For example, if a user uploads a direct query report with a connection and then edits that connection's credentials, the new credentials will not be used for approximately 5 hours and the user can expect the connection in the report to fail.
-* Users are limited to 1,000 data sources maximum per user on each enterprise or personal gateway. [How to avoid reaching this limit](/gateway/service-gateway-onprem-faq#what-do-i-need-to-do-if-i-reach-the-maximum-limit-of-1-000-data-sources-per-user--and-how-do-i-avoid-reaching-this-limit-).
+* Users are limited to 1,000 data sources maximum per user on each enterprise or personal gateway. [How to avoid reaching this limit](/data-integration/gateway/service-gateway-onprem-faq#what-do-i-need-to-do-if-i-reach-the-maximum-limit-of-1-000-data-sources-per-user--and-how-do-i-avoid-reaching-this-limit-).
 
 ## Gateway documentation
 
