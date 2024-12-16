@@ -189,7 +189,7 @@ sections:
         answer: |
           Users are limited to 1,000 data sources per user for every VNET gateway.
           If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit for each VNET gateway. 
-          To resolve any related issues, you can manually remove the data sources from the admin center or, alternatively, use the following PowerShell script to bulk-delete all data sources using a specified VNET gateway that exceed that limit. You'd need replace the text "GatewayClusterID" with the specific VNET gateway ID for this script to work. 
+          To resolve any related issues, you can manually remove the data sources from the admin center or, alternatively, use the following PowerShell script to bulk-delete all data sources using a specified VNET gateway that exceeds that limit. You'd need to replace the text "GatewayClusterID" with the specific VNET gateway ID for this script to work. 
 
           ```PowerShell
           ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps
