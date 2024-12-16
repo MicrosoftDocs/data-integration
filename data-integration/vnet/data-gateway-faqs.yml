@@ -185,7 +185,7 @@ sections:
           * If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired.
 
       - question: |
-          Any other known issues?
+          What do I need to do if I reach the maximum limit of 1,000 data sources per user, and how do I avoid reaching this limit?
         answer: |
           Users are limited to 1,000 data sources per user for every VNET gateway.
           If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit for each VNET gateway. 
