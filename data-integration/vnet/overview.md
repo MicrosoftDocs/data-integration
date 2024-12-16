@@ -49,3 +49,5 @@ The virtual network data gateway:
 - Power BI paginated reports:
   - VNet gateways support paginated reports.
   - A list of supported data sources for Power BI paginated reports is available in [Supported data sources for Power BI paginated reports](/power-bi/paginated-reports/paginated-reports-data-sources).
+
+- Users are limited to 1,000 data sources maximum per user on each VNET gateway. [How to avoid reaching this limit](/data-gateway-faqs).
