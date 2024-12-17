@@ -58,7 +58,7 @@ sections:
       - question: |
           What are the licensing requirements in Power BI to use virtual network data gateways?
         answer: |
-          Virtual network data gateways are a premium-only feature and is available only in Fabric (any SKU) and Power BI Premium capacities (A4 SKU or higher or any P SKU).
+          Virtual network data gateways are a premium-only feature and are available only in Fabric (any SKU) and Power BI Premium capacities (A4 SKU or higher or any P SKU).
           
       - question: |
           Some of my data sources are connected to my virtual network using service endpoint and some using private endpoint. Can I connect to all of them using virtual network data gateways?
@@ -183,3 +183,28 @@ sections:
           * You can't delegate a subnet called `gatewaysubnet` to the Power Platform admin center. This restriction is because it's a reserved word for the Azure Gateway Subnet feature.
           * You can't change the region, subscription, or resource group for the virtual network on which the virtual network data gateway was created. This scenario isn't currently supported.
           * If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired.
+
+      - question: |
+          What do I need to do if I reach the maximum limit of 1,000 data sources per user, and how do I avoid reaching this limit?
+        answer: |
+          Users are limited to 1,000 data sources per user for every VNET gateway.
+          If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit for each VNET gateway. 
+          To resolve any related issues, you can manually remove the data sources from the admin center or, alternatively, use the following PowerShell script to bulk-delete all data sources using a specified VNET gateway that exceeds that limit. You'd need to replace the text "GatewayClusterID" with the specific VNET gateway ID for this script to work. 
+
+          ```PowerShell
+          ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps
+          ## PowerShell version of '7.0.0' to run
+          ## required module "DataGateway" Install-Module -Name DataGateway and sign in the same user who exceeded the 1000 limit
+          Connect-DataGatewayServiceAccount
+           
+          ## get the gateway information per the sign in person
+          $datasources = Get-DataGatewayClusterDatasource -GatewayClusterId <GatewayClusterId>;
+          foreach ($datasource in $datasources)
+          {
+            $datasource
+            "datasource id={2}, datasourceType={3}, datasource connection details={4}" -f $datasource.Id, $datasource.DatasourceType, $datasource.ConnectionDetails
+           
+            ## conditional logic to determine if name matches set
+            ## Remove-DataGatewayClusterDatasource -GatewayClusterId $gw.Id -GatewayClusterDatasourceId $datasource.Id
+          }
+          ```

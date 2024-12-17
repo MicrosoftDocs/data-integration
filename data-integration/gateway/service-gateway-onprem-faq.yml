@@ -167,11 +167,12 @@ sections:
           You can also look at your data source's tools for tracing queries. For example, if SQL Server and SQL Server Analysis Services are data sources, you can use SQL Server Extended Events or SQL Server Profiler to trace queries.
 
       - question: |
-          What do I need to do if I reach the maximum limit of 1,000 data sources per user, and how do I avoid reaching this limit?
+          What do I need to do if I reach the maximum limit of 1,000 data sources per user on a gateway, and how do I avoid reaching this limit?
         answer: |
-          Users are limited to 1,000 data sources per user.
+          Users are limited to 1,000 data sources per user on each personal or enterprise gateway.
 
-          If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit. To resolve any related issues, you can manually [remove the data sources](/power-bi/connect-data/service-gateway-data-sources#remove-a-data-source) from the admin center or, alternatively, use the following Gateway PowerShell script to find and bulk-delete any data sources that exceed the limit.
+          If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit. To resolve any related issues, you can manually [remove the data sources](/power-bi/connect-data/service-gateway-data-sources#remove-a-data-source) from the admin center or, alternatively:
+          * Use the following PowerShell script to find your personal gateway that exceeds the limit and bulk-delete all data sources using it.
 
           ```PowerShell
           ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps
@@ -195,7 +196,28 @@ sections:
           }
           ``` 
 
-          How do I avoid reaching this limit? If you're an ISV or any other Power BI Embedded app owner with many customers, use [service principal profiles](/power-bi/developer/embedded/embed-multi-tenancy) for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
+          * Use the following PowerShell script to bulk-delete all data sources using a specific enterprise gateway:
+          
+          ```PowerShell
+          ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps
+          ## PowerShell version of '7.0.0' to run
+          ## required module "DataGateway" Install-Module -Name DataGateway and sign in the same user who exceeded the 1000 limit
+          Connect-DataGatewayServiceAccount
+           
+          ## get the gateway information per the sign in person
+          $datasources = Get-DataGatewayClusterDatasource -GatewayClusterId <GatewayClusterId>;
+          foreach ($datasource in $datasources)
+          {
+            $datasource
+            "datasource id={2}, datasourceType={3}, datasource connection details={4}" -f $datasource.Id, $datasource.DatasourceType, $datasource.ConnectionDetails
+           
+            ## conditional logic to determine if name matches set
+            ## Remove-DataGatewayClusterDatasource -GatewayClusterId $gw.Id -GatewayClusterDatasourceId $datasource.Id
+          }
+          ```
+          
+          **How do I avoid reaching this limit?**
+          If you're an ISV or any other Power BI embedded app owner with many customers, use [service principal profiles](/power-bi/developer/embedded/embed-multi-tenancy) for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
 
   - name: Administration
     questions:
