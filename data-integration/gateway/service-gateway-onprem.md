@@ -21,7 +21,7 @@ By using a gateway, organizations can keep databases and other data sources on t
 
 :::image type="content" source="media/service-gateway-getting-started/on-premises-data-gateway.png" alt-text="Gateway overview.":::
 
-The on-premises data gateway initiates outbound connections to the cloud, but requires no inbound connections. All communication from the cloud is recieved in responses to polling over the outbound connections. For detailed information on how the gateway works, see [On-premises data gateway architecture](service-gateway-onprem-indepth.md) and [Adjust communication settings for the on-premises data gateway](service-gateway-communication.md).
+The on-premises data gateway initiates outbound connections to the cloud, but requires no inbound connections. All communication from the cloud is received in responses to polling over the outbound connections. For detailed information on how the gateway works, see [On-premises data gateway architecture](service-gateway-onprem-indepth.md) and [Adjust communication settings for the on-premises data gateway](service-gateway-communication.md).
 
 ## Types of gateways
 
