@@ -59,6 +59,7 @@ This subnet should have connectivity to the data service.
     > * Don't use the subnet names "gatewaysubnet" or "AzureBastionSubnet" as these are reserved words for other features. You won't be able to use it to create a VNet data gateway in Step 3.
     > * Make sure this subnet doesn't have an IPV6 address space added.
     > * Make sure the subnet's IP range doesn't overlap with 10.0.1.x.
+    > * If you are dealing with large datasets, you will need to ensure that the `Microsoft.Storage` Service Endpoint is added to this subnet.
 
 1. Select **Microsoft.PowerPlatform/vnetaccesslinks** from the subnet delegation drop-down list.
 
