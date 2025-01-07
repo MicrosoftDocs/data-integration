@@ -81,6 +81,6 @@ If the proxy definition is either missing or inconsistent, you can experience di
 
 ## Next steps
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5cv1m]
+> [!VIDEO c26cff6d-e945-4af5-84cc-a671098a08b6]
 
 * [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)
