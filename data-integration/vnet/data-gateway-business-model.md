@@ -20,11 +20,11 @@ The virtual network data gateway consumes the capacity of a Power BI Premium or 
 
 Your bill is automatically charged to the capacity linked to your virtual network data gateway. When you signed up for your capacity, you paid for some capacity unit hours. When you use your virtual network, this prepaid amount is consumed. This side of the metrics can only be seen from the consumption metrics app.
 
-- Consumption Unit (CU) consumption rate per gateway member: 4 CUs per hour
+- Consumption Unit (CU) consumption rate per gateway member: 4 CUs
 - Number of [gateway members](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check this number in the advanced settings of your virtual network data gateway.
 - To reduce costs, you can actively manage the time to live on your virtual network data gateway in settings. Learn more [here](manage-data-gateways.md#manage-settings).
 
-_Capacity consumption = (CU Consumption rate) * (Uptime in hours) * (Number of gateway members)_
+_Capacity consumption in CU seconds = (CU Consumption rate) * (Uptime in seconds) * (Number of gateway members)_
 
 >[!NOTE]
 >The CU consumption rate is fixed at 4CUs per gateway member. The billing model bills per minute and does not round up. This means that if you use the gateway for a short duration, you are only charged for what you use.
