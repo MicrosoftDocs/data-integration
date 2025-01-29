@@ -217,7 +217,7 @@ sections:
           ```
           
           **How do I avoid reaching this limit?**
-          If you're an ISV or any other Power BI embedded app owner with many customers, use [service principal profiles](/power-bi/developer/embedded/embed-multi-tenancy) for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
+          If you're an ISV or any other Power BI embedded app owner with many customers, use [service principal profiles](/power-bi/developer/embedded/embed-multi-tenancy) for multi-tenancy apps in Power BI embedded to avoid this limit for gateways (personal mode only). If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
 
   - name: Administration
     questions:
