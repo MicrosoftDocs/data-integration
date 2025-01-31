@@ -42,7 +42,7 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 
 | Public Cloud Domain names | Outbound ports | Description |
 | --- | --- | --- |
-| \*.download.microsoft.com |80 |Used to download the installer. The gateway app also uses this domain to check the version and gateway region. |
+| \*.download.microsoft.com |443 |Used to download the installer. The gateway app also uses this domain to check the version and gateway region. |
 | \*.powerbi.com |443 |Used to identify the relevant Power BI cluster. |
 | \*.analysis.windows.net |443 |Used to identify the relevant Power BI cluster. |
 | \*.login.windows.net, login.live.com, aadcdn.msauth.net, login.microsoftonline.com, *.microsoftonline-p.com |443 |Used to authenticate the gateway app for Microsoft Entra ID and OAuth2. Note that additional URLs could be required as part of the Microsoft Entra ID sign in process that can be unique to a tenant. |
@@ -57,7 +57,7 @@ For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 
 | Ports | GCC | GCC High | DoD |
 | --- | --- | --- | --- |
-| 80 | \*.download.microsoft.com |\*.download.microsoft.com |\*.download.microsoft.com |
+| 443 | \*.download.microsoft.com |\*.download.microsoft.com |\*.download.microsoft.com |
 | 443 | \*.powerbigov.us, \*.powerbi.com  |\*.high.powerbigov.us |\*.mil.powerbigov.us|
 | 443 | \*.analysis.usgovcloudapi.net |\*.high.analysis.usgovcloudapi.net |\*.mil.analysis.usgovcloudapi.net |
 | 443 | \*.login.windows.net, \*.login.live.com, \*.aadcdn.msauth.net |[Go go documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online)|[Go to documentation](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?preserve-view=true&view=o365-worldwide#microsoft-365-common-and-office-online) |
@@ -74,7 +74,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 
 | Ports | China Cloud (Mooncake) |
 | --- | --- |
-| 80 | \*.download.microsoft.com |
+| 443 | \*.download.microsoft.com |
 | 443 | \*.powerbi.cn |
 | 443 | \*.asazure.chinacloudapi.cn |
 | 443 | \*.login.chinacloudapi.cn |
