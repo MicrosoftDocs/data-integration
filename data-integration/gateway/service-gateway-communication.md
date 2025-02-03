@@ -92,7 +92,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 
 ## Required ports for executing Fabric workloads
 
-When a Fabric workload (for example, Semantic models, Fabric Dataflows, etc.) includes a query that connects to both on-premises data sources (via an on-premises data gateway) and cloud data sources, the entire query is executed on the on-premises data gateway. Therefore, for Fabric workload execution, it is required that the following endpoints must be open so the on-premises data gateway has line-of-sight access to the workload required data sources:
+When a Fabric workload (for example, Semantic models or Fabric Dataflows) includes a query that connects to both on-premises data sources (via an on-premises data gateway) and cloud data sources, the entire query is executed on the on-premises data gateway. Therefore, to run a Fabric workload item, the following endpoints must be open so the on-premises data gateway has line-of-sight access to the workload required data sources:
 
 | Public cloud domain names | Outbound ports | Description |
 | --- | --- | --- |
@@ -105,7 +105,7 @@ When a Fabric workload (for example, Semantic models, Fabric Dataflows, etc.) in
 > [!NOTE]
 > \*.datawarehouse.pbidedicated.windows.net is being replaced by \*.datawarehouse.fabric.microsoft.com. During this transition process, make sure to have both endpoints open to ensure Dataflow Gen2 refresh.
 
-Additionally, for proper Fabric workload execution, when any other cloud data connections (both data sources and output destinations) are used with an on-premises data source connection in a workload query, you must also open the necessary endpoints to ensure that the on-premises data gateway has line-of-sight access to those cloud data sources.
+Additionally, when any other cloud data connections (both data sources and output destinations) are used with an on-premises data source connection in a workload query, you must also open the necessary endpoints to ensure that the on-premises data gateway has line-of-sight access to those cloud data sources.
 
 ## Network ports test
 
