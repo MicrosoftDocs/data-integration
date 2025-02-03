@@ -17,11 +17,11 @@ If you registered for either a Power BI tenant or an Office 365 tenant, your Azu
 
 If a firewall blocks outbound connections, configure the firewall to allow outbound connections from the gateway to its associated Azure region. The firewall rules on the gateway server and/or customer's proxy servers need to be updated to allow outbound traffic from the gateway server to the below endpoints. If your firewall does not support wildcards, then use the IP addresses from [Azure IP Ranges and Service Tags](https://www.microsoft.com/en-us/download/details.aspx?id=56519). Note that they will need to be kept in sync each month.
 
-## Ports
+## Required Ports for the gateway to function
 
 The gateway communicates on the following outbound ports: TCP 443, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports.
 
-We recommend that you allow the "\*.servicebus.windows.net" Domain Name System (DNS). For guidance on how to set up your on-premises firewall and/or proxy using fully qualified domain names (FQDNs) instead of using IP addresses that are subject to change, follow the steps in [Azure WCF Relay DNS Support](https://techcommunity.microsoft.com/t5/messaging-on-azure/azure-wcf-relay-dns-support/ba-p/370775).
+For guidance on how to set up your on-premises firewall and/or proxy using fully qualified domain names (FQDNs) instead of using IP addresses that are subject to change, follow the steps in [Azure WCF Relay DNS Support](https://techcommunity.microsoft.com/t5/messaging-on-azure/azure-wcf-relay-dns-support/ba-p/370775).
 
 Alternatively, you allow the IP addresses for your data region in your firewall. Use the JSON files listed below, which are updated weekly.
 
@@ -37,7 +37,6 @@ The gateway communicates with Azure Relay by using FQDNs. If you force the gatew
 > [!NOTE]
 > The Azure datacenter IP list shows IP addresses in Classless Inter-Domain Routing (CIDR) notation. An example of this notation is 10.0.0.0/24, which doesn't mean from 10.0.0.0 through 10.0.0.24. Learn more about [CIDR notation](https://whatismyipaddress.com/cidr).
 
-
 The following list describes FQDNs used by the gateway. These endpoints are required for the gateway to function.
 
 | Public Cloud Domain names | Outbound ports | Description |
@@ -50,7 +49,6 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 | \*.servicebus.windows.net |443 and 9350-9354 |Listens on Azure Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
 | \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
-| \*.frontend.clouddatahub.net |443 |Required for Fabric Pipeline execution. |
 
 
 For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
@@ -92,21 +90,22 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Azure Relay, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-relay).
 
-## Opening ports for Fabric Dataflow Gen1 and Gen2 using the gateway
+## Required ports for executing Fabric workloads
 
-When any mashup-based workload (for example, Semantic models, Fabric dataflows, and so on) contains a query that connects to both on-premises data sources (using an on-premises data gateway) and cloud data sources, the entire query is executed on the mashup engine of the on-premises data gateway. Therefore, endpoints must be open to allow the on-premises data gateway in all mashup-based workloads to have line-of-sight access to the cloud data sources for both data source and output destination. 
-
-Specially for Fabric Dataflow Gen1 and Gen2, the following endpoints must also be open to allow the on-premises data gateway access to Azure Data Lake and the Fabric staging lakehouse cloud data sources.
+When a Fabric workload (for example, Semantic models Fabric Dataflows, etc.) includes a query that connects to both on-premises data sources (via an on-premises data gateway) and cloud data sources, the entire query is executed on the on-premises data gateway. Therefore, for Fabric workload execution, it is required that the following endpoints must be open so the on-premises data gateway has line-of-sight access to the workload required data sources:
 
 | Public cloud domain names | Outbound ports | Description |
 | --- | --- | --- |
 | \*.core.windows.net |443 |Used by Dataflow Gen1 to write data to Azure Data Lake.|
 | \*.dfs.fabric.microsoft.com  |1433 |Endpoint used by Dataflow Gen1 and Gen2 to connect to OneLake. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
-| \*.datawarehouse.pbidedicated.windows.net |1433 |Old endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
-| \*.datawarehouse.fabric.microsoft.com |1433 |New endpoint used by Dataflow Gen2 to connect to the staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+| \*.datawarehouse.pbidedicated.windows.net |1433 |Old endpoint used by Dataflow Gen2 to connect to the Fabric staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+| \*.datawarehouse.fabric.microsoft.com |1433 |New endpoint used by Dataflow Gen2 to connect to the Fabric staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+| \*.frontend.clouddatahub.net |443 |Required for Fabric Pipeline execution|
 
 > [!NOTE]
 > \*.datawarehouse.pbidedicated.windows.net is being replaced by \*.datawarehouse.fabric.microsoft.com. During this transition process, make sure to have both endpoints open to ensure Dataflow Gen2 refresh.
+
+Additionally, for proper Fabric workload execution, when any other cloud data connections (both data sources and output destinations) are used with an on-premises data source connection in a workload query, you must also open the necessary endpoints to ensure that the on-premises data gateway has line-of-sight access to those cloud data sources.
 
 ## Network ports test
 
