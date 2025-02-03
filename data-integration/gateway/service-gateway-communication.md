@@ -92,7 +92,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 
 ## Required ports for executing Fabric workloads
 
-When a Fabric workload (for example, Semantic models Fabric Dataflows, etc.) includes a query that connects to both on-premises data sources (via an on-premises data gateway) and cloud data sources, the entire query is executed on the on-premises data gateway. Therefore, for Fabric workload execution, it is required that the following endpoints must be open so the on-premises data gateway has line-of-sight access to the workload required data sources:
+When a Fabric workload (for example, Semantic models, Fabric Dataflows, etc.) includes a query that connects to both on-premises data sources (via an on-premises data gateway) and cloud data sources, the entire query is executed on the on-premises data gateway. Therefore, for Fabric workload execution, it is required that the following endpoints must be open so the on-premises data gateway has line-of-sight access to the workload required data sources:
 
 | Public cloud domain names | Outbound ports | Description |
 | --- | --- | --- |
