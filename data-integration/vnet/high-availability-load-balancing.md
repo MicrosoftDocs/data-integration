@@ -35,3 +35,10 @@ The virtual network data gateway cluster auto-pauses after a certain time of ina
 At any point in time, you can change the number of gateways you have in the cluster. You can also change the time interval of inactivity before auto pause. To edit these settings, select a virtual network data gateway, and then select **Settings** on the top. You can now change the advanced options on the **Settings** panel.
 
 :::image type="content" source="media/high-availability-load-balancing/change-vnet-settings.png" alt-text="Screenshot with a VNet data gateway selected, the setting selection emphasized, and the Settings panel open." lightbox="media/high-availability-load-balancing/change-vnet-settings.png":::
+
+## Virtual Network Data Gateway Performance and Workload Capacity
+
+Gateway supports multiple workloads, allowing for efficient parallel execution. Each Virtual Network Data Gateway instance is designed to handle concurrent jobs across different workloads:
+
+- Up to 6 refresh queries can run simultaneously, enabling efficient data updates for scheduled refresh operations.
+- Up to 15 direct queries can execute concurrently, supporting interactive reporting and real-time data retrieval.
