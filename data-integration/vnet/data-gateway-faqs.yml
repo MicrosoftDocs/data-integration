@@ -3,7 +3,7 @@ metadata:
   title: Virtual network (virtual network) data gateway FAQs
   description: Frequently asked questions about virtual network (virtual network) data gateway.
   ms.topic: faq
-  ms.date: 05/06/2024
+  ms.date: 03/11/2025
 
 title: Virtual network (virtual network) data gateway FAQs
 summary: |
@@ -132,7 +132,7 @@ sections:
       - question: |
           Is this feature supported in sovereign clouds?
         answer: |
-          No, only commercial clouds are supported for the public preview release.
+          Yes, it is supported in sovereign cloud.
 
       - question: |
           Do I need to manage any hardware to use the VNET Data Gateway? 
@@ -179,7 +179,6 @@ sections:
       - question: |
           Any other known issues?
         answer: |
-          * The virtual network's subnet's IP range can't overlap with 10.0.1.x.
           * You can't delegate a subnet called `gatewaysubnet` to the Power Platform admin center. This restriction is because it's a reserved word for the Azure Gateway Subnet feature.
           * You can't change the region, subscription, or resource group for the virtual network on which the virtual network data gateway was created. This scenario isn't currently supported.
           * If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired.
