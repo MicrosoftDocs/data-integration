@@ -97,7 +97,7 @@ When a Fabric workload (for example, Semantic models or Fabric Dataflows) includ
 | Public cloud domain names | Outbound ports | Description |
 | --- | --- | --- |
 | \*.core.windows.net |443 |Used by Dataflow Gen1 to write data to Azure Data Lake.|
-| \*.dfs.fabric.microsoft.com  |433 |Endpoint used by Dataflow Gen1 and Gen2 to connect to OneLake. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
+| \*.dfs.fabric.microsoft.com  |443 |Endpoint used by Dataflow Gen1 and Gen2 to connect to OneLake. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 | \*.datawarehouse.pbidedicated.windows.net |1433 |Old endpoint used by Dataflow Gen2 to connect to the Fabric staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 | \*.datawarehouse.fabric.microsoft.com |1433 |New endpoint used by Dataflow Gen2 to connect to the Fabric staging lakehouse. [Learn more](/fabric/data-factory/gateway-considerations-output-destinations#solution-set-new-firewall-rules-on-server-running-the-gateway)|
 | \*.frontend.clouddatahub.net |443 |Required for Fabric Pipeline execution|
