@@ -19,7 +19,7 @@ To use a Pipeline Copy activity with Virtual Network Data Gateway
 
 3. Select **Data pipeline** from the pop-up window.
 
-   :::image type="content" source="media/select-new-pipeline1.png" alt-text="Screenshot of the Data Factory page with Pipeline emphasized." lightbox="media/select-new-pipeline1.png":::
+   :::image type="content" source="media/create-new-pipeline.png" alt-text="Screenshot of the Data Factory page with Pipeline emphasized." lightbox="media/create-new-pipeline.png":::
 
 4. Create a new pipeline. In the pipeline page, select **Copy data assistant**.
 
