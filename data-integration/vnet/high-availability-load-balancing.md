@@ -42,3 +42,5 @@ Gateway supports multiple workloads, allowing for efficient parallel execution. 
 
 - Up to 6 refresh queries can run simultaneously, enabling efficient data updates for scheduled refresh operations.
 - Up to 15 direct queries can execute concurrently, supporting interactive reporting and real-time data retrieval.
+- 1 Fabric Pipeline Copy activity job. Generally, a Copy activity will only generate one Copy activity job. However, in some cases, multiple jobs may be generated.
+- 1 Fabric Copy job. If the data source has multiple tables, the copy job will be divided into multiple sub-jobs. A gateway instance can only run one sub-job at a time.

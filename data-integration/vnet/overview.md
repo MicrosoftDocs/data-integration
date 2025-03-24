@@ -24,7 +24,10 @@ The virtual network data gateway:
 
 ## Limitations
 
-- Currently, this feature is available only for Fabric Dataflow Gen2, Power BI semantic models, Power Platform dataflows, and Power BI paginated reports. Power BI dataflows and datamarts aren't supported.
+- Currently, this feature is available only for Fabric Dataflow Gen2, Fabric Pipeline, Fabric Copy Job, Power BI semantic models, Power Platform dataflows, and Power BI paginated reports. Power BI dataflows and datamarts aren't supported.
+
+> [!NOTE]
+> The VNet data gateway support for Fabric Pipeline and Copy Job is now in public preview. In Fabric Pipeline, it currently supports Copy, Lookup, and GetMetadata activities.
 
 - VNet data gateway is currently available for P, F, and A4 or higher (A4, A5, A6, and A7) SKUs. For F SKUs, we recommend that you use F8 and above but all F SKUs work.
 
