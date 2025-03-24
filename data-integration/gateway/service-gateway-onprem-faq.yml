@@ -169,7 +169,7 @@ sections:
       - question: |
           What do I need to do if I reach the maximum limit of 1,000 data sources on a gateway cluster, and how do I avoid reaching this limit?
         answer: |
-          Users are limited to 1,000 data sources on each personal or enterprise gateway cluster.
+          There exists a limit of 1,000 data sources on each personal or enterprise gateway cluster.
 
           If you reach the maximum number of data sources limit, verify that the number of data sources on that gateway cluster isn't over the limit. To resolve any related issues, you can manually [remove the data sources](/power-bi/connect-data/service-gateway-data-sources#remove-a-data-source) from the admin center or, alternatively:
           * Use the following PowerShell script to find your personal gateway that exceeds the limit and bulk-delete all data sources using it.
