@@ -88,6 +88,9 @@ If the current service account that is being used by the on-premises data gatewa
 
 To address this behavior, add the on-premises data gateway service account to the local security group [Performance Log Users](/windows-server/identity/ad-ds/manage/understand-security-groups#performance-log-users), and restart the on-premises data gateway service.
 
+### Bring your own Azure Relay
+Gateways experiencing connectivity issues while using Bring Your Own Relay should ensure that Private Link is not enabled on the Relay, as this configuration is not supported.
+
 ### Connectivity errors
 
 When a gateway is facing connectivity issues, you might observe different symptoms. Here are a few of the common symptoms.
