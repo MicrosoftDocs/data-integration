@@ -165,7 +165,12 @@ sections:
           You can enable query tracing by turning on [additional logging](service-gateway-performance.md#slow-performing-queries). The logs include the queries that are sent. Remember to turn off query tracing when you're done troubleshooting. Having query tracing enabled causes the logs to be larger.
           
           You can also look at your data source's tools for tracing queries. For example, if SQL Server and SQL Server Analysis Services are data sources, you can use SQL Server Extended Events or SQL Server Profiler to trace queries.
-
+      
+      - question: |
+          What is the maximum number of gateway members allowed in a gateway cluster? 
+        answer: |
+          Each gateway cluster supports up to a maximum of **ten** gateway members (sometimes called nodes). Gateway clusters currently running more than 10 members will continue to operate but not allow new additions unless a member is deleted first. 
+      
       - question: |
           What do I need to do if I reach the maximum limit of 1,000 data sources on a gateway cluster, and how do I avoid reaching this limit?
         answer: |
