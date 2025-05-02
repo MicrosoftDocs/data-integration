@@ -169,7 +169,7 @@ sections:
       - question: |
           What is the maximum number of gateway members allowed in a gateway cluster? 
         answer: |
-          Each gateway cluster supports up to a maximum of **ten** gateway members (sometimes called nodes). Gateway clusters currently running more than 10 members will continue to operate but not allow new additions unless a member is deleted first. 
+          Each gateway cluster supports up to a maximum of **10** gateway members (sometimes called nodes). Gateway clusters currently running more than 10 members will continue to operate but not allow new additions unless a member is deleted first. 
       
       - question: |
           What do I need to do if I reach the maximum limit of 1,000 data sources on a gateway cluster, and how do I avoid reaching this limit?
