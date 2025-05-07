@@ -8,7 +8,7 @@ ms.date: 05/06/2024
 # What is a virtual network (VNet) data gateway?
 
 The virtual network data gateway lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform to securely communicate with the data source, execute queries, and transmit results back to the service. 
-- You can run Dataflow Gen2, Power BI Semantic Models, Power Platform Dataflows, and Power BI Paginated Reports on top of a virtual network data gateway.
+- You can run Fabric Dataflow Gen2, Fabric Pipeline, Fabric Copy Job, Fabric Mirroring, Power BI Semantic Models, and Power BI Paginated Reports on top of a virtual network data gateway.
 
 ## Why use the VNet data gateway?
 
@@ -24,7 +24,7 @@ The virtual network data gateway:
 
 ## Limitations
 
-- Currently, this feature is available only for Fabric Dataflow Gen2, Fabric Pipeline, Fabric Copy Job, Fabric Mirroring, Power BI semantic models, Power Platform dataflows, and Power BI paginated reports. Power BI dataflows and datamarts aren't supported.
+- Currently, this feature is available only for Fabric Dataflow Gen2, Fabric Pipeline, Fabric Copy Job, Fabric Mirroring, Power BI semantic models, and Power BI paginated reports. Power BI dataflows and datamarts aren't supported.
 
 > [!NOTE]
 > The VNet data gateway support for Fabric Pipeline, Copy Job and Mirroring is now in public preview. In Fabric Pipeline, it currently supports Copy, Lookup, and GetMetadata activities.
