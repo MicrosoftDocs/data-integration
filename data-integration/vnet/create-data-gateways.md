@@ -10,7 +10,7 @@ ms.custom: references_regions
 
 Details to consider when creating a virtual network data gateway:
 - Virtual network data gateways require a Power BI Premium capacity license (A4 SKU or higher or any P SKU) or a Fabric license (any SKU).
-- Before creating a virtual network data gateway, check that the feature is [supported in your region](#regions-supported-for-vnet-data-gateways).
+- Before creating a virtual network data gateway, check that the feature is [supported in your region](#regions-supported-for-virtual-network-data-gateways).
 - The creation of virtual network data gateways across tenant boundaries isn't supported.
 - The metadata (name, details, data sources, encrypted credentials, and so on) for all your virtual network data gateways are stored in your Power BI home’s default region. However, the virtual network data gateway runs in the same region as your Azure virtual network. Sometimes, there's a difference between the default environment of Power Platform and the default region of Power BI. This might impact the regions you pick.
 
@@ -21,7 +21,7 @@ Creating a virtual network (VNet) data gateway is a three-step process:
 
 > [Step 2: Associate the subnet to Microsoft Power Platform](#step-2-associate-the-subnet-to-microsoft-power-platform)
 
-> [Step 3: Create a VNet data gateway](#step-3-create-a-vnet-data-gateway)
+> [Step 3: Create a VNet data gateway](#step-3-create-a-virtual-network-data-gateway)
 
 
 ## Step 1: Register Microsoft.PowerPlatform as a resource provider
