@@ -118,6 +118,7 @@ Your Azure VNet region needs to be in one of the following regions for you to be
 * Southeast Asia
 * Sweden Central
 * Switzerland North
+* Taiwan North
 * UAE North
 * UK South
 * UK West
