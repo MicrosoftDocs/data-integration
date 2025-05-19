@@ -2,7 +2,7 @@
 title: Adjust communication settings for the on-premises data gateway
 description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Relay, how to force the gateway to communicate with Azure Relay by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
 ms.topic: conceptual
-ms.date: 10/15/2024
+ms.date: 05/19/2025
 ---
 
 # Adjust communication settings for the on-premises data gateway
@@ -49,6 +49,7 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 | \*.servicebus.windows.net |443 and 9350-9354 |Listens on Azure Relay over TCP. Port 443 is required to get Azure Access Control tokens. |
 | \*.msftncsi.com |80 |Used to test internet connectivity if the Power BI service can't reach the gateway. |
 | \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
+| ecs.office.com | 443 | Used for ECS configuration to enable Mashup features. |
 
 
 For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
@@ -66,6 +67,7 @@ For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
 |443| \*.msftncsi.com |\*.msftncsi.com |\*.msftncsi.com |
 |443| \*.microsoftonline-p.com |\*.microsoftonline-p.com |\*.microsoftonline-p.com |
 |443| \*.dc.applicationinsights.us |\*.dc.applicationinsights.us |\*.dc.applicationinsights.us |
+|443| gccmod.ecs.office.com | config.ecs.gov.teams.microsoft.us | config.ecs.dod.teams.microsoft.us |
 
 
 For China Cloud (Mooncake), the following FQDNs are used by the gateway.
@@ -86,6 +88,7 @@ For China Cloud (Mooncake), the following FQDNs are used by the gateway.
 |443| clientconfig.passport.net |
 |443| aadcdn.msftauth.cn |
 |443| aadcdn.msauth.cn |
+|443| mooncake.ecs.office.com | 
 
 > [!NOTE]
 > After the gateway is installed and registered, the only required ports and IP addresses are those needed by Azure Relay, as described for servicebus.windows.net in the preceding table. You can get the list of required ports by performing the [Network ports test](#network-ports-test) periodically in the gateway app. You can also force the gateway to [communicate using HTTPS](#force-https-communication-with-azure-relay).
