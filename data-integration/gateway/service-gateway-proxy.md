@@ -26,9 +26,13 @@ The third configuration file needs to be edited for the gateway to connect to cl
 
 On the on-premises data gateway (personal mode), the corresponding file is _%LocalAppData%\Microsoft\On-premises data gateway (personal mode)\m\Microsoft.Mashup.Container.NetFX45.exe.config_.
 
-The fourth configuration file needs to be edited for the gateway to connect to Fabric Pipelines services through a proxy.
+The fourth configuration file needs to be edited for the gateway to connect to Fabric Pipelines services through a proxy. Since the February 2025 version (3000.258), the configuration file has been renamed to:
 
-* _C:\Program Files\On-premises data gateway\FabricIntegrationRuntime\5.0\Shared\Fabricworker.exe.config_
+* _C:\Program Files\On-premises data gateway\FabricIntegrationRuntime\5.0\Shared\FabricPipelineworker.exe.config_. 
+
+If you are using an earlier version, the configuration file is:
+
+* _C:\Program Files\On-premises data gateway\FabricIntegrationRuntime\5.0\Shared\Fabricworker.exe.config_.
 
 The following section describes how to edit these files.
 
