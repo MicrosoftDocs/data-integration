@@ -57,6 +57,9 @@ In this article, we show you how to install a standard gateway, how to add anoth
 
    To disable private link, go to the powerbi.com page, and select **Settings** > **Admin portal**. Look for the **Advanced networking** section at the bottom of the page, and disable the **Azure Private Link** property. After the gateway is configured, you can enable the **Azure Private Link** property.  
 
+> [!NOTE]
+> If your home tenant is located in a region that Microsoft Fabric doesn’t currently support—such as West India—and you need to use Fabric workloads like Pipeline or Copy Job, please note that the on-premises data gateway is not supported in this scenario. We recommend using the VNET Data Gateway as an alternative.
+
 ## Download and install a standard gateway
 
 Because the gateway runs on the computer that you install it on, be sure to install it on a computer that's always turned on. For better performance and reliability, we recommend that the computer is on a wired network rather than a wireless one.
