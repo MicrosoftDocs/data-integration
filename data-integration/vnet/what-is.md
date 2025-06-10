@@ -2,7 +2,7 @@
 title: Overview of virtual network (VNet), private links, and Power BI
 description: Learn about the virtual network (VNet), private links, and Power BI.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/10/2025
 ms.custom: intro-internal
 ---
 
@@ -21,6 +21,6 @@ The scope of this document is restricted to only *Secure Outbound connectivity f
 
 The Azure resources associated with a VNet could include Azure data services like Azure SQL, Synapse Analytics, Azure Data Explorer, and others. A list of supported data services is available at [Supported Azure data services](use-data-gateways-sources-power-bi.md#supported-azure-data-services).
 
-Before the advent of the VNet gateway, to be able to connect from Power BI to Azure data services within your VNet, you had to install the on-premises data gateway on a virtual machine inside the VNet. This is still an option. The on-premises data gateway enables secure connectivity to these data sources associated with the VNet and manages query execution from one or more of such data sources.
+Before the advent of the VNet gateway, to be able to connect from Power BI to Azure data services within your VNet, you had to install the on-premises data gateway on a virtual machine inside the VNet. This option is still available. The on-premises data gateway enables secure connectivity to these data sources associated with the VNet and manages query execution from one or more of such data sources.
 
-However, an on-premises data gateway brings its own overhead, like monthly updates and monitoring. The VNet gateway will eliminate this overhead and enable secure connectivity to data sources associated with your VNet.
+However, an on-premises data gateway brings its own overhead, like monthly updates and monitoring. The VNet gateway eliminates this overhead and enables secure connectivity to data sources associated with your VNet.
