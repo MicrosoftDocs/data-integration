@@ -2,7 +2,7 @@
 title: On-premises data gateway architecture
 description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Microsoft Entra ID and your on-premises Active Directory.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/10/2025
 ms.custom: intro-internal
 ---
 
@@ -18,7 +18,7 @@ This article doesn't provide step-by-step guidance on how to install and configu
 
 ## How the gateway works
 
-:::image type="content" source="./media/service-gateway-onprem-indepth/on-prem-data-gateway-how-it-works.png" alt-text="Relationship among cloud services, gateway, and data sources.":::
+:::image type="content" source="./media/service-gateway-onprem-indepth/on-prem-data-gateway-how-it-works.png" alt-text="Diagram illustrating the relationship among cloud services, gateway, and data sources.":::
 
 Let's first look at what happens when you interact with an element that is connected to an on-premises data source.
 
@@ -27,7 +27,7 @@ Let's first look at what happens when you interact with an element that is conne
 
 1. The cloud service creates a query and the encrypted credentials for the on-premises data source. The query and credentials are sent to the gateway queue for processing when the gateway polls the service periodically. For more information about credential encryption in Power BI, go to [Power BI security whitepaper](/power-bi/guidance/whitepaper-powerbi-security).
 1. The gateway cloud service analyzes the query and pushes the request to [Azure Relay](/azure/azure-relay/relay-what-is-it).
-1. Azure Relay sends the pending requests to the gateway when it polls periodically. Both the gateway and Power BI service are implemented to only accept TLS 1.2 traffic. 
+1. Azure Relay sends the pending requests to the gateway when it polls periodically. Both the gateway and Power BI service are implemented to only accept Transport Layer Security (TLS) 1.2 traffic.
 1. The gateway gets the query, decrypts the credentials, and connects to one or more data sources with those credentials.
 1. The gateway sends the query to the data source to be run.
 1. The results are sent from the data source back to the gateway and then to the cloud service. The service then uses the results.
@@ -40,7 +40,7 @@ A stored credential is used to connect from the gateway to on-premises data sour
 
 ## Sign-in account
 
-You sign in with either a work account or a school account. This account is your organization account. If you signed up for an Office 365 offering and didn't supply your actual work email address, your account name might look like nancy@contoso.onmicrosoft.com. A cloud service stores your account within a tenant in Microsoft Entra ID. In most cases, the User Principal Name (UPN) of your Microsoft Entra ID account matches your email address.
+You sign in with either a work account or a school account. This account is your organization account. If you signed up for an Office 365 offering and didn't supply your actual work email address, your account name might look like `nancy@contoso.onmicrosoft.com`. A cloud service stores your account within a tenant in Microsoft Entra ID. In most cases, the User Principal Name (UPN) of your Microsoft Entra ID account matches your email address.
 
 ## Network traffic security
 
@@ -58,7 +58,7 @@ Although the result looks like an email address, it's the UPN on your local doma
 
 ### Synchronize an on-premises Active Directory with Microsoft Entra ID
 
-You want each of your on-premises Active Directory accounts to match an Microsoft Entra ID account, because the UPN for both accounts must be the same.
+You want each of your on-premises Active Directory accounts to match a Microsoft Entra ID account, because the UPN for both accounts must be the same.
 
 The cloud services know only about accounts within Microsoft Entra ID. It doesn't matter if you add an account in your on-premises Active Directory. If the account doesn't exist in Microsoft Entra ID, it can't be used.
 
@@ -77,7 +77,7 @@ There are different ways to match your on-premises Active Directory accounts wit
 > [!NOTE]
 > Synchronizing accounts with the Microsoft Entra ID Connect tool creates new accounts within your Microsoft Entra ID tenant.
 
-## Next steps
+## Related content
 
 * [On-premises data gateway FAQ](service-gateway-onprem-faq.yml)  
 * [Azure Relay](/azure/azure-relay/relay-what-is-it)  
