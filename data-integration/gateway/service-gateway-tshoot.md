@@ -14,7 +14,7 @@ This article discusses some common issues when you use the on-premises data gate
 
 ## Update to the latest version
 
-It's a good general practice to make sure you're using a supported version. We release a new update of the on-premises data gateway every month. Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. If you're experiencing issues with the version you're using, try upgrading to the latest one as your issue might have been resolved in the latest version.
+It's a good general practice to make sure you're using a supported version. We release a new update of the on-premises data gateway every month. Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. If you're experiencing issues with the version you're using, try upgrading to the latest one as your issue might be resolved in the latest version.
 
 ### Inconsistent versions between gateway members in a cluster
 
@@ -56,7 +56,7 @@ There's an issue with the machine. Contact your internal IT team to remove the t
 
 ### Error generating an asymmetric key
 
-An antivirus such as McCafee can cause the corruption or deletion of files needed for the gateway to be able to complete the setup. Disable your antivirus temporarily or configure it to ignore the gateway process. Then delete the RSA folder from the path c:\Users\<GW Service Account User>\AppData\Roaming\Microsoft\Crypto\RSA. In some cases, depending on whether you are signing in as a user or service profile, the root path might be different. Finally, restart the machine and complete the gateway setup and sign-in.
+An antivirus such as McCafee can cause the corruption or deletion of files needed for the gateway to be able to complete the setup. Disable your antivirus temporarily or configure it to ignore the gateway process. Then delete the RSA folder from the path c:\Users\<GW Service Account User>\AppData\Roaming\Microsoft\Crypto\RSA. In some cases, depending on whether you're signing in as a user or service profile, the root path might be different. Finally, restart the machine and complete the gateway setup and sign-in.
 
 ## Troubleshoot configuration
 
@@ -112,12 +112,12 @@ You might come across one of the following data refresh errors if there's a conn
 
 You might come across one of the following errors when trying to sign in to the gateway configurator if there's a connectivity issue.
 
-:::image type="content" source="media/service-gateway-tshoot/network-unexpected-error.png" alt-text="Gateway configurator network unpexted error." lightbox="media/service-gateway-tshoot/network-unexpected-error.png":::
+:::image type="content" source="media/service-gateway-tshoot/network-unexpected-error.png" alt-text="Gateway configurator network unexpected error." lightbox="media/service-gateway-tshoot/network-unexpected-error.png":::
 
 Connectivity issues can have several different causes. Therefore, if you run into any of the previously mentioned symptoms, perform the following verifications:
 
 1. Are the FQDNs and ports mentioned in our [documentation](/data-integration/gateway/service-gateway-communication#ports) opened/allowed in your firewall and/or proxy?
-1. If you are using a proxy server in your environment:
+1. If you're using a proxy server in your environment:
 
    1. Make sure the proxy server is properly [configured in the gateway config files](/data-integration/gateway/service-gateway-proxy).
    1. Verify if the [proxy configuration is consistent](/data-integration/gateway/service-gateway-proxy-setup-guide#verify-consistent-proxy-configuration).
@@ -137,7 +137,7 @@ At the end of configuration, the Power BI service is called again to validate th
 
 #### Error: Information is needed in order to combine data
 
-You may experience a refresh failure in Power BI service with an error "Information is needed in order to combine data", even though refresh on Power BI Desktop works. This problem occurs when the refresh in Power BI Desktop works with the **File** > **Options and settings** > **Options** > **Privacy** > **Always ignore privacy level settings** option set, but throws a firewall error when other options are selected. If you attempt to preform this refresh in Power BI service, the refresh won't work because **Always ignore privacy level settings** isn't available in Power BI service. To resolve this error, try changing the privacy level in the Power BI desktop **Options** > **Global** > **Privacy** and **Options** > **Current File** > **Privacy** settings so that it doesn't ignore the privacy of data. Republish the file to Power BI service and update the credentials to "Organizational" in Power BI service.
+You might experience a refresh failure in Power BI service with an error "Information is needed in order to combine data," even though refresh on Power BI Desktop works. This problem occurs when the refresh in Power BI Desktop works with the **File** > **Options and settings** > **Options** > **Privacy** > **Always ignore privacy level settings** option set, but throws a firewall error when other options are selected. If you attempt to preform this refresh in Power BI service, the refresh doesn't work because **Always ignore privacy level settings** isn't available in Power BI service. To resolve this error, try changing the privacy level in the Power BI desktop **Options** > **Global** > **Privacy** and **Options** > **Current File** > **Privacy** settings so that it doesn't ignore the privacy of data. Republish the file to Power BI service and update the credentials to "Organizational" in Power BI service.
 
 #### Error: There are too many refreshes occurring concurrently
 
@@ -167,9 +167,9 @@ To find the event logs for the *on-premises data gateway service*, follow these 
 
 ## Troubleshoot refresh failures for a specific source
 
-Refreshes utilizing the gateway require that the source be accessible from the computer with the gateway installation.
+Refreshes utilizing the gateway require that the source is accessible from the computer with the gateway installation.
 To troubleshoot a data source issue, use Power BI Desktop locally on the gateway computer to test the connection.
-This test is especially helpful if the data source requires additional components to be installed on the computer, such as a third-party database driver. Also, a local test helps to test data source connections that require additional environment settings, such as access to a shared network drive file or folder.
+This test is especially helpful if the data source requires other components to be installed on the computer, such as a third-party database driver. Also, a local test helps to test data source connections that require extra environment settings, such as access to a shared network drive file or folder.
 This technique allows you to test iteratively, testing the connection on the gateway computer after each configuration change.
 
 Although it isn't a guarantee of a successful refresh through the gateway, a successful Power BI Desktop refresh from the gateway computer is a strong indicator that everything is configured correctly on the gateway computer.
@@ -178,7 +178,7 @@ After a successful refresh in Desktop, you can narrow your troubleshooting steps
 
 ## Limitations and considerations
 
-When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). If you get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials have been updated recently, you might be hitting this error. This limitation for long running refreshes exists for both VNET gateways and on-premises data gateways.
+When you use OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). If you get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials were updated recently, you might be hitting this error. This limitation for long running refreshes exists for both VNet gateways and on-premises data gateways.
 
 The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [gateway clusters](service-gateway-high-availability-clusters.md).
 

@@ -9,13 +9,13 @@ ms.date: 6/12/2025
 
 ## Gateway performance monitoring (public preview)
 
-To monitor performance, gateway admins have traditionally depended on manually monitoring performance counters through the Windows Performance Monitor tool. We now offer additional query logging and a [Gateway Performance PBI template file](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/OnPremisesDataGatewayLogs.pbit) to visualize the results. This feature provides new insights into gateway usage. You can use it to troubleshoot slow-performing queries.
+To monitor performance, gateway admins traditionally depended on manually monitoring performance counters through the Windows Performance Monitor tool. We now offer extra query logging and a [Gateway Performance PBI template file](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/OnPremisesDataGatewayLogs.pbit) to visualize the results. This feature provides new insights into gateway usage. You can use it to troubleshoot slow-performing queries.
 
 > [!NOTE]
 > This feature is currently available only for the on-premises data gateway in the standard mode. It's not available for the personal mode.
 
 > [!NOTE]
-> Gateway diagnostics doesn't capture diagnostics directly related to the (virtual) machine and its network, like bandwidth or latency. However, these diagnostics might impact your gateway performance. You can use resource monitoring tools to monitor your machine.
+> Gateway diagnostics doesn't capture diagnostics directly related to the (virtual) machine and its network, like bandwidth or latency. However, these diagnostics might affect your gateway performance. You can use resource monitoring tools to monitor your machine.
 
 :::image type="content" source="media/service-gateway-performance/gateway-PBI-template.png" lightbox="media/service-gateway-performance/gateway-PBI-template.png" alt-text="Screenshot of the Power BI Diagnostics report.":::
 
@@ -25,7 +25,7 @@ This feature is now turned on by default.
 
 > [!NOTE]
 >
-> * Currently, queries from premium capacity to the gateway are sometimes missed in this logging. We are actively working on fixing this issue.
+> * Currently, queries from premium capacity to the gateway are sometimes missed in this logging. We're actively working on fixing this issue.
 > * Currently, Power BI paginated report queries aren't logged using this tool.
 
 ### Configure performance logging
@@ -85,7 +85,7 @@ The Query Start Report contains the query and the query start time. The followin
 |**QueryExecutionStartTimeUTC** |Time when the query execution started. |
 |**QueryType** |Type of query. For instance, the query passed could be a Power BI refresh or DirectQuery. Or, it could be queries from Power Apps and Power Automate. |
 |**QueryText** |Complete query encoded with base64. |
-|**EvaluationContext**|Contains the artifactId (for example, datasetid for semantic models, dataflowsId, and so on) along with additional trace IDs depending on the artifact. This field only populates for supported workloads in Fabric, Power Platform, Azure Analysis Services, and certain connectors in Azure Logic Apps. These include Semantic Models, Dataflow Gen2, and Power Platform dataflows. It also includes Azure Logic Apps workloads for the Mashup Query, HTTP, and File Azure connectors. The value contains different trace IDs depending on the workload used. Power BI and Fabric Dataflow Gen1 and Power BI Paginated Reports isn't supported. |
+|**EvaluationContext**|Contains the `artifactId` (for example, `datasetid` for semantic models, `dataflowsId`, and so on) along with extra trace IDs depending on the artifact. This field only populates for supported workloads in Fabric, Power Platform, Azure Analysis Services, and certain connectors in Azure Logic Apps. These workloads include Semantic Models, Dataflow Gen2, and Power Platform dataflows. It also includes Azure Logic Apps workloads for the Mashup Query, HTTP, and File Azure connectors. The value contains different trace IDs depending on the workload used. Power BI and Fabric Dataflow Gen1 and Power BI Paginated Reports isn't supported. |
 
 The Query Execution Aggregation Report contains query information aggregated to a time interval by **GatewayObjectId**, **DataSource**, **Success**, and **QueryType**. The default value is 5 minutes, but you can adjust it. The following attributes are captured.
 
@@ -135,17 +135,17 @@ You also can customize this template file to suit your needs. For more informati
 
 ## Monitoring spool storage
 
-By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure there is adequate free disk space. For more information, go to [Gateway spooling data](service-gateway-configure-disk-space.md#gateway-spooling-data).
+By default, spool storage for the gateway is located at C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Spooler. Be sure to monitor this location to ensure there's adequate free disk space. For more information, go to [Gateway spooling data](service-gateway-configure-disk-space.md#gateway-spooling-data).
 
 ## Slow-performing queries
 
-Long-running queries might require additional modification on your data source or further optimization of the query itself. This could be either for Power BI refreshes or for direct database queries, like Power BI DirectQuery, Power Apps, or Azure Logic Apps.
+Long-running queries might require extra modification on your data source or further optimization of the query itself. This change could be either for Power BI refreshes or for direct database queries, like Power BI DirectQuery, Power Apps, or Azure Logic Apps.
 
-By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the performance monitoring feature, you can temporarily enable **Additional logging** to gather additional log information, including mashup engine logs, query strings, and verbose-level tracing. These logs are written to the same place as your normal gateway logs. To do this, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
+By default, the gateway performs basic logging. If you're investigating slow-performing queries, in addition to using the performance monitoring feature, you can temporarily enable **Additional logging** to gather more log information, including mashup engine logs, query strings, and verbose-level tracing. These logs are written to the same place as your normal gateway logs. To enable extra logging, in the [on-premises data gateway app](service-gateway-app.md) select **Diagnostics** > **Additional logging**.
 
 :::image type="content" source="media/service-gateway-performance/additional-logging.png" alt-text="Screenshot of the gateway app with emphasis on how to turn on additional logging.":::
 
-Enabling this setting likely increases the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable additional logging. We don't recommend leaving this setting enabled during normal gateway usage.
+Enabling this setting likely increases the log size significantly, based on gateway usage. We recommend that after you finish reviewing the logs that you disable extra logging. We don't recommend leaving this setting enabled during normal gateway usage.
 
 ## Optimize performance by streaming data
 
@@ -167,7 +167,7 @@ By default, the on-premises data gateway spools data before returning it to the 
 ## Optimize performance by excluding specific folders from antivirus scanning
 
 In order to avoid potential performance impacts, certain folders can be excluded from antivirus scanning when you use a file-level antivirus software in the server where an on-premises data gateway is installed.
-If these folders aren't excluded, you might observe performance impacts and potentially other unexpected behaviors since these folders receive a large amount of write operations and are, at the core, data pipelines of the on-premises data gateway.
+If these folders aren't excluded, you might observe performance impacts and potentially other unexpected behaviors since these folders receive a large number of write operations and are, at the core, data pipelines of the on-premises data gateway.
 
 ### Folders that might have to be excluded from antivirus scanning in the on-premises data gateway server
 
