@@ -2,19 +2,19 @@
 title: Troubleshoot the on-premises data gateway
 description: This article provides ways for you to troubleshoot issues you might have with the on-premises data gateway. It provides potential workarounds to known issues and tools to assist you.
 ms.topic: troubleshooting
-ms.date: 05/06/2024
+ms.date: 6/11/2024
 ---
 
 # Troubleshoot the on-premises data gateway
 
 This article discusses some common issues when you use the on-premises data gateway.
 
->[!NOTE]
+> [!NOTE]
 >If you encounter an issue that isn't listed here, create a support ticket for the particular cloud service that's running the gateway.
 
 ## Update to the latest version
 
-It's a good general practice to make sure you're using a supported version. We release a new update of the on-premises data gateway every month. Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. If you're experiencing issues with the version you're using, try upgrading to the latest one as your issue may have been resolved in the latest version.
+It's a good general practice to make sure you're using a supported version. We release a new update of the on-premises data gateway every month. Currently, Microsoft actively supports only the last six releases of the on-premises data gateway. If you're experiencing issues with the version you're using, try upgrading to the latest one as your issue might have been resolved in the latest version.
 
 ### Inconsistent versions between gateway members in a cluster
 
@@ -48,7 +48,7 @@ You might encounter installation failure when antivirus software, like McAfee En
 
 You might come across the following error if you try to install the same version or a previous version of the gateway compared to the one that you already have.
 
-:::image type="content" source="media/service-gateway-tshoot/gateway-install-error.png" alt-text="Gateway installation error.":::
+:::image type="content" source="media/service-gateway-tshoot/gateway-install-error.png" alt-text="Screenshot of a gateway installation error.":::
 
 ### Error: The user profile is a temporary profile
 
@@ -56,7 +56,7 @@ There's an issue with the machine. Contact your internal IT team to remove the t
 
 ### Error generating an asymmetric key
 
-An antivirus such as McCafee can cause the corruption or deletion of files needed for the gateway to be able to complete the setup. Disable your antivirus temporarily or configure it to ignore the gateway process. Then delete the RSA folder from the path c:\Users\<GW Service Account User>\AppData\Roaming\Microsoft\Crypto\RSA. In some cases, depending on whether you are signing in as a user or service profile, the root path might be different. Finally, restart the machine and complete the gateway setup and sign-in. 
+An antivirus such as McCafee can cause the corruption or deletion of files needed for the gateway to be able to complete the setup. Disable your antivirus temporarily or configure it to ignore the gateway process. Then delete the RSA folder from the path c:\Users\<GW Service Account User>\AppData\Roaming\Microsoft\Crypto\RSA. In some cases, depending on whether you are signing in as a user or service profile, the root path might be different. Finally, restart the machine and complete the gateway setup and sign-in.
 
 ## Troubleshoot configuration
 
@@ -78,18 +78,19 @@ Some proxies restrict traffic to only ports 80 and 443. By default, communicatio
 
 You can force the gateway to [communicate with Azure Relay by using HTTPS](service-gateway-communication.md#force-https-communication-with-azure-relay) instead of direct TCP.
 
-### Gateway proxy unable to connect to Managed Data Lake
+### Gateway proxy unable to connect to managed data lake
 
 If you're using a proxy to access on-premises data using an on-premises data gateway, you might not be able to connect to a managed data lake (MDL) using the default proxy settings. To connect to MDL, be sure to add addresses `*.dfs.core.windows.net` and `*.blob.core.windows.net` to the allowlist on your proxy server.
 
 ### System performance counter data is unavailable
 
-If the current service account that is being used by the on-premises data gateway application isn't a member of the local security group **Performance Log Users**,  you may observe in the [System Counter Aggregation Report](service-gateway-performance.md), that only system memory usage value is available.
+If the current service account being used by the on-premises data gateway application isn't a member of the local security group **Performance Log Users**,  you might observe in the [System Counter Aggregation Report](service-gateway-performance.md) that only system memory usage value is available.
 
 To address this behavior, add the on-premises data gateway service account to the local security group [Performance Log Users](/windows-server/identity/ad-ds/manage/understand-security-groups#performance-log-users), and restart the on-premises data gateway service.
 
 ### Bring your own Azure Relay
-Gateways experiencing connectivity issues while using Bring Your Own Relay should ensure that Private Link is not enabled on the Relay, as this configuration is not supported.
+
+Gateways experiencing connectivity issues while using Bring Your Own Relay should ensure that Private Link isn't enabled on the Relay, as this configuration isn't supported.
 
 ### Connectivity errors
 
@@ -101,15 +102,15 @@ You might come across one of the following indications in the manage gateways pa
 
 :::image type="content" source="media/service-gateway-tshoot/manage-gateway-offline.png" alt-text="Gateway offline in manage gateways page." lightbox="media/service-gateway-tshoot/manage-gateway-offline.png":::
 
-#### Error: Your data gateway is offline or couldn't be reached.
+#### Error: Your data gateway is offline or couldn't be reached
 
 You might come across one of the following data refresh errors if there's a connectivity issue.
 
 :::image type="content" source="media/service-gateway-tshoot/gateway-offline.png" alt-text="Gateway offline or couldn't be reached error." lightbox="media/service-gateway-tshoot/gateway-offline.png":::
 
-#### Error: Network request returned unexpected error.
+#### Error: Network request returned unexpected error
 
-You might come across one of the following errors when trying to sign in to the  gateway configurator if there's a connectivity issue.
+You might come across one of the following errors when trying to sign in to the gateway configurator if there's a connectivity issue.
 
 :::image type="content" source="media/service-gateway-tshoot/network-unexpected-error.png" alt-text="Gateway configurator network unpexted error." lightbox="media/service-gateway-tshoot/network-unexpected-error.png":::
 
@@ -118,7 +119,7 @@ Connectivity issues can have several different causes. Therefore, if you run int
 1. Are the FQDNs and ports mentioned in our [documentation](/data-integration/gateway/service-gateway-communication#ports) opened/allowed in your firewall and/or proxy?
 1. If you are using a proxy server in your environment:
 
-   1. Make sure the proxy server is properly [configured in the Gateway config files](/data-integration/gateway/service-gateway-proxy).
+   1. Make sure the proxy server is properly [configured in the gateway config files](/data-integration/gateway/service-gateway-proxy).
    1. Verify if the [proxy configuration is consistent](/data-integration/gateway/service-gateway-proxy-setup-guide#verify-consistent-proxy-configuration).
    1. Check your proxy logs to check if there are any requests being blocked at the proxy level.
 1. Is your Firewall just allowing the communication on ports 80 and 443?
@@ -138,7 +139,7 @@ At the end of configuration, the Power BI service is called again to validate th
 
 You may experience a refresh failure in Power BI service with an error "Information is needed in order to combine data", even though refresh on Power BI Desktop works. This problem occurs when the refresh in Power BI Desktop works with the **File** > **Options and settings** > **Options** > **Privacy** > **Always ignore privacy level settings** option set, but throws a firewall error when other options are selected. If you attempt to preform this refresh in Power BI service, the refresh won't work because **Always ignore privacy level settings** isn't available in Power BI service. To resolve this error, try changing the privacy level in the Power BI desktop **Options** > **Global** > **Privacy** and **Options** > **Current File** > **Privacy** settings so that it doesn't ignore the privacy of data. Republish the file to Power BI service and update the credentials to "Organizational" in Power BI service.
 
-#### Error: There are too many refreshes occurring concurrently.
+#### Error: There are too many refreshes occurring concurrently
 
 The gateway has a concurrency limit of 30. If you're getting this error, it means you reached the concurrency limit. You can monitor the concurrency count with the [gateway diagnostics template](service-gateway-performance.md). To avoid running into this issue, upgrade the number of gateways in a cluster or start a new cluster to load balance the request.
 
@@ -146,7 +147,7 @@ The gateway has a concurrency limit of 30. If you're getting this error, it mean
 
 ### Collect logs from the on-premises data gateway app
 
-There are several logs you can collect for the gateway, and you should always start with the logs. The simplest way to collect logs after you install the gateway is through the [on-premises data gateway app](service-gateway-app.md). In the on-premises data gateway app, select **Diagnostics** and then select the **Export logs** link, as shown in the following image.
+There are several logs you can collect for the gateway, and you should always start with the logs. The simplest way to collect logs after you install the gateway is through the [on-premises data gateway app](service-gateway-app.md). In the on-premises data gateway app, select **Diagnostics** and then select the **Export logs** link.
 
 :::image type="content" source="media/service-gateway-tshoot/gateway-onprem-UI-logs.png" alt-text="On-premises data gateway app logs.":::
 
@@ -172,15 +173,15 @@ This test is especially helpful if the data source requires additional component
 This technique allows you to test iteratively, testing the connection on the gateway computer after each configuration change.
 
 Although it isn't a guarantee of a successful refresh through the gateway, a successful Power BI Desktop refresh from the gateway computer is a strong indicator that everything is configured correctly on the gateway computer.
-In other words, if you can't refresh in Power BI Desktop from the gateway computer, it's highly unlikely that a refresh through the gateway will succeed.
-After a successful refresh in Desktop, you can narrow your troubleshooting steps to the configuration of the datasource and the semantic model in the Power BI Service.
+In other words, if you can't refresh in Power BI Desktop from the gateway computer, it's highly unlikely that a refresh through the gateway succeeds.
+After a successful refresh in Desktop, you can narrow your troubleshooting steps to the configuration of the datasource and the semantic model in the Power BI service.
 
 ## Limitations and considerations
 
-When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). If you get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials have been updated recently, you may be hitting this error. This limitation for long running refreshes exists for both VNET gateways and on-premises data gateways.
+When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire (one hour after the refresh started). If you get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials even though the credentials have been updated recently, you might be hitting this error. This limitation for long running refreshes exists for both VNET gateways and on-premises data gateways.
 
 The Power BI [gateways REST APIs](/rest/api/power-bi/gateways) don't support [gateway clusters](service-gateway-high-availability-clusters.md).
 
-## Next steps
+## Related content
 
-* [On-premises data gateway](service-gateway-onprem-faq.yml)
+* [On-premises data gateway FAQ](service-gateway-onprem-faq.yml)
