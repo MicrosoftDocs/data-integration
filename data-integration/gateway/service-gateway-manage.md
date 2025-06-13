@@ -3,7 +3,7 @@ title: Manage an on-premises data gateway
 description: Learn how to manage a gateway so that you can connect to on-premises data.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/12/2025
 ---
 
 # Manage an on-premises data gateway
@@ -11,7 +11,7 @@ ms.date: 05/06/2024
 After you install an on-premises data gateway, you manage it based on your requirements. Because each service might integrate gateways differently, the management options differ depending on the service.
 
 > [!NOTE]
-> **Manage gateways** won't show up until you're the admin of at least one gateway. You become an admin either by being added as an admin or because you installed and configured a gateway.
+> **Manage gateways** doesn't show up until you're the admin of at least one gateway. You become an admin either by being added as an admin or because you installed and configured a gateway.
 
 ## Manage a gateway in the Power BI service
 
