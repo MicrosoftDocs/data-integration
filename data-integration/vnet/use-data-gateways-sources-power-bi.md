@@ -40,7 +40,6 @@ Azure sources that support secure private endpoint connectivity (as in scenario 
 - Azure Blob Storage
 - Azure Cosmos DB v1
 - Azure Cosmos DB v2
-- Azure Cost Management
 - Azure Database for PostgreSQL
 - Azure Data Explorer (Kusto)
 - Azure Data Factory Workspace
@@ -171,6 +170,7 @@ Sources supported through either public endpoints or secure private endpoint con
 - Microsoft Teams
 - MetricsCES
 - MetricsDataConnector
+- Microsoft Cost Management
 - Microsoft Teams Personal Analytics
 - Microsoft 365
 - MicrosoftCallQuality
