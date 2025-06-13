@@ -2,18 +2,18 @@
 title: Use virtual network data gateway and data sources in Power BI
 description: Provides information about how to use virtual network data gateway and data sources in Power BI.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/13/2024
 ---
 
 # Use virtual network data gateway and data sources in Power BI
 
 Virtual network data gateways allow import or direct query semantic models to connect to data services within an Azure virtual network without the need of an on-premises data gateway.
 
-In Power BI, VNET data gateways require a Power BI Premium capacity license (A4 SKU or higher or any F or P SKU).
+In Power BI, VNet data gateways require a Power BI Premium capacity license (A4 SKU or higher or any F or P SKU).
 
-## Manage Virtual network data gateways
+## Manage virtual network data gateways
 
-You can manage admins for a virtual network data gateway like you do for standard data gateways either in the Power Platform admin center or on the **Manage gateways** page in Power BI.
+You can manage admins for a virtual network data gateway like you do for standard data gateways either in the Power Platform admin center or on the **Manage connections and gateways** page in Power BI.
 
 :::image type="content" source="media/vnet-in-pbi.png" alt-text="Screenshot of the Gateway Cluster Settings page with a virtual network gateway selected and the gateway's data displayed.":::
 
@@ -25,7 +25,8 @@ You can also create data sources and share these data sources to users like you 
 
 ## Supported Azure data services
 
-The VNet Data Gateway can be used to connect securely to your data sources. There are a few different ways you can use the VNET to connect:
+The VNet data gateway can be used to connect securely to your data sources. There are a few different ways you can use the VNet to connect:
+
 1. Connecting to your private resources in Azure. For this scenario, you need to create a private endpoint and private DNS zone or service endpoints on your data source.
 2. Connecting to your private resources outside of Azure. For this scenario, you need to use Express Route and/or VPNs.
 3. Connecting to public resources.
@@ -250,13 +251,13 @@ Sources supported through either public endpoints or secure private endpoint con
 - Zoho Creator
 - Zucchetti HR Infinity
 
-## Microsoft Entra ID single sign-on for Direct Query
+## Microsoft Entra ID single sign-on for DirectQuery
 
-When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure virtual network data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Microsoft Entra ID identity of the user that interacts with Power BI.
+When a user interacts with a DirectQuery report in the Power BI service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure virtual network data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Microsoft Entra ID identity of the user that interacts with Power BI.
 
 To enable Microsoft Entra ID SSO, on the **Manage Gateways** page in Power BI, go to the **Data source settings** page, and select the **Use SSO via Azure AD for Direct Queries** check box.
 
-:::image type="content" source="media/azure-ad-sso.png" alt-text="Screenshot of the data source settings page with Use SSO via Microsoft Entra ID for Direct queries emphasized.":::
+:::image type="content" source="media/azure-ad-sso.png" alt-text="Screenshot of the data source settings page with Use SSO via Microsoft Entra ID for DirectQuery queries emphasized.":::
 
 ## Use virtual network data gateways in Power BI semantic models
 
