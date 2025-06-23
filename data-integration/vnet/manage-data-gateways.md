@@ -12,7 +12,7 @@ After you [create](create-data-gateways.md) a virtual network (VNet) data gatewa
 > [!NOTE]
 > The **Virtual network data gateways** tab isn't visible when the **Tenant Administration** toggle is turned on.
 
-:::image type="content" source="media/manage-vnet-data-gateways.png" alt-text="Screenshot of the Virtual Network data gateways page whey you manage VNet data gateways." lightbox="media/manage-vnet-data-gateways.png":::
+:::image type="content" source="media/manage-data-gateways/manage-vnet-data-gateways.png" alt-text="Screenshot of the Virtual Network data gateways page whey you manage VNet data gateways." lightbox="media/manage-data-gateways/manage-vnet-data-gateways.png":::
 
 ## Manage access to creating VNet data gateways (gateway installer setting)
 
@@ -24,7 +24,7 @@ You can manage admins for this VNet data gateway like you do for on-premises dat
 
 You can also share the gateway with other users in the organization, allowing them to see and use this VNet Data Gateway without needing to create a new one. You can choose either the **Connection Creator** or **Connection Creator with resharing** role.
 
-:::image type="content" source="media/manage-admins.png" alt-text="Screenshot of the Virtual Network data gateways page with the Manage admins pane opened." lightbox="media/manage-admins.png":::
+:::image type="content" source="media/manage-data-gateways/manage-admins.png" alt-text="Screenshot of the Virtual Network data gateways page with the Manage admins pane opened." lightbox="media/manage-data-gateways/manage-admins.png":::
 
 ## Manage capacity for billing
 
@@ -37,7 +37,7 @@ The capacity linked to your VNet data gateway incurs the consumption. You can vi
 
 You can view properties for a selected VNet data gateway in the Power Platform admin center by selecting **Settings**.
 
-:::image type="content" source="media/manage-settings.png" alt-text="Screenshot of the Power Platform admin center with the Manage settings pane displayed." lightbox="media/manage-settings.png":::
+:::image type="content" source="media/manage-data-gateways/manage-settings.png" alt-text="Screenshot of the Power Platform admin center with the Manage settings pane displayed." lightbox="media/manage-data-gateways/manage-settings.png":::
 
 ### Time to auto-shutdown
 
@@ -57,7 +57,7 @@ You can remove or delete VNet data gateways by selecting the gateway and selecti
 > * Have Microsoft.Network/virtualNetworks/subnets/join/action permission on the VNet
 > * Register the Microsoft.PowerPlatform provider as a resource provider
 
-:::image type="content" source="media/remove-gateway.png" alt-text="Screenshot of the Virtual network data gateways page with the Remove VNet data gateway pane displayed." lightbox="media/remove-gateway.png":::
+:::image type="content" source="media/manage-data-gateways/remove-gateway.png" alt-text="Screenshot of the Virtual network data gateways page with the Remove VNet data gateway pane displayed." lightbox="media/manage-data-gateways/remove-gateway.png":::
 
 ## Related content
 
