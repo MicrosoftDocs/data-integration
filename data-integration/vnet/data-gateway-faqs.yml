@@ -1,13 +1,13 @@
 ### YamlMime:FAQ
 metadata:
   title: Virtual network (virtual network) data gateway FAQs
-  description: Frequently asked questions about virtual network (virtual network) data gateway.
+  description: Frequently asked questions about virtual network (VNet) data gateway.
   ms.topic: faq
-  ms.date: 03/11/2025
+  ms.date: 6/27/2025
 
 title: Virtual network (virtual network) data gateway FAQs
 summary: |
-  This article contains a list of frequent asked questions (FAQs) about the virtual network (virtual network) data gateways.
+  This article contains a list of frequent asked questions (FAQs) about the virtual network (VNet) data gateways.
 
 sections:
   - name: Ignored
@@ -18,14 +18,14 @@ sections:
           We support GCC L4 (Texas and Virginia) and L5 (DoD East). This feature is currently not supported in GCC L2.
 
       - question: |
-          How should I manage my Azure resources after deleting a VNET data gateway?
+          How should I manage my Azure resources after deleting a VNet data gateway?
         answer: | 
-          Customers should not remove the subscription level RP assignment until at least three hours after deleting a gateway because we still need to clean up resources.
+          Customers shouldn't remove the subscription level RP assignment until at least three hours after deleting a gateway because we still need to clean up resources.
 
       - question: |
-          Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing data sources using OAuth2 credentials from Dataflows Gen1 even though the credentials are updated recently (mid-stream token refresh issue)?
+          Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing data sources using OAuth2 credentials from Dataflow Gen1 even though the credentials are updated recently (mid-stream token refresh issue)?
         answer: |
-          When using OAuth2 credentials in Dataflows Gen1, the gateway doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. Dataflows Gen2, Semantic models, Data pipelines are able to refresh tokens mid-stream and should not be impacted due to this.
+          When using OAuth2 credentials in Dataflow Gen1, the gateway doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. Dataflow Gen2, semantic models, and data pipelines are able to refresh tokens mid-stream and shouldn't be impacted due to this.
           
       - question: |
           Does the virtual network data gateway support Azure air gapped clouds?
@@ -35,12 +35,12 @@ sections:
       - question: |
           How can I secure connectivity from my network to Power BI?
         answer: |
-          Use Private links to secure this connectivity. More information: [Power BI Private Links documentation](/power-bi/admin/service-security-private-links)  
+          Use Private links to secure this connectivity. For more information, go to [Power BI Private Links documentation](/power-bi/admin/service-security-private-links).  
 
       - question: |
           Where is my virtual network data gateway?
         answer: |
-          The virtual network data gateway is physically in the same region as your Azure virtual network. However, the metadata (name, details, data sources, encrypted credentials, and so on) for all your virtual network data gateways are stored in your tenant’s default region. You can manage all virtual network data gateways when you select your tenant’s home region in [Power platform admin center](manage-data-gateways.md).
+          The virtual network data gateway is physically in the same region as your Azure virtual network. However, the metadata (name, details, data sources, encrypted credentials, and so on) for all your virtual network data gateways are stored in your tenant's default region. You can manage all virtual network data gateways when you select your tenant's home region in [Power Platform admin center](manage-data-gateways.md).
 
       - question: |
           Does the virtual network data gateway support conditional access policies?
@@ -76,17 +76,17 @@ sections:
           Review the corresponding Azure data service product documentation to check if private endpoints are supported and on how to enable them.  
       
       - question: |
-          Why can't I create a virtual network Data Gateway connection with OAuth authentication towards an Azure resource configured with private endpoints?
+          Why can't I create a virtual network data gateway connection with OAuth authentication towards an Azure resource configured with private endpoints?
         answer: |
-          If you're getting errors such as `Authorization failed for Public API route` or `DM_GWPipeline_Client_OAuthTokenLoginFailedError` when trying to create a virtual network Data Gateway connection with OAuth authentication towards an Azure resource with a firewall blocking public internet access and configured with private endpoints, this means that you need to explicitly create a service endpoint for private authentication by calling the Microsoft Entra ID service. 
-          To resolve this situation, go to the virtual network subnet used for the virtual network Data Gateway, and enable the service endpoint Microsoft.AzureActiveDirectory as depicted below.
+          If you're getting errors such as `Authorization failed for Public API route` or `DM_GWPipeline_Client_OAuthTokenLoginFailedError` when trying to create a virtual network data gateway connection with OAuth authentication towards an Azure resource with a firewall blocking public internet access and configured with private endpoints, this means that you need to explicitly create a service endpoint for private authentication by calling the Microsoft Entra ID service. 
+          To resolve this situation, go to the virtual network subnet used for the virtual network data gateway, and enable the service endpoint Microsoft.AzureActiveDirectory as depicted in the following image.
 
           :::image type="content" source="media/troubleshoot-data-gateway/virtual-network-add-entra-id.png" lightbox="media/troubleshoot-data-gateway/virtual-network-add-entra-id.png" alt-text="Screenshot showing virtual network configuration on service endpoint for Microsoft Entra ID.":::
       
       - question: |
           Can I use this feature if my data source is in East US and my Power BI home region is in East US2?
         answer: |
-          Yes, there's no dependency on the Power BI home region for this feature. If this feature is enabled in the region where the virtual network exists, you are able to create a new virtual network data gateway.
+          Yes, there's no dependency on the Power BI home region for this feature. If this feature is enabled in the region where the virtual network exists, you're able to create a new virtual network data gateway.
 
       - question: |
           Can I choose the region where virtual network data gateways are created?
@@ -101,10 +101,10 @@ sections:
       - question: |
           Can I use this feature if my tenant is in East US (United States) and Power platform environment is in Europe?
         answer: |
-          No, virtual network gateways are currently available only in your tenant’s home region.
+          No, virtual network gateways are currently available only in your tenant's home region.
 
       - question: |
-          Why can’t I connect to the data source?
+          Why can't I connect to the data source?
         answer: |
           Few areas to check:
 
@@ -120,24 +120,24 @@ sections:
           The connectivity between the new virtual network service and your virtual network is via HTTPS and TLS 1.2.
 
       - question: |
-          Are there any known connectivity issues for SQL serverless with autopause?
+          Are there any known connectivity issues for SQL serverless with auto-pause?
         answer: |
           For SQL serverless with auto-pause, the first request might fail if SQL is in a paused state, but the next ones will succeed.
 
       - question: |
-          Is there a delay when the virtual network gateway is used for the first time or after a period of inactivity?
+          Is there a delay when the virtual network data gateway is used for the first time or after a period of inactivity?
         answer: |
-          When used for the first time, the virtual network gateway takes about 2 minutes to get setup. Similarly, if the virtual network data gateway isn't used for 30 minutes, you could experience a delay of about a minute the next time you use it.
+          When used for the first time, the virtual network data gateway takes about 2 minutes to get setup. Similarly, if the virtual network data gateway isn't used for 30 minutes, you could experience a delay of about a minute the next time you use it.
 
       - question: |
           Is this feature supported in sovereign clouds?
         answer: |
-          Yes, it is supported in sovereign cloud.
+          Yes, it's supported in sovereign cloud.
 
       - question: |
-          Do I need to manage any hardware to use the VNET Data Gateway? 
+          Do I need to manage any hardware to use the VNet data gateway? 
         answer: |
-          No. The VNET data gateway provides fully managed compute. You can choose to scale the number of nodes in each cluster.
+          No. The VNet data gateway provides fully managed compute. You can choose to scale the number of nodes in each cluster.
 
       - question: |
           Can I create multiple virtual network data gateways for the same Azure data service?  
@@ -152,7 +152,7 @@ sections:
       - question: |
           How large does the delegated subnet need to be?
         answer: |
-          Beyond the five reserved IPs, our recommendation is to have approximately 5-7 more IPs so you can add more virtual network gateways to the same virtual network and Subnet.  
+          Beyond the five reserved IPs, our recommendation is to have approximately 5-7 more IPs so you can add more virtual network data gateways to the same virtual network and Subnet.  
 
       - question: |
           I'm a subscription owner but I get an insufficient permissions error when I try to create a virtual network data gateway.
@@ -160,9 +160,8 @@ sections:
           Make sure you're explicitly in a role with the Microsoft.Network/virtualNetworks/subnets/join/action permission on the virtual network like the Azure Network Contributor role. This permission is required for creating a virtual network data gateway.
 
       - question: |
-          Does all of the data when using the virtual network data gateway remain on Microsoft's backbone network when accessing Azure Data Sources?
+          Does all of the data when using the virtual network data gateway remain on Microsoft's backbone network when accessing Azure Data Sources? How does security compare to the on-premises data gateway?
         answer: |
-          How does security compare to the on-premises data gateway?
           Yes, all the data going through a virtual network data gateway remains on the Azure backbone. We use an internal Microsoft tunnel that doesn't reach the public internet between the virtual network and Power BI service. On the other hand, the on-premises data gateway opens a connection to use Azure Relay to connect to the Power BI service.
 
       - question: |
@@ -174,7 +173,7 @@ sections:
       - question: |
           Is there any way to connect from the subnet of one virtual network to the data source of another virtual network?
         answer: |
-          A virtual network gateway can generally reach sources that are reachable within that same virtual network. If there's another virtual network that is isolated from the first, then another virtual network gateway is necessary.
+          A virtual network data gateway can generally reach sources that are reachable within that same virtual network. If there's another virtual network that is isolated from the first, then another virtual network data gateway is necessary.
            
       - question: |
           Any other known issues?
@@ -184,11 +183,11 @@ sections:
           * If an OAuth refresh that takes longer that one hour is canceled with the error "Invalid Connection Credentials" or timeout, the issue is likely that the credential expired.
 
       - question: |
-          What do I need to do if I reach the maximum limit of 1,000 data sources on a VNET gateway, and how do I avoid reaching this limit?
+          What do I need to do if I reach the maximum limit of 1,000 data sources on a VNet data gateway, and how do I avoid reaching this limit?
         answer: |
-          Users are limited to 1,000 data sources on each VNET gateway.
-          If you reach the maximum number of data sources limit, verify that the number of data sources for each VNET gateway isn't over the limit of 1000. 
-          To resolve any related issues, you can manually remove the data sources from the admin center or, alternatively, use the following PowerShell script to bulk-delete all data sources using a specified VNET gateway that exceeds that limit. You'd need to replace the text "GatewayClusterID" with the specific VNET gateway ID for this script to work. 
+          Users are limited to 1,000 data sources on each VNet data gateway.
+          If you reach the maximum number of data sources limit, verify that the number of data sources for each VNet data gateway isn't over the limit of 1000. 
+          To resolve any related issues, you can manually remove the data sources from the admin center or, alternatively, use the following PowerShell script to bulk-delete all data sources using a specified VNet data gateway that exceeds that limit. You'd need to replace the text "GatewayClusterID" with the specific VNet data gateway ID for this script to work. 
 
           ```PowerShell
           ## https://learn.microsoft.com/powershell/module/datagateway/?view=datagateway-ps

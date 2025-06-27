@@ -52,8 +52,8 @@
         "gateway/**.*": "dougklo"
       },
       "author":{
-        "vnet/**.*": "nikkiwaghani",
-        "gateway/**.*": "nikkiwaghani"
+        "vnet/**.*": "DougKlopfenstein",
+        "gateway/**.*": "DougKlopfenstein"
       },
       "ms.subservice":{
         "vnet/**.*": "virtual-network-data-gateways",
