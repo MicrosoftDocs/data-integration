@@ -2,7 +2,7 @@
 title: Virtual network data gateway best practices
 description: This article describes best practices and recommendations to improve performance and functioning for the virtual network data gateway.
 ms.topic: troubleshooting
-ms.date: 05/09/2024
+ms.date: 6/27/2025
 ---
 
 # Virtual network data gateway best practices and recommendations
@@ -18,6 +18,7 @@ If you're using a storage account, for example Databricks, Snowflake, or Azure D
    :::image type="content" source="media/vnet-best-practices/navigate-to-vnet-gateway-subnet.png" lightbox="media/vnet-best-practices/navigate-to-vnet-gateway-subnet.png" alt-text="Screenshot showing how to navigate to the virtual network for your gateway.":::
 
 1. Scroll down to **Service Endpoints** and expand the dropdown menu.
+
    :::image type="content" source="media/vnet-best-practices/service-endpoints.png" lightbox="media/vnet-best-practices/service-endpoints.png" alt-text="Screenshot showing where to select subnet Service Endpoints in your virtual network data gateway configuration in Azure.":::
 
 1. Select **Microsoft.Storage**.

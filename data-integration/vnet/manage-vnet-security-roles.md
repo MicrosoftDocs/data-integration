@@ -2,12 +2,12 @@
 title: Manage security roles of a VNet data gateway
 description: Provides information about how to manage security roles of a virtual network (VNet) data gateway.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/27/2025
 ---
 
 # Manage security roles of a VNet data gateway
 
-You can use the VNet data gateway to transfer data quickly and securely between Power BI or Power Platform and a data source, such as Azure Databricks or Snowflake. From the Power BI manage gateways page, you can also view all VNet data gateways for which you have permissions and manage data sources for those gateways.
+You can use the virtual network (VNet) data gateway to transfer data quickly and securely between Power BI or Power Platform and a data source, such as Azure Databricks or Snowflake. From the Power BI manage gateways page, you can also view all VNet data gateways for which you have permissions and manage data sources for those gateways.
 
 ## VNet data gateways and data source permissions
 
@@ -15,14 +15,14 @@ You can use the VNet data gateway to transfer data quickly and securely between 
 
 There are three security user roles available for the VNet data gateway. When you create a VNet data gateway, you automatically become the admin of the gateway. There can be multiple admins on the gateway.
 
->[!NOTE]
+> [!NOTE]
 >The user roles for the VNet data gateway are the same as for the on-premises data gateway.
 
 The three security roles for the VNet data gateway are:
 
 * **Admin**: When a user becomes an admin, they can view all the connections created on the gateway, and can manage/delete all users and connections. Admins can also use all features applicable to gateways, including checking gateway status, using the network troubleshooting pane, and changing settings.
 * **Connection creator**: A connection creator is allowed to create connections/data sources on the gateway. A connection creator can also test the status of the gateway cluster and its members. A connection creator gets read-only access to gateway settings, can't add or remove others on the gateway, and can’t remove gateways.
-* **Connection creator with resharing**: A connection creator with resharing is allowed to create connections/data sources on the gateway and share gateways with others. Whomever they share gateways with will have the connection creator permission. They aren't allowed to remove a user from the gateway. Connection creators with resharing can also test the gateway status and use the network troubleshooting pane.
+* **Connection creator with resharing**: A connection creator with resharing is allowed to create connections/data sources on the gateway and share gateways with others. Whomever they share gateways with will has connection creator permission. They aren't allowed to remove a user from the gateway. Connection creators with resharing can also test the gateway status and use the network troubleshooting pane.
 
 ### Connection roles
 

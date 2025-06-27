@@ -3,7 +3,7 @@ metadata:
   title: On-premises data gateway FAQ
   description: This article is the on-premises data gateway FAQ. It collects frequently asked questions about the gateway into one spot.
   ms.topic: faq
-  ms.date: 05/06/2024
+  ms.date: 6/26/2025
 title: On-premises data gateway FAQ
 summary: |
 
@@ -16,9 +16,9 @@ sections:
           No, services can generally connect to cloud data sources without a gateway. However, you might need a data gateway if your data sources are behind a firewall, require a VPN, or are on virtual networks.
           
       - question: |
-          Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing data sources using OAuth2 credentials from Dataflows Gen1 even though the credentials are updated recently (mid-stream token refresh issue).
+          Why do I get the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing data sources using OAuth2 credentials from Dataflow Gen1 even though the credentials are updated recently (mid-stream token refresh issue).
         answer: |
-          When using OAuth2 credentials in Dataflows Gen1, the gateway doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. Dataflows Gen2, Semantic models, Data pipelines are able to refresh tokens mid-stream and should not be impacted due to this. 
+          When you use OAuth2 credentials in Dataflow Gen1, the gateway doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies. Dataflow Gen2, Semantic models, and data pipelines are able to refresh tokens mid-stream and should not be impacted due to this. 
 
       - question: |
           What are the requirements for the gateway?  
@@ -42,7 +42,7 @@ sections:
       - question: |
           Are there any requirements for network bandwidth?  
         answer: |
-          Check that your network connection has good throughput. Each environment is different, and throughput depends on the amount of data that is sent. To ensure a minimum level of throughput between your on-premises data source and Azure datacenters, use [Azure ExpressRoute](/azure/expressroute/expressroute-introduction). To help measure your throughput, you can use the [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/).
+          Check that your network connection has good throughput. Each environment is different, and throughput depends on the amount of data that's sent. To ensure a minimum level of throughput between your on-premises data source and Azure datacenters, use [Azure ExpressRoute](/azure/expressroute/expressroute-introduction). To help measure your throughput, you can use the [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/).
           
       - question: |
           Where are my credentials stored?  
@@ -131,7 +131,7 @@ sections:
       - question: |
           How can I keep my data within the same region while using an on-premises data gateway?
         answer: |
-          More information: [Keep data in the region where it's stored](service-gateway-azure-relay.md#keep-data-in-the-region-where-its-stored)
+          For more information, go to [Keep data in the region where it's stored](service-gateway-azure-relay.md#keep-data-in-the-region-where-its-stored).
 
   - name: High availability and disaster recovery
     questions:
@@ -157,7 +157,7 @@ sections:
       - question: |
           Where are the gateway logs located?  
         answer: |
-          Go to [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
+          For more information, go to [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
           
       - question: |
           How can I tell what queries are sent to the on-premises data source?  
@@ -169,7 +169,7 @@ sections:
       - question: |
           What is the maximum number of gateway members allowed in a gateway cluster? 
         answer: |
-          Each gateway cluster supports up to a maximum of **10** gateway members (sometimes called nodes). Gateway clusters currently running more than 10 members will continue to operate but not allow new additions unless a member is deleted first. 
+          Each gateway cluster supports up to a maximum of **10** gateway members (sometimes called nodes). Gateway clusters currently running more than 10 members continues to operate, but doesn't allow new additions unless a member is deleted first. 
       
       - question: |
           What do I need to do if I reach the maximum limit of 1,000 data sources on a gateway cluster, and how do I avoid reaching this limit?
@@ -251,10 +251,10 @@ sections:
       - question: | 
           If we assume that the whole migration process takes 5 minutes, for all the refreshes that occur in these 5 minutes, where will the traffic go? Will it go through the old gateway server before the migration completes?
         answer: |
-          Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. More information: [Minimize migration downtime](/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime)
+          Yes. However, there's a good chance of failures during this time, and migrations like these should be done in a downtime window. For more information, go to [Minimize migration downtime](/data-integration/gateway/service-gateway-migrate#minimize-migration-downtime).
 
 additionalContent: |
 
-  ## Next steps
+  ## Related content
     * [Troubleshoot the on-premises data gateway](service-gateway-tshoot.md)
  

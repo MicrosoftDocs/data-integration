@@ -2,7 +2,7 @@
 title: Set the datacenter region for the on-premises data gateway
 description: This article describes how to determine the datacenter region and how its value can be set.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/26/2025
 ---
 
 # Set the datacenter region for the on-premises data gateway
@@ -14,7 +14,7 @@ If you're registered for either Power BI or Office 365, the datacenter region by
 :::image type="content" source="media/service-gateway-data-region/data-center-region.png" alt-text="Screenshot of the new on-premises data gateway registration page with the Change Region area emphasized.":::
 
 > [!NOTE]
-> For sovereign clouds and in Power BI's default region, we currently only support installing gateways in the default PowerBI region of your tenant. The region picker on the installer is only supported for Public cloud.
+> For sovereign clouds and in Power BI's default region, we currently only support installing gateways in the default Power BI region of your tenant. The region picker on the installer is only supported for Public cloud.
 
 ## Restore, migrate, or take over a gateway in a nondefault region
 

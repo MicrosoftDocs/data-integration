@@ -4,7 +4,7 @@ title: Manage security roles
 description: Learn how to manage permissions and data sources for the on-premises data gateway.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/26/2025
 ---
 
 # Manage security roles of an on-premises data gateway
@@ -17,7 +17,7 @@ You can use the on-premises data gateway to transfer data quickly and securely b
 
 There are three security roles for the on-premises data gateway. When you install an on-premises data gateway, you automatically become the admin of the gateway. There can be multiple admins on the gateway.
 
->[!Note]
+> [!NOTE]
 >These roles don't apply to a virtual network data gateway. Virtual network data gateways only have the admin role.
 
 The three security roles for the on-premises data gateway are:
@@ -30,7 +30,7 @@ The three security roles for the on-premises data gateway are:
 
 ### Connection roles
 
->[!Note]
+> [!NOTE]
 > These roles are only applicable for data sources created in the on-premises data gateway. Cloud data sources can't be shared.
 
 When you create a connection (data source) in the on-premises data gateway, you become the owner of the connection (data source). Multiple owners are allowed.
@@ -57,7 +57,7 @@ To manage on-premises data gateways:
 
 5. Depending on your role, you can now assign users to the gateway.
 
-   :::image type="content" source="media/manage-security-roles/manage-gateways.png" alt-text="Image of the Manage users dialog box, with a new user emphasized, the Connection Creator role selected, and multiple data sources selected.":::
+   :::image type="content" source="media/manage-security-roles/manage-gateways.png" alt-text="Screenshot of the Manage users dialog, with a new user emphasized, the Connection Creator role selected, and multiple data sources selected.":::
 
 To manage data sources:
 
@@ -69,11 +69,11 @@ To manage data sources:
 
 4. Depending on your role, you can now assign users to the connection.
 
-   :::image type="content" source="media/manage-security-roles/manage-data-sources.png" alt-text="Image of the Manage users dialog box, with a new user emphasized, and the User role selected.":::
+   :::image type="content" source="media/manage-security-roles/manage-data-sources.png" alt-text="Screenshot of the Manage users dialog, with a new user emphasized, and the User role selected.":::
 
 ## Restricting access for on-premises data gateways
 
-You can restrict access to who can install an on-premises data gateway. This restriction occurs though at the tenant level, not the environment level (default environment or otherwise). In other words, you can't restrict access at the environment level.
+You can restrict access to who can install an on-premises data gateway. However, this restriction occurs at the tenant level, not the environment level (default environment or otherwise). In other words, you can't restrict access at the environment level.
 
 Your admin can update the data gateway settings through the Power Platform admin center.
 
@@ -91,4 +91,4 @@ Your admin can update the data gateway settings through the Power Platform admin
 
 4. Turn on **Restrict users in your organization from installing gateways**. You can also allow specific users to override the restriction.
 
-   :::image type="content" source="media/manage-security-roles/restrict-users.png" alt-text="Screenshot of the Manage gateway installers page with Restrict users in your organization from installing gateways switch turned on." lightbox="media/manage-security-roles/restrict-users.png":::
+   :::image type="content" source="media/manage-security-roles/restrict-users.png" alt-text="Screenshot of the Manage gateway installers page with Restrict users in your organization from installing gateways switch turned on.":::

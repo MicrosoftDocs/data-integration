@@ -2,40 +2,42 @@
 title: What is a virtual network (VNet) data gateway
 description: Virtual network (VNet) data gateway helps you to connect from Microsoft Cloud services to your Azure data services within a VNet without the need of an on-premises data gateway.
 ms.topic: overview
-ms.date: 05/06/2024
+ms.date: 6/27/2025
 ---
 
 # What is a virtual network (VNet) data gateway?
 
-The virtual network data gateway lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform to securely communicate with the data source, execute queries, and transmit results back to the service. 
-- You can run Fabric Dataflow Gen2, Fabric Pipeline, Fabric Copy Job, Fabric Mirroring, Power BI Semantic Models, and Power BI Paginated Reports on top of a virtual network data gateway.
+A virtual network data gateway lets you connect your Azure and other data services to Microsoft Fabric and the Power Platform. The gateway lets you securely communicate with the data source, execute queries, and transmit results back to the service.
+
+You can run Microsoft Fabric Dataflow Gen2, Fabric data pipelines, Fabric Copy Job, Fabric Mirroring, Power BI semantic models, and Power BI paginated reports on top of a virtual network data gateway.
 
 ## Why use the VNet data gateway?
 
 The virtual network data gateway:
-- Is a powerful network security offering: it can be used in with private endpoints for Azure data sources to ensure that no traffic is ever exposed to a public endpoint.
-- It supports Private Link scenarios. To learn more, see [using your VNET data gateway with Private Links]().
-- It can be used with public endpoints for Azure, other cloud, and on-premises data sources.
-- The hardware is fully managed and it can thus be a more cost effective alternative to the on-premises data gateway.
-- It can be used to provide comprehensive auditing for all traffic to your datasource.
-- It provides compute isolation enhancing security from cross tenant attacks.
 
-:::image type="content" source="media/vnet-overview.png" alt-text="VNet overview.":::
+- Is a powerful network security offering. It can be used with private endpoints for Azure data sources to ensure that no traffic is ever exposed to a public endpoint.
+- Supports Private Link scenarios. To learn more, go to [Virtual networks, Private Links, and Power BI](what-is.md#virtual-networks-private-links-and-power-bi).
+- Can be used with public endpoints for Azure, other cloud, and on-premises data sources.
+- Hardware is fully managed and it can thus be a more cost effective alternative to the on-premises data gateway.
+- Can be used to provide comprehensive auditing for all traffic to your datasource.
+- Provides compute isolation enhancing security from cross tenant attacks.
+
+:::image type="content" source="media/vnet-overview.png" alt-text="Diagram of the basic VNet functionality from user to data.":::
 
 ## Limitations
 
-- Currently, this feature is available only for Fabric Dataflow Gen2, Fabric Pipeline, Fabric Copy Job, Fabric Mirroring, Power BI semantic models, and Power BI paginated reports. Power BI dataflows and datamarts aren't supported.
+- Currently, this feature is available only for Fabric Dataflow Gen2, Fabric data pipelines, Fabric Copy Job, Fabric Mirroring, Power BI semantic models, and Power BI paginated reports. Power BI dataflows and datamarts aren't supported.
 
 > [!NOTE]
-> The VNet data gateway support for Fabric Pipeline, Copy Job and Mirroring is now in public preview. In Fabric Pipeline, it currently supports Copy, Lookup, and GetMetadata activities.
+> The VNet data gateway support for Fabric Pipeline, Copy Job and Mirroring is now in public preview. In Fabric data pipelines, it currently supports Copy, Lookup, and GetMetadata activities.
 
-- VNet data gateway is currently available for P, F, and A4 or higher (A4, A5, A6, and A7) SKUs. For F SKUs, we recommend that you use F8 and above but all F SKUs work.
+- VNet data gateway is currently available for P, F, and A4 or higher (A4, A5, A6, and A7) SKUs. For F SKUs, we recommend that you use F8 and above, but all F SKUs work.
 
 - This feature is currently not supported in GCC L2. We do support GCC L4 (Texas and Virginia) and L5 (DoD East). We support air gapped clouds in US Nat East/West and US Sec East/West.
 
 - You can't change the region, subscription, or resource group for the VNet on which the VNet data gateway was created. This scenario isn't currently supported.
 
-- You may see the errors "InvalidConnectionCredentials" or "AccessUnauthorized" when accessing cloud data sources using OAuth2 credentials, even though the credentials have been updated recently, for dataflows. When using OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies.
+- You might see the errors `InvalidConnectionCredentials` or `AccessUnauthorized` when accessing cloud data sources using OAuth2 credentials, even though the credentials were updated recently, for dataflows. When you use OAuth2 credentials, the gateway currently doesn't support refreshing tokens automatically when access tokens expire. Tokens typically expire 1 hour after the refresh starts, but can expire in less than 1 hour, depending on the data source and the tenant policies.
 
 - Power BI semantic models:
 
@@ -53,4 +55,4 @@ The virtual network data gateway:
   - VNet gateways support paginated reports.
   - A list of supported data sources for Power BI paginated reports is available in [Supported data sources for Power BI paginated reports](/power-bi/paginated-reports/paginated-reports-data-sources).
 
-- Users are limited to 1,000 data sources maximum on each VNET gateway. [How to avoid reaching this limit](/data-integration/vnet/data-gateway-faqs#what-do-i-need-to-do-if-i-reach-the-maximum-limit-of-1-000-data-sources-per-user--and-how-do-i-avoid-reaching-this-limit-).
+- Users are limited to 1,000 data sources maximum on each VNet gateway. [How to avoid reaching this limit](/data-integration/vnet/data-gateway-faqs#what-do-i-need-to-do-if-i-reach-the-maximum-limit-of-1-000-data-sources-per-user--and-how-do-i-avoid-reaching-this-limit-).
