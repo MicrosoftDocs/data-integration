@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.date: 6/27/2025
 ---
 
-# Run a Fabric Pipeline Copy Activity through the virtual network data gateway
+# Run a Fabric pipeline Copy Activity through the virtual network data gateway
 
 To use a Microsoft Fabric pipeline Copy Activity with a virtual network (VNet) data gateway:
 
