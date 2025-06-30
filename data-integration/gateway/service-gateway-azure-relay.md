@@ -2,7 +2,7 @@
 title: Set the Azure Relay for on-premises data gateway
 description: Learn how to change the details of the Azure Relay for an on-premises data gateway.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 05/06/2025
 ---
 
 # Set the Azure Relay for on-premises data gateway
@@ -48,7 +48,7 @@ If you want to keep your data within the region where it's stored, all you need 
 
 When you install an on-premises data gateway, you must select the region of the home tenant to work with Power BI. Data from your gateway must travel to the relay, then to the location of your [Power BI capacity](/power-bi/enterprise/service-admin-premium-manage). An Azure Relay automatically gets installed in the same region selected for the on-premises data gateway during its configuration.
 
-However, you have the option to choose your own relay in a different location. Then, the data is transfered through the location of your assigned relay instead. Only metadata goes to the gateway application in the home region and this condition can't be changed. This means you can keep your data within the region it's stored in if your relay, the capacity, and the data are all in the same region.
+However, you have the option to choose your own relay in a different location. Then, the data is transferred through the location of your assigned relay instead. Only metadata goes to the gateway application in the home region and this condition can't be changed. This means you can keep your data within the region it's stored in if your relay, the capacity, and the data are all in the same region.
 
 ## Related content
 
