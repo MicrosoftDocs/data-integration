@@ -2,7 +2,7 @@
 title: Set the Azure Relay for on-premises data gateway
 description: Learn how to change the details of the Azure Relay for an on-premises data gateway.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 05/06/2025
 ---
 
 # Set the Azure Relay for on-premises data gateway
