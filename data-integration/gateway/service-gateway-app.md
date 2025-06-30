@@ -2,7 +2,7 @@
 title: Use the on-premises data gateway app
 description: Learn how to use the on-premises data gateway app to configure various services of your on-premises data gateway.
 ms.topic: conceptual
-ms.date: 6/10/2024
+ms.date: 6/10/2025
 ---
 
 # Use the on-premises data gateway app
