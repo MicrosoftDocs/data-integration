@@ -7,13 +7,13 @@ ms.date: 6/30/2025
 
 # Run a Fabric Dataflow Gen2 through the VNet data gateway
 
-To use a Dataflow Gen2 with VNETs:
+To use a Dataflow Gen2 with VNets:
 
 1. In Fabric, navigate to your workspace by selecting **Workspaces**, and then selecting your workspace.
 
    :::image type="content" source="media/use-data-gateways-dfgen2-fabric/select-fabric-workspace.png" alt-text="Screenshot of the workspaces with the example workspace name emphasized." lightbox="media/use-data-gateways-dfgen2-fabric/select-fabric-workspace.png":::
 
-2. Make sure you have selected **Data Factory** in the bottom left. Then select **New item**.
+2. Make sure you selected **Data Factory** in the bottom left. Then select **New item**.
 
    :::image type="content" source="media/use-data-gateways-dfgen2-fabric/select-new.png" alt-text="Screenshot of the Data Factory page with Data Factory and New emphasized." lightbox="media/use-data-gateways-dfgen2-fabric/select-new.png":::
 
@@ -33,7 +33,7 @@ To use a Dataflow Gen2 with VNETs:
 
 7. Select **Next**.
 8. Select the data you want to load from your source.
-9. You are now back in the Power Query editor. Apply any transformations to your data here.
+9. You're now back in the Power Query editor. Apply any transformations to your data here.
 10. Select **Publish**.
 
-You are taken back to your workspace where you can view your new Dataflow Gen2 loading. You can also navigate to the manage connections and gateways page and look under virtual network data gateways to see the new connection to your data source, if you made a new one in step 5.
+You're taken back to your workspace where you can view your new Dataflow Gen2 loading. You can also navigate to the **Manage connections and gateways** page and look under virtual network data gateways. Here you can see the new connection to your data source if you made a new one in step 5.
