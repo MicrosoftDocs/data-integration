@@ -2,11 +2,11 @@
 title: Step by step guide on configuring your proxy settings
 description: Provides step by step instructions on how to configure the proxy settings for the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/26/2025
 ---
 # Step by step guide on configuring your proxy settings
 
-If your work environment requires Microsoft on-premises data gateway to go through a Proxy Server for connecting to the service, follow the steps below in order to configure the proxy settings.
+If your work environment requires a Microsoft on-premises data gateway to go through a Proxy Server for connecting to the service, use the following steps to configure the proxy settings.
 
 ## Configure proxy settings
 
@@ -27,11 +27,11 @@ If your work environment requires Microsoft on-premises data gateway to go throu
 
 2. Browse the installation folder for the on-premises data gateway, for example, *C:\Program Files\On-premises data gateway\*.
 3. Open the first file that's used for the configuration screens that configure the gateway, that is, *EnterpriseGatewayConfigurator.exe.config*.
-4. Locate the `defaultProxy` element and replace it with your proxy configuration created in the step 1 above, and then save your changes to the file.
+4. Locate the `defaultProxy` element and replace it with your proxy configuration created in the step 1, and then save your changes to the file.
 5. Open the second file that's used for the actual Windows service that interacts with the cloud service using the gateway and handles the requests, that is, *Microsoft.PowerBI.EnterpriseGateway.exe.config* and repeat step 4.
 6. For the third configuration file that's used for the gateway to connect to the data sources&mdash;typically cloud data sources&mdash;open the subfolder *m* in the installation folder and then the file *Microsoft.Mashup.Container.NetFX45.exe.config*. Repeat step 4 to insert the proxy configuration into this file.
 
-   If the file is in the default state, you'll need to add the `system.net` tag, together with the proxy definition, as in the following example:
+   If the file is in the default state, you need to add the `system.net` tag, together with the proxy definition, as in the following example:
 
     ```xml
     <system.net>
@@ -46,7 +46,7 @@ If your work environment requires Microsoft on-premises data gateway to go throu
     </system.net>
     ```
 
-7. Open the on-premises data gateway application, navigate to **Service Settings** tab and select **Restart now** to restart the Gateway service and apply the new proxy settings.
+7. Open the on-premises data gateway application, navigate to **Service Settings** tab, and select **Restart now** to restart the gateway service and apply the new proxy settings.
 
 ## Verify consistent proxy configuration
 
@@ -65,7 +65,8 @@ If your work environment requires Microsoft on-premises data gateway to go throu
    C:\Program Files\On-premises data gateway\m\Microsoft.Mashup.Container.NetFX45.exe.config
    Review <https://docs.microsoft.com/data-integration/gateway/service-gateway-proxy>  for additional information about configuring proxies for the Gateway.
    ```
-When running the proxy configuration consistency verification from an on-premises data gateway (personal mode), the following configuration files will be verified:
+
+When you run the proxy configuration consistency verification from an on-premises data gateway (personal mode), the following configuration files are verified:
 
    %LocalAppData%\Microsoft\On-premises data gateway (personal mode)\PersonalGatewayConfigurator.exe.config
    %LocalAppData%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.PersonalGateway.exe.config
@@ -76,10 +77,10 @@ When running the proxy configuration consistency verification from an on-premise
 If the proxy definition is either missing or inconsistent, you can experience different behaviors with your on-premises data gateway. A few examples are:
 
 * A semantic model or dataflow refresh failure, error message example: `Error: Unable to connect to the remote server`.
-* While launching on premises data gateway, you fail to sign in, the sign-in prompt appears but its content can't be displayed, or an error message page is displayed.
+* While launching the on-premises data gateway, you fail to sign in, the sign-in prompt appears but its content can't be displayed, or an error message page is displayed.
 * The Network Port test results report failures connecting to the servers.
 
-## Next steps
+## Related content
 
 > [!VIDEO c26cff6d-e945-4af5-84cc-a671098a08b6]
 

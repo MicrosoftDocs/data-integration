@@ -2,7 +2,7 @@
 title: Pricing for services supported by the data gateway
 description: This article provides links to pricing details for the services that support the on-premises and virtual network data gateways.
 ms.topic: concept-article
-ms.date: 06/27/2024
+ms.date: 6/26/2025
 ai-usage: ai-assisted
 ---
 # Pricing for services supported by the data gateway
@@ -36,12 +36,12 @@ The on-premises and virtual network data gateways help you connect from on-premi
 
 ## Power Apps
 
-- [Power Apps Pricing](https://powerapps.microsoft.com/pricing/)
+- [Power Apps Pricing](https://www.microsoft.com/power-platform/products/power-apps/pricing/)
 - [Power Apps Billing](/power-platform/admin/pricing-billing-skus)
 
 ## Power Automate
 
-- [Power Automate Pricing](https://flow.microsoft.com/pricing/)
+- [Power Automate Pricing](https://www.microsoft.com/power-platform/products/power-automate/pricing)
 - [Power Automate Billing](/power-automate/billing-questions)
 
 ## Power BI (Non-Premium)
@@ -58,5 +58,5 @@ The on-premises and virtual network data gateways help you connect from on-premi
 
 ## Related content
 
-[Virtual network data gateways pricing and billing](../vnet/data-gateway-business-model.md)
-[What is an on-premises data gateway](service-gateway-onprem.md)
+- [Virtual network data gateways pricing and billing](../vnet/data-gateway-business-model.md)
+- [What is an on-premises data gateway](service-gateway-onprem.md)

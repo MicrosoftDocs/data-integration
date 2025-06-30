@@ -3,13 +3,14 @@ title: Troubleshoot a virtual network (VNet) network
 description: Describes how to use the Power Platform admin center to troubleshoot network connectivity issues between a virtual network data gateway and the data source.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/27/2025
 ---
 
 # Troubleshoot a virtual network data gateway
+
 ## Troubleshoot a virtual network data gateway connecting to a SQL endpoint
 
-If you're using a virtual network data gateway and a private endpoint to connect to a data source like SQL, you might experience sporadic broken TCP connections to the data source. The queries might fail with error messages like invalid operation, the connection is closed, an existing connection was forcibly closed by the remote host, or a transport-level error has occurred. This experience is a known issue and will be fixed for our GA release.
+If you're using a virtual network data gateway and a private endpoint to connect to a data source like SQL, you might experience sporadic broken Transmission Control Protocol (TCP) connections to the data source. The queries might fail with error messages like invalid operation, the connection is closed, an existing connection was forcibly closed by the remote host, or a transport-level error has occurred. This experience is a known issue and will be fixed for our GA release.
 
 ## Troubleshoot a virtual network data gateway network
 
@@ -31,22 +32,22 @@ The troubleshooting information includes the following data:
 
 3. Select the gateway you want to troubleshoot and then select **Troubleshoot network** in the ribbon at the top of the page.
 
-   :::image type="content" source="media/troubleshoot-data-gateway/troubleshoot-network.png" alt-text="Image of the Power Query admin center with Data (preview) menu item open, a gateway selected, and the Troubleshoot network selection emphasized." lightbox="media/troubleshoot-data-gateway/troubleshoot-network.png":::
+   :::image type="content" source="media/troubleshoot-data-gateway/troubleshoot-network.png" alt-text="Screenshot of the Power Query admin center with Data (preview) menu item open, a gateway selected, and the Troubleshoot network selection emphasized." lightbox="media/troubleshoot-data-gateway/troubleshoot-network.png":::
 
-   _The gateway needs to be active. If the gateway is auto paused, it will be started, and it can take up to 2 minutes for the gateway to become active._
+   _The gateway needs to be active. If the gateway is auto paused, it's started, and it can take up to 2 minutes for the gateway to become active._
 
-   :::image type="content" source="media/troubleshoot-data-gateway/testing-network-connection.png" alt-text="Image of the Troubleshoot network panel while the network connection is being tested.":::
+   :::image type="content" source="media/troubleshoot-data-gateway/testing-network-connection.png" alt-text="Screenshot of the Troubleshoot network panel while the network connection is being tested.":::
 
-   >[!Note]
-   >The troubleshooting panel automatically triggers a status check. If the status fails, then the troubleshooting button is disabled because the gateway isn't connected. Refreshing the status will clear the troubleshooting result state.
+   > [!NOTE]
+   >The troubleshooting panel automatically triggers a status check. If the status fails, then the troubleshooting button is disabled because the gateway isn't connected. Refreshing the status clears the troubleshooting result state.
 
 4. If the status check succeeded, you can view your ethernet adapter information, including the DNS servers, IPv4 address, subnet mask, and the default gateway.
 
-   :::image type="content" source="media/troubleshoot-data-gateway/status-check-succeeded.png" alt-text="Image of the Troubleshoot network panel after the status check succeeded, with IP values displayed for DN servers, IPv4 address, Subnet mask, and Default gateway.":::
+   :::image type="content" source="media/troubleshoot-data-gateway/status-check-succeeded.png" alt-text="Screenshot of the Troubleshoot network panel after the status check succeeded, with IP values displayed for DN servers, IPv4 address, Subnet mask, and Default gateway.":::
 
 5. To test the IP configuration, fill in the IP or Fully Qualified Domain Name (FQDN) and the port number, and then select the troubleshoot button. The input of the port must be a whole number&mdash;decimals and strings aren't allowed.
 
-   :::image type="content" source="media/troubleshoot-data-gateway/test-ip-configuration.png" alt-text="Image of Name resolution panel with values for DNS servers, Addresses, Aliases, Name of computer contacted, Network alias interface, Remote address, and Ping source address.":::
+   :::image type="content" source="media/troubleshoot-data-gateway/test-ip-configuration.png" alt-text="Screenshot of the Name resolution panel with values for DNS servers, Addresses, Aliases, Name of computer contacted, Network alias interface, Remote address, and Ping source address.":::
   
->[!Note]
->If you get an `Unable to retrieve <IPConfig/TestNetConnectinon/Host Network> information.` message, retry troubleshooting and ensure you've set the right IP/FQDN and port number.
+> [!NOTE]
+>If you get an `Unable to retrieve <IPConfig/TestNetConnectinon/Host Network> information.` message, retry troubleshooting and ensure you set the right IP/FQDN and port number.

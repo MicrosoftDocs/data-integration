@@ -2,10 +2,10 @@
 title: Download logs on the virtual network data gateway
 description: This document provides information about how to download and interpret virtual network (VNet) data gateways logs.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/27/2025
 ---
 
-# Download logs on the virtual network (VNET) data gateway (preview)
+# Download logs on the virtual network (VNet) data gateway (preview)
 
 Logs for your virtual network data gateway are available for download on the **Manage connections and gateways** page. Four folders are downloaded:
 
@@ -14,11 +14,13 @@ Logs for your virtual network data gateway are available for download on the **M
 - Query Execution Report
 - Resource Consumption
 
-## Notes:
+<!--markdownlint-disable MD036-->
+**Notes:**
+<!--markdownlint-enable MD036-->
 
-- You must be an admin on the virtual network data gateway to download logs. Check the [manage users](manage-data-gateways.md) option to see if you're an admin.
-- Retention of logs: MashupLogs are kept for the past 48 hours. The SystemCounters, QueryExecutionReport and Resource Consumption logs are kept for the past 29 days. Currently, customers don't have the ability to change how long the logs are retained during the retention period.
-- The gateway must be online to provide logs. Check the status of the virtual network by selecting the icon in the "Status" column. 
+- You must be an admin on the virtual network data gateway to download logs. Check the [manage users](manage-data-gateways.md) option to determine if you're an admin.
+- Retention of logs: MashupLogs are kept for the past 48 hours. The SystemCounters, QueryExecutionReport, and Resource Consumption logs are kept for the past 29 days. Currently, customers don't have the ability to change how long the logs are retained during the retention period.
+- The gateway must be online to provide logs. Check the status of the virtual network by selecting the icon in the **Status** column.
 - The download isn't available if the Fabric private link is enabled in your tenant.
 - If you don’t see the download, check to make sure pop-ups aren't disabled on your browser.
 - This feature isn't available in certain regions, including Mexico central, Spain central, Qatar central, China regions, and US Gov Virginia regions.
@@ -30,11 +32,11 @@ Logs for your virtual network data gateway are available for download on the **M
 2. Select the **Virtual network data gateways** tab.
 3. Find your virtual network data gateway and, in the same row, select the download icon.
 
-:::image type="content" source="media\diagnostics\diagnostics-download.png" lightbox="media\diagnostics\diagnostics-download.png" alt-text="Diagnostics download icon":::
+   :::image type="content" source="media\diagnostics\diagnostics-download.png" lightbox="media\diagnostics\diagnostics-download.png" alt-text="Screenshot of the manage connections and gateways page showing the diagnostics download icon":::
 
-4. In the pop-up window, you can choose the specific log category you need or select all available logs. Additionally, you have the option to pick a predefined time range or customize the time range to suit your needs.
+4. In the pop-up window, you can choose the specific log category you need or select all available logs. Additionally, you can pick a predefined time range or customize the time range to suit your needs.
 
-:::image type="content" source="media\diagnostics\diagnostics-download-filter-window.png" lightbox="media\diagnostics\diagnostics-download-filter-window.png" alt-text="Choose log category and time range":::
+   :::image type="content" source="media\diagnostics\diagnostics-download-filter-window.png" alt-text="Screenshot of the download diagnostics dialog where you choose the log category and time range":::
 
 5. Select **Download diagnostics** button, and view logs in the downloaded folder.
 
@@ -44,7 +46,7 @@ Logs for your virtual network data gateway are available for download on the **M
 | --- | --- |
 | Timestamp | The time the counter was emitted. |
 | ID | Unique identifier for the container on which your gateway is currently running. |
-| CommittedMemoryinMB | Memory used out of the total 8-GB RAM reserved per VNET. |
+| CommittedMemoryinMB | Memory used out of the total 8-GB RAM reserved per VNet. |
 | CPUUsagePercentage | CPU used. |
 | MemoryAvailableinMB | Memory available. |
 
@@ -71,7 +73,7 @@ Logs for your virtual network data gateway are available for download on the **M
 | QueryId | Query identifier. |
 | InstanceId | Identifier for the container on which your gateway is currently running. |
 | RequestId | Request identifier. |
-| QueryType | Query type that is, DirectQuery or Data refresh operations including semantic model and dataflow refreshes. |
+| QueryType | Query type, that is, DirectQuery or Data refresh operations including semantic model and dataflow refreshes. |
 | ConnectionPath | Data source kinds and paths. |
 | Status | Indicates whether the query failed or succeeded. |
 | StartTime | Start of the query execution. |
@@ -86,9 +88,9 @@ Logs for your virtual network data gateway are available for download on the **M
 
 | Attribute | Description |
 | --- | --- |
-| CapacityId | ID of the capacity that is charged |
-| CapacityUnitSeconds | Capacity consumption emitted, as CapacityUnitSeconds |
-| GatewayId | Gateway object identifier |
-| GatewayName | Name of the gateway |
-| Id | Log identifier |
-| Timestamp | The time consumption was emitted |
+| CapacityId | ID of the capacity that's charged. |
+| CapacityUnitSeconds | Capacity consumption emitted, as CapacityUnitSeconds. |
+| GatewayId | Gateway object identifier. |
+| GatewayName | Name of the gateway. |
+| Id | Log identifier. |
+| Timestamp | The time consumption was emitted. |

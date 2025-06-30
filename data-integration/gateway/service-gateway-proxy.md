@@ -2,7 +2,7 @@
 title: Configure proxy settings for the on-premises data gateway
 description: Provides information about configuration of proxy settings for the on-premises data gateway.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 6/26/2025
 ---
 # Configure proxy settings for the on-premises data gateway
 
@@ -26,13 +26,13 @@ The third configuration file needs to be edited for the gateway to connect to cl
 
 On the on-premises data gateway (personal mode), the corresponding file is _%LocalAppData%\Microsoft\On-premises data gateway (personal mode)\m\Microsoft.Mashup.Container.NetFX45.exe.config_.
 
-The fourth configuration file needs to be edited for the gateway to connect to Fabric Pipelines services through a proxy. Since the February 2025 version (3000.258), the configuration file has been renamed to:
+The fourth configuration file needs to be edited for the gateway to connect to Fabric Pipelines services through a proxy. Since the February 2025 version (3000.258), the configuration file is renamed to:
 
-* _C:\Program Files\On-premises data gateway\FabricIntegrationRuntime\5.0\Shared\FabricPipelineworker.exe.config_. 
+* _C:\Program Files\On-premises data gateway\FabricIntegrationRuntime\5.0\Shared\FabricPipelineworker.exe.config_
 
-If you are using an earlier version, the configuration file is:
+If you're using an earlier version, the configuration file is:
 
-* _C:\Program Files\On-premises data gateway\FabricIntegrationRuntime\5.0\Shared\Fabricworker.exe.config_.
+* _C:\Program Files\On-premises data gateway\FabricIntegrationRuntime\5.0\Shared\Fabricworker.exe.config_
 
 The following section describes how to edit these files.
 
@@ -50,7 +50,7 @@ The default configuration works with Windows authentication. If your proxy uses 
 
 We don't recommend basic proxy authentication. Using basic proxy authentication might cause proxy authentication errors that result in the gateway not being properly configured. Use a stronger proxy authentication mechanism to resolve.
 
-In addition to using default credentials, you can add a `<proxy>` element to define proxy server settings in more detail. For example, you can specify that your on-premises data gateway should always use the proxy, even for local resources, by setting the *bypassonlocal* parameter to false. This setting can help in troubleshooting situations in order to track all HTTPS requests that originate from a gateway in the proxy log files. The following sample configuration specifies that all requests must go through a specific proxy with the IP address 192.168.1.10.
+In addition to using default credentials, you can add a `<proxy>` element to define proxy server settings in more detail. For example, you can specify that your on-premises data gateway should always use the proxy, even for local resources, by setting the _bypassonlocal_ parameter to false. This setting can help in troubleshooting situations in order to track all HTTPS requests that originate from a gateway in the proxy log files. The following sample configuration specifies that all requests must go through a specific proxy with the IP address 192.168.1.10.
 
 ```xml
 <system.net>
@@ -88,7 +88,7 @@ To learn more about the configuration of the proxy elements for .NET configurati
 In addition, to use the gateway with output destinations, the gateway might need to be configured to be able to pass through a firewall or proxy to reach the destination data source. If you're using a proxy server, this passthrough might require enable-listing URLs to appropriate destinations, for example \*.datawarehouse.pbidedicated.windows.net for LakeHouse, \*.dfs.core.windows.net for Data Lake, and so on.
 
 > [!NOTE]
-> If you are using LakeHouse destinations, you must be running at least the May 2023 release of the gateway. The Lakehouse connector isn't available in gateway versions prior to this release.
+> If you're using LakeHouse destinations, you must be running at least the May 2023 release of the gateway. The Lakehouse connector isn't available in gateway versions prior to this release.
 
 ## Change the gateway service account to a domain user
 
@@ -98,9 +98,8 @@ For more information about how to change the gateway service account, go to [Cha
 
 > [!NOTE]
 > We recommend that you use a managed service account to avoid having to reset passwords. Learn how to create a [managed service account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd548356(v=ws.10)) within Active Directory.
->
 
-## Next steps
+## Related content
 
 * [Step by step guide on configuring your proxy settings](service-gateway-proxy-setup-guide.md)
 * [Firewall information](service-gateway-tshoot.md#firewall-or-proxy)  
