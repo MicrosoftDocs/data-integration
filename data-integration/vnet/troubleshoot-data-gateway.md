@@ -3,14 +3,10 @@ title: Troubleshoot a virtual network (VNet) network
 description: Describes how to use the Power Platform admin center to troubleshoot network connectivity issues between a virtual network data gateway and the data source.
 ms.reviewer: dougklo
 ms.topic: conceptual
-ms.date: 6/27/2025
+ms.date: 7/1/2025
 ---
 
 # Troubleshoot a virtual network data gateway
-
-## Troubleshoot a virtual network data gateway connecting to a SQL endpoint
-
-If you're using a virtual network data gateway and a private endpoint to connect to a data source like SQL, you might experience sporadic broken Transmission Control Protocol (TCP) connections to the data source. The queries might fail with error messages like invalid operation, the connection is closed, an existing connection was forcibly closed by the remote host, or a transport-level error has occurred. This experience is a known issue and will be fixed for our GA release.
 
 ## Troubleshoot a virtual network data gateway network
 
