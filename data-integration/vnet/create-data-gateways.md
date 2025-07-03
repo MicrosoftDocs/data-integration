@@ -104,7 +104,12 @@ Your Azure virtual network region needs to be in one of the following regions fo
 - Germany West Central
 - Japan East
 - Korea Central
+- Indonesia Central
+- Israel Central
 - Italy North
+- Malaysia West
+- Mexico Central
+- New Zealand North
 - North Central US
 - North Europe
 - Norway East
@@ -123,6 +128,7 @@ Your Azure virtual network region needs to be in one of the following regions fo
 - West Europe
 - West US
 - West US 2
+- West US 3
 
 ### Related content
 
