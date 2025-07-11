@@ -15,7 +15,9 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [],
+  "notification_subscribers": [
+    "dougklo@microsoft.com"
+  ],
   "sync_notification_subscribers": [
     "didocs@microsoft.com"
   ],
