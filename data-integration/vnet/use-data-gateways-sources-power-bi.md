@@ -101,7 +101,6 @@ Sources supported through either public endpoints or secure private endpoint con
 - Confluent Cloud
 - Connect to comScore Digital Analytix
 - Connect to Viva Insights Data
-- CSV
 - Databricks
 - Dataflows
 - Datamarts
@@ -225,7 +224,6 @@ Sources supported through either public endpoints or secure private endpoint con
 - SurveyMonkey
 - Supermetrics
 - SweetIQ
-- Text file
 - TeamDesk.Database
 - Tenforce (Smart) List
 - Timelog
