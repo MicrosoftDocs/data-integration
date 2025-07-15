@@ -7,9 +7,9 @@ ms.date: 6/13/2025
 
 # Use virtual network data gateway and data sources in Power BI
 
-Virtual network data gateways allow import or direct query semantic models to connect to data services within an Azure virtual network without the need of an on-premises data gateway.
+Virtual network data gateways allow import or direct query semantic models to connect to data services within an Azure virtual network.
 
-In Power BI, VNet data gateways require a Power BI Premium capacity license (A4 SKU or higher or any F or P SKU).
+In Power BI, virtual network data gateways require a Power BI Premium capacity license (A4 or higher or any F or P).
 
 ## Manage virtual network data gateways
 
@@ -25,9 +25,9 @@ You can also create data sources and share these data sources to users like you 
 
 ## Supported Azure data services
 
-The VNet data gateway can be used to connect securely to your data sources. There are a few different ways you can use the VNet to connect:
+The virtual network data gateway can be used to connect securely to your data sources. There are a few different ways you can use the virtual network to connect:
 
-1. Connecting to your private resources in Azure. For this scenario, you need to create a private endpoint and private DNS zone or service endpoints on your data source.
+1. Connecting to your private resources in Azure. For this scenario, you need to create a private endpoint and private Domain Name System (DNS) zone or service endpoints on your data source.
 2. Connecting to your private resources outside of Azure. For this scenario, you need to use Express Route and/or VPNs.
 3. Connecting to public resources.
 
@@ -48,7 +48,7 @@ Azure sources that support secure private endpoint connectivity (as in scenario 
 - Azure Data Lake Storage Gen2
 - Azure Databricks
 - Azure Databricks workspace
-- Azure DevOps (Boards only)
+- Azure DevOps Services(Boards only)
 - Azure Function
 - Azure HDInsight Cluster
 - Azure HDInsight on Azure Kubernetes Services (AKS) Trino
@@ -71,7 +71,7 @@ Sources supported through either public endpoints or secure private endpoint con
 - Adobe Analytics
 - AdMaD
 - Admin Insights
-- Amazon RDS for SQL Server
+- Amazon Relational Database Service for SQL Server
 - Amazon Redshift
 - Amazon S3
 - Analysis Services
@@ -80,7 +80,7 @@ Sources supported through either public endpoints or secure private endpoint con
 - Aptix - Integrations Platform Insights
 - AriaConnector
 - Asana
-- Assemble Views
+- AssembleViews
 - AtScale cubes
 - Autodesk Construction Cloud
 - Automation Anywhere
@@ -99,15 +99,14 @@ Sources supported through either public endpoints or secure private endpoint con
 - Cognite Data Fusion (CDF)
 - Common Data Service (Legacy)
 - Confluent Cloud
-- Connect to comScore Digital Analytix
-- Connect to Viva Insights Data
-- CSV
+- comScore Digital Analytix
+- VivaInsights Data
 - Databricks
 - Dataflows
 - Datamarts
 - Dataverse
 - DataWorld.semantic model
-- DCW - Integrations Platform Insights
+- Digital Construction Works Insights
 - Delta Sharing
 - Digital Analytix
 - Dremio Cloud
@@ -123,21 +122,21 @@ Sources supported through either public endpoints or secure private endpoint con
 - EmplifiMetrics
 - EntersoftBusinessSuite
 - EQuIS
-- EventHub
+- Event Hubs
 - eWayCRM
 - Excel
 - Fabric Data Pipelines
 - FactSetAnalytics
 - FactSetRMS
 - Fhir
-- From Paxata
+- Paxata
 - FTP
 - GitHub
 - GitHub - Source Control (preview)
 - Goals
 - Google Pub Sub
 - Google BigQuery
-- Google BigQuery (Azure AD)
+- Google BigQuery (Microsoft Entra ID)
 - Google Cloud Storage
 - Google Sheets
 - HDInsight Interactive Query
@@ -225,7 +224,6 @@ Sources supported through either public endpoints or secure private endpoint con
 - SurveyMonkey
 - Supermetrics
 - SweetIQ
-- Text file
 - TeamDesk.Database
 - Tenforce (Smart) List
 - Timelog
@@ -233,7 +231,7 @@ Sources supported through either public endpoints or secure private endpoint con
 - UsageMetricsDataConnector
 - Usercube
 - UserVoice
-- Viva Insights Data
+- VivaInsights Data
 - Vena 1.0.4
 - Vertica
 - VesselInsight
@@ -253,7 +251,7 @@ Sources supported through either public endpoints or secure private endpoint con
 
 ## Microsoft Entra ID single sign-on for DirectQuery
 
-When a user interacts with a DirectQuery report in the Power BI service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying Azure virtual network data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Microsoft Entra ID identity of the user that interacts with Power BI.
+When a user interacts with a DirectQuery report in the Power BI service, each cross-filter, slice, sort, and report editing operation can result in queries. The queries execute live against the underlying Azure virtual network data source. When you configure single sign-on (SSO) for an applicable data source, queries execute under the Microsoft Entra ID identity of the user that interacts with Power BI.
 
 To enable Microsoft Entra ID SSO, on the **Manage Gateways** page in Power BI, go to the **Data source settings** page, and select the **Use SSO via Azure AD for Direct Queries** check box.
 
