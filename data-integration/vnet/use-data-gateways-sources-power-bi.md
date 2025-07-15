@@ -27,7 +27,7 @@ You can also create data sources and share these data sources to users like you 
 
 The virtual network data gateway can be used to connect securely to your data sources. There are a few different ways you can use the virtual network to connect:
 
-1. Connecting to your private resources in Azure. For this scenario, you need to create a private endpoint and private DNS zone or service endpoints on your data source.
+1. Connecting to your private resources in Azure. For this scenario, you need to create a private endpoint and private Domain Name System (DNS) zone or service endpoints on your data source.
 2. Connecting to your private resources outside of Azure. For this scenario, you need to use Express Route and/or VPNs.
 3. Connecting to public resources.
 
@@ -48,7 +48,7 @@ Azure sources that support secure private endpoint connectivity (as in scenario 
 - Azure Data Lake Storage Gen2
 - Azure Databricks
 - Azure Databricks workspace
-- Azure DevOps (Boards only)
+- Azure DevOps Services(Boards only)
 - Azure Function
 - Azure HDInsight Cluster
 - Azure HDInsight on Azure Kubernetes Services (AKS) Trino
@@ -71,7 +71,7 @@ Sources supported through either public endpoints or secure private endpoint con
 - Adobe Analytics
 - AdMaD
 - Admin Insights
-- Amazon RDS for SQL Server
+- Amazon Relational Database Service for SQL Server
 - Amazon Redshift
 - Amazon S3
 - Analysis Services
@@ -80,7 +80,7 @@ Sources supported through either public endpoints or secure private endpoint con
 - Aptix - Integrations Platform Insights
 - AriaConnector
 - Asana
-- Assemble Views
+- AssembleViews
 - AtScale cubes
 - Autodesk Construction Cloud
 - Automation Anywhere
@@ -99,14 +99,14 @@ Sources supported through either public endpoints or secure private endpoint con
 - Cognite Data Fusion (CDF)
 - Common Data Service (Legacy)
 - Confluent Cloud
-- Connect to comScore Digital Analytix
-- Connect to Viva Insights Data
+- comScore Digital Analytix
+- VivaInsights Data
 - Databricks
 - Dataflows
 - Datamarts
 - Dataverse
 - DataWorld.semantic model
-- DCW - Integrations Platform Insights
+- Digital Construction Works Insights
 - Delta Sharing
 - Digital Analytix
 - Dremio Cloud
@@ -122,14 +122,14 @@ Sources supported through either public endpoints or secure private endpoint con
 - EmplifiMetrics
 - EntersoftBusinessSuite
 - EQuIS
-- Event Hub
+- Event Hubs
 - eWayCRM
 - Excel
 - Fabric Data Pipelines
 - FactSetAnalytics
 - FactSetRMS
 - Fhir
-- From Paxata
+- Paxata
 - FTP
 - GitHub
 - GitHub - Source Control (preview)
@@ -231,7 +231,7 @@ Sources supported through either public endpoints or secure private endpoint con
 - UsageMetricsDataConnector
 - Usercube
 - UserVoice
-- Viva Insights Data
+- VivaInsights Data
 - Vena 1.0.4
 - Vertica
 - VesselInsight
