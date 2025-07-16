@@ -52,7 +52,7 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 | ecs.office.com | 443 | Used for ECS configuration to enable Mashup features. |
 
 
-For GCC, GCC high, and DoD, the following FQDNs are used by the gateway.
+For Government Community Cloud (GCC), Government Community Cloud High (GCC high), and Department of Defense (DoD), the following FQDNs are used by the gateway.
 
 | Ports | GCC | GCC High | DoD |
 | --- | --- | --- | --- |
