@@ -3,6 +3,8 @@ title: Business Continuity and Disaster Recovery (BCDR) for Gateways
 description: This article describes best practices and recommendations for the on-premises data gateway and virtual network data gateway business Continuity and Disaster Recovery (BCDR).
 ms.topic: conceptual
 ms.date: 7/25/2025
+author: lrtoyou1223
+ms.author: lle
 ---
 
 # Business Continuity and Disaster Recovery (BCDR) for Gateways
