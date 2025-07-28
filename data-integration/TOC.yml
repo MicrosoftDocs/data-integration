@@ -3,7 +3,7 @@
   expanded: true
   items:
   - name: "Business continuity and disaster recovery (BCDR) for gateways"
-    href: gateways-business-continuity-and-disaster-recovery.md
+    href: gateways-business-continuity-disaster-recovery.md
   - name: On-premises data gateways docs
     expanded: true
     items:
