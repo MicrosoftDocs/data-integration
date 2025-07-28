@@ -7,7 +7,7 @@ author: lrtoyou1223
 ms.author: lle
 ---
 
-# Business Continuity and Disaster Recovery (BCDR) for Gateways
+# Business continuity and disaster recovery (BCDR) for gateways
 
 Microsoft Fabric and Power Platform support two gateway types to enable secure data movement and access across hybrid networks: the On-premises Data Gateway and the Virtual Network Data Gateway. This document outlines their Business Continuity and Disaster Recovery (BCDR) behavior across different levels of Azure service availability disruptions.
 
@@ -22,7 +22,7 @@ At the **Availability Zone** level, gateway services are designed to be fully re
 
 At the **Azure region** level, the behavior depends on the specific service and gateway configuration.
 
-**1.Power BI Service Region Failure**
+### 1.Power BI Service Region Failure
 
 If the **Power BI service** in a region experiences a major outage:
 
@@ -34,7 +34,7 @@ If the **Power BI service** in a region experiences a major outage:
 > [!NOTE]
 > This applies only to the Power BI service. Gateway availability depends on other services as detailed below.
 
-**2.Virtual Network Data Gateway**
+### 2.Virtual Network Data Gateway
 
 The **Virtual Network Data Gateway**, hosted in a customer-managed Azure Virtual Network (VNet), is deployed regionally.
 
@@ -44,7 +44,7 @@ If the gateway region is unavailable:
 - Users must **manually provision** a backup gateway in the **paired Azure region** to ensure continuity.
 - Workspaces and pipelines must be configured to target the backup gateway if failover is needed.
 
-**3.On-premises Data Gateway**
+### 3.On-premises Data Gateway
 
 The **On-premises Data Gateway** depends on several Azure services to connect securely to cloud services, including **Azure Relay**.
 
