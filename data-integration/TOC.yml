@@ -2,6 +2,8 @@
   href: gateway/index.yml
   expanded: true
   items:
+  - name: "Business continuity and disaster recovery (BCDR) for gateways"
+    href: gateways-business-continuity-disaster-recovery.md
   - name: On-premises data gateways docs
     expanded: true
     items:
