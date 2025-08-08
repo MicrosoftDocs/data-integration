@@ -4,6 +4,7 @@ description: Describes how to use the Power Platform admin center to troubleshoo
 ms.reviewer: dougklo
 ms.topic: conceptual
 ms.date: 7/1/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Troubleshoot a virtual network data gateway

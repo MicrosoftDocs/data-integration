@@ -3,6 +3,7 @@ title: Virtual network data gateway best practices
 description: This article describes best practices and recommendations to improve performance and functioning for the virtual network data gateway.
 ms.topic: troubleshooting
 ms.date: 6/27/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Virtual network data gateway best practices and recommendations

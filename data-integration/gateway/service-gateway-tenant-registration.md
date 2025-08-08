@@ -5,6 +5,7 @@ description: Learn how to manage which tenants have permissions to register an o
 ms.reviewer: dougklo
 ms.topic: conceptual
 ms.date: 6/26/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Manage tenants allowed to register an on-premises data gateway
