@@ -3,6 +3,7 @@ title: Change the on-premises data gateway service account
 description: Provides information on how to change the Windows account for the on-premises data gateway service.
 ms.topic: conceptual
 ms.date: 6/26/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Change the on-premises data gateway service account
