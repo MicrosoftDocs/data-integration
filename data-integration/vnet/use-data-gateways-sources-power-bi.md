@@ -3,6 +3,7 @@ title: Use virtual network data gateway and data sources in Power BI
 description: Provides information about how to use virtual network data gateway and data sources in Power BI.
 ms.topic: conceptual
 ms.date: 6/13/2025
+ms.custom: sfi-image-nochange
 ---
 
 # Use virtual network data gateway and data sources in Power BI
