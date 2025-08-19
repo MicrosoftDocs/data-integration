@@ -126,6 +126,14 @@ Connectivity issues can have several different causes. Therefore, if you run int
 1. Is your Firewall just allowing the communication on ports 80 and 443?
    1. If yes, ensure the [HTTPS mode in gateway](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-relay) is enabled.
 
+### Fabric Pipeline Task Memory Requirements on On-Premises Data Gateway
+
+When running a pipeline on an on-premises data gateway, each activity is broken down into one or more tasks. The gateway machine must have sufficient memory to execute these tasks; otherwise, they will be queued.
+
+1. **System management**: 5% of the machine’s memory is reserved for system processes.
+
+1. **Task execution**: Each process running a task is allocated a fixed amount of memory. By default, this is 1,000 MB, but it can be modified the value of **OnPremRuntimeDefaultWorkerMaxWorkingSetInMB** in the configuration file **Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config**, with a minimum setting of 100 MB.
+
 ### Common errors
 
 #### Error: Failed to create a gateway. Try again.
