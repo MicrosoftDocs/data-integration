@@ -11,7 +11,7 @@ ms.custom: sfi-image-nochange
 After you [create](create-data-gateways.md) a virtual network (VNet) data gateway, it's available in the **Data (preview)** > **Virtual network data gateways** tab in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) for you to manage. Also make sure you select your tenant's default home region in the region dropdown to display and manage all your VNet data gateways. You select your tenant's default region because the metadata (name, details, data sources, encrypted credentials, and so on) for all your VNet data gateways are stored in your tenant's default region.
 
 > [!NOTE]
-> The **Virtual network data gateways** tab isn't visible when the **Tenant Administration** toggle is turned on.
+> Tenant Admin mode provides a broader view of gateway resources within a tenant. When enabled, it displays all gateways in the tenant that the user has permission to manage as a Tenant Administrator. By contrast, the regular view only lists gateways where the user has been explicitly assigned as a gateway administrator. 
 
 :::image type="content" source="media/manage-data-gateways/manage-vnet-data-gateways.png" alt-text="Screenshot of the Virtual Network data gateways page whey you manage VNet data gateways." lightbox="media/manage-data-gateways/manage-vnet-data-gateways.png":::
 
