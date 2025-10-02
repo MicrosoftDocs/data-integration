@@ -4,7 +4,7 @@ description: Learn about currently supported versions of the on-premises data ga
 author: miquelladeboer
 ms.author: mideboer
 ms.topic: conceptual
-ms.date: 8/26/2025
+ms.date: 10/2/2025
 ---
 
 # Currently supported monthly updates to the on-premises data gateways
@@ -15,6 +15,12 @@ This article describes the last six updates for the on-premises data gateways an
 > If you are using Microsoft Fabric through an on-premises data gateway, be sure to update to the latest version of the gateway. This ensures that any updates to Fabric features and known issues are propagated through the gateway.
 
 Download the latest versions:
+
+## September 2025 update (3000.286)
+
+- [List of features released](https://blog.fabric.microsoft.com/en-us/blog/on-premises-data-gateway-september-2025-release/)
+- [Download the September 2025 on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-25-09.exe)
+- [Download the September 2025 on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-25-09.exe)
 
 ## August 2025 update (3000.282)
 
@@ -45,12 +51,6 @@ Download the latest versions:
 - [List of features released](https://blog.fabric.microsoft.com/en-us/blog/on-premises-data-gateway-april-2025-release/)
 - [Download the April 2025 on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-25-04.exe)
 - [Download the April 2025 on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-25-04.exe)
-
-## March 2025 update (3000.262)
-
-- [List of features released](https://blog.fabric.microsoft.com/en-us/blog/on-premises-data-gateway-march-2025-release/)
-- [Download the March 2025 on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-25-03.exe)
-- [Download the March 2025 on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-25-03.exe)
 
 ## Related content
 
