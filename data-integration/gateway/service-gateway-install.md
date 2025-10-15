@@ -2,7 +2,7 @@
 title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
 ms.topic: conceptual
-ms.date: 6/9/2025
+ms.date: 10/15/2025
 ms.custom: sfi-image-nochange
 ---
 
@@ -40,7 +40,7 @@ In this article, we show you how to install a standard gateway, how to add anoth
 * Workloads might have specific requirements around compatible gateway versions. For dataflows, go to [using dataflows with on-premises data](/power-query/dataflows/using-dataflows-with-on-premises-data).
 * Gateways aren't supported on Server Core installations.
 * Gateways aren't supported on Windows containers.
-* The user installing the gateway must be the admin of the gateway.
+* The user installing the gateway must be the admin of the machine where the gateway is being installed.
 * The gateway can't be installed on a domain controller.
 * If you're planning to use Windows authentication, make sure you install the gateway on a computer that's a member of the same Microsoft Entra environment as the data sources.
 * Don't install a gateway on a computer, like a laptop, that might be turned off, asleep, or disconnected from the internet. The gateway can't run under any of those circumstances.
