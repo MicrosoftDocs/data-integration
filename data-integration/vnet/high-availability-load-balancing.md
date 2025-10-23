@@ -44,3 +44,5 @@ Gateways support multiple workloads, allowing for efficient parallel execution. 
 - Up to 15 direct queries can execute concurrently, supporting interactive reporting and real-time data retrieval.
 - 1 Fabric Pipeline Copy activity job. Generally, a Copy activity only generates one Copy activity job. However, in some cases, multiple jobs can be generated.
 - 1 Fabric Copy job. If the data source has multiple tables, the copy job is divided into multiple subjobs. A gateway instance can only run one subjob at a time.
+- Up to 6 Lookup, Get metadata, Delete and Script  activity can run concurrently.
+- Up to 200 other pipeline activities such as Stored Procedure and HDInsight can run concurrently.
