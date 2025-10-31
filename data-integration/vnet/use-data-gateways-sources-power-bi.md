@@ -75,7 +75,6 @@ Sources supported through either public endpoints or secure private endpoint con
 - Amazon Relational Database Service for SQL Server
 - Amazon Redshift
 - Amazon S3
-- Analysis Services
 - Anaplan Connection Configuration
 - appFigures
 - Aptix - Integrations Platform Insights
