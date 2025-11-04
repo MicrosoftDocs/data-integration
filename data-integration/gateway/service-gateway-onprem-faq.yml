@@ -42,7 +42,7 @@ sections:
       - question: |
           Are there any requirements for network bandwidth?  
         answer: |
-          Check that your network connection has good throughput. Each environment is different, and throughput depends on the amount of data that's sent. To ensure a minimum level of throughput between your on-premises data source and Azure datacenters, use [Azure ExpressRoute](/azure/expressroute/expressroute-introduction). To help measure your throughput, you can use the [Azure Speed Test app](https://azurespeedtest.azurewebsites.net/).
+          Check that your network connection has good throughput. Each environment is different, and throughput depends on the amount of data that's sent. To ensure a minimum level of throughput between your on-premises data source and Azure datacenters, use [Azure ExpressRoute](/azure/expressroute/expressroute-introduction). To help measure your throughput, you can use the [Azure Speed Test app](https://www.azurespeed.com/Azure/Latency).
           
       - question: |
           Where are my credentials stored?  
