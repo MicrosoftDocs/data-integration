@@ -46,6 +46,36 @@ The gateway update is now complete.
 
 :::image type="content" source="media/service-gateway-update/gateway-update-complete.png" alt-text="Screenshot of the gateway app after the gateway update is complete.":::
 
+## Update Gateways from the UI (preview)
+
+You can trigger the update in UI when a newer version is available:
+
+- Open the Manage Gateways section in the Fabric or Power BI portal.
+- Select the **On-premises data gateways** tab.
+- Select the gateway you want to update.
+- If a new version is available, an update indicator appears.
+
+   :::image type="content" source="media/service-gateway-manual-update/gateway-manual-update-ui.png" alt-text="Screenshot of gateway manual update from UI." lightbox="media/service-gateway-manual-update/gateway-manual-update-ui.png":::
+
+- Click **Update**.
+- Refresh gateway status after installation completes.
+
+> [!NOTE]
+> You need to install or update the gateway to the November 2025 baseline version (or later) first. 
+
+## Programmatic Update (preview)
+
+Along with UI control, programmatic triggers allow automated or at-scale update workflows.
+You can run **Update-DataGatewayClusterMember** PowerShell command to update your gateways to latest version.
+
+```powershell
+Update-DataGatewayClusterMember -GatewayClusterId <Guid> [-MemberGatewayId <Guid>] [-CheckStatus]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
+```
+
+> [!NOTE]
+> You need to install or update the gateway to the November 2025 baseline version (or later) first.
+
 ## Related content
 
 * [Monitor and optimize gateway performance](service-gateway-performance.md)
