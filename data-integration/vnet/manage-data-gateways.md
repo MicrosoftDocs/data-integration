@@ -48,7 +48,7 @@ This setting allows you to shut down a VNet data gateway that has been idling fo
 
 Certificate and Proxy Support enable secure and compliant connectivity for enterprise environments. With certificate-based authentication, organizations can use trusted, enterprise-issued certificates to validate gateway communication. Proxy configuration support allows the VNET Data Gateway to connect through corporate-controlled network routes when direct internet access is restricted. Together, these enhancements strengthen security, improve deployment flexibility, and allow the VNET Data Gateway to operate seamlessly in highly controlled and regulated network infrastructures.
 
-:::image type="content" source="media/manage-data-gateways/certificate-proxy-setting.png" alt-text="Screenshot of the Virtual Network data gateways page with the Manage admins pane opened." lightbox="media/manage-data-gateways/certificate-proxy-setting.png":::
+:::image type="content" source="media/manage-data-gateways/certificate-proxy-setting.png" alt-text="Screenshot of the Virtual Network data gateway certificate and proxy setting page" lightbox="media/manage-data-gateways/certificate-proxy-setting.png":::
 
 ## Remove VNet data gateways
 
