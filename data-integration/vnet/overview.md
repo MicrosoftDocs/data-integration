@@ -28,9 +28,6 @@ The virtual network data gateway:
 
 - Currently, this feature is available only for Fabric Dataflow Gen2, Fabric data pipelines, Fabric Copy Job, Fabric Mirroring, Power BI semantic models, and Power BI paginated reports. Power BI dataflows and datamarts aren't supported.
 
-> [!NOTE]
-> The VNet data gateway support for Fabric Pipeline, Copy Job and Mirroring is now in public preview. In Fabric data pipelines, it currently supports Copy, Lookup, and GetMetadata activities.
-
 - VNet data gateway is currently available for P, F, and A4 or higher (A4, A5, A6, and A7) SKUs. For F SKUs, we recommend that you use F8 and above, but all F SKUs work.
 
 - This feature is currently not supported in GCC L2. We do support GCC L4 (Texas and Virginia) and L5 (DoD East). We support air gapped clouds in US Nat East/West and US Sec East/West.
