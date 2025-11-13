@@ -63,6 +63,9 @@ You can trigger the update in UI when a newer version is available:
 > [!NOTE]
 > You need to install or update the gateway to the November 2025 baseline version (or later) first. 
 
+> [!NOTE]
+> A minimum of 10 GB of available hard drive space is required to perform gateway updates.
+
 ## Programmatic Update (preview)
 
 Along with UI control, programmatic triggers allow automated or at-scale update workflows.
