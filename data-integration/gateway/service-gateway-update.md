@@ -24,6 +24,9 @@ Use the following steps when updating a gateway cluster with two or more members
 
 Disabling a gateway makes sure the load balancer doesn't try to execute queries on the member you're updating, hence reducing delays and failures.
 
+> [!NOTE]
+> Gateway admin permission is needed for gateway update.
+
 ## Update a gateway
 
 To update a gateway:
