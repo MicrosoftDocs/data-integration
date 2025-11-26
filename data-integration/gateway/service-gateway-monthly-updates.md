@@ -3,8 +3,8 @@ title: Currently supported monthly updates to the on-premises data gateways
 description: Learn about currently supported versions of the on-premises data gateways.
 author: miquelladeboer
 ms.author: mideboer
-ms.topic: conceptual
-ms.date: 11/21/2025
+ms.topic: concept-article
+ms.date: 11/26/2025
 ---
 
 # Currently supported monthly updates to the on-premises data gateways
