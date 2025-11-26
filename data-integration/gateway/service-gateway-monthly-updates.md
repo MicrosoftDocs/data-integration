@@ -3,8 +3,8 @@ title: Currently supported monthly updates to the on-premises data gateways
 description: Learn about currently supported versions of the on-premises data gateways.
 author: miquelladeboer
 ms.author: mideboer
-ms.topic: conceptual
-ms.date: 10/31/2025
+ms.topic: concept-article
+ms.date: 11/26/2025
 ---
 
 # Currently supported monthly updates to the on-premises data gateways
@@ -15,6 +15,12 @@ This article describes the last six updates for the on-premises data gateways an
 > If you are using Microsoft Fabric through an on-premises data gateway, be sure to update to the latest version of the gateway. This ensures that any updates to Fabric features and known issues are propagated through the gateway.
 
 Download the latest versions:
+
+## November 2025 update (3000.294)
+
+- [List of features released](https://blog.fabric.microsoft.com/en-us/blog/on-premises-data-gateway-november-2025-release/)
+- [Download the November 2025 on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-25-11.exe)
+- [Download the November 2025 on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-25-11.exe)
 
 ## October 2025 update (3000.290)
 
@@ -45,12 +51,6 @@ Download the latest versions:
 - [List of features released](https://blog.fabric.microsoft.com/en-us/blog/on-premises-data-gateway-june-2025-release/)
 - [Download the June 2025 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-25-06.exe)
 - [Download the June 2025 version of the on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-25-06.exe)
-
-## May 2025 update (3000.270)
-
-- [List of features released](https://blog.fabric.microsoft.com/en-us/blog/on-premises-data-gateway-may-2025-release/)
-- [Download the May 2025 on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-25-05.exe)
-- [Download the May 2025 on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-25-05.exe)
 
 ## Related content
 
