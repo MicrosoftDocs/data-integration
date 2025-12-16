@@ -48,12 +48,12 @@
     },
     "fileMetadata": {
       "ms.author":{
-        "vnet/**.*": "dougklo",
-        "gateway/**.*": "dougklo"
+        "vnet/**.*": "whhender",
+        "gateway/**.*": "whhender"
       },
       "author":{
-        "vnet/**.*": "DougKlopfenstein",
-        "gateway/**.*": "DougKlopfenstein"
+        "vnet/**.*": "whhender",
+        "gateway/**.*": "whhender"
       },
       "ms.subservice":{
         "vnet/**.*": "virtual-network-data-gateways",
