@@ -59,6 +59,8 @@ This subnet should have connectivity to the data service.
     > - Make sure this subnet doesn't have an IPV6 address space added.
     > - Make sure the subnet's IP range doesn't overlap with 10.0.1.x.
     > - If you're dealing with large datasets, you must ensure that the `Microsoft.Storage` Service Endpoint is added to this subnet.
+    > - When using Azure Virtual Hub (vHub) with Propagate Default Route enabled, virtual network data gateway may be unable to connect to an Azure Storage Account located in the same region. You can enable the `Microsoft.Storage` Service Endpoint on the delegated subnet used by the gateway.
+
 
 1. Select **Microsoft.PowerPlatform/vnetaccesslinks** from the subnet delegation drop-down list.
 
