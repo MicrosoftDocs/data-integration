@@ -54,21 +54,14 @@ The gateway update is now complete.
 You can trigger the update in the UI when a newer version is available:
 
 1. Open the Manage Gateways section in the Fabric or Power BI portal.
-2. Turn on the feature flag **ManualUpdateGatewayClusterWithVersionSelection** and turn off feature flag **ManualUpdateGatewayCluster**.
-
-    :::image type="content" source="media/service-gateway-manual-update/gateway-manual-update-feature-flag.png" alt-text="Screenshot of the gateway manual update feature flag." lightbox="media/service-gateway-manual-update/gateway-manual-update-feature-flag.png":::
-
-> [!NOTE]
-> Feature flag **ManualUpdateGatewayCluster** will be removed very soon.
-
-3. Select the **On-premises data gateways** tab.
-4. Select the gateway you want to update.
-5. If a new version is available, an update indicator appears.
+2. Select the **On-premises data gateways** tab.
+3. Select the gateway you want to update.
+4. If a new version is available, an update indicator appears.
 
    :::image type="content" source="media/service-gateway-manual-update/gateway-manual-update-ui.png" alt-text="Screenshot of the gateway manual update from the UI." lightbox="media/service-gateway-manual-update/gateway-manual-update-ui.png":::
 
-6. Select **Update**.
-7. Refresh the gateway status after installation completes.
+5. Select **Update**.
+6. Refresh the gateway status after installation completes.
 
 > [!NOTE]
 > You need to install or update the gateway to the November 2025 baseline version (or later) first. 
