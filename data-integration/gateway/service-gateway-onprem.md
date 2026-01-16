@@ -39,7 +39,9 @@ There are four main steps for using a gateway.
 
 1. [Download and install the gateway](service-gateway-install.md) on a local computer.
 1. [Configure](service-gateway-app.md) the gateway based on your firewall and other network requirements.
-1. [Add gateway admins](service-gateway-manage.md) who can also manage and administer other network requirements.
+1. Add gateway admins who can also manage and administer other network requirements:
+   - [Add gateway admins in the Power BI service](/power-bi/connect-data/service-gateway-data-sources#manage-users)
+   - [Add gateway admins in the Power Platform admin center](/power-platform/admin/onpremises-data-gateway-management#manage-users)
 1. [Troubleshoot](service-gateway-tshoot.md) the gateway if there are errors.
 
 ## Considerations and Limitations
