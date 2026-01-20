@@ -37,7 +37,7 @@ The capacity linked to your VNet data gateway incurs the consumption. You can vi
 ## Firewall Configuration for Certificate Connectivity
 The following domains related to certificate (HTTP/Port 80) may need to be included in your firewall allowlists to optimize connectivity. These endpoints are used during certificate validation and renewal processes. You can get full list from:
 
-- [Azure Certificate Authority details | Microsoft Learn](/azure/security/fundamentals/azure-ca-details#certificate-downloads-and-revocation-lists)
+- [Azure Certificate Authority details](/azure/security/fundamentals/azure-ca-details#certificate-downloads-and-revocation-lists)
 - [DigiCert Certificate Status IP Addresses](https://knowledge.digicert.com/alerts/digicert-certificate-status-ip-address#certificate-status-ipv4)
 
 ## Manage settings
