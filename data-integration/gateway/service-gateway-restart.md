@@ -1,7 +1,7 @@
 ---
 title: Restart an on-premises data gateway
 description: Learn how to restart the gateway Windows service.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 6/26/2025
 ---
 

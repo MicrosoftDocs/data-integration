@@ -1,7 +1,7 @@
 ---
 title: Install an on-premises data gateway
 description: Learn how to install a gateway so you can connect to on-premises data.
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 10/15/2025
 ms.custom: sfi-image-nochange
 ---

@@ -2,7 +2,7 @@
 title: Manage an on-premises data gateway
 description: Learn how to manage a gateway so that you can connect to on-premises data.
 ms.reviewer: dougklo
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 6/12/2025
 ---
 

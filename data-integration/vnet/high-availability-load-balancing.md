@@ -2,7 +2,7 @@
 title: Manage virtual network (VNet) data gateway high availability and load balancing
 description: Describes how to create and manage virtual network (VNet) data gateway clusters for high availability and load balancing.
 ms.reviewer: dougklo
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 6/27/2025
 ---
 
