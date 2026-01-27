@@ -1,7 +1,7 @@
 ---
 title: Download logs on the virtual network data gateway
 description: This document provides information about how to download and interpret virtual network (VNet) data gateways logs.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 6/27/2025
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Use virtual network data gateway with pipeline in Fabric
 description: This article describes how to run a Fabric pipeline Copy Activity through the virtual network data gateway.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 6/30/2025
 ---
 

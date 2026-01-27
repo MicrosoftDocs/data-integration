@@ -3,7 +3,7 @@
 title: Manage tenant registration 
 description: Learn how to manage which tenants have permissions to register an on-premises data gateway.
 ms.reviewer: dougklo
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 6/26/2025
 ms.custom: sfi-image-nochange
 ---

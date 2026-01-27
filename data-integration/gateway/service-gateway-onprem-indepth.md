@@ -1,7 +1,7 @@
 ---
 title: On-premises data gateway architecture
 description: This article looks at the on-premises gateway in-depth. It looks at how the service works with Microsoft Entra ID and your on-premises Active Directory.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 6/10/2025
 ms.custom: intro-internal
 ---
