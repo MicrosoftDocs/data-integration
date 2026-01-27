@@ -1,7 +1,7 @@
 ---
 title: Virtual network (VNet) data gateway architecture
 description: Overview of virtual network (VNet) data gateway Architecture.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 6/26/2025
 ---
 
