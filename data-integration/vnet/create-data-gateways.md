@@ -1,7 +1,7 @@
 ---
 title: Create virtual network (VNet) data gateways
 description: Provides information about how to create virtual network (VNet) data gateways.
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 6/10/2025
 ms.custom:
   - references_regions

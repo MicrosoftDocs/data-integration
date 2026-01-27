@@ -2,7 +2,7 @@
 title: Migrate, restore, or take over an on-premises data gateway
 description: Learn how to move a gateway to a new computer, recover a damaged gateway, or take over ownership of a gateway.
 ms.reviewer: dougklo
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 6/26/2025
 ---
 

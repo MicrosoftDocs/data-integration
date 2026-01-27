@@ -1,7 +1,7 @@
 ---
 title: Set the datacenter region for the on-premises data gateway
 description: This article describes how to determine the datacenter region and how its value can be set.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 6/26/2025
 ---
 
