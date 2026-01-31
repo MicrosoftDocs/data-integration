@@ -153,7 +153,7 @@ sections:
       - question: |
           How large does the delegated subnet need to be?
         answer: |
-          Beyond the five reserved IPs, our recommendation is to have approximately 5-7 more IPs so you can add more virtual network data gateways to the same virtual network and Subnet.  
+          Beyond the five reserved IP addresses, we recommend allocating IPs using the formula 5 + <instance count> + 2 (buffer).
 
       - question: |
           I'm a subscription owner but I get an insufficient permissions error when I try to create a virtual network data gateway.
