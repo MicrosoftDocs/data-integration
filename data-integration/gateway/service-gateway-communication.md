@@ -20,7 +20,7 @@ If a firewall blocks outbound connections, configure the firewall to allow outbo
 
 ## Required Ports for the gateway to function
 
-The gateway communicates on the following outbound ports: TCP 443, 433, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports.
+The gateway communicates on the following outbound ports: TCP 80, 443, 433, 5671, 5672, and from 9350 through 9354. The gateway doesn't require inbound ports.
 
 For guidance on how to set up your on-premises firewall and/or proxy using fully qualified domain names (FQDNs) instead of using IP addresses that are subject to change, follow the steps in [Azure WCF Relay DNS Support](https://techcommunity.microsoft.com/t5/messaging-on-azure/azure-wcf-relay-dns-support/ba-p/370775).
 
