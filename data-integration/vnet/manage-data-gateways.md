@@ -50,7 +50,7 @@ You can view properties for a selected VNet data gateway in the Power Platform a
 
 This setting allows you to shut down a VNet data gateway that has been idling for the designated amount of time. Idling starts after the last query is finished executing. The interval to wait options include: 30 minutes, 1 hour, 1 hour and 30 minutes, 2 hours, 2 hours and 30 minutes, 4 hours, 6 hours, 8 hours, 12 hours, and 24 hours.
 
-### Certificate & proxy support (preview)
+### Certificate & proxy support
 
 Certificate and Proxy Support enable secure and compliant connectivity for enterprise environments. With certificate-based authentication, organizations can use trusted, enterprise-issued certificates to validate gateway communication. Proxy configuration support allows the VNET Data Gateway to connect through corporate-controlled network routes when direct internet access is restricted. Together, these enhancements strengthen security, improve deployment flexibility, and allow the VNET Data Gateway to operate seamlessly in highly controlled and regulated network infrastructures.
 
