@@ -119,7 +119,7 @@ Additionally, when any other cloud data connections (both data sources and outpu
 
 ## Certificate downloads and revocation lists
 
-There are some domains (HTTP/Port 80) that may need to be included in your firewall allowlists to optimize connectivity.
+There are some domains (HTTP/Port 80) that may need to be included in your firewall allowlists to optimize connectivity, and allow for connectors that require a certificate revocation check as a security reinforcement.
 
 See [Azure Certificate Authority Details](/azure/security/fundamentals/azure-certificate-authority-details?tabs=root-and-subordinate-cas-list#certificate-downloads-and-revocation-lists)
 
