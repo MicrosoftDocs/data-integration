@@ -69,6 +69,9 @@ You can trigger the update in the UI when a newer version is available:
 > [!NOTE]
 > A minimum of 10 GB of available hard drive space is required to perform gateway updates.
 
+> [!NOTE]
+> The **On-premises Data Gateway Updater Service** is a newly introduced capability designed specifically to handle gateway updates. It is activated only when an update is triggered, either through the UI or via a PowerShell command.
+
 ## Programmatic Update (preview)
 
 Along with UI control, programmatic triggers allow automated or at-scale update workflows.
