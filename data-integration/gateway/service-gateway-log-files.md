@@ -103,13 +103,13 @@ Diagnostic data flow is strictly enforced:
 - No consent → no data transfer
 - Consent revoked → access is stopped
 
-   :::image type="content" source="media/service-gateway-log-files/tenant-admin-consent-option.png" alt-text="Screenshot of tenant admin diagnostics consent option" lightbox="media/service-gateway-log-files/tenant-admin-consent-option.png":::
+   :::image type="content" source="media/service-gateway-log-files/tenant-admin-consent-option.png" alt-text="Screenshot of tenant admin diagnostics consent option." lightbox="media/service-gateway-log-files/tenant-admin-consent-option.png":::
 
-   :::image type="content" source="media/service-gateway-log-files/tenant-admin-consent-switch.png" alt-text="Screenshot of tenant admin diagnostics consent switch" lightbox="media/service-gateway-log-files/tenant-admin-consent-switch.png":::
+   :::image type="content" source="media/service-gateway-log-files/tenant-admin-consent-switch.png" alt-text="Screenshot of tenant admin diagnostics consent switch." lightbox="media/service-gateway-log-files/tenant-admin-consent-switch.png":::
 
-   :::image type="content" source="media/service-gateway-log-files/gateway-admin-consent.png" alt-text="Screenshot of gateway admin diagnostics consent" lightbox="media/service-gateway-log-files/gateway-admin-consent.png":::
+   :::image type="content" source="media/service-gateway-log-files/gateway-admin-consent.png" alt-text="Screenshot of gateway admin diagnostics consent." lightbox="media/service-gateway-log-files/gateway-admin-consent.png":::
 
-For immediate enforcement, restarting the On-Premises Data Gateway terminates any ongoing diagnostics uploads.
+For immediate enforcement, restarting the On-premises Data Gateway terminates any ongoing diagnostics uploads.
 
 
 
