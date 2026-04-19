@@ -83,7 +83,7 @@ No. This retention logic for now is applied to completely new gateway installati
 
 ## Admin consent for gateway diagnostics (Preview)
 
-Admin consent for gateway diagnostics is a feature that allows administrators to explicitly control whether diagnostic data from On-Premises Data Gateways is collected and sent to the cloud.
+Admin consent for gateway diagnostics is a feature that allows administrators to explicitly control whether diagnostic data from on-premises data gateways is collected and sent to the cloud.
 
 This feature introduces a consent-driven model to ensure that potentially sensitive data—such as Mashup logs—is only transmitted after administrative approval. It also enables future monitoring and diagnostics capabilities.
 
@@ -109,7 +109,7 @@ Diagnostic data flow is strictly enforced:
 
    :::image type="content" source="media/service-gateway-log-files/gateway-admin-consent.png" alt-text="Screenshot of gateway admin diagnostics consent." lightbox="media/service-gateway-log-files/gateway-admin-consent.png":::
 
-For immediate enforcement, restarting the On-premises Data Gateway terminates any ongoing diagnostics uploads.
+For immediate enforcement, restarting the on-premises data gateway terminates any ongoing diagnostics uploads.
 
 
 
