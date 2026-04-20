@@ -81,6 +81,38 @@ The following example specifies that 20 log files, the sum total of all files in
 
 No. This retention logic for now is applied to completely new gateway installations. Existing gateways while upgrading to February 2023 or later versions should keep their current log retention logic (file count based retention).
 
+## Admin consent for gateway diagnostics (Preview)
+
+Admin consent for gateway diagnostics is a feature that allows administrators to explicitly control whether diagnostic data from on-premises data gateways is collected and sent to the cloud.
+
+This feature introduces a consent-driven model to ensure that potentially sensitive data—such as Mashup logs—is only transmitted after administrative approval. It also enables future monitoring and diagnostics capabilities.
+
+When enabled:
+
+- Diagnostic data can be securely collected and processed
+- A Fabric workspace is associated with the gateway
+- The workspace is reserved for future monitoring and diagnostics experiences
+
+### How it works
+
+Gateway admins enable diagnostics in gateway settings and associate a workspace
+Tenant admins can revoke consent at any time, which stops all gateways in the tenant from participating in diagnostics
+
+Diagnostic data flow is strictly enforced:
+
+- No consent → no data transfer
+- Consent revoked → access is stopped
+
+   :::image type="content" source="media/service-gateway-log-files/tenant-admin-consent-option.png" alt-text="Screenshot of tenant admin diagnostics consent option." lightbox="media/service-gateway-log-files/tenant-admin-consent-option.png":::
+
+   :::image type="content" source="media/service-gateway-log-files/tenant-admin-consent-switch.png" alt-text="Screenshot of tenant admin diagnostics consent switch." lightbox="media/service-gateway-log-files/tenant-admin-consent-switch.png":::
+
+   :::image type="content" source="media/service-gateway-log-files/gateway-admin-consent.png" alt-text="Screenshot of gateway admin diagnostics consent." lightbox="media/service-gateway-log-files/gateway-admin-consent.png":::
+
+For immediate enforcement, restarting the on-premises data gateway terminates any ongoing diagnostics uploads.
+
+
+
 ## Related content
 
 For information on how to export gateway logs for troubleshooting, go to [Troubleshooting tools](service-gateway-tshoot.md#troubleshooting-tools).
