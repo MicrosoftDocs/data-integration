@@ -49,7 +49,7 @@ The gateway update is now complete.
 
 :::image type="content" source="media/service-gateway-update/gateway-update-complete.png" alt-text="Screenshot of the gateway app after the gateway update is complete.":::
 
-## Update gateways from the UI (preview)
+## Update gateways from the UI
 
 You can trigger the update in the UI when a newer version is available:
 
@@ -72,7 +72,7 @@ You can trigger the update in the UI when a newer version is available:
 > [!NOTE]
 > The **On-premises Data Gateway Updater Service** is a newly introduced capability designed specifically to handle gateway updates. It is activated only when an update is triggered, either through the UI or via a PowerShell command.
 
-## Programmatic Update (preview)
+## Programmatic Update
 
 Along with UI control, programmatic triggers allow automated or at-scale update workflows.
 You can run the **Update-DataGatewayClusterMember** PowerShell command to update your gateways to latest version.
