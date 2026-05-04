@@ -2,7 +2,7 @@
 title: Adjust communication settings for the on-premises data gateway
 description: Discusses how to fix blocked outbound connections, how to configure certain ports for the on-premises data gateway to create an outbound connection to Azure Relay, how to force the gateway to communicate with Azure Relay by using HTTPS instead of direct TCP, and how to ensure your gateway machine is using TLS 1.2 to communicate with the Microsoft Power BI service.
 ms.topic: concept-article
-ms.date: 05/19/2025
+ms.date: 02/25/2026
 ms.custom: sfi-image-nochange
 ---
 
@@ -52,6 +52,10 @@ The following list describes FQDNs used by the gateway. These endpoints are requ
 | \*.dc.services.visualstudio.com |443 |Used by AppInsights to collect telemetry. |
 | ecs.office.com | 443 | Used for ECS configuration to enable Mashup features. |
 | gatewayadminportal.azure.com | 443 | Used for gateway management in the portal. |
+| *.cloudapp.azure.com | 1443 | Used for Azure Cloud Services and Virtual Machines |
+
+>[!TIP]
+>For more information on networking for Dataflows Gen2 in Fabric, see [Gateway considerations for Dataflow Gen2](/fabric/data-factory/gateway-considerations-output-destinations)
 
 
 For Government Community Cloud (GCC), Government Community Cloud High (GCC high), and Department of Defense (DoD), the following FQDNs are used by the gateway.
@@ -112,6 +116,12 @@ When a Fabric workload (for example, Semantic models or Fabric Dataflows) includ
 > \*.datawarehouse.pbidedicated.windows.net is being replaced by \*.datawarehouse.fabric.microsoft.com. During this transition process, make sure to have both endpoints open to ensure Dataflow Gen2 refresh.
 
 Additionally, when any other cloud data connections (both data sources and output destinations) are used with an on-premises data source connection in a workload query, you must also open the necessary endpoints to ensure that the on-premises data gateway has line-of-sight access to those cloud data sources.
+
+## Certificate downloads and revocation lists
+
+There are some domains (HTTP/Port 80) that may need to be included in your firewall allowlists to optimize connectivity, and allow for connectors that require a certificate revocation check as a security reinforcement.
+
+See [Azure Certificate Authority Details](/azure/security/fundamentals/azure-certificate-authority-details?tabs=root-and-subordinate-cas-list#certificate-downloads-and-revocation-lists)
 
 ## Network ports test
 
