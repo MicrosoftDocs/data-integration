@@ -19,6 +19,9 @@ When you change the key, the process depends on whether you're using the gateway
 
 ## Change the recovery key
 
+> [!NOTE]
+> Changing the recovery key isn't supported when the on-premises data gateway is installed in a region other than the home region.
+
 Use the following steps to change the recovery key.
 
 1. Open the [on-premises data gateway app](service-gateway-app.md) and sign in. If you have multiple gateway members in a cluster, you must sign in to the primary member.
