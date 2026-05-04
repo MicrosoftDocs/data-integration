@@ -32,6 +32,8 @@ All requests are routed to the primary instance of a gateway cluster. If the pri
 
 You can choose to let traffic be distributed evenly across gateways in a cluster. By default, the selection of a gateway during load balancing&mdash;that is, when "Distribute requests across all active gateways in this cluster" is enabled&mdash;is random. You can change this setting to distribute the load.
 
+When **Distribute requests across all active gateways in this cluster** is disabled, the cluster uses round-robin distribution to route requests across available gateway members instead of random selection.
+
 > [!NOTE]
 > We recommend that you disable or remove an offline gateway member in the cluster. If a gateway member is offline instead of disabled or removed, we might try to execute a query on that offline member, before moving to the next one. This action can negatively affect the performance.
 
