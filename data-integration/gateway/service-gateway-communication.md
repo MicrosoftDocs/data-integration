@@ -115,6 +115,9 @@ When a Fabric workload (for example, Semantic models or Fabric Dataflows) includ
 > [!NOTE]
 > \*.datawarehouse.pbidedicated.windows.net is being replaced by \*.datawarehouse.fabric.microsoft.com. During this transition process, make sure to have both endpoints open to ensure Dataflow Gen2 refresh.
 
+> [!NOTE]
+> For scenarios where port 1433 access is required, the TDS protocol is being used. It is important to note that many proxy services are designed only for generic TCP, HTTP, or TLS traffic, and do not support inspection or proxying of TDS traffic.
+
 Additionally, when any other cloud data connections (both data sources and output destinations) are used with an on-premises data source connection in a workload query, you must also open the necessary endpoints to ensure that the on-premises data gateway has line-of-sight access to those cloud data sources.
 
 ## Certificate downloads and revocation lists
