@@ -103,6 +103,9 @@ Because the gateway runs on the computer that you install it on, be sure to inst
     > [!NOTE]
     > For sovereign clouds, we currently only support installing gateways in the default Power BI region of your tenant. The region picker on the installer is only supported for Public cloud.
 
+    > [!NOTE]
+    > It is important to note that changing the gateway region will restrict the regions in which you can use the gateway. For Power BI, it can only be used in the default tenant region.
+
     Finally, you can also provide your own Azure Relay details. For more information about how to change the Azure Relay details, go to [Set the Azure Relay for on-premises data gateway](service-gateway-azure-relay.md).
 
 1. Review the information in the final window. Because this example uses the same account for Power BI, Power Apps, and Power Automate, the gateway is available for all three services. Select **Close**.

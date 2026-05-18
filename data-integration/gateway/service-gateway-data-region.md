@@ -16,6 +16,9 @@ If you're registered for either Power BI or Office 365, the datacenter region by
 > [!NOTE]
 > For sovereign clouds and in Power BI's default region, we currently only support installing gateways in the default Power BI region of your tenant. The region picker on the installer is only supported for Public cloud.
 
+> [!NOTE]
+> It is important to note that changing the gateway region will restrict the regions in which you can use the gateway. For Power BI, it can only be used in the default tenant region.
+
 ## Restore, migrate, or take over a gateway in a nondefault region
 
 During installation, after you sign in, you can choose **Migrate, restore, or takeover an existing gateway.** If you want to migrate, restore, or take over a gateway in a nondefault Power BI region, select **Change Region**, and then select the region you want to use.
