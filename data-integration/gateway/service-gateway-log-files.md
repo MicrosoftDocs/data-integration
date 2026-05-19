@@ -85,33 +85,23 @@ No. This retention logic for now is applied to completely new gateway installati
 
 Admin consent for gateway diagnostics is a feature that allows administrators to explicitly control whether diagnostic data from on-premises data gateways is collected and sent to the cloud.
 
-This feature introduces a consent-driven model to ensure that potentially sensitive data—such as Mashup logs—is only transmitted after administrative approval. It also enables future monitoring and diagnostics capabilities.
-
-When enabled:
-
-- Diagnostic data can be securely collected and processed
-- A Fabric workspace is associated with the gateway
-- The workspace is reserved for future monitoring and diagnostics experiences
+This feature introduces a consent-driven model to ensure that potentially sensitive data, such as Mashup logs, is only transmitted after administrative approval. It also enables future monitoring and diagnostics capabilities.
 
 ### How it works
 
-Gateway admins enable diagnostics in gateway settings and associate a workspace
-Tenant admins can revoke consent at any time, which stops all gateways in the tenant from participating in diagnostics
+Gateway administrators enable diagnostics in the gateway settings. This action signals that the gateway is ready to collect and send diagnostic data, but data transfer only occurs if tenant-level consent has been granted.
 
-Diagnostic data flow is strictly enforced:
+   :::image type="content" source="media/service-gateway-log-files/gateway-admin-consent.png" alt-text="Screenshot of gateway admin diagnostics consent." lightbox="media/service-gateway-log-files/gateway-admin-consent.png":::
 
-- No consent → no data transfer
-- Consent revoked → access is stopped
+Tenant administrators control the overall consent for diagnostics across the organization. They can grant or revoke consent at any time. If consent is not granted, no diagnostic data is transferred from any gateway. If consent is revoked, all gateways in the tenant immediately stop participating in diagnostics and any ongoing data transfer is terminated.
+
+Diagnostic data flow is strictly enforced: when consent is not granted, no data is transferred; when consent is revoked, any existing data access is stopped.
 
    :::image type="content" source="media/service-gateway-log-files/tenant-admin-consent-option.png" alt-text="Screenshot of tenant admin diagnostics consent option." lightbox="media/service-gateway-log-files/tenant-admin-consent-option.png":::
 
    :::image type="content" source="media/service-gateway-log-files/tenant-admin-consent-switch.png" alt-text="Screenshot of tenant admin diagnostics consent switch." lightbox="media/service-gateway-log-files/tenant-admin-consent-switch.png":::
 
-   :::image type="content" source="media/service-gateway-log-files/gateway-admin-consent.png" alt-text="Screenshot of gateway admin diagnostics consent." lightbox="media/service-gateway-log-files/gateway-admin-consent.png":::
-
 For immediate enforcement, restarting the on-premises data gateway terminates any ongoing diagnostics uploads.
-
-
 
 ## Related content
 
