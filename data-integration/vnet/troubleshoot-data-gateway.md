@@ -48,3 +48,5 @@ The troubleshooting information includes the following data:
   
 > [!NOTE]
 >If you get an `Unable to retrieve <IPConfig/TestNetConnectinon/Host Network> information.` message, retry troubleshooting and ensure you set the right IP/FQDN and port number.
+ > [!NOTE]
+> > Please find the required URLs to the allow list in the following document : https://learn.microsoft.com/en-us/fabric/security/fabric-allow-list-urls
