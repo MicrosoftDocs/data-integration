@@ -126,6 +126,12 @@ sections:
           For SQL serverless with auto-pause, the first request might fail if SQL is in a paused state, but the next ones will succeed.
 
       - question: |
+          Are there any known connectivity issues for Storage accounts?
+        answer: |
+          If your solution uses an Azure Storage account or Azure Data Lake Storage (ADLS) Gen2—or services that manage storage accounts on your behalf, such as Databricks or Snowflake—and the storage account resides in the same region as your VNet data gateway, you may need to enable the Microsoft.Storage service endpoint on the delegated subnet.
+          This configuration helps prevent connectivity issues that can occur under certain network conditions, such as when Propagate Default Route is enabled in a Virtual Hub.
+
+      - question: |
           Is there a delay when the virtual network data gateway is used for the first time or after a period of inactivity?
         answer: |
           When used for the first time, the virtual network data gateway takes about 2 minutes to get setup. Similarly, if the virtual network data gateway isn't used for 30 minutes, you could experience a delay of about a minute the next time you use it.
