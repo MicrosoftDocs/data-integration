@@ -99,6 +99,7 @@ Your Azure virtual network region needs to be in one of the following regions fo
 - Australia Southeast
 - Brazil South
 - Canada Central
+- Canada East
 - Central India
 - Central US
 - East Asia
@@ -125,6 +126,7 @@ Your Azure virtual network region needs to be in one of the following regions fo
 - Sweden Central
 - Switzerland North
 - Taiwan North
+- Taiwan Northwest
 - UAE North
 - UK South
 - UK West
