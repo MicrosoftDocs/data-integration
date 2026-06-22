@@ -1,8 +1,8 @@
 ---
 title: Currently supported monthly updates to the on-premises data gateways
 description: Learn about currently supported versions of the on-premises data gateways.
-author: miquelladeboer
-ms.author: mideboer
+author: goupadhy
+ms.author: goupadhy
 ms.topic: concept-article
 ms.date: 1/5/2026
 ---
@@ -12,7 +12,7 @@ ms.date: 1/5/2026
 This article describes the last six updates for the on-premises data gateways and provides links for downloading any of these versions. These updates are the versions we support.
 
 > [!IMPORTANT]
-> If you are using Microsoft Fabric through an on-premises data gateway, be sure to update to the latest version of the gateway. This ensures that any updates to Fabric features and known issues are propagated through the gateway.
+> If you're using Microsoft Fabric through an on-premises data gateway, be sure to update to the latest version of the gateway. This update ensures that any updates to Fabric features and known issues are propagated through the gateway with the latest performance, reliability, and security improvements.
 
 Download the latest versions:
 
