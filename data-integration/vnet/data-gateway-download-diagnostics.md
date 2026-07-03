@@ -23,7 +23,7 @@ Logs for your virtual network data gateway are available for download on the **M
 - The gateway must be online to provide logs. Check the status of the virtual network by selecting the icon in the **Status** column.
 - The download isn't available if the Fabric private link is enabled in your tenant.
 - If you don’t see the download, check to make sure pop-ups aren't disabled on your browser.
-- This feature isn't available in certain regions, including Mexico central, Spain central, Qatar central, China regions, and US Gov Virginia regions.
+- This feature isn't available in certain regions, including Qatar central, China regions, and US Gov Virginia regions.
 - Mashup logs are in JSONL format, while SystemCounters and QueryExecutionReport are in Parquet format.
 
 ## How to download logs
