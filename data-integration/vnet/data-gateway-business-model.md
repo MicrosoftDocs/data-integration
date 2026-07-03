@@ -16,18 +16,18 @@ To learn more and get started using the VNet data gateway, refer to [virtual net
 
 The virtual network data gateway charge is according to the uptime of the virtual network data gateway; uptime is anytime the virtual network data gateway is on.
 
-The virtual network data gateway consumes the capacity of a Power BI Premium or Fabric capacity. Capacities are billed by capacity unit hours, or CU hours. To learn more about CUs, go to the [Fabric operations page](/fabric/enterprise/fabric-operations). The VNet data gateway charges with a fixed CU consumption rate of 4CUs per gateway member (a member is a single gateway node in a cluster).
+The virtual network data gateway consumes the capacity of a Power BI Premium or Fabric capacity. Capacities are billed by capacity unit hours, or CU hours. To learn more about CUs, go to the [Fabric operations page](/fabric/enterprise/fabric-operations). The VNet data gateway charges with a fixed CU consumption rate of 4CUs per gateway instance.
 
 Your bill is automatically charged to the capacity linked to your virtual network data gateway. When you signed up for your capacity, you paid for some capacity unit hours. When you use your virtual network, this prepaid amount is consumed. This side of the metrics can only be seen from the consumption metrics app.
 
-- Consumption Unit (CU) consumption rate per gateway member: 4 CUs
-- Number of [gateway members](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check this number in the advanced settings of your virtual network data gateway.
+- Consumption Unit (CU) consumption rate per gateway instance: 4 CUs
+- Number of [gateway instnace](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of gateway instance deployed in your cluster. You can check this number in the advanced settings of your virtual network data gateway.
 - To reduce costs, you can actively manage the time to live on your virtual network data gateway in settings. For more information, go to [Manage settings](manage-data-gateways.md#manage-settings).
 
-_Capacity consumption in CU seconds = (CU Consumption rate) * (Uptime in seconds) * (Number of gateway members)_
+_Capacity consumption in CU seconds = (CU Consumption rate) * (Uptime in seconds) * (Number of gateway instance)_
 
 > [!NOTE]
->The CU consumption rate is fixed at 4CUs per gateway member. The billing model bills per minute and doesn't round up. This means that if you use the gateway for a short duration, you're only charged for what you use.
+>The CU consumption rate is fixed at 4CUs per gateway instance. The billing model bills per minute and doesn't round up. This means that if you use the gateway for a short duration, you're only charged for what you use.
 
 ## Assign a valid capacity to virtual network data gateway
 
@@ -38,8 +38,8 @@ Each virtual network data gateway must be attached to a valid capacity, such as 
 ## Best practices to manage costs
 
 - You can set up your virtual network data gateways and connections on the gateway for free. We start to bill when your first query runs or you run a test connection.
-- Configure your queries to run concurrently. Each gateway member can run six queries concurrently.
-- Maintain a minimum number of gateway members for your needs. The number of [gateway members](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of nodes deployed in your cluster. You can check and configure this number in the advanced settings of your virtual network data gateway.
+- Configure your queries to run concurrently. 
+- Maintain a minimum number of gateway instances for your needs. The number of [gateway instance](high-availability-load-balancing.md#how-to-create-a-cluster-of-multiple-virtual-network-data-gateways) is the number of gateway instance deployed in your cluster. You can check and configure this number in the advanced settings of your virtual network data gateway.
 - To reduce costs, reduce the time to live on your virtual network data gateway in settings. Whenever there's a new query execution, the virtual network data gateway is automatically turned on. For more information, go to [Manage settings](manage-data-gateways.md#manage-settings).
 
 ## View and manage your bill
