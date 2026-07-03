@@ -40,7 +40,7 @@ At any point in time, you can change the number of gateways you have in the clus
 
 Gateways support multiple workloads, allowing for efficient parallel execution. Each virtual network data gateway instance is designed to handle concurrent jobs across different workloads:
 
-- Up to 6 refresh queries can run simultaneously, enabling efficient data updates for scheduled refresh operations.
+- Up to 8 refresh queries can run simultaneously, enabling efficient data updates for scheduled refresh operations.
 - Up to 15 direct queries can execute concurrently, supporting interactive reporting and real-time data retrieval.
 - 1 Fabric Pipeline Copy activity job. Generally, a Copy activity only generates one Copy activity job. However, in some cases, multiple jobs can be generated.
 - 1 Fabric Copy job. If the data source has multiple tables, the copy job is divided into multiple subjobs. A gateway instance can only run one subjob at a time.
