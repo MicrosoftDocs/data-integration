@@ -4,12 +4,12 @@ description: Learn about currently supported versions of the on-premises data ga
 author: goupadhy
 ms.author: goupadhy
 ms.topic: concept-article
-ms.date: 1/5/2026
+ms.date: 07/06/2026
 ---
 
-# Currently supported monthly updates to the on-premises data gateways
+# Currently supported monthly updates for the on-premises data gateways
 
-This article describes the last six updates for the on-premises data gateways and provides links for downloading any of these versions. These updates are the versions we support.
+This article describes the last six updates for the on-premises data gateways and provides links for downloading any of these versions. These updates are the versions that Microsoft supports.
 
 > [!IMPORTANT]
 > If you're using Microsoft Fabric through an on-premises data gateway, be sure to update to the latest version of the gateway. This update ensures that any updates to Fabric features and known issues are propagated through the gateway with the latest performance, reliability, and security improvements.
@@ -25,14 +25,14 @@ Download the latest versions:
 ## May 2026 update (3000.318)
 
 - [List of features released](https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/On-premises-data-gateway-May-2026-release/ba-p/5190820)
-- [Download the May 2026 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-26-05.exe)
+- [Download the May 2026 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591e182/GatewayInstall-26-05.exe)
 - [Download the May 2026 version of the on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-26-05.exe)
 
 
 ## April 2026 update (3000.314)
 
 - [List of features released](https://blog.fabric.microsoft.com/en-us/blog/on-premises-data-gateway-april-2026-release?ft=All)
-- [Download the April 2026 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-26-04.exe)
+- [Download the April 2026 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591e182/GatewayInstall-26-04.exe)
 - [Download the April 2026 version of the on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-26-04.exe)
 
 
@@ -55,12 +55,7 @@ Download the latest versions:
 - [Download the January 2026 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-26-01.exe)
 - [Download the January 2026 version of the on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-26-01.exe)
 
-## December 2025 update (3000.298)
-
-- [List of features released](https://blog.fabric.microsoft.com/en-us/blog/on-premises-data-gateway-december-2025-release/)
-- [Download the December 2025 version of the on-premises data gateway](https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayInstall-25-12.exe)
-- [Download the December 2025 version of the on-premises data gateway (personal mode)](https://download.microsoft.com/download/6/0/2/602A459E-E1A3-4FB9-B07F-FC2B60881900/On-premises%20data%20gateway%20(personal%20mode)-25-12.exe)
-
+ 
 
 ## Related content
 
