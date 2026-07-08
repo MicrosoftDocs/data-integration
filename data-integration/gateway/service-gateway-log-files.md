@@ -85,7 +85,7 @@ No. This retention logic for now is applied to completely new gateway installati
 
 Admin consent for gateway diagnostics is a feature that allows administrators to explicitly control whether diagnostic data from on-premises data gateways is collected and sent to the cloud.
 
-This feature introduces a consent-driven model to ensure that potentially sensitive data, such as Mashup logs, is only transmitted after administrative approval. It also enables future monitoring and diagnostics capabilities.
+This feature introduces a consent-driven model to ensure that potentially sensitive data, such as Mashup logs, is only transmitted after administrative approval. It also enables future monitoring and diagnostics capabilities. For now, this feature is applicable to Dataflows Gen2 artifact only. For more information, see [Download detailed refresh logs](/fabric/data-factory/dataflows-gen2-monitor).
 
 ### How it works
 
@@ -102,6 +102,8 @@ If tenant-level consent is revoked, all gateways immediately stop sending diagno
    :::image type="content" source="media/service-gateway-log-files/tenant-admin-consent-switch.png" alt-text="Screenshot of tenant admin diagnostics consent switch." lightbox="media/service-gateway-log-files/tenant-admin-consent-switch.png":::
 
 For immediate enforcement, restarting the on-premises data gateway terminates any ongoing diagnostics uploads.
+
+The gateway diagnostic data is stored for 48 hours in an Azure Data Lake Storage managed by the service. After 48 hours, the data is no longer available for download.
 
 ## Related content
 
