@@ -92,6 +92,8 @@
         href: vnet/data-gateway-business-model.md
       - name: "Pricing for related services"
         href: gateway/related-services-pricing.md
+      - name: "Modern evaluation engine"
+        href: vnet/modern-evaluation-engine.md
     - name: How to
       items:
       - name: Create virtual network data gateways
